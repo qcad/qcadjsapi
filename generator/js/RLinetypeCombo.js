@@ -161,7 +161,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.setObjectName(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.isWidgetType = function(...args) 
           
@@ -171,7 +171,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.isWidgetType(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.isWindowType = function(...args) 
           
@@ -181,7 +181,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.isWindowType(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.signalsBlocked = function(...args) 
           
@@ -191,7 +191,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.signalsBlocked(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.blockSignals = function(...args) 
           
@@ -201,7 +201,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.blockSignals(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.findChild = function(...args) 
           
@@ -211,7 +211,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.findChild(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.children = function(...args) 
           
@@ -221,7 +221,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.children(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.installEventFilter = function(...args) 
           
@@ -231,7 +231,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.installEventFilter(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.removeEventFilter = function(...args) 
           
@@ -241,7 +241,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.removeEventFilter(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.dumpObjectTree = function(...args) 
           
@@ -251,7 +251,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.dumpObjectTree(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.dumpObjectInfo = function(...args) 
           
@@ -261,7 +261,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.dumpObjectInfo(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.setProperty = function(...args) 
           
@@ -271,7 +271,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.setProperty(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.property = function(...args) 
           
@@ -281,7 +281,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.property(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.dynamicPropertyNames = function(...args) 
           
@@ -291,7 +291,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.dynamicPropertyNames(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.parent = function(...args) 
           
@@ -301,7 +301,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.parent(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.deleteLater = function(...args) 
           
@@ -311,7 +311,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.deleteLater(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.devType = function(...args) 
           
@@ -321,7 +321,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.devType(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.createWinId = function(...args) 
           
@@ -331,7 +331,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.createWinId(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.isWindow = function(...args) 
           
@@ -341,7 +341,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.isWindow(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.isModal = function(...args) 
           
@@ -351,7 +351,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.isModal(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.setWindowModality = function(...args) 
           
@@ -361,7 +361,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.setWindowModality(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.isEnabled = function(...args) 
           
@@ -371,7 +371,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.isEnabled(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.isEnabledTo = function(...args) 
           
@@ -381,7 +381,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.isEnabledTo(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.setEnabled = function(...args) 
           
@@ -391,7 +391,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.setEnabled(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.setDisabled = function(...args) 
           
@@ -401,7 +401,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.setDisabled(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.setWindowModified = function(...args) 
           
@@ -411,7 +411,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.setWindowModified(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.setMinimumSize = function(...args) 
           
@@ -421,7 +421,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.setMinimumSize(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.setMaximumSize = function(...args) 
           
@@ -431,7 +431,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.setMaximumSize(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.setMinimumWidth = function(...args) 
           
@@ -441,7 +441,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.setMinimumWidth(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.setMinimumHeight = function(...args) 
           
@@ -451,7 +451,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.setMinimumHeight(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.setMaximumWidth = function(...args) 
           
@@ -461,7 +461,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.setMaximumWidth(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.setMaximumHeight = function(...args) 
           
@@ -471,7 +471,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.setMaximumHeight(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.setSizeIncrement = function(...args) 
           
@@ -481,7 +481,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.setSizeIncrement(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.setBaseSize = function(...args) 
           
@@ -491,7 +491,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.setBaseSize(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.setFixedSize = function(...args) 
           
@@ -501,7 +501,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.setFixedSize(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.setFixedWidth = function(...args) 
           
@@ -511,7 +511,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.setFixedWidth(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.setFixedHeight = function(...args) 
           
@@ -521,7 +521,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.setFixedHeight(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.mapToGlobal = function(...args) 
           
@@ -531,7 +531,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.mapToGlobal(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.mapFromGlobal = function(...args) 
           
@@ -541,7 +541,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.mapFromGlobal(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.mapToParent = function(...args) 
           
@@ -551,7 +551,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.mapToParent(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.mapFromParent = function(...args) 
           
@@ -561,7 +561,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.mapFromParent(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.mapTo = function(...args) 
           
@@ -571,7 +571,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.mapTo(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.mapFrom = function(...args) 
           
@@ -581,7 +581,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.mapFrom(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.window = function(...args) 
           
@@ -591,7 +591,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.window(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.nativeParentWidget = function(...args) 
           
@@ -601,7 +601,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.nativeParentWidget(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.topLevelWidget = function(...args) 
           
@@ -611,7 +611,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.topLevelWidget(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.setPalette = function(...args) 
           
@@ -621,7 +621,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.setPalette(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.setBackgroundRole = function(...args) 
           
@@ -631,7 +631,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.setBackgroundRole(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.backgroundRole = function(...args) 
           
@@ -641,7 +641,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.backgroundRole(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.setForegroundRole = function(...args) 
           
@@ -651,7 +651,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.setForegroundRole(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.foregroundRole = function(...args) 
           
@@ -661,7 +661,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.foregroundRole(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.setFont = function(...args) 
           
@@ -671,7 +671,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.setFont(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.fontInfo = function(...args) 
           
@@ -681,7 +681,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.fontInfo(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.setCursor = function(...args) 
           
@@ -691,7 +691,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.setCursor(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.unsetCursor = function(...args) 
           
@@ -701,7 +701,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.unsetCursor(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.setMouseTracking = function(...args) 
           
@@ -711,7 +711,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.setMouseTracking(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.hasMouseTracking = function(...args) 
           
@@ -721,7 +721,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.hasMouseTracking(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.underMouse = function(...args) 
           
@@ -731,7 +731,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.underMouse(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.setTabletTracking = function(...args) 
           
@@ -741,7 +741,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.setTabletTracking(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.hasTabletTracking = function(...args) 
           
@@ -751,7 +751,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.hasTabletTracking(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.setMask = function(...args) 
           
@@ -761,7 +761,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.setMask(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.mask = function(...args) 
           
@@ -771,7 +771,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.mask(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.clearMask = function(...args) 
           
@@ -781,7 +781,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.clearMask(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.grab = function(...args) 
           
@@ -791,7 +791,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.grab(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.grabGesture = function(...args) 
           
@@ -801,7 +801,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.grabGesture(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.ungrabGesture = function(...args) 
           
@@ -811,7 +811,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.ungrabGesture(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.setWindowTitle = function(...args) 
           
@@ -821,7 +821,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.setWindowTitle(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.setStyleSheet = function(...args) 
           
@@ -831,7 +831,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.setStyleSheet(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.setWindowIcon = function(...args) 
           
@@ -841,7 +841,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.setWindowIcon(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.setWindowIconText = function(...args) 
           
@@ -851,7 +851,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.setWindowIconText(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.setWindowRole = function(...args) 
           
@@ -861,7 +861,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.setWindowRole(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.windowRole = function(...args) 
           
@@ -871,7 +871,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.windowRole(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.setWindowFilePath = function(...args) 
           
@@ -881,7 +881,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.setWindowFilePath(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.setWindowOpacity = function(...args) 
           
@@ -891,7 +891,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.setWindowOpacity(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.isWindowModified = function(...args) 
           
@@ -901,7 +901,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.isWindowModified(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.setToolTip = function(...args) 
           
@@ -911,7 +911,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.setToolTip(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.setToolTipDuration = function(...args) 
           
@@ -921,7 +921,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.setToolTipDuration(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.setStatusTip = function(...args) 
           
@@ -931,7 +931,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.setStatusTip(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.setWhatsThis = function(...args) 
           
@@ -941,7 +941,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.setWhatsThis(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.setAccessibleName = function(...args) 
           
@@ -951,7 +951,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.setAccessibleName(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.setAccessibleDescription = function(...args) 
           
@@ -961,7 +961,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.setAccessibleDescription(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.setLayoutDirection = function(...args) 
           
@@ -971,7 +971,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.setLayoutDirection(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.unsetLayoutDirection = function(...args) 
           
@@ -981,7 +981,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.unsetLayoutDirection(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.setLocale = function(...args) 
           
@@ -991,7 +991,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.setLocale(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.unsetLocale = function(...args) 
           
@@ -1001,7 +1001,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.unsetLocale(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.isRightToLeft = function(...args) 
           
@@ -1011,7 +1011,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.isRightToLeft(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.isLeftToRight = function(...args) 
           
@@ -1021,7 +1021,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.isLeftToRight(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.activateWindow = function(...args) 
           
@@ -1031,7 +1031,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.activateWindow(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.clearFocus = function(...args) 
           
@@ -1041,7 +1041,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.clearFocus(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.setFocus = function(...args) 
           
@@ -1051,7 +1051,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.setFocus(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.setFocusPolicy = function(...args) 
           
@@ -1061,7 +1061,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.setFocusPolicy(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.hasFocus = function(...args) 
           
@@ -1071,7 +1071,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.hasFocus(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.setFocusProxy = function(...args) 
           
@@ -1081,7 +1081,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.setFocusProxy(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.focusProxy = function(...args) 
           
@@ -1091,7 +1091,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.focusProxy(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.setContextMenuPolicy = function(...args) 
           
@@ -1101,7 +1101,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.setContextMenuPolicy(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.grabMouse = function(...args) 
           
@@ -1111,7 +1111,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.grabMouse(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.releaseMouse = function(...args) 
           
@@ -1121,7 +1121,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.releaseMouse(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.grabKeyboard = function(...args) 
           
@@ -1131,7 +1131,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.grabKeyboard(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.releaseKeyboard = function(...args) 
           
@@ -1141,7 +1141,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.releaseKeyboard(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.grabShortcut = function(...args) 
           
@@ -1151,7 +1151,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.grabShortcut(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.releaseShortcut = function(...args) 
           
@@ -1161,7 +1161,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.releaseShortcut(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.setShortcutEnabled = function(...args) 
           
@@ -1171,7 +1171,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.setShortcutEnabled(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.setShortcutAutoRepeat = function(...args) 
           
@@ -1181,7 +1181,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.setShortcutAutoRepeat(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.setUpdatesEnabled = function(...args) 
           
@@ -1191,7 +1191,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.setUpdatesEnabled(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.update = function(...args) 
           
@@ -1201,7 +1201,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.update(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.repaint = function(...args) 
           
@@ -1211,7 +1211,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.repaint(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.setVisible = function(...args) 
           
@@ -1221,7 +1221,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.setVisible(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.setHidden = function(...args) 
           
@@ -1231,7 +1231,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.setHidden(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.show = function(...args) 
           
@@ -1241,7 +1241,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.show(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.hide = function(...args) 
           
@@ -1251,7 +1251,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.hide(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.showMinimized = function(...args) 
           
@@ -1261,7 +1261,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.showMinimized(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.showMaximized = function(...args) 
           
@@ -1271,7 +1271,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.showMaximized(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.showFullScreen = function(...args) 
           
@@ -1281,7 +1281,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.showFullScreen(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.showNormal = function(...args) 
           
@@ -1291,7 +1291,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.showNormal(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.close = function(...args) 
           
@@ -1301,7 +1301,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.close(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.raise = function(...args) 
           
@@ -1311,7 +1311,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.raise(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.lower = function(...args) 
           
@@ -1321,7 +1321,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.lower(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.stackUnder = function(...args) 
           
@@ -1331,7 +1331,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.stackUnder(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.move = function(...args) 
           
@@ -1341,7 +1341,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.move(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.resize = function(...args) 
           
@@ -1351,7 +1351,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.resize(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.setGeometry = function(...args) 
           
@@ -1361,7 +1361,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.setGeometry(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.saveGeometry = function(...args) 
           
@@ -1371,7 +1371,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.saveGeometry(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.restoreGeometry = function(...args) 
           
@@ -1381,7 +1381,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.restoreGeometry(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.adjustSize = function(...args) 
           
@@ -1391,7 +1391,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.adjustSize(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.isVisible = function(...args) 
           
@@ -1401,7 +1401,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.isVisible(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.isVisibleTo = function(...args) 
           
@@ -1411,7 +1411,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.isVisibleTo(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.isHidden = function(...args) 
           
@@ -1421,7 +1421,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.isHidden(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.isMinimized = function(...args) 
           
@@ -1431,7 +1431,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.isMinimized(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.isMaximized = function(...args) 
           
@@ -1441,7 +1441,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.isMaximized(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.isFullScreen = function(...args) 
           
@@ -1451,7 +1451,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.isFullScreen(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.windowState = function(...args) 
           
@@ -1461,7 +1461,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.windowState(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.setWindowState = function(...args) 
           
@@ -1471,7 +1471,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.setWindowState(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.overrideWindowState = function(...args) 
           
@@ -1481,7 +1481,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.overrideWindowState(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.setSizePolicy = function(...args) 
           
@@ -1491,7 +1491,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.setSizePolicy(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.heightForWidth = function(...args) 
           
@@ -1501,7 +1501,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.heightForWidth(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.hasHeightForWidth = function(...args) 
           
@@ -1511,7 +1511,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.hasHeightForWidth(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.visibleRegion = function(...args) 
           
@@ -1521,7 +1521,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.visibleRegion(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.setContentsMargins = function(...args) 
           
@@ -1531,7 +1531,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.setContentsMargins(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.contentsMargins = function(...args) 
           
@@ -1541,7 +1541,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.contentsMargins(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.contentsRect = function(...args) 
           
@@ -1551,7 +1551,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.contentsRect(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.layout = function(...args) 
           
@@ -1561,7 +1561,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.layout(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.setLayout = function(...args) 
           
@@ -1571,7 +1571,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.setLayout(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.updateGeometry = function(...args) 
           
@@ -1581,7 +1581,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.updateGeometry(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.setParent = function(...args) 
           
@@ -1591,7 +1591,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.setParent(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.scroll = function(...args) 
           
@@ -1601,7 +1601,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.scroll(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.focusWidget = function(...args) 
           
@@ -1611,7 +1611,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.focusWidget(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.nextInFocusChain = function(...args) 
           
@@ -1621,7 +1621,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.nextInFocusChain(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.previousInFocusChain = function(...args) 
           
@@ -1631,7 +1631,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.previousInFocusChain(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.setAcceptDrops = function(...args) 
           
@@ -1641,7 +1641,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.setAcceptDrops(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.addAction = function(...args) 
           
@@ -1651,7 +1651,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.addAction(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.addActions = function(...args) 
           
@@ -1661,7 +1661,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.addActions(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.insertActions = function(...args) 
           
@@ -1671,7 +1671,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.insertActions(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.insertAction = function(...args) 
           
@@ -1681,7 +1681,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.insertAction(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.removeAction = function(...args) 
           
@@ -1691,7 +1691,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.removeAction(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.actions = function(...args) 
           
@@ -1701,7 +1701,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.actions(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.parentWidget = function(...args) 
           
@@ -1711,7 +1711,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.parentWidget(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.setWindowFlags = function(...args) 
           
@@ -1721,7 +1721,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.setWindowFlags(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.windowFlags = function(...args) 
           
@@ -1731,7 +1731,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.windowFlags(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.setWindowFlag = function(...args) 
           
@@ -1741,7 +1741,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.setWindowFlag(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.overrideWindowFlags = function(...args) 
           
@@ -1751,7 +1751,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.overrideWindowFlags(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.windowType = function(...args) 
           
@@ -1761,7 +1761,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.windowType(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.childAt = function(...args) 
           
@@ -1771,7 +1771,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.childAt(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.setAttribute = function(...args) 
           
@@ -1781,7 +1781,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.setAttribute(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.testAttribute = function(...args) 
           
@@ -1791,7 +1791,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.testAttribute(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.ensurePolished = function(...args) 
           
@@ -1801,7 +1801,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.ensurePolished(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.isAncestorOf = function(...args) 
           
@@ -1811,7 +1811,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.isAncestorOf(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.setAutoFillBackground = function(...args) 
           
@@ -1821,7 +1821,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.setAutoFillBackground(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.event = function(...args) 
           
@@ -1831,7 +1831,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.event(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.mouseDoubleClickEvent = function(...args) 
           
@@ -1841,7 +1841,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.mouseDoubleClickEvent(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.enterEvent = function(...args) 
           
@@ -1851,7 +1851,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.enterEvent(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.leaveEvent = function(...args) 
           
@@ -1861,7 +1861,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.leaveEvent(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.moveEvent = function(...args) 
           
@@ -1871,7 +1871,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.moveEvent(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.closeEvent = function(...args) 
           
@@ -1881,7 +1881,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.closeEvent(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.tabletEvent = function(...args) 
           
@@ -1891,7 +1891,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.tabletEvent(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.dragEnterEvent = function(...args) 
           
@@ -1901,7 +1901,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.dragEnterEvent(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.dragMoveEvent = function(...args) 
           
@@ -1911,7 +1911,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.dragMoveEvent(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.dragLeaveEvent = function(...args) 
           
@@ -1921,7 +1921,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.dragLeaveEvent(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.dropEvent = function(...args) 
           
@@ -1931,7 +1931,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.dropEvent(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.nativeEvent = function(...args) 
           
@@ -1941,7 +1941,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.nativeEvent(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.metric = function(...args) 
           
@@ -1951,7 +1951,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.metric(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.initPainter = function(...args) 
           
@@ -1961,7 +1961,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.initPainter(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.redirected = function(...args) 
           
@@ -1971,7 +1971,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.redirected(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.sharedPainter = function(...args) 
           
@@ -1981,7 +1981,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.sharedPainter(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.setInputMethodHints = function(...args) 
           
@@ -1991,7 +1991,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.setInputMethodHints(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.updateMicroFocus = function(...args) 
           
@@ -2001,7 +2001,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.updateMicroFocus(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.create = function(...args) 
           
@@ -2011,7 +2011,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.create(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.destroy = function(...args) 
           
@@ -2021,7 +2021,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.destroy(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.focusNextPrevChild = function(...args) 
           
@@ -2031,7 +2031,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.focusNextPrevChild(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.focusNextChild = function(...args) 
           
@@ -2041,7 +2041,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.focusNextChild(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.focusPreviousChild = function(...args) 
           
@@ -2051,7 +2051,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.focusPreviousChild(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.setBackingStore = function(...args) 
           
@@ -2061,7 +2061,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.setBackingStore(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.testAttribute_helper = function(...args) 
           
@@ -2071,7 +2071,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.testAttribute_helper(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.takeLayout = function(...args) 
           
@@ -2081,7 +2081,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.takeLayout(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.qt_mac_is_metal = function(...args) 
           
@@ -2091,7 +2091,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.qt_mac_is_metal(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.qt_qwidget_data = function(...args) 
           
@@ -2101,7 +2101,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.qt_qwidget_data(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.qt_widget_private = function(...args) 
           
@@ -2111,7 +2111,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.qt_widget_private(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.setMaxVisibleItems = function(...args) 
           
@@ -2121,7 +2121,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.setMaxVisibleItems(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.setMaxCount = function(...args) 
           
@@ -2131,7 +2131,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.setMaxCount(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.setDuplicatesEnabled = function(...args) 
           
@@ -2141,7 +2141,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.setDuplicatesEnabled(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.setFrame = function(...args) 
           
@@ -2151,7 +2151,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.setFrame(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.hasFrame = function(...args) 
           
@@ -2161,7 +2161,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.hasFrame(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.findText = function(...args) 
           
@@ -2171,7 +2171,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.findText(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.findData = function(...args) 
           
@@ -2181,7 +2181,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.findData(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.setInsertPolicy = function(...args) 
           
@@ -2191,7 +2191,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.setInsertPolicy(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.setSizeAdjustPolicy = function(...args) 
           
@@ -2201,7 +2201,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.setSizeAdjustPolicy(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.setMinimumContentsLength = function(...args) 
           
@@ -2211,7 +2211,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.setMinimumContentsLength(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.setIconSize = function(...args) 
           
@@ -2221,7 +2221,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.setIconSize(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.setPlaceholderText = function(...args) 
           
@@ -2231,7 +2231,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.setPlaceholderText(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.isEditable = function(...args) 
           
@@ -2241,7 +2241,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.isEditable(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.setEditable = function(...args) 
           
@@ -2251,7 +2251,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.setEditable(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.setLineEdit = function(...args) 
           
@@ -2261,7 +2261,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.setLineEdit(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.lineEdit = function(...args) 
           
@@ -2271,7 +2271,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.lineEdit(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.setValidator = function(...args) 
           
@@ -2281,7 +2281,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.setValidator(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.setCompleter = function(...args) 
           
@@ -2291,7 +2291,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.setCompleter(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.completer = function(...args) 
           
@@ -2301,7 +2301,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.completer(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.model = function(...args) 
           
@@ -2311,7 +2311,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.model(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.setModelColumn = function(...args) 
           
@@ -2321,7 +2321,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.setModelColumn(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.itemText = function(...args) 
           
@@ -2331,7 +2331,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.itemText(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.itemIcon = function(...args) 
           
@@ -2341,7 +2341,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.itemIcon(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.itemData = function(...args) 
           
@@ -2351,7 +2351,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.itemData(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.addItem = function(...args) 
           
@@ -2361,7 +2361,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.addItem(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.addItems = function(...args) 
           
@@ -2371,7 +2371,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.addItems(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.insertItem = function(...args) 
           
@@ -2381,7 +2381,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.insertItem(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.insertItems = function(...args) 
           
@@ -2391,7 +2391,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.insertItems(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.insertSeparator = function(...args) 
           
@@ -2401,7 +2401,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.insertSeparator(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.removeItem = function(...args) 
           
@@ -2411,7 +2411,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.removeItem(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.setItemText = function(...args) 
           
@@ -2421,7 +2421,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.setItemText(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.setItemIcon = function(...args) 
           
@@ -2431,7 +2431,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.setItemIcon(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.setItemData = function(...args) 
           
@@ -2441,7 +2441,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.setItemData(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.view = function(...args) 
           
@@ -2451,7 +2451,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.view(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.showPopup = function(...args) 
           
@@ -2461,7 +2461,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.showPopup(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.hidePopup = function(...args) 
           
@@ -2471,7 +2471,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.hidePopup(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.inputMethodQuery = function(...args) 
           
@@ -2481,7 +2481,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.inputMethodQuery(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.clear = function(...args) 
           
@@ -2491,7 +2491,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.clear(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.clearEditText = function(...args) 
           
@@ -2501,7 +2501,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.clearEditText(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.setEditText = function(...args) 
           
@@ -2511,7 +2511,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.setEditText(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.setCurrentIndex = function(...args) 
           
@@ -2521,7 +2521,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.setCurrentIndex(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.setCurrentText = function(...args) 
           
@@ -2531,7 +2531,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.setCurrentText(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.focusInEvent = function(...args) 
           
@@ -2541,7 +2541,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.focusInEvent(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.focusOutEvent = function(...args) 
           
@@ -2551,7 +2551,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.focusOutEvent(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.changeEvent = function(...args) 
           
@@ -2561,7 +2561,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.changeEvent(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.showEvent = function(...args) 
           
@@ -2571,7 +2571,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.showEvent(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.hideEvent = function(...args) 
           
@@ -2581,7 +2581,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.hideEvent(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.mousePressEvent = function(...args) 
           
@@ -2591,7 +2591,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.mousePressEvent(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.mouseReleaseEvent = function(...args) 
           
@@ -2601,7 +2601,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.mouseReleaseEvent(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.keyPressEvent = function(...args) 
           
@@ -2611,7 +2611,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.keyPressEvent(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.keyReleaseEvent = function(...args) 
           
@@ -2621,7 +2621,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.keyReleaseEvent(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.wheelEvent = function(...args) 
           
@@ -2631,7 +2631,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.wheelEvent(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.contextMenuEvent = function(...args) 
           
@@ -2641,7 +2641,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.contextMenuEvent(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.inputMethodEvent = function(...args) 
           
@@ -2651,7 +2651,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.inputMethodEvent(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.initStyleOption = function(...args) 
           
@@ -2661,7 +2661,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.initStyleOption(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.init = function(...args) 
           
@@ -2671,7 +2671,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.init(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.reinit = function(...args) 
           
@@ -2681,7 +2681,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.reinit(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.getLinetypePattern = function(...args) 
           
@@ -2691,7 +2691,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.getLinetypePattern(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.getLinetypePatternAt = function(...args) 
           
@@ -2701,7 +2701,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.getLinetypePatternAt(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.setLinetypePattern = function(...args) 
           
@@ -2711,7 +2711,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.setLinetypePattern(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.getOnlyFixed = function(...args) 
           
@@ -2721,7 +2721,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.getOnlyFixed(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.setOnlyFixed = function(...args) 
           
@@ -2731,7 +2731,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.setOnlyFixed(...args);
             
         };
-    
+        
         // function 
         RLinetypeCombo.prototype.linetypePatternChanged = function(...args) 
           
@@ -2741,7 +2741,7 @@ RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.Ad
               return this.__PROXY__.linetypePatternChanged(...args);
             
         };
-    
+        
 
       // static functions:
       

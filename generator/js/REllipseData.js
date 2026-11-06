@@ -195,7 +195,7 @@
               return this.__PROXY__.getDocument(...args);
             
         };
-    
+        
         // function 
         REllipseData.prototype.setDocument = function(...args) 
           
@@ -205,7 +205,7 @@
               return this.__PROXY__.setDocument(...args);
             
         };
-    
+        
         // function 
         REllipseData.prototype.isPointType = function(...args) 
           
@@ -215,7 +215,7 @@
               return this.__PROXY__.isPointType(...args);
             
         };
-    
+        
         // function 
         REllipseData.prototype.isSane = function(...args) 
           
@@ -225,7 +225,7 @@
               return this.__PROXY__.isSane(...args);
             
         };
-    
+        
         // function 
         REllipseData.prototype.getClosestSubEntityId = function(...args) 
           
@@ -235,7 +235,7 @@
               return this.__PROXY__.getClosestSubEntityId(...args);
             
         };
-    
+        
         // function 
         REllipseData.prototype.getClosestShape = function(...args) 
           
@@ -245,7 +245,7 @@
               return this.__PROXY__.getClosestShape(...args);
             
         };
-    
+        
         // function 
         REllipseData.prototype.copyAttributesFrom = function(...args) 
           
@@ -255,7 +255,7 @@
               return this.__PROXY__.copyAttributesFrom(...args);
             
         };
-    
+        
         // function 
         REllipseData.prototype.getBoundingBoxes = function(...args) 
           
@@ -265,7 +265,7 @@
               return this.__PROXY__.getBoundingBoxes(...args);
             
         };
-    
+        
         // function 
         REllipseData.prototype.getHull = function(...args) 
           
@@ -275,7 +275,7 @@
               return this.__PROXY__.getHull(...args);
             
         };
-    
+        
         // function 
         REllipseData.prototype.isUpdatesEnabled = function(...args) 
           
@@ -285,7 +285,7 @@
               return this.__PROXY__.isUpdatesEnabled(...args);
             
         };
-    
+        
         // function 
         REllipseData.prototype.setUpdatesEnabled = function(...args) 
           
@@ -295,7 +295,7 @@
               return this.__PROXY__.setUpdatesEnabled(...args);
             
         };
-    
+        
         // function 
         REllipseData.prototype.cloneOnChange = function(...args) 
           
@@ -305,7 +305,7 @@
               return this.__PROXY__.cloneOnChange(...args);
             
         };
-    
+        
         // function 
         REllipseData.prototype.isSelected = function(...args) 
           
@@ -315,7 +315,7 @@
               return this.__PROXY__.isSelected(...args);
             
         };
-    
+        
         // function 
         REllipseData.prototype.setSelected = function(...args) 
           
@@ -325,7 +325,7 @@
               return this.__PROXY__.setSelected(...args);
             
         };
-    
+        
         // function 
         REllipseData.prototype.isSelectedWorkingSet = function(...args) 
           
@@ -335,7 +335,7 @@
               return this.__PROXY__.isSelectedWorkingSet(...args);
             
         };
-    
+        
         // function 
         REllipseData.prototype.setSelectedWorkingSet = function(...args) 
           
@@ -345,7 +345,7 @@
               return this.__PROXY__.setSelectedWorkingSet(...args);
             
         };
-    
+        
         // function 
         REllipseData.prototype.getDrawOrder = function(...args) 
           
@@ -355,7 +355,7 @@
               return this.__PROXY__.getDrawOrder(...args);
             
         };
-    
+        
         // function 
         REllipseData.prototype.setDrawOrder = function(...args) 
           
@@ -365,7 +365,7 @@
               return this.__PROXY__.setDrawOrder(...args);
             
         };
-    
+        
         // function 
         REllipseData.prototype.setLayerId = function(...args) 
           
@@ -375,7 +375,7 @@
               return this.__PROXY__.setLayerId(...args);
             
         };
-    
+        
         // function 
         REllipseData.prototype.getLayerId = function(...args) 
           
@@ -385,7 +385,7 @@
               return this.__PROXY__.getLayerId(...args);
             
         };
-    
+        
         // function 
         REllipseData.prototype.setLayerName = function(...args) 
           
@@ -395,7 +395,7 @@
               return this.__PROXY__.setLayerName(...args);
             
         };
-    
+        
         // function 
         REllipseData.prototype.getLayerName = function(...args) 
           
@@ -405,7 +405,7 @@
               return this.__PROXY__.getLayerName(...args);
             
         };
-    
+        
         // function 
         REllipseData.prototype.setBlockId = function(...args) 
           
@@ -415,7 +415,7 @@
               return this.__PROXY__.setBlockId(...args);
             
         };
-    
+        
         // function 
         REllipseData.prototype.getBlockId = function(...args) 
           
@@ -425,7 +425,7 @@
               return this.__PROXY__.getBlockId(...args);
             
         };
-    
+        
         // function 
         REllipseData.prototype.setParentId = function(...args) 
           
@@ -435,7 +435,7 @@
               return this.__PROXY__.setParentId(...args);
             
         };
-    
+        
         // function 
         REllipseData.prototype.getParentId = function(...args) 
           
@@ -445,7 +445,7 @@
               return this.__PROXY__.getParentId(...args);
             
         };
-    
+        
         // function 
         REllipseData.prototype.getBlockName = function(...args) 
           
@@ -455,7 +455,7 @@
               return this.__PROXY__.getBlockName(...args);
             
         };
-    
+        
         // function 
         REllipseData.prototype.setLinetypeId = function(...args) 
           
@@ -465,7 +465,7 @@
               return this.__PROXY__.setLinetypeId(...args);
             
         };
-    
+        
         // function 
         REllipseData.prototype.getLinetypeId = function(...args) 
           
@@ -475,7 +475,7 @@
               return this.__PROXY__.getLinetypeId(...args);
             
         };
-    
+        
         // function 
         REllipseData.prototype.setLinetypePattern = function(...args) 
           
@@ -485,7 +485,7 @@
               return this.__PROXY__.setLinetypePattern(...args);
             
         };
-    
+        
         // function 
         REllipseData.prototype.getLinetypePattern = function(...args) 
           
@@ -495,7 +495,7 @@
               return this.__PROXY__.getLinetypePattern(...args);
             
         };
-    
+        
         // function 
         REllipseData.prototype.setLinetypeScale = function(...args) 
           
@@ -505,7 +505,7 @@
               return this.__PROXY__.setLinetypeScale(...args);
             
         };
-    
+        
         // function 
         REllipseData.prototype.getLinetypeScale = function(...args) 
           
@@ -515,7 +515,7 @@
               return this.__PROXY__.getLinetypeScale(...args);
             
         };
-    
+        
         // function 
         REllipseData.prototype.getLineweight = function(...args) 
           
@@ -525,7 +525,7 @@
               return this.__PROXY__.getLineweight(...args);
             
         };
-    
+        
         // function 
         REllipseData.prototype.setLineweight = function(...args) 
           
@@ -535,7 +535,7 @@
               return this.__PROXY__.setLineweight(...args);
             
         };
-    
+        
         // function 
         REllipseData.prototype.setColor = function(...args) 
           
@@ -545,7 +545,7 @@
               return this.__PROXY__.setColor(...args);
             
         };
-    
+        
         // function 
         REllipseData.prototype.getColor = function(...args) 
           
@@ -555,7 +555,7 @@
               return this.__PROXY__.getColor(...args);
             
         };
-    
+        
         // function 
         REllipseData.prototype.getDisplayColor = function(...args) 
           
@@ -565,7 +565,7 @@
               return this.__PROXY__.getDisplayColor(...args);
             
         };
-    
+        
         // function 
         REllipseData.prototype.getInternalReferencePoints = function(...args) 
           
@@ -575,7 +575,7 @@
               return this.__PROXY__.getInternalReferencePoints(...args);
             
         };
-    
+        
         // function 
         REllipseData.prototype.getPointOnEntity = function(...args) 
           
@@ -585,7 +585,7 @@
               return this.__PROXY__.getPointOnEntity(...args);
             
         };
-    
+        
         // function 
         REllipseData.prototype.getClosestPointOnEntity = function(...args) 
           
@@ -595,7 +595,7 @@
               return this.__PROXY__.getClosestPointOnEntity(...args);
             
         };
-    
+        
         // function 
         REllipseData.prototype.isInside = function(...args) 
           
@@ -605,7 +605,7 @@
               return this.__PROXY__.isInside(...args);
             
         };
-    
+        
         // function 
         REllipseData.prototype.isOnEntity = function(...args) 
           
@@ -615,7 +615,7 @@
               return this.__PROXY__.isOnEntity(...args);
             
         };
-    
+        
         // function 
         REllipseData.prototype.clickReferencePoint = function(...args) 
           
@@ -625,7 +625,7 @@
               return this.__PROXY__.clickReferencePoint(...args);
             
         };
-    
+        
         // function 
         REllipseData.prototype.scaleVisualProperties = function(...args) 
           
@@ -635,7 +635,7 @@
               return this.__PROXY__.scaleVisualProperties(...args);
             
         };
-    
+        
         // function 
         REllipseData.prototype.update = function(...args) 
           
@@ -645,7 +645,7 @@
               return this.__PROXY__.update(...args);
             
         };
-    
+        
         // function 
         REllipseData.prototype.setAutoUpdatesBlocked = function(...args) 
           
@@ -655,7 +655,7 @@
               return this.__PROXY__.setAutoUpdatesBlocked(...args);
             
         };
-    
+        
         // function 
         REllipseData.prototype.getShapeType = function(...args) 
           
@@ -665,7 +665,7 @@
               return this.__PROXY__.getShapeType(...args);
             
         };
-    
+        
         // function 
         REllipseData.prototype.clone = function(...args) 
           
@@ -675,7 +675,7 @@
               return this.__PROXY__.clone(...args);
             
         };
-    
+        
         // function 
         REllipseData.prototype.isDirected = function(...args) 
           
@@ -685,7 +685,7 @@
               return this.__PROXY__.isDirected(...args);
             
         };
-    
+        
         // function 
         REllipseData.prototype.getVectorProperties = function(...args) 
           
@@ -695,7 +695,7 @@
               return this.__PROXY__.getVectorProperties(...args);
             
         };
-    
+        
         // function 
         REllipseData.prototype.getDoubleProperties = function(...args) 
           
@@ -705,7 +705,7 @@
               return this.__PROXY__.getDoubleProperties(...args);
             
         };
-    
+        
         // function 
         REllipseData.prototype.getBoolProperties = function(...args) 
           
@@ -715,7 +715,7 @@
               return this.__PROXY__.getBoolProperties(...args);
             
         };
-    
+        
         // function 
         REllipseData.prototype.getPointCloud = function(...args) 
           
@@ -725,7 +725,7 @@
               return this.__PROXY__.getPointCloud(...args);
             
         };
-    
+        
         // function 
         REllipseData.prototype.moveStartPoint = function(...args) 
           
@@ -735,7 +735,7 @@
               return this.__PROXY__.moveStartPoint(...args);
             
         };
-    
+        
         // function 
         REllipseData.prototype.moveEndPoint = function(...args) 
           
@@ -745,7 +745,7 @@
               return this.__PROXY__.moveEndPoint(...args);
             
         };
-    
+        
         // function 
         REllipseData.prototype.setCenter = function(...args) 
           
@@ -755,7 +755,7 @@
               return this.__PROXY__.setCenter(...args);
             
         };
-    
+        
         // function 
         REllipseData.prototype.setMajorPoint = function(...args) 
           
@@ -765,7 +765,7 @@
               return this.__PROXY__.setMajorPoint(...args);
             
         };
-    
+        
         // function 
         REllipseData.prototype.switchMajorMinor = function(...args) 
           
@@ -775,7 +775,7 @@
               return this.__PROXY__.switchMajorMinor(...args);
             
         };
-    
+        
         // function 
         REllipseData.prototype.setRatio = function(...args) 
           
@@ -785,7 +785,7 @@
               return this.__PROXY__.setRatio(...args);
             
         };
-    
+        
         // function 
         REllipseData.prototype.setStartParam = function(...args) 
           
@@ -795,7 +795,7 @@
               return this.__PROXY__.setStartParam(...args);
             
         };
-    
+        
         // function 
         REllipseData.prototype.setEndParam = function(...args) 
           
@@ -805,7 +805,7 @@
               return this.__PROXY__.setEndParam(...args);
             
         };
-    
+        
         // function 
         REllipseData.prototype.getStartAngle = function(...args) 
           
@@ -815,7 +815,7 @@
               return this.__PROXY__.getStartAngle(...args);
             
         };
-    
+        
         // function 
         REllipseData.prototype.setStartAngle = function(...args) 
           
@@ -825,7 +825,7 @@
               return this.__PROXY__.setStartAngle(...args);
             
         };
-    
+        
         // function 
         REllipseData.prototype.angleToParam = function(...args) 
           
@@ -835,7 +835,7 @@
               return this.__PROXY__.angleToParam(...args);
             
         };
-    
+        
         // function 
         REllipseData.prototype.getEndAngle = function(...args) 
           
@@ -845,7 +845,7 @@
               return this.__PROXY__.getEndAngle(...args);
             
         };
-    
+        
         // function 
         REllipseData.prototype.setEndAngle = function(...args) 
           
@@ -855,7 +855,7 @@
               return this.__PROXY__.setEndAngle(...args);
             
         };
-    
+        
         // function 
         REllipseData.prototype.getAngleLength = function(...args) 
           
@@ -865,7 +865,7 @@
               return this.__PROXY__.getAngleLength(...args);
             
         };
-    
+        
         // function 
         REllipseData.prototype.isAngleWithinArc = function(...args) 
           
@@ -875,7 +875,7 @@
               return this.__PROXY__.isAngleWithinArc(...args);
             
         };
-    
+        
         // function 
         REllipseData.prototype.isParamWithinArc = function(...args) 
           
@@ -885,7 +885,7 @@
               return this.__PROXY__.isParamWithinArc(...args);
             
         };
-    
+        
         // function 
         REllipseData.prototype.isReversed = function(...args) 
           
@@ -895,7 +895,7 @@
               return this.__PROXY__.isReversed(...args);
             
         };
-    
+        
         // function 
         REllipseData.prototype.setReversed = function(...args) 
           
@@ -905,7 +905,7 @@
               return this.__PROXY__.setReversed(...args);
             
         };
-    
+        
         // function 
         REllipseData.prototype.getDirection1 = function(...args) 
           
@@ -915,7 +915,7 @@
               return this.__PROXY__.getDirection1(...args);
             
         };
-    
+        
         // function 
         REllipseData.prototype.getDirection2 = function(...args) 
           
@@ -925,7 +925,7 @@
               return this.__PROXY__.getDirection2(...args);
             
         };
-    
+        
         // function 
         REllipseData.prototype.getSideOfPoint = function(...args) 
           
@@ -935,7 +935,7 @@
               return this.__PROXY__.getSideOfPoint(...args);
             
         };
-    
+        
         // function 
         REllipseData.prototype.getStartPoint = function(...args) 
           
@@ -945,7 +945,7 @@
               return this.__PROXY__.getStartPoint(...args);
             
         };
-    
+        
         // function 
         REllipseData.prototype.getEndPoint = function(...args) 
           
@@ -955,7 +955,7 @@
               return this.__PROXY__.getEndPoint(...args);
             
         };
-    
+        
         // function 
         REllipseData.prototype.getMinorRadius = function(...args) 
           
@@ -965,7 +965,7 @@
               return this.__PROXY__.getMinorRadius(...args);
             
         };
-    
+        
         // function 
         REllipseData.prototype.setAngle = function(...args) 
           
@@ -975,7 +975,7 @@
               return this.__PROXY__.setAngle(...args);
             
         };
-    
+        
         // function 
         REllipseData.prototype.isCircular = function(...args) 
           
@@ -985,7 +985,7 @@
               return this.__PROXY__.isCircular(...args);
             
         };
-    
+        
         // function 
         REllipseData.prototype.getSimpsonLength = function(...args) 
           
@@ -995,7 +995,7 @@
               return this.__PROXY__.getSimpsonLength(...args);
             
         };
-    
+        
         // function 
         REllipseData.prototype.contains = function(...args) 
           
@@ -1005,7 +1005,7 @@
               return this.__PROXY__.contains(...args);
             
         };
-    
+        
         // function 
         REllipseData.prototype.getAngleAt = function(...args) 
           
@@ -1015,7 +1015,7 @@
               return this.__PROXY__.getAngleAt(...args);
             
         };
-    
+        
         // function 
         REllipseData.prototype.getAngleAtPoint = function(...args) 
           
@@ -1025,7 +1025,7 @@
               return this.__PROXY__.getAngleAtPoint(...args);
             
         };
-    
+        
         // function 
         REllipseData.prototype.getRadiusAt = function(...args) 
           
@@ -1035,7 +1035,7 @@
               return this.__PROXY__.getRadiusAt(...args);
             
         };
-    
+        
         // function 
         REllipseData.prototype.getMiddlePoint = function(...args) 
           
@@ -1045,7 +1045,7 @@
               return this.__PROXY__.getMiddlePoint(...args);
             
         };
-    
+        
         // function 
         REllipseData.prototype.getTransformed = function(...args) 
           
@@ -1055,7 +1055,7 @@
               return this.__PROXY__.getTransformed(...args);
             
         };
-    
+        
         // function 
         REllipseData.prototype.getTrimEnd = function(...args) 
           
@@ -1065,7 +1065,7 @@
               return this.__PROXY__.getTrimEnd(...args);
             
         };
-    
+        
         // function 
         REllipseData.prototype.trimStartPoint = function(...args) 
           
@@ -1075,7 +1075,7 @@
               return this.__PROXY__.trimStartPoint(...args);
             
         };
-    
+        
         // function 
         REllipseData.prototype.trimEndPoint = function(...args) 
           
@@ -1085,7 +1085,7 @@
               return this.__PROXY__.trimEndPoint(...args);
             
         };
-    
+        
         // function 
         REllipseData.prototype.correctMajorMinor = function(...args) 
           
@@ -1095,7 +1095,7 @@
               return this.__PROXY__.correctMajorMinor(...args);
             
         };
-    
+        
         // function 
         REllipseData.prototype.getBoxCorners = function(...args) 
           
@@ -1105,7 +1105,7 @@
               return this.__PROXY__.getBoxCorners(...args);
             
         };
-    
+        
         // function 
         REllipseData.prototype.getTangents = function(...args) 
           
@@ -1115,7 +1115,7 @@
               return this.__PROXY__.getTangents(...args);
             
         };
-    
+        
         // function 
         REllipseData.prototype.approximateWithSplines = function(...args) 
           
@@ -1125,7 +1125,7 @@
               return this.__PROXY__.approximateWithSplines(...args);
             
         };
-    
+        
         // function 
         REllipseData.prototype.approximateWithArcs = function(...args) 
           
@@ -1135,7 +1135,7 @@
               return this.__PROXY__.approximateWithArcs(...args);
             
         };
-    
+        
         // function 
         REllipseData.prototype.getOffsetShapes = function(...args) 
           
@@ -1145,7 +1145,7 @@
               return this.__PROXY__.getOffsetShapes(...args);
             
         };
-    
+        
         // function 
         REllipseData.prototype.splitAt = function(...args) 
           
@@ -1155,7 +1155,7 @@
               return this.__PROXY__.splitAt(...args);
             
         };
-    
+        
         // function 
         REllipseData.prototype.copy = function(...args) 
           
@@ -1165,7 +1165,7 @@
               return this.__PROXY__.copy(...args);
             
         };
-    
+        
         // function 
         REllipseData.prototype.getType = function(...args) 
           
@@ -1175,7 +1175,7 @@
               return this.__PROXY__.getType(...args);
             
         };
-    
+        
         // function 
         REllipseData.prototype.getEllipse = function(...args) 
           
@@ -1185,7 +1185,7 @@
               return this.__PROXY__.getEllipse(...args);
             
         };
-    
+        
         // function 
         REllipseData.prototype.isValid = function(...args) 
           
@@ -1195,7 +1195,7 @@
               return this.__PROXY__.isValid(...args);
             
         };
-    
+        
         // function 
         REllipseData.prototype.getEndPoints = function(...args) 
           
@@ -1205,7 +1205,7 @@
               return this.__PROXY__.getEndPoints(...args);
             
         };
-    
+        
         // function 
         REllipseData.prototype.setZ = function(...args) 
           
@@ -1215,7 +1215,7 @@
               return this.__PROXY__.setZ(...args);
             
         };
-    
+        
         // function 
         REllipseData.prototype.to2D = function(...args) 
           
@@ -1225,7 +1225,7 @@
               return this.__PROXY__.to2D(...args);
             
         };
-    
+        
         // function 
         REllipseData.prototype.getBoundingBox = function(...args) 
           
@@ -1235,7 +1235,7 @@
               return this.__PROXY__.getBoundingBox(...args);
             
         };
-    
+        
         // function 
         REllipseData.prototype.getMiddlePoints = function(...args) 
           
@@ -1245,7 +1245,7 @@
               return this.__PROXY__.getMiddlePoints(...args);
             
         };
-    
+        
         // function 
         REllipseData.prototype.getCenterPoints = function(...args) 
           
@@ -1255,7 +1255,7 @@
               return this.__PROXY__.getCenterPoints(...args);
             
         };
-    
+        
         // function 
         REllipseData.prototype.getArcReferencePoints = function(...args) 
           
@@ -1265,7 +1265,7 @@
               return this.__PROXY__.getArcReferencePoints(...args);
             
         };
-    
+        
         // function 
         REllipseData.prototype.getPointsWithDistanceToEnd = function(...args) 
           
@@ -1275,7 +1275,7 @@
               return this.__PROXY__.getPointsWithDistanceToEnd(...args);
             
         };
-    
+        
         // function 
         REllipseData.prototype.getIntersectionPoints = function(...args) 
           
@@ -1285,7 +1285,7 @@
               return this.__PROXY__.getIntersectionPoints(...args);
             
         };
-    
+        
         // function 
         REllipseData.prototype.getVectorTo = function(...args) 
           
@@ -1295,7 +1295,7 @@
               return this.__PROXY__.getVectorTo(...args);
             
         };
-    
+        
         // function 
         REllipseData.prototype.getDistanceTo = function(...args) 
           
@@ -1305,7 +1305,7 @@
               return this.__PROXY__.getDistanceTo(...args);
             
         };
-    
+        
         // function 
         REllipseData.prototype.intersectsWith = function(...args) 
           
@@ -1315,7 +1315,7 @@
               return this.__PROXY__.intersectsWith(...args);
             
         };
-    
+        
         // function 
         REllipseData.prototype.move = function(...args) 
           
@@ -1325,7 +1325,7 @@
               return this.__PROXY__.move(...args);
             
         };
-    
+        
         // function 
         REllipseData.prototype.rotate = function(...args) 
           
@@ -1335,7 +1335,7 @@
               return this.__PROXY__.rotate(...args);
             
         };
-    
+        
         // function 
         REllipseData.prototype.scale = function(...args) 
           
@@ -1345,7 +1345,7 @@
               return this.__PROXY__.scale(...args);
             
         };
-    
+        
         // function 
         REllipseData.prototype.mirror = function(...args) 
           
@@ -1355,7 +1355,7 @@
               return this.__PROXY__.mirror(...args);
             
         };
-    
+        
         // function 
         REllipseData.prototype.flipHorizontal = function(...args) 
           
@@ -1365,7 +1365,7 @@
               return this.__PROXY__.flipHorizontal(...args);
             
         };
-    
+        
         // function 
         REllipseData.prototype.flipVertical = function(...args) 
           
@@ -1375,7 +1375,7 @@
               return this.__PROXY__.flipVertical(...args);
             
         };
-    
+        
         // function 
         REllipseData.prototype.stretch = function(...args) 
           
@@ -1385,7 +1385,7 @@
               return this.__PROXY__.stretch(...args);
             
         };
-    
+        
         // function 
         REllipseData.prototype.getFoci = function(...args) 
           
@@ -1395,7 +1395,7 @@
               return this.__PROXY__.getFoci(...args);
             
         };
-    
+        
         // function 
         REllipseData.prototype.getCenter = function(...args) 
           
@@ -1405,7 +1405,7 @@
               return this.__PROXY__.getCenter(...args);
             
         };
-    
+        
         // function 
         REllipseData.prototype.getMajorRadius = function(...args) 
           
@@ -1415,7 +1415,7 @@
               return this.__PROXY__.getMajorRadius(...args);
             
         };
-    
+        
         // function 
         REllipseData.prototype.getMajorPoint = function(...args) 
           
@@ -1425,7 +1425,7 @@
               return this.__PROXY__.getMajorPoint(...args);
             
         };
-    
+        
         // function 
         REllipseData.prototype.getMinorPoint = function(...args) 
           
@@ -1435,7 +1435,7 @@
               return this.__PROXY__.getMinorPoint(...args);
             
         };
-    
+        
         // function 
         REllipseData.prototype.setMinorPoint = function(...args) 
           
@@ -1445,7 +1445,7 @@
               return this.__PROXY__.setMinorPoint(...args);
             
         };
-    
+        
         // function 
         REllipseData.prototype.getRatio = function(...args) 
           
@@ -1455,7 +1455,7 @@
               return this.__PROXY__.getRatio(...args);
             
         };
-    
+        
         // function 
         REllipseData.prototype.getAngle = function(...args) 
           
@@ -1465,7 +1465,7 @@
               return this.__PROXY__.getAngle(...args);
             
         };
-    
+        
         // function 
         REllipseData.prototype.getStartParam = function(...args) 
           
@@ -1475,7 +1475,7 @@
               return this.__PROXY__.getStartParam(...args);
             
         };
-    
+        
         // function 
         REllipseData.prototype.getEndParam = function(...args) 
           
@@ -1485,7 +1485,7 @@
               return this.__PROXY__.getEndParam(...args);
             
         };
-    
+        
         // function 
         REllipseData.prototype.isFullEllipse = function(...args) 
           
@@ -1495,7 +1495,7 @@
               return this.__PROXY__.isFullEllipse(...args);
             
         };
-    
+        
         // function 
         REllipseData.prototype.getParamTo = function(...args) 
           
@@ -1505,7 +1505,7 @@
               return this.__PROXY__.getParamTo(...args);
             
         };
-    
+        
         // function 
         REllipseData.prototype.getLength = function(...args) 
           
@@ -1515,7 +1515,7 @@
               return this.__PROXY__.getLength(...args);
             
         };
-    
+        
         // function 
         REllipseData.prototype.getSweep = function(...args) 
           
@@ -1525,7 +1525,7 @@
               return this.__PROXY__.getSweep(...args);
             
         };
-    
+        
         // function 
         REllipseData.prototype.getPointAt = function(...args) 
           
@@ -1535,7 +1535,7 @@
               return this.__PROXY__.getPointAt(...args);
             
         };
-    
+        
         // function 
         REllipseData.prototype.getReferencePoints = function(...args) 
           
@@ -1545,7 +1545,7 @@
               return this.__PROXY__.getReferencePoints(...args);
             
         };
-    
+        
         // function 
         REllipseData.prototype.moveReferencePoint = function(...args) 
           
@@ -1555,7 +1555,7 @@
               return this.__PROXY__.moveReferencePoint(...args);
             
         };
-    
+        
         // function 
         REllipseData.prototype.reverse = function(...args) 
           
@@ -1565,7 +1565,7 @@
               return this.__PROXY__.reverse(...args);
             
         };
-    
+        
         // function 
         REllipseData.prototype.castToShape = function(...args) 
           
@@ -1575,7 +1575,7 @@
               return this.__PROXY__.castToShape(...args);
             
         };
-    
+        
         // function 
         REllipseData.prototype.getShapes = function(...args) 
           
@@ -1585,7 +1585,7 @@
               return this.__PROXY__.getShapes(...args);
             
         };
-    
+        
 
       // static functions:
       REllipseData.prototype.isNullWrapper = function() {

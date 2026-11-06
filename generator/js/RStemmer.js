@@ -105,7 +105,7 @@
               return this.__PROXY__.stem(...args);
             
         };
-    
+        
 
       // static functions:
       

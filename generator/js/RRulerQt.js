@@ -177,7 +177,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.setObjectName(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.isWidgetType = function(...args) 
           
@@ -187,7 +187,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.isWidgetType(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.isWindowType = function(...args) 
           
@@ -197,7 +197,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.isWindowType(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.signalsBlocked = function(...args) 
           
@@ -207,7 +207,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.signalsBlocked(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.blockSignals = function(...args) 
           
@@ -217,7 +217,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.blockSignals(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.findChild = function(...args) 
           
@@ -227,7 +227,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.findChild(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.children = function(...args) 
           
@@ -237,7 +237,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.children(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.installEventFilter = function(...args) 
           
@@ -247,7 +247,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.installEventFilter(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.removeEventFilter = function(...args) 
           
@@ -257,7 +257,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.removeEventFilter(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.dumpObjectTree = function(...args) 
           
@@ -267,7 +267,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.dumpObjectTree(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.dumpObjectInfo = function(...args) 
           
@@ -277,7 +277,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.dumpObjectInfo(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.setProperty = function(...args) 
           
@@ -287,7 +287,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.setProperty(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.property = function(...args) 
           
@@ -297,7 +297,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.property(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.dynamicPropertyNames = function(...args) 
           
@@ -307,7 +307,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.dynamicPropertyNames(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.parent = function(...args) 
           
@@ -317,7 +317,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.parent(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.deleteLater = function(...args) 
           
@@ -327,7 +327,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.deleteLater(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.devType = function(...args) 
           
@@ -337,7 +337,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.devType(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.createWinId = function(...args) 
           
@@ -347,7 +347,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.createWinId(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.isWindow = function(...args) 
           
@@ -357,7 +357,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.isWindow(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.isModal = function(...args) 
           
@@ -367,7 +367,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.isModal(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.setWindowModality = function(...args) 
           
@@ -377,7 +377,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.setWindowModality(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.isEnabled = function(...args) 
           
@@ -387,7 +387,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.isEnabled(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.isEnabledTo = function(...args) 
           
@@ -397,7 +397,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.isEnabledTo(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.setEnabled = function(...args) 
           
@@ -407,7 +407,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.setEnabled(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.setDisabled = function(...args) 
           
@@ -417,7 +417,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.setDisabled(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.setWindowModified = function(...args) 
           
@@ -427,7 +427,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.setWindowModified(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.setMinimumSize = function(...args) 
           
@@ -437,7 +437,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.setMinimumSize(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.setMaximumSize = function(...args) 
           
@@ -447,7 +447,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.setMaximumSize(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.setMinimumWidth = function(...args) 
           
@@ -457,7 +457,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.setMinimumWidth(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.setMinimumHeight = function(...args) 
           
@@ -467,7 +467,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.setMinimumHeight(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.setMaximumWidth = function(...args) 
           
@@ -477,7 +477,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.setMaximumWidth(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.setMaximumHeight = function(...args) 
           
@@ -487,7 +487,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.setMaximumHeight(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.setSizeIncrement = function(...args) 
           
@@ -497,7 +497,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.setSizeIncrement(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.setBaseSize = function(...args) 
           
@@ -507,7 +507,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.setBaseSize(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.setFixedSize = function(...args) 
           
@@ -517,7 +517,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.setFixedSize(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.setFixedWidth = function(...args) 
           
@@ -527,7 +527,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.setFixedWidth(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.setFixedHeight = function(...args) 
           
@@ -537,7 +537,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.setFixedHeight(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.mapToGlobal = function(...args) 
           
@@ -547,7 +547,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.mapToGlobal(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.mapFromGlobal = function(...args) 
           
@@ -557,7 +557,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.mapFromGlobal(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.mapToParent = function(...args) 
           
@@ -567,7 +567,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.mapToParent(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.mapFromParent = function(...args) 
           
@@ -577,7 +577,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.mapFromParent(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.mapTo = function(...args) 
           
@@ -587,7 +587,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.mapTo(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.mapFrom = function(...args) 
           
@@ -597,7 +597,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.mapFrom(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.window = function(...args) 
           
@@ -607,7 +607,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.window(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.nativeParentWidget = function(...args) 
           
@@ -617,7 +617,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.nativeParentWidget(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.topLevelWidget = function(...args) 
           
@@ -627,7 +627,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.topLevelWidget(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.setPalette = function(...args) 
           
@@ -637,7 +637,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.setPalette(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.setBackgroundRole = function(...args) 
           
@@ -647,7 +647,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.setBackgroundRole(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.backgroundRole = function(...args) 
           
@@ -657,7 +657,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.backgroundRole(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.setForegroundRole = function(...args) 
           
@@ -667,7 +667,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.setForegroundRole(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.foregroundRole = function(...args) 
           
@@ -677,7 +677,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.foregroundRole(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.setFont = function(...args) 
           
@@ -687,7 +687,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.setFont(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.fontInfo = function(...args) 
           
@@ -697,7 +697,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.fontInfo(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.setCursor = function(...args) 
           
@@ -707,7 +707,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.setCursor(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.unsetCursor = function(...args) 
           
@@ -717,7 +717,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.unsetCursor(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.setMouseTracking = function(...args) 
           
@@ -727,7 +727,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.setMouseTracking(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.hasMouseTracking = function(...args) 
           
@@ -737,7 +737,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.hasMouseTracking(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.underMouse = function(...args) 
           
@@ -747,7 +747,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.underMouse(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.setTabletTracking = function(...args) 
           
@@ -757,7 +757,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.setTabletTracking(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.hasTabletTracking = function(...args) 
           
@@ -767,7 +767,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.hasTabletTracking(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.setMask = function(...args) 
           
@@ -777,7 +777,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.setMask(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.mask = function(...args) 
           
@@ -787,7 +787,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.mask(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.clearMask = function(...args) 
           
@@ -797,7 +797,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.clearMask(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.grab = function(...args) 
           
@@ -807,7 +807,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.grab(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.grabGesture = function(...args) 
           
@@ -817,7 +817,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.grabGesture(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.ungrabGesture = function(...args) 
           
@@ -827,7 +827,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.ungrabGesture(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.setWindowTitle = function(...args) 
           
@@ -837,7 +837,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.setWindowTitle(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.setStyleSheet = function(...args) 
           
@@ -847,7 +847,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.setStyleSheet(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.setWindowIcon = function(...args) 
           
@@ -857,7 +857,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.setWindowIcon(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.setWindowIconText = function(...args) 
           
@@ -867,7 +867,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.setWindowIconText(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.setWindowRole = function(...args) 
           
@@ -877,7 +877,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.setWindowRole(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.windowRole = function(...args) 
           
@@ -887,7 +887,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.windowRole(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.setWindowFilePath = function(...args) 
           
@@ -897,7 +897,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.setWindowFilePath(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.setWindowOpacity = function(...args) 
           
@@ -907,7 +907,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.setWindowOpacity(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.isWindowModified = function(...args) 
           
@@ -917,7 +917,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.isWindowModified(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.setToolTip = function(...args) 
           
@@ -927,7 +927,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.setToolTip(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.setToolTipDuration = function(...args) 
           
@@ -937,7 +937,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.setToolTipDuration(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.setStatusTip = function(...args) 
           
@@ -947,7 +947,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.setStatusTip(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.setWhatsThis = function(...args) 
           
@@ -957,7 +957,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.setWhatsThis(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.setAccessibleName = function(...args) 
           
@@ -967,7 +967,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.setAccessibleName(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.setAccessibleDescription = function(...args) 
           
@@ -977,7 +977,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.setAccessibleDescription(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.setLayoutDirection = function(...args) 
           
@@ -987,7 +987,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.setLayoutDirection(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.unsetLayoutDirection = function(...args) 
           
@@ -997,7 +997,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.unsetLayoutDirection(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.setLocale = function(...args) 
           
@@ -1007,7 +1007,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.setLocale(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.unsetLocale = function(...args) 
           
@@ -1017,7 +1017,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.unsetLocale(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.isRightToLeft = function(...args) 
           
@@ -1027,7 +1027,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.isRightToLeft(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.isLeftToRight = function(...args) 
           
@@ -1037,7 +1037,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.isLeftToRight(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.activateWindow = function(...args) 
           
@@ -1047,7 +1047,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.activateWindow(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.clearFocus = function(...args) 
           
@@ -1057,7 +1057,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.clearFocus(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.setFocus = function(...args) 
           
@@ -1067,7 +1067,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.setFocus(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.setFocusPolicy = function(...args) 
           
@@ -1077,7 +1077,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.setFocusPolicy(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.hasFocus = function(...args) 
           
@@ -1087,7 +1087,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.hasFocus(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.setFocusProxy = function(...args) 
           
@@ -1097,7 +1097,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.setFocusProxy(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.focusProxy = function(...args) 
           
@@ -1107,7 +1107,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.focusProxy(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.setContextMenuPolicy = function(...args) 
           
@@ -1117,7 +1117,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.setContextMenuPolicy(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.grabMouse = function(...args) 
           
@@ -1127,7 +1127,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.grabMouse(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.releaseMouse = function(...args) 
           
@@ -1137,7 +1137,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.releaseMouse(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.grabKeyboard = function(...args) 
           
@@ -1147,7 +1147,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.grabKeyboard(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.releaseKeyboard = function(...args) 
           
@@ -1157,7 +1157,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.releaseKeyboard(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.grabShortcut = function(...args) 
           
@@ -1167,7 +1167,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.grabShortcut(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.releaseShortcut = function(...args) 
           
@@ -1177,7 +1177,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.releaseShortcut(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.setShortcutEnabled = function(...args) 
           
@@ -1187,7 +1187,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.setShortcutEnabled(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.setShortcutAutoRepeat = function(...args) 
           
@@ -1197,7 +1197,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.setShortcutAutoRepeat(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.setUpdatesEnabled = function(...args) 
           
@@ -1207,7 +1207,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.setUpdatesEnabled(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.update = function(...args) 
           
@@ -1217,7 +1217,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.update(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.repaint = function(...args) 
           
@@ -1227,7 +1227,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.repaint(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.setVisible = function(...args) 
           
@@ -1237,7 +1237,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.setVisible(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.setHidden = function(...args) 
           
@@ -1247,7 +1247,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.setHidden(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.show = function(...args) 
           
@@ -1257,7 +1257,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.show(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.hide = function(...args) 
           
@@ -1267,7 +1267,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.hide(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.showMinimized = function(...args) 
           
@@ -1277,7 +1277,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.showMinimized(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.showMaximized = function(...args) 
           
@@ -1287,7 +1287,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.showMaximized(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.showFullScreen = function(...args) 
           
@@ -1297,7 +1297,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.showFullScreen(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.showNormal = function(...args) 
           
@@ -1307,7 +1307,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.showNormal(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.close = function(...args) 
           
@@ -1317,7 +1317,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.close(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.raise = function(...args) 
           
@@ -1327,7 +1327,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.raise(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.lower = function(...args) 
           
@@ -1337,7 +1337,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.lower(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.stackUnder = function(...args) 
           
@@ -1347,7 +1347,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.stackUnder(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.move = function(...args) 
           
@@ -1357,7 +1357,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.move(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.resize = function(...args) 
           
@@ -1367,7 +1367,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.resize(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.setGeometry = function(...args) 
           
@@ -1377,7 +1377,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.setGeometry(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.saveGeometry = function(...args) 
           
@@ -1387,7 +1387,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.saveGeometry(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.restoreGeometry = function(...args) 
           
@@ -1397,7 +1397,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.restoreGeometry(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.adjustSize = function(...args) 
           
@@ -1407,7 +1407,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.adjustSize(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.isVisible = function(...args) 
           
@@ -1417,7 +1417,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.isVisible(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.isVisibleTo = function(...args) 
           
@@ -1427,7 +1427,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.isVisibleTo(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.isHidden = function(...args) 
           
@@ -1437,7 +1437,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.isHidden(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.isMinimized = function(...args) 
           
@@ -1447,7 +1447,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.isMinimized(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.isMaximized = function(...args) 
           
@@ -1457,7 +1457,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.isMaximized(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.isFullScreen = function(...args) 
           
@@ -1467,7 +1467,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.isFullScreen(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.windowState = function(...args) 
           
@@ -1477,7 +1477,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.windowState(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.setWindowState = function(...args) 
           
@@ -1487,7 +1487,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.setWindowState(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.overrideWindowState = function(...args) 
           
@@ -1497,7 +1497,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.overrideWindowState(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.setSizePolicy = function(...args) 
           
@@ -1507,7 +1507,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.setSizePolicy(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.heightForWidth = function(...args) 
           
@@ -1517,7 +1517,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.heightForWidth(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.hasHeightForWidth = function(...args) 
           
@@ -1527,7 +1527,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.hasHeightForWidth(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.visibleRegion = function(...args) 
           
@@ -1537,7 +1537,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.visibleRegion(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.setContentsMargins = function(...args) 
           
@@ -1547,7 +1547,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.setContentsMargins(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.contentsMargins = function(...args) 
           
@@ -1557,7 +1557,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.contentsMargins(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.contentsRect = function(...args) 
           
@@ -1567,7 +1567,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.contentsRect(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.layout = function(...args) 
           
@@ -1577,7 +1577,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.layout(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.setLayout = function(...args) 
           
@@ -1587,7 +1587,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.setLayout(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.updateGeometry = function(...args) 
           
@@ -1597,7 +1597,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.updateGeometry(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.setParent = function(...args) 
           
@@ -1607,7 +1607,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.setParent(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.scroll = function(...args) 
           
@@ -1617,7 +1617,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.scroll(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.focusWidget = function(...args) 
           
@@ -1627,7 +1627,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.focusWidget(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.nextInFocusChain = function(...args) 
           
@@ -1637,7 +1637,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.nextInFocusChain(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.previousInFocusChain = function(...args) 
           
@@ -1647,7 +1647,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.previousInFocusChain(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.setAcceptDrops = function(...args) 
           
@@ -1657,7 +1657,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.setAcceptDrops(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.addAction = function(...args) 
           
@@ -1667,7 +1667,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.addAction(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.addActions = function(...args) 
           
@@ -1677,7 +1677,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.addActions(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.insertActions = function(...args) 
           
@@ -1687,7 +1687,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.insertActions(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.insertAction = function(...args) 
           
@@ -1697,7 +1697,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.insertAction(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.removeAction = function(...args) 
           
@@ -1707,7 +1707,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.removeAction(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.actions = function(...args) 
           
@@ -1717,7 +1717,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.actions(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.parentWidget = function(...args) 
           
@@ -1727,7 +1727,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.parentWidget(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.setWindowFlags = function(...args) 
           
@@ -1737,7 +1737,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.setWindowFlags(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.windowFlags = function(...args) 
           
@@ -1747,7 +1747,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.windowFlags(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.setWindowFlag = function(...args) 
           
@@ -1757,7 +1757,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.setWindowFlag(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.overrideWindowFlags = function(...args) 
           
@@ -1767,7 +1767,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.overrideWindowFlags(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.windowType = function(...args) 
           
@@ -1777,7 +1777,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.windowType(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.childAt = function(...args) 
           
@@ -1787,7 +1787,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.childAt(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.setAttribute = function(...args) 
           
@@ -1797,7 +1797,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.setAttribute(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.testAttribute = function(...args) 
           
@@ -1807,7 +1807,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.testAttribute(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.ensurePolished = function(...args) 
           
@@ -1817,7 +1817,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.ensurePolished(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.isAncestorOf = function(...args) 
           
@@ -1827,7 +1827,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.isAncestorOf(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.setAutoFillBackground = function(...args) 
           
@@ -1837,7 +1837,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.setAutoFillBackground(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.event = function(...args) 
           
@@ -1847,7 +1847,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.event(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.mouseDoubleClickEvent = function(...args) 
           
@@ -1857,7 +1857,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.mouseDoubleClickEvent(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.wheelEvent = function(...args) 
           
@@ -1867,7 +1867,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.wheelEvent(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.keyPressEvent = function(...args) 
           
@@ -1877,7 +1877,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.keyPressEvent(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.keyReleaseEvent = function(...args) 
           
@@ -1887,7 +1887,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.keyReleaseEvent(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.focusInEvent = function(...args) 
           
@@ -1897,7 +1897,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.focusInEvent(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.focusOutEvent = function(...args) 
           
@@ -1907,7 +1907,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.focusOutEvent(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.enterEvent = function(...args) 
           
@@ -1917,7 +1917,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.enterEvent(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.leaveEvent = function(...args) 
           
@@ -1927,7 +1927,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.leaveEvent(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.moveEvent = function(...args) 
           
@@ -1937,7 +1937,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.moveEvent(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.closeEvent = function(...args) 
           
@@ -1947,7 +1947,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.closeEvent(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.tabletEvent = function(...args) 
           
@@ -1957,7 +1957,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.tabletEvent(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.dragEnterEvent = function(...args) 
           
@@ -1967,7 +1967,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.dragEnterEvent(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.dragMoveEvent = function(...args) 
           
@@ -1977,7 +1977,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.dragMoveEvent(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.dragLeaveEvent = function(...args) 
           
@@ -1987,7 +1987,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.dragLeaveEvent(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.dropEvent = function(...args) 
           
@@ -1997,7 +1997,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.dropEvent(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.showEvent = function(...args) 
           
@@ -2007,7 +2007,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.showEvent(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.hideEvent = function(...args) 
           
@@ -2017,7 +2017,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.hideEvent(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.nativeEvent = function(...args) 
           
@@ -2027,7 +2027,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.nativeEvent(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.changeEvent = function(...args) 
           
@@ -2037,7 +2037,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.changeEvent(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.metric = function(...args) 
           
@@ -2047,7 +2047,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.metric(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.initPainter = function(...args) 
           
@@ -2057,7 +2057,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.initPainter(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.redirected = function(...args) 
           
@@ -2067,7 +2067,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.redirected(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.sharedPainter = function(...args) 
           
@@ -2077,7 +2077,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.sharedPainter(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.inputMethodEvent = function(...args) 
           
@@ -2087,7 +2087,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.inputMethodEvent(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.inputMethodQuery = function(...args) 
           
@@ -2097,7 +2097,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.inputMethodQuery(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.setInputMethodHints = function(...args) 
           
@@ -2107,7 +2107,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.setInputMethodHints(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.updateMicroFocus = function(...args) 
           
@@ -2117,7 +2117,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.updateMicroFocus(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.create = function(...args) 
           
@@ -2127,7 +2127,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.create(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.destroy = function(...args) 
           
@@ -2137,7 +2137,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.destroy(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.focusNextPrevChild = function(...args) 
           
@@ -2147,7 +2147,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.focusNextPrevChild(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.focusNextChild = function(...args) 
           
@@ -2157,7 +2157,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.focusNextChild(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.focusPreviousChild = function(...args) 
           
@@ -2167,7 +2167,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.focusPreviousChild(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.setBackingStore = function(...args) 
           
@@ -2177,7 +2177,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.setBackingStore(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.testAttribute_helper = function(...args) 
           
@@ -2187,7 +2187,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.testAttribute_helper(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.takeLayout = function(...args) 
           
@@ -2197,7 +2197,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.takeLayout(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.qt_mac_is_metal = function(...args) 
           
@@ -2207,7 +2207,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.qt_mac_is_metal(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.qt_qwidget_data = function(...args) 
           
@@ -2217,7 +2217,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.qt_qwidget_data(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.qt_widget_private = function(...args) 
           
@@ -2227,7 +2227,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.qt_widget_private(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.setGraphicsView = function(...args) 
           
@@ -2237,7 +2237,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.setGraphicsView(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.getOrientation = function(...args) 
           
@@ -2247,7 +2247,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.getOrientation(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.frameStyle = function(...args) 
           
@@ -2257,7 +2257,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.frameStyle(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.setFrameStyle = function(...args) 
           
@@ -2267,7 +2267,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.setFrameStyle(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.setFrameShape = function(...args) 
           
@@ -2277,7 +2277,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.setFrameShape(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.setFrameShadow = function(...args) 
           
@@ -2287,7 +2287,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.setFrameShadow(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.setLineWidth = function(...args) 
           
@@ -2297,7 +2297,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.setLineWidth(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.setMidLineWidth = function(...args) 
           
@@ -2307,7 +2307,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.setMidLineWidth(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.setFrameRect = function(...args) 
           
@@ -2317,7 +2317,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.setFrameRect(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.drawFrame = function(...args) 
           
@@ -2327,7 +2327,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.drawFrame(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.initStyleOption = function(...args) 
           
@@ -2337,7 +2337,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.initStyleOption(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.setOrientation = function(...args) 
           
@@ -2347,7 +2347,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.setOrientation(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.paintTick = function(...args) 
           
@@ -2357,7 +2357,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.paintTick(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.getFont = function(...args) 
           
@@ -2367,7 +2367,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.getFont(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.updateViewport = function(...args) 
           
@@ -2377,7 +2377,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.updateViewport(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.updateCoordinate = function(...args) 
           
@@ -2387,7 +2387,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.updateCoordinate(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.updatePalette = function(...args) 
           
@@ -2397,7 +2397,7 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.updatePalette(...args);
             
         };
-    
+        
         // function 
         RRulerQt.prototype.paintEvent = function(...args) 
           
@@ -2407,7 +2407,8 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
               return this.__PROXY__.paintEventSuper(...args);
             
         };
-    
+        RRulerQt.prototype.paintEvent.__SUPER__ = true;
+        
 
       // static functions:
       

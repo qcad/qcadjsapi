@@ -105,7 +105,7 @@
               return this.__PROXY__.updatePreferences(...args);
             
         };
-    
+        
 
       // static functions:
       RPreferencesListener.prototype.isNullWrapper = function() {

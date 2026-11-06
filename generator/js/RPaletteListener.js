@@ -105,7 +105,7 @@
               return this.__PROXY__.updatePalette(...args);
             
         };
-    
+        
 
       // static functions:
       RPaletteListener.prototype.isNullWrapper = function() {

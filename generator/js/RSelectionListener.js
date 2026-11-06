@@ -105,7 +105,7 @@
               return this.__PROXY__.updateSelectionListener(...args);
             
         };
-    
+        
 
       // static functions:
       RSelectionListener.prototype.isNullWrapper = function() {

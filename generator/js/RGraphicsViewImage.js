@@ -148,7 +148,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.setObjectName(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.isWidgetType = function(...args) 
           
@@ -158,7 +158,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.isWidgetType(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.isWindowType = function(...args) 
           
@@ -168,7 +168,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.isWindowType(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.signalsBlocked = function(...args) 
           
@@ -178,7 +178,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.signalsBlocked(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.blockSignals = function(...args) 
           
@@ -188,7 +188,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.blockSignals(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.findChild = function(...args) 
           
@@ -198,7 +198,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.findChild(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.children = function(...args) 
           
@@ -208,7 +208,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.children(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.setParent = function(...args) 
           
@@ -218,7 +218,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.setParent(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.installEventFilter = function(...args) 
           
@@ -228,7 +228,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.installEventFilter(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.removeEventFilter = function(...args) 
           
@@ -238,7 +238,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.removeEventFilter(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.dumpObjectTree = function(...args) 
           
@@ -248,7 +248,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.dumpObjectTree(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.dumpObjectInfo = function(...args) 
           
@@ -258,7 +258,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.dumpObjectInfo(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.setProperty = function(...args) 
           
@@ -268,7 +268,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.setProperty(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.property = function(...args) 
           
@@ -278,7 +278,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.property(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.dynamicPropertyNames = function(...args) 
           
@@ -288,7 +288,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.dynamicPropertyNames(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.parent = function(...args) 
           
@@ -298,7 +298,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.parent(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.deleteLater = function(...args) 
           
@@ -308,7 +308,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.deleteLater(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.clearCaches = function(...args) 
           
@@ -318,7 +318,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.clearCaches(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.setDisplayOnlyCurrentUcs = function(...args) 
           
@@ -328,7 +328,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.setDisplayOnlyCurrentUcs(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.mapCornersFromView = function(...args) 
           
@@ -338,7 +338,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.mapCornersFromView(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.getMinimum = function(...args) 
           
@@ -348,7 +348,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.getMinimum(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.getMaximum = function(...args) 
           
@@ -358,7 +358,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.getMaximum(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.handleTerminateEvent = function(...args) 
           
@@ -368,7 +368,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.handleTerminateEvent(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.handleKeyPressEvent = function(...args) 
           
@@ -378,7 +378,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.handleKeyPressEvent(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.handleKeyReleaseEvent = function(...args) 
           
@@ -388,7 +388,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.handleKeyReleaseEvent(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.handleMouseMoveEvent = function(...args) 
           
@@ -398,7 +398,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.handleMouseMoveEvent(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.handleMousePressEvent = function(...args) 
           
@@ -408,7 +408,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.handleMousePressEvent(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.handleMouseReleaseEvent = function(...args) 
           
@@ -418,7 +418,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.handleMouseReleaseEvent(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.handleMouseDoubleClickEvent = function(...args) 
           
@@ -428,7 +428,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.handleMouseDoubleClickEvent(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.handleWheelEvent = function(...args) 
           
@@ -438,7 +438,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.handleWheelEvent(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.handleTabletEvent = function(...args) 
           
@@ -448,7 +448,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.handleTabletEvent(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.handleSwipeGestureEvent = function(...args) 
           
@@ -458,7 +458,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.handleSwipeGestureEvent(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.handlePanGestureEvent = function(...args) 
           
@@ -468,7 +468,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.handlePanGestureEvent(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.handlePinchGestureEvent = function(...args) 
           
@@ -478,7 +478,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.handlePinchGestureEvent(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.viewportChangeEvent = function(...args) 
           
@@ -488,7 +488,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.viewportChangeEvent(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.zoomIn = function(...args) 
           
@@ -498,7 +498,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.zoomIn(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.zoomOut = function(...args) 
           
@@ -508,7 +508,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.zoomOut(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.zoomPrevious = function(...args) 
           
@@ -518,7 +518,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.zoomPrevious(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.zoomToSelection = function(...args) 
           
@@ -528,7 +528,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.zoomToSelection(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.zoomToEntities = function(...args) 
           
@@ -538,7 +538,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.zoomToEntities(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.startPan = function(...args) 
           
@@ -548,7 +548,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.startPan(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.isActive = function(...args) 
           
@@ -558,7 +558,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.isActive(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.getSignalsBlocked = function(...args) 
           
@@ -568,7 +568,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.getSignalsBlocked(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.setSignalsBlocked = function(...args) 
           
@@ -578,7 +578,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.setSignalsBlocked(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.getCursor = function(...args) 
           
@@ -588,7 +588,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.getCursor(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.setCursor = function(...args) 
           
@@ -598,7 +598,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.setCursor(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.getClosestReferencePoint = function(...args) 
           
@@ -608,7 +608,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.getClosestReferencePoint(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.getClosestEntity = function(...args) 
           
@@ -618,7 +618,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.getClosestEntity(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.getMargin = function(...args) 
           
@@ -628,7 +628,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.getMargin(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.getColorMode = function(...args) 
           
@@ -638,7 +638,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.getColorMode(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.getTextLabels = function(...args) 
           
@@ -648,7 +648,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.getTextLabels(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.clearTextLabels = function(...args) 
           
@@ -658,7 +658,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.clearTextLabels(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.addTextLabel = function(...args) 
           
@@ -668,7 +668,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.addTextLabel(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.getLastKnownMousePosition = function(...args) 
           
@@ -678,7 +678,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.getLastKnownMousePosition(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.getCurrentStepScaleFactor = function(...args) 
           
@@ -688,7 +688,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.getCurrentStepScaleFactor(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.setCurrentStepScaleFactor = function(...args) 
           
@@ -698,7 +698,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.setCurrentStepScaleFactor(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.getCurrentStepOffset = function(...args) 
           
@@ -708,7 +708,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.getCurrentStepOffset(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.setCurrentStepOffset = function(...args) 
           
@@ -718,7 +718,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.setCurrentStepOffset(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.updateTextHeightThreshold = function(...args) 
           
@@ -728,7 +728,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.updateTextHeightThreshold(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.setForceTextHeightThreshold = function(...args) 
           
@@ -738,7 +738,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.setForceTextHeightThreshold(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.getForceTextHeightThreshold = function(...args) 
           
@@ -748,7 +748,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.getForceTextHeightThreshold(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.isPathVisible = function(...args) 
           
@@ -758,7 +758,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.isPathVisible(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.getDevicePixelRatio = function(...args) 
           
@@ -768,7 +768,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.getDevicePixelRatio(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.isShared = function(...args) 
           
@@ -778,7 +778,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.isShared(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.registerForFocus = function(...args) 
           
@@ -788,7 +788,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.registerForFocus(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.setWidget = function(...args) 
           
@@ -798,7 +798,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.setWidget(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.getWidget = function(...args) 
           
@@ -808,7 +808,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.getWidget(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.getNumThreads = function(...args) 
           
@@ -818,7 +818,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.getNumThreads(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.setNumThreads = function(...args) 
           
@@ -828,7 +828,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.setNumThreads(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.clear = function(...args) 
           
@@ -838,7 +838,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.clear(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.setViewportNumber = function(...args) 
           
@@ -848,7 +848,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.setViewportNumber(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.getViewportNumber = function(...args) 
           
@@ -858,7 +858,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.getViewportNumber(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.setNavigationAction = function(...args) 
           
@@ -868,7 +868,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.setNavigationAction(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.getBox = function(...args) 
           
@@ -878,7 +878,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.getBox(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.autoZoom = function(...args) 
           
@@ -888,7 +888,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.autoZoom(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.zoomTo = function(...args) 
           
@@ -898,7 +898,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.zoomTo(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.zoom = function(...args) 
           
@@ -908,7 +908,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.zoom(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.pan = function(...args) 
           
@@ -918,7 +918,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.pan(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.centerToBox = function(...args) 
           
@@ -928,7 +928,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.centerToBox(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.centerToPoint = function(...args) 
           
@@ -938,7 +938,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.centerToPoint(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.setGrid = function(...args) 
           
@@ -948,7 +948,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.setGrid(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.getGrid = function(...args) 
           
@@ -958,7 +958,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.getGrid(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.getFactor = function(...args) 
           
@@ -968,7 +968,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.getFactor(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.setFactor = function(...args) 
           
@@ -978,7 +978,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.setFactor(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.getOffset = function(...args) 
           
@@ -988,7 +988,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.getOffset(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.setOffset = function(...args) 
           
@@ -998,7 +998,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.setOffset(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.getBackgroundColor = function(...args) 
           
@@ -1008,7 +1008,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.getBackgroundColor(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.setMargin = function(...args) 
           
@@ -1018,7 +1018,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.setMargin(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.setColorMode = function(...args) 
           
@@ -1028,7 +1028,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.setColorMode(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.setHairlineMode = function(...args) 
           
@@ -1038,7 +1038,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.setHairlineMode(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.getHairlineMode = function(...args) 
           
@@ -1048,7 +1048,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.getHairlineMode(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.setHairlineMinimumMode = function(...args) 
           
@@ -1058,7 +1058,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.setHairlineMinimumMode(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.getHairlineMinimumMode = function(...args) 
           
@@ -1068,7 +1068,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.getHairlineMinimumMode(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.setAntialiasing = function(...args) 
           
@@ -1078,7 +1078,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.setAntialiasing(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.getAntialiasing = function(...args) 
           
@@ -1088,7 +1088,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.getAntialiasing(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.getScene = function(...args) 
           
@@ -1098,7 +1098,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.getScene(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.getDocument = function(...args) 
           
@@ -1108,7 +1108,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.getDocument(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.getDocumentInterface = function(...args) 
           
@@ -1118,7 +1118,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.getDocumentInterface(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.setExporting = function(...args) 
           
@@ -1128,7 +1128,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.setExporting(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.isExporting = function(...args) 
           
@@ -1138,7 +1138,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.isExporting(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.isPrintingOrExporting = function(...args) 
           
@@ -1148,7 +1148,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.isPrintingOrExporting(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.setPrinting = function(...args) 
           
@@ -1158,7 +1158,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.setPrinting(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.isPrinting = function(...args) 
           
@@ -1168,7 +1168,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.isPrinting(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.setPrintPreview = function(...args) 
           
@@ -1178,7 +1178,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.setPrintPreview(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.isPrintPreview = function(...args) 
           
@@ -1188,7 +1188,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.isPrintPreview(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.setPrintPointSize = function(...args) 
           
@@ -1198,7 +1198,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.setPrintPointSize(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.simulateMouseMoveEvent = function(...args) 
           
@@ -1208,7 +1208,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.simulateMouseMoveEvent(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.setTextHeightThresholdOverride = function(...args) 
           
@@ -1218,7 +1218,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.setTextHeightThresholdOverride(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.getTextHeightThresholdOverride = function(...args) 
           
@@ -1228,7 +1228,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.getTextHeightThresholdOverride(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.isGridVisible = function(...args) 
           
@@ -1238,7 +1238,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.isGridVisible(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.setGridVisible = function(...args) 
           
@@ -1248,7 +1248,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.setGridVisible(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.setScene = function(...args) 
           
@@ -1258,7 +1258,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.setScene(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.setBackgroundColor = function(...args) 
           
@@ -1268,7 +1268,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.setBackgroundColor(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.regenerate = function(...args) 
           
@@ -1278,7 +1278,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.regenerate(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.repaintView = function(...args) 
           
@@ -1288,7 +1288,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.repaintView(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.updateImage = function(...args) 
           
@@ -1298,7 +1298,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.updateImage(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.giveFocus = function(...args) 
           
@@ -1308,7 +1308,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.giveFocus(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.hasFocus = function(...args) 
           
@@ -1318,7 +1318,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.hasFocus(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.removeFocus = function(...args) 
           
@@ -1328,7 +1328,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.removeFocus(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.saveViewport = function(...args) 
           
@@ -1338,7 +1338,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.saveViewport(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.restoreViewport = function(...args) 
           
@@ -1348,7 +1348,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.restoreViewport(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.mapFromView = function(...args) 
           
@@ -1358,7 +1358,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.mapFromView(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.mapToView = function(...args) 
           
@@ -1368,7 +1368,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.mapToView(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.mapDistanceFromView = function(...args) 
           
@@ -1378,7 +1378,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.mapDistanceFromView(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.mapDistanceToView = function(...args) 
           
@@ -1388,7 +1388,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.mapDistanceToView(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.getWidth = function(...args) 
           
@@ -1398,7 +1398,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.getWidth(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.getHeight = function(...args) 
           
@@ -1408,7 +1408,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.getHeight(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.resizeImage = function(...args) 
           
@@ -1418,7 +1418,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.resizeImage(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.paintGridPoint = function(...args) 
           
@@ -1428,7 +1428,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.paintGridPoint(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.paintGridLine = function(...args) 
           
@@ -1438,7 +1438,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.paintGridLine(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.setPaintOrigin = function(...args) 
           
@@ -1448,7 +1448,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.setPaintOrigin(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.setPanOptimization = function(...args) 
           
@@ -1458,7 +1458,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.setPanOptimization(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.getPanOptimization = function(...args) 
           
@@ -1468,7 +1468,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.getPanOptimization(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.paintEntities = function(...args) 
           
@@ -1478,7 +1478,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.paintEntities(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.paintOverlay = function(...args) 
           
@@ -1488,7 +1488,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.paintOverlay(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.getBuffer = function(...args) 
           
@@ -1498,7 +1498,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.getBuffer(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.getGraphicsBufferWithPreview = function(...args) 
           
@@ -1508,7 +1508,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.getGraphicsBufferWithPreview(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.getTransform = function(...args) 
           
@@ -1518,7 +1518,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.getTransform(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.emitUpdateSnapInfo = function(...args) 
           
@@ -1528,7 +1528,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.emitUpdateSnapInfo(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.emitUpdateTextLabel = function(...args) 
           
@@ -1538,7 +1538,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.emitUpdateTextLabel(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.clearBackground = function(...args) 
           
@@ -1548,7 +1548,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.clearBackground(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.addToBackground = function(...args) 
           
@@ -1558,7 +1558,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.addToBackground(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.setBackgroundTransform = function(...args) 
           
@@ -1568,7 +1568,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.setBackgroundTransform(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.clearOverlay = function(...args) 
           
@@ -1578,7 +1578,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.clearOverlay(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.addToOverlay = function(...args) 
           
@@ -1588,7 +1588,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.addToOverlay(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.setColorCorrectionOverride = function(...args) 
           
@@ -1598,7 +1598,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.setColorCorrectionOverride(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.getColorCorrectionOverride = function(...args) 
           
@@ -1608,7 +1608,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.getColorCorrectionOverride(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.setMinimumLineweight = function(...args) 
           
@@ -1618,7 +1618,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.setMinimumLineweight(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.getMinimumLineweight = function(...args) 
           
@@ -1628,7 +1628,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.getMinimumLineweight(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.setMaximumLineweight = function(...args) 
           
@@ -1638,7 +1638,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.setMaximumLineweight(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.getMaximumLineweight = function(...args) 
           
@@ -1648,7 +1648,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.getMaximumLineweight(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.setPaintOffset = function(...args) 
           
@@ -1658,7 +1658,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.setPaintOffset(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.getPaintOffset = function(...args) 
           
@@ -1668,7 +1668,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.getPaintOffset(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.isAlphaEnabled = function(...args) 
           
@@ -1678,7 +1678,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.isAlphaEnabled(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.setAlphaEnabled = function(...args) 
           
@@ -1688,7 +1688,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.setAlphaEnabled(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.getDrawingScale = function(...args) 
           
@@ -1698,7 +1698,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.getDrawingScale(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewImage.prototype.setDrawingScale = function(...args) 
           
@@ -1708,7 +1708,7 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
               return this.__PROXY__.setDrawingScale(...args);
             
         };
-    
+        
 
       // static functions:
       

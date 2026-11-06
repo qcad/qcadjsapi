@@ -105,7 +105,7 @@
               return this.__PROXY__.updatePen(...args);
             
         };
-    
+        
         // function 
         RPenListener.prototype.clearPen = function(...args) 
           
@@ -115,7 +115,7 @@
               return this.__PROXY__.clearPen(...args);
             
         };
-    
+        
 
       // static functions:
       RPenListener.prototype.isNullWrapper = function() {

@@ -105,7 +105,7 @@
               return this.__PROXY__.updateViews(...args);
             
         };
-    
+        
         // function 
         RViewListener.prototype.clearViews = function(...args) 
           
@@ -115,7 +115,7 @@
               return this.__PROXY__.clearViews(...args);
             
         };
-    
+        
 
       // static functions:
       RViewListener.prototype.isNullWrapper = function() {

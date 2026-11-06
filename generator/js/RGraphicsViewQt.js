@@ -143,7 +143,8 @@
               return this.__PROXY__.eventFilterSuper(...args);
             
         };
-    
+        RGraphicsViewQt.prototype.eventFilter.__SUPER__ = true;
+        
         // function 
         RGraphicsViewQt.prototype.setObjectName = function(...args) 
           
@@ -153,7 +154,7 @@
               return this.__PROXY__.setObjectName(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.isWidgetType = function(...args) 
           
@@ -163,7 +164,7 @@
               return this.__PROXY__.isWidgetType(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.isWindowType = function(...args) 
           
@@ -173,7 +174,7 @@
               return this.__PROXY__.isWindowType(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.signalsBlocked = function(...args) 
           
@@ -183,7 +184,7 @@
               return this.__PROXY__.signalsBlocked(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.blockSignals = function(...args) 
           
@@ -193,7 +194,7 @@
               return this.__PROXY__.blockSignals(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.findChild = function(...args) 
           
@@ -203,7 +204,7 @@
               return this.__PROXY__.findChild(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.children = function(...args) 
           
@@ -213,7 +214,7 @@
               return this.__PROXY__.children(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.installEventFilter = function(...args) 
           
@@ -223,7 +224,7 @@
               return this.__PROXY__.installEventFilter(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.removeEventFilter = function(...args) 
           
@@ -233,7 +234,7 @@
               return this.__PROXY__.removeEventFilter(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.dumpObjectTree = function(...args) 
           
@@ -243,7 +244,7 @@
               return this.__PROXY__.dumpObjectTree(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.dumpObjectInfo = function(...args) 
           
@@ -253,7 +254,7 @@
               return this.__PROXY__.dumpObjectInfo(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.setProperty = function(...args) 
           
@@ -263,7 +264,7 @@
               return this.__PROXY__.setProperty(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.property = function(...args) 
           
@@ -273,7 +274,7 @@
               return this.__PROXY__.property(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.dynamicPropertyNames = function(...args) 
           
@@ -283,7 +284,7 @@
               return this.__PROXY__.dynamicPropertyNames(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.parent = function(...args) 
           
@@ -293,7 +294,7 @@
               return this.__PROXY__.parent(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.deleteLater = function(...args) 
           
@@ -303,7 +304,7 @@
               return this.__PROXY__.deleteLater(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.devType = function(...args) 
           
@@ -313,7 +314,7 @@
               return this.__PROXY__.devType(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.createWinId = function(...args) 
           
@@ -323,7 +324,7 @@
               return this.__PROXY__.createWinId(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.isWindow = function(...args) 
           
@@ -333,7 +334,7 @@
               return this.__PROXY__.isWindow(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.isModal = function(...args) 
           
@@ -343,7 +344,7 @@
               return this.__PROXY__.isModal(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.setWindowModality = function(...args) 
           
@@ -353,7 +354,7 @@
               return this.__PROXY__.setWindowModality(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.isEnabled = function(...args) 
           
@@ -363,7 +364,7 @@
               return this.__PROXY__.isEnabled(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.isEnabledTo = function(...args) 
           
@@ -373,7 +374,7 @@
               return this.__PROXY__.isEnabledTo(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.setEnabled = function(...args) 
           
@@ -383,7 +384,7 @@
               return this.__PROXY__.setEnabled(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.setDisabled = function(...args) 
           
@@ -393,7 +394,7 @@
               return this.__PROXY__.setDisabled(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.setWindowModified = function(...args) 
           
@@ -403,7 +404,7 @@
               return this.__PROXY__.setWindowModified(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.setMinimumSize = function(...args) 
           
@@ -413,7 +414,7 @@
               return this.__PROXY__.setMinimumSize(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.setMaximumSize = function(...args) 
           
@@ -423,7 +424,7 @@
               return this.__PROXY__.setMaximumSize(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.setMinimumWidth = function(...args) 
           
@@ -433,7 +434,7 @@
               return this.__PROXY__.setMinimumWidth(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.setMinimumHeight = function(...args) 
           
@@ -443,7 +444,7 @@
               return this.__PROXY__.setMinimumHeight(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.setMaximumWidth = function(...args) 
           
@@ -453,7 +454,7 @@
               return this.__PROXY__.setMaximumWidth(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.setMaximumHeight = function(...args) 
           
@@ -463,7 +464,7 @@
               return this.__PROXY__.setMaximumHeight(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.setSizeIncrement = function(...args) 
           
@@ -473,7 +474,7 @@
               return this.__PROXY__.setSizeIncrement(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.setBaseSize = function(...args) 
           
@@ -483,7 +484,7 @@
               return this.__PROXY__.setBaseSize(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.setFixedSize = function(...args) 
           
@@ -493,7 +494,7 @@
               return this.__PROXY__.setFixedSize(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.setFixedWidth = function(...args) 
           
@@ -503,7 +504,7 @@
               return this.__PROXY__.setFixedWidth(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.setFixedHeight = function(...args) 
           
@@ -513,7 +514,7 @@
               return this.__PROXY__.setFixedHeight(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.mapToGlobal = function(...args) 
           
@@ -523,7 +524,7 @@
               return this.__PROXY__.mapToGlobal(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.mapFromGlobal = function(...args) 
           
@@ -533,7 +534,7 @@
               return this.__PROXY__.mapFromGlobal(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.mapToParent = function(...args) 
           
@@ -543,7 +544,7 @@
               return this.__PROXY__.mapToParent(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.mapFromParent = function(...args) 
           
@@ -553,7 +554,7 @@
               return this.__PROXY__.mapFromParent(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.mapTo = function(...args) 
           
@@ -563,7 +564,7 @@
               return this.__PROXY__.mapTo(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.mapFrom = function(...args) 
           
@@ -573,7 +574,7 @@
               return this.__PROXY__.mapFrom(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.window = function(...args) 
           
@@ -583,7 +584,7 @@
               return this.__PROXY__.window(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.nativeParentWidget = function(...args) 
           
@@ -593,7 +594,7 @@
               return this.__PROXY__.nativeParentWidget(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.topLevelWidget = function(...args) 
           
@@ -603,7 +604,7 @@
               return this.__PROXY__.topLevelWidget(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.setPalette = function(...args) 
           
@@ -613,7 +614,7 @@
               return this.__PROXY__.setPalette(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.setBackgroundRole = function(...args) 
           
@@ -623,7 +624,7 @@
               return this.__PROXY__.setBackgroundRole(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.backgroundRole = function(...args) 
           
@@ -633,7 +634,7 @@
               return this.__PROXY__.backgroundRole(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.setForegroundRole = function(...args) 
           
@@ -643,7 +644,7 @@
               return this.__PROXY__.setForegroundRole(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.foregroundRole = function(...args) 
           
@@ -653,7 +654,7 @@
               return this.__PROXY__.foregroundRole(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.setFont = function(...args) 
           
@@ -663,7 +664,7 @@
               return this.__PROXY__.setFont(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.fontInfo = function(...args) 
           
@@ -673,7 +674,7 @@
               return this.__PROXY__.fontInfo(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.setCursor = function(...args) 
           
@@ -683,7 +684,7 @@
               return this.__PROXY__.setCursor(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.unsetCursor = function(...args) 
           
@@ -693,7 +694,7 @@
               return this.__PROXY__.unsetCursor(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.setMouseTracking = function(...args) 
           
@@ -703,7 +704,7 @@
               return this.__PROXY__.setMouseTracking(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.hasMouseTracking = function(...args) 
           
@@ -713,7 +714,7 @@
               return this.__PROXY__.hasMouseTracking(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.underMouse = function(...args) 
           
@@ -723,7 +724,7 @@
               return this.__PROXY__.underMouse(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.setTabletTracking = function(...args) 
           
@@ -733,7 +734,7 @@
               return this.__PROXY__.setTabletTracking(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.hasTabletTracking = function(...args) 
           
@@ -743,7 +744,7 @@
               return this.__PROXY__.hasTabletTracking(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.setMask = function(...args) 
           
@@ -753,7 +754,7 @@
               return this.__PROXY__.setMask(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.mask = function(...args) 
           
@@ -763,7 +764,7 @@
               return this.__PROXY__.mask(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.clearMask = function(...args) 
           
@@ -773,7 +774,7 @@
               return this.__PROXY__.clearMask(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.grab = function(...args) 
           
@@ -783,7 +784,7 @@
               return this.__PROXY__.grab(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.grabGesture = function(...args) 
           
@@ -793,7 +794,7 @@
               return this.__PROXY__.grabGesture(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.ungrabGesture = function(...args) 
           
@@ -803,7 +804,7 @@
               return this.__PROXY__.ungrabGesture(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.setWindowTitle = function(...args) 
           
@@ -813,7 +814,7 @@
               return this.__PROXY__.setWindowTitle(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.setStyleSheet = function(...args) 
           
@@ -823,7 +824,7 @@
               return this.__PROXY__.setStyleSheet(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.setWindowIcon = function(...args) 
           
@@ -833,7 +834,7 @@
               return this.__PROXY__.setWindowIcon(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.setWindowIconText = function(...args) 
           
@@ -843,7 +844,7 @@
               return this.__PROXY__.setWindowIconText(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.setWindowRole = function(...args) 
           
@@ -853,7 +854,7 @@
               return this.__PROXY__.setWindowRole(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.windowRole = function(...args) 
           
@@ -863,7 +864,7 @@
               return this.__PROXY__.windowRole(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.setWindowFilePath = function(...args) 
           
@@ -873,7 +874,7 @@
               return this.__PROXY__.setWindowFilePath(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.setWindowOpacity = function(...args) 
           
@@ -883,7 +884,7 @@
               return this.__PROXY__.setWindowOpacity(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.isWindowModified = function(...args) 
           
@@ -893,7 +894,7 @@
               return this.__PROXY__.isWindowModified(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.setToolTip = function(...args) 
           
@@ -903,7 +904,7 @@
               return this.__PROXY__.setToolTip(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.setToolTipDuration = function(...args) 
           
@@ -913,7 +914,7 @@
               return this.__PROXY__.setToolTipDuration(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.setStatusTip = function(...args) 
           
@@ -923,7 +924,7 @@
               return this.__PROXY__.setStatusTip(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.setWhatsThis = function(...args) 
           
@@ -933,7 +934,7 @@
               return this.__PROXY__.setWhatsThis(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.setAccessibleName = function(...args) 
           
@@ -943,7 +944,7 @@
               return this.__PROXY__.setAccessibleName(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.setAccessibleDescription = function(...args) 
           
@@ -953,7 +954,7 @@
               return this.__PROXY__.setAccessibleDescription(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.setLayoutDirection = function(...args) 
           
@@ -963,7 +964,7 @@
               return this.__PROXY__.setLayoutDirection(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.unsetLayoutDirection = function(...args) 
           
@@ -973,7 +974,7 @@
               return this.__PROXY__.unsetLayoutDirection(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.setLocale = function(...args) 
           
@@ -983,7 +984,7 @@
               return this.__PROXY__.setLocale(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.unsetLocale = function(...args) 
           
@@ -993,7 +994,7 @@
               return this.__PROXY__.unsetLocale(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.isRightToLeft = function(...args) 
           
@@ -1003,7 +1004,7 @@
               return this.__PROXY__.isRightToLeft(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.isLeftToRight = function(...args) 
           
@@ -1013,7 +1014,7 @@
               return this.__PROXY__.isLeftToRight(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.activateWindow = function(...args) 
           
@@ -1023,7 +1024,7 @@
               return this.__PROXY__.activateWindow(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.clearFocus = function(...args) 
           
@@ -1033,7 +1034,7 @@
               return this.__PROXY__.clearFocus(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.setFocus = function(...args) 
           
@@ -1043,7 +1044,7 @@
               return this.__PROXY__.setFocus(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.setFocusPolicy = function(...args) 
           
@@ -1053,7 +1054,7 @@
               return this.__PROXY__.setFocusPolicy(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.hasFocus = function(...args) 
           
@@ -1063,7 +1064,7 @@
               return this.__PROXY__.hasFocus(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.setFocusProxy = function(...args) 
           
@@ -1073,7 +1074,7 @@
               return this.__PROXY__.setFocusProxy(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.focusProxy = function(...args) 
           
@@ -1083,7 +1084,7 @@
               return this.__PROXY__.focusProxy(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.setContextMenuPolicy = function(...args) 
           
@@ -1093,7 +1094,7 @@
               return this.__PROXY__.setContextMenuPolicy(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.grabMouse = function(...args) 
           
@@ -1103,7 +1104,7 @@
               return this.__PROXY__.grabMouse(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.releaseMouse = function(...args) 
           
@@ -1113,7 +1114,7 @@
               return this.__PROXY__.releaseMouse(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.grabKeyboard = function(...args) 
           
@@ -1123,7 +1124,7 @@
               return this.__PROXY__.grabKeyboard(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.releaseKeyboard = function(...args) 
           
@@ -1133,7 +1134,7 @@
               return this.__PROXY__.releaseKeyboard(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.grabShortcut = function(...args) 
           
@@ -1143,7 +1144,7 @@
               return this.__PROXY__.grabShortcut(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.releaseShortcut = function(...args) 
           
@@ -1153,7 +1154,7 @@
               return this.__PROXY__.releaseShortcut(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.setShortcutEnabled = function(...args) 
           
@@ -1163,7 +1164,7 @@
               return this.__PROXY__.setShortcutEnabled(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.setShortcutAutoRepeat = function(...args) 
           
@@ -1173,7 +1174,7 @@
               return this.__PROXY__.setShortcutAutoRepeat(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.setUpdatesEnabled = function(...args) 
           
@@ -1183,7 +1184,7 @@
               return this.__PROXY__.setUpdatesEnabled(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.update = function(...args) 
           
@@ -1193,7 +1194,7 @@
               return this.__PROXY__.update(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.repaint = function(...args) 
           
@@ -1203,7 +1204,7 @@
               return this.__PROXY__.repaint(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.setVisible = function(...args) 
           
@@ -1213,7 +1214,7 @@
               return this.__PROXY__.setVisible(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.setHidden = function(...args) 
           
@@ -1223,7 +1224,7 @@
               return this.__PROXY__.setHidden(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.show = function(...args) 
           
@@ -1233,7 +1234,7 @@
               return this.__PROXY__.show(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.hide = function(...args) 
           
@@ -1243,7 +1244,7 @@
               return this.__PROXY__.hide(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.showMinimized = function(...args) 
           
@@ -1253,7 +1254,7 @@
               return this.__PROXY__.showMinimized(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.showMaximized = function(...args) 
           
@@ -1263,7 +1264,7 @@
               return this.__PROXY__.showMaximized(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.showFullScreen = function(...args) 
           
@@ -1273,7 +1274,7 @@
               return this.__PROXY__.showFullScreen(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.showNormal = function(...args) 
           
@@ -1283,7 +1284,7 @@
               return this.__PROXY__.showNormal(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.close = function(...args) 
           
@@ -1293,7 +1294,7 @@
               return this.__PROXY__.close(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.raise = function(...args) 
           
@@ -1303,7 +1304,7 @@
               return this.__PROXY__.raise(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.lower = function(...args) 
           
@@ -1313,7 +1314,7 @@
               return this.__PROXY__.lower(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.stackUnder = function(...args) 
           
@@ -1323,7 +1324,7 @@
               return this.__PROXY__.stackUnder(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.move = function(...args) 
           
@@ -1333,7 +1334,7 @@
               return this.__PROXY__.move(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.resize = function(...args) 
           
@@ -1343,7 +1344,7 @@
               return this.__PROXY__.resize(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.setGeometry = function(...args) 
           
@@ -1353,7 +1354,7 @@
               return this.__PROXY__.setGeometry(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.saveGeometry = function(...args) 
           
@@ -1363,7 +1364,7 @@
               return this.__PROXY__.saveGeometry(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.restoreGeometry = function(...args) 
           
@@ -1373,7 +1374,7 @@
               return this.__PROXY__.restoreGeometry(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.adjustSize = function(...args) 
           
@@ -1383,7 +1384,7 @@
               return this.__PROXY__.adjustSize(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.isVisible = function(...args) 
           
@@ -1393,7 +1394,7 @@
               return this.__PROXY__.isVisible(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.isVisibleTo = function(...args) 
           
@@ -1403,7 +1404,7 @@
               return this.__PROXY__.isVisibleTo(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.isHidden = function(...args) 
           
@@ -1413,7 +1414,7 @@
               return this.__PROXY__.isHidden(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.isMinimized = function(...args) 
           
@@ -1423,7 +1424,7 @@
               return this.__PROXY__.isMinimized(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.isMaximized = function(...args) 
           
@@ -1433,7 +1434,7 @@
               return this.__PROXY__.isMaximized(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.isFullScreen = function(...args) 
           
@@ -1443,7 +1444,7 @@
               return this.__PROXY__.isFullScreen(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.windowState = function(...args) 
           
@@ -1453,7 +1454,7 @@
               return this.__PROXY__.windowState(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.setWindowState = function(...args) 
           
@@ -1463,7 +1464,7 @@
               return this.__PROXY__.setWindowState(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.overrideWindowState = function(...args) 
           
@@ -1473,7 +1474,7 @@
               return this.__PROXY__.overrideWindowState(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.setSizePolicy = function(...args) 
           
@@ -1483,7 +1484,7 @@
               return this.__PROXY__.setSizePolicy(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.heightForWidth = function(...args) 
           
@@ -1493,7 +1494,7 @@
               return this.__PROXY__.heightForWidth(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.hasHeightForWidth = function(...args) 
           
@@ -1503,7 +1504,7 @@
               return this.__PROXY__.hasHeightForWidth(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.visibleRegion = function(...args) 
           
@@ -1513,7 +1514,7 @@
               return this.__PROXY__.visibleRegion(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.setContentsMargins = function(...args) 
           
@@ -1523,7 +1524,7 @@
               return this.__PROXY__.setContentsMargins(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.contentsMargins = function(...args) 
           
@@ -1533,7 +1534,7 @@
               return this.__PROXY__.contentsMargins(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.contentsRect = function(...args) 
           
@@ -1543,7 +1544,7 @@
               return this.__PROXY__.contentsRect(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.layout = function(...args) 
           
@@ -1553,7 +1554,7 @@
               return this.__PROXY__.layout(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.setLayout = function(...args) 
           
@@ -1563,7 +1564,7 @@
               return this.__PROXY__.setLayout(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.updateGeometry = function(...args) 
           
@@ -1573,7 +1574,7 @@
               return this.__PROXY__.updateGeometry(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.setParent = function(...args) 
           
@@ -1583,7 +1584,7 @@
               return this.__PROXY__.setParent(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.scroll = function(...args) 
           
@@ -1593,7 +1594,7 @@
               return this.__PROXY__.scroll(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.focusWidget = function(...args) 
           
@@ -1603,7 +1604,7 @@
               return this.__PROXY__.focusWidget(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.nextInFocusChain = function(...args) 
           
@@ -1613,7 +1614,7 @@
               return this.__PROXY__.nextInFocusChain(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.previousInFocusChain = function(...args) 
           
@@ -1623,7 +1624,7 @@
               return this.__PROXY__.previousInFocusChain(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.setAcceptDrops = function(...args) 
           
@@ -1633,7 +1634,7 @@
               return this.__PROXY__.setAcceptDrops(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.addAction = function(...args) 
           
@@ -1643,7 +1644,7 @@
               return this.__PROXY__.addAction(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.addActions = function(...args) 
           
@@ -1653,7 +1654,7 @@
               return this.__PROXY__.addActions(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.insertActions = function(...args) 
           
@@ -1663,7 +1664,7 @@
               return this.__PROXY__.insertActions(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.insertAction = function(...args) 
           
@@ -1673,7 +1674,7 @@
               return this.__PROXY__.insertAction(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.removeAction = function(...args) 
           
@@ -1683,7 +1684,7 @@
               return this.__PROXY__.removeAction(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.actions = function(...args) 
           
@@ -1693,7 +1694,7 @@
               return this.__PROXY__.actions(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.parentWidget = function(...args) 
           
@@ -1703,7 +1704,7 @@
               return this.__PROXY__.parentWidget(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.setWindowFlags = function(...args) 
           
@@ -1713,7 +1714,7 @@
               return this.__PROXY__.setWindowFlags(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.windowFlags = function(...args) 
           
@@ -1723,7 +1724,7 @@
               return this.__PROXY__.windowFlags(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.setWindowFlag = function(...args) 
           
@@ -1733,7 +1734,7 @@
               return this.__PROXY__.setWindowFlag(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.overrideWindowFlags = function(...args) 
           
@@ -1743,7 +1744,7 @@
               return this.__PROXY__.overrideWindowFlags(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.windowType = function(...args) 
           
@@ -1753,7 +1754,7 @@
               return this.__PROXY__.windowType(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.childAt = function(...args) 
           
@@ -1763,7 +1764,7 @@
               return this.__PROXY__.childAt(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.setAttribute = function(...args) 
           
@@ -1773,7 +1774,7 @@
               return this.__PROXY__.setAttribute(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.testAttribute = function(...args) 
           
@@ -1783,7 +1784,7 @@
               return this.__PROXY__.testAttribute(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.ensurePolished = function(...args) 
           
@@ -1793,7 +1794,7 @@
               return this.__PROXY__.ensurePolished(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.isAncestorOf = function(...args) 
           
@@ -1803,7 +1804,7 @@
               return this.__PROXY__.isAncestorOf(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.setAutoFillBackground = function(...args) 
           
@@ -1813,7 +1814,7 @@
               return this.__PROXY__.setAutoFillBackground(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.event = function(...args) 
           
@@ -1823,7 +1824,7 @@
               return this.__PROXY__.event(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.mousePressEvent = function(...args) 
           
@@ -1833,7 +1834,8 @@
               return this.__PROXY__.mousePressEventSuper(...args);
             
         };
-    
+        RGraphicsViewQt.prototype.mousePressEvent.__SUPER__ = true;
+        
         // function 
         RGraphicsViewQt.prototype.mouseReleaseEvent = function(...args) 
           
@@ -1843,7 +1845,8 @@
               return this.__PROXY__.mouseReleaseEventSuper(...args);
             
         };
-    
+        RGraphicsViewQt.prototype.mouseReleaseEvent.__SUPER__ = true;
+        
         // function 
         RGraphicsViewQt.prototype.mouseDoubleClickEvent = function(...args) 
           
@@ -1853,7 +1856,7 @@
               return this.__PROXY__.mouseDoubleClickEvent(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.wheelEvent = function(...args) 
           
@@ -1863,7 +1866,7 @@
               return this.__PROXY__.wheelEvent(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.keyPressEvent = function(...args) 
           
@@ -1873,7 +1876,7 @@
               return this.__PROXY__.keyPressEvent(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.keyReleaseEvent = function(...args) 
           
@@ -1883,7 +1886,7 @@
               return this.__PROXY__.keyReleaseEvent(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.focusInEvent = function(...args) 
           
@@ -1893,7 +1896,7 @@
               return this.__PROXY__.focusInEvent(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.focusOutEvent = function(...args) 
           
@@ -1903,7 +1906,7 @@
               return this.__PROXY__.focusOutEvent(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.enterEvent = function(...args) 
           
@@ -1913,7 +1916,7 @@
               return this.__PROXY__.enterEvent(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.leaveEvent = function(...args) 
           
@@ -1923,7 +1926,7 @@
               return this.__PROXY__.leaveEvent(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.moveEvent = function(...args) 
           
@@ -1933,7 +1936,7 @@
               return this.__PROXY__.moveEvent(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.closeEvent = function(...args) 
           
@@ -1943,7 +1946,7 @@
               return this.__PROXY__.closeEvent(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.tabletEvent = function(...args) 
           
@@ -1953,7 +1956,7 @@
               return this.__PROXY__.tabletEvent(...args);
             
         };
-    
+        
       // function 
       RGraphicsViewQt.prototype.actionEvent = function() 
         
@@ -1995,7 +1998,7 @@
               return this.__PROXY__.dragEnterEvent(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.dragMoveEvent = function(...args) 
           
@@ -2005,7 +2008,7 @@
               return this.__PROXY__.dragMoveEvent(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.dragLeaveEvent = function(...args) 
           
@@ -2015,7 +2018,7 @@
               return this.__PROXY__.dragLeaveEvent(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.dropEvent = function(...args) 
           
@@ -2025,7 +2028,7 @@
               return this.__PROXY__.dropEvent(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.showEvent = function(...args) 
           
@@ -2035,7 +2038,7 @@
               return this.__PROXY__.showEvent(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.hideEvent = function(...args) 
           
@@ -2045,7 +2048,7 @@
               return this.__PROXY__.hideEvent(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.nativeEvent = function(...args) 
           
@@ -2055,7 +2058,7 @@
               return this.__PROXY__.nativeEvent(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.changeEvent = function(...args) 
           
@@ -2065,7 +2068,7 @@
               return this.__PROXY__.changeEvent(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.metric = function(...args) 
           
@@ -2075,7 +2078,7 @@
               return this.__PROXY__.metric(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.initPainter = function(...args) 
           
@@ -2085,7 +2088,7 @@
               return this.__PROXY__.initPainter(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.redirected = function(...args) 
           
@@ -2095,7 +2098,7 @@
               return this.__PROXY__.redirected(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.sharedPainter = function(...args) 
           
@@ -2105,7 +2108,7 @@
               return this.__PROXY__.sharedPainter(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.inputMethodEvent = function(...args) 
           
@@ -2115,7 +2118,7 @@
               return this.__PROXY__.inputMethodEvent(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.inputMethodQuery = function(...args) 
           
@@ -2125,7 +2128,7 @@
               return this.__PROXY__.inputMethodQuery(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.setInputMethodHints = function(...args) 
           
@@ -2135,7 +2138,7 @@
               return this.__PROXY__.setInputMethodHints(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.updateMicroFocus = function(...args) 
           
@@ -2145,7 +2148,7 @@
               return this.__PROXY__.updateMicroFocus(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.create = function(...args) 
           
@@ -2155,7 +2158,7 @@
               return this.__PROXY__.create(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.destroy = function(...args) 
           
@@ -2165,7 +2168,7 @@
               return this.__PROXY__.destroy(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.focusNextPrevChild = function(...args) 
           
@@ -2175,7 +2178,7 @@
               return this.__PROXY__.focusNextPrevChild(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.focusNextChild = function(...args) 
           
@@ -2185,7 +2188,7 @@
               return this.__PROXY__.focusNextChild(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.focusPreviousChild = function(...args) 
           
@@ -2195,7 +2198,7 @@
               return this.__PROXY__.focusPreviousChild(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.setBackingStore = function(...args) 
           
@@ -2205,7 +2208,7 @@
               return this.__PROXY__.setBackingStore(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.testAttribute_helper = function(...args) 
           
@@ -2215,7 +2218,7 @@
               return this.__PROXY__.testAttribute_helper(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.takeLayout = function(...args) 
           
@@ -2225,7 +2228,7 @@
               return this.__PROXY__.takeLayout(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.qt_mac_is_metal = function(...args) 
           
@@ -2235,7 +2238,7 @@
               return this.__PROXY__.qt_mac_is_metal(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.qt_qwidget_data = function(...args) 
           
@@ -2245,7 +2248,7 @@
               return this.__PROXY__.qt_qwidget_data(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.qt_widget_private = function(...args) 
           
@@ -2255,7 +2258,7 @@
               return this.__PROXY__.qt_widget_private(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.setImageView = function(...args) 
           
@@ -2265,7 +2268,7 @@
               return this.__PROXY__.setImageView(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.getImageView = function(...args) 
           
@@ -2275,7 +2278,7 @@
               return this.__PROXY__.getImageView(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.disableGestures = function(...args) 
           
@@ -2285,7 +2288,7 @@
               return this.__PROXY__.disableGestures(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.removeFocus = function(...args) 
           
@@ -2295,7 +2298,7 @@
               return this.__PROXY__.removeFocus(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.getWidth = function(...args) 
           
@@ -2305,7 +2308,7 @@
               return this.__PROXY__.getWidth(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.getHeight = function(...args) 
           
@@ -2315,7 +2318,7 @@
               return this.__PROXY__.getHeight(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.getRect = function(...args) 
           
@@ -2325,7 +2328,7 @@
               return this.__PROXY__.getRect(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.getSignalsBlocked = function(...args) 
           
@@ -2335,7 +2338,7 @@
               return this.__PROXY__.getSignalsBlocked(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.setSignalsBlocked = function(...args) 
           
@@ -2345,7 +2348,7 @@
               return this.__PROXY__.setSignalsBlocked(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.setFocusFrameWidget = function(...args) 
           
@@ -2355,7 +2358,7 @@
               return this.__PROXY__.setFocusFrameWidget(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.simulateMouseMoveEvent = function(...args) 
           
@@ -2365,7 +2368,7 @@
               return this.__PROXY__.simulateMouseMoveEvent(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewQt.prototype.mouseMoveEvent = function(...args) 
           
@@ -2375,7 +2378,8 @@
               return this.__PROXY__.mouseMoveEventSuper(...args);
             
         };
-    
+        RGraphicsViewQt.prototype.mouseMoveEvent.__SUPER__ = true;
+        
         // function 
         RGraphicsViewQt.prototype.paintEvent = function(...args) 
           
@@ -2385,7 +2389,8 @@
               return this.__PROXY__.paintEventSuper(...args);
             
         };
-    
+        RGraphicsViewQt.prototype.paintEvent.__SUPER__ = true;
+        
       // function 
       RGraphicsViewQt.prototype.resizeEvent = function() 
         

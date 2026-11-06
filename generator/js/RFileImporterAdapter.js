@@ -169,7 +169,7 @@
               return this.__PROXY__.startImport(...args);
             
         };
-    
+        
         // function 
         RFileImporterAdapter.prototype.endImport = function(...args) 
           
@@ -179,7 +179,7 @@
               return this.__PROXY__.endImport(...args);
             
         };
-    
+        
         // function 
         RFileImporterAdapter.prototype.importObjectP = function(...args) 
           
@@ -189,7 +189,7 @@
               return this.__PROXY__.importObjectP(...args);
             
         };
-    
+        
         // function 
         RFileImporterAdapter.prototype.importObject = function(...args) 
           
@@ -199,7 +199,7 @@
               return this.__PROXY__.importObject(...args);
             
         };
-    
+        
         // function 
         RFileImporterAdapter.prototype.setCurrentBlockId = function(...args) 
           
@@ -209,7 +209,7 @@
               return this.__PROXY__.setCurrentBlockId(...args);
             
         };
-    
+        
         // function 
         RFileImporterAdapter.prototype.getCurrentBlockId = function(...args) 
           
@@ -219,7 +219,7 @@
               return this.__PROXY__.getCurrentBlockId(...args);
             
         };
-    
+        
         // function 
         RFileImporterAdapter.prototype.getDocument = function(...args) 
           
@@ -229,7 +229,7 @@
               return this.__PROXY__.getDocument(...args);
             
         };
-    
+        
         // function 
         RFileImporterAdapter.prototype.setDocument = function(...args) 
           
@@ -239,7 +239,7 @@
               return this.__PROXY__.setDocument(...args);
             
         };
-    
+        
         // function 
         RFileImporterAdapter.prototype.setKnownVariable = function(...args) 
           
@@ -249,7 +249,7 @@
               return this.__PROXY__.setKnownVariable(...args);
             
         };
-    
+        
       // function 
       RFileImporterAdapter.prototype.importFile = function() 
         

@@ -160,7 +160,7 @@
               return this.__PROXY__.isValid(...args);
             
         };
-    
+        
         // function 
         RFont.prototype.getFileName = function(...args) 
           
@@ -170,7 +170,7 @@
               return this.__PROXY__.getFileName(...args);
             
         };
-    
+        
         // function 
         RFont.prototype.getEncoding = function(...args) 
           
@@ -180,7 +180,7 @@
               return this.__PROXY__.getEncoding(...args);
             
         };
-    
+        
         // function 
         RFont.prototype.getNames = function(...args) 
           
@@ -190,7 +190,7 @@
               return this.__PROXY__.getNames(...args);
             
         };
-    
+        
         // function 
         RFont.prototype.getAuthors = function(...args) 
           
@@ -200,7 +200,7 @@
               return this.__PROXY__.getAuthors(...args);
             
         };
-    
+        
         // function 
         RFont.prototype.getLetterSpacing = function(...args) 
           
@@ -210,7 +210,7 @@
               return this.__PROXY__.getLetterSpacing(...args);
             
         };
-    
+        
         // function 
         RFont.prototype.getWordSpacing = function(...args) 
           
@@ -220,7 +220,7 @@
               return this.__PROXY__.getWordSpacing(...args);
             
         };
-    
+        
         // function 
         RFont.prototype.getLineSpacingFactor = function(...args) 
           
@@ -230,7 +230,7 @@
               return this.__PROXY__.getLineSpacingFactor(...args);
             
         };
-    
+        
         // function 
         RFont.prototype.getAuxLinePositions = function(...args) 
           
@@ -240,7 +240,7 @@
               return this.__PROXY__.getAuxLinePositions(...args);
             
         };
-    
+        
         // function 
         RFont.prototype.getAuxLinePositionsString = function(...args) 
           
@@ -250,7 +250,7 @@
               return this.__PROXY__.getAuxLinePositionsString(...args);
             
         };
-    
+        
         // function 
         RFont.prototype.load = function(...args) 
           
@@ -260,7 +260,7 @@
               return this.__PROXY__.load(...args);
             
         };
-    
+        
         // function 
         RFont.prototype.isLoaded = function(...args) 
           
@@ -270,7 +270,7 @@
               return this.__PROXY__.isLoaded(...args);
             
         };
-    
+        
         // function 
         RFont.prototype.getGlyphNames = function(...args) 
           
@@ -280,7 +280,7 @@
               return this.__PROXY__.getGlyphNames(...args);
             
         };
-    
+        
         // function 
         RFont.prototype.getGlyph = function(...args) 
           
@@ -290,7 +290,7 @@
               return this.__PROXY__.getGlyph(...args);
             
         };
-    
+        
         // function 
         RFont.prototype.getShapeNames = function(...args) 
           
@@ -300,7 +300,7 @@
               return this.__PROXY__.getShapeNames(...args);
             
         };
-    
+        
         // function 
         RFont.prototype.getShape = function(...args) 
           
@@ -310,7 +310,7 @@
               return this.__PROXY__.getShape(...args);
             
         };
-    
+        
         // function 
         RFont.prototype.getShapeName = function(...args) 
           
@@ -320,7 +320,7 @@
               return this.__PROXY__.getShapeName(...args);
             
         };
-    
+        
 
       // static functions:
       RFont.prototype.isNullWrapper = function() {

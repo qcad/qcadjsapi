@@ -166,7 +166,7 @@
               return this.__PROXY__.getEntityTypeFilter(...args);
             
         };
-    
+        
         // function 
         RChangePropertyOperation.prototype.setRecordAffectedObjects = function(...args) 
           
@@ -176,7 +176,7 @@
               return this.__PROXY__.setRecordAffectedObjects(...args);
             
         };
-    
+        
         // function 
         RChangePropertyOperation.prototype.setSpatialIndexDisabled = function(...args) 
           
@@ -186,7 +186,7 @@
               return this.__PROXY__.setSpatialIndexDisabled(...args);
             
         };
-    
+        
         // function 
         RChangePropertyOperation.prototype.setAllowInvisible = function(...args) 
           
@@ -196,7 +196,7 @@
               return this.__PROXY__.setAllowInvisible(...args);
             
         };
-    
+        
         // function 
         RChangePropertyOperation.prototype.setAllowAll = function(...args) 
           
@@ -206,7 +206,7 @@
               return this.__PROXY__.setAllowAll(...args);
             
         };
-    
+        
         // function 
         RChangePropertyOperation.prototype.setKeepChildren = function(...args) 
           
@@ -216,7 +216,7 @@
               return this.__PROXY__.setKeepChildren(...args);
             
         };
-    
+        
         // function 
         RChangePropertyOperation.prototype.setTransactionGroup = function(...args) 
           
@@ -226,7 +226,7 @@
               return this.__PROXY__.setTransactionGroup(...args);
             
         };
-    
+        
         // function 
         RChangePropertyOperation.prototype.getTransactionGroup = function(...args) 
           
@@ -236,7 +236,7 @@
               return this.__PROXY__.getTransactionGroup(...args);
             
         };
-    
+        
         // function 
         RChangePropertyOperation.prototype.setText = function(...args) 
           
@@ -246,7 +246,7 @@
               return this.__PROXY__.setText(...args);
             
         };
-    
+        
         // function 
         RChangePropertyOperation.prototype.getText = function(...args) 
           
@@ -256,7 +256,7 @@
               return this.__PROXY__.getText(...args);
             
         };
-    
+        
         // function 
         RChangePropertyOperation.prototype.getTransactionTypes = function(...args) 
           
@@ -266,7 +266,7 @@
               return this.__PROXY__.getTransactionTypes(...args);
             
         };
-    
+        
         // function 
         RChangePropertyOperation.prototype.setTransactionType = function(...args) 
           
@@ -276,7 +276,7 @@
               return this.__PROXY__.setTransactionType(...args);
             
         };
-    
+        
         // function 
         RChangePropertyOperation.prototype.getTransactionType = function(...args) 
           
@@ -286,7 +286,7 @@
               return this.__PROXY__.getTransactionType(...args);
             
         };
-    
+        
         // function 
         RChangePropertyOperation.prototype.apply = function(...args) 
           
@@ -296,7 +296,7 @@
               return this.__PROXY__.apply(...args);
             
         };
-    
+        
 
       // static functions:
       RChangePropertyOperation.prototype.isNullWrapper = function() {

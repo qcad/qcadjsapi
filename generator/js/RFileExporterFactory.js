@@ -105,7 +105,7 @@
               return this.__PROXY__.getFilterStrings(...args);
             
         };
-    
+        
         // function 
         RFileExporterFactory.prototype.canExport = function(...args) 
           
@@ -115,7 +115,7 @@
               return this.__PROXY__.canExport(...args);
             
         };
-    
+        
         // function 
         RFileExporterFactory.prototype.instantiate = function(...args) 
           
@@ -125,7 +125,7 @@
               return this.__PROXY__.instantiate(...args);
             
         };
-    
+        
 
       // static functions:
       RFileExporterFactory.prototype.isNullWrapper = function() {

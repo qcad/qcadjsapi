@@ -151,7 +151,7 @@
               return this.__PROXY__.setObjectName(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.isWidgetType = function(...args) 
           
@@ -161,7 +161,7 @@
               return this.__PROXY__.isWidgetType(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.isWindowType = function(...args) 
           
@@ -171,7 +171,7 @@
               return this.__PROXY__.isWindowType(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.signalsBlocked = function(...args) 
           
@@ -181,7 +181,7 @@
               return this.__PROXY__.signalsBlocked(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.blockSignals = function(...args) 
           
@@ -191,7 +191,7 @@
               return this.__PROXY__.blockSignals(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.findChild = function(...args) 
           
@@ -201,7 +201,7 @@
               return this.__PROXY__.findChild(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.children = function(...args) 
           
@@ -211,7 +211,7 @@
               return this.__PROXY__.children(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.installEventFilter = function(...args) 
           
@@ -221,7 +221,7 @@
               return this.__PROXY__.installEventFilter(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.removeEventFilter = function(...args) 
           
@@ -231,7 +231,7 @@
               return this.__PROXY__.removeEventFilter(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.dumpObjectTree = function(...args) 
           
@@ -241,7 +241,7 @@
               return this.__PROXY__.dumpObjectTree(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.dumpObjectInfo = function(...args) 
           
@@ -251,7 +251,7 @@
               return this.__PROXY__.dumpObjectInfo(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.setProperty = function(...args) 
           
@@ -261,7 +261,7 @@
               return this.__PROXY__.setProperty(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.property = function(...args) 
           
@@ -271,7 +271,7 @@
               return this.__PROXY__.property(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.dynamicPropertyNames = function(...args) 
           
@@ -281,7 +281,7 @@
               return this.__PROXY__.dynamicPropertyNames(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.parent = function(...args) 
           
@@ -291,7 +291,7 @@
               return this.__PROXY__.parent(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.deleteLater = function(...args) 
           
@@ -301,7 +301,7 @@
               return this.__PROXY__.deleteLater(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.devType = function(...args) 
           
@@ -311,7 +311,7 @@
               return this.__PROXY__.devType(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.createWinId = function(...args) 
           
@@ -321,7 +321,7 @@
               return this.__PROXY__.createWinId(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.isWindow = function(...args) 
           
@@ -331,7 +331,7 @@
               return this.__PROXY__.isWindow(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.isModal = function(...args) 
           
@@ -341,7 +341,7 @@
               return this.__PROXY__.isModal(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.setWindowModality = function(...args) 
           
@@ -351,7 +351,7 @@
               return this.__PROXY__.setWindowModality(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.isEnabled = function(...args) 
           
@@ -361,7 +361,7 @@
               return this.__PROXY__.isEnabled(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.isEnabledTo = function(...args) 
           
@@ -371,7 +371,7 @@
               return this.__PROXY__.isEnabledTo(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.setEnabled = function(...args) 
           
@@ -381,7 +381,7 @@
               return this.__PROXY__.setEnabled(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.setDisabled = function(...args) 
           
@@ -391,7 +391,7 @@
               return this.__PROXY__.setDisabled(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.setWindowModified = function(...args) 
           
@@ -401,7 +401,7 @@
               return this.__PROXY__.setWindowModified(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.setMinimumSize = function(...args) 
           
@@ -411,7 +411,7 @@
               return this.__PROXY__.setMinimumSize(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.setMaximumSize = function(...args) 
           
@@ -421,7 +421,7 @@
               return this.__PROXY__.setMaximumSize(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.setMinimumWidth = function(...args) 
           
@@ -431,7 +431,7 @@
               return this.__PROXY__.setMinimumWidth(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.setMinimumHeight = function(...args) 
           
@@ -441,7 +441,7 @@
               return this.__PROXY__.setMinimumHeight(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.setMaximumWidth = function(...args) 
           
@@ -451,7 +451,7 @@
               return this.__PROXY__.setMaximumWidth(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.setMaximumHeight = function(...args) 
           
@@ -461,7 +461,7 @@
               return this.__PROXY__.setMaximumHeight(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.setSizeIncrement = function(...args) 
           
@@ -471,7 +471,7 @@
               return this.__PROXY__.setSizeIncrement(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.setBaseSize = function(...args) 
           
@@ -481,7 +481,7 @@
               return this.__PROXY__.setBaseSize(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.setFixedSize = function(...args) 
           
@@ -491,7 +491,7 @@
               return this.__PROXY__.setFixedSize(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.setFixedWidth = function(...args) 
           
@@ -501,7 +501,7 @@
               return this.__PROXY__.setFixedWidth(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.setFixedHeight = function(...args) 
           
@@ -511,7 +511,7 @@
               return this.__PROXY__.setFixedHeight(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.mapToGlobal = function(...args) 
           
@@ -521,7 +521,7 @@
               return this.__PROXY__.mapToGlobal(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.mapFromGlobal = function(...args) 
           
@@ -531,7 +531,7 @@
               return this.__PROXY__.mapFromGlobal(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.mapToParent = function(...args) 
           
@@ -541,7 +541,7 @@
               return this.__PROXY__.mapToParent(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.mapFromParent = function(...args) 
           
@@ -551,7 +551,7 @@
               return this.__PROXY__.mapFromParent(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.mapTo = function(...args) 
           
@@ -561,7 +561,7 @@
               return this.__PROXY__.mapTo(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.mapFrom = function(...args) 
           
@@ -571,7 +571,7 @@
               return this.__PROXY__.mapFrom(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.window = function(...args) 
           
@@ -581,7 +581,7 @@
               return this.__PROXY__.window(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.nativeParentWidget = function(...args) 
           
@@ -591,7 +591,7 @@
               return this.__PROXY__.nativeParentWidget(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.topLevelWidget = function(...args) 
           
@@ -601,7 +601,7 @@
               return this.__PROXY__.topLevelWidget(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.setPalette = function(...args) 
           
@@ -611,7 +611,7 @@
               return this.__PROXY__.setPalette(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.setBackgroundRole = function(...args) 
           
@@ -621,7 +621,7 @@
               return this.__PROXY__.setBackgroundRole(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.backgroundRole = function(...args) 
           
@@ -631,7 +631,7 @@
               return this.__PROXY__.backgroundRole(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.setForegroundRole = function(...args) 
           
@@ -641,7 +641,7 @@
               return this.__PROXY__.setForegroundRole(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.foregroundRole = function(...args) 
           
@@ -651,7 +651,7 @@
               return this.__PROXY__.foregroundRole(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.setFont = function(...args) 
           
@@ -661,7 +661,7 @@
               return this.__PROXY__.setFont(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.fontInfo = function(...args) 
           
@@ -671,7 +671,7 @@
               return this.__PROXY__.fontInfo(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.setCursor = function(...args) 
           
@@ -681,7 +681,7 @@
               return this.__PROXY__.setCursor(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.unsetCursor = function(...args) 
           
@@ -691,7 +691,7 @@
               return this.__PROXY__.unsetCursor(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.setMouseTracking = function(...args) 
           
@@ -701,7 +701,7 @@
               return this.__PROXY__.setMouseTracking(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.hasMouseTracking = function(...args) 
           
@@ -711,7 +711,7 @@
               return this.__PROXY__.hasMouseTracking(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.underMouse = function(...args) 
           
@@ -721,7 +721,7 @@
               return this.__PROXY__.underMouse(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.setTabletTracking = function(...args) 
           
@@ -731,7 +731,7 @@
               return this.__PROXY__.setTabletTracking(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.hasTabletTracking = function(...args) 
           
@@ -741,7 +741,7 @@
               return this.__PROXY__.hasTabletTracking(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.setMask = function(...args) 
           
@@ -751,7 +751,7 @@
               return this.__PROXY__.setMask(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.mask = function(...args) 
           
@@ -761,7 +761,7 @@
               return this.__PROXY__.mask(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.clearMask = function(...args) 
           
@@ -771,7 +771,7 @@
               return this.__PROXY__.clearMask(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.grab = function(...args) 
           
@@ -781,7 +781,7 @@
               return this.__PROXY__.grab(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.grabGesture = function(...args) 
           
@@ -791,7 +791,7 @@
               return this.__PROXY__.grabGesture(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.ungrabGesture = function(...args) 
           
@@ -801,7 +801,7 @@
               return this.__PROXY__.ungrabGesture(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.setWindowTitle = function(...args) 
           
@@ -811,7 +811,7 @@
               return this.__PROXY__.setWindowTitle(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.setStyleSheet = function(...args) 
           
@@ -821,7 +821,7 @@
               return this.__PROXY__.setStyleSheet(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.setWindowIcon = function(...args) 
           
@@ -831,7 +831,7 @@
               return this.__PROXY__.setWindowIcon(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.setWindowIconText = function(...args) 
           
@@ -841,7 +841,7 @@
               return this.__PROXY__.setWindowIconText(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.setWindowRole = function(...args) 
           
@@ -851,7 +851,7 @@
               return this.__PROXY__.setWindowRole(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.windowRole = function(...args) 
           
@@ -861,7 +861,7 @@
               return this.__PROXY__.windowRole(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.setWindowFilePath = function(...args) 
           
@@ -871,7 +871,7 @@
               return this.__PROXY__.setWindowFilePath(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.setWindowOpacity = function(...args) 
           
@@ -881,7 +881,7 @@
               return this.__PROXY__.setWindowOpacity(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.isWindowModified = function(...args) 
           
@@ -891,7 +891,7 @@
               return this.__PROXY__.isWindowModified(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.setToolTip = function(...args) 
           
@@ -901,7 +901,7 @@
               return this.__PROXY__.setToolTip(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.setToolTipDuration = function(...args) 
           
@@ -911,7 +911,7 @@
               return this.__PROXY__.setToolTipDuration(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.setStatusTip = function(...args) 
           
@@ -921,7 +921,7 @@
               return this.__PROXY__.setStatusTip(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.setWhatsThis = function(...args) 
           
@@ -931,7 +931,7 @@
               return this.__PROXY__.setWhatsThis(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.setAccessibleName = function(...args) 
           
@@ -941,7 +941,7 @@
               return this.__PROXY__.setAccessibleName(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.setAccessibleDescription = function(...args) 
           
@@ -951,7 +951,7 @@
               return this.__PROXY__.setAccessibleDescription(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.setLayoutDirection = function(...args) 
           
@@ -961,7 +961,7 @@
               return this.__PROXY__.setLayoutDirection(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.unsetLayoutDirection = function(...args) 
           
@@ -971,7 +971,7 @@
               return this.__PROXY__.unsetLayoutDirection(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.setLocale = function(...args) 
           
@@ -981,7 +981,7 @@
               return this.__PROXY__.setLocale(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.unsetLocale = function(...args) 
           
@@ -991,7 +991,7 @@
               return this.__PROXY__.unsetLocale(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.isRightToLeft = function(...args) 
           
@@ -1001,7 +1001,7 @@
               return this.__PROXY__.isRightToLeft(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.isLeftToRight = function(...args) 
           
@@ -1011,7 +1011,7 @@
               return this.__PROXY__.isLeftToRight(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.activateWindow = function(...args) 
           
@@ -1021,7 +1021,7 @@
               return this.__PROXY__.activateWindow(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.clearFocus = function(...args) 
           
@@ -1031,7 +1031,7 @@
               return this.__PROXY__.clearFocus(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.setFocus = function(...args) 
           
@@ -1041,7 +1041,7 @@
               return this.__PROXY__.setFocus(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.setFocusPolicy = function(...args) 
           
@@ -1051,7 +1051,7 @@
               return this.__PROXY__.setFocusPolicy(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.hasFocus = function(...args) 
           
@@ -1061,7 +1061,7 @@
               return this.__PROXY__.hasFocus(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.setFocusProxy = function(...args) 
           
@@ -1071,7 +1071,7 @@
               return this.__PROXY__.setFocusProxy(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.focusProxy = function(...args) 
           
@@ -1081,7 +1081,7 @@
               return this.__PROXY__.focusProxy(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.setContextMenuPolicy = function(...args) 
           
@@ -1091,7 +1091,7 @@
               return this.__PROXY__.setContextMenuPolicy(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.grabMouse = function(...args) 
           
@@ -1101,7 +1101,7 @@
               return this.__PROXY__.grabMouse(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.releaseMouse = function(...args) 
           
@@ -1111,7 +1111,7 @@
               return this.__PROXY__.releaseMouse(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.grabKeyboard = function(...args) 
           
@@ -1121,7 +1121,7 @@
               return this.__PROXY__.grabKeyboard(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.releaseKeyboard = function(...args) 
           
@@ -1131,7 +1131,7 @@
               return this.__PROXY__.releaseKeyboard(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.grabShortcut = function(...args) 
           
@@ -1141,7 +1141,7 @@
               return this.__PROXY__.grabShortcut(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.releaseShortcut = function(...args) 
           
@@ -1151,7 +1151,7 @@
               return this.__PROXY__.releaseShortcut(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.setShortcutEnabled = function(...args) 
           
@@ -1161,7 +1161,7 @@
               return this.__PROXY__.setShortcutEnabled(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.setShortcutAutoRepeat = function(...args) 
           
@@ -1171,7 +1171,7 @@
               return this.__PROXY__.setShortcutAutoRepeat(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.setUpdatesEnabled = function(...args) 
           
@@ -1181,7 +1181,7 @@
               return this.__PROXY__.setUpdatesEnabled(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.update = function(...args) 
           
@@ -1191,7 +1191,7 @@
               return this.__PROXY__.update(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.repaint = function(...args) 
           
@@ -1201,7 +1201,7 @@
               return this.__PROXY__.repaint(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.setVisible = function(...args) 
           
@@ -1211,7 +1211,7 @@
               return this.__PROXY__.setVisible(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.setHidden = function(...args) 
           
@@ -1221,7 +1221,7 @@
               return this.__PROXY__.setHidden(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.show = function(...args) 
           
@@ -1231,7 +1231,7 @@
               return this.__PROXY__.show(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.hide = function(...args) 
           
@@ -1241,7 +1241,7 @@
               return this.__PROXY__.hide(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.showMinimized = function(...args) 
           
@@ -1251,7 +1251,7 @@
               return this.__PROXY__.showMinimized(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.showMaximized = function(...args) 
           
@@ -1261,7 +1261,7 @@
               return this.__PROXY__.showMaximized(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.showFullScreen = function(...args) 
           
@@ -1271,7 +1271,7 @@
               return this.__PROXY__.showFullScreen(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.showNormal = function(...args) 
           
@@ -1281,7 +1281,7 @@
               return this.__PROXY__.showNormal(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.close = function(...args) 
           
@@ -1291,7 +1291,7 @@
               return this.__PROXY__.close(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.raise = function(...args) 
           
@@ -1301,7 +1301,7 @@
               return this.__PROXY__.raise(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.lower = function(...args) 
           
@@ -1311,7 +1311,7 @@
               return this.__PROXY__.lower(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.stackUnder = function(...args) 
           
@@ -1321,7 +1321,7 @@
               return this.__PROXY__.stackUnder(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.move = function(...args) 
           
@@ -1331,7 +1331,7 @@
               return this.__PROXY__.move(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.resize = function(...args) 
           
@@ -1341,7 +1341,7 @@
               return this.__PROXY__.resize(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.setGeometry = function(...args) 
           
@@ -1351,7 +1351,7 @@
               return this.__PROXY__.setGeometry(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.saveGeometry = function(...args) 
           
@@ -1361,7 +1361,7 @@
               return this.__PROXY__.saveGeometry(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.restoreGeometry = function(...args) 
           
@@ -1371,7 +1371,7 @@
               return this.__PROXY__.restoreGeometry(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.adjustSize = function(...args) 
           
@@ -1381,7 +1381,7 @@
               return this.__PROXY__.adjustSize(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.isVisible = function(...args) 
           
@@ -1391,7 +1391,7 @@
               return this.__PROXY__.isVisible(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.isVisibleTo = function(...args) 
           
@@ -1401,7 +1401,7 @@
               return this.__PROXY__.isVisibleTo(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.isHidden = function(...args) 
           
@@ -1411,7 +1411,7 @@
               return this.__PROXY__.isHidden(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.isMinimized = function(...args) 
           
@@ -1421,7 +1421,7 @@
               return this.__PROXY__.isMinimized(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.isMaximized = function(...args) 
           
@@ -1431,7 +1431,7 @@
               return this.__PROXY__.isMaximized(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.isFullScreen = function(...args) 
           
@@ -1441,7 +1441,7 @@
               return this.__PROXY__.isFullScreen(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.windowState = function(...args) 
           
@@ -1451,7 +1451,7 @@
               return this.__PROXY__.windowState(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.setWindowState = function(...args) 
           
@@ -1461,7 +1461,7 @@
               return this.__PROXY__.setWindowState(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.overrideWindowState = function(...args) 
           
@@ -1471,7 +1471,7 @@
               return this.__PROXY__.overrideWindowState(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.setSizePolicy = function(...args) 
           
@@ -1481,7 +1481,7 @@
               return this.__PROXY__.setSizePolicy(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.heightForWidth = function(...args) 
           
@@ -1491,7 +1491,7 @@
               return this.__PROXY__.heightForWidth(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.hasHeightForWidth = function(...args) 
           
@@ -1501,7 +1501,7 @@
               return this.__PROXY__.hasHeightForWidth(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.visibleRegion = function(...args) 
           
@@ -1511,7 +1511,7 @@
               return this.__PROXY__.visibleRegion(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.setContentsMargins = function(...args) 
           
@@ -1521,7 +1521,7 @@
               return this.__PROXY__.setContentsMargins(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.contentsMargins = function(...args) 
           
@@ -1531,7 +1531,7 @@
               return this.__PROXY__.contentsMargins(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.contentsRect = function(...args) 
           
@@ -1541,7 +1541,7 @@
               return this.__PROXY__.contentsRect(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.layout = function(...args) 
           
@@ -1551,7 +1551,7 @@
               return this.__PROXY__.layout(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.setLayout = function(...args) 
           
@@ -1561,7 +1561,7 @@
               return this.__PROXY__.setLayout(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.updateGeometry = function(...args) 
           
@@ -1571,7 +1571,7 @@
               return this.__PROXY__.updateGeometry(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.setParent = function(...args) 
           
@@ -1581,7 +1581,7 @@
               return this.__PROXY__.setParent(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.scroll = function(...args) 
           
@@ -1591,7 +1591,7 @@
               return this.__PROXY__.scroll(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.focusWidget = function(...args) 
           
@@ -1601,7 +1601,7 @@
               return this.__PROXY__.focusWidget(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.nextInFocusChain = function(...args) 
           
@@ -1611,7 +1611,7 @@
               return this.__PROXY__.nextInFocusChain(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.previousInFocusChain = function(...args) 
           
@@ -1621,7 +1621,7 @@
               return this.__PROXY__.previousInFocusChain(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.setAcceptDrops = function(...args) 
           
@@ -1631,7 +1631,7 @@
               return this.__PROXY__.setAcceptDrops(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.addAction = function(...args) 
           
@@ -1641,7 +1641,7 @@
               return this.__PROXY__.addAction(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.addActions = function(...args) 
           
@@ -1651,7 +1651,7 @@
               return this.__PROXY__.addActions(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.insertActions = function(...args) 
           
@@ -1661,7 +1661,7 @@
               return this.__PROXY__.insertActions(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.insertAction = function(...args) 
           
@@ -1671,7 +1671,7 @@
               return this.__PROXY__.insertAction(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.removeAction = function(...args) 
           
@@ -1681,7 +1681,7 @@
               return this.__PROXY__.removeAction(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.actions = function(...args) 
           
@@ -1691,7 +1691,7 @@
               return this.__PROXY__.actions(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.parentWidget = function(...args) 
           
@@ -1701,7 +1701,7 @@
               return this.__PROXY__.parentWidget(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.setWindowFlags = function(...args) 
           
@@ -1711,7 +1711,7 @@
               return this.__PROXY__.setWindowFlags(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.windowFlags = function(...args) 
           
@@ -1721,7 +1721,7 @@
               return this.__PROXY__.windowFlags(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.setWindowFlag = function(...args) 
           
@@ -1731,7 +1731,7 @@
               return this.__PROXY__.setWindowFlag(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.overrideWindowFlags = function(...args) 
           
@@ -1741,7 +1741,7 @@
               return this.__PROXY__.overrideWindowFlags(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.windowType = function(...args) 
           
@@ -1751,7 +1751,7 @@
               return this.__PROXY__.windowType(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.childAt = function(...args) 
           
@@ -1761,7 +1761,7 @@
               return this.__PROXY__.childAt(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.setAttribute = function(...args) 
           
@@ -1771,7 +1771,7 @@
               return this.__PROXY__.setAttribute(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.testAttribute = function(...args) 
           
@@ -1781,7 +1781,7 @@
               return this.__PROXY__.testAttribute(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.ensurePolished = function(...args) 
           
@@ -1791,7 +1791,7 @@
               return this.__PROXY__.ensurePolished(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.isAncestorOf = function(...args) 
           
@@ -1801,7 +1801,7 @@
               return this.__PROXY__.isAncestorOf(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.setAutoFillBackground = function(...args) 
           
@@ -1811,7 +1811,7 @@
               return this.__PROXY__.setAutoFillBackground(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.event = function(...args) 
           
@@ -1821,7 +1821,7 @@
               return this.__PROXY__.event(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.mouseDoubleClickEvent = function(...args) 
           
@@ -1831,7 +1831,7 @@
               return this.__PROXY__.mouseDoubleClickEvent(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.wheelEvent = function(...args) 
           
@@ -1841,7 +1841,7 @@
               return this.__PROXY__.wheelEvent(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.keyPressEvent = function(...args) 
           
@@ -1851,7 +1851,7 @@
               return this.__PROXY__.keyPressEvent(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.keyReleaseEvent = function(...args) 
           
@@ -1861,7 +1861,7 @@
               return this.__PROXY__.keyReleaseEvent(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.focusInEvent = function(...args) 
           
@@ -1871,7 +1871,7 @@
               return this.__PROXY__.focusInEvent(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.focusOutEvent = function(...args) 
           
@@ -1881,7 +1881,7 @@
               return this.__PROXY__.focusOutEvent(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.enterEvent = function(...args) 
           
@@ -1891,7 +1891,7 @@
               return this.__PROXY__.enterEvent(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.leaveEvent = function(...args) 
           
@@ -1901,7 +1901,7 @@
               return this.__PROXY__.leaveEvent(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.moveEvent = function(...args) 
           
@@ -1911,7 +1911,7 @@
               return this.__PROXY__.moveEvent(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.closeEvent = function(...args) 
           
@@ -1921,7 +1921,7 @@
               return this.__PROXY__.closeEvent(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.tabletEvent = function(...args) 
           
@@ -1931,7 +1931,7 @@
               return this.__PROXY__.tabletEvent(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.dragEnterEvent = function(...args) 
           
@@ -1941,7 +1941,7 @@
               return this.__PROXY__.dragEnterEvent(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.dragMoveEvent = function(...args) 
           
@@ -1951,7 +1951,7 @@
               return this.__PROXY__.dragMoveEvent(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.dragLeaveEvent = function(...args) 
           
@@ -1961,7 +1961,7 @@
               return this.__PROXY__.dragLeaveEvent(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.dropEvent = function(...args) 
           
@@ -1971,7 +1971,7 @@
               return this.__PROXY__.dropEvent(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.showEvent = function(...args) 
           
@@ -1981,7 +1981,7 @@
               return this.__PROXY__.showEvent(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.hideEvent = function(...args) 
           
@@ -1991,7 +1991,7 @@
               return this.__PROXY__.hideEvent(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.nativeEvent = function(...args) 
           
@@ -2001,7 +2001,7 @@
               return this.__PROXY__.nativeEvent(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.changeEvent = function(...args) 
           
@@ -2011,7 +2011,7 @@
               return this.__PROXY__.changeEvent(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.metric = function(...args) 
           
@@ -2021,7 +2021,7 @@
               return this.__PROXY__.metric(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.initPainter = function(...args) 
           
@@ -2031,7 +2031,7 @@
               return this.__PROXY__.initPainter(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.redirected = function(...args) 
           
@@ -2041,7 +2041,7 @@
               return this.__PROXY__.redirected(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.sharedPainter = function(...args) 
           
@@ -2051,7 +2051,7 @@
               return this.__PROXY__.sharedPainter(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.inputMethodEvent = function(...args) 
           
@@ -2061,7 +2061,7 @@
               return this.__PROXY__.inputMethodEvent(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.inputMethodQuery = function(...args) 
           
@@ -2071,7 +2071,7 @@
               return this.__PROXY__.inputMethodQuery(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.setInputMethodHints = function(...args) 
           
@@ -2081,7 +2081,7 @@
               return this.__PROXY__.setInputMethodHints(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.updateMicroFocus = function(...args) 
           
@@ -2091,7 +2091,7 @@
               return this.__PROXY__.updateMicroFocus(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.create = function(...args) 
           
@@ -2101,7 +2101,7 @@
               return this.__PROXY__.create(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.destroy = function(...args) 
           
@@ -2111,7 +2111,7 @@
               return this.__PROXY__.destroy(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.focusNextPrevChild = function(...args) 
           
@@ -2121,7 +2121,7 @@
               return this.__PROXY__.focusNextPrevChild(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.focusNextChild = function(...args) 
           
@@ -2131,7 +2131,7 @@
               return this.__PROXY__.focusNextChild(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.focusPreviousChild = function(...args) 
           
@@ -2141,7 +2141,7 @@
               return this.__PROXY__.focusPreviousChild(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.setBackingStore = function(...args) 
           
@@ -2151,7 +2151,7 @@
               return this.__PROXY__.setBackingStore(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.testAttribute_helper = function(...args) 
           
@@ -2161,7 +2161,7 @@
               return this.__PROXY__.testAttribute_helper(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.takeLayout = function(...args) 
           
@@ -2171,7 +2171,7 @@
               return this.__PROXY__.takeLayout(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.qt_mac_is_metal = function(...args) 
           
@@ -2181,7 +2181,7 @@
               return this.__PROXY__.qt_mac_is_metal(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.qt_qwidget_data = function(...args) 
           
@@ -2191,7 +2191,7 @@
               return this.__PROXY__.qt_qwidget_data(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.qt_widget_private = function(...args) 
           
@@ -2201,7 +2201,7 @@
               return this.__PROXY__.qt_widget_private(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.setWidget = function(...args) 
           
@@ -2211,7 +2211,7 @@
               return this.__PROXY__.setWidget(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.widget = function(...args) 
           
@@ -2221,7 +2221,7 @@
               return this.__PROXY__.widget(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.maximizedButtonsWidget = function(...args) 
           
@@ -2231,7 +2231,7 @@
               return this.__PROXY__.maximizedButtonsWidget(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.maximizedSystemMenuIconWidget = function(...args) 
           
@@ -2241,7 +2241,7 @@
               return this.__PROXY__.maximizedSystemMenuIconWidget(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.isShaded = function(...args) 
           
@@ -2251,7 +2251,7 @@
               return this.__PROXY__.isShaded(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.setOption = function(...args) 
           
@@ -2261,7 +2261,7 @@
               return this.__PROXY__.setOption(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.testOption = function(...args) 
           
@@ -2271,7 +2271,7 @@
               return this.__PROXY__.testOption(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.setKeyboardSingleStep = function(...args) 
           
@@ -2281,7 +2281,7 @@
               return this.__PROXY__.setKeyboardSingleStep(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.keyboardSingleStep = function(...args) 
           
@@ -2291,7 +2291,7 @@
               return this.__PROXY__.keyboardSingleStep(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.setKeyboardPageStep = function(...args) 
           
@@ -2301,7 +2301,7 @@
               return this.__PROXY__.setKeyboardPageStep(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.keyboardPageStep = function(...args) 
           
@@ -2311,7 +2311,7 @@
               return this.__PROXY__.keyboardPageStep(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.setSystemMenu = function(...args) 
           
@@ -2321,7 +2321,7 @@
               return this.__PROXY__.setSystemMenu(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.systemMenu = function(...args) 
           
@@ -2331,7 +2331,7 @@
               return this.__PROXY__.systemMenu(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.mdiArea = function(...args) 
           
@@ -2341,7 +2341,7 @@
               return this.__PROXY__.mdiArea(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.showSystemMenu = function(...args) 
           
@@ -2351,7 +2351,7 @@
               return this.__PROXY__.showSystemMenu(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.showShaded = function(...args) 
           
@@ -2361,7 +2361,7 @@
               return this.__PROXY__.showShaded(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.eventFilter = function(...args) 
           
@@ -2371,7 +2371,7 @@
               return this.__PROXY__.eventFilter(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.setDocumentInterface = function(...args) 
           
@@ -2381,7 +2381,7 @@
               return this.__PROXY__.setDocumentInterface(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.getDocumentInterface = function(...args) 
           
@@ -2391,7 +2391,7 @@
               return this.__PROXY__.getDocumentInterface(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.getDocument = function(...args) 
           
@@ -2401,7 +2401,7 @@
               return this.__PROXY__.getDocument(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.getLastKnownViewWithFocus = function(...args) 
           
@@ -2411,7 +2411,7 @@
               return this.__PROXY__.getLastKnownViewWithFocus(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.updateModifiedListener = function(...args) 
           
@@ -2421,7 +2421,7 @@
               return this.__PROXY__.updateModifiedListener(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.setCloseEventRejected = function(...args) 
           
@@ -2431,7 +2431,7 @@
               return this.__PROXY__.setCloseEventRejected(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.setCloseEventAccepted = function(...args) 
           
@@ -2441,7 +2441,7 @@
               return this.__PROXY__.setCloseEventAccepted(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.isCloseEventAccepted = function(...args) 
           
@@ -2451,7 +2451,7 @@
               return this.__PROXY__.isCloseEventAccepted(...args);
             
         };
-    
+        
         // function 
         RMdiChildQt.prototype.paintEvent = function(...args) 
           
@@ -2461,7 +2461,8 @@
               return this.__PROXY__.paintEventSuper(...args);
             
         };
-    
+        RMdiChildQt.prototype.paintEvent.__SUPER__ = true;
+        
         // function 
         RMdiChildQt.prototype.mouseMoveEvent = function(...args) 
           
@@ -2471,7 +2472,8 @@
               return this.__PROXY__.mouseMoveEventSuper(...args);
             
         };
-    
+        RMdiChildQt.prototype.mouseMoveEvent.__SUPER__ = true;
+        
         // function 
         RMdiChildQt.prototype.resizeEvent = function(...args) 
           
@@ -2481,7 +2483,8 @@
               return this.__PROXY__.resizeEventSuper(...args);
             
         };
-    
+        RMdiChildQt.prototype.resizeEvent.__SUPER__ = true;
+        
 
       // static functions:
       

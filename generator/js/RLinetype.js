@@ -191,7 +191,7 @@
               return this.__PROXY__.mustAlwaysClone(...args);
             
         };
-    
+        
         // function 
         RLinetype.prototype.getDocument = function(...args) 
           
@@ -201,7 +201,7 @@
               return this.__PROXY__.getDocument(...args);
             
         };
-    
+        
         // function 
         RLinetype.prototype.setDocument = function(...args) 
           
@@ -211,7 +211,7 @@
               return this.__PROXY__.setDocument(...args);
             
         };
-    
+        
         // function 
         RLinetype.prototype.setFlag = function(...args) 
           
@@ -221,7 +221,7 @@
               return this.__PROXY__.setFlag(...args);
             
         };
-    
+        
         // function 
         RLinetype.prototype.getFlag = function(...args) 
           
@@ -231,7 +231,7 @@
               return this.__PROXY__.getFlag(...args);
             
         };
-    
+        
         // function 
         RLinetype.prototype.getId = function(...args) 
           
@@ -241,7 +241,7 @@
               return this.__PROXY__.getId(...args);
             
         };
-    
+        
         // function 
         RLinetype.prototype.getHandle = function(...args) 
           
@@ -251,7 +251,7 @@
               return this.__PROXY__.getHandle(...args);
             
         };
-    
+        
         // function 
         RLinetype.prototype.isProtected = function(...args) 
           
@@ -261,7 +261,7 @@
               return this.__PROXY__.isProtected(...args);
             
         };
-    
+        
         // function 
         RLinetype.prototype.setProtected = function(...args) 
           
@@ -271,7 +271,7 @@
               return this.__PROXY__.setProtected(...args);
             
         };
-    
+        
         // function 
         RLinetype.prototype.isInvisible = function(...args) 
           
@@ -281,7 +281,7 @@
               return this.__PROXY__.isInvisible(...args);
             
         };
-    
+        
         // function 
         RLinetype.prototype.setInvisible = function(...args) 
           
@@ -291,7 +291,7 @@
               return this.__PROXY__.setInvisible(...args);
             
         };
-    
+        
         // function 
         RLinetype.prototype.isSelected = function(...args) 
           
@@ -301,7 +301,7 @@
               return this.__PROXY__.isSelected(...args);
             
         };
-    
+        
         // function 
         RLinetype.prototype.setSelected = function(...args) 
           
@@ -311,7 +311,7 @@
               return this.__PROXY__.setSelected(...args);
             
         };
-    
+        
         // function 
         RLinetype.prototype.isUndone = function(...args) 
           
@@ -321,7 +321,7 @@
               return this.__PROXY__.isUndone(...args);
             
         };
-    
+        
         // function 
         RLinetype.prototype.isWorkingSet = function(...args) 
           
@@ -331,7 +331,7 @@
               return this.__PROXY__.isWorkingSet(...args);
             
         };
-    
+        
         // function 
         RLinetype.prototype.setWorkingSet = function(...args) 
           
@@ -341,7 +341,7 @@
               return this.__PROXY__.setWorkingSet(...args);
             
         };
-    
+        
         // function 
         RLinetype.prototype.getPropertyTypeIds = function(...args) 
           
@@ -351,7 +351,7 @@
               return this.__PROXY__.getPropertyTypeIds(...args);
             
         };
-    
+        
         // function 
         RLinetype.prototype.getCustomPropertyTypeIds = function(...args) 
           
@@ -361,7 +361,7 @@
               return this.__PROXY__.getCustomPropertyTypeIds(...args);
             
         };
-    
+        
         // function 
         RLinetype.prototype.hasPropertyType = function(...args) 
           
@@ -371,7 +371,7 @@
               return this.__PROXY__.hasPropertyType(...args);
             
         };
-    
+        
         // function 
         RLinetype.prototype.hasCustomProperties = function(...args) 
           
@@ -381,7 +381,7 @@
               return this.__PROXY__.hasCustomProperties(...args);
             
         };
-    
+        
         // function 
         RLinetype.prototype.hasCustomProperty = function(...args) 
           
@@ -391,7 +391,7 @@
               return this.__PROXY__.hasCustomProperty(...args);
             
         };
-    
+        
         // function 
         RLinetype.prototype.getCustomProperty = function(...args) 
           
@@ -401,7 +401,7 @@
               return this.__PROXY__.getCustomProperty(...args);
             
         };
-    
+        
         // function 
         RLinetype.prototype.getCustomDoubleProperty = function(...args) 
           
@@ -411,7 +411,7 @@
               return this.__PROXY__.getCustomDoubleProperty(...args);
             
         };
-    
+        
         // function 
         RLinetype.prototype.getCustomIntProperty = function(...args) 
           
@@ -421,7 +421,7 @@
               return this.__PROXY__.getCustomIntProperty(...args);
             
         };
-    
+        
         // function 
         RLinetype.prototype.getCustomBoolProperty = function(...args) 
           
@@ -431,7 +431,7 @@
               return this.__PROXY__.getCustomBoolProperty(...args);
             
         };
-    
+        
         // function 
         RLinetype.prototype.setCustomProperty = function(...args) 
           
@@ -441,7 +441,7 @@
               return this.__PROXY__.setCustomProperty(...args);
             
         };
-    
+        
         // function 
         RLinetype.prototype.removeCustomProperty = function(...args) 
           
@@ -451,7 +451,7 @@
               return this.__PROXY__.removeCustomProperty(...args);
             
         };
-    
+        
         // function 
         RLinetype.prototype.getCustomPropertyTitles = function(...args) 
           
@@ -461,7 +461,7 @@
               return this.__PROXY__.getCustomPropertyTitles(...args);
             
         };
-    
+        
         // function 
         RLinetype.prototype.getCustomPropertyKeys = function(...args) 
           
@@ -471,7 +471,7 @@
               return this.__PROXY__.getCustomPropertyKeys(...args);
             
         };
-    
+        
         // function 
         RLinetype.prototype.copyCustomPropertiesFrom = function(...args) 
           
@@ -481,7 +481,7 @@
               return this.__PROXY__.copyCustomPropertiesFrom(...args);
             
         };
-    
+        
         // function 
         RLinetype.prototype.getComplexity = function(...args) 
           
@@ -491,7 +491,7 @@
               return this.__PROXY__.getComplexity(...args);
             
         };
-    
+        
         // function 
         RLinetype.prototype.setAutoUpdatesBlocked = function(...args) 
           
@@ -501,7 +501,7 @@
               return this.__PROXY__.setAutoUpdatesBlocked(...args);
             
         };
-    
+        
         // function 
         RLinetype.prototype.dump = function(...args) 
           
@@ -511,7 +511,7 @@
               return this.__PROXY__.dump(...args);
             
         };
-    
+        
         // function 
         RLinetype.prototype.validate = function(...args) 
           
@@ -521,7 +521,7 @@
               return this.__PROXY__.validate(...args);
             
         };
-    
+        
         // function 
         RLinetype.prototype.print = function(...args) 
           
@@ -531,7 +531,7 @@
               return this.__PROXY__.print(...args);
             
         };
-    
+        
         // function 
         RLinetype.prototype.setUndone = function(...args) 
           
@@ -541,7 +541,7 @@
               return this.__PROXY__.setUndone(...args);
             
         };
-    
+        
         // function 
         RLinetype.prototype.setId = function(...args) 
           
@@ -551,7 +551,7 @@
               return this.__PROXY__.setId(...args);
             
         };
-    
+        
         // function 
         RLinetype.prototype.setHandle = function(...args) 
           
@@ -561,7 +561,7 @@
               return this.__PROXY__.setHandle(...args);
             
         };
-    
+        
         // function 
         RLinetype.prototype.setMemberFlag = function(...args) 
           
@@ -571,7 +571,7 @@
               return this.__PROXY__.setMemberFlag(...args);
             
         };
-    
+        
         // function 
         RLinetype.prototype.init = function(...args) 
           
@@ -581,7 +581,7 @@
               return this.__PROXY__.init(...args);
             
         };
-    
+        
         // function 
         RLinetype.prototype.getRtti = function(...args) 
           
@@ -591,7 +591,7 @@
               return this.__PROXY__.getRtti(...args);
             
         };
-    
+        
         // function 
         RLinetype.prototype.getType = function(...args) 
           
@@ -601,7 +601,7 @@
               return this.__PROXY__.getType(...args);
             
         };
-    
+        
         // function 
         RLinetype.prototype.clone = function(...args) 
           
@@ -611,7 +611,7 @@
               return this.__PROXY__.clone(...args);
             
         };
-    
+        
         // function 
         RLinetype.prototype.getName = function(...args) 
           
@@ -621,7 +621,7 @@
               return this.__PROXY__.getName(...args);
             
         };
-    
+        
         // function 
         RLinetype.prototype.setName = function(...args) 
           
@@ -631,7 +631,7 @@
               return this.__PROXY__.setName(...args);
             
         };
-    
+        
         // function 
         RLinetype.prototype.isMetric = function(...args) 
           
@@ -641,7 +641,7 @@
               return this.__PROXY__.isMetric(...args);
             
         };
-    
+        
         // function 
         RLinetype.prototype.setMetric = function(...args) 
           
@@ -651,7 +651,7 @@
               return this.__PROXY__.setMetric(...args);
             
         };
-    
+        
         // function 
         RLinetype.prototype.getDescription = function(...args) 
           
@@ -661,7 +661,7 @@
               return this.__PROXY__.getDescription(...args);
             
         };
-    
+        
         // function 
         RLinetype.prototype.setDescription = function(...args) 
           
@@ -671,7 +671,7 @@
               return this.__PROXY__.setDescription(...args);
             
         };
-    
+        
         // function 
         RLinetype.prototype.getLabel = function(...args) 
           
@@ -681,7 +681,7 @@
               return this.__PROXY__.getLabel(...args);
             
         };
-    
+        
         // function 
         RLinetype.prototype.getPatternString = function(...args) 
           
@@ -691,7 +691,7 @@
               return this.__PROXY__.getPatternString(...args);
             
         };
-    
+        
         // function 
         RLinetype.prototype.setPatternString = function(...args) 
           
@@ -701,7 +701,7 @@
               return this.__PROXY__.setPatternString(...args);
             
         };
-    
+        
         // function 
         RLinetype.prototype.isValid = function(...args) 
           
@@ -711,7 +711,7 @@
               return this.__PROXY__.isValid(...args);
             
         };
-    
+        
         // function 
         RLinetype.prototype.getProperty = function(...args) 
           
@@ -721,7 +721,7 @@
               return this.__PROXY__.getProperty(...args);
             
         };
-    
+        
         // function 
         RLinetype.prototype.setProperty = function(...args) 
           
@@ -731,7 +731,7 @@
               return this.__PROXY__.setProperty(...args);
             
         };
-    
+        
         // function 
         RLinetype.prototype.getPattern = function(...args) 
           
@@ -741,7 +741,7 @@
               return this.__PROXY__.getPattern(...args);
             
         };
-    
+        
         // function 
         RLinetype.prototype.setPattern = function(...args) 
           
@@ -751,7 +751,7 @@
               return this.__PROXY__.setPattern(...args);
             
         };
-    
+        
 
       // static functions:
       

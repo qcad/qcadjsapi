@@ -37,7 +37,9 @@
 
       //QJSValue f = self.prototype().property("updateFocus");
       QJSValue f = self.property("updateFocus");
-      if (f.isCallable() /*&& !recFlag*/) {
+      // only call into JS if the function is overridden in JS
+      // (not the auto generated forwarder to the ...Super function, see xml2js.xsl):
+      if (f.isCallable() && !f.property("__SUPER__").toBool() /*&& !recFlag*/) {
         QJSValueList args;
         
 

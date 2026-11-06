@@ -159,7 +159,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setObjectName(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.isWidgetType = function(...args) 
           
@@ -169,7 +169,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.isWidgetType(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.isWindowType = function(...args) 
           
@@ -179,7 +179,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.isWindowType(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.signalsBlocked = function(...args) 
           
@@ -189,7 +189,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.signalsBlocked(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.blockSignals = function(...args) 
           
@@ -199,7 +199,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.blockSignals(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.findChild = function(...args) 
           
@@ -209,7 +209,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.findChild(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.children = function(...args) 
           
@@ -219,7 +219,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.children(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.installEventFilter = function(...args) 
           
@@ -229,7 +229,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.installEventFilter(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.removeEventFilter = function(...args) 
           
@@ -239,7 +239,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.removeEventFilter(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.dumpObjectTree = function(...args) 
           
@@ -249,7 +249,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.dumpObjectTree(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.dumpObjectInfo = function(...args) 
           
@@ -259,7 +259,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.dumpObjectInfo(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.setProperty = function(...args) 
           
@@ -269,7 +269,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setProperty(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.property = function(...args) 
           
@@ -279,7 +279,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.property(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.dynamicPropertyNames = function(...args) 
           
@@ -289,7 +289,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.dynamicPropertyNames(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.parent = function(...args) 
           
@@ -299,7 +299,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.parent(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.deleteLater = function(...args) 
           
@@ -309,7 +309,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.deleteLater(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.devType = function(...args) 
           
@@ -319,7 +319,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.devType(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.createWinId = function(...args) 
           
@@ -329,7 +329,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.createWinId(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.isWindow = function(...args) 
           
@@ -339,7 +339,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.isWindow(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.isModal = function(...args) 
           
@@ -349,7 +349,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.isModal(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.setWindowModality = function(...args) 
           
@@ -359,7 +359,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setWindowModality(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.isEnabled = function(...args) 
           
@@ -369,7 +369,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.isEnabled(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.isEnabledTo = function(...args) 
           
@@ -379,7 +379,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.isEnabledTo(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.setEnabled = function(...args) 
           
@@ -389,7 +389,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setEnabled(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.setDisabled = function(...args) 
           
@@ -399,7 +399,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setDisabled(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.setWindowModified = function(...args) 
           
@@ -409,7 +409,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setWindowModified(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.setMinimumSize = function(...args) 
           
@@ -419,7 +419,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setMinimumSize(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.setMaximumSize = function(...args) 
           
@@ -429,7 +429,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setMaximumSize(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.setMinimumWidth = function(...args) 
           
@@ -439,7 +439,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setMinimumWidth(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.setMinimumHeight = function(...args) 
           
@@ -449,7 +449,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setMinimumHeight(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.setMaximumWidth = function(...args) 
           
@@ -459,7 +459,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setMaximumWidth(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.setMaximumHeight = function(...args) 
           
@@ -469,7 +469,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setMaximumHeight(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.setSizeIncrement = function(...args) 
           
@@ -479,7 +479,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setSizeIncrement(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.setBaseSize = function(...args) 
           
@@ -489,7 +489,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setBaseSize(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.setFixedSize = function(...args) 
           
@@ -499,7 +499,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setFixedSize(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.setFixedWidth = function(...args) 
           
@@ -509,7 +509,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setFixedWidth(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.setFixedHeight = function(...args) 
           
@@ -519,7 +519,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setFixedHeight(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.mapToGlobal = function(...args) 
           
@@ -529,7 +529,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.mapToGlobal(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.mapFromGlobal = function(...args) 
           
@@ -539,7 +539,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.mapFromGlobal(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.mapToParent = function(...args) 
           
@@ -549,7 +549,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.mapToParent(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.mapFromParent = function(...args) 
           
@@ -559,7 +559,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.mapFromParent(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.mapTo = function(...args) 
           
@@ -569,7 +569,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.mapTo(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.mapFrom = function(...args) 
           
@@ -579,7 +579,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.mapFrom(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.window = function(...args) 
           
@@ -589,7 +589,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.window(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.nativeParentWidget = function(...args) 
           
@@ -599,7 +599,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.nativeParentWidget(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.topLevelWidget = function(...args) 
           
@@ -609,7 +609,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.topLevelWidget(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.setPalette = function(...args) 
           
@@ -619,7 +619,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setPalette(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.setBackgroundRole = function(...args) 
           
@@ -629,7 +629,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setBackgroundRole(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.backgroundRole = function(...args) 
           
@@ -639,7 +639,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.backgroundRole(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.setForegroundRole = function(...args) 
           
@@ -649,7 +649,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setForegroundRole(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.foregroundRole = function(...args) 
           
@@ -659,7 +659,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.foregroundRole(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.setFont = function(...args) 
           
@@ -669,7 +669,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setFont(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.fontInfo = function(...args) 
           
@@ -679,7 +679,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.fontInfo(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.setCursor = function(...args) 
           
@@ -689,7 +689,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setCursor(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.unsetCursor = function(...args) 
           
@@ -699,7 +699,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.unsetCursor(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.setMouseTracking = function(...args) 
           
@@ -709,7 +709,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setMouseTracking(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.hasMouseTracking = function(...args) 
           
@@ -719,7 +719,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.hasMouseTracking(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.underMouse = function(...args) 
           
@@ -729,7 +729,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.underMouse(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.setTabletTracking = function(...args) 
           
@@ -739,7 +739,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setTabletTracking(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.hasTabletTracking = function(...args) 
           
@@ -749,7 +749,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.hasTabletTracking(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.setMask = function(...args) 
           
@@ -759,7 +759,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setMask(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.mask = function(...args) 
           
@@ -769,7 +769,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.mask(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.clearMask = function(...args) 
           
@@ -779,7 +779,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.clearMask(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.grab = function(...args) 
           
@@ -789,7 +789,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.grab(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.grabGesture = function(...args) 
           
@@ -799,7 +799,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.grabGesture(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.ungrabGesture = function(...args) 
           
@@ -809,7 +809,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.ungrabGesture(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.setWindowTitle = function(...args) 
           
@@ -819,7 +819,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setWindowTitle(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.setStyleSheet = function(...args) 
           
@@ -829,7 +829,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setStyleSheet(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.setWindowIcon = function(...args) 
           
@@ -839,7 +839,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setWindowIcon(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.setWindowIconText = function(...args) 
           
@@ -849,7 +849,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setWindowIconText(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.setWindowRole = function(...args) 
           
@@ -859,7 +859,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setWindowRole(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.windowRole = function(...args) 
           
@@ -869,7 +869,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.windowRole(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.setWindowFilePath = function(...args) 
           
@@ -879,7 +879,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setWindowFilePath(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.setWindowOpacity = function(...args) 
           
@@ -889,7 +889,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setWindowOpacity(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.isWindowModified = function(...args) 
           
@@ -899,7 +899,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.isWindowModified(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.setToolTip = function(...args) 
           
@@ -909,7 +909,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setToolTip(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.setToolTipDuration = function(...args) 
           
@@ -919,7 +919,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setToolTipDuration(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.setStatusTip = function(...args) 
           
@@ -929,7 +929,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setStatusTip(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.setWhatsThis = function(...args) 
           
@@ -939,7 +939,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setWhatsThis(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.setAccessibleName = function(...args) 
           
@@ -949,7 +949,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setAccessibleName(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.setAccessibleDescription = function(...args) 
           
@@ -959,7 +959,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setAccessibleDescription(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.setLayoutDirection = function(...args) 
           
@@ -969,7 +969,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setLayoutDirection(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.unsetLayoutDirection = function(...args) 
           
@@ -979,7 +979,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.unsetLayoutDirection(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.setLocale = function(...args) 
           
@@ -989,7 +989,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setLocale(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.unsetLocale = function(...args) 
           
@@ -999,7 +999,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.unsetLocale(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.isRightToLeft = function(...args) 
           
@@ -1009,7 +1009,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.isRightToLeft(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.isLeftToRight = function(...args) 
           
@@ -1019,7 +1019,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.isLeftToRight(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.activateWindow = function(...args) 
           
@@ -1029,7 +1029,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.activateWindow(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.clearFocus = function(...args) 
           
@@ -1039,7 +1039,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.clearFocus(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.setFocus = function(...args) 
           
@@ -1049,7 +1049,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setFocus(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.setFocusPolicy = function(...args) 
           
@@ -1059,7 +1059,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setFocusPolicy(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.hasFocus = function(...args) 
           
@@ -1069,7 +1069,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.hasFocus(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.setFocusProxy = function(...args) 
           
@@ -1079,7 +1079,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setFocusProxy(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.focusProxy = function(...args) 
           
@@ -1089,7 +1089,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.focusProxy(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.setContextMenuPolicy = function(...args) 
           
@@ -1099,7 +1099,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setContextMenuPolicy(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.grabMouse = function(...args) 
           
@@ -1109,7 +1109,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.grabMouse(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.releaseMouse = function(...args) 
           
@@ -1119,7 +1119,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.releaseMouse(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.grabKeyboard = function(...args) 
           
@@ -1129,7 +1129,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.grabKeyboard(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.releaseKeyboard = function(...args) 
           
@@ -1139,7 +1139,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.releaseKeyboard(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.grabShortcut = function(...args) 
           
@@ -1149,7 +1149,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.grabShortcut(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.releaseShortcut = function(...args) 
           
@@ -1159,7 +1159,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.releaseShortcut(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.setShortcutEnabled = function(...args) 
           
@@ -1169,7 +1169,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setShortcutEnabled(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.setShortcutAutoRepeat = function(...args) 
           
@@ -1179,7 +1179,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setShortcutAutoRepeat(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.setUpdatesEnabled = function(...args) 
           
@@ -1189,7 +1189,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setUpdatesEnabled(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.update = function(...args) 
           
@@ -1199,7 +1199,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.update(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.repaint = function(...args) 
           
@@ -1209,7 +1209,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.repaint(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.setVisible = function(...args) 
           
@@ -1219,7 +1219,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setVisible(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.setHidden = function(...args) 
           
@@ -1229,7 +1229,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setHidden(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.show = function(...args) 
           
@@ -1239,7 +1239,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.show(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.hide = function(...args) 
           
@@ -1249,7 +1249,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.hide(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.showMinimized = function(...args) 
           
@@ -1259,7 +1259,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.showMinimized(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.showMaximized = function(...args) 
           
@@ -1269,7 +1269,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.showMaximized(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.showFullScreen = function(...args) 
           
@@ -1279,7 +1279,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.showFullScreen(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.showNormal = function(...args) 
           
@@ -1289,7 +1289,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.showNormal(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.close = function(...args) 
           
@@ -1299,7 +1299,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.close(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.raise = function(...args) 
           
@@ -1309,7 +1309,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.raise(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.lower = function(...args) 
           
@@ -1319,7 +1319,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.lower(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.stackUnder = function(...args) 
           
@@ -1329,7 +1329,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.stackUnder(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.move = function(...args) 
           
@@ -1339,7 +1339,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.move(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.resize = function(...args) 
           
@@ -1349,7 +1349,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.resize(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.setGeometry = function(...args) 
           
@@ -1359,7 +1359,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setGeometry(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.saveGeometry = function(...args) 
           
@@ -1369,7 +1369,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.saveGeometry(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.restoreGeometry = function(...args) 
           
@@ -1379,7 +1379,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.restoreGeometry(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.adjustSize = function(...args) 
           
@@ -1389,7 +1389,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.adjustSize(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.isVisible = function(...args) 
           
@@ -1399,7 +1399,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.isVisible(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.isVisibleTo = function(...args) 
           
@@ -1409,7 +1409,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.isVisibleTo(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.isHidden = function(...args) 
           
@@ -1419,7 +1419,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.isHidden(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.isMinimized = function(...args) 
           
@@ -1429,7 +1429,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.isMinimized(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.isMaximized = function(...args) 
           
@@ -1439,7 +1439,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.isMaximized(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.isFullScreen = function(...args) 
           
@@ -1449,7 +1449,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.isFullScreen(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.windowState = function(...args) 
           
@@ -1459,7 +1459,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.windowState(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.setWindowState = function(...args) 
           
@@ -1469,7 +1469,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setWindowState(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.overrideWindowState = function(...args) 
           
@@ -1479,7 +1479,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.overrideWindowState(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.setSizePolicy = function(...args) 
           
@@ -1489,7 +1489,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setSizePolicy(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.heightForWidth = function(...args) 
           
@@ -1499,7 +1499,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.heightForWidth(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.hasHeightForWidth = function(...args) 
           
@@ -1509,7 +1509,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.hasHeightForWidth(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.visibleRegion = function(...args) 
           
@@ -1519,7 +1519,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.visibleRegion(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.setContentsMargins = function(...args) 
           
@@ -1529,7 +1529,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setContentsMargins(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.contentsMargins = function(...args) 
           
@@ -1539,7 +1539,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.contentsMargins(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.contentsRect = function(...args) 
           
@@ -1549,7 +1549,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.contentsRect(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.layout = function(...args) 
           
@@ -1559,7 +1559,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.layout(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.setLayout = function(...args) 
           
@@ -1569,7 +1569,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setLayout(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.updateGeometry = function(...args) 
           
@@ -1579,7 +1579,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.updateGeometry(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.setParent = function(...args) 
           
@@ -1589,7 +1589,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setParent(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.scroll = function(...args) 
           
@@ -1599,7 +1599,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.scroll(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.focusWidget = function(...args) 
           
@@ -1609,7 +1609,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.focusWidget(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.nextInFocusChain = function(...args) 
           
@@ -1619,7 +1619,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.nextInFocusChain(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.previousInFocusChain = function(...args) 
           
@@ -1629,7 +1629,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.previousInFocusChain(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.setAcceptDrops = function(...args) 
           
@@ -1639,7 +1639,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setAcceptDrops(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.addAction = function(...args) 
           
@@ -1649,7 +1649,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.addAction(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.addActions = function(...args) 
           
@@ -1659,7 +1659,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.addActions(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.insertActions = function(...args) 
           
@@ -1669,7 +1669,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.insertActions(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.insertAction = function(...args) 
           
@@ -1679,7 +1679,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.insertAction(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.removeAction = function(...args) 
           
@@ -1689,7 +1689,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.removeAction(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.actions = function(...args) 
           
@@ -1699,7 +1699,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.actions(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.parentWidget = function(...args) 
           
@@ -1709,7 +1709,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.parentWidget(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.setWindowFlags = function(...args) 
           
@@ -1719,7 +1719,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setWindowFlags(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.windowFlags = function(...args) 
           
@@ -1729,7 +1729,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.windowFlags(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.setWindowFlag = function(...args) 
           
@@ -1739,7 +1739,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setWindowFlag(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.overrideWindowFlags = function(...args) 
           
@@ -1749,7 +1749,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.overrideWindowFlags(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.windowType = function(...args) 
           
@@ -1759,7 +1759,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.windowType(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.childAt = function(...args) 
           
@@ -1769,7 +1769,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.childAt(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.setAttribute = function(...args) 
           
@@ -1779,7 +1779,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setAttribute(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.testAttribute = function(...args) 
           
@@ -1789,7 +1789,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.testAttribute(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.ensurePolished = function(...args) 
           
@@ -1799,7 +1799,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.ensurePolished(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.isAncestorOf = function(...args) 
           
@@ -1809,7 +1809,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.isAncestorOf(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.setAutoFillBackground = function(...args) 
           
@@ -1819,7 +1819,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setAutoFillBackground(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.event = function(...args) 
           
@@ -1829,7 +1829,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.event(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.mouseDoubleClickEvent = function(...args) 
           
@@ -1839,7 +1839,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.mouseDoubleClickEvent(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.wheelEvent = function(...args) 
           
@@ -1849,7 +1849,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.wheelEvent(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.keyPressEvent = function(...args) 
           
@@ -1859,7 +1859,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.keyPressEvent(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.keyReleaseEvent = function(...args) 
           
@@ -1869,7 +1869,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.keyReleaseEvent(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.focusInEvent = function(...args) 
           
@@ -1879,7 +1879,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.focusInEvent(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.focusOutEvent = function(...args) 
           
@@ -1889,7 +1889,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.focusOutEvent(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.enterEvent = function(...args) 
           
@@ -1899,7 +1899,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.enterEvent(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.leaveEvent = function(...args) 
           
@@ -1909,7 +1909,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.leaveEvent(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.moveEvent = function(...args) 
           
@@ -1919,7 +1919,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.moveEvent(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.closeEvent = function(...args) 
           
@@ -1929,7 +1929,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.closeEvent(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.tabletEvent = function(...args) 
           
@@ -1939,7 +1939,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.tabletEvent(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.dragEnterEvent = function(...args) 
           
@@ -1949,7 +1949,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.dragEnterEvent(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.dragMoveEvent = function(...args) 
           
@@ -1959,7 +1959,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.dragMoveEvent(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.dragLeaveEvent = function(...args) 
           
@@ -1969,7 +1969,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.dragLeaveEvent(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.dropEvent = function(...args) 
           
@@ -1979,7 +1979,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.dropEvent(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.showEvent = function(...args) 
           
@@ -1989,7 +1989,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.showEvent(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.hideEvent = function(...args) 
           
@@ -1999,7 +1999,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.hideEvent(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.nativeEvent = function(...args) 
           
@@ -2009,7 +2009,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.nativeEvent(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.changeEvent = function(...args) 
           
@@ -2019,7 +2019,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.changeEvent(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.metric = function(...args) 
           
@@ -2029,7 +2029,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.metric(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.initPainter = function(...args) 
           
@@ -2039,7 +2039,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.initPainter(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.redirected = function(...args) 
           
@@ -2049,7 +2049,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.redirected(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.sharedPainter = function(...args) 
           
@@ -2059,7 +2059,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.sharedPainter(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.inputMethodEvent = function(...args) 
           
@@ -2069,7 +2069,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.inputMethodEvent(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.inputMethodQuery = function(...args) 
           
@@ -2079,7 +2079,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.inputMethodQuery(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.setInputMethodHints = function(...args) 
           
@@ -2089,7 +2089,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setInputMethodHints(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.updateMicroFocus = function(...args) 
           
@@ -2099,7 +2099,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.updateMicroFocus(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.create = function(...args) 
           
@@ -2109,7 +2109,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.create(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.destroy = function(...args) 
           
@@ -2119,7 +2119,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.destroy(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.focusNextPrevChild = function(...args) 
           
@@ -2129,7 +2129,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.focusNextPrevChild(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.focusNextChild = function(...args) 
           
@@ -2139,7 +2139,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.focusNextChild(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.focusPreviousChild = function(...args) 
           
@@ -2149,7 +2149,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.focusPreviousChild(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.setBackingStore = function(...args) 
           
@@ -2159,7 +2159,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setBackingStore(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.testAttribute_helper = function(...args) 
           
@@ -2169,7 +2169,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.testAttribute_helper(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.takeLayout = function(...args) 
           
@@ -2179,7 +2179,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.takeLayout(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.qt_mac_is_metal = function(...args) 
           
@@ -2189,7 +2189,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.qt_mac_is_metal(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.qt_qwidget_data = function(...args) 
           
@@ -2199,7 +2199,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.qt_qwidget_data(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.qt_widget_private = function(...args) 
           
@@ -2209,7 +2209,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.qt_widget_private(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.currentSubWindow = function(...args) 
           
@@ -2219,7 +2219,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.currentSubWindow(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.activeSubWindow = function(...args) 
           
@@ -2229,7 +2229,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.activeSubWindow(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.subWindowList = function(...args) 
           
@@ -2239,7 +2239,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.subWindowList(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.addSubWindow = function(...args) 
           
@@ -2249,7 +2249,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.addSubWindow(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.removeSubWindow = function(...args) 
           
@@ -2259,7 +2259,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.removeSubWindow(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.background = function(...args) 
           
@@ -2269,7 +2269,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.background(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.setBackground = function(...args) 
           
@@ -2279,7 +2279,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setBackground(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.setActivationOrder = function(...args) 
           
@@ -2289,7 +2289,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setActivationOrder(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.setOption = function(...args) 
           
@@ -2299,7 +2299,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setOption(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.testOption = function(...args) 
           
@@ -2309,7 +2309,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.testOption(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.setViewMode = function(...args) 
           
@@ -2319,7 +2319,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setViewMode(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.setDocumentMode = function(...args) 
           
@@ -2329,7 +2329,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setDocumentMode(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.setTabsClosable = function(...args) 
           
@@ -2339,7 +2339,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setTabsClosable(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.setTabsMovable = function(...args) 
           
@@ -2349,7 +2349,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setTabsMovable(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.setTabShape = function(...args) 
           
@@ -2359,7 +2359,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setTabShape(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.setTabPosition = function(...args) 
           
@@ -2369,7 +2369,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setTabPosition(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.setActiveSubWindow = function(...args) 
           
@@ -2379,7 +2379,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setActiveSubWindow(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.tileSubWindows = function(...args) 
           
@@ -2389,7 +2389,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.tileSubWindows(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.cascadeSubWindows = function(...args) 
           
@@ -2399,7 +2399,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.cascadeSubWindows(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.closeActiveSubWindow = function(...args) 
           
@@ -2409,7 +2409,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.closeActiveSubWindow(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.closeAllSubWindows = function(...args) 
           
@@ -2419,7 +2419,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.closeAllSubWindows(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.activateNextSubWindow = function(...args) 
           
@@ -2429,7 +2429,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.activateNextSubWindow(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.activatePreviousSubWindow = function(...args) 
           
@@ -2439,7 +2439,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.activatePreviousSubWindow(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.setupViewport = function(...args) 
           
@@ -2449,7 +2449,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setupViewport(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.scrollContentsBy = function(...args) 
           
@@ -2459,7 +2459,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.scrollContentsBy(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.getAddTabButton = function(...args) 
           
@@ -2469,7 +2469,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.getAddTabButton(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.updateTabBar = function(...args) 
           
@@ -2479,7 +2479,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.updateTabBar(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.updateTabBarSize = function(...args) 
           
@@ -2489,7 +2489,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.updateTabBarSize(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.updateAddButtonLocation = function(...args) 
           
@@ -2499,7 +2499,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.updateAddButtonLocation(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.closeTab = function(...args) 
           
@@ -2509,7 +2509,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.closeTab(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.activateTab = function(...args) 
           
@@ -2519,7 +2519,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.activateTab(...args);
             
         };
-    
+        
         // function 
         RMdiArea.prototype.addTabClicked = function(...args) 
           
@@ -2529,7 +2529,7 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.addTabClicked(...args);
             
         };
-    
+        
 
       // static functions:
       

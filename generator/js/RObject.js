@@ -105,7 +105,7 @@
               return this.__PROXY__.init(...args);
             
         };
-    
+        
         // function 
         RObject.prototype.getRtti = function(...args) 
           
@@ -115,7 +115,7 @@
               return this.__PROXY__.getRtti(...args);
             
         };
-    
+        
         // function 
         RObject.prototype.getType = function(...args) 
           
@@ -125,7 +125,7 @@
               return this.__PROXY__.getType(...args);
             
         };
-    
+        
         // function 
         RObject.prototype.clone = function(...args) 
           
@@ -135,7 +135,7 @@
               return this.__PROXY__.clone(...args);
             
         };
-    
+        
         // function 
         RObject.prototype.mustAlwaysClone = function(...args) 
           
@@ -145,7 +145,7 @@
               return this.__PROXY__.mustAlwaysClone(...args);
             
         };
-    
+        
         // function 
         RObject.prototype.getDocument = function(...args) 
           
@@ -155,7 +155,7 @@
               return this.__PROXY__.getDocument(...args);
             
         };
-    
+        
         // function 
         RObject.prototype.setDocument = function(...args) 
           
@@ -165,7 +165,7 @@
               return this.__PROXY__.setDocument(...args);
             
         };
-    
+        
         // function 
         RObject.prototype.setFlag = function(...args) 
           
@@ -175,7 +175,7 @@
               return this.__PROXY__.setFlag(...args);
             
         };
-    
+        
         // function 
         RObject.prototype.getFlag = function(...args) 
           
@@ -185,7 +185,7 @@
               return this.__PROXY__.getFlag(...args);
             
         };
-    
+        
         // function 
         RObject.prototype.getId = function(...args) 
           
@@ -195,7 +195,7 @@
               return this.__PROXY__.getId(...args);
             
         };
-    
+        
         // function 
         RObject.prototype.getHandle = function(...args) 
           
@@ -205,7 +205,7 @@
               return this.__PROXY__.getHandle(...args);
             
         };
-    
+        
         // function 
         RObject.prototype.isProtected = function(...args) 
           
@@ -215,7 +215,7 @@
               return this.__PROXY__.isProtected(...args);
             
         };
-    
+        
         // function 
         RObject.prototype.setProtected = function(...args) 
           
@@ -225,7 +225,7 @@
               return this.__PROXY__.setProtected(...args);
             
         };
-    
+        
         // function 
         RObject.prototype.isInvisible = function(...args) 
           
@@ -235,7 +235,7 @@
               return this.__PROXY__.isInvisible(...args);
             
         };
-    
+        
         // function 
         RObject.prototype.setInvisible = function(...args) 
           
@@ -245,7 +245,7 @@
               return this.__PROXY__.setInvisible(...args);
             
         };
-    
+        
         // function 
         RObject.prototype.isSelected = function(...args) 
           
@@ -255,7 +255,7 @@
               return this.__PROXY__.isSelected(...args);
             
         };
-    
+        
         // function 
         RObject.prototype.setSelected = function(...args) 
           
@@ -265,7 +265,7 @@
               return this.__PROXY__.setSelected(...args);
             
         };
-    
+        
         // function 
         RObject.prototype.isUndone = function(...args) 
           
@@ -275,7 +275,7 @@
               return this.__PROXY__.isUndone(...args);
             
         };
-    
+        
         // function 
         RObject.prototype.isWorkingSet = function(...args) 
           
@@ -285,7 +285,7 @@
               return this.__PROXY__.isWorkingSet(...args);
             
         };
-    
+        
         // function 
         RObject.prototype.setWorkingSet = function(...args) 
           
@@ -295,7 +295,7 @@
               return this.__PROXY__.setWorkingSet(...args);
             
         };
-    
+        
         // function 
         RObject.prototype.getPropertyTypeIds = function(...args) 
           
@@ -305,7 +305,7 @@
               return this.__PROXY__.getPropertyTypeIds(...args);
             
         };
-    
+        
         // function 
         RObject.prototype.getCustomPropertyTypeIds = function(...args) 
           
@@ -315,7 +315,7 @@
               return this.__PROXY__.getCustomPropertyTypeIds(...args);
             
         };
-    
+        
         // function 
         RObject.prototype.getProperty = function(...args) 
           
@@ -325,7 +325,7 @@
               return this.__PROXY__.getProperty(...args);
             
         };
-    
+        
         // function 
         RObject.prototype.setProperty = function(...args) 
           
@@ -335,7 +335,7 @@
               return this.__PROXY__.setProperty(...args);
             
         };
-    
+        
         // function 
         RObject.prototype.hasPropertyType = function(...args) 
           
@@ -345,7 +345,7 @@
               return this.__PROXY__.hasPropertyType(...args);
             
         };
-    
+        
         // function 
         RObject.prototype.hasCustomProperties = function(...args) 
           
@@ -355,7 +355,7 @@
               return this.__PROXY__.hasCustomProperties(...args);
             
         };
-    
+        
         // function 
         RObject.prototype.hasCustomProperty = function(...args) 
           
@@ -365,7 +365,7 @@
               return this.__PROXY__.hasCustomProperty(...args);
             
         };
-    
+        
         // function 
         RObject.prototype.getCustomProperty = function(...args) 
           
@@ -375,7 +375,7 @@
               return this.__PROXY__.getCustomProperty(...args);
             
         };
-    
+        
         // function 
         RObject.prototype.getCustomDoubleProperty = function(...args) 
           
@@ -385,7 +385,7 @@
               return this.__PROXY__.getCustomDoubleProperty(...args);
             
         };
-    
+        
         // function 
         RObject.prototype.getCustomIntProperty = function(...args) 
           
@@ -395,7 +395,7 @@
               return this.__PROXY__.getCustomIntProperty(...args);
             
         };
-    
+        
         // function 
         RObject.prototype.getCustomBoolProperty = function(...args) 
           
@@ -405,7 +405,7 @@
               return this.__PROXY__.getCustomBoolProperty(...args);
             
         };
-    
+        
         // function 
         RObject.prototype.setCustomProperty = function(...args) 
           
@@ -415,7 +415,7 @@
               return this.__PROXY__.setCustomProperty(...args);
             
         };
-    
+        
         // function 
         RObject.prototype.removeCustomProperty = function(...args) 
           
@@ -425,7 +425,7 @@
               return this.__PROXY__.removeCustomProperty(...args);
             
         };
-    
+        
         // function 
         RObject.prototype.getCustomPropertyTitles = function(...args) 
           
@@ -435,7 +435,7 @@
               return this.__PROXY__.getCustomPropertyTitles(...args);
             
         };
-    
+        
         // function 
         RObject.prototype.getCustomPropertyKeys = function(...args) 
           
@@ -445,7 +445,7 @@
               return this.__PROXY__.getCustomPropertyKeys(...args);
             
         };
-    
+        
         // function 
         RObject.prototype.copyCustomPropertiesFrom = function(...args) 
           
@@ -455,7 +455,7 @@
               return this.__PROXY__.copyCustomPropertiesFrom(...args);
             
         };
-    
+        
         // function 
         RObject.prototype.setCustomPropertyAttributes = function(...args) 
           
@@ -465,7 +465,7 @@
               return this.__PROXY__.setCustomPropertyAttributes(...args);
             
         };
-    
+        
         // function 
         RObject.prototype.getCustomPropertyAttributes = function(...args) 
           
@@ -475,7 +475,7 @@
               return this.__PROXY__.getCustomPropertyAttributes(...args);
             
         };
-    
+        
         // function 
         RObject.prototype.getComplexity = function(...args) 
           
@@ -485,7 +485,7 @@
               return this.__PROXY__.getComplexity(...args);
             
         };
-    
+        
         // function 
         RObject.prototype.setAutoUpdatesBlocked = function(...args) 
           
@@ -495,7 +495,7 @@
               return this.__PROXY__.setAutoUpdatesBlocked(...args);
             
         };
-    
+        
         // function 
         RObject.prototype.dump = function(...args) 
           
@@ -505,7 +505,7 @@
               return this.__PROXY__.dump(...args);
             
         };
-    
+        
         // function 
         RObject.prototype.validate = function(...args) 
           
@@ -515,7 +515,7 @@
               return this.__PROXY__.validate(...args);
             
         };
-    
+        
         // function 
         RObject.prototype.print = function(...args) 
           
@@ -525,7 +525,7 @@
               return this.__PROXY__.print(...args);
             
         };
-    
+        
         // function 
         RObject.prototype.setUndone = function(...args) 
           
@@ -535,7 +535,7 @@
               return this.__PROXY__.setUndone(...args);
             
         };
-    
+        
         // function 
         RObject.prototype.setId = function(...args) 
           
@@ -545,7 +545,7 @@
               return this.__PROXY__.setId(...args);
             
         };
-    
+        
         // function 
         RObject.prototype.setHandle = function(...args) 
           
@@ -555,7 +555,7 @@
               return this.__PROXY__.setHandle(...args);
             
         };
-    
+        
         // function 
         RObject.prototype.setMember = function(...args) 
           
@@ -565,7 +565,7 @@
               return this.__PROXY__.setMember(...args);
             
         };
-    
+        
         // function 
         RObject.prototype.setMemberFlag = function(...args) 
           
@@ -575,7 +575,7 @@
               return this.__PROXY__.setMemberFlag(...args);
             
         };
-    
+        
         // function 
         RObject.prototype.setMemberX = function(...args) 
           
@@ -585,7 +585,7 @@
               return this.__PROXY__.setMemberX(...args);
             
         };
-    
+        
         // function 
         RObject.prototype.setMemberY = function(...args) 
           
@@ -595,7 +595,7 @@
               return this.__PROXY__.setMemberY(...args);
             
         };
-    
+        
         // function 
         RObject.prototype.setMemberZ = function(...args) 
           
@@ -605,7 +605,7 @@
               return this.__PROXY__.setMemberZ(...args);
             
         };
-    
+        
         // function 
         RObject.prototype.setMemberVector = function(...args) 
           
@@ -615,7 +615,7 @@
               return this.__PROXY__.setMemberVector(...args);
             
         };
-    
+        
 
       // static functions:
       

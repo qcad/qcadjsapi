@@ -134,7 +134,7 @@
               return this.__PROXY__.registerFileImporter(...args);
             
         };
-    
+        
         // function 
         RFileImporterRegistry.prototype.unregisterFileImporter = function(...args) 
           
@@ -144,7 +144,7 @@
               return this.__PROXY__.unregisterFileImporter(...args);
             
         };
-    
+        
         // function 
         RFileImporterRegistry.prototype.getFileImporter = function(...args) 
           
@@ -154,7 +154,7 @@
               return this.__PROXY__.getFileImporter(...args);
             
         };
-    
+        
         // function 
         RFileImporterRegistry.prototype.getFilterStrings = function(...args) 
           
@@ -164,7 +164,7 @@
               return this.__PROXY__.getFilterStrings(...args);
             
         };
-    
+        
         // function 
         RFileImporterRegistry.prototype.hasFileImporter = function(...args) 
           
@@ -174,7 +174,7 @@
               return this.__PROXY__.hasFileImporter(...args);
             
         };
-    
+        
         // function 
         RFileImporterRegistry.prototype.getFilterExtensions = function(...args) 
           
@@ -184,7 +184,7 @@
               return this.__PROXY__.getFilterExtensions(...args);
             
         };
-    
+        
         // function 
         RFileImporterRegistry.prototype.getFilterExtensionPatterns = function(...args) 
           
@@ -194,7 +194,7 @@
               return this.__PROXY__.getFilterExtensionPatterns(...args);
             
         };
-    
+        
 
       // static functions:
       

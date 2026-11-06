@@ -164,7 +164,7 @@
               return this.__PROXY__.mustAlwaysClone(...args);
             
         };
-    
+        
         // function 
         RView.prototype.getDocument = function(...args) 
           
@@ -174,7 +174,7 @@
               return this.__PROXY__.getDocument(...args);
             
         };
-    
+        
         // function 
         RView.prototype.setDocument = function(...args) 
           
@@ -184,7 +184,7 @@
               return this.__PROXY__.setDocument(...args);
             
         };
-    
+        
         // function 
         RView.prototype.setFlag = function(...args) 
           
@@ -194,7 +194,7 @@
               return this.__PROXY__.setFlag(...args);
             
         };
-    
+        
         // function 
         RView.prototype.getFlag = function(...args) 
           
@@ -204,7 +204,7 @@
               return this.__PROXY__.getFlag(...args);
             
         };
-    
+        
         // function 
         RView.prototype.getId = function(...args) 
           
@@ -214,7 +214,7 @@
               return this.__PROXY__.getId(...args);
             
         };
-    
+        
         // function 
         RView.prototype.getHandle = function(...args) 
           
@@ -224,7 +224,7 @@
               return this.__PROXY__.getHandle(...args);
             
         };
-    
+        
         // function 
         RView.prototype.isProtected = function(...args) 
           
@@ -234,7 +234,7 @@
               return this.__PROXY__.isProtected(...args);
             
         };
-    
+        
         // function 
         RView.prototype.setProtected = function(...args) 
           
@@ -244,7 +244,7 @@
               return this.__PROXY__.setProtected(...args);
             
         };
-    
+        
         // function 
         RView.prototype.isInvisible = function(...args) 
           
@@ -254,7 +254,7 @@
               return this.__PROXY__.isInvisible(...args);
             
         };
-    
+        
         // function 
         RView.prototype.setInvisible = function(...args) 
           
@@ -264,7 +264,7 @@
               return this.__PROXY__.setInvisible(...args);
             
         };
-    
+        
         // function 
         RView.prototype.isSelected = function(...args) 
           
@@ -274,7 +274,7 @@
               return this.__PROXY__.isSelected(...args);
             
         };
-    
+        
         // function 
         RView.prototype.setSelected = function(...args) 
           
@@ -284,7 +284,7 @@
               return this.__PROXY__.setSelected(...args);
             
         };
-    
+        
         // function 
         RView.prototype.isUndone = function(...args) 
           
@@ -294,7 +294,7 @@
               return this.__PROXY__.isUndone(...args);
             
         };
-    
+        
         // function 
         RView.prototype.isWorkingSet = function(...args) 
           
@@ -304,7 +304,7 @@
               return this.__PROXY__.isWorkingSet(...args);
             
         };
-    
+        
         // function 
         RView.prototype.setWorkingSet = function(...args) 
           
@@ -314,7 +314,7 @@
               return this.__PROXY__.setWorkingSet(...args);
             
         };
-    
+        
         // function 
         RView.prototype.getPropertyTypeIds = function(...args) 
           
@@ -324,7 +324,7 @@
               return this.__PROXY__.getPropertyTypeIds(...args);
             
         };
-    
+        
         // function 
         RView.prototype.getCustomPropertyTypeIds = function(...args) 
           
@@ -334,7 +334,7 @@
               return this.__PROXY__.getCustomPropertyTypeIds(...args);
             
         };
-    
+        
         // function 
         RView.prototype.hasPropertyType = function(...args) 
           
@@ -344,7 +344,7 @@
               return this.__PROXY__.hasPropertyType(...args);
             
         };
-    
+        
         // function 
         RView.prototype.hasCustomProperties = function(...args) 
           
@@ -354,7 +354,7 @@
               return this.__PROXY__.hasCustomProperties(...args);
             
         };
-    
+        
         // function 
         RView.prototype.hasCustomProperty = function(...args) 
           
@@ -364,7 +364,7 @@
               return this.__PROXY__.hasCustomProperty(...args);
             
         };
-    
+        
         // function 
         RView.prototype.getCustomProperty = function(...args) 
           
@@ -374,7 +374,7 @@
               return this.__PROXY__.getCustomProperty(...args);
             
         };
-    
+        
         // function 
         RView.prototype.getCustomDoubleProperty = function(...args) 
           
@@ -384,7 +384,7 @@
               return this.__PROXY__.getCustomDoubleProperty(...args);
             
         };
-    
+        
         // function 
         RView.prototype.getCustomIntProperty = function(...args) 
           
@@ -394,7 +394,7 @@
               return this.__PROXY__.getCustomIntProperty(...args);
             
         };
-    
+        
         // function 
         RView.prototype.getCustomBoolProperty = function(...args) 
           
@@ -404,7 +404,7 @@
               return this.__PROXY__.getCustomBoolProperty(...args);
             
         };
-    
+        
         // function 
         RView.prototype.setCustomProperty = function(...args) 
           
@@ -414,7 +414,7 @@
               return this.__PROXY__.setCustomProperty(...args);
             
         };
-    
+        
         // function 
         RView.prototype.removeCustomProperty = function(...args) 
           
@@ -424,7 +424,7 @@
               return this.__PROXY__.removeCustomProperty(...args);
             
         };
-    
+        
         // function 
         RView.prototype.getCustomPropertyTitles = function(...args) 
           
@@ -434,7 +434,7 @@
               return this.__PROXY__.getCustomPropertyTitles(...args);
             
         };
-    
+        
         // function 
         RView.prototype.getCustomPropertyKeys = function(...args) 
           
@@ -444,7 +444,7 @@
               return this.__PROXY__.getCustomPropertyKeys(...args);
             
         };
-    
+        
         // function 
         RView.prototype.copyCustomPropertiesFrom = function(...args) 
           
@@ -454,7 +454,7 @@
               return this.__PROXY__.copyCustomPropertiesFrom(...args);
             
         };
-    
+        
         // function 
         RView.prototype.getComplexity = function(...args) 
           
@@ -464,7 +464,7 @@
               return this.__PROXY__.getComplexity(...args);
             
         };
-    
+        
         // function 
         RView.prototype.setAutoUpdatesBlocked = function(...args) 
           
@@ -474,7 +474,7 @@
               return this.__PROXY__.setAutoUpdatesBlocked(...args);
             
         };
-    
+        
         // function 
         RView.prototype.dump = function(...args) 
           
@@ -484,7 +484,7 @@
               return this.__PROXY__.dump(...args);
             
         };
-    
+        
         // function 
         RView.prototype.validate = function(...args) 
           
@@ -494,7 +494,7 @@
               return this.__PROXY__.validate(...args);
             
         };
-    
+        
         // function 
         RView.prototype.print = function(...args) 
           
@@ -504,7 +504,7 @@
               return this.__PROXY__.print(...args);
             
         };
-    
+        
         // function 
         RView.prototype.setUndone = function(...args) 
           
@@ -514,7 +514,7 @@
               return this.__PROXY__.setUndone(...args);
             
         };
-    
+        
         // function 
         RView.prototype.setId = function(...args) 
           
@@ -524,7 +524,7 @@
               return this.__PROXY__.setId(...args);
             
         };
-    
+        
         // function 
         RView.prototype.setHandle = function(...args) 
           
@@ -534,7 +534,7 @@
               return this.__PROXY__.setHandle(...args);
             
         };
-    
+        
         // function 
         RView.prototype.setMemberFlag = function(...args) 
           
@@ -544,7 +544,7 @@
               return this.__PROXY__.setMemberFlag(...args);
             
         };
-    
+        
         // function 
         RView.prototype.init = function(...args) 
           
@@ -554,7 +554,7 @@
               return this.__PROXY__.init(...args);
             
         };
-    
+        
         // function 
         RView.prototype.getRtti = function(...args) 
           
@@ -564,7 +564,7 @@
               return this.__PROXY__.getRtti(...args);
             
         };
-    
+        
         // function 
         RView.prototype.getType = function(...args) 
           
@@ -574,7 +574,7 @@
               return this.__PROXY__.getType(...args);
             
         };
-    
+        
         // function 
         RView.prototype.clone = function(...args) 
           
@@ -584,7 +584,7 @@
               return this.__PROXY__.clone(...args);
             
         };
-    
+        
         // function 
         RView.prototype.getName = function(...args) 
           
@@ -594,7 +594,7 @@
               return this.__PROXY__.getName(...args);
             
         };
-    
+        
         // function 
         RView.prototype.setName = function(...args) 
           
@@ -604,7 +604,7 @@
               return this.__PROXY__.setName(...args);
             
         };
-    
+        
         // function 
         RView.prototype.getCenterPoint = function(...args) 
           
@@ -614,7 +614,7 @@
               return this.__PROXY__.getCenterPoint(...args);
             
         };
-    
+        
         // function 
         RView.prototype.setCenterPoint = function(...args) 
           
@@ -624,7 +624,7 @@
               return this.__PROXY__.setCenterPoint(...args);
             
         };
-    
+        
         // function 
         RView.prototype.getWidth = function(...args) 
           
@@ -634,7 +634,7 @@
               return this.__PROXY__.getWidth(...args);
             
         };
-    
+        
         // function 
         RView.prototype.setWidth = function(...args) 
           
@@ -644,7 +644,7 @@
               return this.__PROXY__.setWidth(...args);
             
         };
-    
+        
         // function 
         RView.prototype.getHeight = function(...args) 
           
@@ -654,7 +654,7 @@
               return this.__PROXY__.getHeight(...args);
             
         };
-    
+        
         // function 
         RView.prototype.setHeight = function(...args) 
           
@@ -664,7 +664,7 @@
               return this.__PROXY__.setHeight(...args);
             
         };
-    
+        
         // function 
         RView.prototype.getBox = function(...args) 
           
@@ -674,7 +674,7 @@
               return this.__PROXY__.getBox(...args);
             
         };
-    
+        
         // function 
         RView.prototype.scale = function(...args) 
           
@@ -684,7 +684,7 @@
               return this.__PROXY__.scale(...args);
             
         };
-    
+        
         // function 
         RView.prototype.getProperty = function(...args) 
           
@@ -694,7 +694,7 @@
               return this.__PROXY__.getProperty(...args);
             
         };
-    
+        
         // function 
         RView.prototype.setProperty = function(...args) 
           
@@ -704,7 +704,7 @@
               return this.__PROXY__.setProperty(...args);
             
         };
-    
+        
 
       // static functions:
       

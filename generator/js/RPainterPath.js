@@ -196,7 +196,7 @@ RPainterPath.CurveToDataElement = RPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.swap(...args);
             
         };
-    
+        
         // function 
         RPainterPath.prototype.clear = function(...args) 
           
@@ -206,7 +206,7 @@ RPainterPath.CurveToDataElement = RPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.clear(...args);
             
         };
-    
+        
         // function 
         RPainterPath.prototype.reserve = function(...args) 
           
@@ -216,7 +216,7 @@ RPainterPath.CurveToDataElement = RPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.reserve(...args);
             
         };
-    
+        
         // function 
         RPainterPath.prototype.capacity = function(...args) 
           
@@ -226,7 +226,7 @@ RPainterPath.CurveToDataElement = RPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.capacity(...args);
             
         };
-    
+        
         // function 
         RPainterPath.prototype.arcMoveTo = function(...args) 
           
@@ -236,7 +236,7 @@ RPainterPath.CurveToDataElement = RPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.arcMoveTo(...args);
             
         };
-    
+        
         // function 
         RPainterPath.prototype.arcTo = function(...args) 
           
@@ -246,7 +246,7 @@ RPainterPath.CurveToDataElement = RPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.arcTo(...args);
             
         };
-    
+        
         // function 
         RPainterPath.prototype.currentPosition = function(...args) 
           
@@ -256,7 +256,7 @@ RPainterPath.CurveToDataElement = RPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.currentPosition(...args);
             
         };
-    
+        
         // function 
         RPainterPath.prototype.addEllipse = function(...args) 
           
@@ -266,7 +266,7 @@ RPainterPath.CurveToDataElement = RPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.addEllipse(...args);
             
         };
-    
+        
         // function 
         RPainterPath.prototype.addPolygon = function(...args) 
           
@@ -276,7 +276,7 @@ RPainterPath.CurveToDataElement = RPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.addPolygon(...args);
             
         };
-    
+        
         // function 
         RPainterPath.prototype.addText = function(...args) 
           
@@ -286,7 +286,7 @@ RPainterPath.CurveToDataElement = RPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.addText(...args);
             
         };
-    
+        
         // function 
         RPainterPath.prototype.addRegion = function(...args) 
           
@@ -296,7 +296,7 @@ RPainterPath.CurveToDataElement = RPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.addRegion(...args);
             
         };
-    
+        
         // function 
         RPainterPath.prototype.addRoundedRect = function(...args) 
           
@@ -306,7 +306,7 @@ RPainterPath.CurveToDataElement = RPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.addRoundedRect(...args);
             
         };
-    
+        
         // function 
         RPainterPath.prototype.connectPath = function(...args) 
           
@@ -316,7 +316,7 @@ RPainterPath.CurveToDataElement = RPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.connectPath(...args);
             
         };
-    
+        
         // function 
         RPainterPath.prototype.contains = function(...args) 
           
@@ -326,7 +326,7 @@ RPainterPath.CurveToDataElement = RPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.contains(...args);
             
         };
-    
+        
         // function 
         RPainterPath.prototype.intersects = function(...args) 
           
@@ -336,7 +336,7 @@ RPainterPath.CurveToDataElement = RPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.intersects(...args);
             
         };
-    
+        
         // function 
         RPainterPath.prototype.translate = function(...args) 
           
@@ -346,7 +346,7 @@ RPainterPath.CurveToDataElement = RPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.translate(...args);
             
         };
-    
+        
         // function 
         RPainterPath.prototype.translated = function(...args) 
           
@@ -356,7 +356,7 @@ RPainterPath.CurveToDataElement = RPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.translated(...args);
             
         };
-    
+        
         // function 
         RPainterPath.prototype.boundingRect = function(...args) 
           
@@ -366,7 +366,7 @@ RPainterPath.CurveToDataElement = RPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.boundingRect(...args);
             
         };
-    
+        
         // function 
         RPainterPath.prototype.controlPointRect = function(...args) 
           
@@ -376,7 +376,7 @@ RPainterPath.CurveToDataElement = RPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.controlPointRect(...args);
             
         };
-    
+        
         // function 
         RPainterPath.prototype.fillRule = function(...args) 
           
@@ -386,7 +386,7 @@ RPainterPath.CurveToDataElement = RPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.fillRule(...args);
             
         };
-    
+        
         // function 
         RPainterPath.prototype.setFillRule = function(...args) 
           
@@ -396,7 +396,7 @@ RPainterPath.CurveToDataElement = RPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.setFillRule(...args);
             
         };
-    
+        
         // function 
         RPainterPath.prototype.toReversed = function(...args) 
           
@@ -406,7 +406,7 @@ RPainterPath.CurveToDataElement = RPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.toReversed(...args);
             
         };
-    
+        
         // function 
         RPainterPath.prototype.toSubpathPolygons = function(...args) 
           
@@ -416,7 +416,7 @@ RPainterPath.CurveToDataElement = RPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.toSubpathPolygons(...args);
             
         };
-    
+        
         // function 
         RPainterPath.prototype.toFillPolygons = function(...args) 
           
@@ -426,7 +426,7 @@ RPainterPath.CurveToDataElement = RPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.toFillPolygons(...args);
             
         };
-    
+        
         // function 
         RPainterPath.prototype.toFillPolygon = function(...args) 
           
@@ -436,7 +436,7 @@ RPainterPath.CurveToDataElement = RPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.toFillPolygon(...args);
             
         };
-    
+        
         // function 
         RPainterPath.prototype.elementCount = function(...args) 
           
@@ -446,7 +446,7 @@ RPainterPath.CurveToDataElement = RPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.elementCount(...args);
             
         };
-    
+        
         // function 
         RPainterPath.prototype.setElementPositionAt = function(...args) 
           
@@ -456,7 +456,7 @@ RPainterPath.CurveToDataElement = RPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.setElementPositionAt(...args);
             
         };
-    
+        
         // function 
         RPainterPath.prototype.length = function(...args) 
           
@@ -466,7 +466,7 @@ RPainterPath.CurveToDataElement = RPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.length(...args);
             
         };
-    
+        
         // function 
         RPainterPath.prototype.percentAtLength = function(...args) 
           
@@ -476,7 +476,7 @@ RPainterPath.CurveToDataElement = RPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.percentAtLength(...args);
             
         };
-    
+        
         // function 
         RPainterPath.prototype.pointAtPercent = function(...args) 
           
@@ -486,7 +486,7 @@ RPainterPath.CurveToDataElement = RPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.pointAtPercent(...args);
             
         };
-    
+        
         // function 
         RPainterPath.prototype.angleAtPercent = function(...args) 
           
@@ -496,7 +496,7 @@ RPainterPath.CurveToDataElement = RPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.angleAtPercent(...args);
             
         };
-    
+        
         // function 
         RPainterPath.prototype.slopeAtPercent = function(...args) 
           
@@ -506,7 +506,7 @@ RPainterPath.CurveToDataElement = RPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.slopeAtPercent(...args);
             
         };
-    
+        
         // function 
         RPainterPath.prototype.united = function(...args) 
           
@@ -516,7 +516,7 @@ RPainterPath.CurveToDataElement = RPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.united(...args);
             
         };
-    
+        
         // function 
         RPainterPath.prototype.intersected = function(...args) 
           
@@ -526,7 +526,7 @@ RPainterPath.CurveToDataElement = RPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.intersected(...args);
             
         };
-    
+        
         // function 
         RPainterPath.prototype.subtracted = function(...args) 
           
@@ -536,7 +536,7 @@ RPainterPath.CurveToDataElement = RPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.subtracted(...args);
             
         };
-    
+        
         // function 
         RPainterPath.prototype.simplified = function(...args) 
           
@@ -546,7 +546,7 @@ RPainterPath.CurveToDataElement = RPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.simplified(...args);
             
         };
-    
+        
         // function 
         RPainterPath.prototype.ensureData = function(...args) 
           
@@ -556,7 +556,7 @@ RPainterPath.CurveToDataElement = RPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.ensureData(...args);
             
         };
-    
+        
         // function 
         RPainterPath.prototype.ensureData_helper = function(...args) 
           
@@ -566,7 +566,7 @@ RPainterPath.CurveToDataElement = RPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.ensureData_helper(...args);
             
         };
-    
+        
         // function 
         RPainterPath.prototype.detach = function(...args) 
           
@@ -576,7 +576,7 @@ RPainterPath.CurveToDataElement = RPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.detach(...args);
             
         };
-    
+        
         // function 
         RPainterPath.prototype.setDirty = function(...args) 
           
@@ -586,7 +586,7 @@ RPainterPath.CurveToDataElement = RPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.setDirty(...args);
             
         };
-    
+        
         // function 
         RPainterPath.prototype.computeBoundingRect = function(...args) 
           
@@ -596,7 +596,7 @@ RPainterPath.CurveToDataElement = RPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.computeBoundingRect(...args);
             
         };
-    
+        
         // function 
         RPainterPath.prototype.computeControlPointRect = function(...args) 
           
@@ -606,7 +606,7 @@ RPainterPath.CurveToDataElement = RPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.computeControlPointRect(...args);
             
         };
-    
+        
         // function 
         RPainterPath.prototype.d_func = function(...args) 
           
@@ -616,7 +616,7 @@ RPainterPath.CurveToDataElement = RPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.d_func(...args);
             
         };
-    
+        
         // function 
         RPainterPath.prototype.setPath = function(...args) 
           
@@ -626,7 +626,7 @@ RPainterPath.CurveToDataElement = RPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.setPath(...args);
             
         };
-    
+        
         // function 
         RPainterPath.prototype.getShapes = function(...args) 
           
@@ -636,7 +636,7 @@ RPainterPath.CurveToDataElement = RPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.getShapes(...args);
             
         };
-    
+        
         // function 
         RPainterPath.prototype.getCurrentPosition = function(...args) 
           
@@ -646,7 +646,7 @@ RPainterPath.CurveToDataElement = RPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.getCurrentPosition(...args);
             
         };
-    
+        
         // function 
         RPainterPath.prototype.isAtPosition = function(...args) 
           
@@ -656,7 +656,7 @@ RPainterPath.CurveToDataElement = RPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.isAtPosition(...args);
             
         };
-    
+        
         // function 
         RPainterPath.prototype.moveTo = function(...args) 
           
@@ -666,7 +666,7 @@ RPainterPath.CurveToDataElement = RPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.moveTo(...args);
             
         };
-    
+        
         // function 
         RPainterPath.prototype.moveToOrNop = function(...args) 
           
@@ -676,7 +676,7 @@ RPainterPath.CurveToDataElement = RPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.moveToOrNop(...args);
             
         };
-    
+        
         // function 
         RPainterPath.prototype.lineTo = function(...args) 
           
@@ -686,7 +686,7 @@ RPainterPath.CurveToDataElement = RPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.lineTo(...args);
             
         };
-    
+        
         // function 
         RPainterPath.prototype.quadTo = function(...args) 
           
@@ -696,7 +696,7 @@ RPainterPath.CurveToDataElement = RPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.quadTo(...args);
             
         };
-    
+        
         // function 
         RPainterPath.prototype.cubicTo = function(...args) 
           
@@ -706,7 +706,7 @@ RPainterPath.CurveToDataElement = RPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.cubicTo(...args);
             
         };
-    
+        
         // function 
         RPainterPath.prototype.closeSubpath = function(...args) 
           
@@ -716,7 +716,7 @@ RPainterPath.CurveToDataElement = RPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.closeSubpath(...args);
             
         };
-    
+        
         // function 
         RPainterPath.prototype.containsPoint = function(...args) 
           
@@ -726,7 +726,7 @@ RPainterPath.CurveToDataElement = RPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.containsPoint(...args);
             
         };
-    
+        
         // function 
         RPainterPath.prototype.addPolyline = function(...args) 
           
@@ -736,7 +736,7 @@ RPainterPath.CurveToDataElement = RPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.addPolyline(...args);
             
         };
-    
+        
         // function 
         RPainterPath.prototype.addPath = function(...args) 
           
@@ -746,7 +746,7 @@ RPainterPath.CurveToDataElement = RPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.addPath(...args);
             
         };
-    
+        
         // function 
         RPainterPath.prototype.appendPath = function(...args) 
           
@@ -756,7 +756,7 @@ RPainterPath.CurveToDataElement = RPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.appendPath(...args);
             
         };
-    
+        
         // function 
         RPainterPath.prototype.addLine = function(...args) 
           
@@ -766,7 +766,7 @@ RPainterPath.CurveToDataElement = RPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.addLine(...args);
             
         };
-    
+        
         // function 
         RPainterPath.prototype.addArc = function(...args) 
           
@@ -776,7 +776,7 @@ RPainterPath.CurveToDataElement = RPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.addArc(...args);
             
         };
-    
+        
         // function 
         RPainterPath.prototype.addSpline = function(...args) 
           
@@ -786,7 +786,7 @@ RPainterPath.CurveToDataElement = RPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.addSpline(...args);
             
         };
-    
+        
         // function 
         RPainterPath.prototype.addRect = function(...args) 
           
@@ -796,7 +796,7 @@ RPainterPath.CurveToDataElement = RPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.addRect(...args);
             
         };
-    
+        
         // function 
         RPainterPath.prototype.addBox = function(...args) 
           
@@ -806,7 +806,7 @@ RPainterPath.CurveToDataElement = RPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.addBox(...args);
             
         };
-    
+        
         // function 
         RPainterPath.prototype.getBoundingBox = function(...args) 
           
@@ -816,7 +816,7 @@ RPainterPath.CurveToDataElement = RPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.getBoundingBox(...args);
             
         };
-    
+        
         // function 
         RPainterPath.prototype.getStartPoint = function(...args) 
           
@@ -826,7 +826,7 @@ RPainterPath.CurveToDataElement = RPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.getStartPoint(...args);
             
         };
-    
+        
         // function 
         RPainterPath.prototype.getEndPoint = function(...args) 
           
@@ -836,7 +836,7 @@ RPainterPath.CurveToDataElement = RPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.getEndPoint(...args);
             
         };
-    
+        
         // function 
         RPainterPath.prototype.isValid = function(...args) 
           
@@ -846,7 +846,7 @@ RPainterPath.CurveToDataElement = RPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.isValid(...args);
             
         };
-    
+        
         // function 
         RPainterPath.prototype.setValid = function(...args) 
           
@@ -856,7 +856,7 @@ RPainterPath.CurveToDataElement = RPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.setValid(...args);
             
         };
-    
+        
         // function 
         RPainterPath.prototype.isSane = function(...args) 
           
@@ -866,7 +866,7 @@ RPainterPath.CurveToDataElement = RPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.isSane(...args);
             
         };
-    
+        
         // function 
         RPainterPath.prototype.getZLevel = function(...args) 
           
@@ -876,7 +876,7 @@ RPainterPath.CurveToDataElement = RPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.getZLevel(...args);
             
         };
-    
+        
         // function 
         RPainterPath.prototype.setZLevel = function(...args) 
           
@@ -886,7 +886,7 @@ RPainterPath.CurveToDataElement = RPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.setZLevel(...args);
             
         };
-    
+        
         // function 
         RPainterPath.prototype.getPen = function(...args) 
           
@@ -896,7 +896,7 @@ RPainterPath.CurveToDataElement = RPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.getPen(...args);
             
         };
-    
+        
         // function 
         RPainterPath.prototype.setPen = function(...args) 
           
@@ -906,7 +906,7 @@ RPainterPath.CurveToDataElement = RPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.setPen(...args);
             
         };
-    
+        
         // function 
         RPainterPath.prototype.getBrush = function(...args) 
           
@@ -916,7 +916,7 @@ RPainterPath.CurveToDataElement = RPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.getBrush(...args);
             
         };
-    
+        
         // function 
         RPainterPath.prototype.setBrush = function(...args) 
           
@@ -926,7 +926,7 @@ RPainterPath.CurveToDataElement = RPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.setBrush(...args);
             
         };
-    
+        
         // function 
         RPainterPath.prototype.setMode = function(...args) 
           
@@ -936,7 +936,7 @@ RPainterPath.CurveToDataElement = RPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.setMode(...args);
             
         };
-    
+        
         // function 
         RPainterPath.prototype.getMode = function(...args) 
           
@@ -946,7 +946,7 @@ RPainterPath.CurveToDataElement = RPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.getMode(...args);
             
         };
-    
+        
         // function 
         RPainterPath.prototype.setHighlighted = function(...args) 
           
@@ -956,7 +956,7 @@ RPainterPath.CurveToDataElement = RPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.setHighlighted(...args);
             
         };
-    
+        
         // function 
         RPainterPath.prototype.isHighlighted = function(...args) 
           
@@ -966,7 +966,7 @@ RPainterPath.CurveToDataElement = RPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.isHighlighted(...args);
             
         };
-    
+        
         // function 
         RPainterPath.prototype.setSelected = function(...args) 
           
@@ -976,7 +976,7 @@ RPainterPath.CurveToDataElement = RPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.setSelected(...args);
             
         };
-    
+        
         // function 
         RPainterPath.prototype.isSelected = function(...args) 
           
@@ -986,7 +986,7 @@ RPainterPath.CurveToDataElement = RPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.isSelected(...args);
             
         };
-    
+        
         // function 
         RPainterPath.prototype.setFixedPenColor = function(...args) 
           
@@ -996,7 +996,7 @@ RPainterPath.CurveToDataElement = RPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.setFixedPenColor(...args);
             
         };
-    
+        
         // function 
         RPainterPath.prototype.isFixedPenColor = function(...args) 
           
@@ -1006,7 +1006,7 @@ RPainterPath.CurveToDataElement = RPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.isFixedPenColor(...args);
             
         };
-    
+        
         // function 
         RPainterPath.prototype.setFixedBrushColor = function(...args) 
           
@@ -1016,7 +1016,7 @@ RPainterPath.CurveToDataElement = RPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.setFixedBrushColor(...args);
             
         };
-    
+        
         // function 
         RPainterPath.prototype.isFixedBrushColor = function(...args) 
           
@@ -1026,7 +1026,7 @@ RPainterPath.CurveToDataElement = RPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.isFixedBrushColor(...args);
             
         };
-    
+        
         // function 
         RPainterPath.prototype.setAutoRegen = function(...args) 
           
@@ -1036,7 +1036,7 @@ RPainterPath.CurveToDataElement = RPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.setAutoRegen(...args);
             
         };
-    
+        
         // function 
         RPainterPath.prototype.getAutoRegen = function(...args) 
           
@@ -1046,7 +1046,7 @@ RPainterPath.CurveToDataElement = RPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.getAutoRegen(...args);
             
         };
-    
+        
         // function 
         RPainterPath.prototype.setAlwaysRegen = function(...args) 
           
@@ -1056,7 +1056,7 @@ RPainterPath.CurveToDataElement = RPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.setAlwaysRegen(...args);
             
         };
-    
+        
         // function 
         RPainterPath.prototype.getAlwaysRegen = function(...args) 
           
@@ -1066,7 +1066,7 @@ RPainterPath.CurveToDataElement = RPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.getAlwaysRegen(...args);
             
         };
-    
+        
         // function 
         RPainterPath.prototype.setInheritPen = function(...args) 
           
@@ -1076,7 +1076,7 @@ RPainterPath.CurveToDataElement = RPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.setInheritPen(...args);
             
         };
-    
+        
         // function 
         RPainterPath.prototype.getInheritPen = function(...args) 
           
@@ -1086,7 +1086,7 @@ RPainterPath.CurveToDataElement = RPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.getInheritPen(...args);
             
         };
-    
+        
         // function 
         RPainterPath.prototype.setPixelUnit = function(...args) 
           
@@ -1096,7 +1096,7 @@ RPainterPath.CurveToDataElement = RPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.setPixelUnit(...args);
             
         };
-    
+        
         // function 
         RPainterPath.prototype.getPixelUnit = function(...args) 
           
@@ -1106,7 +1106,7 @@ RPainterPath.CurveToDataElement = RPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.getPixelUnit(...args);
             
         };
-    
+        
         // function 
         RPainterPath.prototype.setNoClipping = function(...args) 
           
@@ -1116,7 +1116,7 @@ RPainterPath.CurveToDataElement = RPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.setNoClipping(...args);
             
         };
-    
+        
         // function 
         RPainterPath.prototype.getNoClipping = function(...args) 
           
@@ -1126,7 +1126,7 @@ RPainterPath.CurveToDataElement = RPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.getNoClipping(...args);
             
         };
-    
+        
         // function 
         RPainterPath.prototype.setNoColorMode = function(...args) 
           
@@ -1136,7 +1136,7 @@ RPainterPath.CurveToDataElement = RPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.setNoColorMode(...args);
             
         };
-    
+        
         // function 
         RPainterPath.prototype.getNoColorMode = function(...args) 
           
@@ -1146,7 +1146,7 @@ RPainterPath.CurveToDataElement = RPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.getNoColorMode(...args);
             
         };
-    
+        
         // function 
         RPainterPath.prototype.setSimplePointDisplay = function(...args) 
           
@@ -1156,7 +1156,7 @@ RPainterPath.CurveToDataElement = RPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.setSimplePointDisplay(...args);
             
         };
-    
+        
         // function 
         RPainterPath.prototype.getSimplePointDisplay = function(...args) 
           
@@ -1166,7 +1166,7 @@ RPainterPath.CurveToDataElement = RPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.getSimplePointDisplay(...args);
             
         };
-    
+        
         // function 
         RPainterPath.prototype.setPolylineGen = function(...args) 
           
@@ -1176,7 +1176,7 @@ RPainterPath.CurveToDataElement = RPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.setPolylineGen(...args);
             
         };
-    
+        
         // function 
         RPainterPath.prototype.getPolylineGen = function(...args) 
           
@@ -1186,7 +1186,7 @@ RPainterPath.CurveToDataElement = RPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.getPolylineGen(...args);
             
         };
-    
+        
         // function 
         RPainterPath.prototype.setNoPattern = function(...args) 
           
@@ -1196,7 +1196,7 @@ RPainterPath.CurveToDataElement = RPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.setNoPattern(...args);
             
         };
-    
+        
         // function 
         RPainterPath.prototype.getNoPattern = function(...args) 
           
@@ -1206,7 +1206,7 @@ RPainterPath.CurveToDataElement = RPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.getNoPattern(...args);
             
         };
-    
+        
         // function 
         RPainterPath.prototype.setScreenBasedLinetype = function(...args) 
           
@@ -1216,7 +1216,7 @@ RPainterPath.CurveToDataElement = RPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.setScreenBasedLinetype(...args);
             
         };
-    
+        
         // function 
         RPainterPath.prototype.getScreenBasedLinetype = function(...args) 
           
@@ -1226,7 +1226,7 @@ RPainterPath.CurveToDataElement = RPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.getScreenBasedLinetype(...args);
             
         };
-    
+        
         // function 
         RPainterPath.prototype.setPixelWidth = function(...args) 
           
@@ -1236,7 +1236,7 @@ RPainterPath.CurveToDataElement = RPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.setPixelWidth(...args);
             
         };
-    
+        
         // function 
         RPainterPath.prototype.getPixelWidth = function(...args) 
           
@@ -1246,7 +1246,7 @@ RPainterPath.CurveToDataElement = RPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.getPixelWidth(...args);
             
         };
-    
+        
         // function 
         RPainterPath.prototype.setFeatureSize = function(...args) 
           
@@ -1256,7 +1256,7 @@ RPainterPath.CurveToDataElement = RPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.setFeatureSize(...args);
             
         };
-    
+        
         // function 
         RPainterPath.prototype.getFeatureSize = function(...args) 
           
@@ -1266,7 +1266,7 @@ RPainterPath.CurveToDataElement = RPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.getFeatureSize(...args);
             
         };
-    
+        
         // function 
         RPainterPath.prototype.setPixelSizeHint = function(...args) 
           
@@ -1276,7 +1276,7 @@ RPainterPath.CurveToDataElement = RPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.setPixelSizeHint(...args);
             
         };
-    
+        
         // function 
         RPainterPath.prototype.getPixelSizeHint = function(...args) 
           
@@ -1286,7 +1286,7 @@ RPainterPath.CurveToDataElement = RPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.getPixelSizeHint(...args);
             
         };
-    
+        
         // function 
         RPainterPath.prototype.getDistanceTo = function(...args) 
           
@@ -1296,7 +1296,7 @@ RPainterPath.CurveToDataElement = RPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.getDistanceTo(...args);
             
         };
-    
+        
         // function 
         RPainterPath.prototype.addPoint = function(...args) 
           
@@ -1306,7 +1306,7 @@ RPainterPath.CurveToDataElement = RPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.addPoint(...args);
             
         };
-    
+        
         // function 
         RPainterPath.prototype.hasPoints = function(...args) 
           
@@ -1316,7 +1316,7 @@ RPainterPath.CurveToDataElement = RPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.hasPoints(...args);
             
         };
-    
+        
         // function 
         RPainterPath.prototype.setPoints = function(...args) 
           
@@ -1326,7 +1326,7 @@ RPainterPath.CurveToDataElement = RPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.setPoints(...args);
             
         };
-    
+        
         // function 
         RPainterPath.prototype.getPoints = function(...args) 
           
@@ -1336,7 +1336,7 @@ RPainterPath.CurveToDataElement = RPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.getPoints(...args);
             
         };
-    
+        
         // function 
         RPainterPath.prototype.transform = function(...args) 
           
@@ -1346,7 +1346,7 @@ RPainterPath.CurveToDataElement = RPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.transform(...args);
             
         };
-    
+        
         // function 
         RPainterPath.prototype.move = function(...args) 
           
@@ -1356,7 +1356,7 @@ RPainterPath.CurveToDataElement = RPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.move(...args);
             
         };
-    
+        
         // function 
         RPainterPath.prototype.rotate = function(...args) 
           
@@ -1366,7 +1366,7 @@ RPainterPath.CurveToDataElement = RPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.rotate(...args);
             
         };
-    
+        
         // function 
         RPainterPath.prototype.scale = function(...args) 
           
@@ -1376,7 +1376,7 @@ RPainterPath.CurveToDataElement = RPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.scale(...args);
             
         };
-    
+        
         // function 
         RPainterPath.prototype.getElementCount = function(...args) 
           
@@ -1386,7 +1386,7 @@ RPainterPath.CurveToDataElement = RPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.getElementCount(...args);
             
         };
-    
+        
         // function 
         RPainterPath.prototype.getXAt = function(...args) 
           
@@ -1396,7 +1396,7 @@ RPainterPath.CurveToDataElement = RPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.getXAt(...args);
             
         };
-    
+        
         // function 
         RPainterPath.prototype.getYAt = function(...args) 
           
@@ -1406,7 +1406,7 @@ RPainterPath.CurveToDataElement = RPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.getYAt(...args);
             
         };
-    
+        
         // function 
         RPainterPath.prototype.getTypeAt = function(...args) 
           
@@ -1416,7 +1416,7 @@ RPainterPath.CurveToDataElement = RPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.getTypeAt(...args);
             
         };
-    
+        
         // function 
         RPainterPath.prototype.isEmpty = function(...args) 
           
@@ -1426,7 +1426,7 @@ RPainterPath.CurveToDataElement = RPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.isEmpty(...args);
             
         };
-    
+        
         // function 
         RPainterPath.prototype.addShape = function(...args) 
           
@@ -1436,7 +1436,7 @@ RPainterPath.CurveToDataElement = RPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.addShape(...args);
             
         };
-    
+        
         // function 
         RPainterPath.prototype.addOriginalShape = function(...args) 
           
@@ -1446,7 +1446,7 @@ RPainterPath.CurveToDataElement = RPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.addOriginalShape(...args);
             
         };
-    
+        
         // function 
         RPainterPath.prototype.hasOriginalShapes = function(...args) 
           
@@ -1456,7 +1456,7 @@ RPainterPath.CurveToDataElement = RPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.hasOriginalShapes(...args);
             
         };
-    
+        
         // function 
         RPainterPath.prototype.countOriginalShapes = function(...args) 
           
@@ -1466,7 +1466,7 @@ RPainterPath.CurveToDataElement = RPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.countOriginalShapes(...args);
             
         };
-    
+        
         // function 
         RPainterPath.prototype.getOriginalShape = function(...args) 
           
@@ -1476,7 +1476,7 @@ RPainterPath.CurveToDataElement = RPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.getOriginalShape(...args);
             
         };
-    
+        
         // function 
         RPainterPath.prototype.copy = function(...args) 
           
@@ -1486,7 +1486,7 @@ RPainterPath.CurveToDataElement = RPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.copy(...args);
             
         };
-    
+        
         // function 
         RPainterPath.prototype.rotateList = function(...args) 
           
@@ -1496,7 +1496,7 @@ RPainterPath.CurveToDataElement = RPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.rotateList(...args);
             
         };
-    
+        
         // function 
         RPainterPath.prototype.translateList = function(...args) 
           
@@ -1506,7 +1506,7 @@ RPainterPath.CurveToDataElement = RPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.translateList(...args);
             
         };
-    
+        
         // function 
         RPainterPath.prototype.scaleList = function(...args) 
           
@@ -1516,7 +1516,7 @@ RPainterPath.CurveToDataElement = RPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.scaleList(...args);
             
         };
-    
+        
         // function 
         RPainterPath.prototype.getMinList = function(...args) 
           
@@ -1526,7 +1526,7 @@ RPainterPath.CurveToDataElement = RPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.getMinList(...args);
             
         };
-    
+        
         // function 
         RPainterPath.prototype.getMaxList = function(...args) 
           
@@ -1536,7 +1536,7 @@ RPainterPath.CurveToDataElement = RPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.getMaxList(...args);
             
         };
-    
+        
 
       // static functions:
       

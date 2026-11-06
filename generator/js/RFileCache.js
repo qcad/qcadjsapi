@@ -134,7 +134,7 @@
               return this.__PROXY__.getContents(...args);
             
         };
-    
+        
         // function 
         RFileCache.prototype.getBuffer = function(...args) 
           
@@ -144,7 +144,7 @@
               return this.__PROXY__.getBuffer(...args);
             
         };
-    
+        
 
       // static functions:
       

@@ -138,7 +138,7 @@
               return this.__PROXY__.getDocument(...args);
             
         };
-    
+        
         // function 
         RToleranceData.prototype.setDocument = function(...args) 
           
@@ -148,7 +148,7 @@
               return this.__PROXY__.setDocument(...args);
             
         };
-    
+        
         // function 
         RToleranceData.prototype.isPointType = function(...args) 
           
@@ -158,7 +158,7 @@
               return this.__PROXY__.isPointType(...args);
             
         };
-    
+        
         // function 
         RToleranceData.prototype.isValid = function(...args) 
           
@@ -168,7 +168,7 @@
               return this.__PROXY__.isValid(...args);
             
         };
-    
+        
         // function 
         RToleranceData.prototype.isSane = function(...args) 
           
@@ -178,7 +178,7 @@
               return this.__PROXY__.isSane(...args);
             
         };
-    
+        
         // function 
         RToleranceData.prototype.getClosestSubEntityId = function(...args) 
           
@@ -188,7 +188,7 @@
               return this.__PROXY__.getClosestSubEntityId(...args);
             
         };
-    
+        
         // function 
         RToleranceData.prototype.getClosestShape = function(...args) 
           
@@ -198,7 +198,7 @@
               return this.__PROXY__.getClosestShape(...args);
             
         };
-    
+        
         // function 
         RToleranceData.prototype.getBoundingBox = function(...args) 
           
@@ -208,7 +208,7 @@
               return this.__PROXY__.getBoundingBox(...args);
             
         };
-    
+        
         // function 
         RToleranceData.prototype.copyAttributesFrom = function(...args) 
           
@@ -218,7 +218,7 @@
               return this.__PROXY__.copyAttributesFrom(...args);
             
         };
-    
+        
         // function 
         RToleranceData.prototype.to2D = function(...args) 
           
@@ -228,7 +228,7 @@
               return this.__PROXY__.to2D(...args);
             
         };
-    
+        
         // function 
         RToleranceData.prototype.setZ = function(...args) 
           
@@ -238,7 +238,7 @@
               return this.__PROXY__.setZ(...args);
             
         };
-    
+        
         // function 
         RToleranceData.prototype.getBoundingBoxes = function(...args) 
           
@@ -248,7 +248,7 @@
               return this.__PROXY__.getBoundingBoxes(...args);
             
         };
-    
+        
         // function 
         RToleranceData.prototype.getHull = function(...args) 
           
@@ -258,7 +258,7 @@
               return this.__PROXY__.getHull(...args);
             
         };
-    
+        
         // function 
         RToleranceData.prototype.isUpdatesEnabled = function(...args) 
           
@@ -268,7 +268,7 @@
               return this.__PROXY__.isUpdatesEnabled(...args);
             
         };
-    
+        
         // function 
         RToleranceData.prototype.setUpdatesEnabled = function(...args) 
           
@@ -278,7 +278,7 @@
               return this.__PROXY__.setUpdatesEnabled(...args);
             
         };
-    
+        
         // function 
         RToleranceData.prototype.cloneOnChange = function(...args) 
           
@@ -288,7 +288,7 @@
               return this.__PROXY__.cloneOnChange(...args);
             
         };
-    
+        
         // function 
         RToleranceData.prototype.isSelected = function(...args) 
           
@@ -298,7 +298,7 @@
               return this.__PROXY__.isSelected(...args);
             
         };
-    
+        
         // function 
         RToleranceData.prototype.setSelected = function(...args) 
           
@@ -308,7 +308,7 @@
               return this.__PROXY__.setSelected(...args);
             
         };
-    
+        
         // function 
         RToleranceData.prototype.isSelectedWorkingSet = function(...args) 
           
@@ -318,7 +318,7 @@
               return this.__PROXY__.isSelectedWorkingSet(...args);
             
         };
-    
+        
         // function 
         RToleranceData.prototype.setSelectedWorkingSet = function(...args) 
           
@@ -328,7 +328,7 @@
               return this.__PROXY__.setSelectedWorkingSet(...args);
             
         };
-    
+        
         // function 
         RToleranceData.prototype.getDrawOrder = function(...args) 
           
@@ -338,7 +338,7 @@
               return this.__PROXY__.getDrawOrder(...args);
             
         };
-    
+        
         // function 
         RToleranceData.prototype.setDrawOrder = function(...args) 
           
@@ -348,7 +348,7 @@
               return this.__PROXY__.setDrawOrder(...args);
             
         };
-    
+        
         // function 
         RToleranceData.prototype.setLayerId = function(...args) 
           
@@ -358,7 +358,7 @@
               return this.__PROXY__.setLayerId(...args);
             
         };
-    
+        
         // function 
         RToleranceData.prototype.getLayerId = function(...args) 
           
@@ -368,7 +368,7 @@
               return this.__PROXY__.getLayerId(...args);
             
         };
-    
+        
         // function 
         RToleranceData.prototype.setLayerName = function(...args) 
           
@@ -378,7 +378,7 @@
               return this.__PROXY__.setLayerName(...args);
             
         };
-    
+        
         // function 
         RToleranceData.prototype.getLayerName = function(...args) 
           
@@ -388,7 +388,7 @@
               return this.__PROXY__.getLayerName(...args);
             
         };
-    
+        
         // function 
         RToleranceData.prototype.setBlockId = function(...args) 
           
@@ -398,7 +398,7 @@
               return this.__PROXY__.setBlockId(...args);
             
         };
-    
+        
         // function 
         RToleranceData.prototype.getBlockId = function(...args) 
           
@@ -408,7 +408,7 @@
               return this.__PROXY__.getBlockId(...args);
             
         };
-    
+        
         // function 
         RToleranceData.prototype.setParentId = function(...args) 
           
@@ -418,7 +418,7 @@
               return this.__PROXY__.setParentId(...args);
             
         };
-    
+        
         // function 
         RToleranceData.prototype.getParentId = function(...args) 
           
@@ -428,7 +428,7 @@
               return this.__PROXY__.getParentId(...args);
             
         };
-    
+        
         // function 
         RToleranceData.prototype.getBlockName = function(...args) 
           
@@ -438,7 +438,7 @@
               return this.__PROXY__.getBlockName(...args);
             
         };
-    
+        
         // function 
         RToleranceData.prototype.setLinetypeId = function(...args) 
           
@@ -448,7 +448,7 @@
               return this.__PROXY__.setLinetypeId(...args);
             
         };
-    
+        
         // function 
         RToleranceData.prototype.getLinetypeId = function(...args) 
           
@@ -458,7 +458,7 @@
               return this.__PROXY__.getLinetypeId(...args);
             
         };
-    
+        
         // function 
         RToleranceData.prototype.setLinetypePattern = function(...args) 
           
@@ -468,7 +468,7 @@
               return this.__PROXY__.setLinetypePattern(...args);
             
         };
-    
+        
         // function 
         RToleranceData.prototype.getLinetypePattern = function(...args) 
           
@@ -478,7 +478,7 @@
               return this.__PROXY__.getLinetypePattern(...args);
             
         };
-    
+        
         // function 
         RToleranceData.prototype.setLinetypeScale = function(...args) 
           
@@ -488,7 +488,7 @@
               return this.__PROXY__.setLinetypeScale(...args);
             
         };
-    
+        
         // function 
         RToleranceData.prototype.getLinetypeScale = function(...args) 
           
@@ -498,7 +498,7 @@
               return this.__PROXY__.getLinetypeScale(...args);
             
         };
-    
+        
         // function 
         RToleranceData.prototype.getLineweight = function(...args) 
           
@@ -508,7 +508,7 @@
               return this.__PROXY__.getLineweight(...args);
             
         };
-    
+        
         // function 
         RToleranceData.prototype.setLineweight = function(...args) 
           
@@ -518,7 +518,7 @@
               return this.__PROXY__.setLineweight(...args);
             
         };
-    
+        
         // function 
         RToleranceData.prototype.setColor = function(...args) 
           
@@ -528,7 +528,7 @@
               return this.__PROXY__.setColor(...args);
             
         };
-    
+        
         // function 
         RToleranceData.prototype.getColor = function(...args) 
           
@@ -538,7 +538,7 @@
               return this.__PROXY__.getColor(...args);
             
         };
-    
+        
         // function 
         RToleranceData.prototype.getDisplayColor = function(...args) 
           
@@ -548,7 +548,7 @@
               return this.__PROXY__.getDisplayColor(...args);
             
         };
-    
+        
         // function 
         RToleranceData.prototype.getInternalReferencePoints = function(...args) 
           
@@ -558,7 +558,7 @@
               return this.__PROXY__.getInternalReferencePoints(...args);
             
         };
-    
+        
         // function 
         RToleranceData.prototype.getEndPoints = function(...args) 
           
@@ -568,7 +568,7 @@
               return this.__PROXY__.getEndPoints(...args);
             
         };
-    
+        
         // function 
         RToleranceData.prototype.getMiddlePoints = function(...args) 
           
@@ -578,7 +578,7 @@
               return this.__PROXY__.getMiddlePoints(...args);
             
         };
-    
+        
         // function 
         RToleranceData.prototype.getCenterPoints = function(...args) 
           
@@ -588,7 +588,7 @@
               return this.__PROXY__.getCenterPoints(...args);
             
         };
-    
+        
         // function 
         RToleranceData.prototype.getArcReferencePoints = function(...args) 
           
@@ -598,7 +598,7 @@
               return this.__PROXY__.getArcReferencePoints(...args);
             
         };
-    
+        
         // function 
         RToleranceData.prototype.getPointsWithDistanceToEnd = function(...args) 
           
@@ -608,7 +608,7 @@
               return this.__PROXY__.getPointsWithDistanceToEnd(...args);
             
         };
-    
+        
         // function 
         RToleranceData.prototype.getClosestPointOnEntity = function(...args) 
           
@@ -618,7 +618,7 @@
               return this.__PROXY__.getClosestPointOnEntity(...args);
             
         };
-    
+        
         // function 
         RToleranceData.prototype.getIntersectionPoints = function(...args) 
           
@@ -628,7 +628,7 @@
               return this.__PROXY__.getIntersectionPoints(...args);
             
         };
-    
+        
         // function 
         RToleranceData.prototype.getVectorTo = function(...args) 
           
@@ -638,7 +638,7 @@
               return this.__PROXY__.getVectorTo(...args);
             
         };
-    
+        
         // function 
         RToleranceData.prototype.getDistanceTo = function(...args) 
           
@@ -648,7 +648,7 @@
               return this.__PROXY__.getDistanceTo(...args);
             
         };
-    
+        
         // function 
         RToleranceData.prototype.isInside = function(...args) 
           
@@ -658,7 +658,7 @@
               return this.__PROXY__.isInside(...args);
             
         };
-    
+        
         // function 
         RToleranceData.prototype.isOnEntity = function(...args) 
           
@@ -668,7 +668,7 @@
               return this.__PROXY__.isOnEntity(...args);
             
         };
-    
+        
         // function 
         RToleranceData.prototype.intersectsWith = function(...args) 
           
@@ -678,7 +678,7 @@
               return this.__PROXY__.intersectsWith(...args);
             
         };
-    
+        
         // function 
         RToleranceData.prototype.clickReferencePoint = function(...args) 
           
@@ -688,7 +688,7 @@
               return this.__PROXY__.clickReferencePoint(...args);
             
         };
-    
+        
         // function 
         RToleranceData.prototype.stretch = function(...args) 
           
@@ -698,7 +698,7 @@
               return this.__PROXY__.stretch(...args);
             
         };
-    
+        
         // function 
         RToleranceData.prototype.setAutoUpdatesBlocked = function(...args) 
           
@@ -708,7 +708,7 @@
               return this.__PROXY__.setAutoUpdatesBlocked(...args);
             
         };
-    
+        
         // function 
         RToleranceData.prototype.getType = function(...args) 
           
@@ -718,7 +718,7 @@
               return this.__PROXY__.getType(...args);
             
         };
-    
+        
         // function 
         RToleranceData.prototype.castToShape = function(...args) 
           
@@ -728,7 +728,7 @@
               return this.__PROXY__.castToShape(...args);
             
         };
-    
+        
         // function 
         RToleranceData.prototype.getLocation = function(...args) 
           
@@ -738,7 +738,7 @@
               return this.__PROXY__.getLocation(...args);
             
         };
-    
+        
         // function 
         RToleranceData.prototype.setLocation = function(...args) 
           
@@ -748,7 +748,7 @@
               return this.__PROXY__.setLocation(...args);
             
         };
-    
+        
         // function 
         RToleranceData.prototype.getDirection = function(...args) 
           
@@ -758,7 +758,7 @@
               return this.__PROXY__.getDirection(...args);
             
         };
-    
+        
         // function 
         RToleranceData.prototype.setDirection = function(...args) 
           
@@ -768,7 +768,7 @@
               return this.__PROXY__.setDirection(...args);
             
         };
-    
+        
         // function 
         RToleranceData.prototype.getFields = function(...args) 
           
@@ -778,7 +778,7 @@
               return this.__PROXY__.getFields(...args);
             
         };
-    
+        
         // function 
         RToleranceData.prototype.getText = function(...args) 
           
@@ -788,7 +788,7 @@
               return this.__PROXY__.getText(...args);
             
         };
-    
+        
         // function 
         RToleranceData.prototype.setText = function(...args) 
           
@@ -798,7 +798,7 @@
               return this.__PROXY__.setText(...args);
             
         };
-    
+        
         // function 
         RToleranceData.prototype.getDimtxt = function(...args) 
           
@@ -808,7 +808,7 @@
               return this.__PROXY__.getDimtxt(...args);
             
         };
-    
+        
         // function 
         RToleranceData.prototype.setDimtxt = function(...args) 
           
@@ -818,7 +818,7 @@
               return this.__PROXY__.setDimtxt(...args);
             
         };
-    
+        
         // function 
         RToleranceData.prototype.getDimscale = function(...args) 
           
@@ -828,7 +828,7 @@
               return this.__PROXY__.getDimscale(...args);
             
         };
-    
+        
         // function 
         RToleranceData.prototype.setDimscale = function(...args) 
           
@@ -838,7 +838,7 @@
               return this.__PROXY__.setDimscale(...args);
             
         };
-    
+        
         // function 
         RToleranceData.prototype.scaleVisualProperties = function(...args) 
           
@@ -848,7 +848,7 @@
               return this.__PROXY__.scaleVisualProperties(...args);
             
         };
-    
+        
         // function 
         RToleranceData.prototype.getCorners = function(...args) 
           
@@ -858,7 +858,7 @@
               return this.__PROXY__.getCorners(...args);
             
         };
-    
+        
         // function 
         RToleranceData.prototype.getMiddels = function(...args) 
           
@@ -868,7 +868,7 @@
               return this.__PROXY__.getMiddels(...args);
             
         };
-    
+        
         // function 
         RToleranceData.prototype.getReferencePoints = function(...args) 
           
@@ -878,7 +878,7 @@
               return this.__PROXY__.getReferencePoints(...args);
             
         };
-    
+        
         // function 
         RToleranceData.prototype.moveReferencePoint = function(...args) 
           
@@ -888,7 +888,7 @@
               return this.__PROXY__.moveReferencePoint(...args);
             
         };
-    
+        
         // function 
         RToleranceData.prototype.move = function(...args) 
           
@@ -898,7 +898,7 @@
               return this.__PROXY__.move(...args);
             
         };
-    
+        
         // function 
         RToleranceData.prototype.rotate = function(...args) 
           
@@ -908,7 +908,7 @@
               return this.__PROXY__.rotate(...args);
             
         };
-    
+        
         // function 
         RToleranceData.prototype.scale = function(...args) 
           
@@ -918,7 +918,7 @@
               return this.__PROXY__.scale(...args);
             
         };
-    
+        
         // function 
         RToleranceData.prototype.mirror = function(...args) 
           
@@ -928,7 +928,7 @@
               return this.__PROXY__.mirror(...args);
             
         };
-    
+        
         // function 
         RToleranceData.prototype.flipHorizontal = function(...args) 
           
@@ -938,7 +938,7 @@
               return this.__PROXY__.flipHorizontal(...args);
             
         };
-    
+        
         // function 
         RToleranceData.prototype.flipVertical = function(...args) 
           
@@ -948,7 +948,7 @@
               return this.__PROXY__.flipVertical(...args);
             
         };
-    
+        
         // function 
         RToleranceData.prototype.getExploded = function(...args) 
           
@@ -958,7 +958,7 @@
               return this.__PROXY__.getExploded(...args);
             
         };
-    
+        
         // function 
         RToleranceData.prototype.getShapes = function(...args) 
           
@@ -968,7 +968,7 @@
               return this.__PROXY__.getShapes(...args);
             
         };
-    
+        
         // function 
         RToleranceData.prototype.update = function(...args) 
           
@@ -978,7 +978,7 @@
               return this.__PROXY__.update(...args);
             
         };
-    
+        
         // function 
         RToleranceData.prototype.getTextLabels = function(...args) 
           
@@ -988,7 +988,7 @@
               return this.__PROXY__.getTextLabels(...args);
             
         };
-    
+        
         // function 
         RToleranceData.prototype.getFrame = function(...args) 
           
@@ -998,7 +998,7 @@
               return this.__PROXY__.getFrame(...args);
             
         };
-    
+        
         // function 
         RToleranceData.prototype.getRows = function(...args) 
           
@@ -1008,7 +1008,7 @@
               return this.__PROXY__.getRows(...args);
             
         };
-    
+        
         // function 
         RToleranceData.prototype.getPointOnEntity = function(...args) 
           
@@ -1018,7 +1018,7 @@
               return this.__PROXY__.getPointOnEntity(...args);
             
         };
-    
+        
         // function 
         RToleranceData.prototype.clearStyleOverrides = function(...args) 
           
@@ -1028,7 +1028,7 @@
               return this.__PROXY__.clearStyleOverrides(...args);
             
         };
-    
+        
 
       // static functions:
       RToleranceData.prototype.isNullWrapper = function() {

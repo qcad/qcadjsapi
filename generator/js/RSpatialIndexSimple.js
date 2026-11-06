@@ -138,7 +138,7 @@
               return this.__PROXY__.bulkLoadSimple(...args);
             
         };
-    
+        
         // function 
         RSpatialIndexSimple.prototype.queryContainedIds = function(...args) 
           
@@ -148,7 +148,7 @@
               return this.__PROXY__.queryContainedIds(...args);
             
         };
-    
+        
         // function 
         RSpatialIndexSimple.prototype.create = function(...args) 
           
@@ -158,7 +158,7 @@
               return this.__PROXY__.create(...args);
             
         };
-    
+        
         // function 
         RSpatialIndexSimple.prototype.clear = function(...args) 
           
@@ -168,7 +168,7 @@
               return this.__PROXY__.clear(...args);
             
         };
-    
+        
         // function 
         RSpatialIndexSimple.prototype.addToIndex = function(...args) 
           
@@ -178,7 +178,7 @@
               return this.__PROXY__.addToIndex(...args);
             
         };
-    
+        
         // function 
         RSpatialIndexSimple.prototype.removeFromIndex = function(...args) 
           
@@ -188,7 +188,7 @@
               return this.__PROXY__.removeFromIndex(...args);
             
         };
-    
+        
 
       // static functions:
       RSpatialIndexSimple.prototype.isNullWrapper = function() {

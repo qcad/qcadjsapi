@@ -138,7 +138,7 @@
               return this.__PROXY__.getEntityTypeFilter(...args);
             
         };
-    
+        
         // function 
         RClipboardOperation.prototype.setRecordAffectedObjects = function(...args) 
           
@@ -148,7 +148,7 @@
               return this.__PROXY__.setRecordAffectedObjects(...args);
             
         };
-    
+        
         // function 
         RClipboardOperation.prototype.setSpatialIndexDisabled = function(...args) 
           
@@ -158,7 +158,7 @@
               return this.__PROXY__.setSpatialIndexDisabled(...args);
             
         };
-    
+        
         // function 
         RClipboardOperation.prototype.setAllowInvisible = function(...args) 
           
@@ -168,7 +168,7 @@
               return this.__PROXY__.setAllowInvisible(...args);
             
         };
-    
+        
         // function 
         RClipboardOperation.prototype.setAllowAll = function(...args) 
           
@@ -178,7 +178,7 @@
               return this.__PROXY__.setAllowAll(...args);
             
         };
-    
+        
         // function 
         RClipboardOperation.prototype.setKeepChildren = function(...args) 
           
@@ -188,7 +188,7 @@
               return this.__PROXY__.setKeepChildren(...args);
             
         };
-    
+        
         // function 
         RClipboardOperation.prototype.setTransactionGroup = function(...args) 
           
@@ -198,7 +198,7 @@
               return this.__PROXY__.setTransactionGroup(...args);
             
         };
-    
+        
         // function 
         RClipboardOperation.prototype.getTransactionGroup = function(...args) 
           
@@ -208,7 +208,7 @@
               return this.__PROXY__.getTransactionGroup(...args);
             
         };
-    
+        
         // function 
         RClipboardOperation.prototype.setText = function(...args) 
           
@@ -218,7 +218,7 @@
               return this.__PROXY__.setText(...args);
             
         };
-    
+        
         // function 
         RClipboardOperation.prototype.getText = function(...args) 
           
@@ -228,7 +228,7 @@
               return this.__PROXY__.getText(...args);
             
         };
-    
+        
         // function 
         RClipboardOperation.prototype.getTransactionTypes = function(...args) 
           
@@ -238,7 +238,7 @@
               return this.__PROXY__.getTransactionTypes(...args);
             
         };
-    
+        
         // function 
         RClipboardOperation.prototype.setTransactionType = function(...args) 
           
@@ -248,7 +248,7 @@
               return this.__PROXY__.setTransactionType(...args);
             
         };
-    
+        
         // function 
         RClipboardOperation.prototype.getTransactionType = function(...args) 
           
@@ -258,7 +258,7 @@
               return this.__PROXY__.getTransactionType(...args);
             
         };
-    
+        
         // function 
         RClipboardOperation.prototype.apply = function(...args) 
           
@@ -268,7 +268,7 @@
               return this.__PROXY__.apply(...args);
             
         };
-    
+        
         // function 
         RClipboardOperation.prototype.copy = function(...args) 
           
@@ -278,7 +278,7 @@
               return this.__PROXY__.copy(...args);
             
         };
-    
+        
         // function 
         RClipboardOperation.prototype.copyEntity = function(...args) 
           
@@ -288,7 +288,7 @@
               return this.__PROXY__.copyEntity(...args);
             
         };
-    
+        
         // function 
         RClipboardOperation.prototype.copyEntityBlock = function(...args) 
           
@@ -298,7 +298,7 @@
               return this.__PROXY__.copyEntityBlock(...args);
             
         };
-    
+        
         // function 
         RClipboardOperation.prototype.copyBlock = function(...args) 
           
@@ -308,7 +308,7 @@
               return this.__PROXY__.copyBlock(...args);
             
         };
-    
+        
         // function 
         RClipboardOperation.prototype.copyEntityLayer = function(...args) 
           
@@ -318,7 +318,7 @@
               return this.__PROXY__.copyEntityLayer(...args);
             
         };
-    
+        
         // function 
         RClipboardOperation.prototype.copyLayer = function(...args) 
           
@@ -328,7 +328,7 @@
               return this.__PROXY__.copyLayer(...args);
             
         };
-    
+        
         // function 
         RClipboardOperation.prototype.copyEntityLinetype = function(...args) 
           
@@ -338,7 +338,7 @@
               return this.__PROXY__.copyEntityLinetype(...args);
             
         };
-    
+        
         // function 
         RClipboardOperation.prototype.copyLinetype = function(...args) 
           
@@ -348,7 +348,7 @@
               return this.__PROXY__.copyLinetype(...args);
             
         };
-    
+        
         // function 
         RClipboardOperation.prototype.setCopyEmptyBlocks = function(...args) 
           
@@ -358,7 +358,7 @@
               return this.__PROXY__.setCopyEmptyBlocks(...args);
             
         };
-    
+        
         // function 
         RClipboardOperation.prototype.setCopyAllLayers = function(...args) 
           
@@ -368,7 +368,7 @@
               return this.__PROXY__.setCopyAllLayers(...args);
             
         };
-    
+        
         // function 
         RClipboardOperation.prototype.setKeepSelection = function(...args) 
           
@@ -378,7 +378,7 @@
               return this.__PROXY__.setKeepSelection(...args);
             
         };
-    
+        
         // function 
         RClipboardOperation.prototype.setBlockOwnership = function(...args) 
           
@@ -388,7 +388,7 @@
               return this.__PROXY__.setBlockOwnership(...args);
             
         };
-    
+        
         // function 
         RClipboardOperation.prototype.setCustomEntityType = function(...args) 
           
@@ -398,7 +398,7 @@
               return this.__PROXY__.setCustomEntityType(...args);
             
         };
-    
+        
 
       // static functions:
       RClipboardOperation.prototype.isNullWrapper = function() {

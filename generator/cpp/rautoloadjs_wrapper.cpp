@@ -293,6 +293,8 @@ RAutoLoadJs_Wrapper::RAutoLoadJs_Wrapper
         // TODO
         //connect(wrapped, SIGNAL(triggered(bool)), this, SLOT(triggeredEmitter(bool)));
         initConnections();
+
+        
         return;
 
       

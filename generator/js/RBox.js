@@ -264,7 +264,7 @@
               return this.__PROXY__.isValid(...args);
             
         };
-    
+        
         // function 
         RBox.prototype.isSane = function(...args) 
           
@@ -274,7 +274,7 @@
               return this.__PROXY__.isSane(...args);
             
         };
-    
+        
         // function 
         RBox.prototype.equalsFuzzy = function(...args) 
           
@@ -284,7 +284,7 @@
               return this.__PROXY__.equalsFuzzy(...args);
             
         };
-    
+        
         // function 
         RBox.prototype.equalsFuzzy2D = function(...args) 
           
@@ -294,7 +294,7 @@
               return this.__PROXY__.equalsFuzzy2D(...args);
             
         };
-    
+        
         // function 
         RBox.prototype.get2D = function(...args) 
           
@@ -304,7 +304,7 @@
               return this.__PROXY__.get2D(...args);
             
         };
-    
+        
         // function 
         RBox.prototype.getWidth = function(...args) 
           
@@ -314,7 +314,7 @@
               return this.__PROXY__.getWidth(...args);
             
         };
-    
+        
         // function 
         RBox.prototype.getHeight = function(...args) 
           
@@ -324,7 +324,7 @@
               return this.__PROXY__.getHeight(...args);
             
         };
-    
+        
         // function 
         RBox.prototype.getSize = function(...args) 
           
@@ -334,7 +334,7 @@
               return this.__PROXY__.getSize(...args);
             
         };
-    
+        
         // function 
         RBox.prototype.getArea = function(...args) 
           
@@ -344,7 +344,7 @@
               return this.__PROXY__.getArea(...args);
             
         };
-    
+        
         // function 
         RBox.prototype.getCenter = function(...args) 
           
@@ -354,7 +354,7 @@
               return this.__PROXY__.getCenter(...args);
             
         };
-    
+        
         // function 
         RBox.prototype.getMinimum = function(...args) 
           
@@ -364,7 +364,7 @@
               return this.__PROXY__.getMinimum(...args);
             
         };
-    
+        
         // function 
         RBox.prototype.getMaximum = function(...args) 
           
@@ -374,7 +374,7 @@
               return this.__PROXY__.getMaximum(...args);
             
         };
-    
+        
         // function 
         RBox.prototype.isOutside = function(...args) 
           
@@ -384,7 +384,7 @@
               return this.__PROXY__.isOutside(...args);
             
         };
-    
+        
         // function 
         RBox.prototype.isOutsideXY = function(...args) 
           
@@ -394,7 +394,7 @@
               return this.__PROXY__.isOutsideXY(...args);
             
         };
-    
+        
         // function 
         RBox.prototype.contains = function(...args) 
           
@@ -404,7 +404,7 @@
               return this.__PROXY__.contains(...args);
             
         };
-    
+        
         // function 
         RBox.prototype.containsBox = function(...args) 
           
@@ -414,7 +414,7 @@
               return this.__PROXY__.containsBox(...args);
             
         };
-    
+        
         // function 
         RBox.prototype.containsPoint = function(...args) 
           
@@ -424,7 +424,7 @@
               return this.__PROXY__.containsPoint(...args);
             
         };
-    
+        
         // function 
         RBox.prototype.intersects = function(...args) 
           
@@ -434,7 +434,7 @@
               return this.__PROXY__.intersects(...args);
             
         };
-    
+        
         // function 
         RBox.prototype.intersectsWith = function(...args) 
           
@@ -444,7 +444,7 @@
               return this.__PROXY__.intersectsWith(...args);
             
         };
-    
+        
         // function 
         RBox.prototype.growToInclude = function(...args) 
           
@@ -454,7 +454,7 @@
               return this.__PROXY__.growToInclude(...args);
             
         };
-    
+        
         // function 
         RBox.prototype.growToIncludeBoxes = function(...args) 
           
@@ -464,7 +464,7 @@
               return this.__PROXY__.growToIncludeBoxes(...args);
             
         };
-    
+        
         // function 
         RBox.prototype.growToIncludeBox = function(...args) 
           
@@ -474,7 +474,7 @@
               return this.__PROXY__.growToIncludeBox(...args);
             
         };
-    
+        
         // function 
         RBox.prototype.growToIncludePoint = function(...args) 
           
@@ -484,7 +484,7 @@
               return this.__PROXY__.growToIncludePoint(...args);
             
         };
-    
+        
         // function 
         RBox.prototype.getCorner1 = function(...args) 
           
@@ -494,7 +494,7 @@
               return this.__PROXY__.getCorner1(...args);
             
         };
-    
+        
         // function 
         RBox.prototype.setCorner1 = function(...args) 
           
@@ -504,7 +504,7 @@
               return this.__PROXY__.setCorner1(...args);
             
         };
-    
+        
         // function 
         RBox.prototype.getCorner2 = function(...args) 
           
@@ -514,7 +514,7 @@
               return this.__PROXY__.getCorner2(...args);
             
         };
-    
+        
         // function 
         RBox.prototype.setCorner2 = function(...args) 
           
@@ -524,7 +524,7 @@
               return this.__PROXY__.setCorner2(...args);
             
         };
-    
+        
         // function 
         RBox.prototype.getCorners = function(...args) 
           
@@ -534,7 +534,7 @@
               return this.__PROXY__.getCorners(...args);
             
         };
-    
+        
         // function 
         RBox.prototype.getCorners2d = function(...args) 
           
@@ -544,7 +544,7 @@
               return this.__PROXY__.getCorners2d(...args);
             
         };
-    
+        
         // function 
         RBox.prototype.getLines2d = function(...args) 
           
@@ -554,7 +554,7 @@
               return this.__PROXY__.getLines2d(...args);
             
         };
-    
+        
         // function 
         RBox.prototype.getPolyline2d = function(...args) 
           
@@ -564,7 +564,7 @@
               return this.__PROXY__.getPolyline2d(...args);
             
         };
-    
+        
         // function 
         RBox.prototype.getTriangles = function(...args) 
           
@@ -574,7 +574,7 @@
               return this.__PROXY__.getTriangles(...args);
             
         };
-    
+        
         // function 
         RBox.prototype.grow = function(...args) 
           
@@ -584,7 +584,7 @@
               return this.__PROXY__.grow(...args);
             
         };
-    
+        
         // function 
         RBox.prototype.growXY = function(...args) 
           
@@ -594,7 +594,7 @@
               return this.__PROXY__.growXY(...args);
             
         };
-    
+        
         // function 
         RBox.prototype.move = function(...args) 
           
@@ -604,7 +604,7 @@
               return this.__PROXY__.move(...args);
             
         };
-    
+        
         // function 
         RBox.prototype.scaleByReference = function(...args) 
           
@@ -614,7 +614,7 @@
               return this.__PROXY__.scaleByReference(...args);
             
         };
-    
+        
         // function 
         RBox.prototype.toQRectF = function(...args) 
           
@@ -624,7 +624,7 @@
               return this.__PROXY__.toQRectF(...args);
             
         };
-    
+        
         // function 
         RBox.prototype.transform = function(...args) 
           
@@ -634,7 +634,7 @@
               return this.__PROXY__.transform(...args);
             
         };
-    
+        
         // function 
         RBox.prototype.copy = function(...args) 
           
@@ -644,7 +644,7 @@
               return this.__PROXY__.copy(...args);
             
         };
-    
+        
 
       // static functions:
       

@@ -150,7 +150,7 @@
               return this.__PROXY__.mustAlwaysClone(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.getDocument = function(...args) 
           
@@ -160,7 +160,7 @@
               return this.__PROXY__.getDocument(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.setFlag = function(...args) 
           
@@ -170,7 +170,7 @@
               return this.__PROXY__.setFlag(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.getFlag = function(...args) 
           
@@ -180,7 +180,7 @@
               return this.__PROXY__.getFlag(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.getId = function(...args) 
           
@@ -190,7 +190,7 @@
               return this.__PROXY__.getId(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.getHandle = function(...args) 
           
@@ -200,7 +200,7 @@
               return this.__PROXY__.getHandle(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.isProtected = function(...args) 
           
@@ -210,7 +210,7 @@
               return this.__PROXY__.isProtected(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.setProtected = function(...args) 
           
@@ -220,7 +220,7 @@
               return this.__PROXY__.setProtected(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.isInvisible = function(...args) 
           
@@ -230,7 +230,7 @@
               return this.__PROXY__.isInvisible(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.setInvisible = function(...args) 
           
@@ -240,7 +240,7 @@
               return this.__PROXY__.setInvisible(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.isUndone = function(...args) 
           
@@ -250,7 +250,7 @@
               return this.__PROXY__.isUndone(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.isWorkingSet = function(...args) 
           
@@ -260,7 +260,7 @@
               return this.__PROXY__.isWorkingSet(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.setWorkingSet = function(...args) 
           
@@ -270,7 +270,7 @@
               return this.__PROXY__.setWorkingSet(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.getPropertyTypeIds = function(...args) 
           
@@ -280,7 +280,7 @@
               return this.__PROXY__.getPropertyTypeIds(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.getCustomPropertyTypeIds = function(...args) 
           
@@ -290,7 +290,7 @@
               return this.__PROXY__.getCustomPropertyTypeIds(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.hasPropertyType = function(...args) 
           
@@ -300,7 +300,7 @@
               return this.__PROXY__.hasPropertyType(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.hasCustomProperties = function(...args) 
           
@@ -310,7 +310,7 @@
               return this.__PROXY__.hasCustomProperties(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.hasCustomProperty = function(...args) 
           
@@ -320,7 +320,7 @@
               return this.__PROXY__.hasCustomProperty(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.getCustomProperty = function(...args) 
           
@@ -330,7 +330,7 @@
               return this.__PROXY__.getCustomProperty(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.getCustomDoubleProperty = function(...args) 
           
@@ -340,7 +340,7 @@
               return this.__PROXY__.getCustomDoubleProperty(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.getCustomIntProperty = function(...args) 
           
@@ -350,7 +350,7 @@
               return this.__PROXY__.getCustomIntProperty(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.getCustomBoolProperty = function(...args) 
           
@@ -360,7 +360,7 @@
               return this.__PROXY__.getCustomBoolProperty(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.setCustomProperty = function(...args) 
           
@@ -370,7 +370,7 @@
               return this.__PROXY__.setCustomProperty(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.removeCustomProperty = function(...args) 
           
@@ -380,7 +380,7 @@
               return this.__PROXY__.removeCustomProperty(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.getCustomPropertyTitles = function(...args) 
           
@@ -390,7 +390,7 @@
               return this.__PROXY__.getCustomPropertyTitles(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.getCustomPropertyKeys = function(...args) 
           
@@ -400,7 +400,7 @@
               return this.__PROXY__.getCustomPropertyKeys(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.copyCustomPropertiesFrom = function(...args) 
           
@@ -410,7 +410,7 @@
               return this.__PROXY__.copyCustomPropertiesFrom(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.dump = function(...args) 
           
@@ -420,7 +420,7 @@
               return this.__PROXY__.dump(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.validate = function(...args) 
           
@@ -430,7 +430,7 @@
               return this.__PROXY__.validate(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.setUndone = function(...args) 
           
@@ -440,7 +440,7 @@
               return this.__PROXY__.setUndone(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.setId = function(...args) 
           
@@ -450,7 +450,7 @@
               return this.__PROXY__.setId(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.setHandle = function(...args) 
           
@@ -460,7 +460,7 @@
               return this.__PROXY__.setHandle(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.setMemberFlag = function(...args) 
           
@@ -470,7 +470,7 @@
               return this.__PROXY__.setMemberFlag(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.setDocument = function(...args) 
           
@@ -480,7 +480,7 @@
               return this.__PROXY__.setDocument(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.getType = function(...args) 
           
@@ -490,7 +490,7 @@
               return this.__PROXY__.getType(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.isPointType = function(...args) 
           
@@ -500,7 +500,7 @@
               return this.__PROXY__.isPointType(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.isValid = function(...args) 
           
@@ -510,7 +510,7 @@
               return this.__PROXY__.isValid(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.isSane = function(...args) 
           
@@ -520,7 +520,7 @@
               return this.__PROXY__.isSane(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.isSelected = function(...args) 
           
@@ -530,7 +530,7 @@
               return this.__PROXY__.isSelected(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.setSelected = function(...args) 
           
@@ -540,7 +540,7 @@
               return this.__PROXY__.setSelected(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.isSelectedWorkingSet = function(...args) 
           
@@ -550,7 +550,7 @@
               return this.__PROXY__.isSelectedWorkingSet(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.setSelectedWorkingSet = function(...args) 
           
@@ -560,7 +560,7 @@
               return this.__PROXY__.setSelectedWorkingSet(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.isSelectable = function(...args) 
           
@@ -570,7 +570,7 @@
               return this.__PROXY__.isSelectable(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.isUpdatesEnabled = function(...args) 
           
@@ -580,7 +580,7 @@
               return this.__PROXY__.isUpdatesEnabled(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.setUpdatesEnabled = function(...args) 
           
@@ -590,7 +590,7 @@
               return this.__PROXY__.setUpdatesEnabled(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.cloneOnChange = function(...args) 
           
@@ -600,7 +600,7 @@
               return this.__PROXY__.cloneOnChange(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.setDrawOrder = function(...args) 
           
@@ -610,7 +610,7 @@
               return this.__PROXY__.setDrawOrder(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.getDrawOrder = function(...args) 
           
@@ -620,7 +620,7 @@
               return this.__PROXY__.getDrawOrder(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.setLayerId = function(...args) 
           
@@ -630,7 +630,7 @@
               return this.__PROXY__.setLayerId(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.setLayerName = function(...args) 
           
@@ -640,7 +640,7 @@
               return this.__PROXY__.setLayerName(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.getLayerId = function(...args) 
           
@@ -650,7 +650,7 @@
               return this.__PROXY__.getLayerId(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.getLayerName = function(...args) 
           
@@ -660,7 +660,7 @@
               return this.__PROXY__.getLayerName(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.setBlockId = function(...args) 
           
@@ -670,7 +670,7 @@
               return this.__PROXY__.setBlockId(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.getBlockId = function(...args) 
           
@@ -680,7 +680,7 @@
               return this.__PROXY__.getBlockId(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.getBlockName = function(...args) 
           
@@ -690,7 +690,7 @@
               return this.__PROXY__.getBlockName(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.getParentId = function(...args) 
           
@@ -700,7 +700,7 @@
               return this.__PROXY__.getParentId(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.setLinetypeId = function(...args) 
           
@@ -710,7 +710,7 @@
               return this.__PROXY__.setLinetypeId(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.setLinetypePattern = function(...args) 
           
@@ -720,7 +720,7 @@
               return this.__PROXY__.setLinetypePattern(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.getLinetypeId = function(...args) 
           
@@ -730,7 +730,7 @@
               return this.__PROXY__.getLinetypeId(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.getLinetypePattern = function(...args) 
           
@@ -740,7 +740,7 @@
               return this.__PROXY__.getLinetypePattern(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.setLinetypeScale = function(...args) 
           
@@ -750,7 +750,7 @@
               return this.__PROXY__.setLinetypeScale(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.getLinetypeScale = function(...args) 
           
@@ -760,7 +760,7 @@
               return this.__PROXY__.getLinetypeScale(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.setLineweight = function(...args) 
           
@@ -770,7 +770,7 @@
               return this.__PROXY__.setLineweight(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.getLineweight = function(...args) 
           
@@ -780,7 +780,7 @@
               return this.__PROXY__.getLineweight(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.setColor = function(...args) 
           
@@ -790,7 +790,7 @@
               return this.__PROXY__.setColor(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.getColor = function(...args) 
           
@@ -800,7 +800,7 @@
               return this.__PROXY__.getColor(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.getDisplayColor = function(...args) 
           
@@ -810,7 +810,7 @@
               return this.__PROXY__.getDisplayColor(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.copyAttributesFrom = function(...args) 
           
@@ -820,7 +820,7 @@
               return this.__PROXY__.copyAttributesFrom(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.getBoundingBox = function(...args) 
           
@@ -830,7 +830,7 @@
               return this.__PROXY__.getBoundingBox(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.to2D = function(...args) 
           
@@ -840,7 +840,7 @@
               return this.__PROXY__.to2D(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.setZ = function(...args) 
           
@@ -850,7 +850,7 @@
               return this.__PROXY__.setZ(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.getBoundingBoxes = function(...args) 
           
@@ -860,7 +860,7 @@
               return this.__PROXY__.getBoundingBoxes(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.getHull = function(...args) 
           
@@ -870,7 +870,7 @@
               return this.__PROXY__.getHull(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.getShapes = function(...args) 
           
@@ -880,7 +880,7 @@
               return this.__PROXY__.getShapes(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.getClosestSubEntityId = function(...args) 
           
@@ -890,7 +890,7 @@
               return this.__PROXY__.getClosestSubEntityId(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.getClosestShape = function(...args) 
           
@@ -900,7 +900,7 @@
               return this.__PROXY__.getClosestShape(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.getClosestSimpleShape = function(...args) 
           
@@ -910,7 +910,7 @@
               return this.__PROXY__.getClosestSimpleShape(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.isInside = function(...args) 
           
@@ -920,7 +920,7 @@
               return this.__PROXY__.isInside(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.isOnEntity = function(...args) 
           
@@ -930,7 +930,7 @@
               return this.__PROXY__.isOnEntity(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.intersectsWith = function(...args) 
           
@@ -940,7 +940,7 @@
               return this.__PROXY__.intersectsWith(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.getDistanceTo = function(...args) 
           
@@ -950,7 +950,7 @@
               return this.__PROXY__.getDistanceTo(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.getVectorTo = function(...args) 
           
@@ -960,7 +960,7 @@
               return this.__PROXY__.getVectorTo(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.getInternalReferencePoints = function(...args) 
           
@@ -970,7 +970,7 @@
               return this.__PROXY__.getInternalReferencePoints(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.getReferencePoints = function(...args) 
           
@@ -980,7 +980,7 @@
               return this.__PROXY__.getReferencePoints(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.getPointOnEntity = function(...args) 
           
@@ -990,7 +990,7 @@
               return this.__PROXY__.getPointOnEntity(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.getEndPoints = function(...args) 
           
@@ -1000,7 +1000,7 @@
               return this.__PROXY__.getEndPoints(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.getMiddlePoints = function(...args) 
           
@@ -1010,7 +1010,7 @@
               return this.__PROXY__.getMiddlePoints(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.getCenterPoints = function(...args) 
           
@@ -1020,7 +1020,7 @@
               return this.__PROXY__.getCenterPoints(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.getClosestPointOnEntity = function(...args) 
           
@@ -1030,7 +1030,7 @@
               return this.__PROXY__.getClosestPointOnEntity(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.getPointsWithDistanceToEnd = function(...args) 
           
@@ -1040,7 +1040,7 @@
               return this.__PROXY__.getPointsWithDistanceToEnd(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.getIntersectionPoints = function(...args) 
           
@@ -1050,7 +1050,7 @@
               return this.__PROXY__.getIntersectionPoints(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.getIntersectionPointsWithShape = function(...args) 
           
@@ -1060,7 +1060,7 @@
               return this.__PROXY__.getIntersectionPointsWithShape(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.clickReferencePoint = function(...args) 
           
@@ -1070,7 +1070,7 @@
               return this.__PROXY__.clickReferencePoint(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.moveReferencePoint = function(...args) 
           
@@ -1080,7 +1080,7 @@
               return this.__PROXY__.moveReferencePoint(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.move = function(...args) 
           
@@ -1090,7 +1090,7 @@
               return this.__PROXY__.move(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.rotate = function(...args) 
           
@@ -1100,7 +1100,7 @@
               return this.__PROXY__.rotate(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.scale = function(...args) 
           
@@ -1110,7 +1110,7 @@
               return this.__PROXY__.scale(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.scaleNonUniform = function(...args) 
           
@@ -1120,7 +1120,7 @@
               return this.__PROXY__.scaleNonUniform(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.scaleVisualProperties = function(...args) 
           
@@ -1130,7 +1130,7 @@
               return this.__PROXY__.scaleVisualProperties(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.setViewportContext = function(...args) 
           
@@ -1140,7 +1140,7 @@
               return this.__PROXY__.setViewportContext(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.mirror = function(...args) 
           
@@ -1150,7 +1150,7 @@
               return this.__PROXY__.mirror(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.flipHorizontal = function(...args) 
           
@@ -1160,7 +1160,7 @@
               return this.__PROXY__.flipHorizontal(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.flipVertical = function(...args) 
           
@@ -1170,7 +1170,7 @@
               return this.__PROXY__.flipVertical(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.stretch = function(...args) 
           
@@ -1180,7 +1180,7 @@
               return this.__PROXY__.stretch(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.update = function(...args) 
           
@@ -1190,7 +1190,7 @@
               return this.__PROXY__.update(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.castToShape = function(...args) 
           
@@ -1200,7 +1200,7 @@
               return this.__PROXY__.castToShape(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.setAutoUpdatesBlocked = function(...args) 
           
@@ -1210,7 +1210,7 @@
               return this.__PROXY__.setAutoUpdatesBlocked(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.isVisible = function(...args) 
           
@@ -1220,7 +1220,7 @@
               return this.__PROXY__.isVisible(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.isEditable = function(...args) 
           
@@ -1230,7 +1230,7 @@
               return this.__PROXY__.isEditable(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.isInWorkingSet = function(...args) 
           
@@ -1240,7 +1240,7 @@
               return this.__PROXY__.isInWorkingSet(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.getComplexity = function(...args) 
           
@@ -1250,7 +1250,7 @@
               return this.__PROXY__.getComplexity(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.setParentId = function(...args) 
           
@@ -1260,7 +1260,7 @@
               return this.__PROXY__.setParentId(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.exportEntity = function(...args) 
           
@@ -1270,7 +1270,7 @@
               return this.__PROXY__.exportEntity(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.clearStyleOverrides = function(...args) 
           
@@ -1280,7 +1280,7 @@
               return this.__PROXY__.clearStyleOverrides(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.setDefinitionPoint = function(...args) 
           
@@ -1290,7 +1290,7 @@
               return this.__PROXY__.setDefinitionPoint(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.getDefinitionPoint = function(...args) 
           
@@ -1300,7 +1300,7 @@
               return this.__PROXY__.getDefinitionPoint(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.setText = function(...args) 
           
@@ -1310,7 +1310,7 @@
               return this.__PROXY__.setText(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.getText = function(...args) 
           
@@ -1320,7 +1320,7 @@
               return this.__PROXY__.getText(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.getMeasurement = function(...args) 
           
@@ -1330,7 +1330,7 @@
               return this.__PROXY__.getMeasurement(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.getTextData = function(...args) 
           
@@ -1340,7 +1340,7 @@
               return this.__PROXY__.getTextData(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.updateBoundingBox = function(...args) 
           
@@ -1350,7 +1350,7 @@
               return this.__PROXY__.updateBoundingBox(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.updateTextPositionCenter = function(...args) 
           
@@ -1360,7 +1360,7 @@
               return this.__PROXY__.updateTextPositionCenter(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.updateTextData = function(...args) 
           
@@ -1370,7 +1370,7 @@
               return this.__PROXY__.updateTextData(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.updateShapes = function(...args) 
           
@@ -1380,7 +1380,7 @@
               return this.__PROXY__.updateShapes(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.setTextPosition = function(...args) 
           
@@ -1390,7 +1390,7 @@
               return this.__PROXY__.setTextPosition(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.getTextPosition = function(...args) 
           
@@ -1400,7 +1400,7 @@
               return this.__PROXY__.getTextPosition(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.setFontName = function(...args) 
           
@@ -1410,7 +1410,7 @@
               return this.__PROXY__.setFontName(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.getFontName = function(...args) 
           
@@ -1420,7 +1420,7 @@
               return this.__PROXY__.getFontName(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.hasCustomTextPosition = function(...args) 
           
@@ -1430,7 +1430,7 @@
               return this.__PROXY__.hasCustomTextPosition(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.setCustomTextPosition = function(...args) 
           
@@ -1440,7 +1440,7 @@
               return this.__PROXY__.setCustomTextPosition(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.getLineSpacingStyle = function(...args) 
           
@@ -1450,7 +1450,7 @@
               return this.__PROXY__.getLineSpacingStyle(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.getLineSpacingFactor = function(...args) 
           
@@ -1460,7 +1460,7 @@
               return this.__PROXY__.getLineSpacingFactor(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.getTextRotation = function(...args) 
           
@@ -1470,7 +1470,7 @@
               return this.__PROXY__.getTextRotation(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.getLinearFactor = function(...args) 
           
@@ -1480,7 +1480,7 @@
               return this.__PROXY__.getLinearFactor(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.setLinearFactor = function(...args) 
           
@@ -1490,7 +1490,7 @@
               return this.__PROXY__.setLinearFactor(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.getDimscale = function(...args) 
           
@@ -1500,7 +1500,7 @@
               return this.__PROXY__.getDimscale(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.setDimscale = function(...args) 
           
@@ -1510,7 +1510,7 @@
               return this.__PROXY__.setDimscale(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.getDimBlockName = function(...args) 
           
@@ -1520,7 +1520,7 @@
               return this.__PROXY__.getDimBlockName(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.hasDimensionBlockReference = function(...args) 
           
@@ -1530,7 +1530,7 @@
               return this.__PROXY__.hasDimensionBlockReference(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.isArrow1Flipped = function(...args) 
           
@@ -1540,7 +1540,7 @@
               return this.__PROXY__.isArrow1Flipped(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.setArrow1Flipped = function(...args) 
           
@@ -1550,7 +1550,7 @@
               return this.__PROXY__.setArrow1Flipped(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.isArrow2Flipped = function(...args) 
           
@@ -1560,7 +1560,7 @@
               return this.__PROXY__.isArrow2Flipped(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.setArrow2Flipped = function(...args) 
           
@@ -1570,7 +1570,7 @@
               return this.__PROXY__.setArrow2Flipped(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.isExtLineFix = function(...args) 
           
@@ -1580,7 +1580,7 @@
               return this.__PROXY__.isExtLineFix(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.setExtLineFix = function(...args) 
           
@@ -1590,7 +1590,7 @@
               return this.__PROXY__.setExtLineFix(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.getExtLineFixLength = function(...args) 
           
@@ -1600,7 +1600,7 @@
               return this.__PROXY__.getExtLineFixLength(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.setExtLineFixLength = function(...args) 
           
@@ -1610,7 +1610,7 @@
               return this.__PROXY__.setExtLineFixLength(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.hasOverride = function(...args) 
           
@@ -1620,7 +1620,7 @@
               return this.__PROXY__.hasOverride(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.setExtensionLine1End = function(...args) 
           
@@ -1630,7 +1630,7 @@
               return this.__PROXY__.setExtensionLine1End(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.getExtensionLine1End = function(...args) 
           
@@ -1640,7 +1640,7 @@
               return this.__PROXY__.getExtensionLine1End(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.setExtensionLine2End = function(...args) 
           
@@ -1650,7 +1650,7 @@
               return this.__PROXY__.setExtensionLine2End(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.getExtensionLine2End = function(...args) 
           
@@ -1660,7 +1660,7 @@
               return this.__PROXY__.getExtensionLine2End(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.setDimArcPosition = function(...args) 
           
@@ -1670,7 +1670,7 @@
               return this.__PROXY__.setDimArcPosition(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.getDimArcPosition = function(...args) 
           
@@ -1680,7 +1680,7 @@
               return this.__PROXY__.getDimArcPosition(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.getDimensionArc = function(...args) 
           
@@ -1690,7 +1690,7 @@
               return this.__PROXY__.getDimensionArc(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.init = function(...args) 
           
@@ -1700,7 +1700,7 @@
               return this.__PROXY__.init(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.getRtti = function(...args) 
           
@@ -1710,7 +1710,7 @@
               return this.__PROXY__.getRtti(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.getStaticPropertyTypeIds = function(...args) 
           
@@ -1720,7 +1720,7 @@
               return this.__PROXY__.getStaticPropertyTypeIds(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.clone = function(...args) 
           
@@ -1730,7 +1730,7 @@
               return this.__PROXY__.clone(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.setProperty = function(...args) 
           
@@ -1740,7 +1740,7 @@
               return this.__PROXY__.setProperty(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.getProperty = function(...args) 
           
@@ -1750,7 +1750,7 @@
               return this.__PROXY__.getProperty(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.getData = function(...args) 
           
@@ -1760,7 +1760,7 @@
               return this.__PROXY__.getData(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.setData = function(...args) 
           
@@ -1770,7 +1770,7 @@
               return this.__PROXY__.setData(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.setCenter = function(...args) 
           
@@ -1780,7 +1780,7 @@
               return this.__PROXY__.setCenter(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.getCenter = function(...args) 
           
@@ -1790,7 +1790,7 @@
               return this.__PROXY__.getCenter(...args);
             
         };
-    
+        
         // function 
         RDimArcLengthEntity.prototype.print = function(...args) 
           
@@ -1800,7 +1800,7 @@
               return this.__PROXY__.print(...args);
             
         };
-    
+        
 
       // static functions:
       

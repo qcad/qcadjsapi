@@ -142,7 +142,7 @@
               return this.__PROXY__.mustAlwaysClone(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.getDocument = function(...args) 
           
@@ -152,7 +152,7 @@
               return this.__PROXY__.getDocument(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.setFlag = function(...args) 
           
@@ -162,7 +162,7 @@
               return this.__PROXY__.setFlag(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.getFlag = function(...args) 
           
@@ -172,7 +172,7 @@
               return this.__PROXY__.getFlag(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.getId = function(...args) 
           
@@ -182,7 +182,7 @@
               return this.__PROXY__.getId(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.getHandle = function(...args) 
           
@@ -192,7 +192,7 @@
               return this.__PROXY__.getHandle(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.isProtected = function(...args) 
           
@@ -202,7 +202,7 @@
               return this.__PROXY__.isProtected(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.setProtected = function(...args) 
           
@@ -212,7 +212,7 @@
               return this.__PROXY__.setProtected(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.isInvisible = function(...args) 
           
@@ -222,7 +222,7 @@
               return this.__PROXY__.isInvisible(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.setInvisible = function(...args) 
           
@@ -232,7 +232,7 @@
               return this.__PROXY__.setInvisible(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.isUndone = function(...args) 
           
@@ -242,7 +242,7 @@
               return this.__PROXY__.isUndone(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.isWorkingSet = function(...args) 
           
@@ -252,7 +252,7 @@
               return this.__PROXY__.isWorkingSet(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.setWorkingSet = function(...args) 
           
@@ -262,7 +262,7 @@
               return this.__PROXY__.setWorkingSet(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.getPropertyTypeIds = function(...args) 
           
@@ -272,7 +272,7 @@
               return this.__PROXY__.getPropertyTypeIds(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.getCustomPropertyTypeIds = function(...args) 
           
@@ -282,7 +282,7 @@
               return this.__PROXY__.getCustomPropertyTypeIds(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.hasPropertyType = function(...args) 
           
@@ -292,7 +292,7 @@
               return this.__PROXY__.hasPropertyType(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.hasCustomProperties = function(...args) 
           
@@ -302,7 +302,7 @@
               return this.__PROXY__.hasCustomProperties(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.hasCustomProperty = function(...args) 
           
@@ -312,7 +312,7 @@
               return this.__PROXY__.hasCustomProperty(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.getCustomProperty = function(...args) 
           
@@ -322,7 +322,7 @@
               return this.__PROXY__.getCustomProperty(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.getCustomDoubleProperty = function(...args) 
           
@@ -332,7 +332,7 @@
               return this.__PROXY__.getCustomDoubleProperty(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.getCustomIntProperty = function(...args) 
           
@@ -342,7 +342,7 @@
               return this.__PROXY__.getCustomIntProperty(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.getCustomBoolProperty = function(...args) 
           
@@ -352,7 +352,7 @@
               return this.__PROXY__.getCustomBoolProperty(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.setCustomProperty = function(...args) 
           
@@ -362,7 +362,7 @@
               return this.__PROXY__.setCustomProperty(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.removeCustomProperty = function(...args) 
           
@@ -372,7 +372,7 @@
               return this.__PROXY__.removeCustomProperty(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.getCustomPropertyTitles = function(...args) 
           
@@ -382,7 +382,7 @@
               return this.__PROXY__.getCustomPropertyTitles(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.getCustomPropertyKeys = function(...args) 
           
@@ -392,7 +392,7 @@
               return this.__PROXY__.getCustomPropertyKeys(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.copyCustomPropertiesFrom = function(...args) 
           
@@ -402,7 +402,7 @@
               return this.__PROXY__.copyCustomPropertiesFrom(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.dump = function(...args) 
           
@@ -412,7 +412,7 @@
               return this.__PROXY__.dump(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.validate = function(...args) 
           
@@ -422,7 +422,7 @@
               return this.__PROXY__.validate(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.setUndone = function(...args) 
           
@@ -432,7 +432,7 @@
               return this.__PROXY__.setUndone(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.setId = function(...args) 
           
@@ -442,7 +442,7 @@
               return this.__PROXY__.setId(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.setHandle = function(...args) 
           
@@ -452,7 +452,7 @@
               return this.__PROXY__.setHandle(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.setMemberFlag = function(...args) 
           
@@ -462,7 +462,7 @@
               return this.__PROXY__.setMemberFlag(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.setDocument = function(...args) 
           
@@ -472,7 +472,7 @@
               return this.__PROXY__.setDocument(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.getType = function(...args) 
           
@@ -482,7 +482,7 @@
               return this.__PROXY__.getType(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.isPointType = function(...args) 
           
@@ -492,7 +492,7 @@
               return this.__PROXY__.isPointType(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.isValid = function(...args) 
           
@@ -502,7 +502,7 @@
               return this.__PROXY__.isValid(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.isSane = function(...args) 
           
@@ -512,7 +512,7 @@
               return this.__PROXY__.isSane(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.isSelected = function(...args) 
           
@@ -522,7 +522,7 @@
               return this.__PROXY__.isSelected(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.setSelected = function(...args) 
           
@@ -532,7 +532,7 @@
               return this.__PROXY__.setSelected(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.isSelectedWorkingSet = function(...args) 
           
@@ -542,7 +542,7 @@
               return this.__PROXY__.isSelectedWorkingSet(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.setSelectedWorkingSet = function(...args) 
           
@@ -552,7 +552,7 @@
               return this.__PROXY__.setSelectedWorkingSet(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.isSelectable = function(...args) 
           
@@ -562,7 +562,7 @@
               return this.__PROXY__.isSelectable(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.isUpdatesEnabled = function(...args) 
           
@@ -572,7 +572,7 @@
               return this.__PROXY__.isUpdatesEnabled(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.setUpdatesEnabled = function(...args) 
           
@@ -582,7 +582,7 @@
               return this.__PROXY__.setUpdatesEnabled(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.cloneOnChange = function(...args) 
           
@@ -592,7 +592,7 @@
               return this.__PROXY__.cloneOnChange(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.setDrawOrder = function(...args) 
           
@@ -602,7 +602,7 @@
               return this.__PROXY__.setDrawOrder(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.getDrawOrder = function(...args) 
           
@@ -612,7 +612,7 @@
               return this.__PROXY__.getDrawOrder(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.setLayerId = function(...args) 
           
@@ -622,7 +622,7 @@
               return this.__PROXY__.setLayerId(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.setLayerName = function(...args) 
           
@@ -632,7 +632,7 @@
               return this.__PROXY__.setLayerName(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.getLayerId = function(...args) 
           
@@ -642,7 +642,7 @@
               return this.__PROXY__.getLayerId(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.getLayerName = function(...args) 
           
@@ -652,7 +652,7 @@
               return this.__PROXY__.getLayerName(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.setBlockId = function(...args) 
           
@@ -662,7 +662,7 @@
               return this.__PROXY__.setBlockId(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.getBlockId = function(...args) 
           
@@ -672,7 +672,7 @@
               return this.__PROXY__.getBlockId(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.getBlockName = function(...args) 
           
@@ -682,7 +682,7 @@
               return this.__PROXY__.getBlockName(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.getParentId = function(...args) 
           
@@ -692,7 +692,7 @@
               return this.__PROXY__.getParentId(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.setLinetypeId = function(...args) 
           
@@ -702,7 +702,7 @@
               return this.__PROXY__.setLinetypeId(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.setLinetypePattern = function(...args) 
           
@@ -712,7 +712,7 @@
               return this.__PROXY__.setLinetypePattern(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.getLinetypeId = function(...args) 
           
@@ -722,7 +722,7 @@
               return this.__PROXY__.getLinetypeId(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.getLinetypePattern = function(...args) 
           
@@ -732,7 +732,7 @@
               return this.__PROXY__.getLinetypePattern(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.setLinetypeScale = function(...args) 
           
@@ -742,7 +742,7 @@
               return this.__PROXY__.setLinetypeScale(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.getLinetypeScale = function(...args) 
           
@@ -752,7 +752,7 @@
               return this.__PROXY__.getLinetypeScale(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.setLineweight = function(...args) 
           
@@ -762,7 +762,7 @@
               return this.__PROXY__.setLineweight(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.getLineweight = function(...args) 
           
@@ -772,7 +772,7 @@
               return this.__PROXY__.getLineweight(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.setColor = function(...args) 
           
@@ -782,7 +782,7 @@
               return this.__PROXY__.setColor(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.getColor = function(...args) 
           
@@ -792,7 +792,7 @@
               return this.__PROXY__.getColor(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.getDisplayColor = function(...args) 
           
@@ -802,7 +802,7 @@
               return this.__PROXY__.getDisplayColor(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.copyAttributesFrom = function(...args) 
           
@@ -812,7 +812,7 @@
               return this.__PROXY__.copyAttributesFrom(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.getBoundingBox = function(...args) 
           
@@ -822,7 +822,7 @@
               return this.__PROXY__.getBoundingBox(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.to2D = function(...args) 
           
@@ -832,7 +832,7 @@
               return this.__PROXY__.to2D(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.setZ = function(...args) 
           
@@ -842,7 +842,7 @@
               return this.__PROXY__.setZ(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.getBoundingBoxes = function(...args) 
           
@@ -852,7 +852,7 @@
               return this.__PROXY__.getBoundingBoxes(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.getHull = function(...args) 
           
@@ -862,7 +862,7 @@
               return this.__PROXY__.getHull(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.getShapes = function(...args) 
           
@@ -872,7 +872,7 @@
               return this.__PROXY__.getShapes(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.getClosestSubEntityId = function(...args) 
           
@@ -882,7 +882,7 @@
               return this.__PROXY__.getClosestSubEntityId(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.getClosestShape = function(...args) 
           
@@ -892,7 +892,7 @@
               return this.__PROXY__.getClosestShape(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.getClosestSimpleShape = function(...args) 
           
@@ -902,7 +902,7 @@
               return this.__PROXY__.getClosestSimpleShape(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.isInside = function(...args) 
           
@@ -912,7 +912,7 @@
               return this.__PROXY__.isInside(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.isOnEntity = function(...args) 
           
@@ -922,7 +922,7 @@
               return this.__PROXY__.isOnEntity(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.intersectsWith = function(...args) 
           
@@ -932,7 +932,7 @@
               return this.__PROXY__.intersectsWith(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.getDistanceTo = function(...args) 
           
@@ -942,7 +942,7 @@
               return this.__PROXY__.getDistanceTo(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.getVectorTo = function(...args) 
           
@@ -952,7 +952,7 @@
               return this.__PROXY__.getVectorTo(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.getInternalReferencePoints = function(...args) 
           
@@ -962,7 +962,7 @@
               return this.__PROXY__.getInternalReferencePoints(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.getReferencePoints = function(...args) 
           
@@ -972,7 +972,7 @@
               return this.__PROXY__.getReferencePoints(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.getPointOnEntity = function(...args) 
           
@@ -982,7 +982,7 @@
               return this.__PROXY__.getPointOnEntity(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.getEndPoints = function(...args) 
           
@@ -992,7 +992,7 @@
               return this.__PROXY__.getEndPoints(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.getMiddlePoints = function(...args) 
           
@@ -1002,7 +1002,7 @@
               return this.__PROXY__.getMiddlePoints(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.getCenterPoints = function(...args) 
           
@@ -1012,7 +1012,7 @@
               return this.__PROXY__.getCenterPoints(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.getClosestPointOnEntity = function(...args) 
           
@@ -1022,7 +1022,7 @@
               return this.__PROXY__.getClosestPointOnEntity(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.getPointsWithDistanceToEnd = function(...args) 
           
@@ -1032,7 +1032,7 @@
               return this.__PROXY__.getPointsWithDistanceToEnd(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.getIntersectionPoints = function(...args) 
           
@@ -1042,7 +1042,7 @@
               return this.__PROXY__.getIntersectionPoints(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.getIntersectionPointsWithShape = function(...args) 
           
@@ -1052,7 +1052,7 @@
               return this.__PROXY__.getIntersectionPointsWithShape(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.clickReferencePoint = function(...args) 
           
@@ -1062,7 +1062,7 @@
               return this.__PROXY__.clickReferencePoint(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.moveReferencePoint = function(...args) 
           
@@ -1072,7 +1072,7 @@
               return this.__PROXY__.moveReferencePoint(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.move = function(...args) 
           
@@ -1082,7 +1082,7 @@
               return this.__PROXY__.move(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.rotate = function(...args) 
           
@@ -1092,7 +1092,7 @@
               return this.__PROXY__.rotate(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.scale = function(...args) 
           
@@ -1102,7 +1102,7 @@
               return this.__PROXY__.scale(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.scaleVisualProperties = function(...args) 
           
@@ -1112,7 +1112,7 @@
               return this.__PROXY__.scaleVisualProperties(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.setViewportContext = function(...args) 
           
@@ -1122,7 +1122,7 @@
               return this.__PROXY__.setViewportContext(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.mirror = function(...args) 
           
@@ -1132,7 +1132,7 @@
               return this.__PROXY__.mirror(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.flipHorizontal = function(...args) 
           
@@ -1142,7 +1142,7 @@
               return this.__PROXY__.flipHorizontal(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.flipVertical = function(...args) 
           
@@ -1152,7 +1152,7 @@
               return this.__PROXY__.flipVertical(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.stretch = function(...args) 
           
@@ -1162,7 +1162,7 @@
               return this.__PROXY__.stretch(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.update = function(...args) 
           
@@ -1172,7 +1172,7 @@
               return this.__PROXY__.update(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.castToShape = function(...args) 
           
@@ -1182,7 +1182,7 @@
               return this.__PROXY__.castToShape(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.setAutoUpdatesBlocked = function(...args) 
           
@@ -1192,7 +1192,7 @@
               return this.__PROXY__.setAutoUpdatesBlocked(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.isVisible = function(...args) 
           
@@ -1202,7 +1202,7 @@
               return this.__PROXY__.isVisible(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.isEditable = function(...args) 
           
@@ -1212,7 +1212,7 @@
               return this.__PROXY__.isEditable(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.isInWorkingSet = function(...args) 
           
@@ -1222,7 +1222,7 @@
               return this.__PROXY__.isInWorkingSet(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.getComplexity = function(...args) 
           
@@ -1232,7 +1232,7 @@
               return this.__PROXY__.getComplexity(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.setParentId = function(...args) 
           
@@ -1242,7 +1242,7 @@
               return this.__PROXY__.setParentId(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.init = function(...args) 
           
@@ -1252,7 +1252,7 @@
               return this.__PROXY__.init(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.getRtti = function(...args) 
           
@@ -1262,7 +1262,7 @@
               return this.__PROXY__.getRtti(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.getStaticPropertyTypeIds = function(...args) 
           
@@ -1272,7 +1272,7 @@
               return this.__PROXY__.getStaticPropertyTypeIds(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.clone = function(...args) 
           
@@ -1282,7 +1282,7 @@
               return this.__PROXY__.clone(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.setShape = function(...args) 
           
@@ -1292,7 +1292,7 @@
               return this.__PROXY__.setShape(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.setProperty = function(...args) 
           
@@ -1302,7 +1302,7 @@
               return this.__PROXY__.setProperty(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.getProperty = function(...args) 
           
@@ -1312,7 +1312,7 @@
               return this.__PROXY__.getProperty(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.exportEntity = function(...args) 
           
@@ -1322,7 +1322,7 @@
               return this.__PROXY__.exportEntity(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.scaleNonUniform = function(...args) 
           
@@ -1332,7 +1332,7 @@
               return this.__PROXY__.scaleNonUniform(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.getData = function(...args) 
           
@@ -1342,7 +1342,7 @@
               return this.__PROXY__.getData(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.getCenter = function(...args) 
           
@@ -1352,7 +1352,7 @@
               return this.__PROXY__.getCenter(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.getMajorPoint = function(...args) 
           
@@ -1362,7 +1362,7 @@
               return this.__PROXY__.getMajorPoint(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.getMajorRadius = function(...args) 
           
@@ -1372,7 +1372,7 @@
               return this.__PROXY__.getMajorRadius(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.getMinorRadius = function(...args) 
           
@@ -1382,7 +1382,7 @@
               return this.__PROXY__.getMinorRadius(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.getRatio = function(...args) 
           
@@ -1392,7 +1392,7 @@
               return this.__PROXY__.getRatio(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.getAngle = function(...args) 
           
@@ -1402,7 +1402,7 @@
               return this.__PROXY__.getAngle(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.setRatio = function(...args) 
           
@@ -1412,7 +1412,7 @@
               return this.__PROXY__.setRatio(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.getStartAngle = function(...args) 
           
@@ -1422,7 +1422,7 @@
               return this.__PROXY__.getStartAngle(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.getStartParam = function(...args) 
           
@@ -1432,7 +1432,7 @@
               return this.__PROXY__.getStartParam(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.setStartParam = function(...args) 
           
@@ -1442,7 +1442,7 @@
               return this.__PROXY__.setStartParam(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.getEndAngle = function(...args) 
           
@@ -1452,7 +1452,7 @@
               return this.__PROXY__.getEndAngle(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.getEndParam = function(...args) 
           
@@ -1462,7 +1462,7 @@
               return this.__PROXY__.getEndParam(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.setEndParam = function(...args) 
           
@@ -1472,7 +1472,7 @@
               return this.__PROXY__.setEndParam(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.getAngleLength = function(...args) 
           
@@ -1482,7 +1482,7 @@
               return this.__PROXY__.getAngleLength(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.getAngleAt = function(...args) 
           
@@ -1492,7 +1492,7 @@
               return this.__PROXY__.getAngleAt(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.isReversed = function(...args) 
           
@@ -1502,7 +1502,7 @@
               return this.__PROXY__.isReversed(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.setReversed = function(...args) 
           
@@ -1512,7 +1512,7 @@
               return this.__PROXY__.setReversed(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.getStartPoint = function(...args) 
           
@@ -1522,7 +1522,7 @@
               return this.__PROXY__.getStartPoint(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.getEndPoint = function(...args) 
           
@@ -1532,7 +1532,7 @@
               return this.__PROXY__.getEndPoint(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.isFullEllipse = function(...args) 
           
@@ -1542,7 +1542,7 @@
               return this.__PROXY__.isFullEllipse(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.getDirection1 = function(...args) 
           
@@ -1552,7 +1552,7 @@
               return this.__PROXY__.getDirection1(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.getDirection2 = function(...args) 
           
@@ -1562,7 +1562,7 @@
               return this.__PROXY__.getDirection2(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.reverse = function(...args) 
           
@@ -1572,7 +1572,7 @@
               return this.__PROXY__.reverse(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.getSideOfPoint = function(...args) 
           
@@ -1582,7 +1582,7 @@
               return this.__PROXY__.getSideOfPoint(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.getParamTo = function(...args) 
           
@@ -1592,7 +1592,7 @@
               return this.__PROXY__.getParamTo(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.getTrimEnd = function(...args) 
           
@@ -1602,7 +1602,7 @@
               return this.__PROXY__.getTrimEnd(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.trimStartPoint = function(...args) 
           
@@ -1612,7 +1612,7 @@
               return this.__PROXY__.trimStartPoint(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.trimEndPoint = function(...args) 
           
@@ -1622,7 +1622,7 @@
               return this.__PROXY__.trimEndPoint(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.getLength = function(...args) 
           
@@ -1632,7 +1632,7 @@
               return this.__PROXY__.getLength(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.getSweep = function(...args) 
           
@@ -1642,7 +1642,7 @@
               return this.__PROXY__.getSweep(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.getPointAt = function(...args) 
           
@@ -1652,7 +1652,7 @@
               return this.__PROXY__.getPointAt(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.approximateWithSplines = function(...args) 
           
@@ -1662,7 +1662,7 @@
               return this.__PROXY__.approximateWithSplines(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.approximateWithArcs = function(...args) 
           
@@ -1672,7 +1672,7 @@
               return this.__PROXY__.approximateWithArcs(...args);
             
         };
-    
+        
         // function 
         REllipseEntity.prototype.print = function(...args) 
           
@@ -1682,7 +1682,7 @@
               return this.__PROXY__.print(...args);
             
         };
-    
+        
 
       // static functions:
       

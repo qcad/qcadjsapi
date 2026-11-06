@@ -121,7 +121,7 @@
               return this.__PROXY__.setObjectName(...args);
             
         };
-    
+        
         // function 
         RSingleApplication.prototype.isWidgetType = function(...args) 
           
@@ -131,7 +131,7 @@
               return this.__PROXY__.isWidgetType(...args);
             
         };
-    
+        
         // function 
         RSingleApplication.prototype.isWindowType = function(...args) 
           
@@ -141,7 +141,7 @@
               return this.__PROXY__.isWindowType(...args);
             
         };
-    
+        
         // function 
         RSingleApplication.prototype.signalsBlocked = function(...args) 
           
@@ -151,7 +151,7 @@
               return this.__PROXY__.signalsBlocked(...args);
             
         };
-    
+        
         // function 
         RSingleApplication.prototype.blockSignals = function(...args) 
           
@@ -161,7 +161,7 @@
               return this.__PROXY__.blockSignals(...args);
             
         };
-    
+        
         // function 
         RSingleApplication.prototype.findChild = function(...args) 
           
@@ -171,7 +171,7 @@
               return this.__PROXY__.findChild(...args);
             
         };
-    
+        
         // function 
         RSingleApplication.prototype.children = function(...args) 
           
@@ -181,7 +181,7 @@
               return this.__PROXY__.children(...args);
             
         };
-    
+        
         // function 
         RSingleApplication.prototype.setParent = function(...args) 
           
@@ -191,7 +191,7 @@
               return this.__PROXY__.setParent(...args);
             
         };
-    
+        
         // function 
         RSingleApplication.prototype.installEventFilter = function(...args) 
           
@@ -201,7 +201,7 @@
               return this.__PROXY__.installEventFilter(...args);
             
         };
-    
+        
         // function 
         RSingleApplication.prototype.removeEventFilter = function(...args) 
           
@@ -211,7 +211,7 @@
               return this.__PROXY__.removeEventFilter(...args);
             
         };
-    
+        
         // function 
         RSingleApplication.prototype.dumpObjectTree = function(...args) 
           
@@ -221,7 +221,7 @@
               return this.__PROXY__.dumpObjectTree(...args);
             
         };
-    
+        
         // function 
         RSingleApplication.prototype.dumpObjectInfo = function(...args) 
           
@@ -231,7 +231,7 @@
               return this.__PROXY__.dumpObjectInfo(...args);
             
         };
-    
+        
         // function 
         RSingleApplication.prototype.setProperty = function(...args) 
           
@@ -241,7 +241,7 @@
               return this.__PROXY__.setProperty(...args);
             
         };
-    
+        
         // function 
         RSingleApplication.prototype.property = function(...args) 
           
@@ -251,7 +251,7 @@
               return this.__PROXY__.property(...args);
             
         };
-    
+        
         // function 
         RSingleApplication.prototype.dynamicPropertyNames = function(...args) 
           
@@ -261,7 +261,7 @@
               return this.__PROXY__.dynamicPropertyNames(...args);
             
         };
-    
+        
         // function 
         RSingleApplication.prototype.parent = function(...args) 
           
@@ -271,7 +271,7 @@
               return this.__PROXY__.parent(...args);
             
         };
-    
+        
         // function 
         RSingleApplication.prototype.deleteLater = function(...args) 
           
@@ -281,7 +281,7 @@
               return this.__PROXY__.deleteLater(...args);
             
         };
-    
+        
         // function 
         RSingleApplication.prototype.setOrganizationDomain = function(...args) 
           
@@ -291,7 +291,7 @@
               return this.__PROXY__.setOrganizationDomain(...args);
             
         };
-    
+        
         // function 
         RSingleApplication.prototype.setOrganizationName = function(...args) 
           
@@ -301,7 +301,7 @@
               return this.__PROXY__.setOrganizationName(...args);
             
         };
-    
+        
         // function 
         RSingleApplication.prototype.setApplicationName = function(...args) 
           
@@ -311,7 +311,7 @@
               return this.__PROXY__.setApplicationName(...args);
             
         };
-    
+        
         // function 
         RSingleApplication.prototype.setApplicationVersion = function(...args) 
           
@@ -321,7 +321,7 @@
               return this.__PROXY__.setApplicationVersion(...args);
             
         };
-    
+        
         // function 
         RSingleApplication.prototype.isQuitLockEnabled = function(...args) 
           
@@ -331,7 +331,7 @@
               return this.__PROXY__.isQuitLockEnabled(...args);
             
         };
-    
+        
         // function 
         RSingleApplication.prototype.setQuitLockEnabled = function(...args) 
           
@@ -341,7 +341,7 @@
               return this.__PROXY__.setQuitLockEnabled(...args);
             
         };
-    
+        
         // function 
         RSingleApplication.prototype.qt_sendSpontaneousEvent = function(...args) 
           
@@ -351,7 +351,7 @@
               return this.__PROXY__.qt_sendSpontaneousEvent(...args);
             
         };
-    
+        
         // function 
         RSingleApplication.prototype.qAppName = function(...args) 
           
@@ -361,7 +361,7 @@
               return this.__PROXY__.qAppName(...args);
             
         };
-    
+        
         // function 
         RSingleApplication.prototype.devicePixelRatio = function(...args) 
           
@@ -371,7 +371,7 @@
               return this.__PROXY__.devicePixelRatio(...args);
             
         };
-    
+        
         // function 
         RSingleApplication.prototype.isSessionRestored = function(...args) 
           
@@ -381,7 +381,7 @@
               return this.__PROXY__.isSessionRestored(...args);
             
         };
-    
+        
         // function 
         RSingleApplication.prototype.sessionId = function(...args) 
           
@@ -391,7 +391,7 @@
               return this.__PROXY__.sessionId(...args);
             
         };
-    
+        
         // function 
         RSingleApplication.prototype.sessionKey = function(...args) 
           
@@ -401,7 +401,7 @@
               return this.__PROXY__.sessionKey(...args);
             
         };
-    
+        
         // function 
         RSingleApplication.prototype.isSavingSession = function(...args) 
           
@@ -411,7 +411,7 @@
               return this.__PROXY__.isSavingSession(...args);
             
         };
-    
+        
         // function 
         RSingleApplication.prototype.event = function(...args) 
           
@@ -421,7 +421,7 @@
               return this.__PROXY__.event(...args);
             
         };
-    
+        
         // function 
         RSingleApplication.prototype.compressEvent = function(...args) 
           
@@ -431,7 +431,7 @@
               return this.__PROXY__.compressEvent(...args);
             
         };
-    
+        
         // function 
         RSingleApplication.prototype.notify = function(...args) 
           
@@ -441,7 +441,7 @@
               return this.__PROXY__.notify(...args);
             
         };
-    
+        
         // function 
         RSingleApplication.prototype.setStyleSheet = function(...args) 
           
@@ -451,7 +451,7 @@
               return this.__PROXY__.setStyleSheet(...args);
             
         };
-    
+        
         // function 
         RSingleApplication.prototype.setAutoSipEnabled = function(...args) 
           
@@ -461,7 +461,7 @@
               return this.__PROXY__.setAutoSipEnabled(...args);
             
         };
-    
+        
         // function 
         RSingleApplication.prototype.getInstance = function(...args) 
           
@@ -471,7 +471,7 @@
               return this.__PROXY__.getInstance(...args);
             
         };
-    
+        
         // function 
         RSingleApplication.prototype.isRunning = function(...args) 
           
@@ -481,7 +481,7 @@
               return this.__PROXY__.isRunning(...args);
             
         };
-    
+        
         // function 
         RSingleApplication.prototype.id = function(...args) 
           
@@ -491,7 +491,7 @@
               return this.__PROXY__.id(...args);
             
         };
-    
+        
         // function 
         RSingleApplication.prototype.setActivationWindow = function(...args) 
           
@@ -501,7 +501,7 @@
               return this.__PROXY__.setActivationWindow(...args);
             
         };
-    
+        
         // function 
         RSingleApplication.prototype.activationWindow = function(...args) 
           
@@ -511,7 +511,7 @@
               return this.__PROXY__.activationWindow(...args);
             
         };
-    
+        
         // function 
         RSingleApplication.prototype.sendMessage = function(...args) 
           
@@ -521,7 +521,7 @@
               return this.__PROXY__.sendMessage(...args);
             
         };
-    
+        
         // function 
         RSingleApplication.prototype.activateWindow = function(...args) 
           
@@ -531,7 +531,7 @@
               return this.__PROXY__.activateWindow(...args);
             
         };
-    
+        
 
       // static functions:
       

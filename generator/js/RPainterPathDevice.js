@@ -138,7 +138,7 @@
               return this.__PROXY__.devType(...args);
             
         };
-    
+        
         // function 
         RPainterPathDevice.prototype.paintingActive = function(...args) 
           
@@ -148,7 +148,7 @@
               return this.__PROXY__.paintingActive(...args);
             
         };
-    
+        
         // function 
         RPainterPathDevice.prototype.width = function(...args) 
           
@@ -158,7 +158,7 @@
               return this.__PROXY__.width(...args);
             
         };
-    
+        
         // function 
         RPainterPathDevice.prototype.height = function(...args) 
           
@@ -168,7 +168,7 @@
               return this.__PROXY__.height(...args);
             
         };
-    
+        
         // function 
         RPainterPathDevice.prototype.widthMM = function(...args) 
           
@@ -178,7 +178,7 @@
               return this.__PROXY__.widthMM(...args);
             
         };
-    
+        
         // function 
         RPainterPathDevice.prototype.heightMM = function(...args) 
           
@@ -188,7 +188,7 @@
               return this.__PROXY__.heightMM(...args);
             
         };
-    
+        
         // function 
         RPainterPathDevice.prototype.logicalDpiX = function(...args) 
           
@@ -198,7 +198,7 @@
               return this.__PROXY__.logicalDpiX(...args);
             
         };
-    
+        
         // function 
         RPainterPathDevice.prototype.logicalDpiY = function(...args) 
           
@@ -208,7 +208,7 @@
               return this.__PROXY__.logicalDpiY(...args);
             
         };
-    
+        
         // function 
         RPainterPathDevice.prototype.physicalDpiX = function(...args) 
           
@@ -218,7 +218,7 @@
               return this.__PROXY__.physicalDpiX(...args);
             
         };
-    
+        
         // function 
         RPainterPathDevice.prototype.physicalDpiY = function(...args) 
           
@@ -228,7 +228,7 @@
               return this.__PROXY__.physicalDpiY(...args);
             
         };
-    
+        
         // function 
         RPainterPathDevice.prototype.devicePixelRatio = function(...args) 
           
@@ -238,7 +238,7 @@
               return this.__PROXY__.devicePixelRatio(...args);
             
         };
-    
+        
         // function 
         RPainterPathDevice.prototype.devicePixelRatioF = function(...args) 
           
@@ -248,7 +248,7 @@
               return this.__PROXY__.devicePixelRatioF(...args);
             
         };
-    
+        
         // function 
         RPainterPathDevice.prototype.colorCount = function(...args) 
           
@@ -258,7 +258,7 @@
               return this.__PROXY__.colorCount(...args);
             
         };
-    
+        
         // function 
         RPainterPathDevice.prototype.depth = function(...args) 
           
@@ -268,7 +268,7 @@
               return this.__PROXY__.depth(...args);
             
         };
-    
+        
         // function 
         RPainterPathDevice.prototype.metric = function(...args) 
           
@@ -278,7 +278,7 @@
               return this.__PROXY__.metric(...args);
             
         };
-    
+        
         // function 
         RPainterPathDevice.prototype.initPainter = function(...args) 
           
@@ -288,7 +288,7 @@
               return this.__PROXY__.initPainter(...args);
             
         };
-    
+        
         // function 
         RPainterPathDevice.prototype.redirected = function(...args) 
           
@@ -298,7 +298,7 @@
               return this.__PROXY__.redirected(...args);
             
         };
-    
+        
         // function 
         RPainterPathDevice.prototype.sharedPainter = function(...args) 
           
@@ -308,7 +308,7 @@
               return this.__PROXY__.sharedPainter(...args);
             
         };
-    
+        
         // function 
         RPainterPathDevice.prototype.qt_paint_device_metric = function(...args) 
           
@@ -318,7 +318,7 @@
               return this.__PROXY__.qt_paint_device_metric(...args);
             
         };
-    
+        
         // function 
         RPainterPathDevice.prototype.setStrokePolygon = function(...args) 
           
@@ -328,7 +328,7 @@
               return this.__PROXY__.setStrokePolygon(...args);
             
         };
-    
+        
         // function 
         RPainterPathDevice.prototype.getPainterPaths = function(...args) 
           
@@ -338,7 +338,7 @@
               return this.__PROXY__.getPainterPaths(...args);
             
         };
-    
+        
         // function 
         RPainterPathDevice.prototype.setSize = function(...args) 
           
@@ -348,7 +348,7 @@
               return this.__PROXY__.setSize(...args);
             
         };
-    
+        
         // function 
         RPainterPathDevice.prototype.setDpi = function(...args) 
           
@@ -358,7 +358,7 @@
               return this.__PROXY__.setDpi(...args);
             
         };
-    
+        
         // function 
         RPainterPathDevice.prototype.paintEngine = function(...args) 
           
@@ -368,7 +368,7 @@
               return this.__PROXY__.paintEngine(...args);
             
         };
-    
+        
 
       // static functions:
       RPainterPathDevice.prototype.isNullWrapper = function() {

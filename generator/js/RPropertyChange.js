@@ -160,7 +160,7 @@
               return this.__PROXY__.setOldValue(...args);
             
         };
-    
+        
         // function 
         RPropertyChange.prototype.getOldValue = function(...args) 
           
@@ -170,7 +170,7 @@
               return this.__PROXY__.getOldValue(...args);
             
         };
-    
+        
         // function 
         RPropertyChange.prototype.setNewValue = function(...args) 
           
@@ -180,7 +180,7 @@
               return this.__PROXY__.setNewValue(...args);
             
         };
-    
+        
         // function 
         RPropertyChange.prototype.getNewValue = function(...args) 
           
@@ -190,7 +190,7 @@
               return this.__PROXY__.getNewValue(...args);
             
         };
-    
+        
         // function 
         RPropertyChange.prototype.setPropertyTypeId = function(...args) 
           
@@ -200,7 +200,7 @@
               return this.__PROXY__.setPropertyTypeId(...args);
             
         };
-    
+        
         // function 
         RPropertyChange.prototype.getPropertyTypeId = function(...args) 
           
@@ -210,7 +210,7 @@
               return this.__PROXY__.getPropertyTypeId(...args);
             
         };
-    
+        
 
       // static functions:
       RPropertyChange.prototype.isNullWrapper = function() {

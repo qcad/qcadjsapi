@@ -195,7 +195,7 @@
               return this.__PROXY__.getDocument(...args);
             
         };
-    
+        
         // function 
         RArcData.prototype.setDocument = function(...args) 
           
@@ -205,7 +205,7 @@
               return this.__PROXY__.setDocument(...args);
             
         };
-    
+        
         // function 
         RArcData.prototype.isPointType = function(...args) 
           
@@ -215,7 +215,7 @@
               return this.__PROXY__.isPointType(...args);
             
         };
-    
+        
         // function 
         RArcData.prototype.isSane = function(...args) 
           
@@ -225,7 +225,7 @@
               return this.__PROXY__.isSane(...args);
             
         };
-    
+        
         // function 
         RArcData.prototype.getClosestSubEntityId = function(...args) 
           
@@ -235,7 +235,7 @@
               return this.__PROXY__.getClosestSubEntityId(...args);
             
         };
-    
+        
         // function 
         RArcData.prototype.getClosestShape = function(...args) 
           
@@ -245,7 +245,7 @@
               return this.__PROXY__.getClosestShape(...args);
             
         };
-    
+        
         // function 
         RArcData.prototype.copyAttributesFrom = function(...args) 
           
@@ -255,7 +255,7 @@
               return this.__PROXY__.copyAttributesFrom(...args);
             
         };
-    
+        
         // function 
         RArcData.prototype.getBoundingBoxes = function(...args) 
           
@@ -265,7 +265,7 @@
               return this.__PROXY__.getBoundingBoxes(...args);
             
         };
-    
+        
         // function 
         RArcData.prototype.getHull = function(...args) 
           
@@ -275,7 +275,7 @@
               return this.__PROXY__.getHull(...args);
             
         };
-    
+        
         // function 
         RArcData.prototype.isUpdatesEnabled = function(...args) 
           
@@ -285,7 +285,7 @@
               return this.__PROXY__.isUpdatesEnabled(...args);
             
         };
-    
+        
         // function 
         RArcData.prototype.setUpdatesEnabled = function(...args) 
           
@@ -295,7 +295,7 @@
               return this.__PROXY__.setUpdatesEnabled(...args);
             
         };
-    
+        
         // function 
         RArcData.prototype.cloneOnChange = function(...args) 
           
@@ -305,7 +305,7 @@
               return this.__PROXY__.cloneOnChange(...args);
             
         };
-    
+        
         // function 
         RArcData.prototype.isSelected = function(...args) 
           
@@ -315,7 +315,7 @@
               return this.__PROXY__.isSelected(...args);
             
         };
-    
+        
         // function 
         RArcData.prototype.setSelected = function(...args) 
           
@@ -325,7 +325,7 @@
               return this.__PROXY__.setSelected(...args);
             
         };
-    
+        
         // function 
         RArcData.prototype.isSelectedWorkingSet = function(...args) 
           
@@ -335,7 +335,7 @@
               return this.__PROXY__.isSelectedWorkingSet(...args);
             
         };
-    
+        
         // function 
         RArcData.prototype.setSelectedWorkingSet = function(...args) 
           
@@ -345,7 +345,7 @@
               return this.__PROXY__.setSelectedWorkingSet(...args);
             
         };
-    
+        
         // function 
         RArcData.prototype.getDrawOrder = function(...args) 
           
@@ -355,7 +355,7 @@
               return this.__PROXY__.getDrawOrder(...args);
             
         };
-    
+        
         // function 
         RArcData.prototype.setDrawOrder = function(...args) 
           
@@ -365,7 +365,7 @@
               return this.__PROXY__.setDrawOrder(...args);
             
         };
-    
+        
         // function 
         RArcData.prototype.setLayerId = function(...args) 
           
@@ -375,7 +375,7 @@
               return this.__PROXY__.setLayerId(...args);
             
         };
-    
+        
         // function 
         RArcData.prototype.getLayerId = function(...args) 
           
@@ -385,7 +385,7 @@
               return this.__PROXY__.getLayerId(...args);
             
         };
-    
+        
         // function 
         RArcData.prototype.setLayerName = function(...args) 
           
@@ -395,7 +395,7 @@
               return this.__PROXY__.setLayerName(...args);
             
         };
-    
+        
         // function 
         RArcData.prototype.getLayerName = function(...args) 
           
@@ -405,7 +405,7 @@
               return this.__PROXY__.getLayerName(...args);
             
         };
-    
+        
         // function 
         RArcData.prototype.setBlockId = function(...args) 
           
@@ -415,7 +415,7 @@
               return this.__PROXY__.setBlockId(...args);
             
         };
-    
+        
         // function 
         RArcData.prototype.getBlockId = function(...args) 
           
@@ -425,7 +425,7 @@
               return this.__PROXY__.getBlockId(...args);
             
         };
-    
+        
         // function 
         RArcData.prototype.setParentId = function(...args) 
           
@@ -435,7 +435,7 @@
               return this.__PROXY__.setParentId(...args);
             
         };
-    
+        
         // function 
         RArcData.prototype.getParentId = function(...args) 
           
@@ -445,7 +445,7 @@
               return this.__PROXY__.getParentId(...args);
             
         };
-    
+        
         // function 
         RArcData.prototype.getBlockName = function(...args) 
           
@@ -455,7 +455,7 @@
               return this.__PROXY__.getBlockName(...args);
             
         };
-    
+        
         // function 
         RArcData.prototype.setLinetypeId = function(...args) 
           
@@ -465,7 +465,7 @@
               return this.__PROXY__.setLinetypeId(...args);
             
         };
-    
+        
         // function 
         RArcData.prototype.getLinetypeId = function(...args) 
           
@@ -475,7 +475,7 @@
               return this.__PROXY__.getLinetypeId(...args);
             
         };
-    
+        
         // function 
         RArcData.prototype.setLinetypePattern = function(...args) 
           
@@ -485,7 +485,7 @@
               return this.__PROXY__.setLinetypePattern(...args);
             
         };
-    
+        
         // function 
         RArcData.prototype.getLinetypePattern = function(...args) 
           
@@ -495,7 +495,7 @@
               return this.__PROXY__.getLinetypePattern(...args);
             
         };
-    
+        
         // function 
         RArcData.prototype.setLinetypeScale = function(...args) 
           
@@ -505,7 +505,7 @@
               return this.__PROXY__.setLinetypeScale(...args);
             
         };
-    
+        
         // function 
         RArcData.prototype.getLinetypeScale = function(...args) 
           
@@ -515,7 +515,7 @@
               return this.__PROXY__.getLinetypeScale(...args);
             
         };
-    
+        
         // function 
         RArcData.prototype.getLineweight = function(...args) 
           
@@ -525,7 +525,7 @@
               return this.__PROXY__.getLineweight(...args);
             
         };
-    
+        
         // function 
         RArcData.prototype.setLineweight = function(...args) 
           
@@ -535,7 +535,7 @@
               return this.__PROXY__.setLineweight(...args);
             
         };
-    
+        
         // function 
         RArcData.prototype.setColor = function(...args) 
           
@@ -545,7 +545,7 @@
               return this.__PROXY__.setColor(...args);
             
         };
-    
+        
         // function 
         RArcData.prototype.getColor = function(...args) 
           
@@ -555,7 +555,7 @@
               return this.__PROXY__.getColor(...args);
             
         };
-    
+        
         // function 
         RArcData.prototype.getDisplayColor = function(...args) 
           
@@ -565,7 +565,7 @@
               return this.__PROXY__.getDisplayColor(...args);
             
         };
-    
+        
         // function 
         RArcData.prototype.getInternalReferencePoints = function(...args) 
           
@@ -575,7 +575,7 @@
               return this.__PROXY__.getInternalReferencePoints(...args);
             
         };
-    
+        
         // function 
         RArcData.prototype.getPointOnEntity = function(...args) 
           
@@ -585,7 +585,7 @@
               return this.__PROXY__.getPointOnEntity(...args);
             
         };
-    
+        
         // function 
         RArcData.prototype.getClosestPointOnEntity = function(...args) 
           
@@ -595,7 +595,7 @@
               return this.__PROXY__.getClosestPointOnEntity(...args);
             
         };
-    
+        
         // function 
         RArcData.prototype.isInside = function(...args) 
           
@@ -605,7 +605,7 @@
               return this.__PROXY__.isInside(...args);
             
         };
-    
+        
         // function 
         RArcData.prototype.isOnEntity = function(...args) 
           
@@ -615,7 +615,7 @@
               return this.__PROXY__.isOnEntity(...args);
             
         };
-    
+        
         // function 
         RArcData.prototype.clickReferencePoint = function(...args) 
           
@@ -625,7 +625,7 @@
               return this.__PROXY__.clickReferencePoint(...args);
             
         };
-    
+        
         // function 
         RArcData.prototype.scaleVisualProperties = function(...args) 
           
@@ -635,7 +635,7 @@
               return this.__PROXY__.scaleVisualProperties(...args);
             
         };
-    
+        
         // function 
         RArcData.prototype.flipVertical = function(...args) 
           
@@ -645,7 +645,7 @@
               return this.__PROXY__.flipVertical(...args);
             
         };
-    
+        
         // function 
         RArcData.prototype.update = function(...args) 
           
@@ -655,7 +655,7 @@
               return this.__PROXY__.update(...args);
             
         };
-    
+        
         // function 
         RArcData.prototype.setAutoUpdatesBlocked = function(...args) 
           
@@ -665,7 +665,7 @@
               return this.__PROXY__.setAutoUpdatesBlocked(...args);
             
         };
-    
+        
         // function 
         RArcData.prototype.getShapeType = function(...args) 
           
@@ -675,7 +675,7 @@
               return this.__PROXY__.getShapeType(...args);
             
         };
-    
+        
         // function 
         RArcData.prototype.clone = function(...args) 
           
@@ -685,7 +685,7 @@
               return this.__PROXY__.clone(...args);
             
         };
-    
+        
         // function 
         RArcData.prototype.isDirected = function(...args) 
           
@@ -695,7 +695,7 @@
               return this.__PROXY__.isDirected(...args);
             
         };
-    
+        
         // function 
         RArcData.prototype.getVectorProperties = function(...args) 
           
@@ -705,7 +705,7 @@
               return this.__PROXY__.getVectorProperties(...args);
             
         };
-    
+        
         // function 
         RArcData.prototype.getDoubleProperties = function(...args) 
           
@@ -715,7 +715,7 @@
               return this.__PROXY__.getDoubleProperties(...args);
             
         };
-    
+        
         // function 
         RArcData.prototype.getBoolProperties = function(...args) 
           
@@ -725,7 +725,7 @@
               return this.__PROXY__.getBoolProperties(...args);
             
         };
-    
+        
         // function 
         RArcData.prototype.isFullCircle = function(...args) 
           
@@ -735,7 +735,7 @@
               return this.__PROXY__.isFullCircle(...args);
             
         };
-    
+        
         // function 
         RArcData.prototype.getPointCloud = function(...args) 
           
@@ -745,7 +745,7 @@
               return this.__PROXY__.getPointCloud(...args);
             
         };
-    
+        
         // function 
         RArcData.prototype.setCenter = function(...args) 
           
@@ -755,7 +755,7 @@
               return this.__PROXY__.setCenter(...args);
             
         };
-    
+        
         // function 
         RArcData.prototype.setRadius = function(...args) 
           
@@ -765,7 +765,7 @@
               return this.__PROXY__.setRadius(...args);
             
         };
-    
+        
         // function 
         RArcData.prototype.setStartAngle = function(...args) 
           
@@ -775,7 +775,7 @@
               return this.__PROXY__.setStartAngle(...args);
             
         };
-    
+        
         // function 
         RArcData.prototype.setEndAngle = function(...args) 
           
@@ -785,7 +785,7 @@
               return this.__PROXY__.setEndAngle(...args);
             
         };
-    
+        
         // function 
         RArcData.prototype.setReversed = function(...args) 
           
@@ -795,7 +795,7 @@
               return this.__PROXY__.setReversed(...args);
             
         };
-    
+        
         // function 
         RArcData.prototype.isAngleWithinArc = function(...args) 
           
@@ -805,7 +805,7 @@
               return this.__PROXY__.isAngleWithinArc(...args);
             
         };
-    
+        
         // function 
         RArcData.prototype.getDiameter = function(...args) 
           
@@ -815,7 +815,7 @@
               return this.__PROXY__.getDiameter(...args);
             
         };
-    
+        
         // function 
         RArcData.prototype.setDiameter = function(...args) 
           
@@ -825,7 +825,7 @@
               return this.__PROXY__.setDiameter(...args);
             
         };
-    
+        
         // function 
         RArcData.prototype.setLength = function(...args) 
           
@@ -835,7 +835,7 @@
               return this.__PROXY__.setLength(...args);
             
         };
-    
+        
         // function 
         RArcData.prototype.getArea = function(...args) 
           
@@ -845,7 +845,7 @@
               return this.__PROXY__.getArea(...args);
             
         };
-    
+        
         // function 
         RArcData.prototype.setArea = function(...args) 
           
@@ -855,7 +855,7 @@
               return this.__PROXY__.setArea(...args);
             
         };
-    
+        
         // function 
         RArcData.prototype.getChordArea = function(...args) 
           
@@ -865,7 +865,7 @@
               return this.__PROXY__.getChordArea(...args);
             
         };
-    
+        
         // function 
         RArcData.prototype.getSideOfPoint = function(...args) 
           
@@ -875,7 +875,7 @@
               return this.__PROXY__.getSideOfPoint(...args);
             
         };
-    
+        
         // function 
         RArcData.prototype.getSweep = function(...args) 
           
@@ -885,7 +885,7 @@
               return this.__PROXY__.getSweep(...args);
             
         };
-    
+        
         // function 
         RArcData.prototype.setSweep = function(...args) 
           
@@ -895,7 +895,7 @@
               return this.__PROXY__.setSweep(...args);
             
         };
-    
+        
         // function 
         RArcData.prototype.getStartPoint = function(...args) 
           
@@ -905,7 +905,7 @@
               return this.__PROXY__.getStartPoint(...args);
             
         };
-    
+        
         // function 
         RArcData.prototype.getEndPoint = function(...args) 
           
@@ -915,7 +915,7 @@
               return this.__PROXY__.getEndPoint(...args);
             
         };
-    
+        
         // function 
         RArcData.prototype.getPointAtAngle = function(...args) 
           
@@ -925,7 +925,7 @@
               return this.__PROXY__.getPointAtAngle(...args);
             
         };
-    
+        
         // function 
         RArcData.prototype.getAngleAt = function(...args) 
           
@@ -935,7 +935,7 @@
               return this.__PROXY__.getAngleAt(...args);
             
         };
-    
+        
         // function 
         RArcData.prototype.getMiddlePoint = function(...args) 
           
@@ -945,7 +945,7 @@
               return this.__PROXY__.getMiddlePoint(...args);
             
         };
-    
+        
         // function 
         RArcData.prototype.moveStartPoint = function(...args) 
           
@@ -955,7 +955,7 @@
               return this.__PROXY__.moveStartPoint(...args);
             
         };
-    
+        
         // function 
         RArcData.prototype.moveEndPoint = function(...args) 
           
@@ -965,7 +965,7 @@
               return this.__PROXY__.moveEndPoint(...args);
             
         };
-    
+        
         // function 
         RArcData.prototype.moveMiddlePoint = function(...args) 
           
@@ -975,7 +975,7 @@
               return this.__PROXY__.moveMiddlePoint(...args);
             
         };
-    
+        
         // function 
         RArcData.prototype.stretch = function(...args) 
           
@@ -985,7 +985,7 @@
               return this.__PROXY__.stretch(...args);
             
         };
-    
+        
         // function 
         RArcData.prototype.getTransformed = function(...args) 
           
@@ -995,7 +995,7 @@
               return this.__PROXY__.getTransformed(...args);
             
         };
-    
+        
         // function 
         RArcData.prototype.getDistanceFromStart = function(...args) 
           
@@ -1005,7 +1005,7 @@
               return this.__PROXY__.getDistanceFromStart(...args);
             
         };
-    
+        
         // function 
         RArcData.prototype.approximateWithLinesTan = function(...args) 
           
@@ -1015,7 +1015,7 @@
               return this.__PROXY__.approximateWithLinesTan(...args);
             
         };
-    
+        
         // function 
         RArcData.prototype.getTangents = function(...args) 
           
@@ -1025,7 +1025,7 @@
               return this.__PROXY__.getTangents(...args);
             
         };
-    
+        
         // function 
         RArcData.prototype.getOffsetShapes = function(...args) 
           
@@ -1035,7 +1035,7 @@
               return this.__PROXY__.getOffsetShapes(...args);
             
         };
-    
+        
         // function 
         RArcData.prototype.splitAt = function(...args) 
           
@@ -1045,7 +1045,7 @@
               return this.__PROXY__.splitAt(...args);
             
         };
-    
+        
         // function 
         RArcData.prototype.splitAtQuadrantLines = function(...args) 
           
@@ -1055,7 +1055,7 @@
               return this.__PROXY__.splitAtQuadrantLines(...args);
             
         };
-    
+        
         // function 
         RArcData.prototype.print = function(...args) 
           
@@ -1065,7 +1065,7 @@
               return this.__PROXY__.print(...args);
             
         };
-    
+        
         // function 
         RArcData.prototype.copy = function(...args) 
           
@@ -1075,7 +1075,7 @@
               return this.__PROXY__.copy(...args);
             
         };
-    
+        
         // function 
         RArcData.prototype.getType = function(...args) 
           
@@ -1085,7 +1085,7 @@
               return this.__PROXY__.getType(...args);
             
         };
-    
+        
         // function 
         RArcData.prototype.getArc = function(...args) 
           
@@ -1095,7 +1095,7 @@
               return this.__PROXY__.getArc(...args);
             
         };
-    
+        
         // function 
         RArcData.prototype.isValid = function(...args) 
           
@@ -1105,7 +1105,7 @@
               return this.__PROXY__.isValid(...args);
             
         };
-    
+        
         // function 
         RArcData.prototype.getEndPoints = function(...args) 
           
@@ -1115,7 +1115,7 @@
               return this.__PROXY__.getEndPoints(...args);
             
         };
-    
+        
         // function 
         RArcData.prototype.setZ = function(...args) 
           
@@ -1125,7 +1125,7 @@
               return this.__PROXY__.setZ(...args);
             
         };
-    
+        
         // function 
         RArcData.prototype.to2D = function(...args) 
           
@@ -1135,7 +1135,7 @@
               return this.__PROXY__.to2D(...args);
             
         };
-    
+        
         // function 
         RArcData.prototype.getBoundingBox = function(...args) 
           
@@ -1145,7 +1145,7 @@
               return this.__PROXY__.getBoundingBox(...args);
             
         };
-    
+        
         // function 
         RArcData.prototype.getMiddlePoints = function(...args) 
           
@@ -1155,7 +1155,7 @@
               return this.__PROXY__.getMiddlePoints(...args);
             
         };
-    
+        
         // function 
         RArcData.prototype.getCenterPoints = function(...args) 
           
@@ -1165,7 +1165,7 @@
               return this.__PROXY__.getCenterPoints(...args);
             
         };
-    
+        
         // function 
         RArcData.prototype.getArcReferencePoints = function(...args) 
           
@@ -1175,7 +1175,7 @@
               return this.__PROXY__.getArcReferencePoints(...args);
             
         };
-    
+        
         // function 
         RArcData.prototype.getPointsWithDistanceToEnd = function(...args) 
           
@@ -1185,7 +1185,7 @@
               return this.__PROXY__.getPointsWithDistanceToEnd(...args);
             
         };
-    
+        
         // function 
         RArcData.prototype.getIntersectionPoints = function(...args) 
           
@@ -1195,7 +1195,7 @@
               return this.__PROXY__.getIntersectionPoints(...args);
             
         };
-    
+        
         // function 
         RArcData.prototype.getVectorTo = function(...args) 
           
@@ -1205,7 +1205,7 @@
               return this.__PROXY__.getVectorTo(...args);
             
         };
-    
+        
         // function 
         RArcData.prototype.getDistanceTo = function(...args) 
           
@@ -1215,7 +1215,7 @@
               return this.__PROXY__.getDistanceTo(...args);
             
         };
-    
+        
         // function 
         RArcData.prototype.intersectsWith = function(...args) 
           
@@ -1225,7 +1225,7 @@
               return this.__PROXY__.intersectsWith(...args);
             
         };
-    
+        
         // function 
         RArcData.prototype.move = function(...args) 
           
@@ -1235,7 +1235,7 @@
               return this.__PROXY__.move(...args);
             
         };
-    
+        
         // function 
         RArcData.prototype.rotate = function(...args) 
           
@@ -1245,7 +1245,7 @@
               return this.__PROXY__.rotate(...args);
             
         };
-    
+        
         // function 
         RArcData.prototype.scale = function(...args) 
           
@@ -1255,7 +1255,7 @@
               return this.__PROXY__.scale(...args);
             
         };
-    
+        
         // function 
         RArcData.prototype.mirror = function(...args) 
           
@@ -1265,7 +1265,7 @@
               return this.__PROXY__.mirror(...args);
             
         };
-    
+        
         // function 
         RArcData.prototype.flipHorizontal = function(...args) 
           
@@ -1275,7 +1275,7 @@
               return this.__PROXY__.flipHorizontal(...args);
             
         };
-    
+        
         // function 
         RArcData.prototype.getCenter = function(...args) 
           
@@ -1285,7 +1285,7 @@
               return this.__PROXY__.getCenter(...args);
             
         };
-    
+        
         // function 
         RArcData.prototype.getRadius = function(...args) 
           
@@ -1295,7 +1295,7 @@
               return this.__PROXY__.getRadius(...args);
             
         };
-    
+        
         // function 
         RArcData.prototype.getBulge = function(...args) 
           
@@ -1305,7 +1305,7 @@
               return this.__PROXY__.getBulge(...args);
             
         };
-    
+        
         // function 
         RArcData.prototype.getStartAngle = function(...args) 
           
@@ -1315,7 +1315,7 @@
               return this.__PROXY__.getStartAngle(...args);
             
         };
-    
+        
         // function 
         RArcData.prototype.getEndAngle = function(...args) 
           
@@ -1325,7 +1325,7 @@
               return this.__PROXY__.getEndAngle(...args);
             
         };
-    
+        
         // function 
         RArcData.prototype.isReversed = function(...args) 
           
@@ -1335,7 +1335,7 @@
               return this.__PROXY__.isReversed(...args);
             
         };
-    
+        
         // function 
         RArcData.prototype.getDirection1 = function(...args) 
           
@@ -1345,7 +1345,7 @@
               return this.__PROXY__.getDirection1(...args);
             
         };
-    
+        
         // function 
         RArcData.prototype.getDirection2 = function(...args) 
           
@@ -1355,7 +1355,7 @@
               return this.__PROXY__.getDirection2(...args);
             
         };
-    
+        
         // function 
         RArcData.prototype.reverse = function(...args) 
           
@@ -1365,7 +1365,7 @@
               return this.__PROXY__.reverse(...args);
             
         };
-    
+        
         // function 
         RArcData.prototype.getTrimEnd = function(...args) 
           
@@ -1375,7 +1375,7 @@
               return this.__PROXY__.getTrimEnd(...args);
             
         };
-    
+        
         // function 
         RArcData.prototype.trimStartPoint = function(...args) 
           
@@ -1385,7 +1385,7 @@
               return this.__PROXY__.trimStartPoint(...args);
             
         };
-    
+        
         // function 
         RArcData.prototype.trimEndPoint = function(...args) 
           
@@ -1395,7 +1395,7 @@
               return this.__PROXY__.trimEndPoint(...args);
             
         };
-    
+        
         // function 
         RArcData.prototype.getLength = function(...args) 
           
@@ -1405,7 +1405,7 @@
               return this.__PROXY__.getLength(...args);
             
         };
-    
+        
         // function 
         RArcData.prototype.getAngleLength = function(...args) 
           
@@ -1415,7 +1415,7 @@
               return this.__PROXY__.getAngleLength(...args);
             
         };
-    
+        
         // function 
         RArcData.prototype.getReferencePoints = function(...args) 
           
@@ -1425,7 +1425,7 @@
               return this.__PROXY__.getReferencePoints(...args);
             
         };
-    
+        
         // function 
         RArcData.prototype.moveReferencePoint = function(...args) 
           
@@ -1435,7 +1435,7 @@
               return this.__PROXY__.moveReferencePoint(...args);
             
         };
-    
+        
         // function 
         RArcData.prototype.approximateWithLines = function(...args) 
           
@@ -1445,7 +1445,7 @@
               return this.__PROXY__.approximateWithLines(...args);
             
         };
-    
+        
         // function 
         RArcData.prototype.castToShape = function(...args) 
           
@@ -1455,7 +1455,7 @@
               return this.__PROXY__.castToShape(...args);
             
         };
-    
+        
         // function 
         RArcData.prototype.getShapes = function(...args) 
           
@@ -1465,7 +1465,7 @@
               return this.__PROXY__.getShapes(...args);
             
         };
-    
+        
 
       // static functions:
       

@@ -134,7 +134,7 @@
               return this.__PROXY__.set(...args);
             
         };
-    
+        
         // function 
         RPluginInfo.prototype.get = function(...args) 
           
@@ -144,7 +144,7 @@
               return this.__PROXY__.get(...args);
             
         };
-    
+        
         // function 
         RPluginInfo.prototype.getKeys = function(...args) 
           
@@ -154,7 +154,7 @@
               return this.__PROXY__.getKeys(...args);
             
         };
-    
+        
 
       // static functions:
       RPluginInfo.prototype.isNullWrapper = function() {

@@ -134,7 +134,7 @@
               return this.__PROXY__.getPluginSuffix(...args);
             
         };
-    
+        
         // function 
         RPluginLoader.prototype.getPluginFiles = function(...args) 
           
@@ -144,7 +144,7 @@
               return this.__PROXY__.getPluginFiles(...args);
             
         };
-    
+        
         // function 
         RPluginLoader.prototype.loadPlugins = function(...args) 
           
@@ -154,7 +154,7 @@
               return this.__PROXY__.loadPlugins(...args);
             
         };
-    
+        
         // function 
         RPluginLoader.prototype.unloadPlugins = function(...args) 
           
@@ -164,7 +164,7 @@
               return this.__PROXY__.unloadPlugins(...args);
             
         };
-    
+        
         // function 
         RPluginLoader.prototype.loadPlugin = function(...args) 
           
@@ -174,7 +174,7 @@
               return this.__PROXY__.loadPlugin(...args);
             
         };
-    
+        
         // function 
         RPluginLoader.prototype.unloadPlugin = function(...args) 
           
@@ -184,7 +184,7 @@
               return this.__PROXY__.unloadPlugin(...args);
             
         };
-    
+        
         // function 
         RPluginLoader.prototype.postInitPlugins = function(...args) 
           
@@ -194,7 +194,7 @@
               return this.__PROXY__.postInitPlugins(...args);
             
         };
-    
+        
         // function 
         RPluginLoader.prototype.postInitPlugin = function(...args) 
           
@@ -204,7 +204,7 @@
               return this.__PROXY__.postInitPlugin(...args);
             
         };
-    
+        
         // function 
         RPluginLoader.prototype.initTranslations = function(...args) 
           
@@ -214,7 +214,7 @@
               return this.__PROXY__.initTranslations(...args);
             
         };
-    
+        
         // function 
         RPluginLoader.prototype.countPlugins = function(...args) 
           
@@ -224,7 +224,7 @@
               return this.__PROXY__.countPlugins(...args);
             
         };
-    
+        
         // function 
         RPluginLoader.prototype.getPluginInfo = function(...args) 
           
@@ -234,7 +234,7 @@
               return this.__PROXY__.getPluginInfo(...args);
             
         };
-    
+        
         // function 
         RPluginLoader.prototype.getPluginsPath = function(...args) 
           
@@ -244,7 +244,7 @@
               return this.__PROXY__.getPluginsPath(...args);
             
         };
-    
+        
         // function 
         RPluginLoader.prototype.hasPlugin = function(...args) 
           
@@ -254,7 +254,7 @@
               return this.__PROXY__.hasPlugin(...args);
             
         };
-    
+        
         // function 
         RPluginLoader.prototype.checkPluginLicenses = function(...args) 
           
@@ -264,7 +264,7 @@
               return this.__PROXY__.checkPluginLicenses(...args);
             
         };
-    
+        
         // function 
         RPluginLoader.prototype.checkPluginLicense = function(...args) 
           
@@ -274,7 +274,7 @@
               return this.__PROXY__.checkPluginLicense(...args);
             
         };
-    
+        
 
       // static functions:
       

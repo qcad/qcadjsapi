@@ -332,7 +332,7 @@ RWheelEvent.MaxUser = RWheelEvent_Wrapper.MaxUser;
               return this.__PROXY__.type(...args);
             
         };
-    
+        
         // function 
         RWheelEvent.prototype.spontaneous = function(...args) 
           
@@ -342,7 +342,7 @@ RWheelEvent.MaxUser = RWheelEvent_Wrapper.MaxUser;
               return this.__PROXY__.spontaneous(...args);
             
         };
-    
+        
         // function 
         RWheelEvent.prototype.isAccepted = function(...args) 
           
@@ -352,7 +352,7 @@ RWheelEvent.MaxUser = RWheelEvent_Wrapper.MaxUser;
               return this.__PROXY__.isAccepted(...args);
             
         };
-    
+        
         // function 
         RWheelEvent.prototype.accept = function(...args) 
           
@@ -362,7 +362,7 @@ RWheelEvent.MaxUser = RWheelEvent_Wrapper.MaxUser;
               return this.__PROXY__.accept(...args);
             
         };
-    
+        
         // function 
         RWheelEvent.prototype.ignore = function(...args) 
           
@@ -372,7 +372,7 @@ RWheelEvent.MaxUser = RWheelEvent_Wrapper.MaxUser;
               return this.__PROXY__.ignore(...args);
             
         };
-    
+        
         // function 
         RWheelEvent.prototype.isInputEvent = function(...args) 
           
@@ -382,7 +382,7 @@ RWheelEvent.MaxUser = RWheelEvent_Wrapper.MaxUser;
               return this.__PROXY__.isInputEvent(...args);
             
         };
-    
+        
         // function 
         RWheelEvent.prototype.isPointerEvent = function(...args) 
           
@@ -392,7 +392,7 @@ RWheelEvent.MaxUser = RWheelEvent_Wrapper.MaxUser;
               return this.__PROXY__.isPointerEvent(...args);
             
         };
-    
+        
         // function 
         RWheelEvent.prototype.isSinglePointEvent = function(...args) 
           
@@ -402,7 +402,7 @@ RWheelEvent.MaxUser = RWheelEvent_Wrapper.MaxUser;
               return this.__PROXY__.isSinglePointEvent(...args);
             
         };
-    
+        
         // function 
         RWheelEvent.prototype.setSpontaneous = function(...args) 
           
@@ -412,7 +412,7 @@ RWheelEvent.MaxUser = RWheelEvent_Wrapper.MaxUser;
               return this.__PROXY__.setSpontaneous(...args);
             
         };
-    
+        
         // function 
         RWheelEvent.prototype.modifiers = function(...args) 
           
@@ -422,7 +422,7 @@ RWheelEvent.MaxUser = RWheelEvent_Wrapper.MaxUser;
               return this.__PROXY__.modifiers(...args);
             
         };
-    
+        
         // function 
         RWheelEvent.prototype.setModifiers = function(...args) 
           
@@ -432,7 +432,7 @@ RWheelEvent.MaxUser = RWheelEvent_Wrapper.MaxUser;
               return this.__PROXY__.setModifiers(...args);
             
         };
-    
+        
         // function 
         RWheelEvent.prototype.timestamp = function(...args) 
           
@@ -442,7 +442,7 @@ RWheelEvent.MaxUser = RWheelEvent_Wrapper.MaxUser;
               return this.__PROXY__.timestamp(...args);
             
         };
-    
+        
         // function 
         RWheelEvent.prototype.setTimestamp = function(...args) 
           
@@ -452,7 +452,7 @@ RWheelEvent.MaxUser = RWheelEvent_Wrapper.MaxUser;
               return this.__PROXY__.setTimestamp(...args);
             
         };
-    
+        
         // function 
         RWheelEvent.prototype.pointCount = function(...args) 
           
@@ -462,7 +462,7 @@ RWheelEvent.MaxUser = RWheelEvent_Wrapper.MaxUser;
               return this.__PROXY__.pointCount(...args);
             
         };
-    
+        
         // function 
         RWheelEvent.prototype.point = function(...args) 
           
@@ -472,7 +472,7 @@ RWheelEvent.MaxUser = RWheelEvent_Wrapper.MaxUser;
               return this.__PROXY__.point(...args);
             
         };
-    
+        
         // function 
         RWheelEvent.prototype.pointById = function(...args) 
           
@@ -482,7 +482,7 @@ RWheelEvent.MaxUser = RWheelEvent_Wrapper.MaxUser;
               return this.__PROXY__.pointById(...args);
             
         };
-    
+        
         // function 
         RWheelEvent.prototype.allPointsGrabbed = function(...args) 
           
@@ -492,7 +492,7 @@ RWheelEvent.MaxUser = RWheelEvent_Wrapper.MaxUser;
               return this.__PROXY__.allPointsGrabbed(...args);
             
         };
-    
+        
         // function 
         RWheelEvent.prototype.allPointsAccepted = function(...args) 
           
@@ -502,7 +502,7 @@ RWheelEvent.MaxUser = RWheelEvent_Wrapper.MaxUser;
               return this.__PROXY__.allPointsAccepted(...args);
             
         };
-    
+        
         // function 
         RWheelEvent.prototype.setAccepted = function(...args) 
           
@@ -512,7 +512,7 @@ RWheelEvent.MaxUser = RWheelEvent_Wrapper.MaxUser;
               return this.__PROXY__.setAccepted(...args);
             
         };
-    
+        
         // function 
         RWheelEvent.prototype.exclusiveGrabber = function(...args) 
           
@@ -522,7 +522,7 @@ RWheelEvent.MaxUser = RWheelEvent_Wrapper.MaxUser;
               return this.__PROXY__.exclusiveGrabber(...args);
             
         };
-    
+        
         // function 
         RWheelEvent.prototype.setExclusiveGrabber = function(...args) 
           
@@ -532,7 +532,7 @@ RWheelEvent.MaxUser = RWheelEvent_Wrapper.MaxUser;
               return this.__PROXY__.setExclusiveGrabber(...args);
             
         };
-    
+        
         // function 
         RWheelEvent.prototype.clearPassiveGrabbers = function(...args) 
           
@@ -542,7 +542,7 @@ RWheelEvent.MaxUser = RWheelEvent_Wrapper.MaxUser;
               return this.__PROXY__.clearPassiveGrabbers(...args);
             
         };
-    
+        
         // function 
         RWheelEvent.prototype.addPassiveGrabber = function(...args) 
           
@@ -552,7 +552,7 @@ RWheelEvent.MaxUser = RWheelEvent_Wrapper.MaxUser;
               return this.__PROXY__.addPassiveGrabber(...args);
             
         };
-    
+        
         // function 
         RWheelEvent.prototype.removePassiveGrabber = function(...args) 
           
@@ -562,7 +562,7 @@ RWheelEvent.MaxUser = RWheelEvent_Wrapper.MaxUser;
               return this.__PROXY__.removePassiveGrabber(...args);
             
         };
-    
+        
         // function 
         RWheelEvent.prototype.button = function(...args) 
           
@@ -572,7 +572,7 @@ RWheelEvent.MaxUser = RWheelEvent_Wrapper.MaxUser;
               return this.__PROXY__.button(...args);
             
         };
-    
+        
         // function 
         RWheelEvent.prototype.buttons = function(...args) 
           
@@ -582,7 +582,7 @@ RWheelEvent.MaxUser = RWheelEvent_Wrapper.MaxUser;
               return this.__PROXY__.buttons(...args);
             
         };
-    
+        
         // function 
         RWheelEvent.prototype.position = function(...args) 
           
@@ -592,7 +592,7 @@ RWheelEvent.MaxUser = RWheelEvent_Wrapper.MaxUser;
               return this.__PROXY__.position(...args);
             
         };
-    
+        
         // function 
         RWheelEvent.prototype.scenePosition = function(...args) 
           
@@ -602,7 +602,7 @@ RWheelEvent.MaxUser = RWheelEvent_Wrapper.MaxUser;
               return this.__PROXY__.scenePosition(...args);
             
         };
-    
+        
         // function 
         RWheelEvent.prototype.globalPosition = function(...args) 
           
@@ -612,7 +612,7 @@ RWheelEvent.MaxUser = RWheelEvent_Wrapper.MaxUser;
               return this.__PROXY__.globalPosition(...args);
             
         };
-    
+        
         // function 
         RWheelEvent.prototype.exclusivePointGrabber = function(...args) 
           
@@ -622,7 +622,7 @@ RWheelEvent.MaxUser = RWheelEvent_Wrapper.MaxUser;
               return this.__PROXY__.exclusivePointGrabber(...args);
             
         };
-    
+        
         // function 
         RWheelEvent.prototype.setExclusivePointGrabber = function(...args) 
           
@@ -632,7 +632,7 @@ RWheelEvent.MaxUser = RWheelEvent_Wrapper.MaxUser;
               return this.__PROXY__.setExclusivePointGrabber(...args);
             
         };
-    
+        
         // function 
         RWheelEvent.prototype.clone = function(...args) 
           
@@ -642,7 +642,7 @@ RWheelEvent.MaxUser = RWheelEvent_Wrapper.MaxUser;
               return this.__PROXY__.clone(...args);
             
         };
-    
+        
         // function 
         RWheelEvent.prototype.isInverted = function(...args) 
           
@@ -652,7 +652,7 @@ RWheelEvent.MaxUser = RWheelEvent_Wrapper.MaxUser;
               return this.__PROXY__.isInverted(...args);
             
         };
-    
+        
         // function 
         RWheelEvent.prototype.hasPixelDelta = function(...args) 
           
@@ -662,7 +662,7 @@ RWheelEvent.MaxUser = RWheelEvent_Wrapper.MaxUser;
               return this.__PROXY__.hasPixelDelta(...args);
             
         };
-    
+        
         // function 
         RWheelEvent.prototype.isBeginEvent = function(...args) 
           
@@ -672,7 +672,7 @@ RWheelEvent.MaxUser = RWheelEvent_Wrapper.MaxUser;
               return this.__PROXY__.isBeginEvent(...args);
             
         };
-    
+        
         // function 
         RWheelEvent.prototype.isUpdateEvent = function(...args) 
           
@@ -682,7 +682,7 @@ RWheelEvent.MaxUser = RWheelEvent_Wrapper.MaxUser;
               return this.__PROXY__.isUpdateEvent(...args);
             
         };
-    
+        
         // function 
         RWheelEvent.prototype.isEndEvent = function(...args) 
           
@@ -692,7 +692,7 @@ RWheelEvent.MaxUser = RWheelEvent_Wrapper.MaxUser;
               return this.__PROXY__.isEndEvent(...args);
             
         };
-    
+        
         // function 
         RWheelEvent.prototype.source = function(...args) 
           
@@ -702,7 +702,7 @@ RWheelEvent.MaxUser = RWheelEvent_Wrapper.MaxUser;
               return this.__PROXY__.source(...args);
             
         };
-    
+        
         // function 
         RWheelEvent.prototype.getModelPosition = function(...args) 
           
@@ -712,7 +712,7 @@ RWheelEvent.MaxUser = RWheelEvent_Wrapper.MaxUser;
               return this.__PROXY__.getModelPosition(...args);
             
         };
-    
+        
         // function 
         RWheelEvent.prototype.setModelPosition = function(...args) 
           
@@ -722,7 +722,7 @@ RWheelEvent.MaxUser = RWheelEvent_Wrapper.MaxUser;
               return this.__PROXY__.setModelPosition(...args);
             
         };
-    
+        
         // function 
         RWheelEvent.prototype.getCursorPosition = function(...args) 
           
@@ -732,7 +732,7 @@ RWheelEvent.MaxUser = RWheelEvent_Wrapper.MaxUser;
               return this.__PROXY__.getCursorPosition(...args);
             
         };
-    
+        
         // function 
         RWheelEvent.prototype.setCursorPosition = function(...args) 
           
@@ -742,7 +742,7 @@ RWheelEvent.MaxUser = RWheelEvent_Wrapper.MaxUser;
               return this.__PROXY__.setCursorPosition(...args);
             
         };
-    
+        
         // function 
         RWheelEvent.prototype.getScreenPosition = function(...args) 
           
@@ -752,7 +752,7 @@ RWheelEvent.MaxUser = RWheelEvent_Wrapper.MaxUser;
               return this.__PROXY__.getScreenPosition(...args);
             
         };
-    
+        
         // function 
         RWheelEvent.prototype.setScreenPosition = function(...args) 
           
@@ -762,7 +762,7 @@ RWheelEvent.MaxUser = RWheelEvent_Wrapper.MaxUser;
               return this.__PROXY__.setScreenPosition(...args);
             
         };
-    
+        
         // function 
         RWheelEvent.prototype.getGraphicsView = function(...args) 
           
@@ -772,7 +772,7 @@ RWheelEvent.MaxUser = RWheelEvent_Wrapper.MaxUser;
               return this.__PROXY__.getGraphicsView(...args);
             
         };
-    
+        
         // function 
         RWheelEvent.prototype.getGraphicsScene = function(...args) 
           
@@ -782,7 +782,7 @@ RWheelEvent.MaxUser = RWheelEvent_Wrapper.MaxUser;
               return this.__PROXY__.getGraphicsScene(...args);
             
         };
-    
+        
         // function 
         RWheelEvent.prototype.isValid = function(...args) 
           
@@ -792,7 +792,7 @@ RWheelEvent.MaxUser = RWheelEvent_Wrapper.MaxUser;
               return this.__PROXY__.isValid(...args);
             
         };
-    
+        
 
       // static functions:
       

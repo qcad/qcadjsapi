@@ -134,7 +134,7 @@
               return this.__PROXY__.init(...args);
             
         };
-    
+        
         // function 
         RFontList.prototype.initSubstitutions = function(...args) 
           
@@ -144,7 +144,7 @@
               return this.__PROXY__.initSubstitutions(...args);
             
         };
-    
+        
         // function 
         RFontList.prototype.uninit = function(...args) 
           
@@ -154,7 +154,7 @@
               return this.__PROXY__.uninit(...args);
             
         };
-    
+        
         // function 
         RFontList.prototype.getNames = function(...args) 
           
@@ -164,7 +164,7 @@
               return this.__PROXY__.getNames(...args);
             
         };
-    
+        
         // function 
         RFontList.prototype.getSubName = function(...args) 
           
@@ -174,7 +174,7 @@
               return this.__PROXY__.getSubName(...args);
             
         };
-    
+        
         // function 
         RFontList.prototype.get = function(...args) 
           
@@ -184,7 +184,7 @@
               return this.__PROXY__.get(...args);
             
         };
-    
+        
         // function 
         RFontList.prototype.isCadFont = function(...args) 
           
@@ -194,7 +194,7 @@
               return this.__PROXY__.isCadFont(...args);
             
         };
-    
+        
 
       // static functions:
       

@@ -169,7 +169,7 @@
               return this.__PROXY__.getDocument(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.setDocument = function(...args) 
           
@@ -179,7 +179,7 @@
               return this.__PROXY__.setDocument(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.isPointType = function(...args) 
           
@@ -189,7 +189,7 @@
               return this.__PROXY__.isPointType(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.getClosestSubEntityId = function(...args) 
           
@@ -199,7 +199,7 @@
               return this.__PROXY__.getClosestSubEntityId(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.getClosestShape = function(...args) 
           
@@ -209,7 +209,7 @@
               return this.__PROXY__.getClosestShape(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.copyAttributesFrom = function(...args) 
           
@@ -219,7 +219,7 @@
               return this.__PROXY__.copyAttributesFrom(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.setZ = function(...args) 
           
@@ -229,7 +229,7 @@
               return this.__PROXY__.setZ(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.getBoundingBoxes = function(...args) 
           
@@ -239,7 +239,7 @@
               return this.__PROXY__.getBoundingBoxes(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.getHull = function(...args) 
           
@@ -249,7 +249,7 @@
               return this.__PROXY__.getHull(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.isUpdatesEnabled = function(...args) 
           
@@ -259,7 +259,7 @@
               return this.__PROXY__.isUpdatesEnabled(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.setUpdatesEnabled = function(...args) 
           
@@ -269,7 +269,7 @@
               return this.__PROXY__.setUpdatesEnabled(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.cloneOnChange = function(...args) 
           
@@ -279,7 +279,7 @@
               return this.__PROXY__.cloneOnChange(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.isSelected = function(...args) 
           
@@ -289,7 +289,7 @@
               return this.__PROXY__.isSelected(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.setSelected = function(...args) 
           
@@ -299,7 +299,7 @@
               return this.__PROXY__.setSelected(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.isSelectedWorkingSet = function(...args) 
           
@@ -309,7 +309,7 @@
               return this.__PROXY__.isSelectedWorkingSet(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.setSelectedWorkingSet = function(...args) 
           
@@ -319,7 +319,7 @@
               return this.__PROXY__.setSelectedWorkingSet(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.getDrawOrder = function(...args) 
           
@@ -329,7 +329,7 @@
               return this.__PROXY__.getDrawOrder(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.setDrawOrder = function(...args) 
           
@@ -339,7 +339,7 @@
               return this.__PROXY__.setDrawOrder(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.setLayerId = function(...args) 
           
@@ -349,7 +349,7 @@
               return this.__PROXY__.setLayerId(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.getLayerId = function(...args) 
           
@@ -359,7 +359,7 @@
               return this.__PROXY__.getLayerId(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.setLayerName = function(...args) 
           
@@ -369,7 +369,7 @@
               return this.__PROXY__.setLayerName(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.getLayerName = function(...args) 
           
@@ -379,7 +379,7 @@
               return this.__PROXY__.getLayerName(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.setBlockId = function(...args) 
           
@@ -389,7 +389,7 @@
               return this.__PROXY__.setBlockId(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.getBlockId = function(...args) 
           
@@ -399,7 +399,7 @@
               return this.__PROXY__.getBlockId(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.setParentId = function(...args) 
           
@@ -409,7 +409,7 @@
               return this.__PROXY__.setParentId(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.getParentId = function(...args) 
           
@@ -419,7 +419,7 @@
               return this.__PROXY__.getParentId(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.getBlockName = function(...args) 
           
@@ -429,7 +429,7 @@
               return this.__PROXY__.getBlockName(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.setLinetypeId = function(...args) 
           
@@ -439,7 +439,7 @@
               return this.__PROXY__.setLinetypeId(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.getLinetypeId = function(...args) 
           
@@ -449,7 +449,7 @@
               return this.__PROXY__.getLinetypeId(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.setLinetypePattern = function(...args) 
           
@@ -459,7 +459,7 @@
               return this.__PROXY__.setLinetypePattern(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.getLinetypePattern = function(...args) 
           
@@ -469,7 +469,7 @@
               return this.__PROXY__.getLinetypePattern(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.setLinetypeScale = function(...args) 
           
@@ -479,7 +479,7 @@
               return this.__PROXY__.setLinetypeScale(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.getLinetypeScale = function(...args) 
           
@@ -489,7 +489,7 @@
               return this.__PROXY__.getLinetypeScale(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.getLineweight = function(...args) 
           
@@ -499,7 +499,7 @@
               return this.__PROXY__.getLineweight(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.setLineweight = function(...args) 
           
@@ -509,7 +509,7 @@
               return this.__PROXY__.setLineweight(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.setColor = function(...args) 
           
@@ -519,7 +519,7 @@
               return this.__PROXY__.setColor(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.getColor = function(...args) 
           
@@ -529,7 +529,7 @@
               return this.__PROXY__.getColor(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.getDisplayColor = function(...args) 
           
@@ -539,7 +539,7 @@
               return this.__PROXY__.getDisplayColor(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.getInternalReferencePoints = function(...args) 
           
@@ -549,7 +549,7 @@
               return this.__PROXY__.getInternalReferencePoints(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.getEndPoints = function(...args) 
           
@@ -559,7 +559,7 @@
               return this.__PROXY__.getEndPoints(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.getMiddlePoints = function(...args) 
           
@@ -569,7 +569,7 @@
               return this.__PROXY__.getMiddlePoints(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.getCenterPoints = function(...args) 
           
@@ -579,7 +579,7 @@
               return this.__PROXY__.getCenterPoints(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.getArcReferencePoints = function(...args) 
           
@@ -589,7 +589,7 @@
               return this.__PROXY__.getArcReferencePoints(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.getPointsWithDistanceToEnd = function(...args) 
           
@@ -599,7 +599,7 @@
               return this.__PROXY__.getPointsWithDistanceToEnd(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.getClosestPointOnEntity = function(...args) 
           
@@ -609,7 +609,7 @@
               return this.__PROXY__.getClosestPointOnEntity(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.getIntersectionPoints = function(...args) 
           
@@ -619,7 +619,7 @@
               return this.__PROXY__.getIntersectionPoints(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.getVectorTo = function(...args) 
           
@@ -629,7 +629,7 @@
               return this.__PROXY__.getVectorTo(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.isInside = function(...args) 
           
@@ -639,7 +639,7 @@
               return this.__PROXY__.isInside(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.isOnEntity = function(...args) 
           
@@ -649,7 +649,7 @@
               return this.__PROXY__.isOnEntity(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.flipHorizontal = function(...args) 
           
@@ -659,7 +659,7 @@
               return this.__PROXY__.flipHorizontal(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.flipVertical = function(...args) 
           
@@ -669,7 +669,7 @@
               return this.__PROXY__.flipVertical(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.setAutoUpdatesBlocked = function(...args) 
           
@@ -679,7 +679,7 @@
               return this.__PROXY__.setAutoUpdatesBlocked(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.getBoundingBox = function(...args) 
           
@@ -689,7 +689,7 @@
               return this.__PROXY__.getBoundingBox(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.render = function(...args) 
           
@@ -699,7 +699,7 @@
               return this.__PROXY__.render(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.updateBoundingBox = function(...args) 
           
@@ -709,7 +709,7 @@
               return this.__PROXY__.updateBoundingBox(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.updateTextPositionCenter = function(...args) 
           
@@ -719,7 +719,7 @@
               return this.__PROXY__.updateTextPositionCenter(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.updateTextPositionSide = function(...args) 
           
@@ -729,7 +729,7 @@
               return this.__PROXY__.updateTextPositionSide(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.updateTextData = function(...args) 
           
@@ -739,7 +739,7 @@
               return this.__PROXY__.updateTextData(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.updateShapes = function(...args) 
           
@@ -749,7 +749,7 @@
               return this.__PROXY__.updateShapes(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.updateArrowPos1 = function(...args) 
           
@@ -759,7 +759,7 @@
               return this.__PROXY__.updateArrowPos1(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.updateArrowPos2 = function(...args) 
           
@@ -769,7 +769,7 @@
               return this.__PROXY__.updateArrowPos2(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.clearStyleOverrides = function(...args) 
           
@@ -779,7 +779,7 @@
               return this.__PROXY__.clearStyleOverrides(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.getShapes = function(...args) 
           
@@ -789,7 +789,7 @@
               return this.__PROXY__.getShapes(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.getPointOnEntity = function(...args) 
           
@@ -799,7 +799,7 @@
               return this.__PROXY__.getPointOnEntity(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.getDefinitionPoint = function(...args) 
           
@@ -809,7 +809,7 @@
               return this.__PROXY__.getDefinitionPoint(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.setText = function(...args) 
           
@@ -819,7 +819,7 @@
               return this.__PROXY__.setText(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.getText = function(...args) 
           
@@ -829,7 +829,7 @@
               return this.__PROXY__.getText(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.setUpperTolerance = function(...args) 
           
@@ -839,7 +839,7 @@
               return this.__PROXY__.setUpperTolerance(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.setLowerTolerance = function(...args) 
           
@@ -849,7 +849,7 @@
               return this.__PROXY__.setLowerTolerance(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.setTextPosition = function(...args) 
           
@@ -859,7 +859,7 @@
               return this.__PROXY__.setTextPosition(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.getTextPosition = function(...args) 
           
@@ -869,7 +869,7 @@
               return this.__PROXY__.getTextPosition(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.setFontName = function(...args) 
           
@@ -879,7 +879,7 @@
               return this.__PROXY__.setFontName(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.getFontName = function(...args) 
           
@@ -889,7 +889,7 @@
               return this.__PROXY__.getFontName(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.setDimBlockName = function(...args) 
           
@@ -899,7 +899,7 @@
               return this.__PROXY__.setDimBlockName(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.getDimBlockName = function(...args) 
           
@@ -909,7 +909,7 @@
               return this.__PROXY__.getDimBlockName(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.hasOverrides = function(...args) 
           
@@ -919,7 +919,7 @@
               return this.__PROXY__.hasOverrides(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.hasOverride = function(...args) 
           
@@ -929,7 +929,7 @@
               return this.__PROXY__.hasOverride(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.getOverrides = function(...args) 
           
@@ -939,7 +939,7 @@
               return this.__PROXY__.getOverrides(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.setDimXVariant = function(...args) 
           
@@ -949,7 +949,7 @@
               return this.__PROXY__.setDimXVariant(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.setDimXDouble = function(...args) 
           
@@ -959,7 +959,7 @@
               return this.__PROXY__.setDimXDouble(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.setDimXInt = function(...args) 
           
@@ -969,7 +969,7 @@
               return this.__PROXY__.setDimXInt(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.setDimXBool = function(...args) 
           
@@ -979,7 +979,7 @@
               return this.__PROXY__.setDimXBool(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.setDimXColor = function(...args) 
           
@@ -989,7 +989,7 @@
               return this.__PROXY__.setDimXColor(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.getDimXVariant = function(...args) 
           
@@ -999,7 +999,7 @@
               return this.__PROXY__.getDimXVariant(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.getVariantOverride = function(...args) 
           
@@ -1009,7 +1009,7 @@
               return this.__PROXY__.getVariantOverride(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.getDimXDouble = function(...args) 
           
@@ -1019,7 +1019,7 @@
               return this.__PROXY__.getDimXDouble(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.getDoubleOverride = function(...args) 
           
@@ -1029,7 +1029,7 @@
               return this.__PROXY__.getDoubleOverride(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.getDimXInt = function(...args) 
           
@@ -1039,7 +1039,7 @@
               return this.__PROXY__.getDimXInt(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.getIntOverride = function(...args) 
           
@@ -1049,7 +1049,7 @@
               return this.__PROXY__.getIntOverride(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.getDimXBool = function(...args) 
           
@@ -1059,7 +1059,7 @@
               return this.__PROXY__.getDimXBool(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.getBoolOverride = function(...args) 
           
@@ -1069,7 +1069,7 @@
               return this.__PROXY__.getBoolOverride(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.getDimXColor = function(...args) 
           
@@ -1079,7 +1079,7 @@
               return this.__PROXY__.getDimXColor(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.getColorOverride = function(...args) 
           
@@ -1089,7 +1089,7 @@
               return this.__PROXY__.getColorOverride(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.getDimlfac = function(...args) 
           
@@ -1099,7 +1099,7 @@
               return this.__PROXY__.getDimlfac(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.setDimlfac = function(...args) 
           
@@ -1109,7 +1109,7 @@
               return this.__PROXY__.setDimlfac(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.getLinearFactor = function(...args) 
           
@@ -1119,7 +1119,7 @@
               return this.__PROXY__.getLinearFactor(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.setLinearFactor = function(...args) 
           
@@ -1129,7 +1129,7 @@
               return this.__PROXY__.setLinearFactor(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.getDimscale = function(...args) 
           
@@ -1139,7 +1139,7 @@
               return this.__PROXY__.getDimscale(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.setDimscale = function(...args) 
           
@@ -1149,7 +1149,7 @@
               return this.__PROXY__.setDimscale(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.isArrow1Flipped = function(...args) 
           
@@ -1159,7 +1159,7 @@
               return this.__PROXY__.isArrow1Flipped(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.setArrow1Flipped = function(...args) 
           
@@ -1169,7 +1169,7 @@
               return this.__PROXY__.setArrow1Flipped(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.isArrow2Flipped = function(...args) 
           
@@ -1179,7 +1179,7 @@
               return this.__PROXY__.isArrow2Flipped(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.setArrow2Flipped = function(...args) 
           
@@ -1189,7 +1189,7 @@
               return this.__PROXY__.setArrow2Flipped(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.isExtLineFix = function(...args) 
           
@@ -1199,7 +1199,7 @@
               return this.__PROXY__.isExtLineFix(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.setExtLineFix = function(...args) 
           
@@ -1209,7 +1209,7 @@
               return this.__PROXY__.setExtLineFix(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.getExtLineFixLength = function(...args) 
           
@@ -1219,7 +1219,7 @@
               return this.__PROXY__.getExtLineFixLength(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.setExtLineFixLength = function(...args) 
           
@@ -1229,7 +1229,7 @@
               return this.__PROXY__.setExtLineFixLength(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.adjustExtensionLineFixLength = function(...args) 
           
@@ -1239,7 +1239,7 @@
               return this.__PROXY__.adjustExtensionLineFixLength(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.hasSpaceForArrows = function(...args) 
           
@@ -1249,7 +1249,7 @@
               return this.__PROXY__.hasSpaceForArrows(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.getDistanceTo = function(...args) 
           
@@ -1259,7 +1259,7 @@
               return this.__PROXY__.getDistanceTo(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.intersectsWith = function(...args) 
           
@@ -1269,7 +1269,7 @@
               return this.__PROXY__.intersectsWith(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.getReferencePoints = function(...args) 
           
@@ -1279,7 +1279,7 @@
               return this.__PROXY__.getReferencePoints(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.clickReferencePoint = function(...args) 
           
@@ -1289,7 +1289,7 @@
               return this.__PROXY__.clickReferencePoint(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.scaleVisualProperties = function(...args) 
           
@@ -1299,7 +1299,7 @@
               return this.__PROXY__.scaleVisualProperties(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.getDimexo = function(...args) 
           
@@ -1309,7 +1309,7 @@
               return this.__PROXY__.getDimexo(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.setDimexo = function(...args) 
           
@@ -1319,7 +1319,7 @@
               return this.__PROXY__.setDimexo(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.getDimexe = function(...args) 
           
@@ -1329,7 +1329,7 @@
               return this.__PROXY__.getDimexe(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.setDimexe = function(...args) 
           
@@ -1339,7 +1339,7 @@
               return this.__PROXY__.setDimexe(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.getDimasz = function(...args) 
           
@@ -1349,7 +1349,7 @@
               return this.__PROXY__.getDimasz(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.setDimasz = function(...args) 
           
@@ -1359,7 +1359,7 @@
               return this.__PROXY__.setDimasz(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.getDimdli = function(...args) 
           
@@ -1369,7 +1369,7 @@
               return this.__PROXY__.getDimdli(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.setDimdli = function(...args) 
           
@@ -1379,7 +1379,7 @@
               return this.__PROXY__.setDimdli(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.getDimgap = function(...args) 
           
@@ -1389,7 +1389,7 @@
               return this.__PROXY__.getDimgap(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.setDimgap = function(...args) 
           
@@ -1399,7 +1399,7 @@
               return this.__PROXY__.setDimgap(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.getDimtxt = function(...args) 
           
@@ -1409,7 +1409,7 @@
               return this.__PROXY__.getDimtxt(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.setDimtxt = function(...args) 
           
@@ -1419,7 +1419,7 @@
               return this.__PROXY__.setDimtxt(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.getDimlunit = function(...args) 
           
@@ -1429,7 +1429,7 @@
               return this.__PROXY__.getDimlunit(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.setDimlunit = function(...args) 
           
@@ -1439,7 +1439,7 @@
               return this.__PROXY__.setDimlunit(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.getDimjust = function(...args) 
           
@@ -1449,7 +1449,7 @@
               return this.__PROXY__.getDimjust(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.getDimtad = function(...args) 
           
@@ -1459,7 +1459,7 @@
               return this.__PROXY__.getDimtad(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.setDimtad = function(...args) 
           
@@ -1469,7 +1469,7 @@
               return this.__PROXY__.setDimtad(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.getDimtih = function(...args) 
           
@@ -1479,7 +1479,7 @@
               return this.__PROXY__.getDimtih(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.setDimtih = function(...args) 
           
@@ -1489,7 +1489,7 @@
               return this.__PROXY__.setDimtih(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.getDimtsz = function(...args) 
           
@@ -1499,7 +1499,7 @@
               return this.__PROXY__.getDimtsz(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.setDimtsz = function(...args) 
           
@@ -1509,7 +1509,7 @@
               return this.__PROXY__.setDimtsz(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.getDimzin = function(...args) 
           
@@ -1519,7 +1519,7 @@
               return this.__PROXY__.getDimzin(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.setDimzin = function(...args) 
           
@@ -1529,7 +1529,7 @@
               return this.__PROXY__.setDimzin(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.getDimaunit = function(...args) 
           
@@ -1539,7 +1539,7 @@
               return this.__PROXY__.getDimaunit(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.setDimaunit = function(...args) 
           
@@ -1549,7 +1549,7 @@
               return this.__PROXY__.setDimaunit(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.getDimadec = function(...args) 
           
@@ -1559,7 +1559,7 @@
               return this.__PROXY__.getDimadec(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.setDimadec = function(...args) 
           
@@ -1569,7 +1569,7 @@
               return this.__PROXY__.setDimadec(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.getDimdec = function(...args) 
           
@@ -1579,7 +1579,7 @@
               return this.__PROXY__.getDimdec(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.setDimdec = function(...args) 
           
@@ -1589,7 +1589,7 @@
               return this.__PROXY__.setDimdec(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.getDimazin = function(...args) 
           
@@ -1599,7 +1599,7 @@
               return this.__PROXY__.getDimazin(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.setDimazin = function(...args) 
           
@@ -1609,7 +1609,7 @@
               return this.__PROXY__.setDimazin(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.getDimdsep = function(...args) 
           
@@ -1619,7 +1619,7 @@
               return this.__PROXY__.getDimdsep(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.setDimdsep = function(...args) 
           
@@ -1629,7 +1629,7 @@
               return this.__PROXY__.setDimdsep(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.getDimclrt = function(...args) 
           
@@ -1639,7 +1639,7 @@
               return this.__PROXY__.getDimclrt(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.setDimclrt = function(...args) 
           
@@ -1649,7 +1649,7 @@
               return this.__PROXY__.setDimclrt(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.useArchTick = function(...args) 
           
@@ -1659,7 +1659,7 @@
               return this.__PROXY__.useArchTick(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.getDimblk = function(...args) 
           
@@ -1669,7 +1669,7 @@
               return this.__PROXY__.getDimblk(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.getDimblkName = function(...args) 
           
@@ -1679,7 +1679,7 @@
               return this.__PROXY__.getDimblkName(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.isDimXScaled = function(...args) 
           
@@ -1689,7 +1689,7 @@
               return this.__PROXY__.isDimXScaled(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.hasCustomTextPosition = function(...args) 
           
@@ -1699,7 +1699,7 @@
               return this.__PROXY__.hasCustomTextPosition(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.setCustomTextPosition = function(...args) 
           
@@ -1709,7 +1709,7 @@
               return this.__PROXY__.setCustomTextPosition(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.getLineSpacingStyle = function(...args) 
           
@@ -1719,7 +1719,7 @@
               return this.__PROXY__.getLineSpacingStyle(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.getLineSpacingFactor = function(...args) 
           
@@ -1729,7 +1729,7 @@
               return this.__PROXY__.getLineSpacingFactor(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.getTextRotation = function(...args) 
           
@@ -1739,7 +1739,7 @@
               return this.__PROXY__.getTextRotation(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.setTextRotation = function(...args) 
           
@@ -1749,7 +1749,7 @@
               return this.__PROXY__.setTextRotation(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.getTextData = function(...args) 
           
@@ -1759,7 +1759,7 @@
               return this.__PROXY__.getTextData(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.initTextData = function(...args) 
           
@@ -1769,7 +1769,7 @@
               return this.__PROXY__.initTextData(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.getMeasurement = function(...args) 
           
@@ -1779,7 +1779,7 @@
               return this.__PROXY__.getMeasurement(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.getMeasuredValue = function(...args) 
           
@@ -1789,7 +1789,7 @@
               return this.__PROXY__.getMeasuredValue(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.getAutoLabel = function(...args) 
           
@@ -1799,7 +1799,7 @@
               return this.__PROXY__.getAutoLabel(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.formatLabel = function(...args) 
           
@@ -1809,7 +1809,7 @@
               return this.__PROXY__.formatLabel(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.formatAngleLabel = function(...args) 
           
@@ -1819,7 +1819,7 @@
               return this.__PROXY__.formatAngleLabel(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.update = function(...args) 
           
@@ -1829,7 +1829,7 @@
               return this.__PROXY__.update(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.getDimensionBlockReference = function(...args) 
           
@@ -1839,7 +1839,7 @@
               return this.__PROXY__.getDimensionBlockReference(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.hasDimensionBlockReference = function(...args) 
           
@@ -1849,7 +1849,7 @@
               return this.__PROXY__.hasDimensionBlockReference(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.getType = function(...args) 
           
@@ -1859,7 +1859,7 @@
               return this.__PROXY__.getType(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.isValid = function(...args) 
           
@@ -1869,7 +1869,7 @@
               return this.__PROXY__.isValid(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.isSane = function(...args) 
           
@@ -1879,7 +1879,7 @@
               return this.__PROXY__.isSane(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.setDefinitionPoint = function(...args) 
           
@@ -1889,7 +1889,7 @@
               return this.__PROXY__.setDefinitionPoint(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.setExtensionPoint1 = function(...args) 
           
@@ -1899,7 +1899,7 @@
               return this.__PROXY__.setExtensionPoint1(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.getExtensionPoint1 = function(...args) 
           
@@ -1909,7 +1909,7 @@
               return this.__PROXY__.getExtensionPoint1(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.setExtensionPoint2 = function(...args) 
           
@@ -1919,7 +1919,7 @@
               return this.__PROXY__.setExtensionPoint2(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.getExtensionPoint2 = function(...args) 
           
@@ -1929,7 +1929,7 @@
               return this.__PROXY__.getExtensionPoint2(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.recomputeDefinitionPoint = function(...args) 
           
@@ -1939,7 +1939,7 @@
               return this.__PROXY__.recomputeDefinitionPoint(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.moveReferencePoint = function(...args) 
           
@@ -1949,7 +1949,7 @@
               return this.__PROXY__.moveReferencePoint(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.move = function(...args) 
           
@@ -1959,7 +1959,7 @@
               return this.__PROXY__.move(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.rotate = function(...args) 
           
@@ -1969,7 +1969,7 @@
               return this.__PROXY__.rotate(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.scale = function(...args) 
           
@@ -1979,7 +1979,7 @@
               return this.__PROXY__.scale(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.mirror = function(...args) 
           
@@ -1989,7 +1989,7 @@
               return this.__PROXY__.mirror(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.stretch = function(...args) 
           
@@ -1999,7 +1999,7 @@
               return this.__PROXY__.stretch(...args);
             
         };
-    
+        
         // function 
         RDimLinearData.prototype.to2D = function(...args) 
           
@@ -2009,7 +2009,7 @@
               return this.__PROXY__.to2D(...args);
             
         };
-    
+        
 
       // static functions:
       RDimLinearData.prototype.isNullWrapper = function() {

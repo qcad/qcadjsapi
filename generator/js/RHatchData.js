@@ -190,7 +190,7 @@
               return this.__PROXY__.getDocument(...args);
             
         };
-    
+        
         // function 
         RHatchData.prototype.setDocument = function(...args) 
           
@@ -200,7 +200,7 @@
               return this.__PROXY__.setDocument(...args);
             
         };
-    
+        
         // function 
         RHatchData.prototype.isPointType = function(...args) 
           
@@ -210,7 +210,7 @@
               return this.__PROXY__.isPointType(...args);
             
         };
-    
+        
         // function 
         RHatchData.prototype.isValid = function(...args) 
           
@@ -220,7 +220,7 @@
               return this.__PROXY__.isValid(...args);
             
         };
-    
+        
         // function 
         RHatchData.prototype.isSane = function(...args) 
           
@@ -230,7 +230,7 @@
               return this.__PROXY__.isSane(...args);
             
         };
-    
+        
         // function 
         RHatchData.prototype.getClosestSubEntityId = function(...args) 
           
@@ -240,7 +240,7 @@
               return this.__PROXY__.getClosestSubEntityId(...args);
             
         };
-    
+        
         // function 
         RHatchData.prototype.getClosestShape = function(...args) 
           
@@ -250,7 +250,7 @@
               return this.__PROXY__.getClosestShape(...args);
             
         };
-    
+        
         // function 
         RHatchData.prototype.copyAttributesFrom = function(...args) 
           
@@ -260,7 +260,7 @@
               return this.__PROXY__.copyAttributesFrom(...args);
             
         };
-    
+        
         // function 
         RHatchData.prototype.to2D = function(...args) 
           
@@ -270,7 +270,7 @@
               return this.__PROXY__.to2D(...args);
             
         };
-    
+        
         // function 
         RHatchData.prototype.setZ = function(...args) 
           
@@ -280,7 +280,7 @@
               return this.__PROXY__.setZ(...args);
             
         };
-    
+        
         // function 
         RHatchData.prototype.getBoundingBoxes = function(...args) 
           
@@ -290,7 +290,7 @@
               return this.__PROXY__.getBoundingBoxes(...args);
             
         };
-    
+        
         // function 
         RHatchData.prototype.getHull = function(...args) 
           
@@ -300,7 +300,7 @@
               return this.__PROXY__.getHull(...args);
             
         };
-    
+        
         // function 
         RHatchData.prototype.isUpdatesEnabled = function(...args) 
           
@@ -310,7 +310,7 @@
               return this.__PROXY__.isUpdatesEnabled(...args);
             
         };
-    
+        
         // function 
         RHatchData.prototype.setUpdatesEnabled = function(...args) 
           
@@ -320,7 +320,7 @@
               return this.__PROXY__.setUpdatesEnabled(...args);
             
         };
-    
+        
         // function 
         RHatchData.prototype.isSelected = function(...args) 
           
@@ -330,7 +330,7 @@
               return this.__PROXY__.isSelected(...args);
             
         };
-    
+        
         // function 
         RHatchData.prototype.setSelected = function(...args) 
           
@@ -340,7 +340,7 @@
               return this.__PROXY__.setSelected(...args);
             
         };
-    
+        
         // function 
         RHatchData.prototype.isSelectedWorkingSet = function(...args) 
           
@@ -350,7 +350,7 @@
               return this.__PROXY__.isSelectedWorkingSet(...args);
             
         };
-    
+        
         // function 
         RHatchData.prototype.setSelectedWorkingSet = function(...args) 
           
@@ -360,7 +360,7 @@
               return this.__PROXY__.setSelectedWorkingSet(...args);
             
         };
-    
+        
         // function 
         RHatchData.prototype.getDrawOrder = function(...args) 
           
@@ -370,7 +370,7 @@
               return this.__PROXY__.getDrawOrder(...args);
             
         };
-    
+        
         // function 
         RHatchData.prototype.setDrawOrder = function(...args) 
           
@@ -380,7 +380,7 @@
               return this.__PROXY__.setDrawOrder(...args);
             
         };
-    
+        
         // function 
         RHatchData.prototype.setLayerId = function(...args) 
           
@@ -390,7 +390,7 @@
               return this.__PROXY__.setLayerId(...args);
             
         };
-    
+        
         // function 
         RHatchData.prototype.getLayerId = function(...args) 
           
@@ -400,7 +400,7 @@
               return this.__PROXY__.getLayerId(...args);
             
         };
-    
+        
         // function 
         RHatchData.prototype.setLayerName = function(...args) 
           
@@ -410,7 +410,7 @@
               return this.__PROXY__.setLayerName(...args);
             
         };
-    
+        
         // function 
         RHatchData.prototype.getLayerName = function(...args) 
           
@@ -420,7 +420,7 @@
               return this.__PROXY__.getLayerName(...args);
             
         };
-    
+        
         // function 
         RHatchData.prototype.setBlockId = function(...args) 
           
@@ -430,7 +430,7 @@
               return this.__PROXY__.setBlockId(...args);
             
         };
-    
+        
         // function 
         RHatchData.prototype.getBlockId = function(...args) 
           
@@ -440,7 +440,7 @@
               return this.__PROXY__.getBlockId(...args);
             
         };
-    
+        
         // function 
         RHatchData.prototype.setParentId = function(...args) 
           
@@ -450,7 +450,7 @@
               return this.__PROXY__.setParentId(...args);
             
         };
-    
+        
         // function 
         RHatchData.prototype.getParentId = function(...args) 
           
@@ -460,7 +460,7 @@
               return this.__PROXY__.getParentId(...args);
             
         };
-    
+        
         // function 
         RHatchData.prototype.getBlockName = function(...args) 
           
@@ -470,7 +470,7 @@
               return this.__PROXY__.getBlockName(...args);
             
         };
-    
+        
         // function 
         RHatchData.prototype.setLinetypeId = function(...args) 
           
@@ -480,7 +480,7 @@
               return this.__PROXY__.setLinetypeId(...args);
             
         };
-    
+        
         // function 
         RHatchData.prototype.getLinetypeId = function(...args) 
           
@@ -490,7 +490,7 @@
               return this.__PROXY__.getLinetypeId(...args);
             
         };
-    
+        
         // function 
         RHatchData.prototype.setLinetypePattern = function(...args) 
           
@@ -500,7 +500,7 @@
               return this.__PROXY__.setLinetypePattern(...args);
             
         };
-    
+        
         // function 
         RHatchData.prototype.getLinetypePattern = function(...args) 
           
@@ -510,7 +510,7 @@
               return this.__PROXY__.getLinetypePattern(...args);
             
         };
-    
+        
         // function 
         RHatchData.prototype.setLinetypeScale = function(...args) 
           
@@ -520,7 +520,7 @@
               return this.__PROXY__.setLinetypeScale(...args);
             
         };
-    
+        
         // function 
         RHatchData.prototype.getLinetypeScale = function(...args) 
           
@@ -530,7 +530,7 @@
               return this.__PROXY__.getLinetypeScale(...args);
             
         };
-    
+        
         // function 
         RHatchData.prototype.getLineweight = function(...args) 
           
@@ -540,7 +540,7 @@
               return this.__PROXY__.getLineweight(...args);
             
         };
-    
+        
         // function 
         RHatchData.prototype.setLineweight = function(...args) 
           
@@ -550,7 +550,7 @@
               return this.__PROXY__.setLineweight(...args);
             
         };
-    
+        
         // function 
         RHatchData.prototype.setColor = function(...args) 
           
@@ -560,7 +560,7 @@
               return this.__PROXY__.setColor(...args);
             
         };
-    
+        
         // function 
         RHatchData.prototype.getDisplayColor = function(...args) 
           
@@ -570,7 +570,7 @@
               return this.__PROXY__.getDisplayColor(...args);
             
         };
-    
+        
         // function 
         RHatchData.prototype.getInternalReferencePoints = function(...args) 
           
@@ -580,7 +580,7 @@
               return this.__PROXY__.getInternalReferencePoints(...args);
             
         };
-    
+        
         // function 
         RHatchData.prototype.getEndPoints = function(...args) 
           
@@ -590,7 +590,7 @@
               return this.__PROXY__.getEndPoints(...args);
             
         };
-    
+        
         // function 
         RHatchData.prototype.getMiddlePoints = function(...args) 
           
@@ -600,7 +600,7 @@
               return this.__PROXY__.getMiddlePoints(...args);
             
         };
-    
+        
         // function 
         RHatchData.prototype.getCenterPoints = function(...args) 
           
@@ -610,7 +610,7 @@
               return this.__PROXY__.getCenterPoints(...args);
             
         };
-    
+        
         // function 
         RHatchData.prototype.getArcReferencePoints = function(...args) 
           
@@ -620,7 +620,7 @@
               return this.__PROXY__.getArcReferencePoints(...args);
             
         };
-    
+        
         // function 
         RHatchData.prototype.getPointsWithDistanceToEnd = function(...args) 
           
@@ -630,7 +630,7 @@
               return this.__PROXY__.getPointsWithDistanceToEnd(...args);
             
         };
-    
+        
         // function 
         RHatchData.prototype.getClosestPointOnEntity = function(...args) 
           
@@ -640,7 +640,7 @@
               return this.__PROXY__.getClosestPointOnEntity(...args);
             
         };
-    
+        
         // function 
         RHatchData.prototype.getIntersectionPoints = function(...args) 
           
@@ -650,7 +650,7 @@
               return this.__PROXY__.getIntersectionPoints(...args);
             
         };
-    
+        
         // function 
         RHatchData.prototype.getVectorTo = function(...args) 
           
@@ -660,7 +660,7 @@
               return this.__PROXY__.getVectorTo(...args);
             
         };
-    
+        
         // function 
         RHatchData.prototype.isInside = function(...args) 
           
@@ -670,7 +670,7 @@
               return this.__PROXY__.isInside(...args);
             
         };
-    
+        
         // function 
         RHatchData.prototype.isOnEntity = function(...args) 
           
@@ -680,7 +680,7 @@
               return this.__PROXY__.isOnEntity(...args);
             
         };
-    
+        
         // function 
         RHatchData.prototype.clickReferencePoint = function(...args) 
           
@@ -690,7 +690,7 @@
               return this.__PROXY__.clickReferencePoint(...args);
             
         };
-    
+        
         // function 
         RHatchData.prototype.scaleVisualProperties = function(...args) 
           
@@ -700,7 +700,7 @@
               return this.__PROXY__.scaleVisualProperties(...args);
             
         };
-    
+        
         // function 
         RHatchData.prototype.flipHorizontal = function(...args) 
           
@@ -710,7 +710,7 @@
               return this.__PROXY__.flipHorizontal(...args);
             
         };
-    
+        
         // function 
         RHatchData.prototype.flipVertical = function(...args) 
           
@@ -720,7 +720,7 @@
               return this.__PROXY__.flipVertical(...args);
             
         };
-    
+        
         // function 
         RHatchData.prototype.setAutoUpdatesBlocked = function(...args) 
           
@@ -730,7 +730,7 @@
               return this.__PROXY__.setAutoUpdatesBlocked(...args);
             
         };
-    
+        
         // function 
         RHatchData.prototype.getType = function(...args) 
           
@@ -740,7 +740,7 @@
               return this.__PROXY__.getType(...args);
             
         };
-    
+        
         // function 
         RHatchData.prototype.clearBoundary = function(...args) 
           
@@ -750,7 +750,7 @@
               return this.__PROXY__.clearBoundary(...args);
             
         };
-    
+        
         // function 
         RHatchData.prototype.hasCustomPattern = function(...args) 
           
@@ -760,7 +760,7 @@
               return this.__PROXY__.hasCustomPattern(...args);
             
         };
-    
+        
         // function 
         RHatchData.prototype.getCustomPattern = function(...args) 
           
@@ -770,7 +770,7 @@
               return this.__PROXY__.getCustomPattern(...args);
             
         };
-    
+        
         // function 
         RHatchData.prototype.setCustomPattern = function(...args) 
           
@@ -780,7 +780,7 @@
               return this.__PROXY__.setCustomPattern(...args);
             
         };
-    
+        
         // function 
         RHatchData.prototype.cloneOnChange = function(...args) 
           
@@ -790,7 +790,7 @@
               return this.__PROXY__.cloneOnChange(...args);
             
         };
-    
+        
         // function 
         RHatchData.prototype.getBoundingBox = function(...args) 
           
@@ -800,7 +800,7 @@
               return this.__PROXY__.getBoundingBox(...args);
             
         };
-    
+        
         // function 
         RHatchData.prototype.getPointOnEntity = function(...args) 
           
@@ -810,7 +810,7 @@
               return this.__PROXY__.getPointOnEntity(...args);
             
         };
-    
+        
         // function 
         RHatchData.prototype.getDistanceTo = function(...args) 
           
@@ -820,7 +820,7 @@
               return this.__PROXY__.getDistanceTo(...args);
             
         };
-    
+        
         // function 
         RHatchData.prototype.intersectsWith = function(...args) 
           
@@ -830,7 +830,7 @@
               return this.__PROXY__.intersectsWith(...args);
             
         };
-    
+        
         // function 
         RHatchData.prototype.getReferencePoints = function(...args) 
           
@@ -840,7 +840,7 @@
               return this.__PROXY__.getReferencePoints(...args);
             
         };
-    
+        
         // function 
         RHatchData.prototype.moveReferencePoint = function(...args) 
           
@@ -850,7 +850,7 @@
               return this.__PROXY__.moveReferencePoint(...args);
             
         };
-    
+        
         // function 
         RHatchData.prototype.move = function(...args) 
           
@@ -860,7 +860,7 @@
               return this.__PROXY__.move(...args);
             
         };
-    
+        
         // function 
         RHatchData.prototype.rotate = function(...args) 
           
@@ -870,7 +870,7 @@
               return this.__PROXY__.rotate(...args);
             
         };
-    
+        
         // function 
         RHatchData.prototype.scale = function(...args) 
           
@@ -880,7 +880,7 @@
               return this.__PROXY__.scale(...args);
             
         };
-    
+        
         // function 
         RHatchData.prototype.mirror = function(...args) 
           
@@ -890,7 +890,7 @@
               return this.__PROXY__.mirror(...args);
             
         };
-    
+        
         // function 
         RHatchData.prototype.stretch = function(...args) 
           
@@ -900,7 +900,7 @@
               return this.__PROXY__.stretch(...args);
             
         };
-    
+        
         // function 
         RHatchData.prototype.castToShape = function(...args) 
           
@@ -910,7 +910,7 @@
               return this.__PROXY__.castToShape(...args);
             
         };
-    
+        
         // function 
         RHatchData.prototype.getShapes = function(...args) 
           
@@ -920,7 +920,7 @@
               return this.__PROXY__.getShapes(...args);
             
         };
-    
+        
         // function 
         RHatchData.prototype.getExploded = function(...args) 
           
@@ -930,7 +930,7 @@
               return this.__PROXY__.getExploded(...args);
             
         };
-    
+        
         // function 
         RHatchData.prototype.isSolid = function(...args) 
           
@@ -940,7 +940,7 @@
               return this.__PROXY__.isSolid(...args);
             
         };
-    
+        
         // function 
         RHatchData.prototype.setSolid = function(...args) 
           
@@ -950,7 +950,7 @@
               return this.__PROXY__.setSolid(...args);
             
         };
-    
+        
         // function 
         RHatchData.prototype.isWinding = function(...args) 
           
@@ -960,7 +960,7 @@
               return this.__PROXY__.isWinding(...args);
             
         };
-    
+        
         // function 
         RHatchData.prototype.setWinding = function(...args) 
           
@@ -970,7 +970,7 @@
               return this.__PROXY__.setWinding(...args);
             
         };
-    
+        
         // function 
         RHatchData.prototype.getScale = function(...args) 
           
@@ -980,7 +980,7 @@
               return this.__PROXY__.getScale(...args);
             
         };
-    
+        
         // function 
         RHatchData.prototype.setScale = function(...args) 
           
@@ -990,7 +990,7 @@
               return this.__PROXY__.setScale(...args);
             
         };
-    
+        
         // function 
         RHatchData.prototype.getAngle = function(...args) 
           
@@ -1000,7 +1000,7 @@
               return this.__PROXY__.getAngle(...args);
             
         };
-    
+        
         // function 
         RHatchData.prototype.setAngle = function(...args) 
           
@@ -1010,7 +1010,7 @@
               return this.__PROXY__.setAngle(...args);
             
         };
-    
+        
         // function 
         RHatchData.prototype.getOriginPoint = function(...args) 
           
@@ -1020,7 +1020,7 @@
               return this.__PROXY__.getOriginPoint(...args);
             
         };
-    
+        
         // function 
         RHatchData.prototype.setOriginPoint = function(...args) 
           
@@ -1030,7 +1030,7 @@
               return this.__PROXY__.setOriginPoint(...args);
             
         };
-    
+        
         // function 
         RHatchData.prototype.getPatternName = function(...args) 
           
@@ -1040,7 +1040,7 @@
               return this.__PROXY__.getPatternName(...args);
             
         };
-    
+        
         // function 
         RHatchData.prototype.setPatternName = function(...args) 
           
@@ -1050,7 +1050,7 @@
               return this.__PROXY__.setPatternName(...args);
             
         };
-    
+        
         // function 
         RHatchData.prototype.getTransparency = function(...args) 
           
@@ -1060,7 +1060,7 @@
               return this.__PROXY__.getTransparency(...args);
             
         };
-    
+        
         // function 
         RHatchData.prototype.setTransparency = function(...args) 
           
@@ -1070,7 +1070,7 @@
               return this.__PROXY__.setTransparency(...args);
             
         };
-    
+        
         // function 
         RHatchData.prototype.normalizeGradientName = function(...args) 
           
@@ -1080,7 +1080,7 @@
               return this.__PROXY__.normalizeGradientName(...args);
             
         };
-    
+        
         // function 
         RHatchData.prototype.isGradient = function(...args) 
           
@@ -1090,7 +1090,7 @@
               return this.__PROXY__.isGradient(...args);
             
         };
-    
+        
         // function 
         RHatchData.prototype.clearGradient = function(...args) 
           
@@ -1100,7 +1100,7 @@
               return this.__PROXY__.clearGradient(...args);
             
         };
-    
+        
         // function 
         RHatchData.prototype.getGradientName = function(...args) 
           
@@ -1110,7 +1110,7 @@
               return this.__PROXY__.getGradientName(...args);
             
         };
-    
+        
         // function 
         RHatchData.prototype.setGradientName = function(...args) 
           
@@ -1120,7 +1120,7 @@
               return this.__PROXY__.setGradientName(...args);
             
         };
-    
+        
         // function 
         RHatchData.prototype.getGradientColor1 = function(...args) 
           
@@ -1130,7 +1130,7 @@
               return this.__PROXY__.getGradientColor1(...args);
             
         };
-    
+        
         // function 
         RHatchData.prototype.setGradientColor1 = function(...args) 
           
@@ -1140,7 +1140,7 @@
               return this.__PROXY__.setGradientColor1(...args);
             
         };
-    
+        
         // function 
         RHatchData.prototype.getGradientColor2 = function(...args) 
           
@@ -1150,7 +1150,7 @@
               return this.__PROXY__.getGradientColor2(...args);
             
         };
-    
+        
         // function 
         RHatchData.prototype.setGradientColor2 = function(...args) 
           
@@ -1160,7 +1160,7 @@
               return this.__PROXY__.setGradientColor2(...args);
             
         };
-    
+        
         // function 
         RHatchData.prototype.getGradientAngle = function(...args) 
           
@@ -1170,7 +1170,7 @@
               return this.__PROXY__.getGradientAngle(...args);
             
         };
-    
+        
         // function 
         RHatchData.prototype.setGradientAngle = function(...args) 
           
@@ -1180,7 +1180,7 @@
               return this.__PROXY__.setGradientAngle(...args);
             
         };
-    
+        
         // function 
         RHatchData.prototype.getGradientShift = function(...args) 
           
@@ -1190,7 +1190,7 @@
               return this.__PROXY__.getGradientShift(...args);
             
         };
-    
+        
         // function 
         RHatchData.prototype.setGradientShift = function(...args) 
           
@@ -1200,7 +1200,7 @@
               return this.__PROXY__.setGradientShift(...args);
             
         };
-    
+        
         // function 
         RHatchData.prototype.getGradientOneColorMode = function(...args) 
           
@@ -1210,7 +1210,7 @@
               return this.__PROXY__.getGradientOneColorMode(...args);
             
         };
-    
+        
         // function 
         RHatchData.prototype.setGradientOneColorMode = function(...args) 
           
@@ -1220,7 +1220,7 @@
               return this.__PROXY__.setGradientOneColorMode(...args);
             
         };
-    
+        
         // function 
         RHatchData.prototype.getGradientTint = function(...args) 
           
@@ -1230,7 +1230,7 @@
               return this.__PROXY__.getGradientTint(...args);
             
         };
-    
+        
         // function 
         RHatchData.prototype.setGradientTint = function(...args) 
           
@@ -1240,7 +1240,7 @@
               return this.__PROXY__.setGradientTint(...args);
             
         };
-    
+        
         // function 
         RHatchData.prototype.clearCustomPattern = function(...args) 
           
@@ -1250,7 +1250,7 @@
               return this.__PROXY__.clearCustomPattern(...args);
             
         };
-    
+        
         // function 
         RHatchData.prototype.newLoop = function(...args) 
           
@@ -1260,7 +1260,7 @@
               return this.__PROXY__.newLoop(...args);
             
         };
-    
+        
         // function 
         RHatchData.prototype.cancelLoop = function(...args) 
           
@@ -1270,7 +1270,7 @@
               return this.__PROXY__.cancelLoop(...args);
             
         };
-    
+        
         // function 
         RHatchData.prototype.addBoundary = function(...args) 
           
@@ -1280,7 +1280,7 @@
               return this.__PROXY__.addBoundary(...args);
             
         };
-    
+        
         // function 
         RHatchData.prototype.addBoundaryShape = function(...args) 
           
@@ -1290,7 +1290,7 @@
               return this.__PROXY__.addBoundaryShape(...args);
             
         };
-    
+        
         // function 
         RHatchData.prototype.getBoundaryPath = function(...args) 
           
@@ -1300,7 +1300,7 @@
               return this.__PROXY__.getBoundaryPath(...args);
             
         };
-    
+        
         // function 
         RHatchData.prototype.getPainterPaths = function(...args) 
           
@@ -1310,7 +1310,7 @@
               return this.__PROXY__.getPainterPaths(...args);
             
         };
-    
+        
         // function 
         RHatchData.prototype.update = function(...args) 
           
@@ -1320,7 +1320,7 @@
               return this.__PROXY__.update(...args);
             
         };
-    
+        
         // function 
         RHatchData.prototype.order = function(...args) 
           
@@ -1330,7 +1330,7 @@
               return this.__PROXY__.order(...args);
             
         };
-    
+        
         // function 
         RHatchData.prototype.getLoopCount = function(...args) 
           
@@ -1340,7 +1340,7 @@
               return this.__PROXY__.getLoopCount(...args);
             
         };
-    
+        
         // function 
         RHatchData.prototype.getLoopBoundary = function(...args) 
           
@@ -1350,7 +1350,7 @@
               return this.__PROXY__.getLoopBoundary(...args);
             
         };
-    
+        
         // function 
         RHatchData.prototype.getBoundaryAsPolylines = function(...args) 
           
@@ -1360,7 +1360,7 @@
               return this.__PROXY__.getBoundaryAsPolylines(...args);
             
         };
-    
+        
         // function 
         RHatchData.prototype.autoCloseLoops = function(...args) 
           
@@ -1370,7 +1370,7 @@
               return this.__PROXY__.autoCloseLoops(...args);
             
         };
-    
+        
         // function 
         RHatchData.prototype.getComplexity = function(...args) 
           
@@ -1380,7 +1380,7 @@
               return this.__PROXY__.getComplexity(...args);
             
         };
-    
+        
         // function 
         RHatchData.prototype.setPattern = function(...args) 
           
@@ -1390,7 +1390,7 @@
               return this.__PROXY__.setPattern(...args);
             
         };
-    
+        
         // function 
         RHatchData.prototype.getColor = function(...args) 
           
@@ -1400,7 +1400,7 @@
               return this.__PROXY__.getColor(...args);
             
         };
-    
+        
         // function 
         RHatchData.prototype.hasProxy = function(...args) 
           
@@ -1410,7 +1410,7 @@
               return this.__PROXY__.hasProxy(...args);
             
         };
-    
+        
 
       // static functions:
       

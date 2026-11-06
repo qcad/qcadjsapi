@@ -142,7 +142,7 @@
               return this.__PROXY__.getEntityTypeFilter(...args);
             
         };
-    
+        
         // function 
         RDeleteSelectionOperation.prototype.setRecordAffectedObjects = function(...args) 
           
@@ -152,7 +152,7 @@
               return this.__PROXY__.setRecordAffectedObjects(...args);
             
         };
-    
+        
         // function 
         RDeleteSelectionOperation.prototype.setSpatialIndexDisabled = function(...args) 
           
@@ -162,7 +162,7 @@
               return this.__PROXY__.setSpatialIndexDisabled(...args);
             
         };
-    
+        
         // function 
         RDeleteSelectionOperation.prototype.setAllowInvisible = function(...args) 
           
@@ -172,7 +172,7 @@
               return this.__PROXY__.setAllowInvisible(...args);
             
         };
-    
+        
         // function 
         RDeleteSelectionOperation.prototype.setAllowAll = function(...args) 
           
@@ -182,7 +182,7 @@
               return this.__PROXY__.setAllowAll(...args);
             
         };
-    
+        
         // function 
         RDeleteSelectionOperation.prototype.setKeepChildren = function(...args) 
           
@@ -192,7 +192,7 @@
               return this.__PROXY__.setKeepChildren(...args);
             
         };
-    
+        
         // function 
         RDeleteSelectionOperation.prototype.setTransactionGroup = function(...args) 
           
@@ -202,7 +202,7 @@
               return this.__PROXY__.setTransactionGroup(...args);
             
         };
-    
+        
         // function 
         RDeleteSelectionOperation.prototype.getTransactionGroup = function(...args) 
           
@@ -212,7 +212,7 @@
               return this.__PROXY__.getTransactionGroup(...args);
             
         };
-    
+        
         // function 
         RDeleteSelectionOperation.prototype.setText = function(...args) 
           
@@ -222,7 +222,7 @@
               return this.__PROXY__.setText(...args);
             
         };
-    
+        
         // function 
         RDeleteSelectionOperation.prototype.getText = function(...args) 
           
@@ -232,7 +232,7 @@
               return this.__PROXY__.getText(...args);
             
         };
-    
+        
         // function 
         RDeleteSelectionOperation.prototype.getTransactionTypes = function(...args) 
           
@@ -242,7 +242,7 @@
               return this.__PROXY__.getTransactionTypes(...args);
             
         };
-    
+        
         // function 
         RDeleteSelectionOperation.prototype.setTransactionType = function(...args) 
           
@@ -252,7 +252,7 @@
               return this.__PROXY__.setTransactionType(...args);
             
         };
-    
+        
         // function 
         RDeleteSelectionOperation.prototype.getTransactionType = function(...args) 
           
@@ -262,7 +262,7 @@
               return this.__PROXY__.getTransactionType(...args);
             
         };
-    
+        
         // function 
         RDeleteSelectionOperation.prototype.copy = function(...args) 
           
@@ -272,7 +272,7 @@
               return this.__PROXY__.copy(...args);
             
         };
-    
+        
         // function 
         RDeleteSelectionOperation.prototype.copyEntity = function(...args) 
           
@@ -282,7 +282,7 @@
               return this.__PROXY__.copyEntity(...args);
             
         };
-    
+        
         // function 
         RDeleteSelectionOperation.prototype.copyEntityBlock = function(...args) 
           
@@ -292,7 +292,7 @@
               return this.__PROXY__.copyEntityBlock(...args);
             
         };
-    
+        
         // function 
         RDeleteSelectionOperation.prototype.copyBlock = function(...args) 
           
@@ -302,7 +302,7 @@
               return this.__PROXY__.copyBlock(...args);
             
         };
-    
+        
         // function 
         RDeleteSelectionOperation.prototype.copyEntityLayer = function(...args) 
           
@@ -312,7 +312,7 @@
               return this.__PROXY__.copyEntityLayer(...args);
             
         };
-    
+        
         // function 
         RDeleteSelectionOperation.prototype.copyLayer = function(...args) 
           
@@ -322,7 +322,7 @@
               return this.__PROXY__.copyLayer(...args);
             
         };
-    
+        
         // function 
         RDeleteSelectionOperation.prototype.copyEntityLinetype = function(...args) 
           
@@ -332,7 +332,7 @@
               return this.__PROXY__.copyEntityLinetype(...args);
             
         };
-    
+        
         // function 
         RDeleteSelectionOperation.prototype.copyLinetype = function(...args) 
           
@@ -342,7 +342,7 @@
               return this.__PROXY__.copyLinetype(...args);
             
         };
-    
+        
         // function 
         RDeleteSelectionOperation.prototype.setCopyEmptyBlocks = function(...args) 
           
@@ -352,7 +352,7 @@
               return this.__PROXY__.setCopyEmptyBlocks(...args);
             
         };
-    
+        
         // function 
         RDeleteSelectionOperation.prototype.setCopyAllLayers = function(...args) 
           
@@ -362,7 +362,7 @@
               return this.__PROXY__.setCopyAllLayers(...args);
             
         };
-    
+        
         // function 
         RDeleteSelectionOperation.prototype.setKeepSelection = function(...args) 
           
@@ -372,7 +372,7 @@
               return this.__PROXY__.setKeepSelection(...args);
             
         };
-    
+        
         // function 
         RDeleteSelectionOperation.prototype.setBlockOwnership = function(...args) 
           
@@ -382,7 +382,7 @@
               return this.__PROXY__.setBlockOwnership(...args);
             
         };
-    
+        
         // function 
         RDeleteSelectionOperation.prototype.setCustomEntityType = function(...args) 
           
@@ -392,7 +392,7 @@
               return this.__PROXY__.setCustomEntityType(...args);
             
         };
-    
+        
         // function 
         RDeleteSelectionOperation.prototype.apply = function(...args) 
           
@@ -402,7 +402,7 @@
               return this.__PROXY__.apply(...args);
             
         };
-    
+        
 
       // static functions:
       RDeleteSelectionOperation.prototype.isNullWrapper = function() {

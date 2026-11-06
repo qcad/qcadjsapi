@@ -105,7 +105,7 @@
               return this.__PROXY__.printBacktrace(...args);
             
         };
-    
+        
         // function 
         RDebug.prototype.startTimer = function(...args) 
           
@@ -115,7 +115,7 @@
               return this.__PROXY__.startTimer(...args);
             
         };
-    
+        
         // function 
         RDebug.prototype.stopTimer = function(...args) 
           
@@ -125,7 +125,7 @@
               return this.__PROXY__.stopTimer(...args);
             
         };
-    
+        
         // function 
         RDebug.prototype.timeStamp = function(...args) 
           
@@ -135,7 +135,7 @@
               return this.__PROXY__.timeStamp(...args);
             
         };
-    
+        
         // function 
         RDebug.prototype.hexDump = function(...args) 
           
@@ -145,7 +145,7 @@
               return this.__PROXY__.hexDump(...args);
             
         };
-    
+        
         // function 
         RDebug.prototype.incCounter = function(...args) 
           
@@ -155,7 +155,7 @@
               return this.__PROXY__.incCounter(...args);
             
         };
-    
+        
         // function 
         RDebug.prototype.decCounter = function(...args) 
           
@@ -165,7 +165,7 @@
               return this.__PROXY__.decCounter(...args);
             
         };
-    
+        
         // function 
         RDebug.prototype.getCounter = function(...args) 
           
@@ -175,7 +175,7 @@
               return this.__PROXY__.getCounter(...args);
             
         };
-    
+        
         // function 
         RDebug.prototype.printCounter = function(...args) 
           
@@ -185,7 +185,7 @@
               return this.__PROXY__.printCounter(...args);
             
         };
-    
+        
         // function 
         RDebug.prototype.printCounters = function(...args) 
           
@@ -195,7 +195,7 @@
               return this.__PROXY__.printCounters(...args);
             
         };
-    
+        
         // function 
         RDebug.prototype.setPrefix = function(...args) 
           
@@ -205,7 +205,7 @@
               return this.__PROXY__.setPrefix(...args);
             
         };
-    
+        
         // function 
         RDebug.prototype.getPrefix = function(...args) 
           
@@ -215,7 +215,7 @@
               return this.__PROXY__.getPrefix(...args);
             
         };
-    
+        
 
       // static functions:
       

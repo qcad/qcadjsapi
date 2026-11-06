@@ -143,7 +143,7 @@
               return this.__PROXY__.setObjectName(...args);
             
         };
-    
+        
         // function 
         RCoordinateListenerAdapter.prototype.isWidgetType = function(...args) 
           
@@ -153,7 +153,7 @@
               return this.__PROXY__.isWidgetType(...args);
             
         };
-    
+        
         // function 
         RCoordinateListenerAdapter.prototype.isWindowType = function(...args) 
           
@@ -163,7 +163,7 @@
               return this.__PROXY__.isWindowType(...args);
             
         };
-    
+        
         // function 
         RCoordinateListenerAdapter.prototype.signalsBlocked = function(...args) 
           
@@ -173,7 +173,7 @@
               return this.__PROXY__.signalsBlocked(...args);
             
         };
-    
+        
         // function 
         RCoordinateListenerAdapter.prototype.blockSignals = function(...args) 
           
@@ -183,7 +183,7 @@
               return this.__PROXY__.blockSignals(...args);
             
         };
-    
+        
         // function 
         RCoordinateListenerAdapter.prototype.findChild = function(...args) 
           
@@ -193,7 +193,7 @@
               return this.__PROXY__.findChild(...args);
             
         };
-    
+        
         // function 
         RCoordinateListenerAdapter.prototype.children = function(...args) 
           
@@ -203,7 +203,7 @@
               return this.__PROXY__.children(...args);
             
         };
-    
+        
         // function 
         RCoordinateListenerAdapter.prototype.setParent = function(...args) 
           
@@ -213,7 +213,7 @@
               return this.__PROXY__.setParent(...args);
             
         };
-    
+        
         // function 
         RCoordinateListenerAdapter.prototype.installEventFilter = function(...args) 
           
@@ -223,7 +223,7 @@
               return this.__PROXY__.installEventFilter(...args);
             
         };
-    
+        
         // function 
         RCoordinateListenerAdapter.prototype.removeEventFilter = function(...args) 
           
@@ -233,7 +233,7 @@
               return this.__PROXY__.removeEventFilter(...args);
             
         };
-    
+        
         // function 
         RCoordinateListenerAdapter.prototype.dumpObjectTree = function(...args) 
           
@@ -243,7 +243,7 @@
               return this.__PROXY__.dumpObjectTree(...args);
             
         };
-    
+        
         // function 
         RCoordinateListenerAdapter.prototype.dumpObjectInfo = function(...args) 
           
@@ -253,7 +253,7 @@
               return this.__PROXY__.dumpObjectInfo(...args);
             
         };
-    
+        
         // function 
         RCoordinateListenerAdapter.prototype.setProperty = function(...args) 
           
@@ -263,7 +263,7 @@
               return this.__PROXY__.setProperty(...args);
             
         };
-    
+        
         // function 
         RCoordinateListenerAdapter.prototype.property = function(...args) 
           
@@ -273,7 +273,7 @@
               return this.__PROXY__.property(...args);
             
         };
-    
+        
         // function 
         RCoordinateListenerAdapter.prototype.dynamicPropertyNames = function(...args) 
           
@@ -283,7 +283,7 @@
               return this.__PROXY__.dynamicPropertyNames(...args);
             
         };
-    
+        
         // function 
         RCoordinateListenerAdapter.prototype.parent = function(...args) 
           
@@ -293,7 +293,7 @@
               return this.__PROXY__.parent(...args);
             
         };
-    
+        
         // function 
         RCoordinateListenerAdapter.prototype.deleteLater = function(...args) 
           
@@ -303,7 +303,7 @@
               return this.__PROXY__.deleteLater(...args);
             
         };
-    
+        
         // function 
         RCoordinateListenerAdapter.prototype.updateCoordinate = function(...args) 
           
@@ -313,7 +313,7 @@
               return this.__PROXY__.updateCoordinate(...args);
             
         };
-    
+        
 
       // static functions:
       

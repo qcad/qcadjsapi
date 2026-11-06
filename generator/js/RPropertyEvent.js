@@ -339,7 +339,7 @@ RPropertyEvent.MaxUser = RPropertyEvent_Wrapper.MaxUser;
               return this.__PROXY__.type(...args);
             
         };
-    
+        
         // function 
         RPropertyEvent.prototype.spontaneous = function(...args) 
           
@@ -349,7 +349,7 @@ RPropertyEvent.MaxUser = RPropertyEvent_Wrapper.MaxUser;
               return this.__PROXY__.spontaneous(...args);
             
         };
-    
+        
         // function 
         RPropertyEvent.prototype.setAccepted = function(...args) 
           
@@ -359,7 +359,7 @@ RPropertyEvent.MaxUser = RPropertyEvent_Wrapper.MaxUser;
               return this.__PROXY__.setAccepted(...args);
             
         };
-    
+        
         // function 
         RPropertyEvent.prototype.isAccepted = function(...args) 
           
@@ -369,7 +369,7 @@ RPropertyEvent.MaxUser = RPropertyEvent_Wrapper.MaxUser;
               return this.__PROXY__.isAccepted(...args);
             
         };
-    
+        
         // function 
         RPropertyEvent.prototype.accept = function(...args) 
           
@@ -379,7 +379,7 @@ RPropertyEvent.MaxUser = RPropertyEvent_Wrapper.MaxUser;
               return this.__PROXY__.accept(...args);
             
         };
-    
+        
         // function 
         RPropertyEvent.prototype.ignore = function(...args) 
           
@@ -389,7 +389,7 @@ RPropertyEvent.MaxUser = RPropertyEvent_Wrapper.MaxUser;
               return this.__PROXY__.ignore(...args);
             
         };
-    
+        
         // function 
         RPropertyEvent.prototype.isInputEvent = function(...args) 
           
@@ -399,7 +399,7 @@ RPropertyEvent.MaxUser = RPropertyEvent_Wrapper.MaxUser;
               return this.__PROXY__.isInputEvent(...args);
             
         };
-    
+        
         // function 
         RPropertyEvent.prototype.isPointerEvent = function(...args) 
           
@@ -409,7 +409,7 @@ RPropertyEvent.MaxUser = RPropertyEvent_Wrapper.MaxUser;
               return this.__PROXY__.isPointerEvent(...args);
             
         };
-    
+        
         // function 
         RPropertyEvent.prototype.isSinglePointEvent = function(...args) 
           
@@ -419,7 +419,7 @@ RPropertyEvent.MaxUser = RPropertyEvent_Wrapper.MaxUser;
               return this.__PROXY__.isSinglePointEvent(...args);
             
         };
-    
+        
         // function 
         RPropertyEvent.prototype.clone = function(...args) 
           
@@ -429,7 +429,7 @@ RPropertyEvent.MaxUser = RPropertyEvent_Wrapper.MaxUser;
               return this.__PROXY__.clone(...args);
             
         };
-    
+        
         // function 
         RPropertyEvent.prototype.setSpontaneous = function(...args) 
           
@@ -439,7 +439,7 @@ RPropertyEvent.MaxUser = RPropertyEvent_Wrapper.MaxUser;
               return this.__PROXY__.setSpontaneous(...args);
             
         };
-    
+        
         // function 
         RPropertyEvent.prototype.getPropertyTypeId = function(...args) 
           
@@ -449,7 +449,7 @@ RPropertyEvent.MaxUser = RPropertyEvent_Wrapper.MaxUser;
               return this.__PROXY__.getPropertyTypeId(...args);
             
         };
-    
+        
         // function 
         RPropertyEvent.prototype.getValue = function(...args) 
           
@@ -459,7 +459,7 @@ RPropertyEvent.MaxUser = RPropertyEvent_Wrapper.MaxUser;
               return this.__PROXY__.getValue(...args);
             
         };
-    
+        
         // function 
         RPropertyEvent.prototype.getEntityTypeFilter = function(...args) 
           
@@ -469,7 +469,7 @@ RPropertyEvent.MaxUser = RPropertyEvent_Wrapper.MaxUser;
               return this.__PROXY__.getEntityTypeFilter(...args);
             
         };
-    
+        
 
       // static functions:
       RPropertyEvent.prototype.isNullWrapper = function() {

@@ -168,7 +168,7 @@
               return this.__PROXY__.mustAlwaysClone(...args);
             
         };
-    
+        
         // function 
         RImageEntity.prototype.getDocument = function(...args) 
           
@@ -178,7 +178,7 @@
               return this.__PROXY__.getDocument(...args);
             
         };
-    
+        
         // function 
         RImageEntity.prototype.setFlag = function(...args) 
           
@@ -188,7 +188,7 @@
               return this.__PROXY__.setFlag(...args);
             
         };
-    
+        
         // function 
         RImageEntity.prototype.getFlag = function(...args) 
           
@@ -198,7 +198,7 @@
               return this.__PROXY__.getFlag(...args);
             
         };
-    
+        
         // function 
         RImageEntity.prototype.getId = function(...args) 
           
@@ -208,7 +208,7 @@
               return this.__PROXY__.getId(...args);
             
         };
-    
+        
         // function 
         RImageEntity.prototype.getHandle = function(...args) 
           
@@ -218,7 +218,7 @@
               return this.__PROXY__.getHandle(...args);
             
         };
-    
+        
         // function 
         RImageEntity.prototype.isProtected = function(...args) 
           
@@ -228,7 +228,7 @@
               return this.__PROXY__.isProtected(...args);
             
         };
-    
+        
         // function 
         RImageEntity.prototype.setProtected = function(...args) 
           
@@ -238,7 +238,7 @@
               return this.__PROXY__.setProtected(...args);
             
         };
-    
+        
         // function 
         RImageEntity.prototype.isInvisible = function(...args) 
           
@@ -248,7 +248,7 @@
               return this.__PROXY__.isInvisible(...args);
             
         };
-    
+        
         // function 
         RImageEntity.prototype.setInvisible = function(...args) 
           
@@ -258,7 +258,7 @@
               return this.__PROXY__.setInvisible(...args);
             
         };
-    
+        
         // function 
         RImageEntity.prototype.isUndone = function(...args) 
           
@@ -268,7 +268,7 @@
               return this.__PROXY__.isUndone(...args);
             
         };
-    
+        
         // function 
         RImageEntity.prototype.isWorkingSet = function(...args) 
           
@@ -278,7 +278,7 @@
               return this.__PROXY__.isWorkingSet(...args);
             
         };
-    
+        
         // function 
         RImageEntity.prototype.setWorkingSet = function(...args) 
           
@@ -288,7 +288,7 @@
               return this.__PROXY__.setWorkingSet(...args);
             
         };
-    
+        
         // function 
         RImageEntity.prototype.getPropertyTypeIds = function(...args) 
           
@@ -298,7 +298,7 @@
               return this.__PROXY__.getPropertyTypeIds(...args);
             
         };
-    
+        
         // function 
         RImageEntity.prototype.getCustomPropertyTypeIds = function(...args) 
           
@@ -308,7 +308,7 @@
               return this.__PROXY__.getCustomPropertyTypeIds(...args);
             
         };
-    
+        
         // function 
         RImageEntity.prototype.hasPropertyType = function(...args) 
           
@@ -318,7 +318,7 @@
               return this.__PROXY__.hasPropertyType(...args);
             
         };
-    
+        
         // function 
         RImageEntity.prototype.hasCustomProperties = function(...args) 
           
@@ -328,7 +328,7 @@
               return this.__PROXY__.hasCustomProperties(...args);
             
         };
-    
+        
         // function 
         RImageEntity.prototype.hasCustomProperty = function(...args) 
           
@@ -338,7 +338,7 @@
               return this.__PROXY__.hasCustomProperty(...args);
             
         };
-    
+        
         // function 
         RImageEntity.prototype.getCustomProperty = function(...args) 
           
@@ -348,7 +348,7 @@
               return this.__PROXY__.getCustomProperty(...args);
             
         };
-    
+        
         // function 
         RImageEntity.prototype.getCustomDoubleProperty = function(...args) 
           
@@ -358,7 +358,7 @@
               return this.__PROXY__.getCustomDoubleProperty(...args);
             
         };
-    
+        
         // function 
         RImageEntity.prototype.getCustomIntProperty = function(...args) 
           
@@ -368,7 +368,7 @@
               return this.__PROXY__.getCustomIntProperty(...args);
             
         };
-    
+        
         // function 
         RImageEntity.prototype.getCustomBoolProperty = function(...args) 
           
@@ -378,7 +378,7 @@
               return this.__PROXY__.getCustomBoolProperty(...args);
             
         };
-    
+        
         // function 
         RImageEntity.prototype.setCustomProperty = function(...args) 
           
@@ -388,7 +388,7 @@
               return this.__PROXY__.setCustomProperty(...args);
             
         };
-    
+        
         // function 
         RImageEntity.prototype.removeCustomProperty = function(...args) 
           
@@ -398,7 +398,7 @@
               return this.__PROXY__.removeCustomProperty(...args);
             
         };
-    
+        
         // function 
         RImageEntity.prototype.getCustomPropertyTitles = function(...args) 
           
@@ -408,7 +408,7 @@
               return this.__PROXY__.getCustomPropertyTitles(...args);
             
         };
-    
+        
         // function 
         RImageEntity.prototype.getCustomPropertyKeys = function(...args) 
           
@@ -418,7 +418,7 @@
               return this.__PROXY__.getCustomPropertyKeys(...args);
             
         };
-    
+        
         // function 
         RImageEntity.prototype.copyCustomPropertiesFrom = function(...args) 
           
@@ -428,7 +428,7 @@
               return this.__PROXY__.copyCustomPropertiesFrom(...args);
             
         };
-    
+        
         // function 
         RImageEntity.prototype.dump = function(...args) 
           
@@ -438,7 +438,7 @@
               return this.__PROXY__.dump(...args);
             
         };
-    
+        
         // function 
         RImageEntity.prototype.validate = function(...args) 
           
@@ -448,7 +448,7 @@
               return this.__PROXY__.validate(...args);
             
         };
-    
+        
         // function 
         RImageEntity.prototype.setUndone = function(...args) 
           
@@ -458,7 +458,7 @@
               return this.__PROXY__.setUndone(...args);
             
         };
-    
+        
         // function 
         RImageEntity.prototype.setId = function(...args) 
           
@@ -468,7 +468,7 @@
               return this.__PROXY__.setId(...args);
             
         };
-    
+        
         // function 
         RImageEntity.prototype.setHandle = function(...args) 
           
@@ -478,7 +478,7 @@
               return this.__PROXY__.setHandle(...args);
             
         };
-    
+        
         // function 
         RImageEntity.prototype.setMemberFlag = function(...args) 
           
@@ -488,7 +488,7 @@
               return this.__PROXY__.setMemberFlag(...args);
             
         };
-    
+        
         // function 
         RImageEntity.prototype.setDocument = function(...args) 
           
@@ -498,7 +498,7 @@
               return this.__PROXY__.setDocument(...args);
             
         };
-    
+        
         // function 
         RImageEntity.prototype.getType = function(...args) 
           
@@ -508,7 +508,7 @@
               return this.__PROXY__.getType(...args);
             
         };
-    
+        
         // function 
         RImageEntity.prototype.isPointType = function(...args) 
           
@@ -518,7 +518,7 @@
               return this.__PROXY__.isPointType(...args);
             
         };
-    
+        
         // function 
         RImageEntity.prototype.isValid = function(...args) 
           
@@ -528,7 +528,7 @@
               return this.__PROXY__.isValid(...args);
             
         };
-    
+        
         // function 
         RImageEntity.prototype.isSane = function(...args) 
           
@@ -538,7 +538,7 @@
               return this.__PROXY__.isSane(...args);
             
         };
-    
+        
         // function 
         RImageEntity.prototype.isSelected = function(...args) 
           
@@ -548,7 +548,7 @@
               return this.__PROXY__.isSelected(...args);
             
         };
-    
+        
         // function 
         RImageEntity.prototype.setSelected = function(...args) 
           
@@ -558,7 +558,7 @@
               return this.__PROXY__.setSelected(...args);
             
         };
-    
+        
         // function 
         RImageEntity.prototype.isSelectedWorkingSet = function(...args) 
           
@@ -568,7 +568,7 @@
               return this.__PROXY__.isSelectedWorkingSet(...args);
             
         };
-    
+        
         // function 
         RImageEntity.prototype.setSelectedWorkingSet = function(...args) 
           
@@ -578,7 +578,7 @@
               return this.__PROXY__.setSelectedWorkingSet(...args);
             
         };
-    
+        
         // function 
         RImageEntity.prototype.isSelectable = function(...args) 
           
@@ -588,7 +588,7 @@
               return this.__PROXY__.isSelectable(...args);
             
         };
-    
+        
         // function 
         RImageEntity.prototype.isUpdatesEnabled = function(...args) 
           
@@ -598,7 +598,7 @@
               return this.__PROXY__.isUpdatesEnabled(...args);
             
         };
-    
+        
         // function 
         RImageEntity.prototype.setUpdatesEnabled = function(...args) 
           
@@ -608,7 +608,7 @@
               return this.__PROXY__.setUpdatesEnabled(...args);
             
         };
-    
+        
         // function 
         RImageEntity.prototype.cloneOnChange = function(...args) 
           
@@ -618,7 +618,7 @@
               return this.__PROXY__.cloneOnChange(...args);
             
         };
-    
+        
         // function 
         RImageEntity.prototype.setDrawOrder = function(...args) 
           
@@ -628,7 +628,7 @@
               return this.__PROXY__.setDrawOrder(...args);
             
         };
-    
+        
         // function 
         RImageEntity.prototype.getDrawOrder = function(...args) 
           
@@ -638,7 +638,7 @@
               return this.__PROXY__.getDrawOrder(...args);
             
         };
-    
+        
         // function 
         RImageEntity.prototype.setLayerId = function(...args) 
           
@@ -648,7 +648,7 @@
               return this.__PROXY__.setLayerId(...args);
             
         };
-    
+        
         // function 
         RImageEntity.prototype.setLayerName = function(...args) 
           
@@ -658,7 +658,7 @@
               return this.__PROXY__.setLayerName(...args);
             
         };
-    
+        
         // function 
         RImageEntity.prototype.getLayerId = function(...args) 
           
@@ -668,7 +668,7 @@
               return this.__PROXY__.getLayerId(...args);
             
         };
-    
+        
         // function 
         RImageEntity.prototype.getLayerName = function(...args) 
           
@@ -678,7 +678,7 @@
               return this.__PROXY__.getLayerName(...args);
             
         };
-    
+        
         // function 
         RImageEntity.prototype.setBlockId = function(...args) 
           
@@ -688,7 +688,7 @@
               return this.__PROXY__.setBlockId(...args);
             
         };
-    
+        
         // function 
         RImageEntity.prototype.getBlockId = function(...args) 
           
@@ -698,7 +698,7 @@
               return this.__PROXY__.getBlockId(...args);
             
         };
-    
+        
         // function 
         RImageEntity.prototype.getBlockName = function(...args) 
           
@@ -708,7 +708,7 @@
               return this.__PROXY__.getBlockName(...args);
             
         };
-    
+        
         // function 
         RImageEntity.prototype.getParentId = function(...args) 
           
@@ -718,7 +718,7 @@
               return this.__PROXY__.getParentId(...args);
             
         };
-    
+        
         // function 
         RImageEntity.prototype.setLinetypeId = function(...args) 
           
@@ -728,7 +728,7 @@
               return this.__PROXY__.setLinetypeId(...args);
             
         };
-    
+        
         // function 
         RImageEntity.prototype.setLinetypePattern = function(...args) 
           
@@ -738,7 +738,7 @@
               return this.__PROXY__.setLinetypePattern(...args);
             
         };
-    
+        
         // function 
         RImageEntity.prototype.getLinetypeId = function(...args) 
           
@@ -748,7 +748,7 @@
               return this.__PROXY__.getLinetypeId(...args);
             
         };
-    
+        
         // function 
         RImageEntity.prototype.getLinetypePattern = function(...args) 
           
@@ -758,7 +758,7 @@
               return this.__PROXY__.getLinetypePattern(...args);
             
         };
-    
+        
         // function 
         RImageEntity.prototype.setLinetypeScale = function(...args) 
           
@@ -768,7 +768,7 @@
               return this.__PROXY__.setLinetypeScale(...args);
             
         };
-    
+        
         // function 
         RImageEntity.prototype.getLinetypeScale = function(...args) 
           
@@ -778,7 +778,7 @@
               return this.__PROXY__.getLinetypeScale(...args);
             
         };
-    
+        
         // function 
         RImageEntity.prototype.setLineweight = function(...args) 
           
@@ -788,7 +788,7 @@
               return this.__PROXY__.setLineweight(...args);
             
         };
-    
+        
         // function 
         RImageEntity.prototype.getLineweight = function(...args) 
           
@@ -798,7 +798,7 @@
               return this.__PROXY__.getLineweight(...args);
             
         };
-    
+        
         // function 
         RImageEntity.prototype.setColor = function(...args) 
           
@@ -808,7 +808,7 @@
               return this.__PROXY__.setColor(...args);
             
         };
-    
+        
         // function 
         RImageEntity.prototype.getColor = function(...args) 
           
@@ -818,7 +818,7 @@
               return this.__PROXY__.getColor(...args);
             
         };
-    
+        
         // function 
         RImageEntity.prototype.getDisplayColor = function(...args) 
           
@@ -828,7 +828,7 @@
               return this.__PROXY__.getDisplayColor(...args);
             
         };
-    
+        
         // function 
         RImageEntity.prototype.copyAttributesFrom = function(...args) 
           
@@ -838,7 +838,7 @@
               return this.__PROXY__.copyAttributesFrom(...args);
             
         };
-    
+        
         // function 
         RImageEntity.prototype.getBoundingBox = function(...args) 
           
@@ -848,7 +848,7 @@
               return this.__PROXY__.getBoundingBox(...args);
             
         };
-    
+        
         // function 
         RImageEntity.prototype.to2D = function(...args) 
           
@@ -858,7 +858,7 @@
               return this.__PROXY__.to2D(...args);
             
         };
-    
+        
         // function 
         RImageEntity.prototype.setZ = function(...args) 
           
@@ -868,7 +868,7 @@
               return this.__PROXY__.setZ(...args);
             
         };
-    
+        
         // function 
         RImageEntity.prototype.getBoundingBoxes = function(...args) 
           
@@ -878,7 +878,7 @@
               return this.__PROXY__.getBoundingBoxes(...args);
             
         };
-    
+        
         // function 
         RImageEntity.prototype.getHull = function(...args) 
           
@@ -888,7 +888,7 @@
               return this.__PROXY__.getHull(...args);
             
         };
-    
+        
         // function 
         RImageEntity.prototype.getShapes = function(...args) 
           
@@ -898,7 +898,7 @@
               return this.__PROXY__.getShapes(...args);
             
         };
-    
+        
         // function 
         RImageEntity.prototype.getClosestSubEntityId = function(...args) 
           
@@ -908,7 +908,7 @@
               return this.__PROXY__.getClosestSubEntityId(...args);
             
         };
-    
+        
         // function 
         RImageEntity.prototype.getClosestShape = function(...args) 
           
@@ -918,7 +918,7 @@
               return this.__PROXY__.getClosestShape(...args);
             
         };
-    
+        
         // function 
         RImageEntity.prototype.getClosestSimpleShape = function(...args) 
           
@@ -928,7 +928,7 @@
               return this.__PROXY__.getClosestSimpleShape(...args);
             
         };
-    
+        
         // function 
         RImageEntity.prototype.isInside = function(...args) 
           
@@ -938,7 +938,7 @@
               return this.__PROXY__.isInside(...args);
             
         };
-    
+        
         // function 
         RImageEntity.prototype.isOnEntity = function(...args) 
           
@@ -948,7 +948,7 @@
               return this.__PROXY__.isOnEntity(...args);
             
         };
-    
+        
         // function 
         RImageEntity.prototype.intersectsWith = function(...args) 
           
@@ -958,7 +958,7 @@
               return this.__PROXY__.intersectsWith(...args);
             
         };
-    
+        
         // function 
         RImageEntity.prototype.getDistanceTo = function(...args) 
           
@@ -968,7 +968,7 @@
               return this.__PROXY__.getDistanceTo(...args);
             
         };
-    
+        
         // function 
         RImageEntity.prototype.getVectorTo = function(...args) 
           
@@ -978,7 +978,7 @@
               return this.__PROXY__.getVectorTo(...args);
             
         };
-    
+        
         // function 
         RImageEntity.prototype.getInternalReferencePoints = function(...args) 
           
@@ -988,7 +988,7 @@
               return this.__PROXY__.getInternalReferencePoints(...args);
             
         };
-    
+        
         // function 
         RImageEntity.prototype.getReferencePoints = function(...args) 
           
@@ -998,7 +998,7 @@
               return this.__PROXY__.getReferencePoints(...args);
             
         };
-    
+        
         // function 
         RImageEntity.prototype.getPointOnEntity = function(...args) 
           
@@ -1008,7 +1008,7 @@
               return this.__PROXY__.getPointOnEntity(...args);
             
         };
-    
+        
         // function 
         RImageEntity.prototype.getEndPoints = function(...args) 
           
@@ -1018,7 +1018,7 @@
               return this.__PROXY__.getEndPoints(...args);
             
         };
-    
+        
         // function 
         RImageEntity.prototype.getMiddlePoints = function(...args) 
           
@@ -1028,7 +1028,7 @@
               return this.__PROXY__.getMiddlePoints(...args);
             
         };
-    
+        
         // function 
         RImageEntity.prototype.getCenterPoints = function(...args) 
           
@@ -1038,7 +1038,7 @@
               return this.__PROXY__.getCenterPoints(...args);
             
         };
-    
+        
         // function 
         RImageEntity.prototype.getClosestPointOnEntity = function(...args) 
           
@@ -1048,7 +1048,7 @@
               return this.__PROXY__.getClosestPointOnEntity(...args);
             
         };
-    
+        
         // function 
         RImageEntity.prototype.getPointsWithDistanceToEnd = function(...args) 
           
@@ -1058,7 +1058,7 @@
               return this.__PROXY__.getPointsWithDistanceToEnd(...args);
             
         };
-    
+        
         // function 
         RImageEntity.prototype.getIntersectionPoints = function(...args) 
           
@@ -1068,7 +1068,7 @@
               return this.__PROXY__.getIntersectionPoints(...args);
             
         };
-    
+        
         // function 
         RImageEntity.prototype.getIntersectionPointsWithShape = function(...args) 
           
@@ -1078,7 +1078,7 @@
               return this.__PROXY__.getIntersectionPointsWithShape(...args);
             
         };
-    
+        
         // function 
         RImageEntity.prototype.clickReferencePoint = function(...args) 
           
@@ -1088,7 +1088,7 @@
               return this.__PROXY__.clickReferencePoint(...args);
             
         };
-    
+        
         // function 
         RImageEntity.prototype.moveReferencePoint = function(...args) 
           
@@ -1098,7 +1098,7 @@
               return this.__PROXY__.moveReferencePoint(...args);
             
         };
-    
+        
         // function 
         RImageEntity.prototype.move = function(...args) 
           
@@ -1108,7 +1108,7 @@
               return this.__PROXY__.move(...args);
             
         };
-    
+        
         // function 
         RImageEntity.prototype.rotate = function(...args) 
           
@@ -1118,7 +1118,7 @@
               return this.__PROXY__.rotate(...args);
             
         };
-    
+        
         // function 
         RImageEntity.prototype.scale = function(...args) 
           
@@ -1128,7 +1128,7 @@
               return this.__PROXY__.scale(...args);
             
         };
-    
+        
         // function 
         RImageEntity.prototype.scaleNonUniform = function(...args) 
           
@@ -1138,7 +1138,7 @@
               return this.__PROXY__.scaleNonUniform(...args);
             
         };
-    
+        
         // function 
         RImageEntity.prototype.scaleVisualProperties = function(...args) 
           
@@ -1148,7 +1148,7 @@
               return this.__PROXY__.scaleVisualProperties(...args);
             
         };
-    
+        
         // function 
         RImageEntity.prototype.setViewportContext = function(...args) 
           
@@ -1158,7 +1158,7 @@
               return this.__PROXY__.setViewportContext(...args);
             
         };
-    
+        
         // function 
         RImageEntity.prototype.mirror = function(...args) 
           
@@ -1168,7 +1168,7 @@
               return this.__PROXY__.mirror(...args);
             
         };
-    
+        
         // function 
         RImageEntity.prototype.flipHorizontal = function(...args) 
           
@@ -1178,7 +1178,7 @@
               return this.__PROXY__.flipHorizontal(...args);
             
         };
-    
+        
         // function 
         RImageEntity.prototype.flipVertical = function(...args) 
           
@@ -1188,7 +1188,7 @@
               return this.__PROXY__.flipVertical(...args);
             
         };
-    
+        
         // function 
         RImageEntity.prototype.stretch = function(...args) 
           
@@ -1198,7 +1198,7 @@
               return this.__PROXY__.stretch(...args);
             
         };
-    
+        
         // function 
         RImageEntity.prototype.update = function(...args) 
           
@@ -1208,7 +1208,7 @@
               return this.__PROXY__.update(...args);
             
         };
-    
+        
         // function 
         RImageEntity.prototype.castToShape = function(...args) 
           
@@ -1218,7 +1218,7 @@
               return this.__PROXY__.castToShape(...args);
             
         };
-    
+        
         // function 
         RImageEntity.prototype.setAutoUpdatesBlocked = function(...args) 
           
@@ -1228,7 +1228,7 @@
               return this.__PROXY__.setAutoUpdatesBlocked(...args);
             
         };
-    
+        
         // function 
         RImageEntity.prototype.isVisible = function(...args) 
           
@@ -1238,7 +1238,7 @@
               return this.__PROXY__.isVisible(...args);
             
         };
-    
+        
         // function 
         RImageEntity.prototype.isEditable = function(...args) 
           
@@ -1248,7 +1248,7 @@
               return this.__PROXY__.isEditable(...args);
             
         };
-    
+        
         // function 
         RImageEntity.prototype.isInWorkingSet = function(...args) 
           
@@ -1258,7 +1258,7 @@
               return this.__PROXY__.isInWorkingSet(...args);
             
         };
-    
+        
         // function 
         RImageEntity.prototype.getComplexity = function(...args) 
           
@@ -1268,7 +1268,7 @@
               return this.__PROXY__.getComplexity(...args);
             
         };
-    
+        
         // function 
         RImageEntity.prototype.setParentId = function(...args) 
           
@@ -1278,7 +1278,7 @@
               return this.__PROXY__.setParentId(...args);
             
         };
-    
+        
         // function 
         RImageEntity.prototype.init = function(...args) 
           
@@ -1288,7 +1288,7 @@
               return this.__PROXY__.init(...args);
             
         };
-    
+        
         // function 
         RImageEntity.prototype.getRtti = function(...args) 
           
@@ -1298,7 +1298,7 @@
               return this.__PROXY__.getRtti(...args);
             
         };
-    
+        
         // function 
         RImageEntity.prototype.getStaticPropertyTypeIds = function(...args) 
           
@@ -1308,7 +1308,7 @@
               return this.__PROXY__.getStaticPropertyTypeIds(...args);
             
         };
-    
+        
         // function 
         RImageEntity.prototype.clone = function(...args) 
           
@@ -1318,7 +1318,7 @@
               return this.__PROXY__.clone(...args);
             
         };
-    
+        
         // function 
         RImageEntity.prototype.setProperty = function(...args) 
           
@@ -1328,7 +1328,7 @@
               return this.__PROXY__.setProperty(...args);
             
         };
-    
+        
         // function 
         RImageEntity.prototype.getProperty = function(...args) 
           
@@ -1338,7 +1338,7 @@
               return this.__PROXY__.getProperty(...args);
             
         };
-    
+        
         // function 
         RImageEntity.prototype.exportEntity = function(...args) 
           
@@ -1348,7 +1348,7 @@
               return this.__PROXY__.exportEntity(...args);
             
         };
-    
+        
         // function 
         RImageEntity.prototype.getData = function(...args) 
           
@@ -1358,7 +1358,7 @@
               return this.__PROXY__.getData(...args);
             
         };
-    
+        
         // function 
         RImageEntity.prototype.getFileName = function(...args) 
           
@@ -1368,7 +1368,7 @@
               return this.__PROXY__.getFileName(...args);
             
         };
-    
+        
         // function 
         RImageEntity.prototype.setFileName = function(...args) 
           
@@ -1378,7 +1378,7 @@
               return this.__PROXY__.setFileName(...args);
             
         };
-    
+        
         // function 
         RImageEntity.prototype.getInsertionPoint = function(...args) 
           
@@ -1388,7 +1388,7 @@
               return this.__PROXY__.getInsertionPoint(...args);
             
         };
-    
+        
         // function 
         RImageEntity.prototype.setInsertionPoint = function(...args) 
           
@@ -1398,7 +1398,7 @@
               return this.__PROXY__.setInsertionPoint(...args);
             
         };
-    
+        
         // function 
         RImageEntity.prototype.getUVector = function(...args) 
           
@@ -1408,7 +1408,7 @@
               return this.__PROXY__.getUVector(...args);
             
         };
-    
+        
         // function 
         RImageEntity.prototype.getVVector = function(...args) 
           
@@ -1418,7 +1418,7 @@
               return this.__PROXY__.getVVector(...args);
             
         };
-    
+        
         // function 
         RImageEntity.prototype.getBrightness = function(...args) 
           
@@ -1428,7 +1428,7 @@
               return this.__PROXY__.getBrightness(...args);
             
         };
-    
+        
         // function 
         RImageEntity.prototype.getContrast = function(...args) 
           
@@ -1438,7 +1438,7 @@
               return this.__PROXY__.getContrast(...args);
             
         };
-    
+        
         // function 
         RImageEntity.prototype.getFade = function(...args) 
           
@@ -1448,7 +1448,7 @@
               return this.__PROXY__.getFade(...args);
             
         };
-    
+        
         // function 
         RImageEntity.prototype.setWidth = function(...args) 
           
@@ -1458,7 +1458,7 @@
               return this.__PROXY__.setWidth(...args);
             
         };
-    
+        
         // function 
         RImageEntity.prototype.setHeight = function(...args) 
           
@@ -1468,7 +1468,7 @@
               return this.__PROXY__.setHeight(...args);
             
         };
-    
+        
         // function 
         RImageEntity.prototype.setAngle = function(...args) 
           
@@ -1478,7 +1478,7 @@
               return this.__PROXY__.setAngle(...args);
             
         };
-    
+        
         // function 
         RImageEntity.prototype.getWidth = function(...args) 
           
@@ -1488,7 +1488,7 @@
               return this.__PROXY__.getWidth(...args);
             
         };
-    
+        
         // function 
         RImageEntity.prototype.getHeight = function(...args) 
           
@@ -1498,7 +1498,7 @@
               return this.__PROXY__.getHeight(...args);
             
         };
-    
+        
         // function 
         RImageEntity.prototype.getPixelWidth = function(...args) 
           
@@ -1508,7 +1508,7 @@
               return this.__PROXY__.getPixelWidth(...args);
             
         };
-    
+        
         // function 
         RImageEntity.prototype.getPixelHeight = function(...args) 
           
@@ -1518,7 +1518,7 @@
               return this.__PROXY__.getPixelHeight(...args);
             
         };
-    
+        
         // function 
         RImageEntity.prototype.print = function(...args) 
           
@@ -1528,7 +1528,7 @@
               return this.__PROXY__.print(...args);
             
         };
-    
+        
 
       // static functions:
       

@@ -134,7 +134,7 @@
               return this.__PROXY__.registerFileExporter(...args);
             
         };
-    
+        
         // function 
         RFileExporterRegistry.prototype.unregisterFileExporter = function(...args) 
           
@@ -144,7 +144,7 @@
               return this.__PROXY__.unregisterFileExporter(...args);
             
         };
-    
+        
         // function 
         RFileExporterRegistry.prototype.getFileExporter = function(...args) 
           
@@ -154,7 +154,7 @@
               return this.__PROXY__.getFileExporter(...args);
             
         };
-    
+        
         // function 
         RFileExporterRegistry.prototype.getFilterStrings = function(...args) 
           
@@ -164,7 +164,7 @@
               return this.__PROXY__.getFilterStrings(...args);
             
         };
-    
+        
 
       // static functions:
       

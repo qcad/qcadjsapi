@@ -166,7 +166,7 @@
               return this.__PROXY__.getEntityTypeFilter(...args);
             
         };
-    
+        
         // function 
         RDeleteObjectsOperation.prototype.setRecordAffectedObjects = function(...args) 
           
@@ -176,7 +176,7 @@
               return this.__PROXY__.setRecordAffectedObjects(...args);
             
         };
-    
+        
         // function 
         RDeleteObjectsOperation.prototype.setSpatialIndexDisabled = function(...args) 
           
@@ -186,7 +186,7 @@
               return this.__PROXY__.setSpatialIndexDisabled(...args);
             
         };
-    
+        
         // function 
         RDeleteObjectsOperation.prototype.setAllowInvisible = function(...args) 
           
@@ -196,7 +196,7 @@
               return this.__PROXY__.setAllowInvisible(...args);
             
         };
-    
+        
         // function 
         RDeleteObjectsOperation.prototype.setAllowAll = function(...args) 
           
@@ -206,7 +206,7 @@
               return this.__PROXY__.setAllowAll(...args);
             
         };
-    
+        
         // function 
         RDeleteObjectsOperation.prototype.setKeepChildren = function(...args) 
           
@@ -216,7 +216,7 @@
               return this.__PROXY__.setKeepChildren(...args);
             
         };
-    
+        
         // function 
         RDeleteObjectsOperation.prototype.setTransactionGroup = function(...args) 
           
@@ -226,7 +226,7 @@
               return this.__PROXY__.setTransactionGroup(...args);
             
         };
-    
+        
         // function 
         RDeleteObjectsOperation.prototype.getTransactionGroup = function(...args) 
           
@@ -236,7 +236,7 @@
               return this.__PROXY__.getTransactionGroup(...args);
             
         };
-    
+        
         // function 
         RDeleteObjectsOperation.prototype.setText = function(...args) 
           
@@ -246,7 +246,7 @@
               return this.__PROXY__.setText(...args);
             
         };
-    
+        
         // function 
         RDeleteObjectsOperation.prototype.getText = function(...args) 
           
@@ -256,7 +256,7 @@
               return this.__PROXY__.getText(...args);
             
         };
-    
+        
         // function 
         RDeleteObjectsOperation.prototype.getTransactionTypes = function(...args) 
           
@@ -266,7 +266,7 @@
               return this.__PROXY__.getTransactionTypes(...args);
             
         };
-    
+        
         // function 
         RDeleteObjectsOperation.prototype.setTransactionType = function(...args) 
           
@@ -276,7 +276,7 @@
               return this.__PROXY__.setTransactionType(...args);
             
         };
-    
+        
         // function 
         RDeleteObjectsOperation.prototype.getTransactionType = function(...args) 
           
@@ -286,7 +286,7 @@
               return this.__PROXY__.getTransactionType(...args);
             
         };
-    
+        
         // function 
         RDeleteObjectsOperation.prototype.deleteObject = function(...args) 
           
@@ -296,7 +296,7 @@
               return this.__PROXY__.deleteObject(...args);
             
         };
-    
+        
         // function 
         RDeleteObjectsOperation.prototype.apply = function(...args) 
           
@@ -306,7 +306,7 @@
               return this.__PROXY__.apply(...args);
             
         };
-    
+        
 
       // static functions:
       RDeleteObjectsOperation.prototype.isNullWrapper = function() {

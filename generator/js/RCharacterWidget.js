@@ -143,7 +143,8 @@
               return this.__PROXY__.eventFilterSuper(...args);
             
         };
-    
+        RCharacterWidget.prototype.eventFilter.__SUPER__ = true;
+        
         // function 
         RCharacterWidget.prototype.setObjectName = function(...args) 
           
@@ -153,7 +154,7 @@
               return this.__PROXY__.setObjectName(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.isWidgetType = function(...args) 
           
@@ -163,7 +164,7 @@
               return this.__PROXY__.isWidgetType(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.isWindowType = function(...args) 
           
@@ -173,7 +174,7 @@
               return this.__PROXY__.isWindowType(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.signalsBlocked = function(...args) 
           
@@ -183,7 +184,7 @@
               return this.__PROXY__.signalsBlocked(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.blockSignals = function(...args) 
           
@@ -193,7 +194,7 @@
               return this.__PROXY__.blockSignals(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.findChild = function(...args) 
           
@@ -203,7 +204,7 @@
               return this.__PROXY__.findChild(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.children = function(...args) 
           
@@ -213,7 +214,7 @@
               return this.__PROXY__.children(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.installEventFilter = function(...args) 
           
@@ -223,7 +224,7 @@
               return this.__PROXY__.installEventFilter(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.removeEventFilter = function(...args) 
           
@@ -233,7 +234,7 @@
               return this.__PROXY__.removeEventFilter(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.dumpObjectTree = function(...args) 
           
@@ -243,7 +244,7 @@
               return this.__PROXY__.dumpObjectTree(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.dumpObjectInfo = function(...args) 
           
@@ -253,7 +254,7 @@
               return this.__PROXY__.dumpObjectInfo(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.setProperty = function(...args) 
           
@@ -263,7 +264,7 @@
               return this.__PROXY__.setProperty(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.property = function(...args) 
           
@@ -273,7 +274,7 @@
               return this.__PROXY__.property(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.dynamicPropertyNames = function(...args) 
           
@@ -283,7 +284,7 @@
               return this.__PROXY__.dynamicPropertyNames(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.parent = function(...args) 
           
@@ -293,7 +294,7 @@
               return this.__PROXY__.parent(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.deleteLater = function(...args) 
           
@@ -303,7 +304,7 @@
               return this.__PROXY__.deleteLater(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.devType = function(...args) 
           
@@ -313,7 +314,7 @@
               return this.__PROXY__.devType(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.createWinId = function(...args) 
           
@@ -323,7 +324,7 @@
               return this.__PROXY__.createWinId(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.isWindow = function(...args) 
           
@@ -333,7 +334,7 @@
               return this.__PROXY__.isWindow(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.isModal = function(...args) 
           
@@ -343,7 +344,7 @@
               return this.__PROXY__.isModal(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.setWindowModality = function(...args) 
           
@@ -353,7 +354,7 @@
               return this.__PROXY__.setWindowModality(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.isEnabled = function(...args) 
           
@@ -363,7 +364,7 @@
               return this.__PROXY__.isEnabled(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.isEnabledTo = function(...args) 
           
@@ -373,7 +374,7 @@
               return this.__PROXY__.isEnabledTo(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.setEnabled = function(...args) 
           
@@ -383,7 +384,7 @@
               return this.__PROXY__.setEnabled(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.setDisabled = function(...args) 
           
@@ -393,7 +394,7 @@
               return this.__PROXY__.setDisabled(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.setWindowModified = function(...args) 
           
@@ -403,7 +404,7 @@
               return this.__PROXY__.setWindowModified(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.setMinimumSize = function(...args) 
           
@@ -413,7 +414,7 @@
               return this.__PROXY__.setMinimumSize(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.setMaximumSize = function(...args) 
           
@@ -423,7 +424,7 @@
               return this.__PROXY__.setMaximumSize(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.setMinimumWidth = function(...args) 
           
@@ -433,7 +434,7 @@
               return this.__PROXY__.setMinimumWidth(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.setMinimumHeight = function(...args) 
           
@@ -443,7 +444,7 @@
               return this.__PROXY__.setMinimumHeight(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.setMaximumWidth = function(...args) 
           
@@ -453,7 +454,7 @@
               return this.__PROXY__.setMaximumWidth(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.setMaximumHeight = function(...args) 
           
@@ -463,7 +464,7 @@
               return this.__PROXY__.setMaximumHeight(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.setSizeIncrement = function(...args) 
           
@@ -473,7 +474,7 @@
               return this.__PROXY__.setSizeIncrement(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.setBaseSize = function(...args) 
           
@@ -483,7 +484,7 @@
               return this.__PROXY__.setBaseSize(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.setFixedSize = function(...args) 
           
@@ -493,7 +494,7 @@
               return this.__PROXY__.setFixedSize(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.setFixedWidth = function(...args) 
           
@@ -503,7 +504,7 @@
               return this.__PROXY__.setFixedWidth(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.setFixedHeight = function(...args) 
           
@@ -513,7 +514,7 @@
               return this.__PROXY__.setFixedHeight(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.mapToGlobal = function(...args) 
           
@@ -523,7 +524,7 @@
               return this.__PROXY__.mapToGlobal(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.mapFromGlobal = function(...args) 
           
@@ -533,7 +534,7 @@
               return this.__PROXY__.mapFromGlobal(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.mapToParent = function(...args) 
           
@@ -543,7 +544,7 @@
               return this.__PROXY__.mapToParent(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.mapFromParent = function(...args) 
           
@@ -553,7 +554,7 @@
               return this.__PROXY__.mapFromParent(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.mapTo = function(...args) 
           
@@ -563,7 +564,7 @@
               return this.__PROXY__.mapTo(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.mapFrom = function(...args) 
           
@@ -573,7 +574,7 @@
               return this.__PROXY__.mapFrom(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.window = function(...args) 
           
@@ -583,7 +584,7 @@
               return this.__PROXY__.window(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.nativeParentWidget = function(...args) 
           
@@ -593,7 +594,7 @@
               return this.__PROXY__.nativeParentWidget(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.topLevelWidget = function(...args) 
           
@@ -603,7 +604,7 @@
               return this.__PROXY__.topLevelWidget(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.setPalette = function(...args) 
           
@@ -613,7 +614,7 @@
               return this.__PROXY__.setPalette(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.setBackgroundRole = function(...args) 
           
@@ -623,7 +624,7 @@
               return this.__PROXY__.setBackgroundRole(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.backgroundRole = function(...args) 
           
@@ -633,7 +634,7 @@
               return this.__PROXY__.backgroundRole(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.setForegroundRole = function(...args) 
           
@@ -643,7 +644,7 @@
               return this.__PROXY__.setForegroundRole(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.foregroundRole = function(...args) 
           
@@ -653,7 +654,7 @@
               return this.__PROXY__.foregroundRole(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.setFont = function(...args) 
           
@@ -663,7 +664,7 @@
               return this.__PROXY__.setFont(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.fontInfo = function(...args) 
           
@@ -673,7 +674,7 @@
               return this.__PROXY__.fontInfo(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.setCursor = function(...args) 
           
@@ -683,7 +684,7 @@
               return this.__PROXY__.setCursor(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.unsetCursor = function(...args) 
           
@@ -693,7 +694,7 @@
               return this.__PROXY__.unsetCursor(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.setMouseTracking = function(...args) 
           
@@ -703,7 +704,7 @@
               return this.__PROXY__.setMouseTracking(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.hasMouseTracking = function(...args) 
           
@@ -713,7 +714,7 @@
               return this.__PROXY__.hasMouseTracking(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.underMouse = function(...args) 
           
@@ -723,7 +724,7 @@
               return this.__PROXY__.underMouse(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.setTabletTracking = function(...args) 
           
@@ -733,7 +734,7 @@
               return this.__PROXY__.setTabletTracking(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.hasTabletTracking = function(...args) 
           
@@ -743,7 +744,7 @@
               return this.__PROXY__.hasTabletTracking(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.setMask = function(...args) 
           
@@ -753,7 +754,7 @@
               return this.__PROXY__.setMask(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.mask = function(...args) 
           
@@ -763,7 +764,7 @@
               return this.__PROXY__.mask(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.clearMask = function(...args) 
           
@@ -773,7 +774,7 @@
               return this.__PROXY__.clearMask(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.grab = function(...args) 
           
@@ -783,7 +784,7 @@
               return this.__PROXY__.grab(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.grabGesture = function(...args) 
           
@@ -793,7 +794,7 @@
               return this.__PROXY__.grabGesture(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.ungrabGesture = function(...args) 
           
@@ -803,7 +804,7 @@
               return this.__PROXY__.ungrabGesture(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.setWindowTitle = function(...args) 
           
@@ -813,7 +814,7 @@
               return this.__PROXY__.setWindowTitle(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.setStyleSheet = function(...args) 
           
@@ -823,7 +824,7 @@
               return this.__PROXY__.setStyleSheet(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.setWindowIcon = function(...args) 
           
@@ -833,7 +834,7 @@
               return this.__PROXY__.setWindowIcon(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.setWindowIconText = function(...args) 
           
@@ -843,7 +844,7 @@
               return this.__PROXY__.setWindowIconText(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.setWindowRole = function(...args) 
           
@@ -853,7 +854,7 @@
               return this.__PROXY__.setWindowRole(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.windowRole = function(...args) 
           
@@ -863,7 +864,7 @@
               return this.__PROXY__.windowRole(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.setWindowFilePath = function(...args) 
           
@@ -873,7 +874,7 @@
               return this.__PROXY__.setWindowFilePath(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.setWindowOpacity = function(...args) 
           
@@ -883,7 +884,7 @@
               return this.__PROXY__.setWindowOpacity(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.isWindowModified = function(...args) 
           
@@ -893,7 +894,7 @@
               return this.__PROXY__.isWindowModified(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.setToolTip = function(...args) 
           
@@ -903,7 +904,7 @@
               return this.__PROXY__.setToolTip(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.setToolTipDuration = function(...args) 
           
@@ -913,7 +914,7 @@
               return this.__PROXY__.setToolTipDuration(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.setStatusTip = function(...args) 
           
@@ -923,7 +924,7 @@
               return this.__PROXY__.setStatusTip(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.setWhatsThis = function(...args) 
           
@@ -933,7 +934,7 @@
               return this.__PROXY__.setWhatsThis(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.setAccessibleName = function(...args) 
           
@@ -943,7 +944,7 @@
               return this.__PROXY__.setAccessibleName(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.setAccessibleDescription = function(...args) 
           
@@ -953,7 +954,7 @@
               return this.__PROXY__.setAccessibleDescription(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.setLayoutDirection = function(...args) 
           
@@ -963,7 +964,7 @@
               return this.__PROXY__.setLayoutDirection(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.unsetLayoutDirection = function(...args) 
           
@@ -973,7 +974,7 @@
               return this.__PROXY__.unsetLayoutDirection(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.setLocale = function(...args) 
           
@@ -983,7 +984,7 @@
               return this.__PROXY__.setLocale(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.unsetLocale = function(...args) 
           
@@ -993,7 +994,7 @@
               return this.__PROXY__.unsetLocale(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.isRightToLeft = function(...args) 
           
@@ -1003,7 +1004,7 @@
               return this.__PROXY__.isRightToLeft(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.isLeftToRight = function(...args) 
           
@@ -1013,7 +1014,7 @@
               return this.__PROXY__.isLeftToRight(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.activateWindow = function(...args) 
           
@@ -1023,7 +1024,7 @@
               return this.__PROXY__.activateWindow(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.clearFocus = function(...args) 
           
@@ -1033,7 +1034,7 @@
               return this.__PROXY__.clearFocus(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.setFocus = function(...args) 
           
@@ -1043,7 +1044,7 @@
               return this.__PROXY__.setFocus(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.setFocusPolicy = function(...args) 
           
@@ -1053,7 +1054,7 @@
               return this.__PROXY__.setFocusPolicy(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.hasFocus = function(...args) 
           
@@ -1063,7 +1064,7 @@
               return this.__PROXY__.hasFocus(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.setFocusProxy = function(...args) 
           
@@ -1073,7 +1074,7 @@
               return this.__PROXY__.setFocusProxy(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.focusProxy = function(...args) 
           
@@ -1083,7 +1084,7 @@
               return this.__PROXY__.focusProxy(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.setContextMenuPolicy = function(...args) 
           
@@ -1093,7 +1094,7 @@
               return this.__PROXY__.setContextMenuPolicy(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.grabMouse = function(...args) 
           
@@ -1103,7 +1104,7 @@
               return this.__PROXY__.grabMouse(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.releaseMouse = function(...args) 
           
@@ -1113,7 +1114,7 @@
               return this.__PROXY__.releaseMouse(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.grabKeyboard = function(...args) 
           
@@ -1123,7 +1124,7 @@
               return this.__PROXY__.grabKeyboard(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.releaseKeyboard = function(...args) 
           
@@ -1133,7 +1134,7 @@
               return this.__PROXY__.releaseKeyboard(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.grabShortcut = function(...args) 
           
@@ -1143,7 +1144,7 @@
               return this.__PROXY__.grabShortcut(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.releaseShortcut = function(...args) 
           
@@ -1153,7 +1154,7 @@
               return this.__PROXY__.releaseShortcut(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.setShortcutEnabled = function(...args) 
           
@@ -1163,7 +1164,7 @@
               return this.__PROXY__.setShortcutEnabled(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.setShortcutAutoRepeat = function(...args) 
           
@@ -1173,7 +1174,7 @@
               return this.__PROXY__.setShortcutAutoRepeat(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.setUpdatesEnabled = function(...args) 
           
@@ -1183,7 +1184,7 @@
               return this.__PROXY__.setUpdatesEnabled(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.update = function(...args) 
           
@@ -1193,7 +1194,7 @@
               return this.__PROXY__.update(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.repaint = function(...args) 
           
@@ -1203,7 +1204,7 @@
               return this.__PROXY__.repaint(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.setVisible = function(...args) 
           
@@ -1213,7 +1214,7 @@
               return this.__PROXY__.setVisible(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.setHidden = function(...args) 
           
@@ -1223,7 +1224,7 @@
               return this.__PROXY__.setHidden(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.show = function(...args) 
           
@@ -1233,7 +1234,7 @@
               return this.__PROXY__.show(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.hide = function(...args) 
           
@@ -1243,7 +1244,7 @@
               return this.__PROXY__.hide(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.showMinimized = function(...args) 
           
@@ -1253,7 +1254,7 @@
               return this.__PROXY__.showMinimized(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.showMaximized = function(...args) 
           
@@ -1263,7 +1264,7 @@
               return this.__PROXY__.showMaximized(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.showFullScreen = function(...args) 
           
@@ -1273,7 +1274,7 @@
               return this.__PROXY__.showFullScreen(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.showNormal = function(...args) 
           
@@ -1283,7 +1284,7 @@
               return this.__PROXY__.showNormal(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.close = function(...args) 
           
@@ -1293,7 +1294,7 @@
               return this.__PROXY__.close(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.raise = function(...args) 
           
@@ -1303,7 +1304,7 @@
               return this.__PROXY__.raise(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.lower = function(...args) 
           
@@ -1313,7 +1314,7 @@
               return this.__PROXY__.lower(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.stackUnder = function(...args) 
           
@@ -1323,7 +1324,7 @@
               return this.__PROXY__.stackUnder(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.move = function(...args) 
           
@@ -1333,7 +1334,7 @@
               return this.__PROXY__.move(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.resize = function(...args) 
           
@@ -1343,7 +1344,7 @@
               return this.__PROXY__.resize(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.setGeometry = function(...args) 
           
@@ -1353,7 +1354,7 @@
               return this.__PROXY__.setGeometry(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.saveGeometry = function(...args) 
           
@@ -1363,7 +1364,7 @@
               return this.__PROXY__.saveGeometry(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.restoreGeometry = function(...args) 
           
@@ -1373,7 +1374,7 @@
               return this.__PROXY__.restoreGeometry(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.adjustSize = function(...args) 
           
@@ -1383,7 +1384,7 @@
               return this.__PROXY__.adjustSize(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.isVisible = function(...args) 
           
@@ -1393,7 +1394,7 @@
               return this.__PROXY__.isVisible(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.isVisibleTo = function(...args) 
           
@@ -1403,7 +1404,7 @@
               return this.__PROXY__.isVisibleTo(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.isHidden = function(...args) 
           
@@ -1413,7 +1414,7 @@
               return this.__PROXY__.isHidden(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.isMinimized = function(...args) 
           
@@ -1423,7 +1424,7 @@
               return this.__PROXY__.isMinimized(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.isMaximized = function(...args) 
           
@@ -1433,7 +1434,7 @@
               return this.__PROXY__.isMaximized(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.isFullScreen = function(...args) 
           
@@ -1443,7 +1444,7 @@
               return this.__PROXY__.isFullScreen(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.windowState = function(...args) 
           
@@ -1453,7 +1454,7 @@
               return this.__PROXY__.windowState(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.setWindowState = function(...args) 
           
@@ -1463,7 +1464,7 @@
               return this.__PROXY__.setWindowState(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.overrideWindowState = function(...args) 
           
@@ -1473,7 +1474,7 @@
               return this.__PROXY__.overrideWindowState(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.setSizePolicy = function(...args) 
           
@@ -1483,7 +1484,7 @@
               return this.__PROXY__.setSizePolicy(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.heightForWidth = function(...args) 
           
@@ -1493,7 +1494,7 @@
               return this.__PROXY__.heightForWidth(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.hasHeightForWidth = function(...args) 
           
@@ -1503,7 +1504,7 @@
               return this.__PROXY__.hasHeightForWidth(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.visibleRegion = function(...args) 
           
@@ -1513,7 +1514,7 @@
               return this.__PROXY__.visibleRegion(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.setContentsMargins = function(...args) 
           
@@ -1523,7 +1524,7 @@
               return this.__PROXY__.setContentsMargins(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.contentsMargins = function(...args) 
           
@@ -1533,7 +1534,7 @@
               return this.__PROXY__.contentsMargins(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.contentsRect = function(...args) 
           
@@ -1543,7 +1544,7 @@
               return this.__PROXY__.contentsRect(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.layout = function(...args) 
           
@@ -1553,7 +1554,7 @@
               return this.__PROXY__.layout(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.setLayout = function(...args) 
           
@@ -1563,7 +1564,7 @@
               return this.__PROXY__.setLayout(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.updateGeometry = function(...args) 
           
@@ -1573,7 +1574,7 @@
               return this.__PROXY__.updateGeometry(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.setParent = function(...args) 
           
@@ -1583,7 +1584,7 @@
               return this.__PROXY__.setParent(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.scroll = function(...args) 
           
@@ -1593,7 +1594,7 @@
               return this.__PROXY__.scroll(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.focusWidget = function(...args) 
           
@@ -1603,7 +1604,7 @@
               return this.__PROXY__.focusWidget(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.nextInFocusChain = function(...args) 
           
@@ -1613,7 +1614,7 @@
               return this.__PROXY__.nextInFocusChain(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.previousInFocusChain = function(...args) 
           
@@ -1623,7 +1624,7 @@
               return this.__PROXY__.previousInFocusChain(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.setAcceptDrops = function(...args) 
           
@@ -1633,7 +1634,7 @@
               return this.__PROXY__.setAcceptDrops(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.addAction = function(...args) 
           
@@ -1643,7 +1644,7 @@
               return this.__PROXY__.addAction(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.addActions = function(...args) 
           
@@ -1653,7 +1654,7 @@
               return this.__PROXY__.addActions(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.insertActions = function(...args) 
           
@@ -1663,7 +1664,7 @@
               return this.__PROXY__.insertActions(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.insertAction = function(...args) 
           
@@ -1673,7 +1674,7 @@
               return this.__PROXY__.insertAction(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.removeAction = function(...args) 
           
@@ -1683,7 +1684,7 @@
               return this.__PROXY__.removeAction(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.actions = function(...args) 
           
@@ -1693,7 +1694,7 @@
               return this.__PROXY__.actions(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.parentWidget = function(...args) 
           
@@ -1703,7 +1704,7 @@
               return this.__PROXY__.parentWidget(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.setWindowFlags = function(...args) 
           
@@ -1713,7 +1714,7 @@
               return this.__PROXY__.setWindowFlags(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.windowFlags = function(...args) 
           
@@ -1723,7 +1724,7 @@
               return this.__PROXY__.windowFlags(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.setWindowFlag = function(...args) 
           
@@ -1733,7 +1734,7 @@
               return this.__PROXY__.setWindowFlag(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.overrideWindowFlags = function(...args) 
           
@@ -1743,7 +1744,7 @@
               return this.__PROXY__.overrideWindowFlags(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.windowType = function(...args) 
           
@@ -1753,7 +1754,7 @@
               return this.__PROXY__.windowType(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.childAt = function(...args) 
           
@@ -1763,7 +1764,7 @@
               return this.__PROXY__.childAt(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.setAttribute = function(...args) 
           
@@ -1773,7 +1774,7 @@
               return this.__PROXY__.setAttribute(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.testAttribute = function(...args) 
           
@@ -1783,7 +1784,7 @@
               return this.__PROXY__.testAttribute(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.ensurePolished = function(...args) 
           
@@ -1793,7 +1794,7 @@
               return this.__PROXY__.ensurePolished(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.isAncestorOf = function(...args) 
           
@@ -1803,7 +1804,7 @@
               return this.__PROXY__.isAncestorOf(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.setAutoFillBackground = function(...args) 
           
@@ -1813,7 +1814,7 @@
               return this.__PROXY__.setAutoFillBackground(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.event = function(...args) 
           
@@ -1823,7 +1824,7 @@
               return this.__PROXY__.event(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.mouseReleaseEvent = function(...args) 
           
@@ -1833,7 +1834,8 @@
               return this.__PROXY__.mouseReleaseEventSuper(...args);
             
         };
-    
+        RCharacterWidget.prototype.mouseReleaseEvent.__SUPER__ = true;
+        
         // function 
         RCharacterWidget.prototype.mouseDoubleClickEvent = function(...args) 
           
@@ -1843,7 +1845,7 @@
               return this.__PROXY__.mouseDoubleClickEvent(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.wheelEvent = function(...args) 
           
@@ -1853,7 +1855,7 @@
               return this.__PROXY__.wheelEvent(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.keyPressEvent = function(...args) 
           
@@ -1863,7 +1865,7 @@
               return this.__PROXY__.keyPressEvent(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.keyReleaseEvent = function(...args) 
           
@@ -1873,7 +1875,7 @@
               return this.__PROXY__.keyReleaseEvent(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.focusInEvent = function(...args) 
           
@@ -1883,7 +1885,7 @@
               return this.__PROXY__.focusInEvent(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.focusOutEvent = function(...args) 
           
@@ -1893,7 +1895,7 @@
               return this.__PROXY__.focusOutEvent(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.enterEvent = function(...args) 
           
@@ -1903,7 +1905,7 @@
               return this.__PROXY__.enterEvent(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.leaveEvent = function(...args) 
           
@@ -1913,7 +1915,7 @@
               return this.__PROXY__.leaveEvent(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.moveEvent = function(...args) 
           
@@ -1923,7 +1925,7 @@
               return this.__PROXY__.moveEvent(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.resizeEvent = function(...args) 
           
@@ -1933,7 +1935,8 @@
               return this.__PROXY__.resizeEventSuper(...args);
             
         };
-    
+        RCharacterWidget.prototype.resizeEvent.__SUPER__ = true;
+        
         // function 
         RCharacterWidget.prototype.closeEvent = function(...args) 
           
@@ -1943,7 +1946,7 @@
               return this.__PROXY__.closeEvent(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.tabletEvent = function(...args) 
           
@@ -1953,7 +1956,7 @@
               return this.__PROXY__.tabletEvent(...args);
             
         };
-    
+        
       // function 
       RCharacterWidget.prototype.actionEvent = function() 
         
@@ -1995,7 +1998,7 @@
               return this.__PROXY__.dragEnterEvent(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.dragMoveEvent = function(...args) 
           
@@ -2005,7 +2008,7 @@
               return this.__PROXY__.dragMoveEvent(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.dragLeaveEvent = function(...args) 
           
@@ -2015,7 +2018,7 @@
               return this.__PROXY__.dragLeaveEvent(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.dropEvent = function(...args) 
           
@@ -2025,7 +2028,7 @@
               return this.__PROXY__.dropEvent(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.showEvent = function(...args) 
           
@@ -2035,7 +2038,7 @@
               return this.__PROXY__.showEvent(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.hideEvent = function(...args) 
           
@@ -2045,7 +2048,7 @@
               return this.__PROXY__.hideEvent(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.nativeEvent = function(...args) 
           
@@ -2055,7 +2058,7 @@
               return this.__PROXY__.nativeEvent(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.changeEvent = function(...args) 
           
@@ -2065,7 +2068,7 @@
               return this.__PROXY__.changeEvent(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.metric = function(...args) 
           
@@ -2075,7 +2078,7 @@
               return this.__PROXY__.metric(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.initPainter = function(...args) 
           
@@ -2085,7 +2088,7 @@
               return this.__PROXY__.initPainter(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.redirected = function(...args) 
           
@@ -2095,7 +2098,7 @@
               return this.__PROXY__.redirected(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.sharedPainter = function(...args) 
           
@@ -2105,7 +2108,7 @@
               return this.__PROXY__.sharedPainter(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.inputMethodEvent = function(...args) 
           
@@ -2115,7 +2118,7 @@
               return this.__PROXY__.inputMethodEvent(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.inputMethodQuery = function(...args) 
           
@@ -2125,7 +2128,7 @@
               return this.__PROXY__.inputMethodQuery(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.setInputMethodHints = function(...args) 
           
@@ -2135,7 +2138,7 @@
               return this.__PROXY__.setInputMethodHints(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.updateMicroFocus = function(...args) 
           
@@ -2145,7 +2148,7 @@
               return this.__PROXY__.updateMicroFocus(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.create = function(...args) 
           
@@ -2155,7 +2158,7 @@
               return this.__PROXY__.create(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.destroy = function(...args) 
           
@@ -2165,7 +2168,7 @@
               return this.__PROXY__.destroy(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.focusNextPrevChild = function(...args) 
           
@@ -2175,7 +2178,7 @@
               return this.__PROXY__.focusNextPrevChild(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.focusNextChild = function(...args) 
           
@@ -2185,7 +2188,7 @@
               return this.__PROXY__.focusNextChild(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.focusPreviousChild = function(...args) 
           
@@ -2195,7 +2198,7 @@
               return this.__PROXY__.focusPreviousChild(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.setBackingStore = function(...args) 
           
@@ -2205,7 +2208,7 @@
               return this.__PROXY__.setBackingStore(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.testAttribute_helper = function(...args) 
           
@@ -2215,7 +2218,7 @@
               return this.__PROXY__.testAttribute_helper(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.takeLayout = function(...args) 
           
@@ -2225,7 +2228,7 @@
               return this.__PROXY__.takeLayout(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.qt_mac_is_metal = function(...args) 
           
@@ -2235,7 +2238,7 @@
               return this.__PROXY__.qt_mac_is_metal(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.qt_qwidget_data = function(...args) 
           
@@ -2245,7 +2248,7 @@
               return this.__PROXY__.qt_qwidget_data(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.qt_widget_private = function(...args) 
           
@@ -2255,7 +2258,7 @@
               return this.__PROXY__.qt_widget_private(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.getDisplayFont = function(...args) 
           
@@ -2265,7 +2268,7 @@
               return this.__PROXY__.getDisplayFont(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.updateFont = function(...args) 
           
@@ -2275,7 +2278,7 @@
               return this.__PROXY__.updateFont(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.updateSize = function(...args) 
           
@@ -2285,7 +2288,7 @@
               return this.__PROXY__.updateSize(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.updateStyle = function(...args) 
           
@@ -2295,7 +2298,7 @@
               return this.__PROXY__.updateStyle(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.updateFontMerging = function(...args) 
           
@@ -2305,7 +2308,7 @@
               return this.__PROXY__.updateFontMerging(...args);
             
         };
-    
+        
         // function 
         RCharacterWidget.prototype.mouseMoveEvent = function(...args) 
           
@@ -2315,7 +2318,8 @@
               return this.__PROXY__.mouseMoveEventSuper(...args);
             
         };
-    
+        RCharacterWidget.prototype.mouseMoveEvent.__SUPER__ = true;
+        
         // function 
         RCharacterWidget.prototype.mousePressEvent = function(...args) 
           
@@ -2325,7 +2329,8 @@
               return this.__PROXY__.mousePressEventSuper(...args);
             
         };
-    
+        RCharacterWidget.prototype.mousePressEvent.__SUPER__ = true;
+        
         // function 
         RCharacterWidget.prototype.paintEvent = function(...args) 
           
@@ -2335,7 +2340,8 @@
               return this.__PROXY__.paintEventSuper(...args);
             
         };
-    
+        RCharacterWidget.prototype.paintEvent.__SUPER__ = true;
+        
 
       // static functions:
       

@@ -105,7 +105,7 @@
               return this.__PROXY__.clearCache(...args);
             
         };
-    
+        
         // function 
         RGrid.prototype.snapToGrid = function(...args) 
           
@@ -115,7 +115,7 @@
               return this.__PROXY__.snapToGrid(...args);
             
         };
-    
+        
         // function 
         RGrid.prototype.update = function(...args) 
           
@@ -125,7 +125,7 @@
               return this.__PROXY__.update(...args);
             
         };
-    
+        
         // function 
         RGrid.prototype.paint = function(...args) 
           
@@ -135,7 +135,7 @@
               return this.__PROXY__.paint(...args);
             
         };
-    
+        
         // function 
         RGrid.prototype.paintMetaGrid = function(...args) 
           
@@ -145,7 +145,7 @@
               return this.__PROXY__.paintMetaGrid(...args);
             
         };
-    
+        
         // function 
         RGrid.prototype.paintCursor = function(...args) 
           
@@ -155,7 +155,7 @@
               return this.__PROXY__.paintCursor(...args);
             
         };
-    
+        
         // function 
         RGrid.prototype.paintRuler = function(...args) 
           
@@ -165,7 +165,7 @@
               return this.__PROXY__.paintRuler(...args);
             
         };
-    
+        
         // function 
         RGrid.prototype.getInfoText = function(...args) 
           
@@ -175,7 +175,7 @@
               return this.__PROXY__.getInfoText(...args);
             
         };
-    
+        
         // function 
         RGrid.prototype.isIsometric = function(...args) 
           
@@ -185,7 +185,7 @@
               return this.__PROXY__.isIsometric(...args);
             
         };
-    
+        
         // function 
         RGrid.prototype.getProjection = function(...args) 
           
@@ -195,7 +195,7 @@
               return this.__PROXY__.getProjection(...args);
             
         };
-    
+        
         // function 
         RGrid.prototype.getViewportNumber = function(...args) 
           
@@ -205,7 +205,7 @@
               return this.__PROXY__.getViewportNumber(...args);
             
         };
-    
+        
         // function 
         RGrid.prototype.getDocument = function(...args) 
           
@@ -215,7 +215,7 @@
               return this.__PROXY__.getDocument(...args);
             
         };
-    
+        
         // function 
         RGrid.prototype.setVisible = function(...args) 
           
@@ -225,7 +225,7 @@
               return this.__PROXY__.setVisible(...args);
             
         };
-    
+        
         // function 
         RGrid.prototype.isVisible = function(...args) 
           
@@ -235,7 +235,7 @@
               return this.__PROXY__.isVisible(...args);
             
         };
-    
+        
 
       // static functions:
       RGrid.prototype.isNullWrapper = function() {

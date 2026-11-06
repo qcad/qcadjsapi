@@ -194,7 +194,7 @@
               return this.__PROXY__.getDocument(...args);
             
         };
-    
+        
         // function 
         RXLineData.prototype.setDocument = function(...args) 
           
@@ -204,7 +204,7 @@
               return this.__PROXY__.setDocument(...args);
             
         };
-    
+        
         // function 
         RXLineData.prototype.isPointType = function(...args) 
           
@@ -214,7 +214,7 @@
               return this.__PROXY__.isPointType(...args);
             
         };
-    
+        
         // function 
         RXLineData.prototype.isValid = function(...args) 
           
@@ -224,7 +224,7 @@
               return this.__PROXY__.isValid(...args);
             
         };
-    
+        
         // function 
         RXLineData.prototype.isSane = function(...args) 
           
@@ -234,7 +234,7 @@
               return this.__PROXY__.isSane(...args);
             
         };
-    
+        
         // function 
         RXLineData.prototype.getClosestSubEntityId = function(...args) 
           
@@ -244,7 +244,7 @@
               return this.__PROXY__.getClosestSubEntityId(...args);
             
         };
-    
+        
         // function 
         RXLineData.prototype.getClosestShape = function(...args) 
           
@@ -254,7 +254,7 @@
               return this.__PROXY__.getClosestShape(...args);
             
         };
-    
+        
         // function 
         RXLineData.prototype.copyAttributesFrom = function(...args) 
           
@@ -264,7 +264,7 @@
               return this.__PROXY__.copyAttributesFrom(...args);
             
         };
-    
+        
         // function 
         RXLineData.prototype.to2D = function(...args) 
           
@@ -274,7 +274,7 @@
               return this.__PROXY__.to2D(...args);
             
         };
-    
+        
         // function 
         RXLineData.prototype.getBoundingBoxes = function(...args) 
           
@@ -284,7 +284,7 @@
               return this.__PROXY__.getBoundingBoxes(...args);
             
         };
-    
+        
         // function 
         RXLineData.prototype.getHull = function(...args) 
           
@@ -294,7 +294,7 @@
               return this.__PROXY__.getHull(...args);
             
         };
-    
+        
         // function 
         RXLineData.prototype.isUpdatesEnabled = function(...args) 
           
@@ -304,7 +304,7 @@
               return this.__PROXY__.isUpdatesEnabled(...args);
             
         };
-    
+        
         // function 
         RXLineData.prototype.setUpdatesEnabled = function(...args) 
           
@@ -314,7 +314,7 @@
               return this.__PROXY__.setUpdatesEnabled(...args);
             
         };
-    
+        
         // function 
         RXLineData.prototype.cloneOnChange = function(...args) 
           
@@ -324,7 +324,7 @@
               return this.__PROXY__.cloneOnChange(...args);
             
         };
-    
+        
         // function 
         RXLineData.prototype.isSelected = function(...args) 
           
@@ -334,7 +334,7 @@
               return this.__PROXY__.isSelected(...args);
             
         };
-    
+        
         // function 
         RXLineData.prototype.setSelected = function(...args) 
           
@@ -344,7 +344,7 @@
               return this.__PROXY__.setSelected(...args);
             
         };
-    
+        
         // function 
         RXLineData.prototype.isSelectedWorkingSet = function(...args) 
           
@@ -354,7 +354,7 @@
               return this.__PROXY__.isSelectedWorkingSet(...args);
             
         };
-    
+        
         // function 
         RXLineData.prototype.setSelectedWorkingSet = function(...args) 
           
@@ -364,7 +364,7 @@
               return this.__PROXY__.setSelectedWorkingSet(...args);
             
         };
-    
+        
         // function 
         RXLineData.prototype.getDrawOrder = function(...args) 
           
@@ -374,7 +374,7 @@
               return this.__PROXY__.getDrawOrder(...args);
             
         };
-    
+        
         // function 
         RXLineData.prototype.setDrawOrder = function(...args) 
           
@@ -384,7 +384,7 @@
               return this.__PROXY__.setDrawOrder(...args);
             
         };
-    
+        
         // function 
         RXLineData.prototype.setLayerId = function(...args) 
           
@@ -394,7 +394,7 @@
               return this.__PROXY__.setLayerId(...args);
             
         };
-    
+        
         // function 
         RXLineData.prototype.getLayerId = function(...args) 
           
@@ -404,7 +404,7 @@
               return this.__PROXY__.getLayerId(...args);
             
         };
-    
+        
         // function 
         RXLineData.prototype.setLayerName = function(...args) 
           
@@ -414,7 +414,7 @@
               return this.__PROXY__.setLayerName(...args);
             
         };
-    
+        
         // function 
         RXLineData.prototype.getLayerName = function(...args) 
           
@@ -424,7 +424,7 @@
               return this.__PROXY__.getLayerName(...args);
             
         };
-    
+        
         // function 
         RXLineData.prototype.setBlockId = function(...args) 
           
@@ -434,7 +434,7 @@
               return this.__PROXY__.setBlockId(...args);
             
         };
-    
+        
         // function 
         RXLineData.prototype.getBlockId = function(...args) 
           
@@ -444,7 +444,7 @@
               return this.__PROXY__.getBlockId(...args);
             
         };
-    
+        
         // function 
         RXLineData.prototype.setParentId = function(...args) 
           
@@ -454,7 +454,7 @@
               return this.__PROXY__.setParentId(...args);
             
         };
-    
+        
         // function 
         RXLineData.prototype.getParentId = function(...args) 
           
@@ -464,7 +464,7 @@
               return this.__PROXY__.getParentId(...args);
             
         };
-    
+        
         // function 
         RXLineData.prototype.getBlockName = function(...args) 
           
@@ -474,7 +474,7 @@
               return this.__PROXY__.getBlockName(...args);
             
         };
-    
+        
         // function 
         RXLineData.prototype.setLinetypeId = function(...args) 
           
@@ -484,7 +484,7 @@
               return this.__PROXY__.setLinetypeId(...args);
             
         };
-    
+        
         // function 
         RXLineData.prototype.getLinetypeId = function(...args) 
           
@@ -494,7 +494,7 @@
               return this.__PROXY__.getLinetypeId(...args);
             
         };
-    
+        
         // function 
         RXLineData.prototype.setLinetypePattern = function(...args) 
           
@@ -504,7 +504,7 @@
               return this.__PROXY__.setLinetypePattern(...args);
             
         };
-    
+        
         // function 
         RXLineData.prototype.getLinetypePattern = function(...args) 
           
@@ -514,7 +514,7 @@
               return this.__PROXY__.getLinetypePattern(...args);
             
         };
-    
+        
         // function 
         RXLineData.prototype.setLinetypeScale = function(...args) 
           
@@ -524,7 +524,7 @@
               return this.__PROXY__.setLinetypeScale(...args);
             
         };
-    
+        
         // function 
         RXLineData.prototype.getLinetypeScale = function(...args) 
           
@@ -534,7 +534,7 @@
               return this.__PROXY__.getLinetypeScale(...args);
             
         };
-    
+        
         // function 
         RXLineData.prototype.getLineweight = function(...args) 
           
@@ -544,7 +544,7 @@
               return this.__PROXY__.getLineweight(...args);
             
         };
-    
+        
         // function 
         RXLineData.prototype.setLineweight = function(...args) 
           
@@ -554,7 +554,7 @@
               return this.__PROXY__.setLineweight(...args);
             
         };
-    
+        
         // function 
         RXLineData.prototype.setColor = function(...args) 
           
@@ -564,7 +564,7 @@
               return this.__PROXY__.setColor(...args);
             
         };
-    
+        
         // function 
         RXLineData.prototype.getColor = function(...args) 
           
@@ -574,7 +574,7 @@
               return this.__PROXY__.getColor(...args);
             
         };
-    
+        
         // function 
         RXLineData.prototype.getDisplayColor = function(...args) 
           
@@ -584,7 +584,7 @@
               return this.__PROXY__.getDisplayColor(...args);
             
         };
-    
+        
         // function 
         RXLineData.prototype.getInternalReferencePoints = function(...args) 
           
@@ -594,7 +594,7 @@
               return this.__PROXY__.getInternalReferencePoints(...args);
             
         };
-    
+        
         // function 
         RXLineData.prototype.getPointOnEntity = function(...args) 
           
@@ -604,7 +604,7 @@
               return this.__PROXY__.getPointOnEntity(...args);
             
         };
-    
+        
         // function 
         RXLineData.prototype.getArcReferencePoints = function(...args) 
           
@@ -614,7 +614,7 @@
               return this.__PROXY__.getArcReferencePoints(...args);
             
         };
-    
+        
         // function 
         RXLineData.prototype.getClosestPointOnEntity = function(...args) 
           
@@ -624,7 +624,7 @@
               return this.__PROXY__.getClosestPointOnEntity(...args);
             
         };
-    
+        
         // function 
         RXLineData.prototype.getIntersectionPoints = function(...args) 
           
@@ -634,7 +634,7 @@
               return this.__PROXY__.getIntersectionPoints(...args);
             
         };
-    
+        
         // function 
         RXLineData.prototype.getDistanceTo = function(...args) 
           
@@ -644,7 +644,7 @@
               return this.__PROXY__.getDistanceTo(...args);
             
         };
-    
+        
         // function 
         RXLineData.prototype.isInside = function(...args) 
           
@@ -654,7 +654,7 @@
               return this.__PROXY__.isInside(...args);
             
         };
-    
+        
         // function 
         RXLineData.prototype.isOnEntity = function(...args) 
           
@@ -664,7 +664,7 @@
               return this.__PROXY__.isOnEntity(...args);
             
         };
-    
+        
         // function 
         RXLineData.prototype.intersectsWith = function(...args) 
           
@@ -674,7 +674,7 @@
               return this.__PROXY__.intersectsWith(...args);
             
         };
-    
+        
         // function 
         RXLineData.prototype.clickReferencePoint = function(...args) 
           
@@ -684,7 +684,7 @@
               return this.__PROXY__.clickReferencePoint(...args);
             
         };
-    
+        
         // function 
         RXLineData.prototype.scaleVisualProperties = function(...args) 
           
@@ -694,7 +694,7 @@
               return this.__PROXY__.scaleVisualProperties(...args);
             
         };
-    
+        
         // function 
         RXLineData.prototype.flipHorizontal = function(...args) 
           
@@ -704,7 +704,7 @@
               return this.__PROXY__.flipHorizontal(...args);
             
         };
-    
+        
         // function 
         RXLineData.prototype.flipVertical = function(...args) 
           
@@ -714,7 +714,7 @@
               return this.__PROXY__.flipVertical(...args);
             
         };
-    
+        
         // function 
         RXLineData.prototype.update = function(...args) 
           
@@ -724,7 +724,7 @@
               return this.__PROXY__.update(...args);
             
         };
-    
+        
         // function 
         RXLineData.prototype.setAutoUpdatesBlocked = function(...args) 
           
@@ -734,7 +734,7 @@
               return this.__PROXY__.setAutoUpdatesBlocked(...args);
             
         };
-    
+        
         // function 
         RXLineData.prototype.getShapeType = function(...args) 
           
@@ -744,7 +744,7 @@
               return this.__PROXY__.getShapeType(...args);
             
         };
-    
+        
         // function 
         RXLineData.prototype.getLineShape = function(...args) 
           
@@ -754,7 +754,7 @@
               return this.__PROXY__.getLineShape(...args);
             
         };
-    
+        
         // function 
         RXLineData.prototype.clone = function(...args) 
           
@@ -764,7 +764,7 @@
               return this.__PROXY__.clone(...args);
             
         };
-    
+        
         // function 
         RXLineData.prototype.isDirected = function(...args) 
           
@@ -774,7 +774,7 @@
               return this.__PROXY__.isDirected(...args);
             
         };
-    
+        
         // function 
         RXLineData.prototype.getBoundingBox = function(...args) 
           
@@ -784,7 +784,7 @@
               return this.__PROXY__.getBoundingBox(...args);
             
         };
-    
+        
         // function 
         RXLineData.prototype.setZ = function(...args) 
           
@@ -794,7 +794,7 @@
               return this.__PROXY__.setZ(...args);
             
         };
-    
+        
         // function 
         RXLineData.prototype.getVectorProperties = function(...args) 
           
@@ -804,7 +804,7 @@
               return this.__PROXY__.getVectorProperties(...args);
             
         };
-    
+        
         // function 
         RXLineData.prototype.getEndPoints = function(...args) 
           
@@ -814,7 +814,7 @@
               return this.__PROXY__.getEndPoints(...args);
             
         };
-    
+        
         // function 
         RXLineData.prototype.getMiddlePoints = function(...args) 
           
@@ -824,7 +824,7 @@
               return this.__PROXY__.getMiddlePoints(...args);
             
         };
-    
+        
         // function 
         RXLineData.prototype.getCenterPoints = function(...args) 
           
@@ -834,7 +834,7 @@
               return this.__PROXY__.getCenterPoints(...args);
             
         };
-    
+        
         // function 
         RXLineData.prototype.getPointsWithDistanceToEnd = function(...args) 
           
@@ -844,7 +844,7 @@
               return this.__PROXY__.getPointsWithDistanceToEnd(...args);
             
         };
-    
+        
         // function 
         RXLineData.prototype.getPointCloud = function(...args) 
           
@@ -854,7 +854,7 @@
               return this.__PROXY__.getPointCloud(...args);
             
         };
-    
+        
         // function 
         RXLineData.prototype.getAngleAt = function(...args) 
           
@@ -864,7 +864,7 @@
               return this.__PROXY__.getAngleAt(...args);
             
         };
-    
+        
         // function 
         RXLineData.prototype.getVectorTo = function(...args) 
           
@@ -874,7 +874,7 @@
               return this.__PROXY__.getVectorTo(...args);
             
         };
-    
+        
         // function 
         RXLineData.prototype.setBasePoint = function(...args) 
           
@@ -884,7 +884,7 @@
               return this.__PROXY__.setBasePoint(...args);
             
         };
-    
+        
         // function 
         RXLineData.prototype.getSecondPoint = function(...args) 
           
@@ -894,7 +894,7 @@
               return this.__PROXY__.getSecondPoint(...args);
             
         };
-    
+        
         // function 
         RXLineData.prototype.setSecondPoint = function(...args) 
           
@@ -904,7 +904,7 @@
               return this.__PROXY__.setSecondPoint(...args);
             
         };
-    
+        
         // function 
         RXLineData.prototype.setDirectionVector = function(...args) 
           
@@ -914,7 +914,7 @@
               return this.__PROXY__.setDirectionVector(...args);
             
         };
-    
+        
         // function 
         RXLineData.prototype.getMiddlePoint = function(...args) 
           
@@ -924,7 +924,7 @@
               return this.__PROXY__.getMiddlePoint(...args);
             
         };
-    
+        
         // function 
         RXLineData.prototype.getLength = function(...args) 
           
@@ -934,7 +934,7 @@
               return this.__PROXY__.getLength(...args);
             
         };
-    
+        
         // function 
         RXLineData.prototype.setLength = function(...args) 
           
@@ -944,7 +944,7 @@
               return this.__PROXY__.setLength(...args);
             
         };
-    
+        
         // function 
         RXLineData.prototype.setAngle = function(...args) 
           
@@ -954,7 +954,7 @@
               return this.__PROXY__.setAngle(...args);
             
         };
-    
+        
         // function 
         RXLineData.prototype.getDirection1 = function(...args) 
           
@@ -964,7 +964,7 @@
               return this.__PROXY__.getDirection1(...args);
             
         };
-    
+        
         // function 
         RXLineData.prototype.getDirection2 = function(...args) 
           
@@ -974,7 +974,7 @@
               return this.__PROXY__.getDirection2(...args);
             
         };
-    
+        
         // function 
         RXLineData.prototype.getStartPoint = function(...args) 
           
@@ -984,7 +984,7 @@
               return this.__PROXY__.getStartPoint(...args);
             
         };
-    
+        
         // function 
         RXLineData.prototype.getEndPoint = function(...args) 
           
@@ -994,7 +994,7 @@
               return this.__PROXY__.getEndPoint(...args);
             
         };
-    
+        
         // function 
         RXLineData.prototype.getDistanceFromStart = function(...args) 
           
@@ -1004,7 +1004,7 @@
               return this.__PROXY__.getDistanceFromStart(...args);
             
         };
-    
+        
         // function 
         RXLineData.prototype.getClippedLine = function(...args) 
           
@@ -1014,7 +1014,7 @@
               return this.__PROXY__.getClippedLine(...args);
             
         };
-    
+        
         // function 
         RXLineData.prototype.move = function(...args) 
           
@@ -1024,7 +1024,7 @@
               return this.__PROXY__.move(...args);
             
         };
-    
+        
         // function 
         RXLineData.prototype.rotate = function(...args) 
           
@@ -1034,7 +1034,7 @@
               return this.__PROXY__.rotate(...args);
             
         };
-    
+        
         // function 
         RXLineData.prototype.scale = function(...args) 
           
@@ -1044,7 +1044,7 @@
               return this.__PROXY__.scale(...args);
             
         };
-    
+        
         // function 
         RXLineData.prototype.mirror = function(...args) 
           
@@ -1054,7 +1054,7 @@
               return this.__PROXY__.mirror(...args);
             
         };
-    
+        
         // function 
         RXLineData.prototype.stretch = function(...args) 
           
@@ -1064,7 +1064,7 @@
               return this.__PROXY__.stretch(...args);
             
         };
-    
+        
         // function 
         RXLineData.prototype.getTransformed = function(...args) 
           
@@ -1074,7 +1074,7 @@
               return this.__PROXY__.getTransformed(...args);
             
         };
-    
+        
         // function 
         RXLineData.prototype.getOffsetShapes = function(...args) 
           
@@ -1084,7 +1084,7 @@
               return this.__PROXY__.getOffsetShapes(...args);
             
         };
-    
+        
         // function 
         RXLineData.prototype.splitAt = function(...args) 
           
@@ -1094,7 +1094,7 @@
               return this.__PROXY__.splitAt(...args);
             
         };
-    
+        
         // function 
         RXLineData.prototype.print = function(...args) 
           
@@ -1104,7 +1104,7 @@
               return this.__PROXY__.print(...args);
             
         };
-    
+        
         // function 
         RXLineData.prototype.copy = function(...args) 
           
@@ -1114,7 +1114,7 @@
               return this.__PROXY__.copy(...args);
             
         };
-    
+        
         // function 
         RXLineData.prototype.getType = function(...args) 
           
@@ -1124,7 +1124,7 @@
               return this.__PROXY__.getType(...args);
             
         };
-    
+        
         // function 
         RXLineData.prototype.getXLine = function(...args) 
           
@@ -1134,7 +1134,7 @@
               return this.__PROXY__.getXLine(...args);
             
         };
-    
+        
         // function 
         RXLineData.prototype.getBasePoint = function(...args) 
           
@@ -1144,7 +1144,7 @@
               return this.__PROXY__.getBasePoint(...args);
             
         };
-    
+        
         // function 
         RXLineData.prototype.getDirectionVector = function(...args) 
           
@@ -1154,7 +1154,7 @@
               return this.__PROXY__.getDirectionVector(...args);
             
         };
-    
+        
         // function 
         RXLineData.prototype.getAngle = function(...args) 
           
@@ -1164,7 +1164,7 @@
               return this.__PROXY__.getAngle(...args);
             
         };
-    
+        
         // function 
         RXLineData.prototype.hasFixedAngle = function(...args) 
           
@@ -1174,7 +1174,7 @@
               return this.__PROXY__.hasFixedAngle(...args);
             
         };
-    
+        
         // function 
         RXLineData.prototype.setFixedAngle = function(...args) 
           
@@ -1184,7 +1184,7 @@
               return this.__PROXY__.setFixedAngle(...args);
             
         };
-    
+        
         // function 
         RXLineData.prototype.reverse = function(...args) 
           
@@ -1194,7 +1194,7 @@
               return this.__PROXY__.reverse(...args);
             
         };
-    
+        
         // function 
         RXLineData.prototype.getTrimEnd = function(...args) 
           
@@ -1204,7 +1204,7 @@
               return this.__PROXY__.getTrimEnd(...args);
             
         };
-    
+        
         // function 
         RXLineData.prototype.trimStartPoint = function(...args) 
           
@@ -1214,7 +1214,7 @@
               return this.__PROXY__.trimStartPoint(...args);
             
         };
-    
+        
         // function 
         RXLineData.prototype.trimEndPoint = function(...args) 
           
@@ -1224,7 +1224,7 @@
               return this.__PROXY__.trimEndPoint(...args);
             
         };
-    
+        
         // function 
         RXLineData.prototype.getSideOfPoint = function(...args) 
           
@@ -1234,7 +1234,7 @@
               return this.__PROXY__.getSideOfPoint(...args);
             
         };
-    
+        
         // function 
         RXLineData.prototype.getReferencePoints = function(...args) 
           
@@ -1244,7 +1244,7 @@
               return this.__PROXY__.getReferencePoints(...args);
             
         };
-    
+        
         // function 
         RXLineData.prototype.moveReferencePoint = function(...args) 
           
@@ -1254,7 +1254,7 @@
               return this.__PROXY__.moveReferencePoint(...args);
             
         };
-    
+        
         // function 
         RXLineData.prototype.castToShape = function(...args) 
           
@@ -1264,7 +1264,7 @@
               return this.__PROXY__.castToShape(...args);
             
         };
-    
+        
         // function 
         RXLineData.prototype.getShapes = function(...args) 
           
@@ -1274,7 +1274,7 @@
               return this.__PROXY__.getShapes(...args);
             
         };
-    
+        
 
       // static functions:
       RXLineData.prototype.isNullWrapper = function() {

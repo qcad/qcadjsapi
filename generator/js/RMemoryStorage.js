@@ -138,7 +138,7 @@
               return this.__PROXY__.setDocument(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.getDocument = function(...args) 
           
@@ -148,7 +148,7 @@
               return this.__PROXY__.getDocument(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.orderBackToFront = function(...args) 
           
@@ -158,7 +158,7 @@
               return this.__PROXY__.orderBackToFront(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.sortBlocks = function(...args) 
           
@@ -168,7 +168,7 @@
               return this.__PROXY__.sortBlocks(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.sortLayers = function(...args) 
           
@@ -178,7 +178,7 @@
               return this.__PROXY__.sortLayers(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.queryCurrentLayer = function(...args) 
           
@@ -188,7 +188,7 @@
               return this.__PROXY__.queryCurrentLayer(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.queryCurrentView = function(...args) 
           
@@ -198,7 +198,7 @@
               return this.__PROXY__.queryCurrentView(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.setCurrentLayer = function(...args) 
           
@@ -208,7 +208,7 @@
               return this.__PROXY__.setCurrentLayer(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.getCurrentLayerId = function(...args) 
           
@@ -218,7 +218,7 @@
               return this.__PROXY__.getCurrentLayerId(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.getCurrentViewId = function(...args) 
           
@@ -228,7 +228,7 @@
               return this.__PROXY__.getCurrentViewId(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.setCurrentColor = function(...args) 
           
@@ -238,7 +238,7 @@
               return this.__PROXY__.setCurrentColor(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.getCurrentColor = function(...args) 
           
@@ -248,7 +248,7 @@
               return this.__PROXY__.getCurrentColor(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.setCurrentLineweight = function(...args) 
           
@@ -258,7 +258,7 @@
               return this.__PROXY__.setCurrentLineweight(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.getCurrentLineweight = function(...args) 
           
@@ -268,7 +268,7 @@
               return this.__PROXY__.getCurrentLineweight(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.setCurrentLinetype = function(...args) 
           
@@ -278,7 +278,7 @@
               return this.__PROXY__.setCurrentLinetype(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.setCurrentLinetypePattern = function(...args) 
           
@@ -288,7 +288,7 @@
               return this.__PROXY__.setCurrentLinetypePattern(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.getCurrentLinetypeId = function(...args) 
           
@@ -298,7 +298,7 @@
               return this.__PROXY__.getCurrentLinetypeId(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.getCurrentLinetypePattern = function(...args) 
           
@@ -308,7 +308,7 @@
               return this.__PROXY__.getCurrentLinetypePattern(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.queryCurrentLinetype = function(...args) 
           
@@ -318,7 +318,7 @@
               return this.__PROXY__.queryCurrentLinetype(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.queryCurrentBlock = function(...args) 
           
@@ -328,7 +328,7 @@
               return this.__PROXY__.queryCurrentBlock(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.getCurrentBlockId = function(...args) 
           
@@ -338,7 +338,7 @@
               return this.__PROXY__.getCurrentBlockId(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.setCurrentViewport = function(...args) 
           
@@ -348,7 +348,7 @@
               return this.__PROXY__.setCurrentViewport(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.unsetCurrentViewport = function(...args) 
           
@@ -358,7 +358,7 @@
               return this.__PROXY__.unsetCurrentViewport(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.getCurrentViewportId = function(...args) 
           
@@ -368,7 +368,7 @@
               return this.__PROXY__.getCurrentViewportId(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.setModelSpaceBlockId = function(...args) 
           
@@ -378,7 +378,7 @@
               return this.__PROXY__.setModelSpaceBlockId(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.getModelSpaceBlockId = function(...args) 
           
@@ -388,7 +388,7 @@
               return this.__PROXY__.getModelSpaceBlockId(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.setCurrentView = function(...args) 
           
@@ -398,7 +398,7 @@
               return this.__PROXY__.setCurrentView(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.setUnit = function(...args) 
           
@@ -408,7 +408,7 @@
               return this.__PROXY__.setUnit(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.getUnit = function(...args) 
           
@@ -418,7 +418,7 @@
               return this.__PROXY__.getUnit(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.setMeasurement = function(...args) 
           
@@ -428,7 +428,7 @@
               return this.__PROXY__.setMeasurement(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.getMeasurement = function(...args) 
           
@@ -438,7 +438,7 @@
               return this.__PROXY__.getMeasurement(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.setDimensionFont = function(...args) 
           
@@ -448,7 +448,7 @@
               return this.__PROXY__.setDimensionFont(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.getDimensionFont = function(...args) 
           
@@ -458,7 +458,7 @@
               return this.__PROXY__.getDimensionFont(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.setLinetypeScale = function(...args) 
           
@@ -468,7 +468,7 @@
               return this.__PROXY__.setLinetypeScale(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.getLinetypeScale = function(...args) 
           
@@ -478,7 +478,7 @@
               return this.__PROXY__.getLinetypeScale(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.hasBlock = function(...args) 
           
@@ -488,7 +488,7 @@
               return this.__PROXY__.hasBlock(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.hasView = function(...args) 
           
@@ -498,7 +498,7 @@
               return this.__PROXY__.hasView(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.setLayer0Id = function(...args) 
           
@@ -508,7 +508,7 @@
               return this.__PROXY__.setLayer0Id(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.getLayer0Id = function(...args) 
           
@@ -518,7 +518,7 @@
               return this.__PROXY__.getLayer0Id(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.hasLayer = function(...args) 
           
@@ -528,7 +528,7 @@
               return this.__PROXY__.hasLayer(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.hasLayerStates = function(...args) 
           
@@ -538,7 +538,7 @@
               return this.__PROXY__.hasLayerStates(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.hasLayerState = function(...args) 
           
@@ -548,7 +548,7 @@
               return this.__PROXY__.hasLayerState(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.hasLayout = function(...args) 
           
@@ -558,7 +558,7 @@
               return this.__PROXY__.hasLayout(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.hasLinetype = function(...args) 
           
@@ -568,7 +568,7 @@
               return this.__PROXY__.hasLinetype(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.hasVariable = function(...args) 
           
@@ -578,7 +578,7 @@
               return this.__PROXY__.hasVariable(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.isEntity = function(...args) 
           
@@ -588,7 +588,7 @@
               return this.__PROXY__.isEntity(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.isLayerLocked = function(...args) 
           
@@ -598,7 +598,7 @@
               return this.__PROXY__.isLayerLocked(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.isParentLayerLocked = function(...args) 
           
@@ -608,7 +608,7 @@
               return this.__PROXY__.isParentLayerLocked(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.isLayerOff = function(...args) 
           
@@ -618,7 +618,7 @@
               return this.__PROXY__.isLayerOff(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.isLayerOffOrFrozen = function(...args) 
           
@@ -628,7 +628,7 @@
               return this.__PROXY__.isLayerOffOrFrozen(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.isLayerFrozen = function(...args) 
           
@@ -638,7 +638,7 @@
               return this.__PROXY__.isLayerFrozen(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.isParentLayerFrozen = function(...args) 
           
@@ -648,7 +648,7 @@
               return this.__PROXY__.isParentLayerFrozen(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.isLayerSnappable = function(...args) 
           
@@ -658,7 +658,7 @@
               return this.__PROXY__.isLayerSnappable(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.isParentLayerSnappable = function(...args) 
           
@@ -668,7 +668,7 @@
               return this.__PROXY__.isParentLayerSnappable(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.isLayerPlottable = function(...args) 
           
@@ -678,7 +678,7 @@
               return this.__PROXY__.isLayerPlottable(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.isParentLayerPlottable = function(...args) 
           
@@ -688,7 +688,7 @@
               return this.__PROXY__.isParentLayerPlottable(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.isBlockFrozen = function(...args) 
           
@@ -698,7 +698,7 @@
               return this.__PROXY__.isBlockFrozen(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.isLayoutBlock = function(...args) 
           
@@ -708,7 +708,7 @@
               return this.__PROXY__.isLayoutBlock(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.setObjectId = function(...args) 
           
@@ -718,7 +718,7 @@
               return this.__PROXY__.setObjectId(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.getLastTransactionId = function(...args) 
           
@@ -728,7 +728,7 @@
               return this.__PROXY__.getLastTransactionId(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.startTransactionGroup = function(...args) 
           
@@ -738,7 +738,7 @@
               return this.__PROXY__.startTransactionGroup(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.getTransactionGroup = function(...args) 
           
@@ -748,7 +748,7 @@
               return this.__PROXY__.getTransactionGroup(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.getNewObjectId = function(...args) 
           
@@ -758,7 +758,7 @@
               return this.__PROXY__.getNewObjectId(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.getMaxObjectId = function(...args) 
           
@@ -768,7 +768,7 @@
               return this.__PROXY__.getMaxObjectId(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.getMaxObjectHandle = function(...args) 
           
@@ -778,7 +778,7 @@
               return this.__PROXY__.getMaxObjectHandle(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.setMaxDrawOrder = function(...args) 
           
@@ -788,7 +788,7 @@
               return this.__PROXY__.setMaxDrawOrder(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.getMaxDrawOrder = function(...args) 
           
@@ -798,7 +798,7 @@
               return this.__PROXY__.getMaxDrawOrder(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.getMinDrawOrder = function(...args) 
           
@@ -808,7 +808,7 @@
               return this.__PROXY__.getMinDrawOrder(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.isInBackStorage = function(...args) 
           
@@ -818,7 +818,7 @@
               return this.__PROXY__.isInBackStorage(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.setModified = function(...args) 
           
@@ -828,7 +828,7 @@
               return this.__PROXY__.setModified(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.isModified = function(...args) 
           
@@ -838,7 +838,7 @@
               return this.__PROXY__.isModified(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.getLastModifiedDateTime = function(...args) 
           
@@ -848,7 +848,7 @@
               return this.__PROXY__.getLastModifiedDateTime(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.getLastModified = function(...args) 
           
@@ -858,7 +858,7 @@
               return this.__PROXY__.getLastModified(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.addModifiedListener = function(...args) 
           
@@ -868,7 +868,7 @@
               return this.__PROXY__.addModifiedListener(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.setNotifyListeners = function(...args) 
           
@@ -878,7 +878,7 @@
               return this.__PROXY__.setNotifyListeners(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.getNotifyListeners = function(...args) 
           
@@ -888,7 +888,7 @@
               return this.__PROXY__.getNotifyListeners(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.clear = function(...args) 
           
@@ -898,7 +898,7 @@
               return this.__PROXY__.clear(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.setCurrentBlock = function(...args) 
           
@@ -908,7 +908,7 @@
               return this.__PROXY__.setCurrentBlock(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.beginTransaction = function(...args) 
           
@@ -918,7 +918,7 @@
               return this.__PROXY__.beginTransaction(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.commitTransaction = function(...args) 
           
@@ -928,7 +928,7 @@
               return this.__PROXY__.commitTransaction(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.rollbackTransaction = function(...args) 
           
@@ -938,7 +938,7 @@
               return this.__PROXY__.rollbackTransaction(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.queryAllObjects = function(...args) 
           
@@ -948,7 +948,7 @@
               return this.__PROXY__.queryAllObjects(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.querySelectedLayers = function(...args) 
           
@@ -958,7 +958,7 @@
               return this.__PROXY__.querySelectedLayers(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.queryAllVisibleEntities = function(...args) 
           
@@ -968,7 +968,7 @@
               return this.__PROXY__.queryAllVisibleEntities(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.queryAllEntities = function(...args) 
           
@@ -978,7 +978,7 @@
               return this.__PROXY__.queryAllEntities(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.queryWorkingSetEntities = function(...args) 
           
@@ -988,7 +988,7 @@
               return this.__PROXY__.queryWorkingSetEntities(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.queryAllUcs = function(...args) 
           
@@ -998,7 +998,7 @@
               return this.__PROXY__.queryAllUcs(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.queryAllLayers = function(...args) 
           
@@ -1008,7 +1008,7 @@
               return this.__PROXY__.queryAllLayers(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.queryAllLayerStates = function(...args) 
           
@@ -1018,7 +1018,7 @@
               return this.__PROXY__.queryAllLayerStates(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.queryAllBlocks = function(...args) 
           
@@ -1028,7 +1028,7 @@
               return this.__PROXY__.queryAllBlocks(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.queryAllLayoutBlocks = function(...args) 
           
@@ -1038,7 +1038,7 @@
               return this.__PROXY__.queryAllLayoutBlocks(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.queryAllLayouts = function(...args) 
           
@@ -1048,7 +1048,7 @@
               return this.__PROXY__.queryAllLayouts(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.queryAllViews = function(...args) 
           
@@ -1058,7 +1058,7 @@
               return this.__PROXY__.queryAllViews(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.queryAllLinetypes = function(...args) 
           
@@ -1068,7 +1068,7 @@
               return this.__PROXY__.queryAllLinetypes(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.queryInfiniteEntities = function(...args) 
           
@@ -1078,7 +1078,7 @@
               return this.__PROXY__.queryInfiniteEntities(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.querySelectedEntities = function(...args) 
           
@@ -1088,7 +1088,7 @@
               return this.__PROXY__.querySelectedEntities(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.queryLayerEntities = function(...args) 
           
@@ -1098,7 +1098,7 @@
               return this.__PROXY__.queryLayerEntities(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.querySelectedLayerEntities = function(...args) 
           
@@ -1108,7 +1108,7 @@
               return this.__PROXY__.querySelectedLayerEntities(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.hasBlockEntities = function(...args) 
           
@@ -1118,7 +1118,7 @@
               return this.__PROXY__.hasBlockEntities(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.queryBlockEntities = function(...args) 
           
@@ -1128,7 +1128,7 @@
               return this.__PROXY__.queryBlockEntities(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.queryLayerBlockEntities = function(...args) 
           
@@ -1138,7 +1138,7 @@
               return this.__PROXY__.queryLayerBlockEntities(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.queryChildEntities = function(...args) 
           
@@ -1148,7 +1148,7 @@
               return this.__PROXY__.queryChildEntities(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.hasChildEntities = function(...args) 
           
@@ -1158,7 +1158,7 @@
               return this.__PROXY__.hasChildEntities(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.queryBlockReferences = function(...args) 
           
@@ -1168,7 +1168,7 @@
               return this.__PROXY__.queryBlockReferences(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.queryAllBlockReferences = function(...args) 
           
@@ -1178,7 +1178,7 @@
               return this.__PROXY__.queryAllBlockReferences(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.queryAllViewports = function(...args) 
           
@@ -1188,7 +1188,7 @@
               return this.__PROXY__.queryAllViewports(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.queryDocumentVariables = function(...args) 
           
@@ -1198,7 +1198,7 @@
               return this.__PROXY__.queryDocumentVariables(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.queryDocumentVariablesDirect = function(...args) 
           
@@ -1208,7 +1208,7 @@
               return this.__PROXY__.queryDocumentVariablesDirect(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.queryDimStyle = function(...args) 
           
@@ -1218,7 +1218,7 @@
               return this.__PROXY__.queryDimStyle(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.queryDimStyleDirect = function(...args) 
           
@@ -1228,7 +1228,7 @@
               return this.__PROXY__.queryDimStyleDirect(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.queryObject = function(...args) 
           
@@ -1238,7 +1238,7 @@
               return this.__PROXY__.queryObject(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.queryObjectByHandle = function(...args) 
           
@@ -1248,7 +1248,7 @@
               return this.__PROXY__.queryObjectByHandle(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.queryObjectByHandleDirect = function(...args) 
           
@@ -1258,7 +1258,7 @@
               return this.__PROXY__.queryObjectByHandleDirect(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.queryEntity = function(...args) 
           
@@ -1268,7 +1268,7 @@
               return this.__PROXY__.queryEntity(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.queryLayer = function(...args) 
           
@@ -1278,7 +1278,7 @@
               return this.__PROXY__.queryLayer(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.queryLayerState = function(...args) 
           
@@ -1288,7 +1288,7 @@
               return this.__PROXY__.queryLayerState(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.queryLayout = function(...args) 
           
@@ -1298,7 +1298,7 @@
               return this.__PROXY__.queryLayout(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.queryBlock = function(...args) 
           
@@ -1308,7 +1308,7 @@
               return this.__PROXY__.queryBlock(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.queryBlockDirect = function(...args) 
           
@@ -1318,7 +1318,7 @@
               return this.__PROXY__.queryBlockDirect(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.queryView = function(...args) 
           
@@ -1328,7 +1328,7 @@
               return this.__PROXY__.queryView(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.queryUcs = function(...args) 
           
@@ -1338,7 +1338,7 @@
               return this.__PROXY__.queryUcs(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.queryLinetypeDirect = function(...args) 
           
@@ -1348,7 +1348,7 @@
               return this.__PROXY__.queryLinetypeDirect(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.queryLinetype = function(...args) 
           
@@ -1358,7 +1358,7 @@
               return this.__PROXY__.queryLinetype(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.clearVisibleCache = function(...args) 
           
@@ -1368,7 +1368,7 @@
               return this.__PROXY__.clearVisibleCache(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.updateVisibleCache = function(...args) 
           
@@ -1378,7 +1378,7 @@
               return this.__PROXY__.updateVisibleCache(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.clearSelectionCache = function(...args) 
           
@@ -1388,7 +1388,7 @@
               return this.__PROXY__.clearSelectionCache(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.updateSelectedEntityMap = function(...args) 
           
@@ -1398,7 +1398,7 @@
               return this.__PROXY__.updateSelectedEntityMap(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.updateSelectedLayerMap = function(...args) 
           
@@ -1408,7 +1408,7 @@
               return this.__PROXY__.updateSelectedLayerMap(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.countSelectedEntities = function(...args) 
           
@@ -1418,7 +1418,7 @@
               return this.__PROXY__.countSelectedEntities(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.clearEntitySelection = function(...args) 
           
@@ -1428,7 +1428,7 @@
               return this.__PROXY__.clearEntitySelection(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.selectAllEntities = function(...args) 
           
@@ -1438,7 +1438,7 @@
               return this.__PROXY__.selectAllEntities(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.selectEntity = function(...args) 
           
@@ -1448,7 +1448,7 @@
               return this.__PROXY__.selectEntity(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.deselectEntity = function(...args) 
           
@@ -1458,7 +1458,7 @@
               return this.__PROXY__.deselectEntity(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.selectEntities = function(...args) 
           
@@ -1468,7 +1468,7 @@
               return this.__PROXY__.selectEntities(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.deselectEntities = function(...args) 
           
@@ -1478,7 +1478,7 @@
               return this.__PROXY__.deselectEntities(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.setEntitySelected = function(...args) 
           
@@ -1488,7 +1488,7 @@
               return this.__PROXY__.setEntitySelected(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.isSelected = function(...args) 
           
@@ -1498,7 +1498,7 @@
               return this.__PROXY__.isSelected(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.isSelectedWorkingSet = function(...args) 
           
@@ -1508,7 +1508,7 @@
               return this.__PROXY__.isSelectedWorkingSet(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.isEntityVisible = function(...args) 
           
@@ -1518,7 +1518,7 @@
               return this.__PROXY__.isEntityVisible(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.hasSelection = function(...args) 
           
@@ -1528,7 +1528,7 @@
               return this.__PROXY__.hasSelection(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.getBoundingBox = function(...args) 
           
@@ -1538,7 +1538,7 @@
               return this.__PROXY__.getBoundingBox(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.getSelectionBox = function(...args) 
           
@@ -1548,7 +1548,7 @@
               return this.__PROXY__.getSelectionBox(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.getEntitiesBox = function(...args) 
           
@@ -1558,7 +1558,7 @@
               return this.__PROXY__.getEntitiesBox(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.removeObject = function(...args) 
           
@@ -1568,7 +1568,7 @@
               return this.__PROXY__.removeObject(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.saveObject = function(...args) 
           
@@ -1578,7 +1578,7 @@
               return this.__PROXY__.saveObject(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.checkRecursion = function(...args) 
           
@@ -1588,7 +1588,7 @@
               return this.__PROXY__.checkRecursion(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.deleteObject = function(...args) 
           
@@ -1598,7 +1598,7 @@
               return this.__PROXY__.deleteObject(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.saveTransaction = function(...args) 
           
@@ -1608,7 +1608,7 @@
               return this.__PROXY__.saveTransaction(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.deleteTransactionsFrom = function(...args) 
           
@@ -1618,7 +1618,7 @@
               return this.__PROXY__.deleteTransactionsFrom(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.getTransaction = function(...args) 
           
@@ -1628,7 +1628,7 @@
               return this.__PROXY__.getTransaction(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.resetTransactionStack = function(...args) 
           
@@ -1638,7 +1638,7 @@
               return this.__PROXY__.resetTransactionStack(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.toggleUndoStatus = function(...args) 
           
@@ -1648,7 +1648,7 @@
               return this.__PROXY__.toggleUndoStatus(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.setUndoStatus = function(...args) 
           
@@ -1658,7 +1658,7 @@
               return this.__PROXY__.setUndoStatus(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.getMaxTransactionId = function(...args) 
           
@@ -1668,7 +1668,7 @@
               return this.__PROXY__.getMaxTransactionId(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.getVariables = function(...args) 
           
@@ -1678,7 +1678,7 @@
               return this.__PROXY__.getVariables(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.setVariable = function(...args) 
           
@@ -1688,7 +1688,7 @@
               return this.__PROXY__.setVariable(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.getVariable = function(...args) 
           
@@ -1698,7 +1698,7 @@
               return this.__PROXY__.getVariable(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.removeVariable = function(...args) 
           
@@ -1708,7 +1708,7 @@
               return this.__PROXY__.removeVariable(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.setKnownVariable = function(...args) 
           
@@ -1718,7 +1718,7 @@
               return this.__PROXY__.setKnownVariable(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.getKnownVariable = function(...args) 
           
@@ -1728,7 +1728,7 @@
               return this.__PROXY__.getKnownVariable(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.getLayerName = function(...args) 
           
@@ -1738,7 +1738,7 @@
               return this.__PROXY__.getLayerName(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.getLayerNames = function(...args) 
           
@@ -1748,7 +1748,7 @@
               return this.__PROXY__.getLayerNames(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.getLayerId = function(...args) 
           
@@ -1758,7 +1758,7 @@
               return this.__PROXY__.getLayerId(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.getLayerStateName = function(...args) 
           
@@ -1768,7 +1768,7 @@
               return this.__PROXY__.getLayerStateName(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.getLayerStateNames = function(...args) 
           
@@ -1778,7 +1778,7 @@
               return this.__PROXY__.getLayerStateNames(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.getLayerStateId = function(...args) 
           
@@ -1788,7 +1788,7 @@
               return this.__PROXY__.getLayerStateId(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.getLayoutName = function(...args) 
           
@@ -1798,7 +1798,7 @@
               return this.__PROXY__.getLayoutName(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.getLayoutNames = function(...args) 
           
@@ -1808,7 +1808,7 @@
               return this.__PROXY__.getLayoutNames(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.getLayoutId = function(...args) 
           
@@ -1818,7 +1818,7 @@
               return this.__PROXY__.getLayoutId(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.getBlockName = function(...args) 
           
@@ -1828,7 +1828,7 @@
               return this.__PROXY__.getBlockName(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.getBlockNameFromHandle = function(...args) 
           
@@ -1838,7 +1838,7 @@
               return this.__PROXY__.getBlockNameFromHandle(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.getBlockNameFromLayout = function(...args) 
           
@@ -1848,7 +1848,7 @@
               return this.__PROXY__.getBlockNameFromLayout(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.getBlockNames = function(...args) 
           
@@ -1858,7 +1858,7 @@
               return this.__PROXY__.getBlockNames(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.getBlockId = function(...args) 
           
@@ -1868,7 +1868,7 @@
               return this.__PROXY__.getBlockId(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.getBlockIdAuto = function(...args) 
           
@@ -1878,7 +1878,7 @@
               return this.__PROXY__.getBlockIdAuto(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.getViewName = function(...args) 
           
@@ -1888,7 +1888,7 @@
               return this.__PROXY__.getViewName(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.getViewNames = function(...args) 
           
@@ -1898,7 +1898,7 @@
               return this.__PROXY__.getViewNames(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.getViewId = function(...args) 
           
@@ -1908,7 +1908,7 @@
               return this.__PROXY__.getViewId(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.getLinetypeName = function(...args) 
           
@@ -1918,7 +1918,7 @@
               return this.__PROXY__.getLinetypeName(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.getLinetypeDescription = function(...args) 
           
@@ -1928,7 +1928,7 @@
               return this.__PROXY__.getLinetypeDescription(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.getLinetypeLabel = function(...args) 
           
@@ -1938,7 +1938,7 @@
               return this.__PROXY__.getLinetypeLabel(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.getLinetypeNames = function(...args) 
           
@@ -1948,7 +1948,7 @@
               return this.__PROXY__.getLinetypeNames(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.getLinetypePatterns = function(...args) 
           
@@ -1958,7 +1958,7 @@
               return this.__PROXY__.getLinetypePatterns(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.getLinetypeId = function(...args) 
           
@@ -1968,7 +1968,7 @@
               return this.__PROXY__.getLinetypeId(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.queryObjectDirect = function(...args) 
           
@@ -1978,7 +1978,7 @@
               return this.__PROXY__.queryObjectDirect(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.queryObjectCC = function(...args) 
           
@@ -1988,7 +1988,7 @@
               return this.__PROXY__.queryObjectCC(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.queryEntityDirect = function(...args) 
           
@@ -1998,7 +1998,7 @@
               return this.__PROXY__.queryEntityDirect(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.queryVisibleEntityDirect = function(...args) 
           
@@ -2008,7 +2008,7 @@
               return this.__PROXY__.queryVisibleEntityDirect(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.queryUcsDirect = function(...args) 
           
@@ -2018,7 +2018,7 @@
               return this.__PROXY__.queryUcsDirect(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.queryLayerDirect = function(...args) 
           
@@ -2028,7 +2028,7 @@
               return this.__PROXY__.queryLayerDirect(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.queryLayerStateDirect = function(...args) 
           
@@ -2038,7 +2038,7 @@
               return this.__PROXY__.queryLayerStateDirect(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.queryLayoutDirect = function(...args) 
           
@@ -2048,7 +2048,7 @@
               return this.__PROXY__.queryLayoutDirect(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.setObjectHandle = function(...args) 
           
@@ -2058,7 +2058,7 @@
               return this.__PROXY__.setObjectHandle(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.getNewObjectHandle = function(...args) 
           
@@ -2068,7 +2068,7 @@
               return this.__PROXY__.getNewObjectHandle(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.setLastTransactionId = function(...args) 
           
@@ -2078,7 +2078,7 @@
               return this.__PROXY__.setLastTransactionId(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.getMaxLineweight = function(...args) 
           
@@ -2088,7 +2088,7 @@
               return this.__PROXY__.getMaxLineweight(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.update = function(...args) 
           
@@ -2098,7 +2098,7 @@
               return this.__PROXY__.update(...args);
             
         };
-    
+        
         // function 
         RMemoryStorage.prototype.setEntityParentId = function(...args) 
           
@@ -2108,7 +2108,7 @@
               return this.__PROXY__.setEntityParentId(...args);
             
         };
-    
+        
 
       // static functions:
       RMemoryStorage.prototype.isNullWrapper = function() {

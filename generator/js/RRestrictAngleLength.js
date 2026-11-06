@@ -235,7 +235,7 @@ RRestrictAngleLength.AngleLength = RRestrictAngleLength_Wrapper.AngleLength;
               return this.__PROXY__.getLastSnap(...args);
             
         };
-    
+        
         // function 
         RRestrictAngleLength.prototype.reset = function(...args) 
           
@@ -245,7 +245,7 @@ RRestrictAngleLength.AngleLength = RRestrictAngleLength_Wrapper.AngleLength;
               return this.__PROXY__.reset(...args);
             
         };
-    
+        
         // function 
         RRestrictAngleLength.prototype.restrictSnap = function(...args) 
           
@@ -255,7 +255,7 @@ RRestrictAngleLength.AngleLength = RRestrictAngleLength_Wrapper.AngleLength;
               return this.__PROXY__.restrictSnap(...args);
             
         };
-    
+        
         // function 
         RRestrictAngleLength.prototype.setBaseAngle = function(...args) 
           
@@ -265,7 +265,7 @@ RRestrictAngleLength.AngleLength = RRestrictAngleLength_Wrapper.AngleLength;
               return this.__PROXY__.setBaseAngle(...args);
             
         };
-    
+        
         // function 
         RRestrictAngleLength.prototype.setAngle = function(...args) 
           
@@ -275,7 +275,7 @@ RRestrictAngleLength.AngleLength = RRestrictAngleLength_Wrapper.AngleLength;
               return this.__PROXY__.setAngle(...args);
             
         };
-    
+        
         // function 
         RRestrictAngleLength.prototype.setBaseLength = function(...args) 
           
@@ -285,7 +285,7 @@ RRestrictAngleLength.AngleLength = RRestrictAngleLength_Wrapper.AngleLength;
               return this.__PROXY__.setBaseLength(...args);
             
         };
-    
+        
         // function 
         RRestrictAngleLength.prototype.setLength = function(...args) 
           
@@ -295,7 +295,7 @@ RRestrictAngleLength.AngleLength = RRestrictAngleLength_Wrapper.AngleLength;
               return this.__PROXY__.setLength(...args);
             
         };
-    
+        
         // function 
         RRestrictAngleLength.prototype.setRestrictAngle = function(...args) 
           
@@ -305,7 +305,7 @@ RRestrictAngleLength.AngleLength = RRestrictAngleLength_Wrapper.AngleLength;
               return this.__PROXY__.setRestrictAngle(...args);
             
         };
-    
+        
         // function 
         RRestrictAngleLength.prototype.setRestrictLength = function(...args) 
           
@@ -315,7 +315,7 @@ RRestrictAngleLength.AngleLength = RRestrictAngleLength_Wrapper.AngleLength;
               return this.__PROXY__.setRestrictLength(...args);
             
         };
-    
+        
         // function 
         RRestrictAngleLength.prototype.setRepeatAngle = function(...args) 
           
@@ -325,7 +325,7 @@ RRestrictAngleLength.AngleLength = RRestrictAngleLength_Wrapper.AngleLength;
               return this.__PROXY__.setRepeatAngle(...args);
             
         };
-    
+        
         // function 
         RRestrictAngleLength.prototype.setRepeatLength = function(...args) 
           
@@ -335,7 +335,7 @@ RRestrictAngleLength.AngleLength = RRestrictAngleLength_Wrapper.AngleLength;
               return this.__PROXY__.setRepeatLength(...args);
             
         };
-    
+        
 
       // static functions:
       RRestrictAngleLength.prototype.isNullWrapper = function() {

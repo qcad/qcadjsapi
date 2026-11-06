@@ -105,7 +105,7 @@
               return this.__PROXY__.restrictSnap(...args);
             
         };
-    
+        
       // function 
       RSnapRestriction.prototype.showUiOptions = function() 
         
@@ -179,7 +179,7 @@
               return this.__PROXY__.getLastSnap(...args);
             
         };
-    
+        
         // function 
         RSnapRestriction.prototype.reset = function(...args) 
           
@@ -189,7 +189,7 @@
               return this.__PROXY__.reset(...args);
             
         };
-    
+        
 
       // static functions:
       RSnapRestriction.prototype.isNullWrapper = function() {

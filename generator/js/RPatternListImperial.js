@@ -109,7 +109,7 @@
               return this.__PROXY__.init(...args);
             
         };
-    
+        
         // function 
         RPatternListImperial.prototype.uninit = function(...args) 
           
@@ -119,7 +119,7 @@
               return this.__PROXY__.uninit(...args);
             
         };
-    
+        
         // function 
         RPatternListImperial.prototype.getNames = function(...args) 
           
@@ -129,7 +129,7 @@
               return this.__PROXY__.getNames(...args);
             
         };
-    
+        
         // function 
         RPatternListImperial.prototype.get = function(...args) 
           
@@ -139,7 +139,7 @@
               return this.__PROXY__.get(...args);
             
         };
-    
+        
 
       // static functions:
       

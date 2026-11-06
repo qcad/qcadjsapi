@@ -284,7 +284,7 @@ RGraphicsSceneDrawable.WorkingSet = RGraphicsSceneDrawable_Wrapper.WorkingSet;
               return this.__PROXY__.createFromPainterPath(...args);
             
         };
-    
+        
         // function 
         RGraphicsSceneDrawable.prototype.createFromImage = function(...args) 
           
@@ -294,7 +294,7 @@ RGraphicsSceneDrawable.WorkingSet = RGraphicsSceneDrawable_Wrapper.WorkingSet;
               return this.__PROXY__.createFromImage(...args);
             
         };
-    
+        
         // function 
         RGraphicsSceneDrawable.prototype.createFromText = function(...args) 
           
@@ -304,7 +304,7 @@ RGraphicsSceneDrawable.WorkingSet = RGraphicsSceneDrawable_Wrapper.WorkingSet;
               return this.__PROXY__.createFromText(...args);
             
         };
-    
+        
         // function 
         RGraphicsSceneDrawable.prototype.createFromTransform = function(...args) 
           
@@ -314,7 +314,7 @@ RGraphicsSceneDrawable.WorkingSet = RGraphicsSceneDrawable_Wrapper.WorkingSet;
               return this.__PROXY__.createFromTransform(...args);
             
         };
-    
+        
         // function 
         RGraphicsSceneDrawable.prototype.createEndTransform = function(...args) 
           
@@ -324,7 +324,7 @@ RGraphicsSceneDrawable.WorkingSet = RGraphicsSceneDrawable_Wrapper.WorkingSet;
               return this.__PROXY__.createEndTransform(...args);
             
         };
-    
+        
         // function 
         RGraphicsSceneDrawable.prototype.uninit = function(...args) 
           
@@ -334,7 +334,7 @@ RGraphicsSceneDrawable.WorkingSet = RGraphicsSceneDrawable_Wrapper.WorkingSet;
               return this.__PROXY__.uninit(...args);
             
         };
-    
+        
         // function 
         RGraphicsSceneDrawable.prototype.getType = function(...args) 
           
@@ -344,7 +344,7 @@ RGraphicsSceneDrawable.WorkingSet = RGraphicsSceneDrawable_Wrapper.WorkingSet;
               return this.__PROXY__.getType(...args);
             
         };
-    
+        
         // function 
         RGraphicsSceneDrawable.prototype.isPainterPath = function(...args) 
           
@@ -354,7 +354,7 @@ RGraphicsSceneDrawable.WorkingSet = RGraphicsSceneDrawable_Wrapper.WorkingSet;
               return this.__PROXY__.isPainterPath(...args);
             
         };
-    
+        
         // function 
         RGraphicsSceneDrawable.prototype.isText = function(...args) 
           
@@ -364,7 +364,7 @@ RGraphicsSceneDrawable.WorkingSet = RGraphicsSceneDrawable_Wrapper.WorkingSet;
               return this.__PROXY__.isText(...args);
             
         };
-    
+        
         // function 
         RGraphicsSceneDrawable.prototype.isImage = function(...args) 
           
@@ -374,7 +374,7 @@ RGraphicsSceneDrawable.WorkingSet = RGraphicsSceneDrawable_Wrapper.WorkingSet;
               return this.__PROXY__.isImage(...args);
             
         };
-    
+        
         // function 
         RGraphicsSceneDrawable.prototype.setMode = function(...args) 
           
@@ -384,7 +384,7 @@ RGraphicsSceneDrawable.WorkingSet = RGraphicsSceneDrawable_Wrapper.WorkingSet;
               return this.__PROXY__.setMode(...args);
             
         };
-    
+        
         // function 
         RGraphicsSceneDrawable.prototype.getMode = function(...args) 
           
@@ -394,7 +394,7 @@ RGraphicsSceneDrawable.WorkingSet = RGraphicsSceneDrawable_Wrapper.WorkingSet;
               return this.__PROXY__.getMode(...args);
             
         };
-    
+        
         // function 
         RGraphicsSceneDrawable.prototype.setNoPlot = function(...args) 
           
@@ -404,7 +404,7 @@ RGraphicsSceneDrawable.WorkingSet = RGraphicsSceneDrawable_Wrapper.WorkingSet;
               return this.__PROXY__.setNoPlot(...args);
             
         };
-    
+        
         // function 
         RGraphicsSceneDrawable.prototype.getNoPlot = function(...args) 
           
@@ -414,7 +414,7 @@ RGraphicsSceneDrawable.WorkingSet = RGraphicsSceneDrawable_Wrapper.WorkingSet;
               return this.__PROXY__.getNoPlot(...args);
             
         };
-    
+        
         // function 
         RGraphicsSceneDrawable.prototype.setPixelUnit = function(...args) 
           
@@ -424,7 +424,7 @@ RGraphicsSceneDrawable.WorkingSet = RGraphicsSceneDrawable_Wrapper.WorkingSet;
               return this.__PROXY__.setPixelUnit(...args);
             
         };
-    
+        
         // function 
         RGraphicsSceneDrawable.prototype.getPixelUnit = function(...args) 
           
@@ -434,7 +434,7 @@ RGraphicsSceneDrawable.WorkingSet = RGraphicsSceneDrawable_Wrapper.WorkingSet;
               return this.__PROXY__.getPixelUnit(...args);
             
         };
-    
+        
         // function 
         RGraphicsSceneDrawable.prototype.setWorkingSet = function(...args) 
           
@@ -444,7 +444,7 @@ RGraphicsSceneDrawable.WorkingSet = RGraphicsSceneDrawable_Wrapper.WorkingSet;
               return this.__PROXY__.setWorkingSet(...args);
             
         };
-    
+        
         // function 
         RGraphicsSceneDrawable.prototype.isWorkingSet = function(...args) 
           
@@ -454,7 +454,7 @@ RGraphicsSceneDrawable.WorkingSet = RGraphicsSceneDrawable_Wrapper.WorkingSet;
               return this.__PROXY__.isWorkingSet(...args);
             
         };
-    
+        
         // function 
         RGraphicsSceneDrawable.prototype.getPainterPath = function(...args) 
           
@@ -464,7 +464,7 @@ RGraphicsSceneDrawable.WorkingSet = RGraphicsSceneDrawable_Wrapper.WorkingSet;
               return this.__PROXY__.getPainterPath(...args);
             
         };
-    
+        
         // function 
         RGraphicsSceneDrawable.prototype.getImage = function(...args) 
           
@@ -474,7 +474,7 @@ RGraphicsSceneDrawable.WorkingSet = RGraphicsSceneDrawable_Wrapper.WorkingSet;
               return this.__PROXY__.getImage(...args);
             
         };
-    
+        
         // function 
         RGraphicsSceneDrawable.prototype.getText = function(...args) 
           
@@ -484,7 +484,7 @@ RGraphicsSceneDrawable.WorkingSet = RGraphicsSceneDrawable_Wrapper.WorkingSet;
               return this.__PROXY__.getText(...args);
             
         };
-    
+        
         // function 
         RGraphicsSceneDrawable.prototype.getTransform = function(...args) 
           
@@ -494,7 +494,7 @@ RGraphicsSceneDrawable.WorkingSet = RGraphicsSceneDrawable_Wrapper.WorkingSet;
               return this.__PROXY__.getTransform(...args);
             
         };
-    
+        
         // function 
         RGraphicsSceneDrawable.prototype.getOffset = function(...args) 
           
@@ -504,7 +504,7 @@ RGraphicsSceneDrawable.WorkingSet = RGraphicsSceneDrawable_Wrapper.WorkingSet;
               return this.__PROXY__.getOffset(...args);
             
         };
-    
+        
         // function 
         RGraphicsSceneDrawable.prototype.setOffset = function(...args) 
           
@@ -514,7 +514,7 @@ RGraphicsSceneDrawable.WorkingSet = RGraphicsSceneDrawable_Wrapper.WorkingSet;
               return this.__PROXY__.setOffset(...args);
             
         };
-    
+        
         // function 
         RGraphicsSceneDrawable.prototype.getDocument = function(...args) 
           
@@ -524,7 +524,7 @@ RGraphicsSceneDrawable.WorkingSet = RGraphicsSceneDrawable_Wrapper.WorkingSet;
               return this.__PROXY__.getDocument(...args);
             
         };
-    
+        
         // function 
         RGraphicsSceneDrawable.prototype.setSelected = function(...args) 
           
@@ -534,7 +534,7 @@ RGraphicsSceneDrawable.WorkingSet = RGraphicsSceneDrawable_Wrapper.WorkingSet;
               return this.__PROXY__.setSelected(...args);
             
         };
-    
+        
         // function 
         RGraphicsSceneDrawable.prototype.setHighlighted = function(...args) 
           
@@ -544,7 +544,7 @@ RGraphicsSceneDrawable.WorkingSet = RGraphicsSceneDrawable_Wrapper.WorkingSet;
               return this.__PROXY__.setHighlighted(...args);
             
         };
-    
+        
 
       // static functions:
       

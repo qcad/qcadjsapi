@@ -105,7 +105,7 @@
               return this.__PROXY__.getMainWindow(...args);
             
         };
-    
+        
         // function 
         RMainWindow.prototype.hasMainWindow = function(...args) 
           
@@ -115,7 +115,7 @@
               return this.__PROXY__.hasMainWindow(...args);
             
         };
-    
+        
         // function 
         RMainWindow.prototype.installMessageHandler = function(...args) 
           
@@ -125,7 +125,7 @@
               return this.__PROXY__.installMessageHandler(...args);
             
         };
-    
+        
         // function 
         RMainWindow.prototype.getDocument = function(...args) 
           
@@ -135,7 +135,7 @@
               return this.__PROXY__.getDocument(...args);
             
         };
-    
+        
         // function 
         RMainWindow.prototype.disable = function(...args) 
           
@@ -145,7 +145,7 @@
               return this.__PROXY__.disable(...args);
             
         };
-    
+        
         // function 
         RMainWindow.prototype.enable = function(...args) 
           
@@ -155,7 +155,7 @@
               return this.__PROXY__.enable(...args);
             
         };
-    
+        
         // function 
         RMainWindow.prototype.getDocumentInterface = function(...args) 
           
@@ -165,7 +165,7 @@
               return this.__PROXY__.getDocumentInterface(...args);
             
         };
-    
+        
         // function 
         RMainWindow.prototype.getDocumentInterfaceStatic = function(...args) 
           
@@ -175,7 +175,7 @@
               return this.__PROXY__.getDocumentInterfaceStatic(...args);
             
         };
-    
+        
         // function 
         RMainWindow.prototype.notifyListeners = function(...args) 
           
@@ -185,7 +185,7 @@
               return this.__PROXY__.notifyListeners(...args);
             
         };
-    
+        
         // function 
         RMainWindow.prototype.addCoordinateListener = function(...args) 
           
@@ -195,7 +195,7 @@
               return this.__PROXY__.addCoordinateListener(...args);
             
         };
-    
+        
         // function 
         RMainWindow.prototype.removeCoordinateListener = function(...args) 
           
@@ -205,7 +205,7 @@
               return this.__PROXY__.removeCoordinateListener(...args);
             
         };
-    
+        
         // function 
         RMainWindow.prototype.notifyCoordinateListeners = function(...args) 
           
@@ -215,7 +215,7 @@
               return this.__PROXY__.notifyCoordinateListeners(...args);
             
         };
-    
+        
         // function 
         RMainWindow.prototype.addSelectionListener = function(...args) 
           
@@ -225,7 +225,7 @@
               return this.__PROXY__.addSelectionListener(...args);
             
         };
-    
+        
         // function 
         RMainWindow.prototype.removeSelectionListener = function(...args) 
           
@@ -235,7 +235,7 @@
               return this.__PROXY__.removeSelectionListener(...args);
             
         };
-    
+        
         // function 
         RMainWindow.prototype.notifySelectionListeners = function(...args) 
           
@@ -245,7 +245,7 @@
               return this.__PROXY__.notifySelectionListeners(...args);
             
         };
-    
+        
         // function 
         RMainWindow.prototype.postSelectionChangedEvent = function(...args) 
           
@@ -255,7 +255,7 @@
               return this.__PROXY__.postSelectionChangedEvent(...args);
             
         };
-    
+        
         // function 
         RMainWindow.prototype.postTransactionEvent = function(...args) 
           
@@ -265,7 +265,7 @@
               return this.__PROXY__.postTransactionEvent(...args);
             
         };
-    
+        
         // function 
         RMainWindow.prototype.postCloseEvent = function(...args) 
           
@@ -275,7 +275,7 @@
               return this.__PROXY__.postCloseEvent(...args);
             
         };
-    
+        
         // function 
         RMainWindow.prototype.postPropertyEvent = function(...args) 
           
@@ -285,7 +285,7 @@
               return this.__PROXY__.postPropertyEvent(...args);
             
         };
-    
+        
         // function 
         RMainWindow.prototype.addPropertyListener = function(...args) 
           
@@ -295,7 +295,7 @@
               return this.__PROXY__.addPropertyListener(...args);
             
         };
-    
+        
         // function 
         RMainWindow.prototype.removePropertyListener = function(...args) 
           
@@ -305,7 +305,7 @@
               return this.__PROXY__.removePropertyListener(...args);
             
         };
-    
+        
         // function 
         RMainWindow.prototype.notifyPropertyListeners = function(...args) 
           
@@ -315,7 +315,7 @@
               return this.__PROXY__.notifyPropertyListeners(...args);
             
         };
-    
+        
         // function 
         RMainWindow.prototype.addExportListener = function(...args) 
           
@@ -325,7 +325,7 @@
               return this.__PROXY__.addExportListener(...args);
             
         };
-    
+        
         // function 
         RMainWindow.prototype.prependExportListener = function(...args) 
           
@@ -335,7 +335,7 @@
               return this.__PROXY__.prependExportListener(...args);
             
         };
-    
+        
         // function 
         RMainWindow.prototype.removeExportListener = function(...args) 
           
@@ -345,7 +345,7 @@
               return this.__PROXY__.removeExportListener(...args);
             
         };
-    
+        
         // function 
         RMainWindow.prototype.notifyExportListenersPre = function(...args) 
           
@@ -355,7 +355,7 @@
               return this.__PROXY__.notifyExportListenersPre(...args);
             
         };
-    
+        
         // function 
         RMainWindow.prototype.notifyExportListenersPost = function(...args) 
           
@@ -365,7 +365,7 @@
               return this.__PROXY__.notifyExportListenersPost(...args);
             
         };
-    
+        
         // function 
         RMainWindow.prototype.notifyExportListenersEnd = function(...args) 
           
@@ -375,7 +375,7 @@
               return this.__PROXY__.notifyExportListenersEnd(...args);
             
         };
-    
+        
         // function 
         RMainWindow.prototype.addEntityExportListener = function(...args) 
           
@@ -385,7 +385,7 @@
               return this.__PROXY__.addEntityExportListener(...args);
             
         };
-    
+        
         // function 
         RMainWindow.prototype.removeEntityExportListener = function(...args) 
           
@@ -395,7 +395,7 @@
               return this.__PROXY__.removeEntityExportListener(...args);
             
         };
-    
+        
         // function 
         RMainWindow.prototype.notifyEntityExportListeners = function(...args) 
           
@@ -405,7 +405,7 @@
               return this.__PROXY__.notifyEntityExportListeners(...args);
             
         };
-    
+        
         // function 
         RMainWindow.prototype.addImportListener = function(...args) 
           
@@ -415,7 +415,7 @@
               return this.__PROXY__.addImportListener(...args);
             
         };
-    
+        
         // function 
         RMainWindow.prototype.removeImportListener = function(...args) 
           
@@ -425,7 +425,7 @@
               return this.__PROXY__.removeImportListener(...args);
             
         };
-    
+        
         // function 
         RMainWindow.prototype.notifyImportListenersPre = function(...args) 
           
@@ -435,7 +435,7 @@
               return this.__PROXY__.notifyImportListenersPre(...args);
             
         };
-    
+        
         // function 
         RMainWindow.prototype.notifyImportListenersPost = function(...args) 
           
@@ -445,7 +445,7 @@
               return this.__PROXY__.notifyImportListenersPost(...args);
             
         };
-    
+        
         // function 
         RMainWindow.prototype.addTransactionListener = function(...args) 
           
@@ -455,7 +455,7 @@
               return this.__PROXY__.addTransactionListener(...args);
             
         };
-    
+        
         // function 
         RMainWindow.prototype.removeTransactionListener = function(...args) 
           
@@ -465,7 +465,7 @@
               return this.__PROXY__.removeTransactionListener(...args);
             
         };
-    
+        
         // function 
         RMainWindow.prototype.notifyTransactionListeners = function(...args) 
           
@@ -475,7 +475,7 @@
               return this.__PROXY__.notifyTransactionListeners(...args);
             
         };
-    
+        
         // function 
         RMainWindow.prototype.addInterTransactionListener = function(...args) 
           
@@ -485,7 +485,7 @@
               return this.__PROXY__.addInterTransactionListener(...args);
             
         };
-    
+        
         // function 
         RMainWindow.prototype.removeInterTransactionListener = function(...args) 
           
@@ -495,7 +495,7 @@
               return this.__PROXY__.removeInterTransactionListener(...args);
             
         };
-    
+        
         // function 
         RMainWindow.prototype.notifyInterTransactionListeners = function(...args) 
           
@@ -505,7 +505,7 @@
               return this.__PROXY__.notifyInterTransactionListeners(...args);
             
         };
-    
+        
         // function 
         RMainWindow.prototype.addNewDocumentListener = function(...args) 
           
@@ -515,7 +515,7 @@
               return this.__PROXY__.addNewDocumentListener(...args);
             
         };
-    
+        
         // function 
         RMainWindow.prototype.removeNewDocumentListener = function(...args) 
           
@@ -525,7 +525,7 @@
               return this.__PROXY__.removeNewDocumentListener(...args);
             
         };
-    
+        
         // function 
         RMainWindow.prototype.notifyNewDocumentListeners = function(...args) 
           
@@ -535,7 +535,7 @@
               return this.__PROXY__.notifyNewDocumentListeners(...args);
             
         };
-    
+        
         // function 
         RMainWindow.prototype.addSnapListener = function(...args) 
           
@@ -545,7 +545,7 @@
               return this.__PROXY__.addSnapListener(...args);
             
         };
-    
+        
         // function 
         RMainWindow.prototype.removeSnapListener = function(...args) 
           
@@ -555,7 +555,7 @@
               return this.__PROXY__.removeSnapListener(...args);
             
         };
-    
+        
         // function 
         RMainWindow.prototype.notifySnapListeners = function(...args) 
           
@@ -565,7 +565,7 @@
               return this.__PROXY__.notifySnapListeners(...args);
             
         };
-    
+        
         // function 
         RMainWindow.prototype.addFocusListener = function(...args) 
           
@@ -575,7 +575,7 @@
               return this.__PROXY__.addFocusListener(...args);
             
         };
-    
+        
         // function 
         RMainWindow.prototype.removeFocusListener = function(...args) 
           
@@ -585,7 +585,7 @@
               return this.__PROXY__.removeFocusListener(...args);
             
         };
-    
+        
         // function 
         RMainWindow.prototype.notifyFocusListeners = function(...args) 
           
@@ -595,7 +595,7 @@
               return this.__PROXY__.notifyFocusListeners(...args);
             
         };
-    
+        
         // function 
         RMainWindow.prototype.addKeyListener = function(...args) 
           
@@ -605,7 +605,7 @@
               return this.__PROXY__.addKeyListener(...args);
             
         };
-    
+        
         // function 
         RMainWindow.prototype.removeKeyListener = function(...args) 
           
@@ -615,7 +615,7 @@
               return this.__PROXY__.removeKeyListener(...args);
             
         };
-    
+        
         // function 
         RMainWindow.prototype.notifyKeyListeners = function(...args) 
           
@@ -625,7 +625,7 @@
               return this.__PROXY__.notifyKeyListeners(...args);
             
         };
-    
+        
         // function 
         RMainWindow.prototype.addViewFocusListener = function(...args) 
           
@@ -635,7 +635,7 @@
               return this.__PROXY__.addViewFocusListener(...args);
             
         };
-    
+        
         // function 
         RMainWindow.prototype.removeViewFocusListener = function(...args) 
           
@@ -645,7 +645,7 @@
               return this.__PROXY__.removeViewFocusListener(...args);
             
         };
-    
+        
         // function 
         RMainWindow.prototype.notifyViewFocusListeners = function(...args) 
           
@@ -655,7 +655,7 @@
               return this.__PROXY__.notifyViewFocusListeners(...args);
             
         };
-    
+        
         // function 
         RMainWindow.prototype.addPreferencesListener = function(...args) 
           
@@ -665,7 +665,7 @@
               return this.__PROXY__.addPreferencesListener(...args);
             
         };
-    
+        
         // function 
         RMainWindow.prototype.removePreferencesListener = function(...args) 
           
@@ -675,7 +675,7 @@
               return this.__PROXY__.removePreferencesListener(...args);
             
         };
-    
+        
         // function 
         RMainWindow.prototype.notifyPreferencesListeners = function(...args) 
           
@@ -685,7 +685,7 @@
               return this.__PROXY__.notifyPreferencesListeners(...args);
             
         };
-    
+        
         // function 
         RMainWindow.prototype.propertyChangeEvent = function(...args) 
           
@@ -695,7 +695,7 @@
               return this.__PROXY__.propertyChangeEvent(...args);
             
         };
-    
+        
         // function 
         RMainWindow.prototype.addUcsListener = function(...args) 
           
@@ -705,7 +705,7 @@
               return this.__PROXY__.addUcsListener(...args);
             
         };
-    
+        
         // function 
         RMainWindow.prototype.removeUcsListener = function(...args) 
           
@@ -715,7 +715,7 @@
               return this.__PROXY__.removeUcsListener(...args);
             
         };
-    
+        
         // function 
         RMainWindow.prototype.notifyUcsListeners = function(...args) 
           
@@ -725,7 +725,7 @@
               return this.__PROXY__.notifyUcsListeners(...args);
             
         };
-    
+        
         // function 
         RMainWindow.prototype.addLayerListener = function(...args) 
           
@@ -735,7 +735,7 @@
               return this.__PROXY__.addLayerListener(...args);
             
         };
-    
+        
         // function 
         RMainWindow.prototype.removeLayerListener = function(...args) 
           
@@ -745,7 +745,7 @@
               return this.__PROXY__.removeLayerListener(...args);
             
         };
-    
+        
         // function 
         RMainWindow.prototype.notifyLayerListeners = function(...args) 
           
@@ -755,7 +755,7 @@
               return this.__PROXY__.notifyLayerListeners(...args);
             
         };
-    
+        
         // function 
         RMainWindow.prototype.notifyLayerListenersCurrentLayer = function(...args) 
           
@@ -765,7 +765,7 @@
               return this.__PROXY__.notifyLayerListenersCurrentLayer(...args);
             
         };
-    
+        
         // function 
         RMainWindow.prototype.addBlockListener = function(...args) 
           
@@ -775,7 +775,7 @@
               return this.__PROXY__.addBlockListener(...args);
             
         };
-    
+        
         // function 
         RMainWindow.prototype.removeBlockListener = function(...args) 
           
@@ -785,7 +785,7 @@
               return this.__PROXY__.removeBlockListener(...args);
             
         };
-    
+        
         // function 
         RMainWindow.prototype.notifyBlockListeners = function(...args) 
           
@@ -795,7 +795,7 @@
               return this.__PROXY__.notifyBlockListeners(...args);
             
         };
-    
+        
         // function 
         RMainWindow.prototype.notifyBlockListenersCurrentBlock = function(...args) 
           
@@ -805,7 +805,7 @@
               return this.__PROXY__.notifyBlockListenersCurrentBlock(...args);
             
         };
-    
+        
         // function 
         RMainWindow.prototype.addViewListener = function(...args) 
           
@@ -815,7 +815,7 @@
               return this.__PROXY__.addViewListener(...args);
             
         };
-    
+        
         // function 
         RMainWindow.prototype.removeViewListener = function(...args) 
           
@@ -825,7 +825,7 @@
               return this.__PROXY__.removeViewListener(...args);
             
         };
-    
+        
         // function 
         RMainWindow.prototype.notifyViewListeners = function(...args) 
           
@@ -835,7 +835,7 @@
               return this.__PROXY__.notifyViewListeners(...args);
             
         };
-    
+        
         // function 
         RMainWindow.prototype.addPenListener = function(...args) 
           
@@ -845,7 +845,7 @@
               return this.__PROXY__.addPenListener(...args);
             
         };
-    
+        
         // function 
         RMainWindow.prototype.removePenListener = function(...args) 
           
@@ -855,7 +855,7 @@
               return this.__PROXY__.removePenListener(...args);
             
         };
-    
+        
         // function 
         RMainWindow.prototype.notifyPenListeners = function(...args) 
           
@@ -865,7 +865,7 @@
               return this.__PROXY__.notifyPenListeners(...args);
             
         };
-    
+        
         // function 
         RMainWindow.prototype.addPaletteListener = function(...args) 
           
@@ -875,7 +875,7 @@
               return this.__PROXY__.addPaletteListener(...args);
             
         };
-    
+        
         // function 
         RMainWindow.prototype.removePaletteListener = function(...args) 
           
@@ -885,7 +885,7 @@
               return this.__PROXY__.removePaletteListener(...args);
             
         };
-    
+        
         // function 
         RMainWindow.prototype.notifyPaletteListeners = function(...args) 
           
@@ -895,7 +895,7 @@
               return this.__PROXY__.notifyPaletteListeners(...args);
             
         };
-    
+        
         // function 
         RMainWindow.prototype.ucsSetEvent = function(...args) 
           
@@ -905,7 +905,7 @@
               return this.__PROXY__.ucsSetEvent(...args);
             
         };
-    
+        
         // function 
         RMainWindow.prototype.escapeEvent = function(...args) 
           
@@ -915,7 +915,7 @@
               return this.__PROXY__.escapeEvent(...args);
             
         };
-    
+        
         // function 
         RMainWindow.prototype.setGraphicsViewCursor = function(...args) 
           
@@ -925,7 +925,7 @@
               return this.__PROXY__.setGraphicsViewCursor(...args);
             
         };
-    
+        
         // function 
         RMainWindow.prototype.getWidth = function(...args) 
           
@@ -935,7 +935,7 @@
               return this.__PROXY__.getWidth(...args);
             
         };
-    
+        
         // function 
         RMainWindow.prototype.getHeight = function(...args) 
           
@@ -945,7 +945,7 @@
               return this.__PROXY__.getHeight(...args);
             
         };
-    
+        
         // function 
         RMainWindow.prototype.getPositionX = function(...args) 
           
@@ -955,7 +955,7 @@
               return this.__PROXY__.getPositionX(...args);
             
         };
-    
+        
         // function 
         RMainWindow.prototype.getPositionY = function(...args) 
           
@@ -965,7 +965,7 @@
               return this.__PROXY__.getPositionY(...args);
             
         };
-    
+        
         // function 
         RMainWindow.prototype.resize = function(...args) 
           
@@ -975,7 +975,7 @@
               return this.__PROXY__.resize(...args);
             
         };
-    
+        
         // function 
         RMainWindow.prototype.move = function(...args) 
           
@@ -985,7 +985,7 @@
               return this.__PROXY__.move(...args);
             
         };
-    
+        
         // function 
         RMainWindow.prototype.quit = function(...args) 
           
@@ -995,7 +995,7 @@
               return this.__PROXY__.quit(...args);
             
         };
-    
+        
         // function 
         RMainWindow.prototype.getChildWidget = function(...args) 
           
@@ -1005,7 +1005,7 @@
               return this.__PROXY__.getChildWidget(...args);
             
         };
-    
+        
         // function 
         RMainWindow.prototype.handleUserMessage = function(...args) 
           
@@ -1015,7 +1015,7 @@
               return this.__PROXY__.handleUserMessage(...args);
             
         };
-    
+        
         // function 
         RMainWindow.prototype.handleUserInfo = function(...args) 
           
@@ -1025,7 +1025,7 @@
               return this.__PROXY__.handleUserInfo(...args);
             
         };
-    
+        
         // function 
         RMainWindow.prototype.handleUserWarning = function(...args) 
           
@@ -1035,7 +1035,7 @@
               return this.__PROXY__.handleUserWarning(...args);
             
         };
-    
+        
         // function 
         RMainWindow.prototype.handleUserCommand = function(...args) 
           
@@ -1045,7 +1045,7 @@
               return this.__PROXY__.handleUserCommand(...args);
             
         };
-    
+        
         // function 
         RMainWindow.prototype.setCommandPrompt = function(...args) 
           
@@ -1055,7 +1055,7 @@
               return this.__PROXY__.setCommandPrompt(...args);
             
         };
-    
+        
         // function 
         RMainWindow.prototype.setLeftMouseTip = function(...args) 
           
@@ -1065,7 +1065,7 @@
               return this.__PROXY__.setLeftMouseTip(...args);
             
         };
-    
+        
         // function 
         RMainWindow.prototype.setRightMouseTip = function(...args) 
           
@@ -1075,7 +1075,7 @@
               return this.__PROXY__.setRightMouseTip(...args);
             
         };
-    
+        
         // function 
         RMainWindow.prototype.eval = function(...args) 
           
@@ -1085,7 +1085,7 @@
               return this.__PROXY__.eval(...args);
             
         };
-    
+        
         // function 
         RMainWindow.prototype.readSettings = function(...args) 
           
@@ -1095,7 +1095,7 @@
               return this.__PROXY__.readSettings(...args);
             
         };
-    
+        
         // function 
         RMainWindow.prototype.writeSettings = function(...args) 
           
@@ -1105,7 +1105,7 @@
               return this.__PROXY__.writeSettings(...args);
             
         };
-    
+        
 
       // static functions:
       

@@ -139,7 +139,7 @@
               return this.__PROXY__.setObjectName(...args);
             
         };
-    
+        
         // function 
         REventHandler.prototype.isWidgetType = function(...args) 
           
@@ -149,7 +149,7 @@
               return this.__PROXY__.isWidgetType(...args);
             
         };
-    
+        
         // function 
         REventHandler.prototype.isWindowType = function(...args) 
           
@@ -159,7 +159,7 @@
               return this.__PROXY__.isWindowType(...args);
             
         };
-    
+        
         // function 
         REventHandler.prototype.signalsBlocked = function(...args) 
           
@@ -169,7 +169,7 @@
               return this.__PROXY__.signalsBlocked(...args);
             
         };
-    
+        
         // function 
         REventHandler.prototype.blockSignals = function(...args) 
           
@@ -179,7 +179,7 @@
               return this.__PROXY__.blockSignals(...args);
             
         };
-    
+        
         // function 
         REventHandler.prototype.findChild = function(...args) 
           
@@ -189,7 +189,7 @@
               return this.__PROXY__.findChild(...args);
             
         };
-    
+        
         // function 
         REventHandler.prototype.children = function(...args) 
           
@@ -199,7 +199,7 @@
               return this.__PROXY__.children(...args);
             
         };
-    
+        
         // function 
         REventHandler.prototype.setParent = function(...args) 
           
@@ -209,7 +209,7 @@
               return this.__PROXY__.setParent(...args);
             
         };
-    
+        
         // function 
         REventHandler.prototype.installEventFilter = function(...args) 
           
@@ -219,7 +219,7 @@
               return this.__PROXY__.installEventFilter(...args);
             
         };
-    
+        
         // function 
         REventHandler.prototype.removeEventFilter = function(...args) 
           
@@ -229,7 +229,7 @@
               return this.__PROXY__.removeEventFilter(...args);
             
         };
-    
+        
         // function 
         REventHandler.prototype.dumpObjectTree = function(...args) 
           
@@ -239,7 +239,7 @@
               return this.__PROXY__.dumpObjectTree(...args);
             
         };
-    
+        
         // function 
         REventHandler.prototype.dumpObjectInfo = function(...args) 
           
@@ -249,7 +249,7 @@
               return this.__PROXY__.dumpObjectInfo(...args);
             
         };
-    
+        
         // function 
         REventHandler.prototype.setProperty = function(...args) 
           
@@ -259,7 +259,7 @@
               return this.__PROXY__.setProperty(...args);
             
         };
-    
+        
         // function 
         REventHandler.prototype.property = function(...args) 
           
@@ -269,7 +269,7 @@
               return this.__PROXY__.property(...args);
             
         };
-    
+        
         // function 
         REventHandler.prototype.dynamicPropertyNames = function(...args) 
           
@@ -279,7 +279,7 @@
               return this.__PROXY__.dynamicPropertyNames(...args);
             
         };
-    
+        
         // function 
         REventHandler.prototype.parent = function(...args) 
           
@@ -289,7 +289,7 @@
               return this.__PROXY__.parent(...args);
             
         };
-    
+        
         // function 
         REventHandler.prototype.deleteLater = function(...args) 
           
@@ -299,7 +299,7 @@
               return this.__PROXY__.deleteLater(...args);
             
         };
-    
+        
         // function 
         REventHandler.prototype.isUrl = function(...args) 
           
@@ -309,7 +309,7 @@
               return this.__PROXY__.isUrl(...args);
             
         };
-    
+        
         // function 
         REventHandler.prototype.getUrlsFromMimeData = function(...args) 
           
@@ -319,7 +319,7 @@
               return this.__PROXY__.getUrlsFromMimeData(...args);
             
         };
-    
+        
         // function 
         REventHandler.prototype.dragEnter = function(...args) 
           
@@ -329,7 +329,7 @@
               return this.__PROXY__.dragEnter(...args);
             
         };
-    
+        
         // function 
         REventHandler.prototype.updateTextLabel = function(...args) 
           
@@ -339,7 +339,7 @@
               return this.__PROXY__.updateTextLabel(...args);
             
         };
-    
+        
         // function 
         REventHandler.prototype.updateSnapInfo = function(...args) 
           
@@ -349,7 +349,7 @@
               return this.__PROXY__.updateSnapInfo(...args);
             
         };
-    
+        
         // function 
         REventHandler.prototype.viewportChanged = function(...args) 
           
@@ -359,7 +359,7 @@
               return this.__PROXY__.viewportChanged(...args);
             
         };
-    
+        
         // function 
         REventHandler.prototype.horizontalScrolled = function(...args) 
           
@@ -369,7 +369,7 @@
               return this.__PROXY__.horizontalScrolled(...args);
             
         };
-    
+        
         // function 
         REventHandler.prototype.verticalScrolled = function(...args) 
           
@@ -379,7 +379,7 @@
               return this.__PROXY__.verticalScrolled(...args);
             
         };
-    
+        
 
       // static functions:
       

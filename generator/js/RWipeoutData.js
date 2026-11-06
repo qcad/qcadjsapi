@@ -168,7 +168,7 @@
               return this.__PROXY__.getDocument(...args);
             
         };
-    
+        
         // function 
         RWipeoutData.prototype.setDocument = function(...args) 
           
@@ -178,7 +178,7 @@
               return this.__PROXY__.setDocument(...args);
             
         };
-    
+        
         // function 
         RWipeoutData.prototype.isPointType = function(...args) 
           
@@ -188,7 +188,7 @@
               return this.__PROXY__.isPointType(...args);
             
         };
-    
+        
         // function 
         RWipeoutData.prototype.isSane = function(...args) 
           
@@ -198,7 +198,7 @@
               return this.__PROXY__.isSane(...args);
             
         };
-    
+        
         // function 
         RWipeoutData.prototype.getClosestSubEntityId = function(...args) 
           
@@ -208,7 +208,7 @@
               return this.__PROXY__.getClosestSubEntityId(...args);
             
         };
-    
+        
         // function 
         RWipeoutData.prototype.getClosestShape = function(...args) 
           
@@ -218,7 +218,7 @@
               return this.__PROXY__.getClosestShape(...args);
             
         };
-    
+        
         // function 
         RWipeoutData.prototype.copyAttributesFrom = function(...args) 
           
@@ -228,7 +228,7 @@
               return this.__PROXY__.copyAttributesFrom(...args);
             
         };
-    
+        
         // function 
         RWipeoutData.prototype.getHull = function(...args) 
           
@@ -238,7 +238,7 @@
               return this.__PROXY__.getHull(...args);
             
         };
-    
+        
         // function 
         RWipeoutData.prototype.isUpdatesEnabled = function(...args) 
           
@@ -248,7 +248,7 @@
               return this.__PROXY__.isUpdatesEnabled(...args);
             
         };
-    
+        
         // function 
         RWipeoutData.prototype.setUpdatesEnabled = function(...args) 
           
@@ -258,7 +258,7 @@
               return this.__PROXY__.setUpdatesEnabled(...args);
             
         };
-    
+        
         // function 
         RWipeoutData.prototype.cloneOnChange = function(...args) 
           
@@ -268,7 +268,7 @@
               return this.__PROXY__.cloneOnChange(...args);
             
         };
-    
+        
         // function 
         RWipeoutData.prototype.isSelected = function(...args) 
           
@@ -278,7 +278,7 @@
               return this.__PROXY__.isSelected(...args);
             
         };
-    
+        
         // function 
         RWipeoutData.prototype.setSelected = function(...args) 
           
@@ -288,7 +288,7 @@
               return this.__PROXY__.setSelected(...args);
             
         };
-    
+        
         // function 
         RWipeoutData.prototype.isSelectedWorkingSet = function(...args) 
           
@@ -298,7 +298,7 @@
               return this.__PROXY__.isSelectedWorkingSet(...args);
             
         };
-    
+        
         // function 
         RWipeoutData.prototype.setSelectedWorkingSet = function(...args) 
           
@@ -308,7 +308,7 @@
               return this.__PROXY__.setSelectedWorkingSet(...args);
             
         };
-    
+        
         // function 
         RWipeoutData.prototype.getDrawOrder = function(...args) 
           
@@ -318,7 +318,7 @@
               return this.__PROXY__.getDrawOrder(...args);
             
         };
-    
+        
         // function 
         RWipeoutData.prototype.setDrawOrder = function(...args) 
           
@@ -328,7 +328,7 @@
               return this.__PROXY__.setDrawOrder(...args);
             
         };
-    
+        
         // function 
         RWipeoutData.prototype.setLayerId = function(...args) 
           
@@ -338,7 +338,7 @@
               return this.__PROXY__.setLayerId(...args);
             
         };
-    
+        
         // function 
         RWipeoutData.prototype.getLayerId = function(...args) 
           
@@ -348,7 +348,7 @@
               return this.__PROXY__.getLayerId(...args);
             
         };
-    
+        
         // function 
         RWipeoutData.prototype.setLayerName = function(...args) 
           
@@ -358,7 +358,7 @@
               return this.__PROXY__.setLayerName(...args);
             
         };
-    
+        
         // function 
         RWipeoutData.prototype.getLayerName = function(...args) 
           
@@ -368,7 +368,7 @@
               return this.__PROXY__.getLayerName(...args);
             
         };
-    
+        
         // function 
         RWipeoutData.prototype.setBlockId = function(...args) 
           
@@ -378,7 +378,7 @@
               return this.__PROXY__.setBlockId(...args);
             
         };
-    
+        
         // function 
         RWipeoutData.prototype.getBlockId = function(...args) 
           
@@ -388,7 +388,7 @@
               return this.__PROXY__.getBlockId(...args);
             
         };
-    
+        
         // function 
         RWipeoutData.prototype.setParentId = function(...args) 
           
@@ -398,7 +398,7 @@
               return this.__PROXY__.setParentId(...args);
             
         };
-    
+        
         // function 
         RWipeoutData.prototype.getParentId = function(...args) 
           
@@ -408,7 +408,7 @@
               return this.__PROXY__.getParentId(...args);
             
         };
-    
+        
         // function 
         RWipeoutData.prototype.getBlockName = function(...args) 
           
@@ -418,7 +418,7 @@
               return this.__PROXY__.getBlockName(...args);
             
         };
-    
+        
         // function 
         RWipeoutData.prototype.setLinetypeId = function(...args) 
           
@@ -428,7 +428,7 @@
               return this.__PROXY__.setLinetypeId(...args);
             
         };
-    
+        
         // function 
         RWipeoutData.prototype.getLinetypeId = function(...args) 
           
@@ -438,7 +438,7 @@
               return this.__PROXY__.getLinetypeId(...args);
             
         };
-    
+        
         // function 
         RWipeoutData.prototype.setLinetypePattern = function(...args) 
           
@@ -448,7 +448,7 @@
               return this.__PROXY__.setLinetypePattern(...args);
             
         };
-    
+        
         // function 
         RWipeoutData.prototype.getLinetypePattern = function(...args) 
           
@@ -458,7 +458,7 @@
               return this.__PROXY__.getLinetypePattern(...args);
             
         };
-    
+        
         // function 
         RWipeoutData.prototype.setLinetypeScale = function(...args) 
           
@@ -468,7 +468,7 @@
               return this.__PROXY__.setLinetypeScale(...args);
             
         };
-    
+        
         // function 
         RWipeoutData.prototype.getLinetypeScale = function(...args) 
           
@@ -478,7 +478,7 @@
               return this.__PROXY__.getLinetypeScale(...args);
             
         };
-    
+        
         // function 
         RWipeoutData.prototype.getLineweight = function(...args) 
           
@@ -488,7 +488,7 @@
               return this.__PROXY__.getLineweight(...args);
             
         };
-    
+        
         // function 
         RWipeoutData.prototype.setLineweight = function(...args) 
           
@@ -498,7 +498,7 @@
               return this.__PROXY__.setLineweight(...args);
             
         };
-    
+        
         // function 
         RWipeoutData.prototype.setColor = function(...args) 
           
@@ -508,7 +508,7 @@
               return this.__PROXY__.setColor(...args);
             
         };
-    
+        
         // function 
         RWipeoutData.prototype.getColor = function(...args) 
           
@@ -518,7 +518,7 @@
               return this.__PROXY__.getColor(...args);
             
         };
-    
+        
         // function 
         RWipeoutData.prototype.getDisplayColor = function(...args) 
           
@@ -528,7 +528,7 @@
               return this.__PROXY__.getDisplayColor(...args);
             
         };
-    
+        
         // function 
         RWipeoutData.prototype.getInternalReferencePoints = function(...args) 
           
@@ -538,7 +538,7 @@
               return this.__PROXY__.getInternalReferencePoints(...args);
             
         };
-    
+        
         // function 
         RWipeoutData.prototype.getPointOnEntity = function(...args) 
           
@@ -548,7 +548,7 @@
               return this.__PROXY__.getPointOnEntity(...args);
             
         };
-    
+        
         // function 
         RWipeoutData.prototype.getClosestPointOnEntity = function(...args) 
           
@@ -558,7 +558,7 @@
               return this.__PROXY__.getClosestPointOnEntity(...args);
             
         };
-    
+        
         // function 
         RWipeoutData.prototype.isInside = function(...args) 
           
@@ -568,7 +568,7 @@
               return this.__PROXY__.isInside(...args);
             
         };
-    
+        
         // function 
         RWipeoutData.prototype.isOnEntity = function(...args) 
           
@@ -578,7 +578,7 @@
               return this.__PROXY__.isOnEntity(...args);
             
         };
-    
+        
         // function 
         RWipeoutData.prototype.clickReferencePoint = function(...args) 
           
@@ -588,7 +588,7 @@
               return this.__PROXY__.clickReferencePoint(...args);
             
         };
-    
+        
         // function 
         RWipeoutData.prototype.scaleVisualProperties = function(...args) 
           
@@ -598,7 +598,7 @@
               return this.__PROXY__.scaleVisualProperties(...args);
             
         };
-    
+        
         // function 
         RWipeoutData.prototype.update = function(...args) 
           
@@ -608,7 +608,7 @@
               return this.__PROXY__.update(...args);
             
         };
-    
+        
         // function 
         RWipeoutData.prototype.setAutoUpdatesBlocked = function(...args) 
           
@@ -618,7 +618,7 @@
               return this.__PROXY__.setAutoUpdatesBlocked(...args);
             
         };
-    
+        
         // function 
         RWipeoutData.prototype.isValid = function(...args) 
           
@@ -628,7 +628,7 @@
               return this.__PROXY__.isValid(...args);
             
         };
-    
+        
         // function 
         RWipeoutData.prototype.getEndPoints = function(...args) 
           
@@ -638,7 +638,7 @@
               return this.__PROXY__.getEndPoints(...args);
             
         };
-    
+        
         // function 
         RWipeoutData.prototype.setZ = function(...args) 
           
@@ -648,7 +648,7 @@
               return this.__PROXY__.setZ(...args);
             
         };
-    
+        
         // function 
         RWipeoutData.prototype.to2D = function(...args) 
           
@@ -658,7 +658,7 @@
               return this.__PROXY__.to2D(...args);
             
         };
-    
+        
         // function 
         RWipeoutData.prototype.getBoundingBox = function(...args) 
           
@@ -668,7 +668,7 @@
               return this.__PROXY__.getBoundingBox(...args);
             
         };
-    
+        
         // function 
         RWipeoutData.prototype.getMiddlePoints = function(...args) 
           
@@ -678,7 +678,7 @@
               return this.__PROXY__.getMiddlePoints(...args);
             
         };
-    
+        
         // function 
         RWipeoutData.prototype.getCenterPoints = function(...args) 
           
@@ -688,7 +688,7 @@
               return this.__PROXY__.getCenterPoints(...args);
             
         };
-    
+        
         // function 
         RWipeoutData.prototype.getArcReferencePoints = function(...args) 
           
@@ -698,7 +698,7 @@
               return this.__PROXY__.getArcReferencePoints(...args);
             
         };
-    
+        
         // function 
         RWipeoutData.prototype.getPointsWithDistanceToEnd = function(...args) 
           
@@ -708,7 +708,7 @@
               return this.__PROXY__.getPointsWithDistanceToEnd(...args);
             
         };
-    
+        
         // function 
         RWipeoutData.prototype.getIntersectionPoints = function(...args) 
           
@@ -718,7 +718,7 @@
               return this.__PROXY__.getIntersectionPoints(...args);
             
         };
-    
+        
         // function 
         RWipeoutData.prototype.getVectorTo = function(...args) 
           
@@ -728,7 +728,7 @@
               return this.__PROXY__.getVectorTo(...args);
             
         };
-    
+        
         // function 
         RWipeoutData.prototype.intersectsWith = function(...args) 
           
@@ -738,7 +738,7 @@
               return this.__PROXY__.intersectsWith(...args);
             
         };
-    
+        
         // function 
         RWipeoutData.prototype.move = function(...args) 
           
@@ -748,7 +748,7 @@
               return this.__PROXY__.move(...args);
             
         };
-    
+        
         // function 
         RWipeoutData.prototype.rotate = function(...args) 
           
@@ -758,7 +758,7 @@
               return this.__PROXY__.rotate(...args);
             
         };
-    
+        
         // function 
         RWipeoutData.prototype.scale = function(...args) 
           
@@ -768,7 +768,7 @@
               return this.__PROXY__.scale(...args);
             
         };
-    
+        
         // function 
         RWipeoutData.prototype.mirror = function(...args) 
           
@@ -778,7 +778,7 @@
               return this.__PROXY__.mirror(...args);
             
         };
-    
+        
         // function 
         RWipeoutData.prototype.flipHorizontal = function(...args) 
           
@@ -788,7 +788,7 @@
               return this.__PROXY__.flipHorizontal(...args);
             
         };
-    
+        
         // function 
         RWipeoutData.prototype.flipVertical = function(...args) 
           
@@ -798,7 +798,7 @@
               return this.__PROXY__.flipVertical(...args);
             
         };
-    
+        
         // function 
         RWipeoutData.prototype.stretch = function(...args) 
           
@@ -808,7 +808,7 @@
               return this.__PROXY__.stretch(...args);
             
         };
-    
+        
         // function 
         RWipeoutData.prototype.getBoundingBoxes = function(...args) 
           
@@ -818,7 +818,7 @@
               return this.__PROXY__.getBoundingBoxes(...args);
             
         };
-    
+        
         // function 
         RWipeoutData.prototype.getReferencePoints = function(...args) 
           
@@ -828,7 +828,7 @@
               return this.__PROXY__.getReferencePoints(...args);
             
         };
-    
+        
         // function 
         RWipeoutData.prototype.moveReferencePoint = function(...args) 
           
@@ -838,7 +838,7 @@
               return this.__PROXY__.moveReferencePoint(...args);
             
         };
-    
+        
         // function 
         RWipeoutData.prototype.castToShape = function(...args) 
           
@@ -848,7 +848,7 @@
               return this.__PROXY__.castToShape(...args);
             
         };
-    
+        
         // function 
         RWipeoutData.prototype.getDistanceTo = function(...args) 
           
@@ -858,7 +858,7 @@
               return this.__PROXY__.getDistanceTo(...args);
             
         };
-    
+        
         // function 
         RWipeoutData.prototype.getPolylineShape = function(...args) 
           
@@ -868,7 +868,7 @@
               return this.__PROXY__.getPolylineShape(...args);
             
         };
-    
+        
         // function 
         RWipeoutData.prototype.clear = function(...args) 
           
@@ -878,7 +878,7 @@
               return this.__PROXY__.clear(...args);
             
         };
-    
+        
         // function 
         RWipeoutData.prototype.normalize = function(...args) 
           
@@ -888,7 +888,7 @@
               return this.__PROXY__.normalize(...args);
             
         };
-    
+        
         // function 
         RWipeoutData.prototype.getVertices = function(...args) 
           
@@ -898,7 +898,7 @@
               return this.__PROXY__.getVertices(...args);
             
         };
-    
+        
         // function 
         RWipeoutData.prototype.getVertexAt = function(...args) 
           
@@ -908,7 +908,7 @@
               return this.__PROXY__.getVertexAt(...args);
             
         };
-    
+        
         // function 
         RWipeoutData.prototype.appendVertex = function(...args) 
           
@@ -918,7 +918,7 @@
               return this.__PROXY__.appendVertex(...args);
             
         };
-    
+        
         // function 
         RWipeoutData.prototype.prependVertex = function(...args) 
           
@@ -928,7 +928,7 @@
               return this.__PROXY__.prependVertex(...args);
             
         };
-    
+        
         // function 
         RWipeoutData.prototype.insertVertex = function(...args) 
           
@@ -938,7 +938,7 @@
               return this.__PROXY__.insertVertex(...args);
             
         };
-    
+        
         // function 
         RWipeoutData.prototype.removeLastVertex = function(...args) 
           
@@ -948,7 +948,7 @@
               return this.__PROXY__.removeLastVertex(...args);
             
         };
-    
+        
         // function 
         RWipeoutData.prototype.removeVertex = function(...args) 
           
@@ -958,7 +958,7 @@
               return this.__PROXY__.removeVertex(...args);
             
         };
-    
+        
         // function 
         RWipeoutData.prototype.countSegments = function(...args) 
           
@@ -968,7 +968,7 @@
               return this.__PROXY__.countSegments(...args);
             
         };
-    
+        
         // function 
         RWipeoutData.prototype.getSegmentAt = function(...args) 
           
@@ -978,7 +978,7 @@
               return this.__PROXY__.getSegmentAt(...args);
             
         };
-    
+        
         // function 
         RWipeoutData.prototype.getBulgeAt = function(...args) 
           
@@ -988,7 +988,7 @@
               return this.__PROXY__.getBulgeAt(...args);
             
         };
-    
+        
         // function 
         RWipeoutData.prototype.setBulgeAt = function(...args) 
           
@@ -998,7 +998,7 @@
               return this.__PROXY__.setBulgeAt(...args);
             
         };
-    
+        
         // function 
         RWipeoutData.prototype.getVertexAngle = function(...args) 
           
@@ -1008,7 +1008,7 @@
               return this.__PROXY__.getVertexAngle(...args);
             
         };
-    
+        
         // function 
         RWipeoutData.prototype.getDirection1 = function(...args) 
           
@@ -1018,7 +1018,7 @@
               return this.__PROXY__.getDirection1(...args);
             
         };
-    
+        
         // function 
         RWipeoutData.prototype.getDirection2 = function(...args) 
           
@@ -1028,7 +1028,7 @@
               return this.__PROXY__.getDirection2(...args);
             
         };
-    
+        
         // function 
         RWipeoutData.prototype.reverse = function(...args) 
           
@@ -1038,7 +1038,7 @@
               return this.__PROXY__.reverse(...args);
             
         };
-    
+        
         // function 
         RWipeoutData.prototype.getEndPoint = function(...args) 
           
@@ -1048,7 +1048,7 @@
               return this.__PROXY__.getEndPoint(...args);
             
         };
-    
+        
         // function 
         RWipeoutData.prototype.getStartPoint = function(...args) 
           
@@ -1058,7 +1058,7 @@
               return this.__PROXY__.getStartPoint(...args);
             
         };
-    
+        
         // function 
         RWipeoutData.prototype.relocateStartPoint = function(...args) 
           
@@ -1068,7 +1068,7 @@
               return this.__PROXY__.relocateStartPoint(...args);
             
         };
-    
+        
         // function 
         RWipeoutData.prototype.setClosed = function(...args) 
           
@@ -1078,7 +1078,7 @@
               return this.__PROXY__.setClosed(...args);
             
         };
-    
+        
         // function 
         RWipeoutData.prototype.isClosed = function(...args) 
           
@@ -1088,7 +1088,7 @@
               return this.__PROXY__.isClosed(...args);
             
         };
-    
+        
         // function 
         RWipeoutData.prototype.isGeometricallyClosed = function(...args) 
           
@@ -1098,7 +1098,7 @@
               return this.__PROXY__.isGeometricallyClosed(...args);
             
         };
-    
+        
         // function 
         RWipeoutData.prototype.autoClose = function(...args) 
           
@@ -1108,7 +1108,7 @@
               return this.__PROXY__.autoClose(...args);
             
         };
-    
+        
         // function 
         RWipeoutData.prototype.toLogicallyClosed = function(...args) 
           
@@ -1118,7 +1118,7 @@
               return this.__PROXY__.toLogicallyClosed(...args);
             
         };
-    
+        
         // function 
         RWipeoutData.prototype.toLogicallyOpen = function(...args) 
           
@@ -1128,7 +1128,7 @@
               return this.__PROXY__.toLogicallyOpen(...args);
             
         };
-    
+        
         // function 
         RWipeoutData.prototype.getOrientation = function(...args) 
           
@@ -1138,7 +1138,7 @@
               return this.__PROXY__.getOrientation(...args);
             
         };
-    
+        
         // function 
         RWipeoutData.prototype.setGlobalWidth = function(...args) 
           
@@ -1148,7 +1148,7 @@
               return this.__PROXY__.setGlobalWidth(...args);
             
         };
-    
+        
         // function 
         RWipeoutData.prototype.setStartWidthAt = function(...args) 
           
@@ -1158,7 +1158,7 @@
               return this.__PROXY__.setStartWidthAt(...args);
             
         };
-    
+        
         // function 
         RWipeoutData.prototype.getStartWidthAt = function(...args) 
           
@@ -1168,7 +1168,7 @@
               return this.__PROXY__.getStartWidthAt(...args);
             
         };
-    
+        
         // function 
         RWipeoutData.prototype.setEndWidthAt = function(...args) 
           
@@ -1178,7 +1178,7 @@
               return this.__PROXY__.setEndWidthAt(...args);
             
         };
-    
+        
         // function 
         RWipeoutData.prototype.getEndWidthAt = function(...args) 
           
@@ -1188,7 +1188,7 @@
               return this.__PROXY__.getEndWidthAt(...args);
             
         };
-    
+        
         // function 
         RWipeoutData.prototype.hasWidths = function(...args) 
           
@@ -1198,7 +1198,7 @@
               return this.__PROXY__.hasWidths(...args);
             
         };
-    
+        
         // function 
         RWipeoutData.prototype.setStartWidths = function(...args) 
           
@@ -1208,7 +1208,7 @@
               return this.__PROXY__.setStartWidths(...args);
             
         };
-    
+        
         // function 
         RWipeoutData.prototype.getStartWidths = function(...args) 
           
@@ -1218,7 +1218,7 @@
               return this.__PROXY__.getStartWidths(...args);
             
         };
-    
+        
         // function 
         RWipeoutData.prototype.setEndWidths = function(...args) 
           
@@ -1228,7 +1228,7 @@
               return this.__PROXY__.setEndWidths(...args);
             
         };
-    
+        
         // function 
         RWipeoutData.prototype.getEndWidths = function(...args) 
           
@@ -1238,7 +1238,7 @@
               return this.__PROXY__.getEndWidths(...args);
             
         };
-    
+        
         // function 
         RWipeoutData.prototype.getExploded = function(...args) 
           
@@ -1248,7 +1248,7 @@
               return this.__PROXY__.getExploded(...args);
             
         };
-    
+        
         // function 
         RWipeoutData.prototype.toPainterPath = function(...args) 
           
@@ -1258,7 +1258,7 @@
               return this.__PROXY__.toPainterPath(...args);
             
         };
-    
+        
         // function 
         RWipeoutData.prototype.simplify = function(...args) 
           
@@ -1268,7 +1268,7 @@
               return this.__PROXY__.simplify(...args);
             
         };
-    
+        
         // function 
         RWipeoutData.prototype.roundAllCorners = function(...args) 
           
@@ -1278,7 +1278,7 @@
               return this.__PROXY__.roundAllCorners(...args);
             
         };
-    
+        
         // function 
         RWipeoutData.prototype.verifyTangency = function(...args) 
           
@@ -1288,7 +1288,7 @@
               return this.__PROXY__.verifyTangency(...args);
             
         };
-    
+        
         // function 
         RWipeoutData.prototype.getShapes = function(...args) 
           
@@ -1298,7 +1298,7 @@
               return this.__PROXY__.getShapes(...args);
             
         };
-    
+        
         // function 
         RWipeoutData.prototype.setPolylineGen = function(...args) 
           
@@ -1308,7 +1308,7 @@
               return this.__PROXY__.setPolylineGen(...args);
             
         };
-    
+        
         // function 
         RWipeoutData.prototype.getPolylineGen = function(...args) 
           
@@ -1318,7 +1318,7 @@
               return this.__PROXY__.getPolylineGen(...args);
             
         };
-    
+        
         // function 
         RWipeoutData.prototype.setElevation = function(...args) 
           
@@ -1328,7 +1328,7 @@
               return this.__PROXY__.setElevation(...args);
             
         };
-    
+        
         // function 
         RWipeoutData.prototype.getElevation = function(...args) 
           
@@ -1338,7 +1338,7 @@
               return this.__PROXY__.getElevation(...args);
             
         };
-    
+        
         // function 
         RWipeoutData.prototype.getType = function(...args) 
           
@@ -1348,7 +1348,7 @@
               return this.__PROXY__.getType(...args);
             
         };
-    
+        
         // function 
         RWipeoutData.prototype.getShowFrame = function(...args) 
           
@@ -1358,7 +1358,7 @@
               return this.__PROXY__.getShowFrame(...args);
             
         };
-    
+        
         // function 
         RWipeoutData.prototype.setShowFrame = function(...args) 
           
@@ -1368,7 +1368,7 @@
               return this.__PROXY__.setShowFrame(...args);
             
         };
-    
+        
         // function 
         RWipeoutData.prototype.getBoundary = function(...args) 
           
@@ -1378,7 +1378,7 @@
               return this.__PROXY__.getBoundary(...args);
             
         };
-    
+        
 
       // static functions:
       RWipeoutData.prototype.isNullWrapper = function() {

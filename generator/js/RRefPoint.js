@@ -217,7 +217,7 @@
               return this.__PROXY__.set(...args);
             
         };
-    
+        
         // function 
         RRefPoint.prototype.setPolar = function(...args) 
           
@@ -227,7 +227,7 @@
               return this.__PROXY__.setPolar(...args);
             
         };
-    
+        
         // function 
         RRefPoint.prototype.get2D = function(...args) 
           
@@ -237,7 +237,7 @@
               return this.__PROXY__.get2D(...args);
             
         };
-    
+        
         // function 
         RRefPoint.prototype.isValid = function(...args) 
           
@@ -247,7 +247,7 @@
               return this.__PROXY__.isValid(...args);
             
         };
-    
+        
         // function 
         RRefPoint.prototype.isZero = function(...args) 
           
@@ -257,7 +257,7 @@
               return this.__PROXY__.isZero(...args);
             
         };
-    
+        
         // function 
         RRefPoint.prototype.isSane = function(...args) 
           
@@ -267,7 +267,7 @@
               return this.__PROXY__.isSane(...args);
             
         };
-    
+        
         // function 
         RRefPoint.prototype.isNaN = function(...args) 
           
@@ -277,7 +277,7 @@
               return this.__PROXY__.isNaN(...args);
             
         };
-    
+        
         // function 
         RRefPoint.prototype.isInside = function(...args) 
           
@@ -287,7 +287,7 @@
               return this.__PROXY__.isInside(...args);
             
         };
-    
+        
         // function 
         RRefPoint.prototype.equalsFuzzy = function(...args) 
           
@@ -297,7 +297,7 @@
               return this.__PROXY__.equalsFuzzy(...args);
             
         };
-    
+        
         // function 
         RRefPoint.prototype.equalsFuzzy2D = function(...args) 
           
@@ -307,7 +307,7 @@
               return this.__PROXY__.equalsFuzzy2D(...args);
             
         };
-    
+        
         // function 
         RRefPoint.prototype.getDistanceTo = function(...args) 
           
@@ -317,7 +317,7 @@
               return this.__PROXY__.getDistanceTo(...args);
             
         };
-    
+        
         // function 
         RRefPoint.prototype.getDistanceTo2D = function(...args) 
           
@@ -327,7 +327,7 @@
               return this.__PROXY__.getDistanceTo2D(...args);
             
         };
-    
+        
         // function 
         RRefPoint.prototype.setAngle = function(...args) 
           
@@ -337,7 +337,7 @@
               return this.__PROXY__.setAngle(...args);
             
         };
-    
+        
         // function 
         RRefPoint.prototype.getAngle = function(...args) 
           
@@ -347,7 +347,7 @@
               return this.__PROXY__.getAngle(...args);
             
         };
-    
+        
         // function 
         RRefPoint.prototype.getAngleToPlaneXY = function(...args) 
           
@@ -357,7 +357,7 @@
               return this.__PROXY__.getAngleToPlaneXY(...args);
             
         };
-    
+        
         // function 
         RRefPoint.prototype.getAngleTo = function(...args) 
           
@@ -367,7 +367,7 @@
               return this.__PROXY__.getAngleTo(...args);
             
         };
-    
+        
         // function 
         RRefPoint.prototype.setMagnitude2D = function(...args) 
           
@@ -377,7 +377,7 @@
               return this.__PROXY__.setMagnitude2D(...args);
             
         };
-    
+        
         // function 
         RRefPoint.prototype.getMagnitude = function(...args) 
           
@@ -387,7 +387,7 @@
               return this.__PROXY__.getMagnitude(...args);
             
         };
-    
+        
         // function 
         RRefPoint.prototype.getSquaredMagnitude = function(...args) 
           
@@ -397,7 +397,7 @@
               return this.__PROXY__.getSquaredMagnitude(...args);
             
         };
-    
+        
         // function 
         RRefPoint.prototype.getMagnitude2D = function(...args) 
           
@@ -407,7 +407,7 @@
               return this.__PROXY__.getMagnitude2D(...args);
             
         };
-    
+        
         // function 
         RRefPoint.prototype.getLerp = function(...args) 
           
@@ -417,7 +417,7 @@
               return this.__PROXY__.getLerp(...args);
             
         };
-    
+        
         // function 
         RRefPoint.prototype.getUnitVector = function(...args) 
           
@@ -427,7 +427,7 @@
               return this.__PROXY__.getUnitVector(...args);
             
         };
-    
+        
         // function 
         RRefPoint.prototype.setX = function(...args) 
           
@@ -437,7 +437,7 @@
               return this.__PROXY__.setX(...args);
             
         };
-    
+        
         // function 
         RRefPoint.prototype.getX = function(...args) 
           
@@ -447,7 +447,7 @@
               return this.__PROXY__.getX(...args);
             
         };
-    
+        
         // function 
         RRefPoint.prototype.setY = function(...args) 
           
@@ -457,7 +457,7 @@
               return this.__PROXY__.setY(...args);
             
         };
-    
+        
         // function 
         RRefPoint.prototype.getY = function(...args) 
           
@@ -467,7 +467,7 @@
               return this.__PROXY__.getY(...args);
             
         };
-    
+        
         // function 
         RRefPoint.prototype.setZ = function(...args) 
           
@@ -477,7 +477,7 @@
               return this.__PROXY__.setZ(...args);
             
         };
-    
+        
         // function 
         RRefPoint.prototype.getZ = function(...args) 
           
@@ -487,7 +487,7 @@
               return this.__PROXY__.getZ(...args);
             
         };
-    
+        
         // function 
         RRefPoint.prototype.isInWindow = function(...args) 
           
@@ -497,7 +497,7 @@
               return this.__PROXY__.isInWindow(...args);
             
         };
-    
+        
         // function 
         RRefPoint.prototype.move = function(...args) 
           
@@ -507,7 +507,7 @@
               return this.__PROXY__.move(...args);
             
         };
-    
+        
         // function 
         RRefPoint.prototype.rotate = function(...args) 
           
@@ -517,7 +517,7 @@
               return this.__PROXY__.rotate(...args);
             
         };
-    
+        
         // function 
         RRefPoint.prototype.getRotated = function(...args) 
           
@@ -527,7 +527,7 @@
               return this.__PROXY__.getRotated(...args);
             
         };
-    
+        
         // function 
         RRefPoint.prototype.rotate3D = function(...args) 
           
@@ -537,7 +537,7 @@
               return this.__PROXY__.rotate3D(...args);
             
         };
-    
+        
         // function 
         RRefPoint.prototype.scale = function(...args) 
           
@@ -547,7 +547,7 @@
               return this.__PROXY__.scale(...args);
             
         };
-    
+        
         // function 
         RRefPoint.prototype.getScaled = function(...args) 
           
@@ -557,7 +557,7 @@
               return this.__PROXY__.getScaled(...args);
             
         };
-    
+        
         // function 
         RRefPoint.prototype.mirror = function(...args) 
           
@@ -567,7 +567,7 @@
               return this.__PROXY__.mirror(...args);
             
         };
-    
+        
         // function 
         RRefPoint.prototype.getMirrored = function(...args) 
           
@@ -577,7 +577,7 @@
               return this.__PROXY__.getMirrored(...args);
             
         };
-    
+        
         // function 
         RRefPoint.prototype.flipHorizontal = function(...args) 
           
@@ -587,7 +587,7 @@
               return this.__PROXY__.flipHorizontal(...args);
             
         };
-    
+        
         // function 
         RRefPoint.prototype.flipVertical = function(...args) 
           
@@ -597,7 +597,7 @@
               return this.__PROXY__.flipVertical(...args);
             
         };
-    
+        
         // function 
         RRefPoint.prototype.stretch = function(...args) 
           
@@ -607,7 +607,7 @@
               return this.__PROXY__.stretch(...args);
             
         };
-    
+        
         // function 
         RRefPoint.prototype.isoProject = function(...args) 
           
@@ -617,7 +617,7 @@
               return this.__PROXY__.isoProject(...args);
             
         };
-    
+        
         // function 
         RRefPoint.prototype.axonometricProjection = function(...args) 
           
@@ -627,7 +627,7 @@
               return this.__PROXY__.axonometricProjection(...args);
             
         };
-    
+        
         // function 
         RRefPoint.prototype.obliqueProjection = function(...args) 
           
@@ -637,7 +637,7 @@
               return this.__PROXY__.obliqueProjection(...args);
             
         };
-    
+        
         // function 
         RRefPoint.prototype.transform = function(...args) 
           
@@ -647,7 +647,7 @@
               return this.__PROXY__.transform(...args);
             
         };
-    
+        
         // function 
         RRefPoint.prototype.transform2DM = function(...args) 
           
@@ -657,7 +657,7 @@
               return this.__PROXY__.transform2DM(...args);
             
         };
-    
+        
         // function 
         RRefPoint.prototype.transform2D = function(...args) 
           
@@ -667,7 +667,7 @@
               return this.__PROXY__.transform2D(...args);
             
         };
-    
+        
         // function 
         RRefPoint.prototype.getTransformed = function(...args) 
           
@@ -677,7 +677,7 @@
               return this.__PROXY__.getTransformed(...args);
             
         };
-    
+        
         // function 
         RRefPoint.prototype.getTransformed2DM = function(...args) 
           
@@ -687,7 +687,7 @@
               return this.__PROXY__.getTransformed2DM(...args);
             
         };
-    
+        
         // function 
         RRefPoint.prototype.getTransformed2D = function(...args) 
           
@@ -697,7 +697,7 @@
               return this.__PROXY__.getTransformed2D(...args);
             
         };
-    
+        
         // function 
         RRefPoint.prototype.getDividedComponents = function(...args) 
           
@@ -707,7 +707,7 @@
               return this.__PROXY__.getDividedComponents(...args);
             
         };
-    
+        
         // function 
         RRefPoint.prototype.getMultipliedComponents = function(...args) 
           
@@ -717,7 +717,7 @@
               return this.__PROXY__.getMultipliedComponents(...args);
             
         };
-    
+        
         // function 
         RRefPoint.prototype.getClosest = function(...args) 
           
@@ -727,7 +727,7 @@
               return this.__PROXY__.getClosest(...args);
             
         };
-    
+        
         // function 
         RRefPoint.prototype.getClosest2D = function(...args) 
           
@@ -737,7 +737,7 @@
               return this.__PROXY__.getClosest2D(...args);
             
         };
-    
+        
         // function 
         RRefPoint.prototype.getClosestDistance = function(...args) 
           
@@ -747,7 +747,7 @@
               return this.__PROXY__.getClosestDistance(...args);
             
         };
-    
+        
         // function 
         RRefPoint.prototype.getClosestIndex = function(...args) 
           
@@ -757,7 +757,7 @@
               return this.__PROXY__.getClosestIndex(...args);
             
         };
-    
+        
         // function 
         RRefPoint.prototype.getClosestIndex2D = function(...args) 
           
@@ -767,7 +767,7 @@
               return this.__PROXY__.getClosestIndex2D(...args);
             
         };
-    
+        
         // function 
         RRefPoint.prototype.operator_add = function(...args) 
           
@@ -777,7 +777,7 @@
               return this.__PROXY__.operator_add(...args);
             
         };
-    
+        
         // function 
         RRefPoint.prototype.operator_subtract = function(...args) 
           
@@ -787,7 +787,7 @@
               return this.__PROXY__.operator_subtract(...args);
             
         };
-    
+        
         // function 
         RRefPoint.prototype.operator_multiply = function(...args) 
           
@@ -797,7 +797,7 @@
               return this.__PROXY__.operator_multiply(...args);
             
         };
-    
+        
         // function 
         RRefPoint.prototype.operator_divide = function(...args) 
           
@@ -807,7 +807,7 @@
               return this.__PROXY__.operator_divide(...args);
             
         };
-    
+        
         // function 
         RRefPoint.prototype.getNegated = function(...args) 
           
@@ -817,7 +817,7 @@
               return this.__PROXY__.getNegated(...args);
             
         };
-    
+        
         // function 
         RRefPoint.prototype.getAbsolute = function(...args) 
           
@@ -827,7 +827,7 @@
               return this.__PROXY__.getAbsolute(...args);
             
         };
-    
+        
         // function 
         RRefPoint.prototype.dot = function(...args) 
           
@@ -837,7 +837,7 @@
               return this.__PROXY__.dot(...args);
             
         };
-    
+        
         // function 
         RRefPoint.prototype.normalize = function(...args) 
           
@@ -847,7 +847,7 @@
               return this.__PROXY__.normalize(...args);
             
         };
-    
+        
         // function 
         RRefPoint.prototype.getNormalized = function(...args) 
           
@@ -857,7 +857,7 @@
               return this.__PROXY__.getNormalized(...args);
             
         };
-    
+        
         // function 
         RRefPoint.prototype.operator_add_assign = function(...args) 
           
@@ -867,7 +867,7 @@
               return this.__PROXY__.operator_add_assign(...args);
             
         };
-    
+        
         // function 
         RRefPoint.prototype.operator_subtract_assign = function(...args) 
           
@@ -877,7 +877,7 @@
               return this.__PROXY__.operator_subtract_assign(...args);
             
         };
-    
+        
         // function 
         RRefPoint.prototype.operator_multiply_assign = function(...args) 
           
@@ -887,7 +887,7 @@
               return this.__PROXY__.operator_multiply_assign(...args);
             
         };
-    
+        
         // function 
         RRefPoint.prototype.operator_divide_assign = function(...args) 
           
@@ -897,7 +897,7 @@
               return this.__PROXY__.operator_divide_assign(...args);
             
         };
-    
+        
         // function 
         RRefPoint.prototype.operator_equal = function(...args) 
           
@@ -907,7 +907,7 @@
               return this.__PROXY__.operator_equal(...args);
             
         };
-    
+        
         // function 
         RRefPoint.prototype.operator_unequal = function(...args) 
           
@@ -917,7 +917,7 @@
               return this.__PROXY__.operator_unequal(...args);
             
         };
-    
+        
         // function 
         RRefPoint.prototype.getFloor = function(...args) 
           
@@ -927,7 +927,7 @@
               return this.__PROXY__.getFloor(...args);
             
         };
-    
+        
         // function 
         RRefPoint.prototype.getCeil = function(...args) 
           
@@ -937,7 +937,7 @@
               return this.__PROXY__.getCeil(...args);
             
         };
-    
+        
         // function 
         RRefPoint.prototype.lteXY = function(...args) 
           
@@ -947,7 +947,7 @@
               return this.__PROXY__.lteXY(...args);
             
         };
-    
+        
         // function 
         RRefPoint.prototype.gteXY = function(...args) 
           
@@ -957,7 +957,7 @@
               return this.__PROXY__.gteXY(...args);
             
         };
-    
+        
         // function 
         RRefPoint.prototype.copy = function(...args) 
           
@@ -967,7 +967,7 @@
               return this.__PROXY__.copy(...args);
             
         };
-    
+        
         // function 
         RRefPoint.prototype.toVectorList = function(...args) 
           
@@ -977,7 +977,7 @@
               return this.__PROXY__.toVectorList(...args);
             
         };
-    
+        
         // function 
         RRefPoint.prototype.toRefPointList = function(...args) 
           
@@ -987,7 +987,7 @@
               return this.__PROXY__.toRefPointList(...args);
             
         };
-    
+        
         // function 
         RRefPoint.prototype.isSecondary = function(...args) 
           
@@ -997,7 +997,7 @@
               return this.__PROXY__.isSecondary(...args);
             
         };
-    
+        
         // function 
         RRefPoint.prototype.setSecondary = function(...args) 
           
@@ -1007,7 +1007,7 @@
               return this.__PROXY__.setSecondary(...args);
             
         };
-    
+        
         // function 
         RRefPoint.prototype.isTertiary = function(...args) 
           
@@ -1017,7 +1017,7 @@
               return this.__PROXY__.isTertiary(...args);
             
         };
-    
+        
         // function 
         RRefPoint.prototype.setTertiary = function(...args) 
           
@@ -1027,7 +1027,7 @@
               return this.__PROXY__.setTertiary(...args);
             
         };
-    
+        
         // function 
         RRefPoint.prototype.isIgnore = function(...args) 
           
@@ -1037,7 +1037,7 @@
               return this.__PROXY__.isIgnore(...args);
             
         };
-    
+        
         // function 
         RRefPoint.prototype.setIgnore = function(...args) 
           
@@ -1047,7 +1047,7 @@
               return this.__PROXY__.setIgnore(...args);
             
         };
-    
+        
         // function 
         RRefPoint.prototype.isCenter = function(...args) 
           
@@ -1057,7 +1057,7 @@
               return this.__PROXY__.isCenter(...args);
             
         };
-    
+        
         // function 
         RRefPoint.prototype.setCenter = function(...args) 
           
@@ -1067,7 +1067,7 @@
               return this.__PROXY__.setCenter(...args);
             
         };
-    
+        
         // function 
         RRefPoint.prototype.isStart = function(...args) 
           
@@ -1077,7 +1077,7 @@
               return this.__PROXY__.isStart(...args);
             
         };
-    
+        
         // function 
         RRefPoint.prototype.setStart = function(...args) 
           
@@ -1087,7 +1087,7 @@
               return this.__PROXY__.setStart(...args);
             
         };
-    
+        
         // function 
         RRefPoint.prototype.isEnd = function(...args) 
           
@@ -1097,7 +1097,7 @@
               return this.__PROXY__.isEnd(...args);
             
         };
-    
+        
         // function 
         RRefPoint.prototype.setEnd = function(...args) 
           
@@ -1107,7 +1107,7 @@
               return this.__PROXY__.setEnd(...args);
             
         };
-    
+        
         // function 
         RRefPoint.prototype.isArrow = function(...args) 
           
@@ -1117,7 +1117,7 @@
               return this.__PROXY__.isArrow(...args);
             
         };
-    
+        
         // function 
         RRefPoint.prototype.setArrow = function(...args) 
           
@@ -1127,7 +1127,7 @@
               return this.__PROXY__.setArrow(...args);
             
         };
-    
+        
         // function 
         RRefPoint.prototype.isSelected = function(...args) 
           
@@ -1137,7 +1137,7 @@
               return this.__PROXY__.isSelected(...args);
             
         };
-    
+        
         // function 
         RRefPoint.prototype.setSelected = function(...args) 
           
@@ -1147,7 +1147,7 @@
               return this.__PROXY__.setSelected(...args);
             
         };
-    
+        
         // function 
         RRefPoint.prototype.setFlag = function(...args) 
           
@@ -1157,7 +1157,7 @@
               return this.__PROXY__.setFlag(...args);
             
         };
-    
+        
         // function 
         RRefPoint.prototype.getFlag = function(...args) 
           
@@ -1167,7 +1167,7 @@
               return this.__PROXY__.getFlag(...args);
             
         };
-    
+        
         // function 
         RRefPoint.prototype.getFlags = function(...args) 
           
@@ -1177,7 +1177,7 @@
               return this.__PROXY__.getFlags(...args);
             
         };
-    
+        
         // function 
         RRefPoint.prototype.setFlags = function(...args) 
           
@@ -1187,7 +1187,7 @@
               return this.__PROXY__.setFlags(...args);
             
         };
-    
+        
 
       // static functions:
       

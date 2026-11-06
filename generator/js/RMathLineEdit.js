@@ -157,7 +157,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setObjectName(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.isWidgetType = function(...args) 
           
@@ -167,7 +167,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.isWidgetType(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.isWindowType = function(...args) 
           
@@ -177,7 +177,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.isWindowType(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.signalsBlocked = function(...args) 
           
@@ -187,7 +187,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.signalsBlocked(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.blockSignals = function(...args) 
           
@@ -197,7 +197,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.blockSignals(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.findChild = function(...args) 
           
@@ -207,7 +207,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.findChild(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.children = function(...args) 
           
@@ -217,7 +217,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.children(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.installEventFilter = function(...args) 
           
@@ -227,7 +227,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.installEventFilter(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.removeEventFilter = function(...args) 
           
@@ -237,7 +237,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.removeEventFilter(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.dumpObjectTree = function(...args) 
           
@@ -247,7 +247,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.dumpObjectTree(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.dumpObjectInfo = function(...args) 
           
@@ -257,7 +257,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.dumpObjectInfo(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.setProperty = function(...args) 
           
@@ -267,7 +267,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setProperty(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.property = function(...args) 
           
@@ -277,7 +277,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.property(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.dynamicPropertyNames = function(...args) 
           
@@ -287,7 +287,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.dynamicPropertyNames(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.parent = function(...args) 
           
@@ -297,7 +297,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.parent(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.deleteLater = function(...args) 
           
@@ -307,7 +307,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.deleteLater(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.devType = function(...args) 
           
@@ -317,7 +317,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.devType(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.createWinId = function(...args) 
           
@@ -327,7 +327,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.createWinId(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.isWindow = function(...args) 
           
@@ -337,7 +337,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.isWindow(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.isModal = function(...args) 
           
@@ -347,7 +347,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.isModal(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.setWindowModality = function(...args) 
           
@@ -357,7 +357,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setWindowModality(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.isEnabled = function(...args) 
           
@@ -367,7 +367,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.isEnabled(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.isEnabledTo = function(...args) 
           
@@ -377,7 +377,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.isEnabledTo(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.setEnabled = function(...args) 
           
@@ -387,7 +387,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setEnabled(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.setDisabled = function(...args) 
           
@@ -397,7 +397,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setDisabled(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.setWindowModified = function(...args) 
           
@@ -407,7 +407,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setWindowModified(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.setMinimumSize = function(...args) 
           
@@ -417,7 +417,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setMinimumSize(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.setMaximumSize = function(...args) 
           
@@ -427,7 +427,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setMaximumSize(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.setMinimumWidth = function(...args) 
           
@@ -437,7 +437,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setMinimumWidth(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.setMinimumHeight = function(...args) 
           
@@ -447,7 +447,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setMinimumHeight(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.setMaximumWidth = function(...args) 
           
@@ -457,7 +457,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setMaximumWidth(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.setMaximumHeight = function(...args) 
           
@@ -467,7 +467,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setMaximumHeight(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.setSizeIncrement = function(...args) 
           
@@ -477,7 +477,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setSizeIncrement(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.setBaseSize = function(...args) 
           
@@ -487,7 +487,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setBaseSize(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.setFixedSize = function(...args) 
           
@@ -497,7 +497,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setFixedSize(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.setFixedWidth = function(...args) 
           
@@ -507,7 +507,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setFixedWidth(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.setFixedHeight = function(...args) 
           
@@ -517,7 +517,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setFixedHeight(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.mapToGlobal = function(...args) 
           
@@ -527,7 +527,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.mapToGlobal(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.mapFromGlobal = function(...args) 
           
@@ -537,7 +537,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.mapFromGlobal(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.mapToParent = function(...args) 
           
@@ -547,7 +547,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.mapToParent(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.mapFromParent = function(...args) 
           
@@ -557,7 +557,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.mapFromParent(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.mapTo = function(...args) 
           
@@ -567,7 +567,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.mapTo(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.mapFrom = function(...args) 
           
@@ -577,7 +577,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.mapFrom(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.window = function(...args) 
           
@@ -587,7 +587,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.window(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.nativeParentWidget = function(...args) 
           
@@ -597,7 +597,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.nativeParentWidget(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.topLevelWidget = function(...args) 
           
@@ -607,7 +607,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.topLevelWidget(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.setPalette = function(...args) 
           
@@ -617,7 +617,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setPalette(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.setBackgroundRole = function(...args) 
           
@@ -627,7 +627,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setBackgroundRole(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.backgroundRole = function(...args) 
           
@@ -637,7 +637,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.backgroundRole(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.setForegroundRole = function(...args) 
           
@@ -647,7 +647,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setForegroundRole(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.foregroundRole = function(...args) 
           
@@ -657,7 +657,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.foregroundRole(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.setFont = function(...args) 
           
@@ -667,7 +667,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setFont(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.fontInfo = function(...args) 
           
@@ -677,7 +677,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.fontInfo(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.setCursor = function(...args) 
           
@@ -687,7 +687,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setCursor(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.unsetCursor = function(...args) 
           
@@ -697,7 +697,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.unsetCursor(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.setMouseTracking = function(...args) 
           
@@ -707,7 +707,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setMouseTracking(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.hasMouseTracking = function(...args) 
           
@@ -717,7 +717,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.hasMouseTracking(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.underMouse = function(...args) 
           
@@ -727,7 +727,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.underMouse(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.setTabletTracking = function(...args) 
           
@@ -737,7 +737,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setTabletTracking(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.hasTabletTracking = function(...args) 
           
@@ -747,7 +747,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.hasTabletTracking(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.setMask = function(...args) 
           
@@ -757,7 +757,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setMask(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.mask = function(...args) 
           
@@ -767,7 +767,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.mask(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.clearMask = function(...args) 
           
@@ -777,7 +777,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.clearMask(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.grab = function(...args) 
           
@@ -787,7 +787,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.grab(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.grabGesture = function(...args) 
           
@@ -797,7 +797,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.grabGesture(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.ungrabGesture = function(...args) 
           
@@ -807,7 +807,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.ungrabGesture(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.setWindowTitle = function(...args) 
           
@@ -817,7 +817,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setWindowTitle(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.setStyleSheet = function(...args) 
           
@@ -827,7 +827,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setStyleSheet(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.setWindowIcon = function(...args) 
           
@@ -837,7 +837,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setWindowIcon(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.setWindowIconText = function(...args) 
           
@@ -847,7 +847,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setWindowIconText(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.setWindowRole = function(...args) 
           
@@ -857,7 +857,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setWindowRole(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.windowRole = function(...args) 
           
@@ -867,7 +867,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.windowRole(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.setWindowFilePath = function(...args) 
           
@@ -877,7 +877,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setWindowFilePath(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.setWindowOpacity = function(...args) 
           
@@ -887,7 +887,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setWindowOpacity(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.isWindowModified = function(...args) 
           
@@ -897,7 +897,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.isWindowModified(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.setToolTipDuration = function(...args) 
           
@@ -907,7 +907,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setToolTipDuration(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.setStatusTip = function(...args) 
           
@@ -917,7 +917,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setStatusTip(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.setWhatsThis = function(...args) 
           
@@ -927,7 +927,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setWhatsThis(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.setAccessibleName = function(...args) 
           
@@ -937,7 +937,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setAccessibleName(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.setAccessibleDescription = function(...args) 
           
@@ -947,7 +947,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setAccessibleDescription(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.setLayoutDirection = function(...args) 
           
@@ -957,7 +957,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setLayoutDirection(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.unsetLayoutDirection = function(...args) 
           
@@ -967,7 +967,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.unsetLayoutDirection(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.setLocale = function(...args) 
           
@@ -977,7 +977,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setLocale(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.unsetLocale = function(...args) 
           
@@ -987,7 +987,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.unsetLocale(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.isRightToLeft = function(...args) 
           
@@ -997,7 +997,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.isRightToLeft(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.isLeftToRight = function(...args) 
           
@@ -1007,7 +1007,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.isLeftToRight(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.activateWindow = function(...args) 
           
@@ -1017,7 +1017,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.activateWindow(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.clearFocus = function(...args) 
           
@@ -1027,7 +1027,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.clearFocus(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.setFocus = function(...args) 
           
@@ -1037,7 +1037,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setFocus(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.setFocusPolicy = function(...args) 
           
@@ -1047,7 +1047,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setFocusPolicy(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.hasFocus = function(...args) 
           
@@ -1057,7 +1057,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.hasFocus(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.setFocusProxy = function(...args) 
           
@@ -1067,7 +1067,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setFocusProxy(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.focusProxy = function(...args) 
           
@@ -1077,7 +1077,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.focusProxy(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.setContextMenuPolicy = function(...args) 
           
@@ -1087,7 +1087,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setContextMenuPolicy(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.grabMouse = function(...args) 
           
@@ -1097,7 +1097,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.grabMouse(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.releaseMouse = function(...args) 
           
@@ -1107,7 +1107,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.releaseMouse(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.grabKeyboard = function(...args) 
           
@@ -1117,7 +1117,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.grabKeyboard(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.releaseKeyboard = function(...args) 
           
@@ -1127,7 +1127,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.releaseKeyboard(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.grabShortcut = function(...args) 
           
@@ -1137,7 +1137,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.grabShortcut(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.releaseShortcut = function(...args) 
           
@@ -1147,7 +1147,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.releaseShortcut(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.setShortcutEnabled = function(...args) 
           
@@ -1157,7 +1157,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setShortcutEnabled(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.setShortcutAutoRepeat = function(...args) 
           
@@ -1167,7 +1167,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setShortcutAutoRepeat(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.setUpdatesEnabled = function(...args) 
           
@@ -1177,7 +1177,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setUpdatesEnabled(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.update = function(...args) 
           
@@ -1187,7 +1187,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.update(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.repaint = function(...args) 
           
@@ -1197,7 +1197,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.repaint(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.setVisible = function(...args) 
           
@@ -1207,7 +1207,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setVisible(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.setHidden = function(...args) 
           
@@ -1217,7 +1217,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setHidden(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.show = function(...args) 
           
@@ -1227,7 +1227,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.show(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.hide = function(...args) 
           
@@ -1237,7 +1237,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.hide(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.showMinimized = function(...args) 
           
@@ -1247,7 +1247,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.showMinimized(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.showMaximized = function(...args) 
           
@@ -1257,7 +1257,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.showMaximized(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.showFullScreen = function(...args) 
           
@@ -1267,7 +1267,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.showFullScreen(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.showNormal = function(...args) 
           
@@ -1277,7 +1277,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.showNormal(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.close = function(...args) 
           
@@ -1287,7 +1287,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.close(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.raise = function(...args) 
           
@@ -1297,7 +1297,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.raise(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.lower = function(...args) 
           
@@ -1307,7 +1307,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.lower(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.stackUnder = function(...args) 
           
@@ -1317,7 +1317,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.stackUnder(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.move = function(...args) 
           
@@ -1327,7 +1327,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.move(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.resize = function(...args) 
           
@@ -1337,7 +1337,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.resize(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.setGeometry = function(...args) 
           
@@ -1347,7 +1347,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setGeometry(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.saveGeometry = function(...args) 
           
@@ -1357,7 +1357,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.saveGeometry(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.restoreGeometry = function(...args) 
           
@@ -1367,7 +1367,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.restoreGeometry(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.adjustSize = function(...args) 
           
@@ -1377,7 +1377,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.adjustSize(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.isVisible = function(...args) 
           
@@ -1387,7 +1387,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.isVisible(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.isVisibleTo = function(...args) 
           
@@ -1397,7 +1397,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.isVisibleTo(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.isHidden = function(...args) 
           
@@ -1407,7 +1407,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.isHidden(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.isMinimized = function(...args) 
           
@@ -1417,7 +1417,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.isMinimized(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.isMaximized = function(...args) 
           
@@ -1427,7 +1427,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.isMaximized(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.isFullScreen = function(...args) 
           
@@ -1437,7 +1437,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.isFullScreen(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.windowState = function(...args) 
           
@@ -1447,7 +1447,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.windowState(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.setWindowState = function(...args) 
           
@@ -1457,7 +1457,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setWindowState(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.overrideWindowState = function(...args) 
           
@@ -1467,7 +1467,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.overrideWindowState(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.setSizePolicy = function(...args) 
           
@@ -1477,7 +1477,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setSizePolicy(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.heightForWidth = function(...args) 
           
@@ -1487,7 +1487,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.heightForWidth(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.hasHeightForWidth = function(...args) 
           
@@ -1497,7 +1497,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.hasHeightForWidth(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.visibleRegion = function(...args) 
           
@@ -1507,7 +1507,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.visibleRegion(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.setContentsMargins = function(...args) 
           
@@ -1517,7 +1517,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setContentsMargins(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.contentsMargins = function(...args) 
           
@@ -1527,7 +1527,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.contentsMargins(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.contentsRect = function(...args) 
           
@@ -1537,7 +1537,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.contentsRect(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.layout = function(...args) 
           
@@ -1547,7 +1547,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.layout(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.setLayout = function(...args) 
           
@@ -1557,7 +1557,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setLayout(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.updateGeometry = function(...args) 
           
@@ -1567,7 +1567,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.updateGeometry(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.setParent = function(...args) 
           
@@ -1577,7 +1577,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setParent(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.scroll = function(...args) 
           
@@ -1587,7 +1587,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.scroll(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.focusWidget = function(...args) 
           
@@ -1597,7 +1597,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.focusWidget(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.nextInFocusChain = function(...args) 
           
@@ -1607,7 +1607,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.nextInFocusChain(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.previousInFocusChain = function(...args) 
           
@@ -1617,7 +1617,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.previousInFocusChain(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.setAcceptDrops = function(...args) 
           
@@ -1627,7 +1627,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setAcceptDrops(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.addActions = function(...args) 
           
@@ -1637,7 +1637,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.addActions(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.insertActions = function(...args) 
           
@@ -1647,7 +1647,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.insertActions(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.insertAction = function(...args) 
           
@@ -1657,7 +1657,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.insertAction(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.removeAction = function(...args) 
           
@@ -1667,7 +1667,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.removeAction(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.actions = function(...args) 
           
@@ -1677,7 +1677,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.actions(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.parentWidget = function(...args) 
           
@@ -1687,7 +1687,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.parentWidget(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.setWindowFlags = function(...args) 
           
@@ -1697,7 +1697,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setWindowFlags(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.windowFlags = function(...args) 
           
@@ -1707,7 +1707,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.windowFlags(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.setWindowFlag = function(...args) 
           
@@ -1717,7 +1717,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setWindowFlag(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.overrideWindowFlags = function(...args) 
           
@@ -1727,7 +1727,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.overrideWindowFlags(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.windowType = function(...args) 
           
@@ -1737,7 +1737,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.windowType(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.childAt = function(...args) 
           
@@ -1747,7 +1747,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.childAt(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.setAttribute = function(...args) 
           
@@ -1757,7 +1757,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setAttribute(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.testAttribute = function(...args) 
           
@@ -1767,7 +1767,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.testAttribute(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.ensurePolished = function(...args) 
           
@@ -1777,7 +1777,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.ensurePolished(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.isAncestorOf = function(...args) 
           
@@ -1787,7 +1787,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.isAncestorOf(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.setAutoFillBackground = function(...args) 
           
@@ -1797,7 +1797,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setAutoFillBackground(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.event = function(...args) 
           
@@ -1807,7 +1807,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.event(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.wheelEvent = function(...args) 
           
@@ -1817,7 +1817,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.wheelEvent(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.enterEvent = function(...args) 
           
@@ -1827,7 +1827,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.enterEvent(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.leaveEvent = function(...args) 
           
@@ -1837,7 +1837,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.leaveEvent(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.moveEvent = function(...args) 
           
@@ -1847,7 +1847,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.moveEvent(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.closeEvent = function(...args) 
           
@@ -1857,7 +1857,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.closeEvent(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.tabletEvent = function(...args) 
           
@@ -1867,7 +1867,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.tabletEvent(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.showEvent = function(...args) 
           
@@ -1877,7 +1877,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.showEvent(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.hideEvent = function(...args) 
           
@@ -1887,7 +1887,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.hideEvent(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.nativeEvent = function(...args) 
           
@@ -1897,7 +1897,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.nativeEvent(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.metric = function(...args) 
           
@@ -1907,7 +1907,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.metric(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.initPainter = function(...args) 
           
@@ -1917,7 +1917,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.initPainter(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.redirected = function(...args) 
           
@@ -1927,7 +1927,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.redirected(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.sharedPainter = function(...args) 
           
@@ -1937,7 +1937,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.sharedPainter(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.setInputMethodHints = function(...args) 
           
@@ -1947,7 +1947,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setInputMethodHints(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.updateMicroFocus = function(...args) 
           
@@ -1957,7 +1957,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.updateMicroFocus(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.create = function(...args) 
           
@@ -1967,7 +1967,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.create(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.destroy = function(...args) 
           
@@ -1977,7 +1977,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.destroy(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.focusNextPrevChild = function(...args) 
           
@@ -1987,7 +1987,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.focusNextPrevChild(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.focusNextChild = function(...args) 
           
@@ -1997,7 +1997,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.focusNextChild(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.focusPreviousChild = function(...args) 
           
@@ -2007,7 +2007,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.focusPreviousChild(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.setBackingStore = function(...args) 
           
@@ -2017,7 +2017,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setBackingStore(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.testAttribute_helper = function(...args) 
           
@@ -2027,7 +2027,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.testAttribute_helper(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.takeLayout = function(...args) 
           
@@ -2037,7 +2037,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.takeLayout(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.qt_mac_is_metal = function(...args) 
           
@@ -2047,7 +2047,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.qt_mac_is_metal(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.qt_qwidget_data = function(...args) 
           
@@ -2057,7 +2057,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.qt_qwidget_data(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.qt_widget_private = function(...args) 
           
@@ -2067,7 +2067,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.qt_widget_private(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.setPlaceholderText = function(...args) 
           
@@ -2077,7 +2077,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setPlaceholderText(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.setMaxLength = function(...args) 
           
@@ -2087,7 +2087,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setMaxLength(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.setFrame = function(...args) 
           
@@ -2097,7 +2097,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setFrame(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.hasFrame = function(...args) 
           
@@ -2107,7 +2107,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.hasFrame(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.setClearButtonEnabled = function(...args) 
           
@@ -2117,7 +2117,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setClearButtonEnabled(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.isClearButtonEnabled = function(...args) 
           
@@ -2127,7 +2127,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.isClearButtonEnabled(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.setEchoMode = function(...args) 
           
@@ -2137,7 +2137,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setEchoMode(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.isReadOnly = function(...args) 
           
@@ -2147,7 +2147,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.isReadOnly(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.setReadOnly = function(...args) 
           
@@ -2157,7 +2157,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setReadOnly(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.setValidator = function(...args) 
           
@@ -2167,7 +2167,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setValidator(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.setCompleter = function(...args) 
           
@@ -2177,7 +2177,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setCompleter(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.completer = function(...args) 
           
@@ -2187,7 +2187,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.completer(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.setCursorPosition = function(...args) 
           
@@ -2197,7 +2197,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setCursorPosition(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.cursorPositionAt = function(...args) 
           
@@ -2207,7 +2207,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.cursorPositionAt(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.setAlignment = function(...args) 
           
@@ -2217,7 +2217,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setAlignment(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.cursorForward = function(...args) 
           
@@ -2227,7 +2227,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.cursorForward(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.cursorBackward = function(...args) 
           
@@ -2237,7 +2237,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.cursorBackward(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.cursorWordForward = function(...args) 
           
@@ -2247,7 +2247,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.cursorWordForward(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.cursorWordBackward = function(...args) 
           
@@ -2257,7 +2257,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.cursorWordBackward(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.backspace = function(...args) 
           
@@ -2267,7 +2267,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.backspace(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.del = function(...args) 
           
@@ -2277,7 +2277,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.del(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.home = function(...args) 
           
@@ -2287,7 +2287,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.home(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.end = function(...args) 
           
@@ -2297,7 +2297,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.end(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.isModified = function(...args) 
           
@@ -2307,7 +2307,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.isModified(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.setModified = function(...args) 
           
@@ -2317,7 +2317,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setModified(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.setSelection = function(...args) 
           
@@ -2327,7 +2327,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setSelection(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.selectionStart = function(...args) 
           
@@ -2337,7 +2337,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.selectionStart(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.selectionEnd = function(...args) 
           
@@ -2347,7 +2347,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.selectionEnd(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.selectionLength = function(...args) 
           
@@ -2357,7 +2357,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.selectionLength(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.isUndoAvailable = function(...args) 
           
@@ -2367,7 +2367,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.isUndoAvailable(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.isRedoAvailable = function(...args) 
           
@@ -2377,7 +2377,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.isRedoAvailable(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.setDragEnabled = function(...args) 
           
@@ -2387,7 +2387,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setDragEnabled(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.setCursorMoveStyle = function(...args) 
           
@@ -2397,7 +2397,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setCursorMoveStyle(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.inputMask = function(...args) 
           
@@ -2407,7 +2407,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.inputMask(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.setInputMask = function(...args) 
           
@@ -2417,7 +2417,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setInputMask(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.hasAcceptableInput = function(...args) 
           
@@ -2427,7 +2427,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.hasAcceptableInput(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.setTextMargins = function(...args) 
           
@@ -2437,7 +2437,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setTextMargins(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.textMargins = function(...args) 
           
@@ -2447,7 +2447,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.textMargins(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.addAction = function(...args) 
           
@@ -2457,7 +2457,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.addAction(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.setText = function(...args) 
           
@@ -2467,7 +2467,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setText(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.clear = function(...args) 
           
@@ -2477,7 +2477,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.clear(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.selectAll = function(...args) 
           
@@ -2487,7 +2487,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.selectAll(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.undo = function(...args) 
           
@@ -2497,7 +2497,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.undo(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.redo = function(...args) 
           
@@ -2507,7 +2507,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.redo(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.cut = function(...args) 
           
@@ -2517,7 +2517,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.cut(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.copy = function(...args) 
           
@@ -2527,7 +2527,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.copy(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.paste = function(...args) 
           
@@ -2537,7 +2537,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.paste(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.deselect = function(...args) 
           
@@ -2547,7 +2547,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.deselect(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.insert = function(...args) 
           
@@ -2557,7 +2557,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.insert(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.createStandardContextMenu = function(...args) 
           
@@ -2567,7 +2567,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.createStandardContextMenu(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.mousePressEvent = function(...args) 
           
@@ -2577,7 +2577,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.mousePressEvent(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.mouseReleaseEvent = function(...args) 
           
@@ -2587,7 +2587,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.mouseReleaseEvent(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.mouseDoubleClickEvent = function(...args) 
           
@@ -2597,7 +2597,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.mouseDoubleClickEvent(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.focusInEvent = function(...args) 
           
@@ -2607,7 +2607,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.focusInEvent(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.focusOutEvent = function(...args) 
           
@@ -2617,7 +2617,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.focusOutEvent(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.dragEnterEvent = function(...args) 
           
@@ -2627,7 +2627,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.dragEnterEvent(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.dragMoveEvent = function(...args) 
           
@@ -2637,7 +2637,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.dragMoveEvent(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.dragLeaveEvent = function(...args) 
           
@@ -2647,7 +2647,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.dragLeaveEvent(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.dropEvent = function(...args) 
           
@@ -2657,7 +2657,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.dropEvent(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.changeEvent = function(...args) 
           
@@ -2667,7 +2667,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.changeEvent(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.contextMenuEvent = function(...args) 
           
@@ -2677,7 +2677,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.contextMenuEvent(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.inputMethodEvent = function(...args) 
           
@@ -2687,7 +2687,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.inputMethodEvent(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.initStyleOption = function(...args) 
           
@@ -2697,7 +2697,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.initStyleOption(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.inputMethodQuery = function(...args) 
           
@@ -2707,7 +2707,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.inputMethodQuery(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.cursorRect = function(...args) 
           
@@ -2717,7 +2717,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.cursorRect(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.isAngle = function(...args) 
           
@@ -2727,7 +2727,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.isAngle(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.setAngle = function(...args) 
           
@@ -2737,7 +2737,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setAngle(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.isScale = function(...args) 
           
@@ -2747,7 +2747,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.isScale(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.setScale = function(...args) 
           
@@ -2757,7 +2757,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setScale(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.isInteger = function(...args) 
           
@@ -2767,7 +2767,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.isInteger(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.setInteger = function(...args) 
           
@@ -2777,7 +2777,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setInteger(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.setValue = function(...args) 
           
@@ -2787,7 +2787,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setValue(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.getValue = function(...args) 
           
@@ -2797,7 +2797,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.getValue(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.getError = function(...args) 
           
@@ -2807,7 +2807,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.getError(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.clearError = function(...args) 
           
@@ -2817,7 +2817,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.clearError(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.isValid = function(...args) 
           
@@ -2827,7 +2827,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.isValid(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.isSane = function(...args) 
           
@@ -2837,7 +2837,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.isSane(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.setToolTip = function(...args) 
           
@@ -2847,7 +2847,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setToolTip(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.getNormalTextColor = function(...args) 
           
@@ -2857,7 +2857,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.getNormalTextColor(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.setTextColor = function(...args) 
           
@@ -2867,7 +2867,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setTextColor(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.keyPressEvent = function(...args) 
           
@@ -2877,7 +2877,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.keyPressEvent(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.keyReleaseEvent = function(...args) 
           
@@ -2887,7 +2887,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.keyReleaseEvent(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.slotTextChanged = function(...args) 
           
@@ -2897,7 +2897,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.slotTextChanged(...args);
             
         };
-    
+        
         // function 
         RMathLineEdit.prototype.slotTextEdited = function(...args) 
           
@@ -2907,7 +2907,7 @@ RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.slotTextEdited(...args);
             
         };
-    
+        
 
       // static functions:
       

@@ -168,7 +168,7 @@
               return this.__PROXY__.getDocument(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.setDocument = function(...args) 
           
@@ -178,7 +178,7 @@
               return this.__PROXY__.setDocument(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.isPointType = function(...args) 
           
@@ -188,7 +188,7 @@
               return this.__PROXY__.isPointType(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.isSane = function(...args) 
           
@@ -198,7 +198,7 @@
               return this.__PROXY__.isSane(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.getClosestSubEntityId = function(...args) 
           
@@ -208,7 +208,7 @@
               return this.__PROXY__.getClosestSubEntityId(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.getClosestShape = function(...args) 
           
@@ -218,7 +218,7 @@
               return this.__PROXY__.getClosestShape(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.copyAttributesFrom = function(...args) 
           
@@ -228,7 +228,7 @@
               return this.__PROXY__.copyAttributesFrom(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.getHull = function(...args) 
           
@@ -238,7 +238,7 @@
               return this.__PROXY__.getHull(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.isUpdatesEnabled = function(...args) 
           
@@ -248,7 +248,7 @@
               return this.__PROXY__.isUpdatesEnabled(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.setUpdatesEnabled = function(...args) 
           
@@ -258,7 +258,7 @@
               return this.__PROXY__.setUpdatesEnabled(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.cloneOnChange = function(...args) 
           
@@ -268,7 +268,7 @@
               return this.__PROXY__.cloneOnChange(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.isSelected = function(...args) 
           
@@ -278,7 +278,7 @@
               return this.__PROXY__.isSelected(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.setSelected = function(...args) 
           
@@ -288,7 +288,7 @@
               return this.__PROXY__.setSelected(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.isSelectedWorkingSet = function(...args) 
           
@@ -298,7 +298,7 @@
               return this.__PROXY__.isSelectedWorkingSet(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.setSelectedWorkingSet = function(...args) 
           
@@ -308,7 +308,7 @@
               return this.__PROXY__.setSelectedWorkingSet(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.getDrawOrder = function(...args) 
           
@@ -318,7 +318,7 @@
               return this.__PROXY__.getDrawOrder(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.setDrawOrder = function(...args) 
           
@@ -328,7 +328,7 @@
               return this.__PROXY__.setDrawOrder(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.setLayerId = function(...args) 
           
@@ -338,7 +338,7 @@
               return this.__PROXY__.setLayerId(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.getLayerId = function(...args) 
           
@@ -348,7 +348,7 @@
               return this.__PROXY__.getLayerId(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.setLayerName = function(...args) 
           
@@ -358,7 +358,7 @@
               return this.__PROXY__.setLayerName(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.getLayerName = function(...args) 
           
@@ -368,7 +368,7 @@
               return this.__PROXY__.getLayerName(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.setBlockId = function(...args) 
           
@@ -378,7 +378,7 @@
               return this.__PROXY__.setBlockId(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.getBlockId = function(...args) 
           
@@ -388,7 +388,7 @@
               return this.__PROXY__.getBlockId(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.setParentId = function(...args) 
           
@@ -398,7 +398,7 @@
               return this.__PROXY__.setParentId(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.getParentId = function(...args) 
           
@@ -408,7 +408,7 @@
               return this.__PROXY__.getParentId(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.getBlockName = function(...args) 
           
@@ -418,7 +418,7 @@
               return this.__PROXY__.getBlockName(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.setLinetypeId = function(...args) 
           
@@ -428,7 +428,7 @@
               return this.__PROXY__.setLinetypeId(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.getLinetypeId = function(...args) 
           
@@ -438,7 +438,7 @@
               return this.__PROXY__.getLinetypeId(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.setLinetypePattern = function(...args) 
           
@@ -448,7 +448,7 @@
               return this.__PROXY__.setLinetypePattern(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.getLinetypePattern = function(...args) 
           
@@ -458,7 +458,7 @@
               return this.__PROXY__.getLinetypePattern(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.setLinetypeScale = function(...args) 
           
@@ -468,7 +468,7 @@
               return this.__PROXY__.setLinetypeScale(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.getLinetypeScale = function(...args) 
           
@@ -478,7 +478,7 @@
               return this.__PROXY__.getLinetypeScale(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.getLineweight = function(...args) 
           
@@ -488,7 +488,7 @@
               return this.__PROXY__.getLineweight(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.setLineweight = function(...args) 
           
@@ -498,7 +498,7 @@
               return this.__PROXY__.setLineweight(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.setColor = function(...args) 
           
@@ -508,7 +508,7 @@
               return this.__PROXY__.setColor(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.getColor = function(...args) 
           
@@ -518,7 +518,7 @@
               return this.__PROXY__.getColor(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.getDisplayColor = function(...args) 
           
@@ -528,7 +528,7 @@
               return this.__PROXY__.getDisplayColor(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.getInternalReferencePoints = function(...args) 
           
@@ -538,7 +538,7 @@
               return this.__PROXY__.getInternalReferencePoints(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.getPointOnEntity = function(...args) 
           
@@ -548,7 +548,7 @@
               return this.__PROXY__.getPointOnEntity(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.getClosestPointOnEntity = function(...args) 
           
@@ -558,7 +558,7 @@
               return this.__PROXY__.getClosestPointOnEntity(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.isInside = function(...args) 
           
@@ -568,7 +568,7 @@
               return this.__PROXY__.isInside(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.isOnEntity = function(...args) 
           
@@ -578,7 +578,7 @@
               return this.__PROXY__.isOnEntity(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.clickReferencePoint = function(...args) 
           
@@ -588,7 +588,7 @@
               return this.__PROXY__.clickReferencePoint(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.scaleVisualProperties = function(...args) 
           
@@ -598,7 +598,7 @@
               return this.__PROXY__.scaleVisualProperties(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.update = function(...args) 
           
@@ -608,7 +608,7 @@
               return this.__PROXY__.update(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.setAutoUpdatesBlocked = function(...args) 
           
@@ -618,7 +618,7 @@
               return this.__PROXY__.setAutoUpdatesBlocked(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.getShapeType = function(...args) 
           
@@ -628,7 +628,7 @@
               return this.__PROXY__.getShapeType(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.clone = function(...args) 
           
@@ -638,7 +638,7 @@
               return this.__PROXY__.clone(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.isDirected = function(...args) 
           
@@ -648,7 +648,7 @@
               return this.__PROXY__.isDirected(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.isFlat = function(...args) 
           
@@ -658,7 +658,7 @@
               return this.__PROXY__.isFlat(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.getVectorProperties = function(...args) 
           
@@ -668,7 +668,7 @@
               return this.__PROXY__.getVectorProperties(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.getDoubleProperties = function(...args) 
           
@@ -678,7 +678,7 @@
               return this.__PROXY__.getDoubleProperties(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.getBoolProperties = function(...args) 
           
@@ -688,7 +688,7 @@
               return this.__PROXY__.getBoolProperties(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.prependShape = function(...args) 
           
@@ -698,7 +698,7 @@
               return this.__PROXY__.prependShape(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.appendShape = function(...args) 
           
@@ -708,7 +708,7 @@
               return this.__PROXY__.appendShape(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.appendShapeAuto = function(...args) 
           
@@ -718,7 +718,7 @@
               return this.__PROXY__.appendShapeAuto(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.appendShapeTrim = function(...args) 
           
@@ -728,7 +728,7 @@
               return this.__PROXY__.appendShapeTrim(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.closeTrim = function(...args) 
           
@@ -738,7 +738,7 @@
               return this.__PROXY__.closeTrim(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.insertVertexAt = function(...args) 
           
@@ -748,7 +748,7 @@
               return this.__PROXY__.insertVertexAt(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.insertVertexAtDistance = function(...args) 
           
@@ -758,7 +758,7 @@
               return this.__PROXY__.insertVertexAtDistance(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.removeFirstVertex = function(...args) 
           
@@ -768,7 +768,7 @@
               return this.__PROXY__.removeFirstVertex(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.removeVerticesAfter = function(...args) 
           
@@ -778,7 +778,7 @@
               return this.__PROXY__.removeVerticesAfter(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.removeVerticesBefore = function(...args) 
           
@@ -788,7 +788,7 @@
               return this.__PROXY__.removeVerticesBefore(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.isEmpty = function(...args) 
           
@@ -798,7 +798,7 @@
               return this.__PROXY__.isEmpty(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.setVertices = function(...args) 
           
@@ -808,7 +808,7 @@
               return this.__PROXY__.setVertices(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.setVertexAt = function(...args) 
           
@@ -818,7 +818,7 @@
               return this.__PROXY__.setVertexAt(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.moveVertexAt = function(...args) 
           
@@ -828,7 +828,7 @@
               return this.__PROXY__.moveVertexAt(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.getVertexIndex = function(...args) 
           
@@ -838,7 +838,7 @@
               return this.__PROXY__.getVertexIndex(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.getLastVertex = function(...args) 
           
@@ -848,7 +848,7 @@
               return this.__PROXY__.getLastVertex(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.countVertices = function(...args) 
           
@@ -858,7 +858,7 @@
               return this.__PROXY__.countVertices(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.setBulges = function(...args) 
           
@@ -868,7 +868,7 @@
               return this.__PROXY__.setBulges(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.getBulges = function(...args) 
           
@@ -878,7 +878,7 @@
               return this.__PROXY__.getBulges(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.hasArcSegments = function(...args) 
           
@@ -888,7 +888,7 @@
               return this.__PROXY__.hasArcSegments(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.getVertexAngles = function(...args) 
           
@@ -898,7 +898,7 @@
               return this.__PROXY__.getVertexAngles(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.getSelfIntersectionPoints = function(...args) 
           
@@ -908,7 +908,7 @@
               return this.__PROXY__.getSelfIntersectionPoints(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.setOrientation = function(...args) 
           
@@ -918,7 +918,7 @@
               return this.__PROXY__.setOrientation(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.convertArcToLineSegments = function(...args) 
           
@@ -928,7 +928,7 @@
               return this.__PROXY__.convertArcToLineSegments(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.convertArcToLineSegmentsLength = function(...args) 
           
@@ -938,7 +938,7 @@
               return this.__PROXY__.convertArcToLineSegmentsLength(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.splitMajorArcs = function(...args) 
           
@@ -948,7 +948,7 @@
               return this.__PROXY__.splitMajorArcs(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.contains = function(...args) 
           
@@ -958,7 +958,7 @@
               return this.__PROXY__.contains(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.containsShape = function(...args) 
           
@@ -968,7 +968,7 @@
               return this.__PROXY__.containsShape(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.getPointInside = function(...args) 
           
@@ -978,7 +978,7 @@
               return this.__PROXY__.getPointInside(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.getMiddlePoint = function(...args) 
           
@@ -988,7 +988,7 @@
               return this.__PROXY__.getMiddlePoint(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.moveStartPoint = function(...args) 
           
@@ -998,7 +998,7 @@
               return this.__PROXY__.moveStartPoint(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.moveEndPoint = function(...args) 
           
@@ -1008,7 +1008,7 @@
               return this.__PROXY__.moveEndPoint(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.moveSegmentAt = function(...args) 
           
@@ -1018,7 +1018,7 @@
               return this.__PROXY__.moveSegmentAt(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.getSideOfPoint = function(...args) 
           
@@ -1028,7 +1028,7 @@
               return this.__PROXY__.getSideOfPoint(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.getArea = function(...args) 
           
@@ -1038,7 +1038,7 @@
               return this.__PROXY__.getArea(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.getLength = function(...args) 
           
@@ -1048,7 +1048,7 @@
               return this.__PROXY__.getLength(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.getDistanceFromStart = function(...args) 
           
@@ -1058,7 +1058,7 @@
               return this.__PROXY__.getDistanceFromStart(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.getDistancesFromStart = function(...args) 
           
@@ -1068,7 +1068,7 @@
               return this.__PROXY__.getDistancesFromStart(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.getLengthTo = function(...args) 
           
@@ -1078,7 +1078,7 @@
               return this.__PROXY__.getLengthTo(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.getSegmentsLength = function(...args) 
           
@@ -1088,7 +1088,7 @@
               return this.__PROXY__.getSegmentsLength(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.getPointAtPercent = function(...args) 
           
@@ -1098,7 +1098,7 @@
               return this.__PROXY__.getPointAtPercent(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.getPointCloud = function(...args) 
           
@@ -1108,7 +1108,7 @@
               return this.__PROXY__.getPointCloud(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.getAngleAt = function(...args) 
           
@@ -1118,7 +1118,7 @@
               return this.__PROXY__.getAngleAt(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.getClosestSegment = function(...args) 
           
@@ -1128,7 +1128,7 @@
               return this.__PROXY__.getClosestSegment(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.getClosestVertex = function(...args) 
           
@@ -1138,7 +1138,7 @@
               return this.__PROXY__.getClosestVertex(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.getReversed = function(...args) 
           
@@ -1148,7 +1148,7 @@
               return this.__PROXY__.getReversed(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.getTransformed = function(...args) 
           
@@ -1158,7 +1158,7 @@
               return this.__PROXY__.getTransformed(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.getTrimEnd = function(...args) 
           
@@ -1168,7 +1168,7 @@
               return this.__PROXY__.getTrimEnd(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.trimStartPoint = function(...args) 
           
@@ -1178,7 +1178,7 @@
               return this.__PROXY__.trimStartPoint(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.trimEndPoint = function(...args) 
           
@@ -1188,7 +1188,7 @@
               return this.__PROXY__.trimEndPoint(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.getOutline = function(...args) 
           
@@ -1198,7 +1198,7 @@
               return this.__PROXY__.getOutline(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.getLeftOutline = function(...args) 
           
@@ -1208,7 +1208,7 @@
               return this.__PROXY__.getLeftOutline(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.getRightOutline = function(...args) 
           
@@ -1218,7 +1218,7 @@
               return this.__PROXY__.getRightOutline(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.isInterpolated = function(...args) 
           
@@ -1228,7 +1228,7 @@
               return this.__PROXY__.isInterpolated(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.isArcSegmentAt = function(...args) 
           
@@ -1238,7 +1238,7 @@
               return this.__PROXY__.isArcSegmentAt(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.getLastSegment = function(...args) 
           
@@ -1248,7 +1248,7 @@
               return this.__PROXY__.getLastSegment(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.getFirstSegment = function(...args) 
           
@@ -1258,7 +1258,7 @@
               return this.__PROXY__.getFirstSegment(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.stripWidths = function(...args) 
           
@@ -1268,7 +1268,7 @@
               return this.__PROXY__.stripWidths(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.setMinimumWidth = function(...args) 
           
@@ -1278,7 +1278,7 @@
               return this.__PROXY__.setMinimumWidth(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.getSegmentAtDist = function(...args) 
           
@@ -1288,7 +1288,7 @@
               return this.__PROXY__.getSegmentAtDist(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.convertToClosed = function(...args) 
           
@@ -1298,7 +1298,7 @@
               return this.__PROXY__.convertToClosed(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.convertToOpen = function(...args) 
           
@@ -1308,7 +1308,7 @@
               return this.__PROXY__.convertToOpen(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.modifyPolylineCorner = function(...args) 
           
@@ -1318,7 +1318,7 @@
               return this.__PROXY__.modifyPolylineCorner(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.isConcave = function(...args) 
           
@@ -1328,7 +1328,7 @@
               return this.__PROXY__.isConcave(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.getConvexVertices = function(...args) 
           
@@ -1338,7 +1338,7 @@
               return this.__PROXY__.getConvexVertices(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.getConcaveVertices = function(...args) 
           
@@ -1348,7 +1348,7 @@
               return this.__PROXY__.getConcaveVertices(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.getCentroid = function(...args) 
           
@@ -1358,7 +1358,7 @@
               return this.__PROXY__.getCentroid(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.splitAtDiscontinuities = function(...args) 
           
@@ -1368,7 +1368,7 @@
               return this.__PROXY__.splitAtDiscontinuities(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.splitAtSegmentTypeChange = function(...args) 
           
@@ -1378,7 +1378,7 @@
               return this.__PROXY__.splitAtSegmentTypeChange(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.insertVerticesAtSelfIntersections = function(...args) 
           
@@ -1388,7 +1388,7 @@
               return this.__PROXY__.insertVerticesAtSelfIntersections(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.getBaseAngle = function(...args) 
           
@@ -1398,7 +1398,7 @@
               return this.__PROXY__.getBaseAngle(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.getWidth = function(...args) 
           
@@ -1408,7 +1408,7 @@
               return this.__PROXY__.getWidth(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.setWidth = function(...args) 
           
@@ -1418,7 +1418,7 @@
               return this.__PROXY__.setWidth(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.getHeight = function(...args) 
           
@@ -1428,7 +1428,7 @@
               return this.__PROXY__.getHeight(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.setHeight = function(...args) 
           
@@ -1438,7 +1438,7 @@
               return this.__PROXY__.setHeight(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.morph = function(...args) 
           
@@ -1448,7 +1448,7 @@
               return this.__PROXY__.morph(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.getPolygonHull = function(...args) 
           
@@ -1458,7 +1458,7 @@
               return this.__PROXY__.getPolygonHull(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.isLineSegment = function(...args) 
           
@@ -1468,7 +1468,7 @@
               return this.__PROXY__.isLineSegment(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.print = function(...args) 
           
@@ -1478,7 +1478,7 @@
               return this.__PROXY__.print(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.copy = function(...args) 
           
@@ -1488,7 +1488,7 @@
               return this.__PROXY__.copy(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.getType = function(...args) 
           
@@ -1498,7 +1498,7 @@
               return this.__PROXY__.getType(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.isValid = function(...args) 
           
@@ -1508,7 +1508,7 @@
               return this.__PROXY__.isValid(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.getEndPoints = function(...args) 
           
@@ -1518,7 +1518,7 @@
               return this.__PROXY__.getEndPoints(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.setZ = function(...args) 
           
@@ -1528,7 +1528,7 @@
               return this.__PROXY__.setZ(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.to2D = function(...args) 
           
@@ -1538,7 +1538,7 @@
               return this.__PROXY__.to2D(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.getBoundingBox = function(...args) 
           
@@ -1548,7 +1548,7 @@
               return this.__PROXY__.getBoundingBox(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.getMiddlePoints = function(...args) 
           
@@ -1558,7 +1558,7 @@
               return this.__PROXY__.getMiddlePoints(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.getCenterPoints = function(...args) 
           
@@ -1568,7 +1568,7 @@
               return this.__PROXY__.getCenterPoints(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.getArcReferencePoints = function(...args) 
           
@@ -1578,7 +1578,7 @@
               return this.__PROXY__.getArcReferencePoints(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.getPointsWithDistanceToEnd = function(...args) 
           
@@ -1588,7 +1588,7 @@
               return this.__PROXY__.getPointsWithDistanceToEnd(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.getIntersectionPoints = function(...args) 
           
@@ -1598,7 +1598,7 @@
               return this.__PROXY__.getIntersectionPoints(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.getVectorTo = function(...args) 
           
@@ -1608,7 +1608,7 @@
               return this.__PROXY__.getVectorTo(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.intersectsWith = function(...args) 
           
@@ -1618,7 +1618,7 @@
               return this.__PROXY__.intersectsWith(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.move = function(...args) 
           
@@ -1628,7 +1628,7 @@
               return this.__PROXY__.move(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.rotate = function(...args) 
           
@@ -1638,7 +1638,7 @@
               return this.__PROXY__.rotate(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.scale = function(...args) 
           
@@ -1648,7 +1648,7 @@
               return this.__PROXY__.scale(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.mirror = function(...args) 
           
@@ -1658,7 +1658,7 @@
               return this.__PROXY__.mirror(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.flipHorizontal = function(...args) 
           
@@ -1668,7 +1668,7 @@
               return this.__PROXY__.flipHorizontal(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.flipVertical = function(...args) 
           
@@ -1678,7 +1678,7 @@
               return this.__PROXY__.flipVertical(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.stretch = function(...args) 
           
@@ -1688,7 +1688,7 @@
               return this.__PROXY__.stretch(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.getBoundingBoxes = function(...args) 
           
@@ -1698,7 +1698,7 @@
               return this.__PROXY__.getBoundingBoxes(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.getReferencePoints = function(...args) 
           
@@ -1708,7 +1708,7 @@
               return this.__PROXY__.getReferencePoints(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.moveReferencePoint = function(...args) 
           
@@ -1718,7 +1718,7 @@
               return this.__PROXY__.moveReferencePoint(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.castToShape = function(...args) 
           
@@ -1728,7 +1728,7 @@
               return this.__PROXY__.castToShape(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.getDistanceTo = function(...args) 
           
@@ -1738,7 +1738,7 @@
               return this.__PROXY__.getDistanceTo(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.getPolylineShape = function(...args) 
           
@@ -1748,7 +1748,7 @@
               return this.__PROXY__.getPolylineShape(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.clear = function(...args) 
           
@@ -1758,7 +1758,7 @@
               return this.__PROXY__.clear(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.normalize = function(...args) 
           
@@ -1768,7 +1768,7 @@
               return this.__PROXY__.normalize(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.getVertices = function(...args) 
           
@@ -1778,7 +1778,7 @@
               return this.__PROXY__.getVertices(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.getVertexAt = function(...args) 
           
@@ -1788,7 +1788,7 @@
               return this.__PROXY__.getVertexAt(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.appendVertex = function(...args) 
           
@@ -1798,7 +1798,7 @@
               return this.__PROXY__.appendVertex(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.prependVertex = function(...args) 
           
@@ -1808,7 +1808,7 @@
               return this.__PROXY__.prependVertex(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.insertVertex = function(...args) 
           
@@ -1818,7 +1818,7 @@
               return this.__PROXY__.insertVertex(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.removeLastVertex = function(...args) 
           
@@ -1828,7 +1828,7 @@
               return this.__PROXY__.removeLastVertex(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.removeVertex = function(...args) 
           
@@ -1838,7 +1838,7 @@
               return this.__PROXY__.removeVertex(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.countSegments = function(...args) 
           
@@ -1848,7 +1848,7 @@
               return this.__PROXY__.countSegments(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.getSegmentAt = function(...args) 
           
@@ -1858,7 +1858,7 @@
               return this.__PROXY__.getSegmentAt(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.getBulgeAt = function(...args) 
           
@@ -1868,7 +1868,7 @@
               return this.__PROXY__.getBulgeAt(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.setBulgeAt = function(...args) 
           
@@ -1878,7 +1878,7 @@
               return this.__PROXY__.setBulgeAt(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.getVertexAngle = function(...args) 
           
@@ -1888,7 +1888,7 @@
               return this.__PROXY__.getVertexAngle(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.getDirection1 = function(...args) 
           
@@ -1898,7 +1898,7 @@
               return this.__PROXY__.getDirection1(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.getDirection2 = function(...args) 
           
@@ -1908,7 +1908,7 @@
               return this.__PROXY__.getDirection2(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.reverse = function(...args) 
           
@@ -1918,7 +1918,7 @@
               return this.__PROXY__.reverse(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.getEndPoint = function(...args) 
           
@@ -1928,7 +1928,7 @@
               return this.__PROXY__.getEndPoint(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.getStartPoint = function(...args) 
           
@@ -1938,7 +1938,7 @@
               return this.__PROXY__.getStartPoint(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.relocateStartPoint = function(...args) 
           
@@ -1948,7 +1948,7 @@
               return this.__PROXY__.relocateStartPoint(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.setClosed = function(...args) 
           
@@ -1958,7 +1958,7 @@
               return this.__PROXY__.setClosed(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.isClosed = function(...args) 
           
@@ -1968,7 +1968,7 @@
               return this.__PROXY__.isClosed(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.isGeometricallyClosed = function(...args) 
           
@@ -1978,7 +1978,7 @@
               return this.__PROXY__.isGeometricallyClosed(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.autoClose = function(...args) 
           
@@ -1988,7 +1988,7 @@
               return this.__PROXY__.autoClose(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.toLogicallyClosed = function(...args) 
           
@@ -1998,7 +1998,7 @@
               return this.__PROXY__.toLogicallyClosed(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.toLogicallyOpen = function(...args) 
           
@@ -2008,7 +2008,7 @@
               return this.__PROXY__.toLogicallyOpen(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.getOrientation = function(...args) 
           
@@ -2018,7 +2018,7 @@
               return this.__PROXY__.getOrientation(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.setGlobalWidth = function(...args) 
           
@@ -2028,7 +2028,7 @@
               return this.__PROXY__.setGlobalWidth(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.setStartWidthAt = function(...args) 
           
@@ -2038,7 +2038,7 @@
               return this.__PROXY__.setStartWidthAt(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.getStartWidthAt = function(...args) 
           
@@ -2048,7 +2048,7 @@
               return this.__PROXY__.getStartWidthAt(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.setEndWidthAt = function(...args) 
           
@@ -2058,7 +2058,7 @@
               return this.__PROXY__.setEndWidthAt(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.getEndWidthAt = function(...args) 
           
@@ -2068,7 +2068,7 @@
               return this.__PROXY__.getEndWidthAt(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.hasWidths = function(...args) 
           
@@ -2078,7 +2078,7 @@
               return this.__PROXY__.hasWidths(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.setStartWidths = function(...args) 
           
@@ -2088,7 +2088,7 @@
               return this.__PROXY__.setStartWidths(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.getStartWidths = function(...args) 
           
@@ -2098,7 +2098,7 @@
               return this.__PROXY__.getStartWidths(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.setEndWidths = function(...args) 
           
@@ -2108,7 +2108,7 @@
               return this.__PROXY__.setEndWidths(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.getEndWidths = function(...args) 
           
@@ -2118,7 +2118,7 @@
               return this.__PROXY__.getEndWidths(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.getExploded = function(...args) 
           
@@ -2128,7 +2128,7 @@
               return this.__PROXY__.getExploded(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.toPainterPath = function(...args) 
           
@@ -2138,7 +2138,7 @@
               return this.__PROXY__.toPainterPath(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.simplify = function(...args) 
           
@@ -2148,7 +2148,7 @@
               return this.__PROXY__.simplify(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.roundAllCorners = function(...args) 
           
@@ -2158,7 +2158,7 @@
               return this.__PROXY__.roundAllCorners(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.verifyTangency = function(...args) 
           
@@ -2168,7 +2168,7 @@
               return this.__PROXY__.verifyTangency(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.getShapes = function(...args) 
           
@@ -2178,7 +2178,7 @@
               return this.__PROXY__.getShapes(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.setPolylineGen = function(...args) 
           
@@ -2188,7 +2188,7 @@
               return this.__PROXY__.setPolylineGen(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.getPolylineGen = function(...args) 
           
@@ -2198,7 +2198,7 @@
               return this.__PROXY__.getPolylineGen(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.setElevation = function(...args) 
           
@@ -2208,7 +2208,7 @@
               return this.__PROXY__.setElevation(...args);
             
         };
-    
+        
         // function 
         RPolylineData.prototype.getElevation = function(...args) 
           
@@ -2218,7 +2218,7 @@
               return this.__PROXY__.getElevation(...args);
             
         };
-    
+        
 
       // static functions:
       RPolylineData.prototype.isNullWrapper = function() {

@@ -138,7 +138,7 @@
               return this.__PROXY__.getViewportNumber(...args);
             
         };
-    
+        
         // function 
         ROrthoGrid.prototype.getDocument = function(...args) 
           
@@ -148,7 +148,7 @@
               return this.__PROXY__.getDocument(...args);
             
         };
-    
+        
         // function 
         ROrthoGrid.prototype.setVisible = function(...args) 
           
@@ -158,7 +158,7 @@
               return this.__PROXY__.setVisible(...args);
             
         };
-    
+        
         // function 
         ROrthoGrid.prototype.isVisible = function(...args) 
           
@@ -168,7 +168,7 @@
               return this.__PROXY__.isVisible(...args);
             
         };
-    
+        
         // function 
         ROrthoGrid.prototype.clearCache = function(...args) 
           
@@ -178,7 +178,7 @@
               return this.__PROXY__.clearCache(...args);
             
         };
-    
+        
         // function 
         ROrthoGrid.prototype.snapToGrid = function(...args) 
           
@@ -188,7 +188,7 @@
               return this.__PROXY__.snapToGrid(...args);
             
         };
-    
+        
         // function 
         ROrthoGrid.prototype.update = function(...args) 
           
@@ -198,7 +198,7 @@
               return this.__PROXY__.update(...args);
             
         };
-    
+        
         // function 
         ROrthoGrid.prototype.paint = function(...args) 
           
@@ -208,7 +208,7 @@
               return this.__PROXY__.paint(...args);
             
         };
-    
+        
         // function 
         ROrthoGrid.prototype.paintMetaGrid = function(...args) 
           
@@ -218,7 +218,7 @@
               return this.__PROXY__.paintMetaGrid(...args);
             
         };
-    
+        
         // function 
         ROrthoGrid.prototype.paintGridLines = function(...args) 
           
@@ -228,7 +228,7 @@
               return this.__PROXY__.paintGridLines(...args);
             
         };
-    
+        
         // function 
         ROrthoGrid.prototype.paintGridPoints = function(...args) 
           
@@ -238,7 +238,7 @@
               return this.__PROXY__.paintGridPoints(...args);
             
         };
-    
+        
         // function 
         ROrthoGrid.prototype.paintCursor = function(...args) 
           
@@ -248,7 +248,7 @@
               return this.__PROXY__.paintCursor(...args);
             
         };
-    
+        
         // function 
         ROrthoGrid.prototype.paintRuler = function(...args) 
           
@@ -258,7 +258,7 @@
               return this.__PROXY__.paintRuler(...args);
             
         };
-    
+        
         // function 
         ROrthoGrid.prototype.getInfoText = function(...args) 
           
@@ -268,7 +268,7 @@
               return this.__PROXY__.getInfoText(...args);
             
         };
-    
+        
         // function 
         ROrthoGrid.prototype.getIdealSpacing = function(...args) 
           
@@ -278,7 +278,7 @@
               return this.__PROXY__.getIdealSpacing(...args);
             
         };
-    
+        
         // function 
         ROrthoGrid.prototype.isIsometric = function(...args) 
           
@@ -288,7 +288,7 @@
               return this.__PROXY__.isIsometric(...args);
             
         };
-    
+        
         // function 
         ROrthoGrid.prototype.setIsometric = function(...args) 
           
@@ -298,7 +298,7 @@
               return this.__PROXY__.setIsometric(...args);
             
         };
-    
+        
         // function 
         ROrthoGrid.prototype.getProjection = function(...args) 
           
@@ -308,7 +308,7 @@
               return this.__PROXY__.getProjection(...args);
             
         };
-    
+        
         // function 
         ROrthoGrid.prototype.setProjection = function(...args) 
           
@@ -318,7 +318,7 @@
               return this.__PROXY__.setProjection(...args);
             
         };
-    
+        
         // function 
         ROrthoGrid.prototype.getIdealGridSpacing = function(...args) 
           
@@ -328,7 +328,7 @@
               return this.__PROXY__.getIdealGridSpacing(...args);
             
         };
-    
+        
         // function 
         ROrthoGrid.prototype.isFractionalFormat = function(...args) 
           
@@ -338,7 +338,7 @@
               return this.__PROXY__.isFractionalFormat(...args);
             
         };
-    
+        
         // function 
         ROrthoGrid.prototype.inchAutoscale = function(...args) 
           
@@ -348,7 +348,7 @@
               return this.__PROXY__.inchAutoscale(...args);
             
         };
-    
+        
 
       // static functions:
       

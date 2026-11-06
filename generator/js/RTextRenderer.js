@@ -139,7 +139,7 @@ RTextRenderer.RichText = RTextRenderer_Wrapper.RichText;
               return this.__PROXY__.renderSimple(...args);
             
         };
-    
+        
         // function 
         RTextRenderer.prototype.render = function(...args) 
           
@@ -149,7 +149,7 @@ RTextRenderer.RichText = RTextRenderer_Wrapper.RichText;
               return this.__PROXY__.render(...args);
             
         };
-    
+        
         // function 
         RTextRenderer.prototype.getPainterPaths = function(...args) 
           
@@ -159,7 +159,7 @@ RTextRenderer.RichText = RTextRenderer_Wrapper.RichText;
               return this.__PROXY__.getPainterPaths(...args);
             
         };
-    
+        
         // function 
         RTextRenderer.prototype.getTextLayouts = function(...args) 
           
@@ -169,7 +169,7 @@ RTextRenderer.RichText = RTextRenderer_Wrapper.RichText;
               return this.__PROXY__.getTextLayouts(...args);
             
         };
-    
+        
         // function 
         RTextRenderer.prototype.getBoundingBox = function(...args) 
           
@@ -179,7 +179,7 @@ RTextRenderer.RichText = RTextRenderer_Wrapper.RichText;
               return this.__PROXY__.getBoundingBox(...args);
             
         };
-    
+        
         // function 
         RTextRenderer.prototype.getHeight = function(...args) 
           
@@ -189,7 +189,7 @@ RTextRenderer.RichText = RTextRenderer_Wrapper.RichText;
               return this.__PROXY__.getHeight(...args);
             
         };
-    
+        
         // function 
         RTextRenderer.prototype.getWidth = function(...args) 
           
@@ -199,7 +199,7 @@ RTextRenderer.RichText = RTextRenderer_Wrapper.RichText;
               return this.__PROXY__.getWidth(...args);
             
         };
-    
+        
         // function 
         RTextRenderer.prototype.getRichText = function(...args) 
           
@@ -209,7 +209,7 @@ RTextRenderer.RichText = RTextRenderer_Wrapper.RichText;
               return this.__PROXY__.getRichText(...args);
             
         };
-    
+        
         // function 
         RTextRenderer.prototype.lockForDrawing = function(...args) 
           
@@ -219,7 +219,7 @@ RTextRenderer.RichText = RTextRenderer_Wrapper.RichText;
               return this.__PROXY__.lockForDrawing(...args);
             
         };
-    
+        
         // function 
         RTextRenderer.prototype.unlockForDrawing = function(...args) 
           
@@ -229,7 +229,7 @@ RTextRenderer.RichText = RTextRenderer_Wrapper.RichText;
               return this.__PROXY__.unlockForDrawing(...args);
             
         };
-    
+        
         // function 
         RTextRenderer.prototype.getPainterPathsForBlock = function(...args) 
           
@@ -239,7 +239,7 @@ RTextRenderer.RichText = RTextRenderer_Wrapper.RichText;
               return this.__PROXY__.getPainterPathsForBlock(...args);
             
         };
-    
+        
         // function 
         RTextRenderer.prototype.getPainterPathsForBlockTtf = function(...args) 
           
@@ -249,7 +249,7 @@ RTextRenderer.RichText = RTextRenderer_Wrapper.RichText;
               return this.__PROXY__.getPainterPathsForBlockTtf(...args);
             
         };
-    
+        
         // function 
         RTextRenderer.prototype.getPainterPathsForBlockCad = function(...args) 
           
@@ -259,7 +259,7 @@ RTextRenderer.RichText = RTextRenderer_Wrapper.RichText;
               return this.__PROXY__.getPainterPathsForBlockCad(...args);
             
         };
-    
+        
         // function 
         RTextRenderer.prototype.preparePath = function(...args) 
           
@@ -269,7 +269,7 @@ RTextRenderer.RichText = RTextRenderer_Wrapper.RichText;
               return this.__PROXY__.preparePath(...args);
             
         };
-    
+        
         // function 
         RTextRenderer.prototype.preparePathColor = function(...args) 
           
@@ -279,7 +279,7 @@ RTextRenderer.RichText = RTextRenderer_Wrapper.RichText;
               return this.__PROXY__.preparePathColor(...args);
             
         };
-    
+        
         // function 
         RTextRenderer.prototype.preparePathTransform = function(...args) 
           
@@ -289,7 +289,7 @@ RTextRenderer.RichText = RTextRenderer_Wrapper.RichText;
               return this.__PROXY__.preparePathTransform(...args);
             
         };
-    
+        
         // function 
         RTextRenderer.prototype.getCharacterRect = function(...args) 
           
@@ -299,7 +299,7 @@ RTextRenderer.RichText = RTextRenderer_Wrapper.RichText;
               return this.__PROXY__.getCharacterRect(...args);
             
         };
-    
+        
         // function 
         RTextRenderer.prototype.getRichTextForBlock = function(...args) 
           
@@ -309,7 +309,7 @@ RTextRenderer.RichText = RTextRenderer_Wrapper.RichText;
               return this.__PROXY__.getRichTextForBlock(...args);
             
         };
-    
+        
         // function 
         RTextRenderer.prototype.setBlockFont = function(...args) 
           
@@ -319,7 +319,7 @@ RTextRenderer.RichText = RTextRenderer_Wrapper.RichText;
               return this.__PROXY__.setBlockFont(...args);
             
         };
-    
+        
         // function 
         RTextRenderer.prototype.getBlockFont = function(...args) 
           
@@ -329,7 +329,7 @@ RTextRenderer.RichText = RTextRenderer_Wrapper.RichText;
               return this.__PROXY__.getBlockFont(...args);
             
         };
-    
+        
         // function 
         RTextRenderer.prototype.setBlockFontFile = function(...args) 
           
@@ -339,7 +339,7 @@ RTextRenderer.RichText = RTextRenderer_Wrapper.RichText;
               return this.__PROXY__.setBlockFontFile(...args);
             
         };
-    
+        
         // function 
         RTextRenderer.prototype.getBlockFontFile = function(...args) 
           
@@ -349,7 +349,7 @@ RTextRenderer.RichText = RTextRenderer_Wrapper.RichText;
               return this.__PROXY__.getBlockFontFile(...args);
             
         };
-    
+        
         // function 
         RTextRenderer.prototype.setUseCadFont = function(...args) 
           
@@ -359,7 +359,7 @@ RTextRenderer.RichText = RTextRenderer_Wrapper.RichText;
               return this.__PROXY__.setUseCadFont(...args);
             
         };
-    
+        
         // function 
         RTextRenderer.prototype.getUseCadFont = function(...args) 
           
@@ -369,7 +369,7 @@ RTextRenderer.RichText = RTextRenderer_Wrapper.RichText;
               return this.__PROXY__.getUseCadFont(...args);
             
         };
-    
+        
         // function 
         RTextRenderer.prototype.setBlockBold = function(...args) 
           
@@ -379,7 +379,7 @@ RTextRenderer.RichText = RTextRenderer_Wrapper.RichText;
               return this.__PROXY__.setBlockBold(...args);
             
         };
-    
+        
         // function 
         RTextRenderer.prototype.getBlockBold = function(...args) 
           
@@ -389,7 +389,7 @@ RTextRenderer.RichText = RTextRenderer_Wrapper.RichText;
               return this.__PROXY__.getBlockBold(...args);
             
         };
-    
+        
         // function 
         RTextRenderer.prototype.setBlockItalic = function(...args) 
           
@@ -399,7 +399,7 @@ RTextRenderer.RichText = RTextRenderer_Wrapper.RichText;
               return this.__PROXY__.setBlockItalic(...args);
             
         };
-    
+        
         // function 
         RTextRenderer.prototype.getBlockItalic = function(...args) 
           
@@ -409,7 +409,7 @@ RTextRenderer.RichText = RTextRenderer_Wrapper.RichText;
               return this.__PROXY__.getBlockItalic(...args);
             
         };
-    
+        
         // function 
         RTextRenderer.prototype.setBlockUnderline = function(...args) 
           
@@ -419,7 +419,7 @@ RTextRenderer.RichText = RTextRenderer_Wrapper.RichText;
               return this.__PROXY__.setBlockUnderline(...args);
             
         };
-    
+        
         // function 
         RTextRenderer.prototype.getBlockUnderline = function(...args) 
           
@@ -429,7 +429,7 @@ RTextRenderer.RichText = RTextRenderer_Wrapper.RichText;
               return this.__PROXY__.getBlockUnderline(...args);
             
         };
-    
+        
         // function 
         RTextRenderer.prototype.setBlockHeight = function(...args) 
           
@@ -439,7 +439,7 @@ RTextRenderer.RichText = RTextRenderer_Wrapper.RichText;
               return this.__PROXY__.setBlockHeight(...args);
             
         };
-    
+        
         // function 
         RTextRenderer.prototype.getBlockHeight = function(...args) 
           
@@ -449,7 +449,7 @@ RTextRenderer.RichText = RTextRenderer_Wrapper.RichText;
               return this.__PROXY__.getBlockHeight(...args);
             
         };
-    
+        
         // function 
         RTextRenderer.prototype.setCurrentFormat = function(...args) 
           
@@ -459,7 +459,7 @@ RTextRenderer.RichText = RTextRenderer_Wrapper.RichText;
               return this.__PROXY__.setCurrentFormat(...args);
             
         };
-    
+        
         // function 
         RTextRenderer.prototype.getCurrentFormat = function(...args) 
           
@@ -469,7 +469,7 @@ RTextRenderer.RichText = RTextRenderer_Wrapper.RichText;
               return this.__PROXY__.getCurrentFormat(...args);
             
         };
-    
+        
 
       // static functions:
       

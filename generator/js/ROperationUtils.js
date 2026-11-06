@@ -105,7 +105,7 @@
               return this.__PROXY__.normalizeDrawOrder(...args);
             
         };
-    
+        
 
       // static functions:
       

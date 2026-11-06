@@ -105,7 +105,7 @@
               return this.__PROXY__.getFilterStrings(...args);
             
         };
-    
+        
         // function 
         RFileImporterFactory.prototype.canImport = function(...args) 
           
@@ -115,7 +115,7 @@
               return this.__PROXY__.canImport(...args);
             
         };
-    
+        
         // function 
         RFileImporterFactory.prototype.instantiate = function(...args) 
           
@@ -125,7 +125,7 @@
               return this.__PROXY__.instantiate(...args);
             
         };
-    
+        
 
       // static functions:
       RFileImporterFactory.prototype.isNullWrapper = function() {

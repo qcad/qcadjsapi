@@ -219,7 +219,7 @@ RSnapGrid.CoordinatePolar = RSnapGrid_Wrapper.CoordinatePolar;
               return this.__PROXY__.suspendEvent(...args);
             
         };
-    
+        
         // function 
         RSnapGrid.prototype.finishEvent = function(...args) 
           
@@ -229,7 +229,7 @@ RSnapGrid.CoordinatePolar = RSnapGrid_Wrapper.CoordinatePolar;
               return this.__PROXY__.finishEvent(...args);
             
         };
-    
+        
         // function 
         RSnapGrid.prototype.getEntityIds = function(...args) 
           
@@ -239,7 +239,7 @@ RSnapGrid.CoordinatePolar = RSnapGrid_Wrapper.CoordinatePolar;
               return this.__PROXY__.getEntityIds(...args);
             
         };
-    
+        
         // function 
         RSnapGrid.prototype.getStatus = function(...args) 
           
@@ -249,7 +249,7 @@ RSnapGrid.CoordinatePolar = RSnapGrid_Wrapper.CoordinatePolar;
               return this.__PROXY__.getStatus(...args);
             
         };
-    
+        
         // function 
         RSnapGrid.prototype.setStatus = function(...args) 
           
@@ -259,7 +259,7 @@ RSnapGrid.CoordinatePolar = RSnapGrid_Wrapper.CoordinatePolar;
               return this.__PROXY__.setStatus(...args);
             
         };
-    
+        
         // function 
         RSnapGrid.prototype.getLastSnap = function(...args) 
           
@@ -269,7 +269,7 @@ RSnapGrid.CoordinatePolar = RSnapGrid_Wrapper.CoordinatePolar;
               return this.__PROXY__.getLastSnap(...args);
             
         };
-    
+        
         // function 
         RSnapGrid.prototype.setLastSnap = function(...args) 
           
@@ -279,7 +279,7 @@ RSnapGrid.CoordinatePolar = RSnapGrid_Wrapper.CoordinatePolar;
               return this.__PROXY__.setLastSnap(...args);
             
         };
-    
+        
         // function 
         RSnapGrid.prototype.reset = function(...args) 
           
@@ -289,7 +289,7 @@ RSnapGrid.CoordinatePolar = RSnapGrid_Wrapper.CoordinatePolar;
               return this.__PROXY__.reset(...args);
             
         };
-    
+        
         // function 
         RSnapGrid.prototype.snap = function(...args) 
           
@@ -299,7 +299,7 @@ RSnapGrid.CoordinatePolar = RSnapGrid_Wrapper.CoordinatePolar;
               return this.__PROXY__.snap(...args);
             
         };
-    
+        
 
       // static functions:
       RSnapGrid.prototype.isNullWrapper = function() {

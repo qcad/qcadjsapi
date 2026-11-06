@@ -142,7 +142,7 @@
               return this.__PROXY__.setObjectName(...args);
             
         };
-    
+        
         // function 
         RNewDocumentListenerAdapter.prototype.isWidgetType = function(...args) 
           
@@ -152,7 +152,7 @@
               return this.__PROXY__.isWidgetType(...args);
             
         };
-    
+        
         // function 
         RNewDocumentListenerAdapter.prototype.isWindowType = function(...args) 
           
@@ -162,7 +162,7 @@
               return this.__PROXY__.isWindowType(...args);
             
         };
-    
+        
         // function 
         RNewDocumentListenerAdapter.prototype.signalsBlocked = function(...args) 
           
@@ -172,7 +172,7 @@
               return this.__PROXY__.signalsBlocked(...args);
             
         };
-    
+        
         // function 
         RNewDocumentListenerAdapter.prototype.blockSignals = function(...args) 
           
@@ -182,7 +182,7 @@
               return this.__PROXY__.blockSignals(...args);
             
         };
-    
+        
         // function 
         RNewDocumentListenerAdapter.prototype.findChild = function(...args) 
           
@@ -192,7 +192,7 @@
               return this.__PROXY__.findChild(...args);
             
         };
-    
+        
         // function 
         RNewDocumentListenerAdapter.prototype.children = function(...args) 
           
@@ -202,7 +202,7 @@
               return this.__PROXY__.children(...args);
             
         };
-    
+        
         // function 
         RNewDocumentListenerAdapter.prototype.setParent = function(...args) 
           
@@ -212,7 +212,7 @@
               return this.__PROXY__.setParent(...args);
             
         };
-    
+        
         // function 
         RNewDocumentListenerAdapter.prototype.installEventFilter = function(...args) 
           
@@ -222,7 +222,7 @@
               return this.__PROXY__.installEventFilter(...args);
             
         };
-    
+        
         // function 
         RNewDocumentListenerAdapter.prototype.removeEventFilter = function(...args) 
           
@@ -232,7 +232,7 @@
               return this.__PROXY__.removeEventFilter(...args);
             
         };
-    
+        
         // function 
         RNewDocumentListenerAdapter.prototype.dumpObjectTree = function(...args) 
           
@@ -242,7 +242,7 @@
               return this.__PROXY__.dumpObjectTree(...args);
             
         };
-    
+        
         // function 
         RNewDocumentListenerAdapter.prototype.dumpObjectInfo = function(...args) 
           
@@ -252,7 +252,7 @@
               return this.__PROXY__.dumpObjectInfo(...args);
             
         };
-    
+        
         // function 
         RNewDocumentListenerAdapter.prototype.setProperty = function(...args) 
           
@@ -262,7 +262,7 @@
               return this.__PROXY__.setProperty(...args);
             
         };
-    
+        
         // function 
         RNewDocumentListenerAdapter.prototype.property = function(...args) 
           
@@ -272,7 +272,7 @@
               return this.__PROXY__.property(...args);
             
         };
-    
+        
         // function 
         RNewDocumentListenerAdapter.prototype.dynamicPropertyNames = function(...args) 
           
@@ -282,7 +282,7 @@
               return this.__PROXY__.dynamicPropertyNames(...args);
             
         };
-    
+        
         // function 
         RNewDocumentListenerAdapter.prototype.parent = function(...args) 
           
@@ -292,7 +292,7 @@
               return this.__PROXY__.parent(...args);
             
         };
-    
+        
         // function 
         RNewDocumentListenerAdapter.prototype.deleteLater = function(...args) 
           
@@ -302,7 +302,7 @@
               return this.__PROXY__.deleteLater(...args);
             
         };
-    
+        
         // function 
         RNewDocumentListenerAdapter.prototype.updateNewDocumentListener = function(...args) 
           
@@ -312,7 +312,7 @@
               return this.__PROXY__.updateNewDocumentListener(...args);
             
         };
-    
+        
 
       // static functions:
       

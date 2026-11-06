@@ -109,7 +109,7 @@
               return this.__PROXY__.init(...args);
             
         };
-    
+        
         // function 
         RGraphicsScene.prototype.getErrorMessage = function(...args) 
           
@@ -119,7 +119,7 @@
               return this.__PROXY__.getErrorMessage(...args);
             
         };
-    
+        
         // function 
         RGraphicsScene.prototype.setLayerSource = function(...args) 
           
@@ -129,7 +129,7 @@
               return this.__PROXY__.setLayerSource(...args);
             
         };
-    
+        
         // function 
         RGraphicsScene.prototype.setBlockSource = function(...args) 
           
@@ -139,7 +139,7 @@
               return this.__PROXY__.setBlockSource(...args);
             
         };
-    
+        
       // function 
       RGraphicsScene.prototype.getDocument = function() 
         
@@ -181,7 +181,7 @@
               return this.__PROXY__.setProjectionRenderingHint(...args);
             
         };
-    
+        
         // function 
         RGraphicsScene.prototype.getProjectionRenderingHint = function(...args) 
           
@@ -191,7 +191,7 @@
               return this.__PROXY__.getProjectionRenderingHint(...args);
             
         };
-    
+        
         // function 
         RGraphicsScene.prototype.setClipping = function(...args) 
           
@@ -201,7 +201,7 @@
               return this.__PROXY__.setClipping(...args);
             
         };
-    
+        
         // function 
         RGraphicsScene.prototype.getClipping = function(...args) 
           
@@ -211,7 +211,7 @@
               return this.__PROXY__.getClipping(...args);
             
         };
-    
+        
         // function 
         RGraphicsScene.prototype.setPen = function(...args) 
           
@@ -221,7 +221,7 @@
               return this.__PROXY__.setPen(...args);
             
         };
-    
+        
         // function 
         RGraphicsScene.prototype.getPen = function(...args) 
           
@@ -231,7 +231,7 @@
               return this.__PROXY__.getPen(...args);
             
         };
-    
+        
         // function 
         RGraphicsScene.prototype.setBrush = function(...args) 
           
@@ -241,7 +241,7 @@
               return this.__PROXY__.setBrush(...args);
             
         };
-    
+        
         // function 
         RGraphicsScene.prototype.getBrush = function(...args) 
           
@@ -251,7 +251,7 @@
               return this.__PROXY__.getBrush(...args);
             
         };
-    
+        
         // function 
         RGraphicsScene.prototype.getColor = function(...args) 
           
@@ -261,7 +261,7 @@
               return this.__PROXY__.getColor(...args);
             
         };
-    
+        
         // function 
         RGraphicsScene.prototype.setEntityAttributes = function(...args) 
           
@@ -271,7 +271,7 @@
               return this.__PROXY__.setEntityAttributes(...args);
             
         };
-    
+        
         // function 
         RGraphicsScene.prototype.setStyle = function(...args) 
           
@@ -281,7 +281,7 @@
               return this.__PROXY__.setStyle(...args);
             
         };
-    
+        
         // function 
         RGraphicsScene.prototype.setBrushStyle = function(...args) 
           
@@ -291,7 +291,7 @@
               return this.__PROXY__.setBrushStyle(...args);
             
         };
-    
+        
       // function 
       RGraphicsScene.prototype.setColor = function() 
         
@@ -385,7 +385,7 @@
               return this.__PROXY__.setLinetypeId(...args);
             
         };
-    
+        
         // function 
         RGraphicsScene.prototype.setLinetypePattern = function(...args) 
           
@@ -395,7 +395,7 @@
               return this.__PROXY__.setLinetypePattern(...args);
             
         };
-    
+        
         // function 
         RGraphicsScene.prototype.getLinetypePattern = function(...args) 
           
@@ -405,7 +405,7 @@
               return this.__PROXY__.getLinetypePattern(...args);
             
         };
-    
+        
         // function 
         RGraphicsScene.prototype.getBlockRefOrEntity = function(...args) 
           
@@ -415,7 +415,7 @@
               return this.__PROXY__.getBlockRefOrEntity(...args);
             
         };
-    
+        
         // function 
         RGraphicsScene.prototype.getBlockRefOrEntityId = function(...args) 
           
@@ -425,7 +425,7 @@
               return this.__PROXY__.getBlockRefOrEntityId(...args);
             
         };
-    
+        
         // function 
         RGraphicsScene.prototype.getEntity = function(...args) 
           
@@ -435,7 +435,7 @@
               return this.__PROXY__.getEntity(...args);
             
         };
-    
+        
         // function 
         RGraphicsScene.prototype.getCurrentBlockRef = function(...args) 
           
@@ -445,7 +445,7 @@
               return this.__PROXY__.getCurrentBlockRef(...args);
             
         };
-    
+        
         // function 
         RGraphicsScene.prototype.getCurrentViewport = function(...args) 
           
@@ -455,7 +455,7 @@
               return this.__PROXY__.getCurrentViewport(...args);
             
         };
-    
+        
         // function 
         RGraphicsScene.prototype.isEntitySelected = function(...args) 
           
@@ -465,7 +465,7 @@
               return this.__PROXY__.isEntitySelected(...args);
             
         };
-    
+        
         // function 
         RGraphicsScene.prototype.isPatternContinuous = function(...args) 
           
@@ -475,7 +475,7 @@
               return this.__PROXY__.isPatternContinuous(...args);
             
         };
-    
+        
       // function 
       RGraphicsScene.prototype.startExport = function() 
         
@@ -549,7 +549,7 @@
               return this.__PROXY__.exportDocument(...args);
             
         };
-    
+        
         // function 
         RGraphicsScene.prototype.exportDocumentSetting = function(...args) 
           
@@ -559,7 +559,7 @@
               return this.__PROXY__.exportDocumentSetting(...args);
             
         };
-    
+        
         // function 
         RGraphicsScene.prototype.exportLayers = function(...args) 
           
@@ -569,7 +569,7 @@
               return this.__PROXY__.exportLayers(...args);
             
         };
-    
+        
         // function 
         RGraphicsScene.prototype.exportLayerStates = function(...args) 
           
@@ -579,7 +579,7 @@
               return this.__PROXY__.exportLayerStates(...args);
             
         };
-    
+        
         // function 
         RGraphicsScene.prototype.exportBlocks = function(...args) 
           
@@ -589,7 +589,7 @@
               return this.__PROXY__.exportBlocks(...args);
             
         };
-    
+        
         // function 
         RGraphicsScene.prototype.exportViews = function(...args) 
           
@@ -599,7 +599,7 @@
               return this.__PROXY__.exportViews(...args);
             
         };
-    
+        
         // function 
         RGraphicsScene.prototype.exportLinetypes = function(...args) 
           
@@ -609,7 +609,7 @@
               return this.__PROXY__.exportLinetypes(...args);
             
         };
-    
+        
         // function 
         RGraphicsScene.prototype.exportLayer = function(...args) 
           
@@ -619,7 +619,7 @@
               return this.__PROXY__.exportLayer(...args);
             
         };
-    
+        
         // function 
         RGraphicsScene.prototype.exportLayerState = function(...args) 
           
@@ -629,7 +629,7 @@
               return this.__PROXY__.exportLayerState(...args);
             
         };
-    
+        
       // function 
       RGraphicsScene.prototype.exportBlock = function() 
         
@@ -690,7 +690,7 @@
               return this.__PROXY__.exportView(...args);
             
         };
-    
+        
         // function 
         RGraphicsScene.prototype.exportLinetype = function(...args) 
           
@@ -700,7 +700,7 @@
               return this.__PROXY__.exportLinetype(...args);
             
         };
-    
+        
       // function 
       RGraphicsScene.prototype.exportEntities = function() 
         
@@ -743,7 +743,7 @@
               return this.__PROXY__.exportEntity(...args);
             
         };
-    
+        
         // function 
         RGraphicsScene.prototype.getEntityLayer = function(...args) 
           
@@ -753,7 +753,7 @@
               return this.__PROXY__.getEntityLayer(...args);
             
         };
-    
+        
         // function 
         RGraphicsScene.prototype.isVisible = function(...args) 
           
@@ -763,7 +763,7 @@
               return this.__PROXY__.isVisible(...args);
             
         };
-    
+        
         // function 
         RGraphicsScene.prototype.startEntity = function(...args) 
           
@@ -773,7 +773,7 @@
               return this.__PROXY__.startEntity(...args);
             
         };
-    
+        
       // function 
       RGraphicsScene.prototype.endEntity = function() 
         
@@ -815,7 +815,7 @@
               return this.__PROXY__.exportShapes(...args);
             
         };
-    
+        
       // function 
       RGraphicsScene.prototype.exportShape = function() 
         
@@ -857,7 +857,7 @@
               return this.__PROXY__.exportShapeSegment(...args);
             
         };
-    
+        
       // function 
       RGraphicsScene.prototype.exportLine = function() 
         
@@ -900,7 +900,7 @@
               return this.__PROXY__.exportLinetypeShape(...args);
             
         };
-    
+        
       // function 
       RGraphicsScene.prototype.exportLineSegment = function() 
         
@@ -943,7 +943,7 @@
               return this.__PROXY__.exportXLine(...args);
             
         };
-    
+        
         // function 
         RGraphicsScene.prototype.exportRay = function(...args) 
           
@@ -953,7 +953,7 @@
               return this.__PROXY__.exportRay(...args);
             
         };
-    
+        
       // function 
       RGraphicsScene.prototype.exportPoint = function() 
         
@@ -1192,7 +1192,7 @@
               return this.__PROXY__.exportSplineSegment(...args);
             
         };
-    
+        
         // function 
         RGraphicsScene.prototype.exportExplodable = function(...args) 
           
@@ -1202,7 +1202,7 @@
               return this.__PROXY__.exportExplodable(...args);
             
         };
-    
+        
       // function 
       RGraphicsScene.prototype.exportPainterPaths = function() 
         
@@ -1245,7 +1245,7 @@
               return this.__PROXY__.exportBoundingBoxPaths(...args);
             
         };
-    
+        
       // function 
       RGraphicsScene.prototype.exportImage = function() 
         
@@ -1321,7 +1321,7 @@
               return this.__PROXY__.exportClipRectangle(...args);
             
         };
-    
+        
       // function 
       RGraphicsScene.prototype.exportTransform = function() 
         
@@ -1395,7 +1395,7 @@
               return this.__PROXY__.exportThickPolyline(...args);
             
         };
-    
+        
         // function 
         RGraphicsScene.prototype.exportQuad = function(...args) 
           
@@ -1405,7 +1405,7 @@
               return this.__PROXY__.exportQuad(...args);
             
         };
-    
+        
         // function 
         RGraphicsScene.prototype.exportVerticalQuad = function(...args) 
           
@@ -1415,7 +1415,7 @@
               return this.__PROXY__.exportVerticalQuad(...args);
             
         };
-    
+        
         // function 
         RGraphicsScene.prototype.exportBox = function(...args) 
           
@@ -1425,7 +1425,7 @@
               return this.__PROXY__.exportBox(...args);
             
         };
-    
+        
       // function 
       RGraphicsScene.prototype.exportTriangle = function() 
         
@@ -1467,7 +1467,7 @@
               return this.__PROXY__.exportRectangle(...args);
             
         };
-    
+        
       // function 
       RGraphicsScene.prototype.getLineTypePatternScale = function() 
         
@@ -1541,7 +1541,7 @@
               return this.__PROXY__.pushEntity(...args);
             
         };
-    
+        
         // function 
         RGraphicsScene.prototype.popEntity = function(...args) 
           
@@ -1551,7 +1551,7 @@
               return this.__PROXY__.popEntity(...args);
             
         };
-    
+        
         // function 
         RGraphicsScene.prototype.setDraftMode = function(...args) 
           
@@ -1561,7 +1561,7 @@
               return this.__PROXY__.setDraftMode(...args);
             
         };
-    
+        
         // function 
         RGraphicsScene.prototype.toggleDraftMode = function(...args) 
           
@@ -1571,7 +1571,7 @@
               return this.__PROXY__.toggleDraftMode(...args);
             
         };
-    
+        
         // function 
         RGraphicsScene.prototype.getDraftMode = function(...args) 
           
@@ -1581,7 +1581,7 @@
               return this.__PROXY__.getDraftMode(...args);
             
         };
-    
+        
         // function 
         RGraphicsScene.prototype.setTwoColorSelectedMode = function(...args) 
           
@@ -1591,7 +1591,7 @@
               return this.__PROXY__.setTwoColorSelectedMode(...args);
             
         };
-    
+        
         // function 
         RGraphicsScene.prototype.getTwoColorSelectedMode = function(...args) 
           
@@ -1601,7 +1601,7 @@
               return this.__PROXY__.getTwoColorSelectedMode(...args);
             
         };
-    
+        
         // function 
         RGraphicsScene.prototype.setScreenBasedLinetypes = function(...args) 
           
@@ -1611,7 +1611,7 @@
               return this.__PROXY__.setScreenBasedLinetypes(...args);
             
         };
-    
+        
         // function 
         RGraphicsScene.prototype.toggleScreenBasedLinetypes = function(...args) 
           
@@ -1621,7 +1621,7 @@
               return this.__PROXY__.toggleScreenBasedLinetypes(...args);
             
         };
-    
+        
         // function 
         RGraphicsScene.prototype.getScreenBasedLinetypes = function(...args) 
           
@@ -1631,7 +1631,7 @@
               return this.__PROXY__.getScreenBasedLinetypes(...args);
             
         };
-    
+        
         // function 
         RGraphicsScene.prototype.isVisualExporter = function(...args) 
           
@@ -1641,7 +1641,7 @@
               return this.__PROXY__.isVisualExporter(...args);
             
         };
-    
+        
         // function 
         RGraphicsScene.prototype.setVisualExporter = function(...args) 
           
@@ -1651,7 +1651,7 @@
               return this.__PROXY__.setVisualExporter(...args);
             
         };
-    
+        
         // function 
         RGraphicsScene.prototype.getExportInvisible = function(...args) 
           
@@ -1661,7 +1661,7 @@
               return this.__PROXY__.getExportInvisible(...args);
             
         };
-    
+        
         // function 
         RGraphicsScene.prototype.setExportInvisible = function(...args) 
           
@@ -1671,7 +1671,7 @@
               return this.__PROXY__.setExportInvisible(...args);
             
         };
-    
+        
         // function 
         RGraphicsScene.prototype.getPixelSizeHint = function(...args) 
           
@@ -1681,7 +1681,7 @@
               return this.__PROXY__.getPixelSizeHint(...args);
             
         };
-    
+        
         // function 
         RGraphicsScene.prototype.getCurrentPixelSizeHint = function(...args) 
           
@@ -1691,7 +1691,7 @@
               return this.__PROXY__.getCurrentPixelSizeHint(...args);
             
         };
-    
+        
         // function 
         RGraphicsScene.prototype.setPixelSizeHint = function(...args) 
           
@@ -1701,7 +1701,7 @@
               return this.__PROXY__.setPixelSizeHint(...args);
             
         };
-    
+        
         // function 
         RGraphicsScene.prototype.getPixelUnit = function(...args) 
           
@@ -1711,7 +1711,7 @@
               return this.__PROXY__.getPixelUnit(...args);
             
         };
-    
+        
         // function 
         RGraphicsScene.prototype.setPixelUnit = function(...args) 
           
@@ -1721,7 +1721,7 @@
               return this.__PROXY__.setPixelUnit(...args);
             
         };
-    
+        
         // function 
         RGraphicsScene.prototype.getPixelWidth = function(...args) 
           
@@ -1731,7 +1731,7 @@
               return this.__PROXY__.getPixelWidth(...args);
             
         };
-    
+        
         // function 
         RGraphicsScene.prototype.setPixelWidth = function(...args) 
           
@@ -1741,7 +1741,7 @@
               return this.__PROXY__.setPixelWidth(...args);
             
         };
-    
+        
         // function 
         RGraphicsScene.prototype.setEnablePatterns = function(...args) 
           
@@ -1751,7 +1751,7 @@
               return this.__PROXY__.setEnablePatterns(...args);
             
         };
-    
+        
         // function 
         RGraphicsScene.prototype.getDocumentInterface = function(...args) 
           
@@ -1761,7 +1761,7 @@
               return this.__PROXY__.getDocumentInterface(...args);
             
         };
-    
+        
         // function 
         RGraphicsScene.prototype.getGraphicsViews = function(...args) 
           
@@ -1771,7 +1771,7 @@
               return this.__PROXY__.getGraphicsViews(...args);
             
         };
-    
+        
         // function 
         RGraphicsScene.prototype.clear = function(...args) 
           
@@ -1781,7 +1781,7 @@
               return this.__PROXY__.clear(...args);
             
         };
-    
+        
         // function 
         RGraphicsScene.prototype.exportDocumentSettings = function(...args) 
           
@@ -1791,7 +1791,7 @@
               return this.__PROXY__.exportDocumentSettings(...args);
             
         };
-    
+        
         // function 
         RGraphicsScene.prototype.regenerate = function(...args) 
           
@@ -1801,7 +1801,7 @@
               return this.__PROXY__.regenerate(...args);
             
         };
-    
+        
         // function 
         RGraphicsScene.prototype.updateSelectionStatus = function(...args) 
           
@@ -1811,7 +1811,7 @@
               return this.__PROXY__.updateSelectionStatus(...args);
             
         };
-    
+        
         // function 
         RGraphicsScene.prototype.regenerateViews = function(...args) 
           
@@ -1821,7 +1821,7 @@
               return this.__PROXY__.regenerateViews(...args);
             
         };
-    
+        
         // function 
         RGraphicsScene.prototype.repaintViews = function(...args) 
           
@@ -1831,7 +1831,7 @@
               return this.__PROXY__.repaintViews(...args);
             
         };
-    
+        
         // function 
         RGraphicsScene.prototype.setCursor = function(...args) 
           
@@ -1841,7 +1841,7 @@
               return this.__PROXY__.setCursor(...args);
             
         };
-    
+        
         // function 
         RGraphicsScene.prototype.handleTerminateEvent = function(...args) 
           
@@ -1851,7 +1851,7 @@
               return this.__PROXY__.handleTerminateEvent(...args);
             
         };
-    
+        
         // function 
         RGraphicsScene.prototype.handleKeyPressEvent = function(...args) 
           
@@ -1861,7 +1861,7 @@
               return this.__PROXY__.handleKeyPressEvent(...args);
             
         };
-    
+        
         // function 
         RGraphicsScene.prototype.handleKeyReleaseEvent = function(...args) 
           
@@ -1871,7 +1871,7 @@
               return this.__PROXY__.handleKeyReleaseEvent(...args);
             
         };
-    
+        
         // function 
         RGraphicsScene.prototype.handleMouseMoveEvent = function(...args) 
           
@@ -1881,7 +1881,7 @@
               return this.__PROXY__.handleMouseMoveEvent(...args);
             
         };
-    
+        
         // function 
         RGraphicsScene.prototype.handleMousePressEvent = function(...args) 
           
@@ -1891,7 +1891,7 @@
               return this.__PROXY__.handleMousePressEvent(...args);
             
         };
-    
+        
         // function 
         RGraphicsScene.prototype.handleMouseReleaseEvent = function(...args) 
           
@@ -1901,7 +1901,7 @@
               return this.__PROXY__.handleMouseReleaseEvent(...args);
             
         };
-    
+        
         // function 
         RGraphicsScene.prototype.handleMouseDoubleClickEvent = function(...args) 
           
@@ -1911,7 +1911,7 @@
               return this.__PROXY__.handleMouseDoubleClickEvent(...args);
             
         };
-    
+        
         // function 
         RGraphicsScene.prototype.handleWheelEvent = function(...args) 
           
@@ -1921,7 +1921,7 @@
               return this.__PROXY__.handleWheelEvent(...args);
             
         };
-    
+        
         // function 
         RGraphicsScene.prototype.handleTabletEvent = function(...args) 
           
@@ -1931,7 +1931,7 @@
               return this.__PROXY__.handleTabletEvent(...args);
             
         };
-    
+        
         // function 
         RGraphicsScene.prototype.handleSwipeGestureEvent = function(...args) 
           
@@ -1941,7 +1941,7 @@
               return this.__PROXY__.handleSwipeGestureEvent(...args);
             
         };
-    
+        
         // function 
         RGraphicsScene.prototype.handlePanGestureEvent = function(...args) 
           
@@ -1951,7 +1951,7 @@
               return this.__PROXY__.handlePanGestureEvent(...args);
             
         };
-    
+        
         // function 
         RGraphicsScene.prototype.handlePinchGestureEvent = function(...args) 
           
@@ -1961,7 +1961,7 @@
               return this.__PROXY__.handlePinchGestureEvent(...args);
             
         };
-    
+        
         // function 
         RGraphicsScene.prototype.registerView = function(...args) 
           
@@ -1971,7 +1971,7 @@
               return this.__PROXY__.registerView(...args);
             
         };
-    
+        
         // function 
         RGraphicsScene.prototype.unregisterView = function(...args) 
           
@@ -1981,7 +1981,7 @@
               return this.__PROXY__.unregisterView(...args);
             
         };
-    
+        
         // function 
         RGraphicsScene.prototype.beginPreview = function(...args) 
           
@@ -1991,7 +1991,7 @@
               return this.__PROXY__.beginPreview(...args);
             
         };
-    
+        
         // function 
         RGraphicsScene.prototype.endPreview = function(...args) 
           
@@ -2001,7 +2001,7 @@
               return this.__PROXY__.endPreview(...args);
             
         };
-    
+        
         // function 
         RGraphicsScene.prototype.clearPreview = function(...args) 
           
@@ -2011,7 +2011,7 @@
               return this.__PROXY__.clearPreview(...args);
             
         };
-    
+        
         // function 
         RGraphicsScene.prototype.isPreviewEmpty = function(...args) 
           
@@ -2021,7 +2021,7 @@
               return this.__PROXY__.isPreviewEmpty(...args);
             
         };
-    
+        
         // function 
         RGraphicsScene.prototype.addToPreview = function(...args) 
           
@@ -2031,7 +2031,7 @@
               return this.__PROXY__.addToPreview(...args);
             
         };
-    
+        
         // function 
         RGraphicsScene.prototype.beginNoColorMode = function(...args) 
           
@@ -2041,7 +2041,7 @@
               return this.__PROXY__.beginNoColorMode(...args);
             
         };
-    
+        
         // function 
         RGraphicsScene.prototype.endNoColorMode = function(...args) 
           
@@ -2051,7 +2051,7 @@
               return this.__PROXY__.endNoColorMode(...args);
             
         };
-    
+        
         // function 
         RGraphicsScene.prototype.getNoColorMode = function(...args) 
           
@@ -2061,7 +2061,7 @@
               return this.__PROXY__.getNoColorMode(...args);
             
         };
-    
+        
         // function 
         RGraphicsScene.prototype.getHighlightedReferencePoint = function(...args) 
           
@@ -2071,7 +2071,7 @@
               return this.__PROXY__.getHighlightedReferencePoint(...args);
             
         };
-    
+        
         // function 
         RGraphicsScene.prototype.highlightEntity = function(...args) 
           
@@ -2081,7 +2081,7 @@
               return this.__PROXY__.highlightEntity(...args);
             
         };
-    
+        
         // function 
         RGraphicsScene.prototype.highlightReferencePoint = function(...args) 
           
@@ -2091,7 +2091,7 @@
               return this.__PROXY__.highlightReferencePoint(...args);
             
         };
-    
+        
         // function 
         RGraphicsScene.prototype.selectReferencePoints = function(...args) 
           
@@ -2101,7 +2101,7 @@
               return this.__PROXY__.selectReferencePoints(...args);
             
         };
-    
+        
       // function 
       RGraphicsScene.prototype.exportCurrentEntity = function() 
         
@@ -2144,7 +2144,7 @@
               return this.__PROXY__.unexportEntity(...args);
             
         };
-    
+        
         // function 
         RGraphicsScene.prototype.countReferencePoints = function(...args) 
           
@@ -2154,7 +2154,7 @@
               return this.__PROXY__.countReferencePoints(...args);
             
         };
-    
+        
         // function 
         RGraphicsScene.prototype.hasSelectedReferencePoints = function(...args) 
           
@@ -2164,7 +2164,7 @@
               return this.__PROXY__.hasSelectedReferencePoints(...args);
             
         };
-    
+        
         // function 
         RGraphicsScene.prototype.dump = function(...args) 
           
@@ -2174,7 +2174,7 @@
               return this.__PROXY__.dump(...args);
             
         };
-    
+        
         // function 
         RGraphicsScene.prototype.exportReferencePoints = function(...args) 
           
@@ -2184,7 +2184,7 @@
               return this.__PROXY__.exportReferencePoints(...args);
             
         };
-    
+        
 
       // static functions:
       RGraphicsScene.prototype.isNullWrapper = function() {

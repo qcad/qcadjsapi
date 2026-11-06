@@ -207,7 +207,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.isValid(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.getClosestPointOnShape = function(...args) 
           
@@ -217,7 +217,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.getClosestPointOnShape(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.to2D = function(...args) 
           
@@ -227,7 +227,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.to2D(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.equals = function(...args) 
           
@@ -237,7 +237,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.equals(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.getIntProperties = function(...args) 
           
@@ -247,7 +247,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.getIntProperties(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.getMaxDistanceTo = function(...args) 
           
@@ -257,7 +257,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.getMaxDistanceTo(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.isOnShape = function(...args) 
           
@@ -267,7 +267,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.isOnShape(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.filterOnShape = function(...args) 
           
@@ -277,7 +277,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.filterOnShape(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.getVectorFromEndpointTo = function(...args) 
           
@@ -287,7 +287,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.getVectorFromEndpointTo(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.getArcReferencePoints = function(...args) 
           
@@ -297,7 +297,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.getArcReferencePoints(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.getPointOnShape = function(...args) 
           
@@ -307,7 +307,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.getPointOnShape(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.getPointWithDistanceToStart = function(...args) 
           
@@ -317,7 +317,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.getPointWithDistanceToStart(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.getPointWithDistanceToEnd = function(...args) 
           
@@ -327,7 +327,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.getPointWithDistanceToEnd(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.getAngleAtPoint = function(...args) 
           
@@ -337,7 +337,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.getAngleAtPoint(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.getAngleAtPercent = function(...args) 
           
@@ -347,7 +347,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.getAngleAtPercent(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.intersectsWith = function(...args) 
           
@@ -357,7 +357,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.intersectsWith(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.getIntersectionPoints = function(...args) 
           
@@ -367,7 +367,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.getIntersectionPoints(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.flipHorizontal = function(...args) 
           
@@ -377,7 +377,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.flipHorizontal(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.flipVertical = function(...args) 
           
@@ -387,7 +387,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.flipVertical(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.getOffsetShapes = function(...args) 
           
@@ -397,7 +397,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.getOffsetShapes(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.splitAt = function(...args) 
           
@@ -407,7 +407,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.splitAt(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.dump = function(...args) 
           
@@ -417,7 +417,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.dump(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.getShapeType = function(...args) 
           
@@ -427,7 +427,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.getShapeType(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.clone = function(...args) 
           
@@ -437,7 +437,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.clone(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.isDirected = function(...args) 
           
@@ -447,7 +447,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.isDirected(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.setZ = function(...args) 
           
@@ -457,7 +457,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.setZ(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.isFlat = function(...args) 
           
@@ -467,7 +467,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.isFlat(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.getVectorProperties = function(...args) 
           
@@ -477,7 +477,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.getVectorProperties(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.getDoubleProperties = function(...args) 
           
@@ -487,7 +487,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.getDoubleProperties(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.getBoolProperties = function(...args) 
           
@@ -497,7 +497,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.getBoolProperties(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.clear = function(...args) 
           
@@ -507,7 +507,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.clear(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.normalize = function(...args) 
           
@@ -517,7 +517,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.normalize(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.prependShape = function(...args) 
           
@@ -527,7 +527,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.prependShape(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.appendShape = function(...args) 
           
@@ -537,7 +537,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.appendShape(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.appendShapeAuto = function(...args) 
           
@@ -547,7 +547,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.appendShapeAuto(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.appendShapeTrim = function(...args) 
           
@@ -557,7 +557,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.appendShapeTrim(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.closeTrim = function(...args) 
           
@@ -567,7 +567,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.closeTrim(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.appendVertex = function(...args) 
           
@@ -577,7 +577,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.appendVertex(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.prependVertex = function(...args) 
           
@@ -587,7 +587,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.prependVertex(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.insertVertex = function(...args) 
           
@@ -597,7 +597,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.insertVertex(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.insertVertexAt = function(...args) 
           
@@ -607,7 +607,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.insertVertexAt(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.insertVertexAtDistance = function(...args) 
           
@@ -617,7 +617,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.insertVertexAtDistance(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.removeFirstVertex = function(...args) 
           
@@ -627,7 +627,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.removeFirstVertex(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.removeLastVertex = function(...args) 
           
@@ -637,7 +637,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.removeLastVertex(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.removeVertex = function(...args) 
           
@@ -647,7 +647,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.removeVertex(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.removeVerticesAfter = function(...args) 
           
@@ -657,7 +657,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.removeVerticesAfter(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.removeVerticesBefore = function(...args) 
           
@@ -667,7 +667,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.removeVerticesBefore(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.isEmpty = function(...args) 
           
@@ -677,7 +677,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.isEmpty(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.setVertices = function(...args) 
           
@@ -687,7 +687,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.setVertices(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.getVertices = function(...args) 
           
@@ -697,7 +697,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.getVertices(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.setVertexAt = function(...args) 
           
@@ -707,7 +707,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.setVertexAt(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.moveVertexAt = function(...args) 
           
@@ -717,7 +717,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.moveVertexAt(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.getVertexAt = function(...args) 
           
@@ -727,7 +727,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.getVertexAt(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.getVertexIndex = function(...args) 
           
@@ -737,7 +737,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.getVertexIndex(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.getLastVertex = function(...args) 
           
@@ -747,7 +747,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.getLastVertex(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.countVertices = function(...args) 
           
@@ -757,7 +757,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.countVertices(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.setBulges = function(...args) 
           
@@ -767,7 +767,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.setBulges(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.getBulges = function(...args) 
           
@@ -777,7 +777,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.getBulges(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.getBulgeAt = function(...args) 
           
@@ -787,7 +787,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.getBulgeAt(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.setBulgeAt = function(...args) 
           
@@ -797,7 +797,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.setBulgeAt(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.hasArcSegments = function(...args) 
           
@@ -807,7 +807,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.hasArcSegments(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.getVertexAngles = function(...args) 
           
@@ -817,7 +817,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.getVertexAngles(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.getVertexAngle = function(...args) 
           
@@ -827,7 +827,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.getVertexAngle(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.setGlobalWidth = function(...args) 
           
@@ -837,7 +837,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.setGlobalWidth(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.setStartWidthAt = function(...args) 
           
@@ -847,7 +847,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.setStartWidthAt(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.getStartWidthAt = function(...args) 
           
@@ -857,7 +857,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.getStartWidthAt(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.setEndWidthAt = function(...args) 
           
@@ -867,7 +867,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.setEndWidthAt(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.getEndWidthAt = function(...args) 
           
@@ -877,7 +877,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.getEndWidthAt(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.hasWidths = function(...args) 
           
@@ -887,7 +887,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.hasWidths(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.setStartWidths = function(...args) 
           
@@ -897,7 +897,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.setStartWidths(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.getStartWidths = function(...args) 
           
@@ -907,7 +907,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.getStartWidths(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.setEndWidths = function(...args) 
           
@@ -917,7 +917,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.setEndWidths(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.getEndWidths = function(...args) 
           
@@ -927,7 +927,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.getEndWidths(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.setClosed = function(...args) 
           
@@ -937,7 +937,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.setClosed(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.isClosed = function(...args) 
           
@@ -947,7 +947,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.isClosed(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.isGeometricallyClosed = function(...args) 
           
@@ -957,7 +957,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.isGeometricallyClosed(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.autoClose = function(...args) 
           
@@ -967,7 +967,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.autoClose(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.toLogicallyClosed = function(...args) 
           
@@ -977,7 +977,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.toLogicallyClosed(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.toLogicallyOpen = function(...args) 
           
@@ -987,7 +987,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.toLogicallyOpen(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.getSelfIntersectionPoints = function(...args) 
           
@@ -997,7 +997,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.getSelfIntersectionPoints(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.getOrientation = function(...args) 
           
@@ -1007,7 +1007,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.getOrientation(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.setOrientation = function(...args) 
           
@@ -1017,7 +1017,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.setOrientation(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.convertArcToLineSegments = function(...args) 
           
@@ -1027,7 +1027,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.convertArcToLineSegments(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.convertArcToLineSegmentsLength = function(...args) 
           
@@ -1037,7 +1037,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.convertArcToLineSegmentsLength(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.splitMajorArcs = function(...args) 
           
@@ -1047,7 +1047,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.splitMajorArcs(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.contains = function(...args) 
           
@@ -1057,7 +1057,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.contains(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.containsShape = function(...args) 
           
@@ -1067,7 +1067,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.containsShape(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.getPointInside = function(...args) 
           
@@ -1077,7 +1077,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.getPointInside(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.getStartPoint = function(...args) 
           
@@ -1087,7 +1087,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.getStartPoint(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.getEndPoint = function(...args) 
           
@@ -1097,7 +1097,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.getEndPoint(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.getMiddlePoint = function(...args) 
           
@@ -1107,7 +1107,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.getMiddlePoint(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.moveStartPoint = function(...args) 
           
@@ -1117,7 +1117,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.moveStartPoint(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.moveEndPoint = function(...args) 
           
@@ -1127,7 +1127,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.moveEndPoint(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.moveSegmentAt = function(...args) 
           
@@ -1137,7 +1137,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.moveSegmentAt(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.getDirection1 = function(...args) 
           
@@ -1147,7 +1147,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.getDirection1(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.getDirection2 = function(...args) 
           
@@ -1157,7 +1157,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.getDirection2(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.getSideOfPoint = function(...args) 
           
@@ -1167,7 +1167,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.getSideOfPoint(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.getBoundingBox = function(...args) 
           
@@ -1177,7 +1177,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.getBoundingBox(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.getArea = function(...args) 
           
@@ -1187,7 +1187,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.getArea(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.getLength = function(...args) 
           
@@ -1197,7 +1197,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.getLength(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.getDistanceFromStart = function(...args) 
           
@@ -1207,7 +1207,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.getDistanceFromStart(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.getDistancesFromStart = function(...args) 
           
@@ -1217,7 +1217,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.getDistancesFromStart(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.getLengthTo = function(...args) 
           
@@ -1227,7 +1227,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.getLengthTo(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.getSegmentsLength = function(...args) 
           
@@ -1237,7 +1237,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.getSegmentsLength(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.getEndPoints = function(...args) 
           
@@ -1247,7 +1247,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.getEndPoints(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.getMiddlePoints = function(...args) 
           
@@ -1257,7 +1257,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.getMiddlePoints(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.getCenterPoints = function(...args) 
           
@@ -1267,7 +1267,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.getCenterPoints(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.getPointAtPercent = function(...args) 
           
@@ -1277,7 +1277,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.getPointAtPercent(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.getPointsWithDistanceToEnd = function(...args) 
           
@@ -1287,7 +1287,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.getPointsWithDistanceToEnd(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.getPointCloud = function(...args) 
           
@@ -1297,7 +1297,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.getPointCloud(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.getAngleAt = function(...args) 
           
@@ -1307,7 +1307,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.getAngleAt(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.getVectorTo = function(...args) 
           
@@ -1317,7 +1317,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.getVectorTo(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.getDistanceTo = function(...args) 
           
@@ -1327,7 +1327,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.getDistanceTo(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.getClosestSegment = function(...args) 
           
@@ -1337,7 +1337,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.getClosestSegment(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.getClosestVertex = function(...args) 
           
@@ -1347,7 +1347,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.getClosestVertex(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.move = function(...args) 
           
@@ -1357,7 +1357,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.move(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.rotate = function(...args) 
           
@@ -1367,7 +1367,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.rotate(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.scale = function(...args) 
           
@@ -1377,7 +1377,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.scale(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.mirror = function(...args) 
           
@@ -1387,7 +1387,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.mirror(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.reverse = function(...args) 
           
@@ -1397,7 +1397,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.reverse(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.getReversed = function(...args) 
           
@@ -1407,7 +1407,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.getReversed(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.stretch = function(...args) 
           
@@ -1417,7 +1417,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.stretch(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.getTransformed = function(...args) 
           
@@ -1427,7 +1427,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.getTransformed(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.getTrimEnd = function(...args) 
           
@@ -1437,7 +1437,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.getTrimEnd(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.trimStartPoint = function(...args) 
           
@@ -1447,7 +1447,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.trimStartPoint(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.trimEndPoint = function(...args) 
           
@@ -1457,7 +1457,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.trimEndPoint(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.getExploded = function(...args) 
           
@@ -1467,7 +1467,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.getExploded(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.getOutline = function(...args) 
           
@@ -1477,7 +1477,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.getOutline(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.getLeftOutline = function(...args) 
           
@@ -1487,7 +1487,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.getLeftOutline(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.getRightOutline = function(...args) 
           
@@ -1497,7 +1497,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.getRightOutline(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.isInterpolated = function(...args) 
           
@@ -1507,7 +1507,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.isInterpolated(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.countSegments = function(...args) 
           
@@ -1517,7 +1517,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.countSegments(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.getSegmentAt = function(...args) 
           
@@ -1527,7 +1527,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.getSegmentAt(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.isArcSegmentAt = function(...args) 
           
@@ -1537,7 +1537,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.isArcSegmentAt(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.getLastSegment = function(...args) 
           
@@ -1547,7 +1547,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.getLastSegment(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.getFirstSegment = function(...args) 
           
@@ -1557,7 +1557,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.getFirstSegment(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.isStraight = function(...args) 
           
@@ -1567,7 +1567,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.isStraight(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.toPainterPath = function(...args) 
           
@@ -1577,7 +1577,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.toPainterPath(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.simplify = function(...args) 
           
@@ -1587,7 +1587,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.simplify(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.verifyTangency = function(...args) 
           
@@ -1597,7 +1597,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.verifyTangency(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.stripWidths = function(...args) 
           
@@ -1607,7 +1607,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.stripWidths(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.setMinimumWidth = function(...args) 
           
@@ -1617,7 +1617,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.setMinimumWidth(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.getSegmentAtDist = function(...args) 
           
@@ -1627,7 +1627,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.getSegmentAtDist(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.relocateStartPoint = function(...args) 
           
@@ -1637,7 +1637,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.relocateStartPoint(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.convertToClosed = function(...args) 
           
@@ -1647,7 +1647,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.convertToClosed(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.convertToOpen = function(...args) 
           
@@ -1657,7 +1657,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.convertToOpen(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.modifyPolylineCorner = function(...args) 
           
@@ -1667,7 +1667,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.modifyPolylineCorner(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.isConcave = function(...args) 
           
@@ -1677,7 +1677,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.isConcave(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.getConvexVertices = function(...args) 
           
@@ -1687,7 +1687,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.getConvexVertices(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.getConcaveVertices = function(...args) 
           
@@ -1697,7 +1697,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.getConcaveVertices(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.getCentroid = function(...args) 
           
@@ -1707,7 +1707,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.getCentroid(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.splitAtDiscontinuities = function(...args) 
           
@@ -1717,7 +1717,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.splitAtDiscontinuities(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.splitAtSegmentTypeChange = function(...args) 
           
@@ -1727,7 +1727,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.splitAtSegmentTypeChange(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.insertVerticesAtSelfIntersections = function(...args) 
           
@@ -1737,7 +1737,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.insertVerticesAtSelfIntersections(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.getBaseAngle = function(...args) 
           
@@ -1747,7 +1747,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.getBaseAngle(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.getWidth = function(...args) 
           
@@ -1757,7 +1757,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.getWidth(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.setWidth = function(...args) 
           
@@ -1767,7 +1767,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.setWidth(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.getHeight = function(...args) 
           
@@ -1777,7 +1777,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.getHeight(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.setHeight = function(...args) 
           
@@ -1787,7 +1787,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.setHeight(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.morph = function(...args) 
           
@@ -1797,7 +1797,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.morph(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.roundAllCorners = function(...args) 
           
@@ -1807,7 +1807,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.roundAllCorners(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.getPolygonHull = function(...args) 
           
@@ -1817,7 +1817,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.getPolygonHull(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.hasProxy = function(...args) 
           
@@ -1827,7 +1827,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.hasProxy(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.isLineSegment = function(...args) 
           
@@ -1837,7 +1837,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.isLineSegment(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.print = function(...args) 
           
@@ -1847,7 +1847,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.print(...args);
             
         };
-    
+        
         // function 
         RPolyline.prototype.copy = function(...args) 
           
@@ -1857,7 +1857,7 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
               return this.__PROXY__.copy(...args);
             
         };
-    
+        
 
       // static functions:
       

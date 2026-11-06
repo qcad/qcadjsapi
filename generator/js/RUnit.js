@@ -134,7 +134,7 @@
               return this.__PROXY__.formatLinear(...args);
             
         };
-    
+        
         // function 
         RUnit.prototype.formatScientific = function(...args) 
           
@@ -144,7 +144,7 @@
               return this.__PROXY__.formatScientific(...args);
             
         };
-    
+        
         // function 
         RUnit.prototype.formatDecimal = function(...args) 
           
@@ -154,7 +154,7 @@
               return this.__PROXY__.formatDecimal(...args);
             
         };
-    
+        
         // function 
         RUnit.prototype.formatEngineering = function(...args) 
           
@@ -164,7 +164,7 @@
               return this.__PROXY__.formatEngineering(...args);
             
         };
-    
+        
         // function 
         RUnit.prototype.formatArchitectural = function(...args) 
           
@@ -174,7 +174,7 @@
               return this.__PROXY__.formatArchitectural(...args);
             
         };
-    
+        
         // function 
         RUnit.prototype.formatFractional = function(...args) 
           
@@ -184,7 +184,7 @@
               return this.__PROXY__.formatFractional(...args);
             
         };
-    
+        
         // function 
         RUnit.prototype.formatAngle = function(...args) 
           
@@ -194,7 +194,7 @@
               return this.__PROXY__.formatAngle(...args);
             
         };
-    
+        
         // function 
         RUnit.prototype.isMetric = function(...args) 
           
@@ -204,7 +204,7 @@
               return this.__PROXY__.isMetric(...args);
             
         };
-    
+        
         // function 
         RUnit.prototype.convert = function(...args) 
           
@@ -214,7 +214,7 @@
               return this.__PROXY__.convert(...args);
             
         };
-    
+        
         // function 
         RUnit.prototype.getFactorToM = function(...args) 
           
@@ -224,7 +224,7 @@
               return this.__PROXY__.getFactorToM(...args);
             
         };
-    
+        
         // function 
         RUnit.prototype.parseUnit = function(...args) 
           
@@ -234,7 +234,7 @@
               return this.__PROXY__.parseUnit(...args);
             
         };
-    
+        
         // function 
         RUnit.prototype.unitToSymbol = function(...args) 
           
@@ -244,7 +244,7 @@
               return this.__PROXY__.unitToSymbol(...args);
             
         };
-    
+        
         // function 
         RUnit.prototype.unitToName = function(...args) 
           
@@ -254,7 +254,7 @@
               return this.__PROXY__.unitToName(...args);
             
         };
-    
+        
         // function 
         RUnit.prototype.getLabel = function(...args) 
           
@@ -264,7 +264,7 @@
               return this.__PROXY__.getLabel(...args);
             
         };
-    
+        
         // function 
         RUnit.prototype.doubleToString = function(...args) 
           
@@ -274,7 +274,7 @@
               return this.__PROXY__.doubleToString(...args);
             
         };
-    
+        
         // function 
         RUnit.prototype.doubleToStringDec = function(...args) 
           
@@ -284,7 +284,7 @@
               return this.__PROXY__.doubleToStringDec(...args);
             
         };
-    
+        
 
       // static functions:
       

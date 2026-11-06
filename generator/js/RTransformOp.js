@@ -139,7 +139,7 @@ RTransformOp.Rotation = RTransformOp_Wrapper.Rotation;
               return this.__PROXY__.createTranslation(...args);
             
         };
-    
+        
         // function 
         RTransformOp.prototype.createScale = function(...args) 
           
@@ -149,7 +149,7 @@ RTransformOp.Rotation = RTransformOp_Wrapper.Rotation;
               return this.__PROXY__.createScale(...args);
             
         };
-    
+        
         // function 
         RTransformOp.prototype.createRotation = function(...args) 
           
@@ -159,7 +159,7 @@ RTransformOp.Rotation = RTransformOp_Wrapper.Rotation;
               return this.__PROXY__.createRotation(...args);
             
         };
-    
+        
         // function 
         RTransformOp.prototype.getType = function(...args) 
           
@@ -169,7 +169,7 @@ RTransformOp.Rotation = RTransformOp_Wrapper.Rotation;
               return this.__PROXY__.getType(...args);
             
         };
-    
+        
         // function 
         RTransformOp.prototype.getD1 = function(...args) 
           
@@ -179,7 +179,7 @@ RTransformOp.Rotation = RTransformOp_Wrapper.Rotation;
               return this.__PROXY__.getD1(...args);
             
         };
-    
+        
         // function 
         RTransformOp.prototype.getD2 = function(...args) 
           
@@ -189,7 +189,7 @@ RTransformOp.Rotation = RTransformOp_Wrapper.Rotation;
               return this.__PROXY__.getD2(...args);
             
         };
-    
+        
 
       // static functions:
       

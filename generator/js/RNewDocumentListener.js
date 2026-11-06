@@ -105,7 +105,7 @@
               return this.__PROXY__.updateNewDocumentListener(...args);
             
         };
-    
+        
 
       // static functions:
       RNewDocumentListener.prototype.isNullWrapper = function() {

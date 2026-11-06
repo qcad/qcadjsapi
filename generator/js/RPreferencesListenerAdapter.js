@@ -142,7 +142,7 @@
               return this.__PROXY__.setObjectName(...args);
             
         };
-    
+        
         // function 
         RPreferencesListenerAdapter.prototype.isWidgetType = function(...args) 
           
@@ -152,7 +152,7 @@
               return this.__PROXY__.isWidgetType(...args);
             
         };
-    
+        
         // function 
         RPreferencesListenerAdapter.prototype.isWindowType = function(...args) 
           
@@ -162,7 +162,7 @@
               return this.__PROXY__.isWindowType(...args);
             
         };
-    
+        
         // function 
         RPreferencesListenerAdapter.prototype.signalsBlocked = function(...args) 
           
@@ -172,7 +172,7 @@
               return this.__PROXY__.signalsBlocked(...args);
             
         };
-    
+        
         // function 
         RPreferencesListenerAdapter.prototype.blockSignals = function(...args) 
           
@@ -182,7 +182,7 @@
               return this.__PROXY__.blockSignals(...args);
             
         };
-    
+        
         // function 
         RPreferencesListenerAdapter.prototype.findChild = function(...args) 
           
@@ -192,7 +192,7 @@
               return this.__PROXY__.findChild(...args);
             
         };
-    
+        
         // function 
         RPreferencesListenerAdapter.prototype.children = function(...args) 
           
@@ -202,7 +202,7 @@
               return this.__PROXY__.children(...args);
             
         };
-    
+        
         // function 
         RPreferencesListenerAdapter.prototype.setParent = function(...args) 
           
@@ -212,7 +212,7 @@
               return this.__PROXY__.setParent(...args);
             
         };
-    
+        
         // function 
         RPreferencesListenerAdapter.prototype.installEventFilter = function(...args) 
           
@@ -222,7 +222,7 @@
               return this.__PROXY__.installEventFilter(...args);
             
         };
-    
+        
         // function 
         RPreferencesListenerAdapter.prototype.removeEventFilter = function(...args) 
           
@@ -232,7 +232,7 @@
               return this.__PROXY__.removeEventFilter(...args);
             
         };
-    
+        
         // function 
         RPreferencesListenerAdapter.prototype.dumpObjectTree = function(...args) 
           
@@ -242,7 +242,7 @@
               return this.__PROXY__.dumpObjectTree(...args);
             
         };
-    
+        
         // function 
         RPreferencesListenerAdapter.prototype.dumpObjectInfo = function(...args) 
           
@@ -252,7 +252,7 @@
               return this.__PROXY__.dumpObjectInfo(...args);
             
         };
-    
+        
         // function 
         RPreferencesListenerAdapter.prototype.setProperty = function(...args) 
           
@@ -262,7 +262,7 @@
               return this.__PROXY__.setProperty(...args);
             
         };
-    
+        
         // function 
         RPreferencesListenerAdapter.prototype.property = function(...args) 
           
@@ -272,7 +272,7 @@
               return this.__PROXY__.property(...args);
             
         };
-    
+        
         // function 
         RPreferencesListenerAdapter.prototype.dynamicPropertyNames = function(...args) 
           
@@ -282,7 +282,7 @@
               return this.__PROXY__.dynamicPropertyNames(...args);
             
         };
-    
+        
         // function 
         RPreferencesListenerAdapter.prototype.parent = function(...args) 
           
@@ -292,7 +292,7 @@
               return this.__PROXY__.parent(...args);
             
         };
-    
+        
         // function 
         RPreferencesListenerAdapter.prototype.deleteLater = function(...args) 
           
@@ -302,7 +302,7 @@
               return this.__PROXY__.deleteLater(...args);
             
         };
-    
+        
         // function 
         RPreferencesListenerAdapter.prototype.updatePreferences = function(...args) 
           
@@ -312,7 +312,7 @@
               return this.__PROXY__.updatePreferences(...args);
             
         };
-    
+        
 
       // static functions:
       

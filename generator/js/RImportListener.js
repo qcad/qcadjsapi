@@ -105,7 +105,7 @@
               return this.__PROXY__.preImportEvent(...args);
             
         };
-    
+        
         // function 
         RImportListener.prototype.postImportEvent = function(...args) 
           
@@ -115,7 +115,7 @@
               return this.__PROXY__.postImportEvent(...args);
             
         };
-    
+        
 
       // static functions:
       RImportListener.prototype.isNullWrapper = function() {

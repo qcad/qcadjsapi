@@ -143,7 +143,7 @@
               return this.__PROXY__.setObjectName(...args);
             
         };
-    
+        
         // function 
         RViewListenerAdapter.prototype.isWidgetType = function(...args) 
           
@@ -153,7 +153,7 @@
               return this.__PROXY__.isWidgetType(...args);
             
         };
-    
+        
         // function 
         RViewListenerAdapter.prototype.isWindowType = function(...args) 
           
@@ -163,7 +163,7 @@
               return this.__PROXY__.isWindowType(...args);
             
         };
-    
+        
         // function 
         RViewListenerAdapter.prototype.signalsBlocked = function(...args) 
           
@@ -173,7 +173,7 @@
               return this.__PROXY__.signalsBlocked(...args);
             
         };
-    
+        
         // function 
         RViewListenerAdapter.prototype.blockSignals = function(...args) 
           
@@ -183,7 +183,7 @@
               return this.__PROXY__.blockSignals(...args);
             
         };
-    
+        
         // function 
         RViewListenerAdapter.prototype.findChild = function(...args) 
           
@@ -193,7 +193,7 @@
               return this.__PROXY__.findChild(...args);
             
         };
-    
+        
         // function 
         RViewListenerAdapter.prototype.children = function(...args) 
           
@@ -203,7 +203,7 @@
               return this.__PROXY__.children(...args);
             
         };
-    
+        
         // function 
         RViewListenerAdapter.prototype.setParent = function(...args) 
           
@@ -213,7 +213,7 @@
               return this.__PROXY__.setParent(...args);
             
         };
-    
+        
         // function 
         RViewListenerAdapter.prototype.installEventFilter = function(...args) 
           
@@ -223,7 +223,7 @@
               return this.__PROXY__.installEventFilter(...args);
             
         };
-    
+        
         // function 
         RViewListenerAdapter.prototype.removeEventFilter = function(...args) 
           
@@ -233,7 +233,7 @@
               return this.__PROXY__.removeEventFilter(...args);
             
         };
-    
+        
         // function 
         RViewListenerAdapter.prototype.dumpObjectTree = function(...args) 
           
@@ -243,7 +243,7 @@
               return this.__PROXY__.dumpObjectTree(...args);
             
         };
-    
+        
         // function 
         RViewListenerAdapter.prototype.dumpObjectInfo = function(...args) 
           
@@ -253,7 +253,7 @@
               return this.__PROXY__.dumpObjectInfo(...args);
             
         };
-    
+        
         // function 
         RViewListenerAdapter.prototype.setProperty = function(...args) 
           
@@ -263,7 +263,7 @@
               return this.__PROXY__.setProperty(...args);
             
         };
-    
+        
         // function 
         RViewListenerAdapter.prototype.property = function(...args) 
           
@@ -273,7 +273,7 @@
               return this.__PROXY__.property(...args);
             
         };
-    
+        
         // function 
         RViewListenerAdapter.prototype.dynamicPropertyNames = function(...args) 
           
@@ -283,7 +283,7 @@
               return this.__PROXY__.dynamicPropertyNames(...args);
             
         };
-    
+        
         // function 
         RViewListenerAdapter.prototype.parent = function(...args) 
           
@@ -293,7 +293,7 @@
               return this.__PROXY__.parent(...args);
             
         };
-    
+        
         // function 
         RViewListenerAdapter.prototype.deleteLater = function(...args) 
           
@@ -303,7 +303,7 @@
               return this.__PROXY__.deleteLater(...args);
             
         };
-    
+        
         // function 
         RViewListenerAdapter.prototype.updateViews = function(...args) 
           
@@ -313,7 +313,7 @@
               return this.__PROXY__.updateViews(...args);
             
         };
-    
+        
         // function 
         RViewListenerAdapter.prototype.clearViews = function(...args) 
           
@@ -323,7 +323,7 @@
               return this.__PROXY__.clearViews(...args);
             
         };
-    
+        
 
       // static functions:
       

@@ -143,7 +143,7 @@
               return this.__PROXY__.setObjectName(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.isWidgetType = function(...args) 
           
@@ -153,7 +153,7 @@
               return this.__PROXY__.isWidgetType(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.isWindowType = function(...args) 
           
@@ -163,7 +163,7 @@
               return this.__PROXY__.isWindowType(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.signalsBlocked = function(...args) 
           
@@ -173,7 +173,7 @@
               return this.__PROXY__.signalsBlocked(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.blockSignals = function(...args) 
           
@@ -183,7 +183,7 @@
               return this.__PROXY__.blockSignals(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.findChild = function(...args) 
           
@@ -193,7 +193,7 @@
               return this.__PROXY__.findChild(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.children = function(...args) 
           
@@ -203,7 +203,7 @@
               return this.__PROXY__.children(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.installEventFilter = function(...args) 
           
@@ -213,7 +213,7 @@
               return this.__PROXY__.installEventFilter(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.removeEventFilter = function(...args) 
           
@@ -223,7 +223,7 @@
               return this.__PROXY__.removeEventFilter(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.dumpObjectTree = function(...args) 
           
@@ -233,7 +233,7 @@
               return this.__PROXY__.dumpObjectTree(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.dumpObjectInfo = function(...args) 
           
@@ -243,7 +243,7 @@
               return this.__PROXY__.dumpObjectInfo(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.setProperty = function(...args) 
           
@@ -253,7 +253,7 @@
               return this.__PROXY__.setProperty(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.property = function(...args) 
           
@@ -263,7 +263,7 @@
               return this.__PROXY__.property(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.dynamicPropertyNames = function(...args) 
           
@@ -273,7 +273,7 @@
               return this.__PROXY__.dynamicPropertyNames(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.parent = function(...args) 
           
@@ -283,7 +283,7 @@
               return this.__PROXY__.parent(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.deleteLater = function(...args) 
           
@@ -293,7 +293,7 @@
               return this.__PROXY__.deleteLater(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.devType = function(...args) 
           
@@ -303,7 +303,7 @@
               return this.__PROXY__.devType(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.createWinId = function(...args) 
           
@@ -313,7 +313,7 @@
               return this.__PROXY__.createWinId(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.isWindow = function(...args) 
           
@@ -323,7 +323,7 @@
               return this.__PROXY__.isWindow(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.isModal = function(...args) 
           
@@ -333,7 +333,7 @@
               return this.__PROXY__.isModal(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.setWindowModality = function(...args) 
           
@@ -343,7 +343,7 @@
               return this.__PROXY__.setWindowModality(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.isEnabled = function(...args) 
           
@@ -353,7 +353,7 @@
               return this.__PROXY__.isEnabled(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.isEnabledTo = function(...args) 
           
@@ -363,7 +363,7 @@
               return this.__PROXY__.isEnabledTo(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.setEnabled = function(...args) 
           
@@ -373,7 +373,7 @@
               return this.__PROXY__.setEnabled(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.setDisabled = function(...args) 
           
@@ -383,7 +383,7 @@
               return this.__PROXY__.setDisabled(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.setWindowModified = function(...args) 
           
@@ -393,7 +393,7 @@
               return this.__PROXY__.setWindowModified(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.setMinimumSize = function(...args) 
           
@@ -403,7 +403,7 @@
               return this.__PROXY__.setMinimumSize(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.setMaximumSize = function(...args) 
           
@@ -413,7 +413,7 @@
               return this.__PROXY__.setMaximumSize(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.setMinimumWidth = function(...args) 
           
@@ -423,7 +423,7 @@
               return this.__PROXY__.setMinimumWidth(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.setMinimumHeight = function(...args) 
           
@@ -433,7 +433,7 @@
               return this.__PROXY__.setMinimumHeight(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.setMaximumWidth = function(...args) 
           
@@ -443,7 +443,7 @@
               return this.__PROXY__.setMaximumWidth(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.setMaximumHeight = function(...args) 
           
@@ -453,7 +453,7 @@
               return this.__PROXY__.setMaximumHeight(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.setSizeIncrement = function(...args) 
           
@@ -463,7 +463,7 @@
               return this.__PROXY__.setSizeIncrement(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.setBaseSize = function(...args) 
           
@@ -473,7 +473,7 @@
               return this.__PROXY__.setBaseSize(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.setFixedSize = function(...args) 
           
@@ -483,7 +483,7 @@
               return this.__PROXY__.setFixedSize(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.setFixedWidth = function(...args) 
           
@@ -493,7 +493,7 @@
               return this.__PROXY__.setFixedWidth(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.setFixedHeight = function(...args) 
           
@@ -503,7 +503,7 @@
               return this.__PROXY__.setFixedHeight(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.mapToGlobal = function(...args) 
           
@@ -513,7 +513,7 @@
               return this.__PROXY__.mapToGlobal(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.mapFromGlobal = function(...args) 
           
@@ -523,7 +523,7 @@
               return this.__PROXY__.mapFromGlobal(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.mapToParent = function(...args) 
           
@@ -533,7 +533,7 @@
               return this.__PROXY__.mapToParent(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.mapFromParent = function(...args) 
           
@@ -543,7 +543,7 @@
               return this.__PROXY__.mapFromParent(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.mapTo = function(...args) 
           
@@ -553,7 +553,7 @@
               return this.__PROXY__.mapTo(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.mapFrom = function(...args) 
           
@@ -563,7 +563,7 @@
               return this.__PROXY__.mapFrom(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.window = function(...args) 
           
@@ -573,7 +573,7 @@
               return this.__PROXY__.window(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.nativeParentWidget = function(...args) 
           
@@ -583,7 +583,7 @@
               return this.__PROXY__.nativeParentWidget(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.topLevelWidget = function(...args) 
           
@@ -593,7 +593,7 @@
               return this.__PROXY__.topLevelWidget(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.setPalette = function(...args) 
           
@@ -603,7 +603,7 @@
               return this.__PROXY__.setPalette(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.setBackgroundRole = function(...args) 
           
@@ -613,7 +613,7 @@
               return this.__PROXY__.setBackgroundRole(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.backgroundRole = function(...args) 
           
@@ -623,7 +623,7 @@
               return this.__PROXY__.backgroundRole(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.setForegroundRole = function(...args) 
           
@@ -633,7 +633,7 @@
               return this.__PROXY__.setForegroundRole(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.foregroundRole = function(...args) 
           
@@ -643,7 +643,7 @@
               return this.__PROXY__.foregroundRole(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.setFont = function(...args) 
           
@@ -653,7 +653,7 @@
               return this.__PROXY__.setFont(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.fontInfo = function(...args) 
           
@@ -663,7 +663,7 @@
               return this.__PROXY__.fontInfo(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.setCursor = function(...args) 
           
@@ -673,7 +673,7 @@
               return this.__PROXY__.setCursor(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.unsetCursor = function(...args) 
           
@@ -683,7 +683,7 @@
               return this.__PROXY__.unsetCursor(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.setMouseTracking = function(...args) 
           
@@ -693,7 +693,7 @@
               return this.__PROXY__.setMouseTracking(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.hasMouseTracking = function(...args) 
           
@@ -703,7 +703,7 @@
               return this.__PROXY__.hasMouseTracking(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.underMouse = function(...args) 
           
@@ -713,7 +713,7 @@
               return this.__PROXY__.underMouse(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.setTabletTracking = function(...args) 
           
@@ -723,7 +723,7 @@
               return this.__PROXY__.setTabletTracking(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.hasTabletTracking = function(...args) 
           
@@ -733,7 +733,7 @@
               return this.__PROXY__.hasTabletTracking(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.setMask = function(...args) 
           
@@ -743,7 +743,7 @@
               return this.__PROXY__.setMask(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.mask = function(...args) 
           
@@ -753,7 +753,7 @@
               return this.__PROXY__.mask(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.clearMask = function(...args) 
           
@@ -763,7 +763,7 @@
               return this.__PROXY__.clearMask(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.grab = function(...args) 
           
@@ -773,7 +773,7 @@
               return this.__PROXY__.grab(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.grabGesture = function(...args) 
           
@@ -783,7 +783,7 @@
               return this.__PROXY__.grabGesture(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.ungrabGesture = function(...args) 
           
@@ -793,7 +793,7 @@
               return this.__PROXY__.ungrabGesture(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.setWindowTitle = function(...args) 
           
@@ -803,7 +803,7 @@
               return this.__PROXY__.setWindowTitle(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.setStyleSheet = function(...args) 
           
@@ -813,7 +813,7 @@
               return this.__PROXY__.setStyleSheet(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.setWindowIcon = function(...args) 
           
@@ -823,7 +823,7 @@
               return this.__PROXY__.setWindowIcon(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.setWindowIconText = function(...args) 
           
@@ -833,7 +833,7 @@
               return this.__PROXY__.setWindowIconText(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.setWindowRole = function(...args) 
           
@@ -843,7 +843,7 @@
               return this.__PROXY__.setWindowRole(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.windowRole = function(...args) 
           
@@ -853,7 +853,7 @@
               return this.__PROXY__.windowRole(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.setWindowFilePath = function(...args) 
           
@@ -863,7 +863,7 @@
               return this.__PROXY__.setWindowFilePath(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.setWindowOpacity = function(...args) 
           
@@ -873,7 +873,7 @@
               return this.__PROXY__.setWindowOpacity(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.isWindowModified = function(...args) 
           
@@ -883,7 +883,7 @@
               return this.__PROXY__.isWindowModified(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.setToolTip = function(...args) 
           
@@ -893,7 +893,7 @@
               return this.__PROXY__.setToolTip(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.setToolTipDuration = function(...args) 
           
@@ -903,7 +903,7 @@
               return this.__PROXY__.setToolTipDuration(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.setStatusTip = function(...args) 
           
@@ -913,7 +913,7 @@
               return this.__PROXY__.setStatusTip(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.setWhatsThis = function(...args) 
           
@@ -923,7 +923,7 @@
               return this.__PROXY__.setWhatsThis(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.setAccessibleName = function(...args) 
           
@@ -933,7 +933,7 @@
               return this.__PROXY__.setAccessibleName(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.setAccessibleDescription = function(...args) 
           
@@ -943,7 +943,7 @@
               return this.__PROXY__.setAccessibleDescription(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.setLayoutDirection = function(...args) 
           
@@ -953,7 +953,7 @@
               return this.__PROXY__.setLayoutDirection(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.unsetLayoutDirection = function(...args) 
           
@@ -963,7 +963,7 @@
               return this.__PROXY__.unsetLayoutDirection(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.setLocale = function(...args) 
           
@@ -973,7 +973,7 @@
               return this.__PROXY__.setLocale(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.unsetLocale = function(...args) 
           
@@ -983,7 +983,7 @@
               return this.__PROXY__.unsetLocale(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.isRightToLeft = function(...args) 
           
@@ -993,7 +993,7 @@
               return this.__PROXY__.isRightToLeft(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.isLeftToRight = function(...args) 
           
@@ -1003,7 +1003,7 @@
               return this.__PROXY__.isLeftToRight(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.activateWindow = function(...args) 
           
@@ -1013,7 +1013,7 @@
               return this.__PROXY__.activateWindow(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.clearFocus = function(...args) 
           
@@ -1023,7 +1023,7 @@
               return this.__PROXY__.clearFocus(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.setFocus = function(...args) 
           
@@ -1033,7 +1033,7 @@
               return this.__PROXY__.setFocus(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.setFocusPolicy = function(...args) 
           
@@ -1043,7 +1043,7 @@
               return this.__PROXY__.setFocusPolicy(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.hasFocus = function(...args) 
           
@@ -1053,7 +1053,7 @@
               return this.__PROXY__.hasFocus(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.setFocusProxy = function(...args) 
           
@@ -1063,7 +1063,7 @@
               return this.__PROXY__.setFocusProxy(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.focusProxy = function(...args) 
           
@@ -1073,7 +1073,7 @@
               return this.__PROXY__.focusProxy(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.setContextMenuPolicy = function(...args) 
           
@@ -1083,7 +1083,7 @@
               return this.__PROXY__.setContextMenuPolicy(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.grabMouse = function(...args) 
           
@@ -1093,7 +1093,7 @@
               return this.__PROXY__.grabMouse(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.releaseMouse = function(...args) 
           
@@ -1103,7 +1103,7 @@
               return this.__PROXY__.releaseMouse(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.grabKeyboard = function(...args) 
           
@@ -1113,7 +1113,7 @@
               return this.__PROXY__.grabKeyboard(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.releaseKeyboard = function(...args) 
           
@@ -1123,7 +1123,7 @@
               return this.__PROXY__.releaseKeyboard(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.grabShortcut = function(...args) 
           
@@ -1133,7 +1133,7 @@
               return this.__PROXY__.grabShortcut(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.releaseShortcut = function(...args) 
           
@@ -1143,7 +1143,7 @@
               return this.__PROXY__.releaseShortcut(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.setShortcutEnabled = function(...args) 
           
@@ -1153,7 +1153,7 @@
               return this.__PROXY__.setShortcutEnabled(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.setShortcutAutoRepeat = function(...args) 
           
@@ -1163,7 +1163,7 @@
               return this.__PROXY__.setShortcutAutoRepeat(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.setUpdatesEnabled = function(...args) 
           
@@ -1173,7 +1173,7 @@
               return this.__PROXY__.setUpdatesEnabled(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.update = function(...args) 
           
@@ -1183,7 +1183,7 @@
               return this.__PROXY__.update(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.repaint = function(...args) 
           
@@ -1193,7 +1193,7 @@
               return this.__PROXY__.repaint(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.setVisible = function(...args) 
           
@@ -1203,7 +1203,7 @@
               return this.__PROXY__.setVisible(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.setHidden = function(...args) 
           
@@ -1213,7 +1213,7 @@
               return this.__PROXY__.setHidden(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.show = function(...args) 
           
@@ -1223,7 +1223,7 @@
               return this.__PROXY__.show(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.hide = function(...args) 
           
@@ -1233,7 +1233,7 @@
               return this.__PROXY__.hide(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.showMinimized = function(...args) 
           
@@ -1243,7 +1243,7 @@
               return this.__PROXY__.showMinimized(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.showMaximized = function(...args) 
           
@@ -1253,7 +1253,7 @@
               return this.__PROXY__.showMaximized(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.showFullScreen = function(...args) 
           
@@ -1263,7 +1263,7 @@
               return this.__PROXY__.showFullScreen(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.showNormal = function(...args) 
           
@@ -1273,7 +1273,7 @@
               return this.__PROXY__.showNormal(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.close = function(...args) 
           
@@ -1283,7 +1283,7 @@
               return this.__PROXY__.close(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.raise = function(...args) 
           
@@ -1293,7 +1293,7 @@
               return this.__PROXY__.raise(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.lower = function(...args) 
           
@@ -1303,7 +1303,7 @@
               return this.__PROXY__.lower(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.stackUnder = function(...args) 
           
@@ -1313,7 +1313,7 @@
               return this.__PROXY__.stackUnder(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.move = function(...args) 
           
@@ -1323,7 +1323,7 @@
               return this.__PROXY__.move(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.resize = function(...args) 
           
@@ -1333,7 +1333,7 @@
               return this.__PROXY__.resize(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.setGeometry = function(...args) 
           
@@ -1343,7 +1343,7 @@
               return this.__PROXY__.setGeometry(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.saveGeometry = function(...args) 
           
@@ -1353,7 +1353,7 @@
               return this.__PROXY__.saveGeometry(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.restoreGeometry = function(...args) 
           
@@ -1363,7 +1363,7 @@
               return this.__PROXY__.restoreGeometry(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.adjustSize = function(...args) 
           
@@ -1373,7 +1373,7 @@
               return this.__PROXY__.adjustSize(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.isVisible = function(...args) 
           
@@ -1383,7 +1383,7 @@
               return this.__PROXY__.isVisible(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.isVisibleTo = function(...args) 
           
@@ -1393,7 +1393,7 @@
               return this.__PROXY__.isVisibleTo(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.isHidden = function(...args) 
           
@@ -1403,7 +1403,7 @@
               return this.__PROXY__.isHidden(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.isMinimized = function(...args) 
           
@@ -1413,7 +1413,7 @@
               return this.__PROXY__.isMinimized(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.isMaximized = function(...args) 
           
@@ -1423,7 +1423,7 @@
               return this.__PROXY__.isMaximized(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.isFullScreen = function(...args) 
           
@@ -1433,7 +1433,7 @@
               return this.__PROXY__.isFullScreen(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.windowState = function(...args) 
           
@@ -1443,7 +1443,7 @@
               return this.__PROXY__.windowState(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.setWindowState = function(...args) 
           
@@ -1453,7 +1453,7 @@
               return this.__PROXY__.setWindowState(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.overrideWindowState = function(...args) 
           
@@ -1463,7 +1463,7 @@
               return this.__PROXY__.overrideWindowState(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.setSizePolicy = function(...args) 
           
@@ -1473,7 +1473,7 @@
               return this.__PROXY__.setSizePolicy(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.heightForWidth = function(...args) 
           
@@ -1483,7 +1483,7 @@
               return this.__PROXY__.heightForWidth(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.hasHeightForWidth = function(...args) 
           
@@ -1493,7 +1493,7 @@
               return this.__PROXY__.hasHeightForWidth(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.visibleRegion = function(...args) 
           
@@ -1503,7 +1503,7 @@
               return this.__PROXY__.visibleRegion(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.setContentsMargins = function(...args) 
           
@@ -1513,7 +1513,7 @@
               return this.__PROXY__.setContentsMargins(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.contentsMargins = function(...args) 
           
@@ -1523,7 +1523,7 @@
               return this.__PROXY__.contentsMargins(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.contentsRect = function(...args) 
           
@@ -1533,7 +1533,7 @@
               return this.__PROXY__.contentsRect(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.layout = function(...args) 
           
@@ -1543,7 +1543,7 @@
               return this.__PROXY__.layout(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.setLayout = function(...args) 
           
@@ -1553,7 +1553,7 @@
               return this.__PROXY__.setLayout(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.updateGeometry = function(...args) 
           
@@ -1563,7 +1563,7 @@
               return this.__PROXY__.updateGeometry(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.setParent = function(...args) 
           
@@ -1573,7 +1573,7 @@
               return this.__PROXY__.setParent(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.scroll = function(...args) 
           
@@ -1583,7 +1583,7 @@
               return this.__PROXY__.scroll(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.focusWidget = function(...args) 
           
@@ -1593,7 +1593,7 @@
               return this.__PROXY__.focusWidget(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.nextInFocusChain = function(...args) 
           
@@ -1603,7 +1603,7 @@
               return this.__PROXY__.nextInFocusChain(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.previousInFocusChain = function(...args) 
           
@@ -1613,7 +1613,7 @@
               return this.__PROXY__.previousInFocusChain(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.setAcceptDrops = function(...args) 
           
@@ -1623,7 +1623,7 @@
               return this.__PROXY__.setAcceptDrops(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.addAction = function(...args) 
           
@@ -1633,7 +1633,7 @@
               return this.__PROXY__.addAction(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.addActions = function(...args) 
           
@@ -1643,7 +1643,7 @@
               return this.__PROXY__.addActions(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.insertActions = function(...args) 
           
@@ -1653,7 +1653,7 @@
               return this.__PROXY__.insertActions(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.insertAction = function(...args) 
           
@@ -1663,7 +1663,7 @@
               return this.__PROXY__.insertAction(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.removeAction = function(...args) 
           
@@ -1673,7 +1673,7 @@
               return this.__PROXY__.removeAction(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.actions = function(...args) 
           
@@ -1683,7 +1683,7 @@
               return this.__PROXY__.actions(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.parentWidget = function(...args) 
           
@@ -1693,7 +1693,7 @@
               return this.__PROXY__.parentWidget(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.setWindowFlags = function(...args) 
           
@@ -1703,7 +1703,7 @@
               return this.__PROXY__.setWindowFlags(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.windowFlags = function(...args) 
           
@@ -1713,7 +1713,7 @@
               return this.__PROXY__.windowFlags(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.setWindowFlag = function(...args) 
           
@@ -1723,7 +1723,7 @@
               return this.__PROXY__.setWindowFlag(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.overrideWindowFlags = function(...args) 
           
@@ -1733,7 +1733,7 @@
               return this.__PROXY__.overrideWindowFlags(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.windowType = function(...args) 
           
@@ -1743,7 +1743,7 @@
               return this.__PROXY__.windowType(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.childAt = function(...args) 
           
@@ -1753,7 +1753,7 @@
               return this.__PROXY__.childAt(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.setAttribute = function(...args) 
           
@@ -1763,7 +1763,7 @@
               return this.__PROXY__.setAttribute(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.testAttribute = function(...args) 
           
@@ -1773,7 +1773,7 @@
               return this.__PROXY__.testAttribute(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.ensurePolished = function(...args) 
           
@@ -1783,7 +1783,7 @@
               return this.__PROXY__.ensurePolished(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.isAncestorOf = function(...args) 
           
@@ -1793,7 +1793,7 @@
               return this.__PROXY__.isAncestorOf(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.setAutoFillBackground = function(...args) 
           
@@ -1803,7 +1803,7 @@
               return this.__PROXY__.setAutoFillBackground(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.event = function(...args) 
           
@@ -1813,7 +1813,7 @@
               return this.__PROXY__.event(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.mouseDoubleClickEvent = function(...args) 
           
@@ -1823,7 +1823,7 @@
               return this.__PROXY__.mouseDoubleClickEvent(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.wheelEvent = function(...args) 
           
@@ -1833,7 +1833,7 @@
               return this.__PROXY__.wheelEvent(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.keyPressEvent = function(...args) 
           
@@ -1843,7 +1843,7 @@
               return this.__PROXY__.keyPressEvent(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.keyReleaseEvent = function(...args) 
           
@@ -1853,7 +1853,7 @@
               return this.__PROXY__.keyReleaseEvent(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.focusInEvent = function(...args) 
           
@@ -1863,7 +1863,7 @@
               return this.__PROXY__.focusInEvent(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.focusOutEvent = function(...args) 
           
@@ -1873,7 +1873,7 @@
               return this.__PROXY__.focusOutEvent(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.enterEvent = function(...args) 
           
@@ -1883,7 +1883,7 @@
               return this.__PROXY__.enterEvent(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.leaveEvent = function(...args) 
           
@@ -1893,7 +1893,7 @@
               return this.__PROXY__.leaveEvent(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.moveEvent = function(...args) 
           
@@ -1903,7 +1903,7 @@
               return this.__PROXY__.moveEvent(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.closeEvent = function(...args) 
           
@@ -1913,7 +1913,7 @@
               return this.__PROXY__.closeEvent(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.tabletEvent = function(...args) 
           
@@ -1923,7 +1923,7 @@
               return this.__PROXY__.tabletEvent(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.dragEnterEvent = function(...args) 
           
@@ -1933,7 +1933,7 @@
               return this.__PROXY__.dragEnterEvent(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.dragMoveEvent = function(...args) 
           
@@ -1943,7 +1943,7 @@
               return this.__PROXY__.dragMoveEvent(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.dragLeaveEvent = function(...args) 
           
@@ -1953,7 +1953,7 @@
               return this.__PROXY__.dragLeaveEvent(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.dropEvent = function(...args) 
           
@@ -1963,7 +1963,7 @@
               return this.__PROXY__.dropEvent(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.showEvent = function(...args) 
           
@@ -1973,7 +1973,7 @@
               return this.__PROXY__.showEvent(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.hideEvent = function(...args) 
           
@@ -1983,7 +1983,7 @@
               return this.__PROXY__.hideEvent(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.nativeEvent = function(...args) 
           
@@ -1993,7 +1993,7 @@
               return this.__PROXY__.nativeEvent(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.changeEvent = function(...args) 
           
@@ -2003,7 +2003,7 @@
               return this.__PROXY__.changeEvent(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.metric = function(...args) 
           
@@ -2013,7 +2013,7 @@
               return this.__PROXY__.metric(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.initPainter = function(...args) 
           
@@ -2023,7 +2023,7 @@
               return this.__PROXY__.initPainter(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.redirected = function(...args) 
           
@@ -2033,7 +2033,7 @@
               return this.__PROXY__.redirected(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.sharedPainter = function(...args) 
           
@@ -2043,7 +2043,7 @@
               return this.__PROXY__.sharedPainter(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.inputMethodEvent = function(...args) 
           
@@ -2053,7 +2053,7 @@
               return this.__PROXY__.inputMethodEvent(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.inputMethodQuery = function(...args) 
           
@@ -2063,7 +2063,7 @@
               return this.__PROXY__.inputMethodQuery(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.setInputMethodHints = function(...args) 
           
@@ -2073,7 +2073,7 @@
               return this.__PROXY__.setInputMethodHints(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.updateMicroFocus = function(...args) 
           
@@ -2083,7 +2083,7 @@
               return this.__PROXY__.updateMicroFocus(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.create = function(...args) 
           
@@ -2093,7 +2093,7 @@
               return this.__PROXY__.create(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.destroy = function(...args) 
           
@@ -2103,7 +2103,7 @@
               return this.__PROXY__.destroy(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.focusNextPrevChild = function(...args) 
           
@@ -2113,7 +2113,7 @@
               return this.__PROXY__.focusNextPrevChild(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.focusNextChild = function(...args) 
           
@@ -2123,7 +2123,7 @@
               return this.__PROXY__.focusNextChild(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.focusPreviousChild = function(...args) 
           
@@ -2133,7 +2133,7 @@
               return this.__PROXY__.focusPreviousChild(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.setBackingStore = function(...args) 
           
@@ -2143,7 +2143,7 @@
               return this.__PROXY__.setBackingStore(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.testAttribute_helper = function(...args) 
           
@@ -2153,7 +2153,7 @@
               return this.__PROXY__.testAttribute_helper(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.takeLayout = function(...args) 
           
@@ -2163,7 +2163,7 @@
               return this.__PROXY__.takeLayout(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.qt_mac_is_metal = function(...args) 
           
@@ -2173,7 +2173,7 @@
               return this.__PROXY__.qt_mac_is_metal(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.qt_qwidget_data = function(...args) 
           
@@ -2183,7 +2183,7 @@
               return this.__PROXY__.qt_qwidget_data(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.qt_widget_private = function(...args) 
           
@@ -2193,7 +2193,7 @@
               return this.__PROXY__.qt_widget_private(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.getChosenFont = function(...args) 
           
@@ -2203,7 +2203,7 @@
               return this.__PROXY__.getChosenFont(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.setChosenFont = function(...args) 
           
@@ -2213,7 +2213,7 @@
               return this.__PROXY__.setChosenFont(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.getSize = function(...args) 
           
@@ -2223,7 +2223,7 @@
               return this.__PROXY__.getSize(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.setSize = function(...args) 
           
@@ -2233,7 +2233,7 @@
               return this.__PROXY__.setSize(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.getLabel = function(...args) 
           
@@ -2243,7 +2243,7 @@
               return this.__PROXY__.getLabel(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.setLabel = function(...args) 
           
@@ -2253,7 +2253,7 @@
               return this.__PROXY__.setLabel(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.chosenFontChanged = function(...args) 
           
@@ -2263,7 +2263,7 @@
               return this.__PROXY__.chosenFontChanged(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.sizeChanged = function(...args) 
           
@@ -2273,7 +2273,7 @@
               return this.__PROXY__.sizeChanged(...args);
             
         };
-    
+        
         // function 
         RFontChooserWidget.prototype.resizeEvent = function(...args) 
           
@@ -2283,7 +2283,8 @@
               return this.__PROXY__.resizeEventSuper(...args);
             
         };
-    
+        RFontChooserWidget.prototype.resizeEvent.__SUPER__ = true;
+        
         // function 
         RFontChooserWidget.prototype.updateSizeCombo = function(...args) 
           
@@ -2293,7 +2294,7 @@
               return this.__PROXY__.updateSizeCombo(...args);
             
         };
-    
+        
 
       // static functions:
       

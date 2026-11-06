@@ -165,7 +165,7 @@
               return this.__PROXY__.getDocument(...args);
             
         };
-    
+        
         // function 
         RBlockReferenceData.prototype.setDocument = function(...args) 
           
@@ -175,7 +175,7 @@
               return this.__PROXY__.setDocument(...args);
             
         };
-    
+        
         // function 
         RBlockReferenceData.prototype.isValid = function(...args) 
           
@@ -185,7 +185,7 @@
               return this.__PROXY__.isValid(...args);
             
         };
-    
+        
         // function 
         RBlockReferenceData.prototype.isSane = function(...args) 
           
@@ -195,7 +195,7 @@
               return this.__PROXY__.isSane(...args);
             
         };
-    
+        
         // function 
         RBlockReferenceData.prototype.getClosestSubEntityId = function(...args) 
           
@@ -205,7 +205,7 @@
               return this.__PROXY__.getClosestSubEntityId(...args);
             
         };
-    
+        
         // function 
         RBlockReferenceData.prototype.getClosestShape = function(...args) 
           
@@ -215,7 +215,7 @@
               return this.__PROXY__.getClosestShape(...args);
             
         };
-    
+        
         // function 
         RBlockReferenceData.prototype.copyAttributesFrom = function(...args) 
           
@@ -225,7 +225,7 @@
               return this.__PROXY__.copyAttributesFrom(...args);
             
         };
-    
+        
         // function 
         RBlockReferenceData.prototype.setZ = function(...args) 
           
@@ -235,7 +235,7 @@
               return this.__PROXY__.setZ(...args);
             
         };
-    
+        
         // function 
         RBlockReferenceData.prototype.getHull = function(...args) 
           
@@ -245,7 +245,7 @@
               return this.__PROXY__.getHull(...args);
             
         };
-    
+        
         // function 
         RBlockReferenceData.prototype.isUpdatesEnabled = function(...args) 
           
@@ -255,7 +255,7 @@
               return this.__PROXY__.isUpdatesEnabled(...args);
             
         };
-    
+        
         // function 
         RBlockReferenceData.prototype.setUpdatesEnabled = function(...args) 
           
@@ -265,7 +265,7 @@
               return this.__PROXY__.setUpdatesEnabled(...args);
             
         };
-    
+        
         // function 
         RBlockReferenceData.prototype.cloneOnChange = function(...args) 
           
@@ -275,7 +275,7 @@
               return this.__PROXY__.cloneOnChange(...args);
             
         };
-    
+        
         // function 
         RBlockReferenceData.prototype.isSelected = function(...args) 
           
@@ -285,7 +285,7 @@
               return this.__PROXY__.isSelected(...args);
             
         };
-    
+        
         // function 
         RBlockReferenceData.prototype.setSelected = function(...args) 
           
@@ -295,7 +295,7 @@
               return this.__PROXY__.setSelected(...args);
             
         };
-    
+        
         // function 
         RBlockReferenceData.prototype.isSelectedWorkingSet = function(...args) 
           
@@ -305,7 +305,7 @@
               return this.__PROXY__.isSelectedWorkingSet(...args);
             
         };
-    
+        
         // function 
         RBlockReferenceData.prototype.setSelectedWorkingSet = function(...args) 
           
@@ -315,7 +315,7 @@
               return this.__PROXY__.setSelectedWorkingSet(...args);
             
         };
-    
+        
         // function 
         RBlockReferenceData.prototype.getDrawOrder = function(...args) 
           
@@ -325,7 +325,7 @@
               return this.__PROXY__.getDrawOrder(...args);
             
         };
-    
+        
         // function 
         RBlockReferenceData.prototype.setDrawOrder = function(...args) 
           
@@ -335,7 +335,7 @@
               return this.__PROXY__.setDrawOrder(...args);
             
         };
-    
+        
         // function 
         RBlockReferenceData.prototype.setLayerId = function(...args) 
           
@@ -345,7 +345,7 @@
               return this.__PROXY__.setLayerId(...args);
             
         };
-    
+        
         // function 
         RBlockReferenceData.prototype.getLayerId = function(...args) 
           
@@ -355,7 +355,7 @@
               return this.__PROXY__.getLayerId(...args);
             
         };
-    
+        
         // function 
         RBlockReferenceData.prototype.setLayerName = function(...args) 
           
@@ -365,7 +365,7 @@
               return this.__PROXY__.setLayerName(...args);
             
         };
-    
+        
         // function 
         RBlockReferenceData.prototype.getLayerName = function(...args) 
           
@@ -375,7 +375,7 @@
               return this.__PROXY__.getLayerName(...args);
             
         };
-    
+        
         // function 
         RBlockReferenceData.prototype.setBlockId = function(...args) 
           
@@ -385,7 +385,7 @@
               return this.__PROXY__.setBlockId(...args);
             
         };
-    
+        
         // function 
         RBlockReferenceData.prototype.getBlockId = function(...args) 
           
@@ -395,7 +395,7 @@
               return this.__PROXY__.getBlockId(...args);
             
         };
-    
+        
         // function 
         RBlockReferenceData.prototype.setParentId = function(...args) 
           
@@ -405,7 +405,7 @@
               return this.__PROXY__.setParentId(...args);
             
         };
-    
+        
         // function 
         RBlockReferenceData.prototype.getParentId = function(...args) 
           
@@ -415,7 +415,7 @@
               return this.__PROXY__.getParentId(...args);
             
         };
-    
+        
         // function 
         RBlockReferenceData.prototype.getBlockName = function(...args) 
           
@@ -425,7 +425,7 @@
               return this.__PROXY__.getBlockName(...args);
             
         };
-    
+        
         // function 
         RBlockReferenceData.prototype.setLinetypeId = function(...args) 
           
@@ -435,7 +435,7 @@
               return this.__PROXY__.setLinetypeId(...args);
             
         };
-    
+        
         // function 
         RBlockReferenceData.prototype.getLinetypeId = function(...args) 
           
@@ -445,7 +445,7 @@
               return this.__PROXY__.getLinetypeId(...args);
             
         };
-    
+        
         // function 
         RBlockReferenceData.prototype.setLinetypePattern = function(...args) 
           
@@ -455,7 +455,7 @@
               return this.__PROXY__.setLinetypePattern(...args);
             
         };
-    
+        
         // function 
         RBlockReferenceData.prototype.getLinetypePattern = function(...args) 
           
@@ -465,7 +465,7 @@
               return this.__PROXY__.getLinetypePattern(...args);
             
         };
-    
+        
         // function 
         RBlockReferenceData.prototype.setLinetypeScale = function(...args) 
           
@@ -475,7 +475,7 @@
               return this.__PROXY__.setLinetypeScale(...args);
             
         };
-    
+        
         // function 
         RBlockReferenceData.prototype.getLinetypeScale = function(...args) 
           
@@ -485,7 +485,7 @@
               return this.__PROXY__.getLinetypeScale(...args);
             
         };
-    
+        
         // function 
         RBlockReferenceData.prototype.getLineweight = function(...args) 
           
@@ -495,7 +495,7 @@
               return this.__PROXY__.getLineweight(...args);
             
         };
-    
+        
         // function 
         RBlockReferenceData.prototype.setLineweight = function(...args) 
           
@@ -505,7 +505,7 @@
               return this.__PROXY__.setLineweight(...args);
             
         };
-    
+        
         // function 
         RBlockReferenceData.prototype.setColor = function(...args) 
           
@@ -515,7 +515,7 @@
               return this.__PROXY__.setColor(...args);
             
         };
-    
+        
         // function 
         RBlockReferenceData.prototype.getColor = function(...args) 
           
@@ -525,7 +525,7 @@
               return this.__PROXY__.getColor(...args);
             
         };
-    
+        
         // function 
         RBlockReferenceData.prototype.getDisplayColor = function(...args) 
           
@@ -535,7 +535,7 @@
               return this.__PROXY__.getDisplayColor(...args);
             
         };
-    
+        
         // function 
         RBlockReferenceData.prototype.getEndPoints = function(...args) 
           
@@ -545,7 +545,7 @@
               return this.__PROXY__.getEndPoints(...args);
             
         };
-    
+        
         // function 
         RBlockReferenceData.prototype.getMiddlePoints = function(...args) 
           
@@ -555,7 +555,7 @@
               return this.__PROXY__.getMiddlePoints(...args);
             
         };
-    
+        
         // function 
         RBlockReferenceData.prototype.getCenterPoints = function(...args) 
           
@@ -565,7 +565,7 @@
               return this.__PROXY__.getCenterPoints(...args);
             
         };
-    
+        
         // function 
         RBlockReferenceData.prototype.getArcReferencePoints = function(...args) 
           
@@ -575,7 +575,7 @@
               return this.__PROXY__.getArcReferencePoints(...args);
             
         };
-    
+        
         // function 
         RBlockReferenceData.prototype.getPointsWithDistanceToEnd = function(...args) 
           
@@ -585,7 +585,7 @@
               return this.__PROXY__.getPointsWithDistanceToEnd(...args);
             
         };
-    
+        
         // function 
         RBlockReferenceData.prototype.getClosestPointOnEntity = function(...args) 
           
@@ -595,7 +595,7 @@
               return this.__PROXY__.getClosestPointOnEntity(...args);
             
         };
-    
+        
         // function 
         RBlockReferenceData.prototype.getIntersectionPoints = function(...args) 
           
@@ -605,7 +605,7 @@
               return this.__PROXY__.getIntersectionPoints(...args);
             
         };
-    
+        
         // function 
         RBlockReferenceData.prototype.isInside = function(...args) 
           
@@ -615,7 +615,7 @@
               return this.__PROXY__.isInside(...args);
             
         };
-    
+        
         // function 
         RBlockReferenceData.prototype.isOnEntity = function(...args) 
           
@@ -625,7 +625,7 @@
               return this.__PROXY__.isOnEntity(...args);
             
         };
-    
+        
         // function 
         RBlockReferenceData.prototype.intersectsWith = function(...args) 
           
@@ -635,7 +635,7 @@
               return this.__PROXY__.intersectsWith(...args);
             
         };
-    
+        
         // function 
         RBlockReferenceData.prototype.clickReferencePoint = function(...args) 
           
@@ -645,7 +645,7 @@
               return this.__PROXY__.clickReferencePoint(...args);
             
         };
-    
+        
         // function 
         RBlockReferenceData.prototype.flipHorizontal = function(...args) 
           
@@ -655,7 +655,7 @@
               return this.__PROXY__.flipHorizontal(...args);
             
         };
-    
+        
         // function 
         RBlockReferenceData.prototype.flipVertical = function(...args) 
           
@@ -665,7 +665,7 @@
               return this.__PROXY__.flipVertical(...args);
             
         };
-    
+        
         // function 
         RBlockReferenceData.prototype.stretch = function(...args) 
           
@@ -675,7 +675,7 @@
               return this.__PROXY__.stretch(...args);
             
         };
-    
+        
         // function 
         RBlockReferenceData.prototype.setAutoUpdatesBlocked = function(...args) 
           
@@ -685,7 +685,7 @@
               return this.__PROXY__.setAutoUpdatesBlocked(...args);
             
         };
-    
+        
         // function 
         RBlockReferenceData.prototype.getRtti = function(...args) 
           
@@ -695,7 +695,7 @@
               return this.__PROXY__.getRtti(...args);
             
         };
-    
+        
         // function 
         RBlockReferenceData.prototype.getType = function(...args) 
           
@@ -705,7 +705,7 @@
               return this.__PROXY__.getType(...args);
             
         };
-    
+        
         // function 
         RBlockReferenceData.prototype.isPointType = function(...args) 
           
@@ -715,7 +715,7 @@
               return this.__PROXY__.isPointType(...args);
             
         };
-    
+        
         // function 
         RBlockReferenceData.prototype.getBoundingBoxes = function(...args) 
           
@@ -725,7 +725,7 @@
               return this.__PROXY__.getBoundingBoxes(...args);
             
         };
-    
+        
         // function 
         RBlockReferenceData.prototype.getBoundingBox = function(...args) 
           
@@ -735,7 +735,7 @@
               return this.__PROXY__.getBoundingBox(...args);
             
         };
-    
+        
         // function 
         RBlockReferenceData.prototype.to2D = function(...args) 
           
@@ -745,7 +745,7 @@
               return this.__PROXY__.to2D(...args);
             
         };
-    
+        
         // function 
         RBlockReferenceData.prototype.getPointOnEntity = function(...args) 
           
@@ -755,7 +755,7 @@
               return this.__PROXY__.getPointOnEntity(...args);
             
         };
-    
+        
         // function 
         RBlockReferenceData.prototype.getInternalReferencePoints = function(...args) 
           
@@ -765,7 +765,7 @@
               return this.__PROXY__.getInternalReferencePoints(...args);
             
         };
-    
+        
         // function 
         RBlockReferenceData.prototype.getReferencePoints = function(...args) 
           
@@ -775,7 +775,7 @@
               return this.__PROXY__.getReferencePoints(...args);
             
         };
-    
+        
         // function 
         RBlockReferenceData.prototype.getVectorTo = function(...args) 
           
@@ -785,7 +785,7 @@
               return this.__PROXY__.getVectorTo(...args);
             
         };
-    
+        
         // function 
         RBlockReferenceData.prototype.getDistanceTo = function(...args) 
           
@@ -795,7 +795,7 @@
               return this.__PROXY__.getDistanceTo(...args);
             
         };
-    
+        
         // function 
         RBlockReferenceData.prototype.getQueryBoxInBlockCoordinates = function(...args) 
           
@@ -805,7 +805,7 @@
               return this.__PROXY__.getQueryBoxInBlockCoordinates(...args);
             
         };
-    
+        
         // function 
         RBlockReferenceData.prototype.getShapes = function(...args) 
           
@@ -815,7 +815,7 @@
               return this.__PROXY__.getShapes(...args);
             
         };
-    
+        
         // function 
         RBlockReferenceData.prototype.moveReferencePoint = function(...args) 
           
@@ -825,7 +825,7 @@
               return this.__PROXY__.moveReferencePoint(...args);
             
         };
-    
+        
         // function 
         RBlockReferenceData.prototype.move = function(...args) 
           
@@ -835,7 +835,7 @@
               return this.__PROXY__.move(...args);
             
         };
-    
+        
         // function 
         RBlockReferenceData.prototype.rotate = function(...args) 
           
@@ -845,7 +845,7 @@
               return this.__PROXY__.rotate(...args);
             
         };
-    
+        
         // function 
         RBlockReferenceData.prototype.mirror = function(...args) 
           
@@ -855,7 +855,7 @@
               return this.__PROXY__.mirror(...args);
             
         };
-    
+        
         // function 
         RBlockReferenceData.prototype.scale = function(...args) 
           
@@ -865,7 +865,7 @@
               return this.__PROXY__.scale(...args);
             
         };
-    
+        
         // function 
         RBlockReferenceData.prototype.scaleVisualProperties = function(...args) 
           
@@ -875,7 +875,7 @@
               return this.__PROXY__.scaleVisualProperties(...args);
             
         };
-    
+        
         // function 
         RBlockReferenceData.prototype.setReferencedBlockId = function(...args) 
           
@@ -885,7 +885,7 @@
               return this.__PROXY__.setReferencedBlockId(...args);
             
         };
-    
+        
         // function 
         RBlockReferenceData.prototype.groundReferencedBlockId = function(...args) 
           
@@ -895,7 +895,7 @@
               return this.__PROXY__.groundReferencedBlockId(...args);
             
         };
-    
+        
         // function 
         RBlockReferenceData.prototype.getReferencedBlockId = function(...args) 
           
@@ -905,7 +905,7 @@
               return this.__PROXY__.getReferencedBlockId(...args);
             
         };
-    
+        
         // function 
         RBlockReferenceData.prototype.setReferencedBlockName = function(...args) 
           
@@ -915,7 +915,7 @@
               return this.__PROXY__.setReferencedBlockName(...args);
             
         };
-    
+        
         // function 
         RBlockReferenceData.prototype.getReferencedBlockName = function(...args) 
           
@@ -925,7 +925,7 @@
               return this.__PROXY__.getReferencedBlockName(...args);
             
         };
-    
+        
         // function 
         RBlockReferenceData.prototype.getPosition = function(...args) 
           
@@ -935,7 +935,7 @@
               return this.__PROXY__.getPosition(...args);
             
         };
-    
+        
         // function 
         RBlockReferenceData.prototype.setPosition = function(...args) 
           
@@ -945,7 +945,7 @@
               return this.__PROXY__.setPosition(...args);
             
         };
-    
+        
         // function 
         RBlockReferenceData.prototype.getScaleFactors = function(...args) 
           
@@ -955,7 +955,7 @@
               return this.__PROXY__.getScaleFactors(...args);
             
         };
-    
+        
         // function 
         RBlockReferenceData.prototype.setScaleFactors = function(...args) 
           
@@ -965,7 +965,7 @@
               return this.__PROXY__.setScaleFactors(...args);
             
         };
-    
+        
         // function 
         RBlockReferenceData.prototype.getRotation = function(...args) 
           
@@ -975,7 +975,7 @@
               return this.__PROXY__.getRotation(...args);
             
         };
-    
+        
         // function 
         RBlockReferenceData.prototype.setRotation = function(...args) 
           
@@ -985,7 +985,7 @@
               return this.__PROXY__.setRotation(...args);
             
         };
-    
+        
         // function 
         RBlockReferenceData.prototype.getColumnCount = function(...args) 
           
@@ -995,7 +995,7 @@
               return this.__PROXY__.getColumnCount(...args);
             
         };
-    
+        
         // function 
         RBlockReferenceData.prototype.setColumnCount = function(...args) 
           
@@ -1005,7 +1005,7 @@
               return this.__PROXY__.setColumnCount(...args);
             
         };
-    
+        
         // function 
         RBlockReferenceData.prototype.getRowCount = function(...args) 
           
@@ -1015,7 +1015,7 @@
               return this.__PROXY__.getRowCount(...args);
             
         };
-    
+        
         // function 
         RBlockReferenceData.prototype.setRowCount = function(...args) 
           
@@ -1025,7 +1025,7 @@
               return this.__PROXY__.setRowCount(...args);
             
         };
-    
+        
         // function 
         RBlockReferenceData.prototype.getColumnSpacing = function(...args) 
           
@@ -1035,7 +1035,7 @@
               return this.__PROXY__.getColumnSpacing(...args);
             
         };
-    
+        
         // function 
         RBlockReferenceData.prototype.setColumnSpacing = function(...args) 
           
@@ -1045,7 +1045,7 @@
               return this.__PROXY__.setColumnSpacing(...args);
             
         };
-    
+        
         // function 
         RBlockReferenceData.prototype.getRowSpacing = function(...args) 
           
@@ -1055,7 +1055,7 @@
               return this.__PROXY__.getRowSpacing(...args);
             
         };
-    
+        
         // function 
         RBlockReferenceData.prototype.setRowSpacing = function(...args) 
           
@@ -1065,7 +1065,7 @@
               return this.__PROXY__.setRowSpacing(...args);
             
         };
-    
+        
         // function 
         RBlockReferenceData.prototype.update = function(...args) 
           
@@ -1075,7 +1075,7 @@
               return this.__PROXY__.update(...args);
             
         };
-    
+        
         // function 
         RBlockReferenceData.prototype.queryEntity = function(...args) 
           
@@ -1085,7 +1085,7 @@
               return this.__PROXY__.queryEntity(...args);
             
         };
-    
+        
         // function 
         RBlockReferenceData.prototype.applyTransformationTo = function(...args) 
           
@@ -1095,7 +1095,7 @@
               return this.__PROXY__.applyTransformationTo(...args);
             
         };
-    
+        
         // function 
         RBlockReferenceData.prototype.getTransformed = function(...args) 
           
@@ -1105,7 +1105,7 @@
               return this.__PROXY__.getTransformed(...args);
             
         };
-    
+        
         // function 
         RBlockReferenceData.prototype.getTransform = function(...args) 
           
@@ -1115,7 +1115,7 @@
               return this.__PROXY__.getTransform(...args);
             
         };
-    
+        
         // function 
         RBlockReferenceData.prototype.getColumnRowOffset = function(...args) 
           
@@ -1125,7 +1125,7 @@
               return this.__PROXY__.getColumnRowOffset(...args);
             
         };
-    
+        
         // function 
         RBlockReferenceData.prototype.applyColumnRowOffsetTo = function(...args) 
           
@@ -1135,7 +1135,7 @@
               return this.__PROXY__.applyColumnRowOffsetTo(...args);
             
         };
-    
+        
         // function 
         RBlockReferenceData.prototype.mapToBlock = function(...args) 
           
@@ -1145,7 +1145,7 @@
               return this.__PROXY__.mapToBlock(...args);
             
         };
-    
+        
         // function 
         RBlockReferenceData.prototype.isPixelUnit = function(...args) 
           
@@ -1155,7 +1155,7 @@
               return this.__PROXY__.isPixelUnit(...args);
             
         };
-    
+        
         // function 
         RBlockReferenceData.prototype.copy = function(...args) 
           
@@ -1165,7 +1165,7 @@
               return this.__PROXY__.copy(...args);
             
         };
-    
+        
 
       // static functions:
       

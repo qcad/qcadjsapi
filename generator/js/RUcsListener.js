@@ -105,7 +105,7 @@
               return this.__PROXY__.update(...args);
             
         };
-    
+        
         // function 
         RUcsListener.prototype.clear = function(...args) 
           
@@ -115,7 +115,7 @@
               return this.__PROXY__.clear(...args);
             
         };
-    
+        
 
       // static functions:
       RUcsListener.prototype.isNullWrapper = function() {

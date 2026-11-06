@@ -203,7 +203,7 @@ RPoint.Ray = RPoint_Wrapper.Ray;
               return this.__PROXY__.isValid(...args);
             
         };
-    
+        
         // function 
         RPoint.prototype.isInterpolated = function(...args) 
           
@@ -213,7 +213,7 @@ RPoint.Ray = RPoint_Wrapper.Ray;
               return this.__PROXY__.isInterpolated(...args);
             
         };
-    
+        
         // function 
         RPoint.prototype.getClosestPointOnShape = function(...args) 
           
@@ -223,7 +223,7 @@ RPoint.Ray = RPoint_Wrapper.Ray;
               return this.__PROXY__.getClosestPointOnShape(...args);
             
         };
-    
+        
         // function 
         RPoint.prototype.to2D = function(...args) 
           
@@ -233,7 +233,7 @@ RPoint.Ray = RPoint_Wrapper.Ray;
               return this.__PROXY__.to2D(...args);
             
         };
-    
+        
         // function 
         RPoint.prototype.equals = function(...args) 
           
@@ -243,7 +243,7 @@ RPoint.Ray = RPoint_Wrapper.Ray;
               return this.__PROXY__.equals(...args);
             
         };
-    
+        
         // function 
         RPoint.prototype.getIntProperties = function(...args) 
           
@@ -253,7 +253,7 @@ RPoint.Ray = RPoint_Wrapper.Ray;
               return this.__PROXY__.getIntProperties(...args);
             
         };
-    
+        
         // function 
         RPoint.prototype.getDoubleProperties = function(...args) 
           
@@ -263,7 +263,7 @@ RPoint.Ray = RPoint_Wrapper.Ray;
               return this.__PROXY__.getDoubleProperties(...args);
             
         };
-    
+        
         // function 
         RPoint.prototype.getBoolProperties = function(...args) 
           
@@ -273,7 +273,7 @@ RPoint.Ray = RPoint_Wrapper.Ray;
               return this.__PROXY__.getBoolProperties(...args);
             
         };
-    
+        
         // function 
         RPoint.prototype.getDistanceTo = function(...args) 
           
@@ -283,7 +283,7 @@ RPoint.Ray = RPoint_Wrapper.Ray;
               return this.__PROXY__.getDistanceTo(...args);
             
         };
-    
+        
         // function 
         RPoint.prototype.getMaxDistanceTo = function(...args) 
           
@@ -293,7 +293,7 @@ RPoint.Ray = RPoint_Wrapper.Ray;
               return this.__PROXY__.getMaxDistanceTo(...args);
             
         };
-    
+        
         // function 
         RPoint.prototype.isOnShape = function(...args) 
           
@@ -303,7 +303,7 @@ RPoint.Ray = RPoint_Wrapper.Ray;
               return this.__PROXY__.isOnShape(...args);
             
         };
-    
+        
         // function 
         RPoint.prototype.filterOnShape = function(...args) 
           
@@ -313,7 +313,7 @@ RPoint.Ray = RPoint_Wrapper.Ray;
               return this.__PROXY__.filterOnShape(...args);
             
         };
-    
+        
         // function 
         RPoint.prototype.getVectorFromEndpointTo = function(...args) 
           
@@ -323,7 +323,7 @@ RPoint.Ray = RPoint_Wrapper.Ray;
               return this.__PROXY__.getVectorFromEndpointTo(...args);
             
         };
-    
+        
         // function 
         RPoint.prototype.getArcReferencePoints = function(...args) 
           
@@ -333,7 +333,7 @@ RPoint.Ray = RPoint_Wrapper.Ray;
               return this.__PROXY__.getArcReferencePoints(...args);
             
         };
-    
+        
         // function 
         RPoint.prototype.getPointOnShape = function(...args) 
           
@@ -343,7 +343,7 @@ RPoint.Ray = RPoint_Wrapper.Ray;
               return this.__PROXY__.getPointOnShape(...args);
             
         };
-    
+        
         // function 
         RPoint.prototype.getPointWithDistanceToStart = function(...args) 
           
@@ -353,7 +353,7 @@ RPoint.Ray = RPoint_Wrapper.Ray;
               return this.__PROXY__.getPointWithDistanceToStart(...args);
             
         };
-    
+        
         // function 
         RPoint.prototype.getPointWithDistanceToEnd = function(...args) 
           
@@ -363,7 +363,7 @@ RPoint.Ray = RPoint_Wrapper.Ray;
               return this.__PROXY__.getPointWithDistanceToEnd(...args);
             
         };
-    
+        
         // function 
         RPoint.prototype.getAngleAtPoint = function(...args) 
           
@@ -373,7 +373,7 @@ RPoint.Ray = RPoint_Wrapper.Ray;
               return this.__PROXY__.getAngleAtPoint(...args);
             
         };
-    
+        
         // function 
         RPoint.prototype.getPointAtPercent = function(...args) 
           
@@ -383,7 +383,7 @@ RPoint.Ray = RPoint_Wrapper.Ray;
               return this.__PROXY__.getPointAtPercent(...args);
             
         };
-    
+        
         // function 
         RPoint.prototype.getAngleAtPercent = function(...args) 
           
@@ -393,7 +393,7 @@ RPoint.Ray = RPoint_Wrapper.Ray;
               return this.__PROXY__.getAngleAtPercent(...args);
             
         };
-    
+        
         // function 
         RPoint.prototype.intersectsWith = function(...args) 
           
@@ -403,7 +403,7 @@ RPoint.Ray = RPoint_Wrapper.Ray;
               return this.__PROXY__.intersectsWith(...args);
             
         };
-    
+        
         // function 
         RPoint.prototype.getIntersectionPoints = function(...args) 
           
@@ -413,7 +413,7 @@ RPoint.Ray = RPoint_Wrapper.Ray;
               return this.__PROXY__.getIntersectionPoints(...args);
             
         };
-    
+        
         // function 
         RPoint.prototype.getSelfIntersectionPoints = function(...args) 
           
@@ -423,7 +423,7 @@ RPoint.Ray = RPoint_Wrapper.Ray;
               return this.__PROXY__.getSelfIntersectionPoints(...args);
             
         };
-    
+        
         // function 
         RPoint.prototype.isDirected = function(...args) 
           
@@ -433,7 +433,7 @@ RPoint.Ray = RPoint_Wrapper.Ray;
               return this.__PROXY__.isDirected(...args);
             
         };
-    
+        
         // function 
         RPoint.prototype.getDirection1 = function(...args) 
           
@@ -443,7 +443,7 @@ RPoint.Ray = RPoint_Wrapper.Ray;
               return this.__PROXY__.getDirection1(...args);
             
         };
-    
+        
         // function 
         RPoint.prototype.getDirection2 = function(...args) 
           
@@ -453,7 +453,7 @@ RPoint.Ray = RPoint_Wrapper.Ray;
               return this.__PROXY__.getDirection2(...args);
             
         };
-    
+        
         // function 
         RPoint.prototype.getSideOfPoint = function(...args) 
           
@@ -463,7 +463,7 @@ RPoint.Ray = RPoint_Wrapper.Ray;
               return this.__PROXY__.getSideOfPoint(...args);
             
         };
-    
+        
         // function 
         RPoint.prototype.getStartPoint = function(...args) 
           
@@ -473,7 +473,7 @@ RPoint.Ray = RPoint_Wrapper.Ray;
               return this.__PROXY__.getStartPoint(...args);
             
         };
-    
+        
         // function 
         RPoint.prototype.getEndPoint = function(...args) 
           
@@ -483,7 +483,7 @@ RPoint.Ray = RPoint_Wrapper.Ray;
               return this.__PROXY__.getEndPoint(...args);
             
         };
-    
+        
         // function 
         RPoint.prototype.getMiddlePoint = function(...args) 
           
@@ -493,7 +493,7 @@ RPoint.Ray = RPoint_Wrapper.Ray;
               return this.__PROXY__.getMiddlePoint(...args);
             
         };
-    
+        
         // function 
         RPoint.prototype.reverse = function(...args) 
           
@@ -503,7 +503,7 @@ RPoint.Ray = RPoint_Wrapper.Ray;
               return this.__PROXY__.reverse(...args);
             
         };
-    
+        
         // function 
         RPoint.prototype.trimStartPoint = function(...args) 
           
@@ -513,7 +513,7 @@ RPoint.Ray = RPoint_Wrapper.Ray;
               return this.__PROXY__.trimStartPoint(...args);
             
         };
-    
+        
         // function 
         RPoint.prototype.trimEndPoint = function(...args) 
           
@@ -523,7 +523,7 @@ RPoint.Ray = RPoint_Wrapper.Ray;
               return this.__PROXY__.trimEndPoint(...args);
             
         };
-    
+        
         // function 
         RPoint.prototype.getTrimEnd = function(...args) 
           
@@ -533,7 +533,7 @@ RPoint.Ray = RPoint_Wrapper.Ray;
               return this.__PROXY__.getTrimEnd(...args);
             
         };
-    
+        
         // function 
         RPoint.prototype.getDistanceFromStart = function(...args) 
           
@@ -543,7 +543,7 @@ RPoint.Ray = RPoint_Wrapper.Ray;
               return this.__PROXY__.getDistanceFromStart(...args);
             
         };
-    
+        
         // function 
         RPoint.prototype.getDistancesFromStart = function(...args) 
           
@@ -553,7 +553,7 @@ RPoint.Ray = RPoint_Wrapper.Ray;
               return this.__PROXY__.getDistancesFromStart(...args);
             
         };
-    
+        
         // function 
         RPoint.prototype.stretch = function(...args) 
           
@@ -563,7 +563,7 @@ RPoint.Ray = RPoint_Wrapper.Ray;
               return this.__PROXY__.stretch(...args);
             
         };
-    
+        
         // function 
         RPoint.prototype.getOffsetShapes = function(...args) 
           
@@ -573,7 +573,7 @@ RPoint.Ray = RPoint_Wrapper.Ray;
               return this.__PROXY__.getOffsetShapes(...args);
             
         };
-    
+        
         // function 
         RPoint.prototype.splitAt = function(...args) 
           
@@ -583,7 +583,7 @@ RPoint.Ray = RPoint_Wrapper.Ray;
               return this.__PROXY__.splitAt(...args);
             
         };
-    
+        
         // function 
         RPoint.prototype.dump = function(...args) 
           
@@ -593,7 +593,7 @@ RPoint.Ray = RPoint_Wrapper.Ray;
               return this.__PROXY__.dump(...args);
             
         };
-    
+        
         // function 
         RPoint.prototype.getShapeType = function(...args) 
           
@@ -603,7 +603,7 @@ RPoint.Ray = RPoint_Wrapper.Ray;
               return this.__PROXY__.getShapeType(...args);
             
         };
-    
+        
         // function 
         RPoint.prototype.clone = function(...args) 
           
@@ -613,7 +613,7 @@ RPoint.Ray = RPoint_Wrapper.Ray;
               return this.__PROXY__.clone(...args);
             
         };
-    
+        
         // function 
         RPoint.prototype.setZ = function(...args) 
           
@@ -623,7 +623,7 @@ RPoint.Ray = RPoint_Wrapper.Ray;
               return this.__PROXY__.setZ(...args);
             
         };
-    
+        
         // function 
         RPoint.prototype.getVectorProperties = function(...args) 
           
@@ -633,7 +633,7 @@ RPoint.Ray = RPoint_Wrapper.Ray;
               return this.__PROXY__.getVectorProperties(...args);
             
         };
-    
+        
         // function 
         RPoint.prototype.getPosition = function(...args) 
           
@@ -643,7 +643,7 @@ RPoint.Ray = RPoint_Wrapper.Ray;
               return this.__PROXY__.getPosition(...args);
             
         };
-    
+        
         // function 
         RPoint.prototype.setPosition = function(...args) 
           
@@ -653,7 +653,7 @@ RPoint.Ray = RPoint_Wrapper.Ray;
               return this.__PROXY__.setPosition(...args);
             
         };
-    
+        
         // function 
         RPoint.prototype.getBoundingBox = function(...args) 
           
@@ -663,7 +663,7 @@ RPoint.Ray = RPoint_Wrapper.Ray;
               return this.__PROXY__.getBoundingBox(...args);
             
         };
-    
+        
         // function 
         RPoint.prototype.getLength = function(...args) 
           
@@ -673,7 +673,7 @@ RPoint.Ray = RPoint_Wrapper.Ray;
               return this.__PROXY__.getLength(...args);
             
         };
-    
+        
         // function 
         RPoint.prototype.getEndPoints = function(...args) 
           
@@ -683,7 +683,7 @@ RPoint.Ray = RPoint_Wrapper.Ray;
               return this.__PROXY__.getEndPoints(...args);
             
         };
-    
+        
         // function 
         RPoint.prototype.getMiddlePoints = function(...args) 
           
@@ -693,7 +693,7 @@ RPoint.Ray = RPoint_Wrapper.Ray;
               return this.__PROXY__.getMiddlePoints(...args);
             
         };
-    
+        
         // function 
         RPoint.prototype.getCenterPoints = function(...args) 
           
@@ -703,7 +703,7 @@ RPoint.Ray = RPoint_Wrapper.Ray;
               return this.__PROXY__.getCenterPoints(...args);
             
         };
-    
+        
         // function 
         RPoint.prototype.getPointsWithDistanceToEnd = function(...args) 
           
@@ -713,7 +713,7 @@ RPoint.Ray = RPoint_Wrapper.Ray;
               return this.__PROXY__.getPointsWithDistanceToEnd(...args);
             
         };
-    
+        
         // function 
         RPoint.prototype.getPointCloud = function(...args) 
           
@@ -723,7 +723,7 @@ RPoint.Ray = RPoint_Wrapper.Ray;
               return this.__PROXY__.getPointCloud(...args);
             
         };
-    
+        
         // function 
         RPoint.prototype.getAngleAt = function(...args) 
           
@@ -733,7 +733,7 @@ RPoint.Ray = RPoint_Wrapper.Ray;
               return this.__PROXY__.getAngleAt(...args);
             
         };
-    
+        
         // function 
         RPoint.prototype.getVectorTo = function(...args) 
           
@@ -743,7 +743,7 @@ RPoint.Ray = RPoint_Wrapper.Ray;
               return this.__PROXY__.getVectorTo(...args);
             
         };
-    
+        
         // function 
         RPoint.prototype.move = function(...args) 
           
@@ -753,7 +753,7 @@ RPoint.Ray = RPoint_Wrapper.Ray;
               return this.__PROXY__.move(...args);
             
         };
-    
+        
         // function 
         RPoint.prototype.rotate = function(...args) 
           
@@ -763,7 +763,7 @@ RPoint.Ray = RPoint_Wrapper.Ray;
               return this.__PROXY__.rotate(...args);
             
         };
-    
+        
         // function 
         RPoint.prototype.scale = function(...args) 
           
@@ -773,7 +773,7 @@ RPoint.Ray = RPoint_Wrapper.Ray;
               return this.__PROXY__.scale(...args);
             
         };
-    
+        
         // function 
         RPoint.prototype.mirror = function(...args) 
           
@@ -783,7 +783,7 @@ RPoint.Ray = RPoint_Wrapper.Ray;
               return this.__PROXY__.mirror(...args);
             
         };
-    
+        
         // function 
         RPoint.prototype.flipHorizontal = function(...args) 
           
@@ -793,7 +793,7 @@ RPoint.Ray = RPoint_Wrapper.Ray;
               return this.__PROXY__.flipHorizontal(...args);
             
         };
-    
+        
         // function 
         RPoint.prototype.flipVertical = function(...args) 
           
@@ -803,7 +803,7 @@ RPoint.Ray = RPoint_Wrapper.Ray;
               return this.__PROXY__.flipVertical(...args);
             
         };
-    
+        
         // function 
         RPoint.prototype.getTransformed = function(...args) 
           
@@ -813,7 +813,7 @@ RPoint.Ray = RPoint_Wrapper.Ray;
               return this.__PROXY__.getTransformed(...args);
             
         };
-    
+        
         // function 
         RPoint.prototype.print = function(...args) 
           
@@ -823,7 +823,7 @@ RPoint.Ray = RPoint_Wrapper.Ray;
               return this.__PROXY__.print(...args);
             
         };
-    
+        
         // function 
         RPoint.prototype.copy = function(...args) 
           
@@ -833,7 +833,7 @@ RPoint.Ray = RPoint_Wrapper.Ray;
               return this.__PROXY__.copy(...args);
             
         };
-    
+        
 
       // static functions:
       

@@ -164,7 +164,7 @@ RLineweight.WeightInvalid = RLineweight_Wrapper.WeightInvalid;
               return this.__PROXY__.getIcon(...args);
             
         };
-    
+        
         // function 
         RLineweight.prototype.getName = function(...args) 
           
@@ -174,7 +174,7 @@ RLineweight.WeightInvalid = RLineweight_Wrapper.WeightInvalid;
               return this.__PROXY__.getName(...args);
             
         };
-    
+        
         // function 
         RLineweight.prototype.getClosestMatch = function(...args) 
           
@@ -184,7 +184,7 @@ RLineweight.WeightInvalid = RLineweight_Wrapper.WeightInvalid;
               return this.__PROXY__.getClosestMatch(...args);
             
         };
-    
+        
         // function 
         RLineweight.prototype.init = function(...args) 
           
@@ -194,7 +194,7 @@ RLineweight.WeightInvalid = RLineweight_Wrapper.WeightInvalid;
               return this.__PROXY__.init(...args);
             
         };
-    
+        
 
       // static functions:
       

@@ -647,7 +647,7 @@ RS.OutInBounce = RS_Wrapper.OutInBounce;
               return this.__PROXY__.compare(...args);
             
         };
-    
+        
         // function 
         RS.prototype.getCpuCores = function(...args) 
           
@@ -657,7 +657,7 @@ RS.OutInBounce = RS_Wrapper.OutInBounce;
               return this.__PROXY__.getCpuCores(...args);
             
         };
-    
+        
         // function 
         RS.prototype.getIdealThreadCount = function(...args) 
           
@@ -667,7 +667,7 @@ RS.OutInBounce = RS_Wrapper.OutInBounce;
               return this.__PROXY__.getIdealThreadCount(...args);
             
         };
-    
+        
         // function 
         RS.prototype.getBuildCpuArchitecture = function(...args) 
           
@@ -677,7 +677,7 @@ RS.OutInBounce = RS_Wrapper.OutInBounce;
               return this.__PROXY__.getBuildCpuArchitecture(...args);
             
         };
-    
+        
         // function 
         RS.prototype.getHostId = function(...args) 
           
@@ -687,7 +687,7 @@ RS.OutInBounce = RS_Wrapper.OutInBounce;
               return this.__PROXY__.getHostId(...args);
             
         };
-    
+        
         // function 
         RS.prototype.getSystemId = function(...args) 
           
@@ -697,7 +697,7 @@ RS.OutInBounce = RS_Wrapper.OutInBounce;
               return this.__PROXY__.getSystemId(...args);
             
         };
-    
+        
         // function 
         RS.prototype.getWindowManagerId = function(...args) 
           
@@ -707,7 +707,7 @@ RS.OutInBounce = RS_Wrapper.OutInBounce;
               return this.__PROXY__.getWindowManagerId(...args);
             
         };
-    
+        
         // function 
         RS.prototype.showInFileManager = function(...args) 
           
@@ -717,7 +717,7 @@ RS.OutInBounce = RS_Wrapper.OutInBounce;
               return this.__PROXY__.showInFileManager(...args);
             
         };
-    
+        
         // function 
         RS.prototype.getDirectoryList = function(...args) 
           
@@ -727,7 +727,7 @@ RS.OutInBounce = RS_Wrapper.OutInBounce;
               return this.__PROXY__.getDirectoryList(...args);
             
         };
-    
+        
         // function 
         RS.prototype.getFileList = function(...args) 
           
@@ -737,7 +737,7 @@ RS.OutInBounce = RS_Wrapper.OutInBounce;
               return this.__PROXY__.getFileList(...args);
             
         };
-    
+        
         // function 
         RS.prototype.getFontList = function(...args) 
           
@@ -747,7 +747,7 @@ RS.OutInBounce = RS_Wrapper.OutInBounce;
               return this.__PROXY__.getFontList(...args);
             
         };
-    
+        
         // function 
         RS.prototype.getPatternList = function(...args) 
           
@@ -757,7 +757,7 @@ RS.OutInBounce = RS_Wrapper.OutInBounce;
               return this.__PROXY__.getPatternList(...args);
             
         };
-    
+        
         // function 
         RS.prototype.getLinetypeList = function(...args) 
           
@@ -767,7 +767,7 @@ RS.OutInBounce = RS_Wrapper.OutInBounce;
               return this.__PROXY__.getLinetypeList(...args);
             
         };
-    
+        
         // function 
         RS.prototype.sortAlphanumerical = function(...args) 
           
@@ -777,7 +777,7 @@ RS.OutInBounce = RS_Wrapper.OutInBounce;
               return this.__PROXY__.sortAlphanumerical(...args);
             
         };
-    
+        
         // function 
         RS.prototype.compareChunkify = function(...args) 
           
@@ -787,7 +787,7 @@ RS.OutInBounce = RS_Wrapper.OutInBounce;
               return this.__PROXY__.compareChunkify(...args);
             
         };
-    
+        
         // function 
         RS.prototype.compareAlphanumerical = function(...args) 
           
@@ -797,7 +797,7 @@ RS.OutInBounce = RS_Wrapper.OutInBounce;
               return this.__PROXY__.compareAlphanumerical(...args);
             
         };
-    
+        
         // function 
         RS.prototype.lessThanAlphanumerical = function(...args) 
           
@@ -807,7 +807,7 @@ RS.OutInBounce = RS_Wrapper.OutInBounce;
               return this.__PROXY__.lessThanAlphanumerical(...args);
             
         };
-    
+        
         // function 
         RS.prototype.getFontFamily = function(...args) 
           
@@ -817,7 +817,7 @@ RS.OutInBounce = RS_Wrapper.OutInBounce;
               return this.__PROXY__.getFontFamily(...args);
             
         };
-    
+        
         // function 
         RS.prototype.getPageSizeId = function(...args) 
           
@@ -827,7 +827,7 @@ RS.OutInBounce = RS_Wrapper.OutInBounce;
               return this.__PROXY__.getPageSizeId(...args);
             
         };
-    
+        
         // function 
         RS.prototype.getPageSize = function(...args) 
           
@@ -837,7 +837,7 @@ RS.OutInBounce = RS_Wrapper.OutInBounce;
               return this.__PROXY__.getPageSize(...args);
             
         };
-    
+        
         // function 
         RS.prototype.setUtf8Codec = function(...args) 
           
@@ -847,7 +847,7 @@ RS.OutInBounce = RS_Wrapper.OutInBounce;
               return this.__PROXY__.setUtf8Codec(...args);
             
         };
-    
+        
         // function 
         RS.prototype.escape = function(...args) 
           
@@ -857,7 +857,7 @@ RS.OutInBounce = RS_Wrapper.OutInBounce;
               return this.__PROXY__.escape(...args);
             
         };
-    
+        
         // function 
         RS.prototype.getScreenCount = function(...args) 
           
@@ -867,7 +867,7 @@ RS.OutInBounce = RS_Wrapper.OutInBounce;
               return this.__PROXY__.getScreenCount(...args);
             
         };
-    
+        
         // function 
         RS.prototype.getAvailableGeometry = function(...args) 
           
@@ -877,7 +877,7 @@ RS.OutInBounce = RS_Wrapper.OutInBounce;
               return this.__PROXY__.getAvailableGeometry(...args);
             
         };
-    
+        
         // function 
         RS.prototype.convert = function(...args) 
           
@@ -887,7 +887,7 @@ RS.OutInBounce = RS_Wrapper.OutInBounce;
               return this.__PROXY__.convert(...args);
             
         };
-    
+        
         // function 
         RS.prototype.getImageFilePath = function(...args) 
           
@@ -897,7 +897,7 @@ RS.OutInBounce = RS_Wrapper.OutInBounce;
               return this.__PROXY__.getImageFilePath(...args);
             
         };
-    
+        
 
       // static functions:
       

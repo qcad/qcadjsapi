@@ -164,7 +164,7 @@
               return this.__PROXY__.mustAlwaysClone(...args);
             
         };
-    
+        
         // function 
         RUcs.prototype.getDocument = function(...args) 
           
@@ -174,7 +174,7 @@
               return this.__PROXY__.getDocument(...args);
             
         };
-    
+        
         // function 
         RUcs.prototype.setDocument = function(...args) 
           
@@ -184,7 +184,7 @@
               return this.__PROXY__.setDocument(...args);
             
         };
-    
+        
         // function 
         RUcs.prototype.setFlag = function(...args) 
           
@@ -194,7 +194,7 @@
               return this.__PROXY__.setFlag(...args);
             
         };
-    
+        
         // function 
         RUcs.prototype.getFlag = function(...args) 
           
@@ -204,7 +204,7 @@
               return this.__PROXY__.getFlag(...args);
             
         };
-    
+        
         // function 
         RUcs.prototype.getId = function(...args) 
           
@@ -214,7 +214,7 @@
               return this.__PROXY__.getId(...args);
             
         };
-    
+        
         // function 
         RUcs.prototype.getHandle = function(...args) 
           
@@ -224,7 +224,7 @@
               return this.__PROXY__.getHandle(...args);
             
         };
-    
+        
         // function 
         RUcs.prototype.isProtected = function(...args) 
           
@@ -234,7 +234,7 @@
               return this.__PROXY__.isProtected(...args);
             
         };
-    
+        
         // function 
         RUcs.prototype.setProtected = function(...args) 
           
@@ -244,7 +244,7 @@
               return this.__PROXY__.setProtected(...args);
             
         };
-    
+        
         // function 
         RUcs.prototype.isInvisible = function(...args) 
           
@@ -254,7 +254,7 @@
               return this.__PROXY__.isInvisible(...args);
             
         };
-    
+        
         // function 
         RUcs.prototype.setInvisible = function(...args) 
           
@@ -264,7 +264,7 @@
               return this.__PROXY__.setInvisible(...args);
             
         };
-    
+        
         // function 
         RUcs.prototype.isSelected = function(...args) 
           
@@ -274,7 +274,7 @@
               return this.__PROXY__.isSelected(...args);
             
         };
-    
+        
         // function 
         RUcs.prototype.setSelected = function(...args) 
           
@@ -284,7 +284,7 @@
               return this.__PROXY__.setSelected(...args);
             
         };
-    
+        
         // function 
         RUcs.prototype.isUndone = function(...args) 
           
@@ -294,7 +294,7 @@
               return this.__PROXY__.isUndone(...args);
             
         };
-    
+        
         // function 
         RUcs.prototype.isWorkingSet = function(...args) 
           
@@ -304,7 +304,7 @@
               return this.__PROXY__.isWorkingSet(...args);
             
         };
-    
+        
         // function 
         RUcs.prototype.setWorkingSet = function(...args) 
           
@@ -314,7 +314,7 @@
               return this.__PROXY__.setWorkingSet(...args);
             
         };
-    
+        
         // function 
         RUcs.prototype.getPropertyTypeIds = function(...args) 
           
@@ -324,7 +324,7 @@
               return this.__PROXY__.getPropertyTypeIds(...args);
             
         };
-    
+        
         // function 
         RUcs.prototype.getCustomPropertyTypeIds = function(...args) 
           
@@ -334,7 +334,7 @@
               return this.__PROXY__.getCustomPropertyTypeIds(...args);
             
         };
-    
+        
         // function 
         RUcs.prototype.hasPropertyType = function(...args) 
           
@@ -344,7 +344,7 @@
               return this.__PROXY__.hasPropertyType(...args);
             
         };
-    
+        
         // function 
         RUcs.prototype.hasCustomProperties = function(...args) 
           
@@ -354,7 +354,7 @@
               return this.__PROXY__.hasCustomProperties(...args);
             
         };
-    
+        
         // function 
         RUcs.prototype.hasCustomProperty = function(...args) 
           
@@ -364,7 +364,7 @@
               return this.__PROXY__.hasCustomProperty(...args);
             
         };
-    
+        
         // function 
         RUcs.prototype.getCustomProperty = function(...args) 
           
@@ -374,7 +374,7 @@
               return this.__PROXY__.getCustomProperty(...args);
             
         };
-    
+        
         // function 
         RUcs.prototype.getCustomDoubleProperty = function(...args) 
           
@@ -384,7 +384,7 @@
               return this.__PROXY__.getCustomDoubleProperty(...args);
             
         };
-    
+        
         // function 
         RUcs.prototype.getCustomIntProperty = function(...args) 
           
@@ -394,7 +394,7 @@
               return this.__PROXY__.getCustomIntProperty(...args);
             
         };
-    
+        
         // function 
         RUcs.prototype.getCustomBoolProperty = function(...args) 
           
@@ -404,7 +404,7 @@
               return this.__PROXY__.getCustomBoolProperty(...args);
             
         };
-    
+        
         // function 
         RUcs.prototype.setCustomProperty = function(...args) 
           
@@ -414,7 +414,7 @@
               return this.__PROXY__.setCustomProperty(...args);
             
         };
-    
+        
         // function 
         RUcs.prototype.removeCustomProperty = function(...args) 
           
@@ -424,7 +424,7 @@
               return this.__PROXY__.removeCustomProperty(...args);
             
         };
-    
+        
         // function 
         RUcs.prototype.getCustomPropertyTitles = function(...args) 
           
@@ -434,7 +434,7 @@
               return this.__PROXY__.getCustomPropertyTitles(...args);
             
         };
-    
+        
         // function 
         RUcs.prototype.getCustomPropertyKeys = function(...args) 
           
@@ -444,7 +444,7 @@
               return this.__PROXY__.getCustomPropertyKeys(...args);
             
         };
-    
+        
         // function 
         RUcs.prototype.copyCustomPropertiesFrom = function(...args) 
           
@@ -454,7 +454,7 @@
               return this.__PROXY__.copyCustomPropertiesFrom(...args);
             
         };
-    
+        
         // function 
         RUcs.prototype.getComplexity = function(...args) 
           
@@ -464,7 +464,7 @@
               return this.__PROXY__.getComplexity(...args);
             
         };
-    
+        
         // function 
         RUcs.prototype.setAutoUpdatesBlocked = function(...args) 
           
@@ -474,7 +474,7 @@
               return this.__PROXY__.setAutoUpdatesBlocked(...args);
             
         };
-    
+        
         // function 
         RUcs.prototype.dump = function(...args) 
           
@@ -484,7 +484,7 @@
               return this.__PROXY__.dump(...args);
             
         };
-    
+        
         // function 
         RUcs.prototype.validate = function(...args) 
           
@@ -494,7 +494,7 @@
               return this.__PROXY__.validate(...args);
             
         };
-    
+        
         // function 
         RUcs.prototype.print = function(...args) 
           
@@ -504,7 +504,7 @@
               return this.__PROXY__.print(...args);
             
         };
-    
+        
         // function 
         RUcs.prototype.setUndone = function(...args) 
           
@@ -514,7 +514,7 @@
               return this.__PROXY__.setUndone(...args);
             
         };
-    
+        
         // function 
         RUcs.prototype.setId = function(...args) 
           
@@ -524,7 +524,7 @@
               return this.__PROXY__.setId(...args);
             
         };
-    
+        
         // function 
         RUcs.prototype.setHandle = function(...args) 
           
@@ -534,7 +534,7 @@
               return this.__PROXY__.setHandle(...args);
             
         };
-    
+        
         // function 
         RUcs.prototype.setMemberFlag = function(...args) 
           
@@ -544,7 +544,7 @@
               return this.__PROXY__.setMemberFlag(...args);
             
         };
-    
+        
         // function 
         RUcs.prototype.init = function(...args) 
           
@@ -554,7 +554,7 @@
               return this.__PROXY__.init(...args);
             
         };
-    
+        
         // function 
         RUcs.prototype.getRtti = function(...args) 
           
@@ -564,7 +564,7 @@
               return this.__PROXY__.getRtti(...args);
             
         };
-    
+        
         // function 
         RUcs.prototype.getType = function(...args) 
           
@@ -574,7 +574,7 @@
               return this.__PROXY__.getType(...args);
             
         };
-    
+        
         // function 
         RUcs.prototype.clone = function(...args) 
           
@@ -584,7 +584,7 @@
               return this.__PROXY__.clone(...args);
             
         };
-    
+        
         // function 
         RUcs.prototype.getProperty = function(...args) 
           
@@ -594,7 +594,7 @@
               return this.__PROXY__.getProperty(...args);
             
         };
-    
+        
         // function 
         RUcs.prototype.setProperty = function(...args) 
           
@@ -604,7 +604,7 @@
               return this.__PROXY__.setProperty(...args);
             
         };
-    
+        
         // function 
         RUcs.prototype.setOrigin = function(...args) 
           
@@ -614,7 +614,7 @@
               return this.__PROXY__.setOrigin(...args);
             
         };
-    
+        
         // function 
         RUcs.prototype.setXAxisDirection = function(...args) 
           
@@ -624,7 +624,7 @@
               return this.__PROXY__.setXAxisDirection(...args);
             
         };
-    
+        
         // function 
         RUcs.prototype.setYAxisDirection = function(...args) 
           
@@ -634,7 +634,7 @@
               return this.__PROXY__.setYAxisDirection(...args);
             
         };
-    
+        
         // function 
         RUcs.prototype.getZAxisDirection = function(...args) 
           
@@ -644,7 +644,7 @@
               return this.__PROXY__.getZAxisDirection(...args);
             
         };
-    
+        
         // function 
         RUcs.prototype.mapFromUcs = function(...args) 
           
@@ -654,7 +654,7 @@
               return this.__PROXY__.mapFromUcs(...args);
             
         };
-    
+        
         // function 
         RUcs.prototype.mapToUcs = function(...args) 
           
@@ -664,7 +664,7 @@
               return this.__PROXY__.mapToUcs(...args);
             
         };
-    
+        
 
       // static functions:
       

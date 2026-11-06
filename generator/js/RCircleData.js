@@ -194,7 +194,7 @@
               return this.__PROXY__.getDocument(...args);
             
         };
-    
+        
         // function 
         RCircleData.prototype.setDocument = function(...args) 
           
@@ -204,7 +204,7 @@
               return this.__PROXY__.setDocument(...args);
             
         };
-    
+        
         // function 
         RCircleData.prototype.isPointType = function(...args) 
           
@@ -214,7 +214,7 @@
               return this.__PROXY__.isPointType(...args);
             
         };
-    
+        
         // function 
         RCircleData.prototype.isSane = function(...args) 
           
@@ -224,7 +224,7 @@
               return this.__PROXY__.isSane(...args);
             
         };
-    
+        
         // function 
         RCircleData.prototype.getClosestSubEntityId = function(...args) 
           
@@ -234,7 +234,7 @@
               return this.__PROXY__.getClosestSubEntityId(...args);
             
         };
-    
+        
         // function 
         RCircleData.prototype.getClosestShape = function(...args) 
           
@@ -244,7 +244,7 @@
               return this.__PROXY__.getClosestShape(...args);
             
         };
-    
+        
         // function 
         RCircleData.prototype.copyAttributesFrom = function(...args) 
           
@@ -254,7 +254,7 @@
               return this.__PROXY__.copyAttributesFrom(...args);
             
         };
-    
+        
         // function 
         RCircleData.prototype.getBoundingBoxes = function(...args) 
           
@@ -264,7 +264,7 @@
               return this.__PROXY__.getBoundingBoxes(...args);
             
         };
-    
+        
         // function 
         RCircleData.prototype.getHull = function(...args) 
           
@@ -274,7 +274,7 @@
               return this.__PROXY__.getHull(...args);
             
         };
-    
+        
         // function 
         RCircleData.prototype.isUpdatesEnabled = function(...args) 
           
@@ -284,7 +284,7 @@
               return this.__PROXY__.isUpdatesEnabled(...args);
             
         };
-    
+        
         // function 
         RCircleData.prototype.setUpdatesEnabled = function(...args) 
           
@@ -294,7 +294,7 @@
               return this.__PROXY__.setUpdatesEnabled(...args);
             
         };
-    
+        
         // function 
         RCircleData.prototype.cloneOnChange = function(...args) 
           
@@ -304,7 +304,7 @@
               return this.__PROXY__.cloneOnChange(...args);
             
         };
-    
+        
         // function 
         RCircleData.prototype.isSelected = function(...args) 
           
@@ -314,7 +314,7 @@
               return this.__PROXY__.isSelected(...args);
             
         };
-    
+        
         // function 
         RCircleData.prototype.setSelected = function(...args) 
           
@@ -324,7 +324,7 @@
               return this.__PROXY__.setSelected(...args);
             
         };
-    
+        
         // function 
         RCircleData.prototype.isSelectedWorkingSet = function(...args) 
           
@@ -334,7 +334,7 @@
               return this.__PROXY__.isSelectedWorkingSet(...args);
             
         };
-    
+        
         // function 
         RCircleData.prototype.setSelectedWorkingSet = function(...args) 
           
@@ -344,7 +344,7 @@
               return this.__PROXY__.setSelectedWorkingSet(...args);
             
         };
-    
+        
         // function 
         RCircleData.prototype.getDrawOrder = function(...args) 
           
@@ -354,7 +354,7 @@
               return this.__PROXY__.getDrawOrder(...args);
             
         };
-    
+        
         // function 
         RCircleData.prototype.setDrawOrder = function(...args) 
           
@@ -364,7 +364,7 @@
               return this.__PROXY__.setDrawOrder(...args);
             
         };
-    
+        
         // function 
         RCircleData.prototype.setLayerId = function(...args) 
           
@@ -374,7 +374,7 @@
               return this.__PROXY__.setLayerId(...args);
             
         };
-    
+        
         // function 
         RCircleData.prototype.getLayerId = function(...args) 
           
@@ -384,7 +384,7 @@
               return this.__PROXY__.getLayerId(...args);
             
         };
-    
+        
         // function 
         RCircleData.prototype.setLayerName = function(...args) 
           
@@ -394,7 +394,7 @@
               return this.__PROXY__.setLayerName(...args);
             
         };
-    
+        
         // function 
         RCircleData.prototype.getLayerName = function(...args) 
           
@@ -404,7 +404,7 @@
               return this.__PROXY__.getLayerName(...args);
             
         };
-    
+        
         // function 
         RCircleData.prototype.setBlockId = function(...args) 
           
@@ -414,7 +414,7 @@
               return this.__PROXY__.setBlockId(...args);
             
         };
-    
+        
         // function 
         RCircleData.prototype.getBlockId = function(...args) 
           
@@ -424,7 +424,7 @@
               return this.__PROXY__.getBlockId(...args);
             
         };
-    
+        
         // function 
         RCircleData.prototype.setParentId = function(...args) 
           
@@ -434,7 +434,7 @@
               return this.__PROXY__.setParentId(...args);
             
         };
-    
+        
         // function 
         RCircleData.prototype.getParentId = function(...args) 
           
@@ -444,7 +444,7 @@
               return this.__PROXY__.getParentId(...args);
             
         };
-    
+        
         // function 
         RCircleData.prototype.getBlockName = function(...args) 
           
@@ -454,7 +454,7 @@
               return this.__PROXY__.getBlockName(...args);
             
         };
-    
+        
         // function 
         RCircleData.prototype.setLinetypeId = function(...args) 
           
@@ -464,7 +464,7 @@
               return this.__PROXY__.setLinetypeId(...args);
             
         };
-    
+        
         // function 
         RCircleData.prototype.getLinetypeId = function(...args) 
           
@@ -474,7 +474,7 @@
               return this.__PROXY__.getLinetypeId(...args);
             
         };
-    
+        
         // function 
         RCircleData.prototype.setLinetypePattern = function(...args) 
           
@@ -484,7 +484,7 @@
               return this.__PROXY__.setLinetypePattern(...args);
             
         };
-    
+        
         // function 
         RCircleData.prototype.getLinetypePattern = function(...args) 
           
@@ -494,7 +494,7 @@
               return this.__PROXY__.getLinetypePattern(...args);
             
         };
-    
+        
         // function 
         RCircleData.prototype.setLinetypeScale = function(...args) 
           
@@ -504,7 +504,7 @@
               return this.__PROXY__.setLinetypeScale(...args);
             
         };
-    
+        
         // function 
         RCircleData.prototype.getLinetypeScale = function(...args) 
           
@@ -514,7 +514,7 @@
               return this.__PROXY__.getLinetypeScale(...args);
             
         };
-    
+        
         // function 
         RCircleData.prototype.getLineweight = function(...args) 
           
@@ -524,7 +524,7 @@
               return this.__PROXY__.getLineweight(...args);
             
         };
-    
+        
         // function 
         RCircleData.prototype.setLineweight = function(...args) 
           
@@ -534,7 +534,7 @@
               return this.__PROXY__.setLineweight(...args);
             
         };
-    
+        
         // function 
         RCircleData.prototype.setColor = function(...args) 
           
@@ -544,7 +544,7 @@
               return this.__PROXY__.setColor(...args);
             
         };
-    
+        
         // function 
         RCircleData.prototype.getColor = function(...args) 
           
@@ -554,7 +554,7 @@
               return this.__PROXY__.getColor(...args);
             
         };
-    
+        
         // function 
         RCircleData.prototype.getDisplayColor = function(...args) 
           
@@ -564,7 +564,7 @@
               return this.__PROXY__.getDisplayColor(...args);
             
         };
-    
+        
         // function 
         RCircleData.prototype.getInternalReferencePoints = function(...args) 
           
@@ -574,7 +574,7 @@
               return this.__PROXY__.getInternalReferencePoints(...args);
             
         };
-    
+        
         // function 
         RCircleData.prototype.getPointOnEntity = function(...args) 
           
@@ -584,7 +584,7 @@
               return this.__PROXY__.getPointOnEntity(...args);
             
         };
-    
+        
         // function 
         RCircleData.prototype.getClosestPointOnEntity = function(...args) 
           
@@ -594,7 +594,7 @@
               return this.__PROXY__.getClosestPointOnEntity(...args);
             
         };
-    
+        
         // function 
         RCircleData.prototype.isInside = function(...args) 
           
@@ -604,7 +604,7 @@
               return this.__PROXY__.isInside(...args);
             
         };
-    
+        
         // function 
         RCircleData.prototype.isOnEntity = function(...args) 
           
@@ -614,7 +614,7 @@
               return this.__PROXY__.isOnEntity(...args);
             
         };
-    
+        
         // function 
         RCircleData.prototype.clickReferencePoint = function(...args) 
           
@@ -624,7 +624,7 @@
               return this.__PROXY__.clickReferencePoint(...args);
             
         };
-    
+        
         // function 
         RCircleData.prototype.scaleVisualProperties = function(...args) 
           
@@ -634,7 +634,7 @@
               return this.__PROXY__.scaleVisualProperties(...args);
             
         };
-    
+        
         // function 
         RCircleData.prototype.update = function(...args) 
           
@@ -644,7 +644,7 @@
               return this.__PROXY__.update(...args);
             
         };
-    
+        
         // function 
         RCircleData.prototype.setAutoUpdatesBlocked = function(...args) 
           
@@ -654,7 +654,7 @@
               return this.__PROXY__.setAutoUpdatesBlocked(...args);
             
         };
-    
+        
         // function 
         RCircleData.prototype.getShapeType = function(...args) 
           
@@ -664,7 +664,7 @@
               return this.__PROXY__.getShapeType(...args);
             
         };
-    
+        
         // function 
         RCircleData.prototype.clone = function(...args) 
           
@@ -674,7 +674,7 @@
               return this.__PROXY__.clone(...args);
             
         };
-    
+        
         // function 
         RCircleData.prototype.toArc = function(...args) 
           
@@ -684,7 +684,7 @@
               return this.__PROXY__.toArc(...args);
             
         };
-    
+        
         // function 
         RCircleData.prototype.getVectorProperties = function(...args) 
           
@@ -694,7 +694,7 @@
               return this.__PROXY__.getVectorProperties(...args);
             
         };
-    
+        
         // function 
         RCircleData.prototype.getDoubleProperties = function(...args) 
           
@@ -704,7 +704,7 @@
               return this.__PROXY__.getDoubleProperties(...args);
             
         };
-    
+        
         // function 
         RCircleData.prototype.getLength = function(...args) 
           
@@ -714,7 +714,7 @@
               return this.__PROXY__.getLength(...args);
             
         };
-    
+        
         // function 
         RCircleData.prototype.getPointCloud = function(...args) 
           
@@ -724,7 +724,7 @@
               return this.__PROXY__.getPointCloud(...args);
             
         };
-    
+        
         // function 
         RCircleData.prototype.getAngleAt = function(...args) 
           
@@ -734,7 +734,7 @@
               return this.__PROXY__.getAngleAt(...args);
             
         };
-    
+        
         // function 
         RCircleData.prototype.getPointAtAngle = function(...args) 
           
@@ -744,7 +744,7 @@
               return this.__PROXY__.getPointAtAngle(...args);
             
         };
-    
+        
         // function 
         RCircleData.prototype.setCenter = function(...args) 
           
@@ -754,7 +754,7 @@
               return this.__PROXY__.setCenter(...args);
             
         };
-    
+        
         // function 
         RCircleData.prototype.setRadius = function(...args) 
           
@@ -764,7 +764,7 @@
               return this.__PROXY__.setRadius(...args);
             
         };
-    
+        
         // function 
         RCircleData.prototype.getDiameter = function(...args) 
           
@@ -774,7 +774,7 @@
               return this.__PROXY__.getDiameter(...args);
             
         };
-    
+        
         // function 
         RCircleData.prototype.setDiameter = function(...args) 
           
@@ -784,7 +784,7 @@
               return this.__PROXY__.setDiameter(...args);
             
         };
-    
+        
         // function 
         RCircleData.prototype.getCircumference = function(...args) 
           
@@ -794,7 +794,7 @@
               return this.__PROXY__.getCircumference(...args);
             
         };
-    
+        
         // function 
         RCircleData.prototype.setCircumference = function(...args) 
           
@@ -804,7 +804,7 @@
               return this.__PROXY__.setCircumference(...args);
             
         };
-    
+        
         // function 
         RCircleData.prototype.getArea = function(...args) 
           
@@ -814,7 +814,7 @@
               return this.__PROXY__.getArea(...args);
             
         };
-    
+        
         // function 
         RCircleData.prototype.setArea = function(...args) 
           
@@ -824,7 +824,7 @@
               return this.__PROXY__.setArea(...args);
             
         };
-    
+        
         // function 
         RCircleData.prototype.contains = function(...args) 
           
@@ -834,7 +834,7 @@
               return this.__PROXY__.contains(...args);
             
         };
-    
+        
         // function 
         RCircleData.prototype.getTransformed = function(...args) 
           
@@ -844,7 +844,7 @@
               return this.__PROXY__.getTransformed(...args);
             
         };
-    
+        
         // function 
         RCircleData.prototype.getTangents = function(...args) 
           
@@ -854,7 +854,7 @@
               return this.__PROXY__.getTangents(...args);
             
         };
-    
+        
         // function 
         RCircleData.prototype.getOffsetShapes = function(...args) 
           
@@ -864,7 +864,7 @@
               return this.__PROXY__.getOffsetShapes(...args);
             
         };
-    
+        
         // function 
         RCircleData.prototype.splitAt = function(...args) 
           
@@ -874,7 +874,7 @@
               return this.__PROXY__.splitAt(...args);
             
         };
-    
+        
         // function 
         RCircleData.prototype.print = function(...args) 
           
@@ -884,7 +884,7 @@
               return this.__PROXY__.print(...args);
             
         };
-    
+        
         // function 
         RCircleData.prototype.copy = function(...args) 
           
@@ -894,7 +894,7 @@
               return this.__PROXY__.copy(...args);
             
         };
-    
+        
         // function 
         RCircleData.prototype.getType = function(...args) 
           
@@ -904,7 +904,7 @@
               return this.__PROXY__.getType(...args);
             
         };
-    
+        
         // function 
         RCircleData.prototype.getCircle = function(...args) 
           
@@ -914,7 +914,7 @@
               return this.__PROXY__.getCircle(...args);
             
         };
-    
+        
         // function 
         RCircleData.prototype.isValid = function(...args) 
           
@@ -924,7 +924,7 @@
               return this.__PROXY__.isValid(...args);
             
         };
-    
+        
         // function 
         RCircleData.prototype.getEndPoints = function(...args) 
           
@@ -934,7 +934,7 @@
               return this.__PROXY__.getEndPoints(...args);
             
         };
-    
+        
         // function 
         RCircleData.prototype.setZ = function(...args) 
           
@@ -944,7 +944,7 @@
               return this.__PROXY__.setZ(...args);
             
         };
-    
+        
         // function 
         RCircleData.prototype.to2D = function(...args) 
           
@@ -954,7 +954,7 @@
               return this.__PROXY__.to2D(...args);
             
         };
-    
+        
         // function 
         RCircleData.prototype.getBoundingBox = function(...args) 
           
@@ -964,7 +964,7 @@
               return this.__PROXY__.getBoundingBox(...args);
             
         };
-    
+        
         // function 
         RCircleData.prototype.getMiddlePoints = function(...args) 
           
@@ -974,7 +974,7 @@
               return this.__PROXY__.getMiddlePoints(...args);
             
         };
-    
+        
         // function 
         RCircleData.prototype.getCenterPoints = function(...args) 
           
@@ -984,7 +984,7 @@
               return this.__PROXY__.getCenterPoints(...args);
             
         };
-    
+        
         // function 
         RCircleData.prototype.getArcReferencePoints = function(...args) 
           
@@ -994,7 +994,7 @@
               return this.__PROXY__.getArcReferencePoints(...args);
             
         };
-    
+        
         // function 
         RCircleData.prototype.getPointsWithDistanceToEnd = function(...args) 
           
@@ -1004,7 +1004,7 @@
               return this.__PROXY__.getPointsWithDistanceToEnd(...args);
             
         };
-    
+        
         // function 
         RCircleData.prototype.getIntersectionPoints = function(...args) 
           
@@ -1014,7 +1014,7 @@
               return this.__PROXY__.getIntersectionPoints(...args);
             
         };
-    
+        
         // function 
         RCircleData.prototype.getVectorTo = function(...args) 
           
@@ -1024,7 +1024,7 @@
               return this.__PROXY__.getVectorTo(...args);
             
         };
-    
+        
         // function 
         RCircleData.prototype.getDistanceTo = function(...args) 
           
@@ -1034,7 +1034,7 @@
               return this.__PROXY__.getDistanceTo(...args);
             
         };
-    
+        
         // function 
         RCircleData.prototype.intersectsWith = function(...args) 
           
@@ -1044,7 +1044,7 @@
               return this.__PROXY__.intersectsWith(...args);
             
         };
-    
+        
         // function 
         RCircleData.prototype.move = function(...args) 
           
@@ -1054,7 +1054,7 @@
               return this.__PROXY__.move(...args);
             
         };
-    
+        
         // function 
         RCircleData.prototype.rotate = function(...args) 
           
@@ -1064,7 +1064,7 @@
               return this.__PROXY__.rotate(...args);
             
         };
-    
+        
         // function 
         RCircleData.prototype.scale = function(...args) 
           
@@ -1074,7 +1074,7 @@
               return this.__PROXY__.scale(...args);
             
         };
-    
+        
         // function 
         RCircleData.prototype.mirror = function(...args) 
           
@@ -1084,7 +1084,7 @@
               return this.__PROXY__.mirror(...args);
             
         };
-    
+        
         // function 
         RCircleData.prototype.flipHorizontal = function(...args) 
           
@@ -1094,7 +1094,7 @@
               return this.__PROXY__.flipHorizontal(...args);
             
         };
-    
+        
         // function 
         RCircleData.prototype.flipVertical = function(...args) 
           
@@ -1104,7 +1104,7 @@
               return this.__PROXY__.flipVertical(...args);
             
         };
-    
+        
         // function 
         RCircleData.prototype.stretch = function(...args) 
           
@@ -1114,7 +1114,7 @@
               return this.__PROXY__.stretch(...args);
             
         };
-    
+        
         // function 
         RCircleData.prototype.getCenter = function(...args) 
           
@@ -1124,7 +1124,7 @@
               return this.__PROXY__.getCenter(...args);
             
         };
-    
+        
         // function 
         RCircleData.prototype.getRadius = function(...args) 
           
@@ -1134,7 +1134,7 @@
               return this.__PROXY__.getRadius(...args);
             
         };
-    
+        
         // function 
         RCircleData.prototype.getReferencePoints = function(...args) 
           
@@ -1144,7 +1144,7 @@
               return this.__PROXY__.getReferencePoints(...args);
             
         };
-    
+        
         // function 
         RCircleData.prototype.moveReferencePoint = function(...args) 
           
@@ -1154,7 +1154,7 @@
               return this.__PROXY__.moveReferencePoint(...args);
             
         };
-    
+        
         // function 
         RCircleData.prototype.castToShape = function(...args) 
           
@@ -1164,7 +1164,7 @@
               return this.__PROXY__.castToShape(...args);
             
         };
-    
+        
         // function 
         RCircleData.prototype.getShapes = function(...args) 
           
@@ -1174,7 +1174,7 @@
               return this.__PROXY__.getShapes(...args);
             
         };
-    
+        
 
       // static functions:
       

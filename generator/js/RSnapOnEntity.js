@@ -223,7 +223,7 @@ RSnapOnEntity.CoordinatePolar = RSnapOnEntity_Wrapper.CoordinatePolar;
               return this.__PROXY__.suspendEvent(...args);
             
         };
-    
+        
         // function 
         RSnapOnEntity.prototype.finishEvent = function(...args) 
           
@@ -233,7 +233,7 @@ RSnapOnEntity.CoordinatePolar = RSnapOnEntity_Wrapper.CoordinatePolar;
               return this.__PROXY__.finishEvent(...args);
             
         };
-    
+        
         // function 
         RSnapOnEntity.prototype.getEntityIds = function(...args) 
           
@@ -243,7 +243,7 @@ RSnapOnEntity.CoordinatePolar = RSnapOnEntity_Wrapper.CoordinatePolar;
               return this.__PROXY__.getEntityIds(...args);
             
         };
-    
+        
         // function 
         RSnapOnEntity.prototype.getStatus = function(...args) 
           
@@ -253,7 +253,7 @@ RSnapOnEntity.CoordinatePolar = RSnapOnEntity_Wrapper.CoordinatePolar;
               return this.__PROXY__.getStatus(...args);
             
         };
-    
+        
         // function 
         RSnapOnEntity.prototype.setStatus = function(...args) 
           
@@ -263,7 +263,7 @@ RSnapOnEntity.CoordinatePolar = RSnapOnEntity_Wrapper.CoordinatePolar;
               return this.__PROXY__.setStatus(...args);
             
         };
-    
+        
         // function 
         RSnapOnEntity.prototype.getLastSnap = function(...args) 
           
@@ -273,7 +273,7 @@ RSnapOnEntity.CoordinatePolar = RSnapOnEntity_Wrapper.CoordinatePolar;
               return this.__PROXY__.getLastSnap(...args);
             
         };
-    
+        
         // function 
         RSnapOnEntity.prototype.setLastSnap = function(...args) 
           
@@ -283,7 +283,7 @@ RSnapOnEntity.CoordinatePolar = RSnapOnEntity_Wrapper.CoordinatePolar;
               return this.__PROXY__.setLastSnap(...args);
             
         };
-    
+        
         // function 
         RSnapOnEntity.prototype.reset = function(...args) 
           
@@ -293,7 +293,7 @@ RSnapOnEntity.CoordinatePolar = RSnapOnEntity_Wrapper.CoordinatePolar;
               return this.__PROXY__.reset(...args);
             
         };
-    
+        
         // function 
         RSnapOnEntity.prototype.snap = function(...args) 
           
@@ -303,7 +303,7 @@ RSnapOnEntity.CoordinatePolar = RSnapOnEntity_Wrapper.CoordinatePolar;
               return this.__PROXY__.snap(...args);
             
         };
-    
+        
 
       // static functions:
       RSnapOnEntity.prototype.isNullWrapper = function() {

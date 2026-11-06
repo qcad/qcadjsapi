@@ -143,7 +143,7 @@
               return this.__PROXY__.setObjectName(...args);
             
         };
-    
+        
         // function 
         RLayerListenerAdapter.prototype.isWidgetType = function(...args) 
           
@@ -153,7 +153,7 @@
               return this.__PROXY__.isWidgetType(...args);
             
         };
-    
+        
         // function 
         RLayerListenerAdapter.prototype.isWindowType = function(...args) 
           
@@ -163,7 +163,7 @@
               return this.__PROXY__.isWindowType(...args);
             
         };
-    
+        
         // function 
         RLayerListenerAdapter.prototype.signalsBlocked = function(...args) 
           
@@ -173,7 +173,7 @@
               return this.__PROXY__.signalsBlocked(...args);
             
         };
-    
+        
         // function 
         RLayerListenerAdapter.prototype.blockSignals = function(...args) 
           
@@ -183,7 +183,7 @@
               return this.__PROXY__.blockSignals(...args);
             
         };
-    
+        
         // function 
         RLayerListenerAdapter.prototype.findChild = function(...args) 
           
@@ -193,7 +193,7 @@
               return this.__PROXY__.findChild(...args);
             
         };
-    
+        
         // function 
         RLayerListenerAdapter.prototype.children = function(...args) 
           
@@ -203,7 +203,7 @@
               return this.__PROXY__.children(...args);
             
         };
-    
+        
         // function 
         RLayerListenerAdapter.prototype.setParent = function(...args) 
           
@@ -213,7 +213,7 @@
               return this.__PROXY__.setParent(...args);
             
         };
-    
+        
         // function 
         RLayerListenerAdapter.prototype.installEventFilter = function(...args) 
           
@@ -223,7 +223,7 @@
               return this.__PROXY__.installEventFilter(...args);
             
         };
-    
+        
         // function 
         RLayerListenerAdapter.prototype.removeEventFilter = function(...args) 
           
@@ -233,7 +233,7 @@
               return this.__PROXY__.removeEventFilter(...args);
             
         };
-    
+        
         // function 
         RLayerListenerAdapter.prototype.dumpObjectTree = function(...args) 
           
@@ -243,7 +243,7 @@
               return this.__PROXY__.dumpObjectTree(...args);
             
         };
-    
+        
         // function 
         RLayerListenerAdapter.prototype.dumpObjectInfo = function(...args) 
           
@@ -253,7 +253,7 @@
               return this.__PROXY__.dumpObjectInfo(...args);
             
         };
-    
+        
         // function 
         RLayerListenerAdapter.prototype.setProperty = function(...args) 
           
@@ -263,7 +263,7 @@
               return this.__PROXY__.setProperty(...args);
             
         };
-    
+        
         // function 
         RLayerListenerAdapter.prototype.property = function(...args) 
           
@@ -273,7 +273,7 @@
               return this.__PROXY__.property(...args);
             
         };
-    
+        
         // function 
         RLayerListenerAdapter.prototype.dynamicPropertyNames = function(...args) 
           
@@ -283,7 +283,7 @@
               return this.__PROXY__.dynamicPropertyNames(...args);
             
         };
-    
+        
         // function 
         RLayerListenerAdapter.prototype.parent = function(...args) 
           
@@ -293,7 +293,7 @@
               return this.__PROXY__.parent(...args);
             
         };
-    
+        
         // function 
         RLayerListenerAdapter.prototype.deleteLater = function(...args) 
           
@@ -303,7 +303,7 @@
               return this.__PROXY__.deleteLater(...args);
             
         };
-    
+        
         // function 
         RLayerListenerAdapter.prototype.updateLayers = function(...args) 
           
@@ -313,7 +313,7 @@
               return this.__PROXY__.updateLayers(...args);
             
         };
-    
+        
         // function 
         RLayerListenerAdapter.prototype.setCurrentLayer = function(...args) 
           
@@ -323,7 +323,7 @@
               return this.__PROXY__.setCurrentLayer(...args);
             
         };
-    
+        
         // function 
         RLayerListenerAdapter.prototype.clearLayers = function(...args) 
           
@@ -333,7 +333,7 @@
               return this.__PROXY__.clearLayers(...args);
             
         };
-    
+        
 
       // static functions:
       

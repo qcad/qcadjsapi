@@ -113,7 +113,7 @@
               return this.__PROXY__.mustAlwaysClone(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.getDocument = function(...args) 
           
@@ -123,7 +123,7 @@
               return this.__PROXY__.getDocument(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.setFlag = function(...args) 
           
@@ -133,7 +133,7 @@
               return this.__PROXY__.setFlag(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.getFlag = function(...args) 
           
@@ -143,7 +143,7 @@
               return this.__PROXY__.getFlag(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.getId = function(...args) 
           
@@ -153,7 +153,7 @@
               return this.__PROXY__.getId(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.getHandle = function(...args) 
           
@@ -163,7 +163,7 @@
               return this.__PROXY__.getHandle(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.isProtected = function(...args) 
           
@@ -173,7 +173,7 @@
               return this.__PROXY__.isProtected(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.setProtected = function(...args) 
           
@@ -183,7 +183,7 @@
               return this.__PROXY__.setProtected(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.isInvisible = function(...args) 
           
@@ -193,7 +193,7 @@
               return this.__PROXY__.isInvisible(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.setInvisible = function(...args) 
           
@@ -203,7 +203,7 @@
               return this.__PROXY__.setInvisible(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.isUndone = function(...args) 
           
@@ -213,7 +213,7 @@
               return this.__PROXY__.isUndone(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.isWorkingSet = function(...args) 
           
@@ -223,7 +223,7 @@
               return this.__PROXY__.isWorkingSet(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.setWorkingSet = function(...args) 
           
@@ -233,7 +233,7 @@
               return this.__PROXY__.setWorkingSet(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.getPropertyTypeIds = function(...args) 
           
@@ -243,7 +243,7 @@
               return this.__PROXY__.getPropertyTypeIds(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.getCustomPropertyTypeIds = function(...args) 
           
@@ -253,7 +253,7 @@
               return this.__PROXY__.getCustomPropertyTypeIds(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.hasPropertyType = function(...args) 
           
@@ -263,7 +263,7 @@
               return this.__PROXY__.hasPropertyType(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.hasCustomProperties = function(...args) 
           
@@ -273,7 +273,7 @@
               return this.__PROXY__.hasCustomProperties(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.hasCustomProperty = function(...args) 
           
@@ -283,7 +283,7 @@
               return this.__PROXY__.hasCustomProperty(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.getCustomProperty = function(...args) 
           
@@ -293,7 +293,7 @@
               return this.__PROXY__.getCustomProperty(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.getCustomDoubleProperty = function(...args) 
           
@@ -303,7 +303,7 @@
               return this.__PROXY__.getCustomDoubleProperty(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.getCustomIntProperty = function(...args) 
           
@@ -313,7 +313,7 @@
               return this.__PROXY__.getCustomIntProperty(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.getCustomBoolProperty = function(...args) 
           
@@ -323,7 +323,7 @@
               return this.__PROXY__.getCustomBoolProperty(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.setCustomProperty = function(...args) 
           
@@ -333,7 +333,7 @@
               return this.__PROXY__.setCustomProperty(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.removeCustomProperty = function(...args) 
           
@@ -343,7 +343,7 @@
               return this.__PROXY__.removeCustomProperty(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.getCustomPropertyTitles = function(...args) 
           
@@ -353,7 +353,7 @@
               return this.__PROXY__.getCustomPropertyTitles(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.getCustomPropertyKeys = function(...args) 
           
@@ -363,7 +363,7 @@
               return this.__PROXY__.getCustomPropertyKeys(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.copyCustomPropertiesFrom = function(...args) 
           
@@ -373,7 +373,7 @@
               return this.__PROXY__.copyCustomPropertiesFrom(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.dump = function(...args) 
           
@@ -383,7 +383,7 @@
               return this.__PROXY__.dump(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.validate = function(...args) 
           
@@ -393,7 +393,7 @@
               return this.__PROXY__.validate(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.setUndone = function(...args) 
           
@@ -403,7 +403,7 @@
               return this.__PROXY__.setUndone(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.setId = function(...args) 
           
@@ -413,7 +413,7 @@
               return this.__PROXY__.setId(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.setHandle = function(...args) 
           
@@ -423,7 +423,7 @@
               return this.__PROXY__.setHandle(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.setMemberFlag = function(...args) 
           
@@ -433,7 +433,7 @@
               return this.__PROXY__.setMemberFlag(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.setDocument = function(...args) 
           
@@ -443,7 +443,7 @@
               return this.__PROXY__.setDocument(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.clone = function(...args) 
           
@@ -453,7 +453,7 @@
               return this.__PROXY__.clone(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.getType = function(...args) 
           
@@ -463,7 +463,7 @@
               return this.__PROXY__.getType(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.isPointType = function(...args) 
           
@@ -473,7 +473,7 @@
               return this.__PROXY__.isPointType(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.isValid = function(...args) 
           
@@ -483,7 +483,7 @@
               return this.__PROXY__.isValid(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.isSane = function(...args) 
           
@@ -493,7 +493,7 @@
               return this.__PROXY__.isSane(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.isSelected = function(...args) 
           
@@ -503,7 +503,7 @@
               return this.__PROXY__.isSelected(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.setSelected = function(...args) 
           
@@ -513,7 +513,7 @@
               return this.__PROXY__.setSelected(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.isSelectedWorkingSet = function(...args) 
           
@@ -523,7 +523,7 @@
               return this.__PROXY__.isSelectedWorkingSet(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.setSelectedWorkingSet = function(...args) 
           
@@ -533,7 +533,7 @@
               return this.__PROXY__.setSelectedWorkingSet(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.isSelectable = function(...args) 
           
@@ -543,7 +543,7 @@
               return this.__PROXY__.isSelectable(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.isUpdatesEnabled = function(...args) 
           
@@ -553,7 +553,7 @@
               return this.__PROXY__.isUpdatesEnabled(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.setUpdatesEnabled = function(...args) 
           
@@ -563,7 +563,7 @@
               return this.__PROXY__.setUpdatesEnabled(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.cloneOnChange = function(...args) 
           
@@ -573,7 +573,7 @@
               return this.__PROXY__.cloneOnChange(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.setDrawOrder = function(...args) 
           
@@ -583,7 +583,7 @@
               return this.__PROXY__.setDrawOrder(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.getDrawOrder = function(...args) 
           
@@ -593,7 +593,7 @@
               return this.__PROXY__.getDrawOrder(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.setLayerId = function(...args) 
           
@@ -603,7 +603,7 @@
               return this.__PROXY__.setLayerId(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.setLayerName = function(...args) 
           
@@ -613,7 +613,7 @@
               return this.__PROXY__.setLayerName(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.getLayerId = function(...args) 
           
@@ -623,7 +623,7 @@
               return this.__PROXY__.getLayerId(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.getLayerName = function(...args) 
           
@@ -633,7 +633,7 @@
               return this.__PROXY__.getLayerName(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.setBlockId = function(...args) 
           
@@ -643,7 +643,7 @@
               return this.__PROXY__.setBlockId(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.getBlockId = function(...args) 
           
@@ -653,7 +653,7 @@
               return this.__PROXY__.getBlockId(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.getBlockName = function(...args) 
           
@@ -663,7 +663,7 @@
               return this.__PROXY__.getBlockName(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.getParentId = function(...args) 
           
@@ -673,7 +673,7 @@
               return this.__PROXY__.getParentId(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.setLinetypeId = function(...args) 
           
@@ -683,7 +683,7 @@
               return this.__PROXY__.setLinetypeId(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.setLinetypePattern = function(...args) 
           
@@ -693,7 +693,7 @@
               return this.__PROXY__.setLinetypePattern(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.getLinetypeId = function(...args) 
           
@@ -703,7 +703,7 @@
               return this.__PROXY__.getLinetypeId(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.getLinetypePattern = function(...args) 
           
@@ -713,7 +713,7 @@
               return this.__PROXY__.getLinetypePattern(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.setLinetypeScale = function(...args) 
           
@@ -723,7 +723,7 @@
               return this.__PROXY__.setLinetypeScale(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.getLinetypeScale = function(...args) 
           
@@ -733,7 +733,7 @@
               return this.__PROXY__.getLinetypeScale(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.setLineweight = function(...args) 
           
@@ -743,7 +743,7 @@
               return this.__PROXY__.setLineweight(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.getLineweight = function(...args) 
           
@@ -753,7 +753,7 @@
               return this.__PROXY__.getLineweight(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.setColor = function(...args) 
           
@@ -763,7 +763,7 @@
               return this.__PROXY__.setColor(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.getColor = function(...args) 
           
@@ -773,7 +773,7 @@
               return this.__PROXY__.getColor(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.getDisplayColor = function(...args) 
           
@@ -783,7 +783,7 @@
               return this.__PROXY__.getDisplayColor(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.copyAttributesFrom = function(...args) 
           
@@ -793,7 +793,7 @@
               return this.__PROXY__.copyAttributesFrom(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.getBoundingBox = function(...args) 
           
@@ -803,7 +803,7 @@
               return this.__PROXY__.getBoundingBox(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.to2D = function(...args) 
           
@@ -813,7 +813,7 @@
               return this.__PROXY__.to2D(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.setZ = function(...args) 
           
@@ -823,7 +823,7 @@
               return this.__PROXY__.setZ(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.getBoundingBoxes = function(...args) 
           
@@ -833,7 +833,7 @@
               return this.__PROXY__.getBoundingBoxes(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.getHull = function(...args) 
           
@@ -843,7 +843,7 @@
               return this.__PROXY__.getHull(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.getClosestSubEntityId = function(...args) 
           
@@ -853,7 +853,7 @@
               return this.__PROXY__.getClosestSubEntityId(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.getClosestShape = function(...args) 
           
@@ -863,7 +863,7 @@
               return this.__PROXY__.getClosestShape(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.getClosestSimpleShape = function(...args) 
           
@@ -873,7 +873,7 @@
               return this.__PROXY__.getClosestSimpleShape(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.isInside = function(...args) 
           
@@ -883,7 +883,7 @@
               return this.__PROXY__.isInside(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.isOnEntity = function(...args) 
           
@@ -893,7 +893,7 @@
               return this.__PROXY__.isOnEntity(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.intersectsWith = function(...args) 
           
@@ -903,7 +903,7 @@
               return this.__PROXY__.intersectsWith(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.getDistanceTo = function(...args) 
           
@@ -913,7 +913,7 @@
               return this.__PROXY__.getDistanceTo(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.getVectorTo = function(...args) 
           
@@ -923,7 +923,7 @@
               return this.__PROXY__.getVectorTo(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.getInternalReferencePoints = function(...args) 
           
@@ -933,7 +933,7 @@
               return this.__PROXY__.getInternalReferencePoints(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.getReferencePoints = function(...args) 
           
@@ -943,7 +943,7 @@
               return this.__PROXY__.getReferencePoints(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.getPointOnEntity = function(...args) 
           
@@ -953,7 +953,7 @@
               return this.__PROXY__.getPointOnEntity(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.getEndPoints = function(...args) 
           
@@ -963,7 +963,7 @@
               return this.__PROXY__.getEndPoints(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.getMiddlePoints = function(...args) 
           
@@ -973,7 +973,7 @@
               return this.__PROXY__.getMiddlePoints(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.getCenterPoints = function(...args) 
           
@@ -983,7 +983,7 @@
               return this.__PROXY__.getCenterPoints(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.getClosestPointOnEntity = function(...args) 
           
@@ -993,7 +993,7 @@
               return this.__PROXY__.getClosestPointOnEntity(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.getPointsWithDistanceToEnd = function(...args) 
           
@@ -1003,7 +1003,7 @@
               return this.__PROXY__.getPointsWithDistanceToEnd(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.getIntersectionPoints = function(...args) 
           
@@ -1013,7 +1013,7 @@
               return this.__PROXY__.getIntersectionPoints(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.getIntersectionPointsWithShape = function(...args) 
           
@@ -1023,7 +1023,7 @@
               return this.__PROXY__.getIntersectionPointsWithShape(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.clickReferencePoint = function(...args) 
           
@@ -1033,7 +1033,7 @@
               return this.__PROXY__.clickReferencePoint(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.moveReferencePoint = function(...args) 
           
@@ -1043,7 +1043,7 @@
               return this.__PROXY__.moveReferencePoint(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.move = function(...args) 
           
@@ -1053,7 +1053,7 @@
               return this.__PROXY__.move(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.rotate = function(...args) 
           
@@ -1063,7 +1063,7 @@
               return this.__PROXY__.rotate(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.scale = function(...args) 
           
@@ -1073,7 +1073,7 @@
               return this.__PROXY__.scale(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.scaleVisualProperties = function(...args) 
           
@@ -1083,7 +1083,7 @@
               return this.__PROXY__.scaleVisualProperties(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.setViewportContext = function(...args) 
           
@@ -1093,7 +1093,7 @@
               return this.__PROXY__.setViewportContext(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.mirror = function(...args) 
           
@@ -1103,7 +1103,7 @@
               return this.__PROXY__.mirror(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.flipHorizontal = function(...args) 
           
@@ -1113,7 +1113,7 @@
               return this.__PROXY__.flipHorizontal(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.flipVertical = function(...args) 
           
@@ -1123,7 +1123,7 @@
               return this.__PROXY__.flipVertical(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.stretch = function(...args) 
           
@@ -1133,7 +1133,7 @@
               return this.__PROXY__.stretch(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.update = function(...args) 
           
@@ -1143,7 +1143,7 @@
               return this.__PROXY__.update(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.castToShape = function(...args) 
           
@@ -1153,7 +1153,7 @@
               return this.__PROXY__.castToShape(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.setAutoUpdatesBlocked = function(...args) 
           
@@ -1163,7 +1163,7 @@
               return this.__PROXY__.setAutoUpdatesBlocked(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.isVisible = function(...args) 
           
@@ -1173,7 +1173,7 @@
               return this.__PROXY__.isVisible(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.isEditable = function(...args) 
           
@@ -1183,7 +1183,7 @@
               return this.__PROXY__.isEditable(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.isInWorkingSet = function(...args) 
           
@@ -1193,7 +1193,7 @@
               return this.__PROXY__.isInWorkingSet(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.getComplexity = function(...args) 
           
@@ -1203,7 +1203,7 @@
               return this.__PROXY__.getComplexity(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.setParentId = function(...args) 
           
@@ -1213,7 +1213,7 @@
               return this.__PROXY__.setParentId(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.init = function(...args) 
           
@@ -1223,7 +1223,7 @@
               return this.__PROXY__.init(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.getStaticPropertyTypeIds = function(...args) 
           
@@ -1233,7 +1233,7 @@
               return this.__PROXY__.getStaticPropertyTypeIds(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.getData = function(...args) 
           
@@ -1243,7 +1243,7 @@
               return this.__PROXY__.getData(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.getRotatedBoundingBox = function(...args) 
           
@@ -1253,7 +1253,7 @@
               return this.__PROXY__.getRotatedBoundingBox(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.setProperty = function(...args) 
           
@@ -1263,7 +1263,7 @@
               return this.__PROXY__.setProperty(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.getProperty = function(...args) 
           
@@ -1273,7 +1273,7 @@
               return this.__PROXY__.getProperty(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.exportEntity = function(...args) 
           
@@ -1283,7 +1283,7 @@
               return this.__PROXY__.exportEntity(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.scaleNonUniform = function(...args) 
           
@@ -1293,7 +1293,7 @@
               return this.__PROXY__.scaleNonUniform(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.getPainterPaths = function(...args) 
           
@@ -1303,7 +1303,7 @@
               return this.__PROXY__.getPainterPaths(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.getShapes = function(...args) 
           
@@ -1313,7 +1313,7 @@
               return this.__PROXY__.getShapes(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.getExploded = function(...args) 
           
@@ -1323,7 +1323,7 @@
               return this.__PROXY__.getExploded(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.getTextData = function(...args) 
           
@@ -1333,7 +1333,7 @@
               return this.__PROXY__.getTextData(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.isBold = function(...args) 
           
@@ -1343,7 +1343,7 @@
               return this.__PROXY__.isBold(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.setBold = function(...args) 
           
@@ -1353,7 +1353,7 @@
               return this.__PROXY__.setBold(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.isItalic = function(...args) 
           
@@ -1363,7 +1363,7 @@
               return this.__PROXY__.isItalic(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.setItalic = function(...args) 
           
@@ -1373,7 +1373,7 @@
               return this.__PROXY__.setItalic(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.isBackward = function(...args) 
           
@@ -1383,7 +1383,7 @@
               return this.__PROXY__.isBackward(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.setBackward = function(...args) 
           
@@ -1393,7 +1393,7 @@
               return this.__PROXY__.setBackward(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.isUpsideDown = function(...args) 
           
@@ -1403,7 +1403,7 @@
               return this.__PROXY__.isUpsideDown(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.setUpsideDown = function(...args) 
           
@@ -1413,7 +1413,7 @@
               return this.__PROXY__.setUpsideDown(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.getPosition = function(...args) 
           
@@ -1423,7 +1423,7 @@
               return this.__PROXY__.getPosition(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.setPosition = function(...args) 
           
@@ -1433,7 +1433,7 @@
               return this.__PROXY__.setPosition(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.getAlignmentPoint = function(...args) 
           
@@ -1443,7 +1443,7 @@
               return this.__PROXY__.getAlignmentPoint(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.setAlignmentPoint = function(...args) 
           
@@ -1453,7 +1453,7 @@
               return this.__PROXY__.setAlignmentPoint(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.getTextHeight = function(...args) 
           
@@ -1463,7 +1463,7 @@
               return this.__PROXY__.getTextHeight(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.setTextHeight = function(...args) 
           
@@ -1473,7 +1473,7 @@
               return this.__PROXY__.setTextHeight(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.getTextWidth = function(...args) 
           
@@ -1483,7 +1483,7 @@
               return this.__PROXY__.getTextWidth(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.getWidth = function(...args) 
           
@@ -1493,7 +1493,7 @@
               return this.__PROXY__.getWidth(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.getHeight = function(...args) 
           
@@ -1503,7 +1503,7 @@
               return this.__PROXY__.getHeight(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.getVAlign = function(...args) 
           
@@ -1513,7 +1513,7 @@
               return this.__PROXY__.getVAlign(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.setVAlign = function(...args) 
           
@@ -1523,7 +1523,7 @@
               return this.__PROXY__.setVAlign(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.getHAlign = function(...args) 
           
@@ -1533,7 +1533,7 @@
               return this.__PROXY__.getHAlign(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.setHAlign = function(...args) 
           
@@ -1543,7 +1543,7 @@
               return this.__PROXY__.setHAlign(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.getFontName = function(...args) 
           
@@ -1553,7 +1553,7 @@
               return this.__PROXY__.getFontName(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.setFontName = function(...args) 
           
@@ -1563,7 +1563,7 @@
               return this.__PROXY__.setFontName(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.getFontFile = function(...args) 
           
@@ -1573,7 +1573,7 @@
               return this.__PROXY__.getFontFile(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.setDrawingDirection = function(...args) 
           
@@ -1583,7 +1583,7 @@
               return this.__PROXY__.setDrawingDirection(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.getDrawingDirection = function(...args) 
           
@@ -1593,7 +1593,7 @@
               return this.__PROXY__.getDrawingDirection(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.setLineSpacingStyle = function(...args) 
           
@@ -1603,7 +1603,7 @@
               return this.__PROXY__.setLineSpacingStyle(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.getLineSpacingStyle = function(...args) 
           
@@ -1613,7 +1613,7 @@
               return this.__PROXY__.getLineSpacingStyle(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.setLineSpacingFactor = function(...args) 
           
@@ -1623,7 +1623,7 @@
               return this.__PROXY__.setLineSpacingFactor(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.getLineSpacingFactor = function(...args) 
           
@@ -1633,7 +1633,7 @@
               return this.__PROXY__.getLineSpacingFactor(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.setAngle = function(...args) 
           
@@ -1643,7 +1643,7 @@
               return this.__PROXY__.setAngle(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.getAngle = function(...args) 
           
@@ -1653,7 +1653,7 @@
               return this.__PROXY__.getAngle(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.setXScale = function(...args) 
           
@@ -1663,7 +1663,7 @@
               return this.__PROXY__.setXScale(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.getXScale = function(...args) 
           
@@ -1673,7 +1673,7 @@
               return this.__PROXY__.getXScale(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.setSimple = function(...args) 
           
@@ -1683,7 +1683,7 @@
               return this.__PROXY__.setSimple(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.isSimple = function(...args) 
           
@@ -1693,7 +1693,7 @@
               return this.__PROXY__.isSimple(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.getEscapedText = function(...args) 
           
@@ -1703,7 +1703,7 @@
               return this.__PROXY__.getEscapedText(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.getPlainText = function(...args) 
           
@@ -1713,7 +1713,7 @@
               return this.__PROXY__.getPlainText(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.setText = function(...args) 
           
@@ -1723,7 +1723,7 @@
               return this.__PROXY__.setText(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.sync = function(...args) 
           
@@ -1733,7 +1733,7 @@
               return this.__PROXY__.sync(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.getSimpleTextBlocks = function(...args) 
           
@@ -1743,7 +1743,7 @@
               return this.__PROXY__.getSimpleTextBlocks(...args);
             
         };
-    
+        
         // function 
         RTextBasedEntity.prototype.print = function(...args) 
           
@@ -1753,7 +1753,7 @@
               return this.__PROXY__.print(...args);
             
         };
-    
+        
 
       // static functions:
       

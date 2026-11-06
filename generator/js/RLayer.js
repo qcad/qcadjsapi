@@ -191,7 +191,7 @@
               return this.__PROXY__.mustAlwaysClone(...args);
             
         };
-    
+        
         // function 
         RLayer.prototype.getDocument = function(...args) 
           
@@ -201,7 +201,7 @@
               return this.__PROXY__.getDocument(...args);
             
         };
-    
+        
         // function 
         RLayer.prototype.setDocument = function(...args) 
           
@@ -211,7 +211,7 @@
               return this.__PROXY__.setDocument(...args);
             
         };
-    
+        
         // function 
         RLayer.prototype.setFlag = function(...args) 
           
@@ -221,7 +221,7 @@
               return this.__PROXY__.setFlag(...args);
             
         };
-    
+        
         // function 
         RLayer.prototype.getFlag = function(...args) 
           
@@ -231,7 +231,7 @@
               return this.__PROXY__.getFlag(...args);
             
         };
-    
+        
         // function 
         RLayer.prototype.getId = function(...args) 
           
@@ -241,7 +241,7 @@
               return this.__PROXY__.getId(...args);
             
         };
-    
+        
         // function 
         RLayer.prototype.getHandle = function(...args) 
           
@@ -251,7 +251,7 @@
               return this.__PROXY__.getHandle(...args);
             
         };
-    
+        
         // function 
         RLayer.prototype.isProtected = function(...args) 
           
@@ -261,7 +261,7 @@
               return this.__PROXY__.isProtected(...args);
             
         };
-    
+        
         // function 
         RLayer.prototype.setProtected = function(...args) 
           
@@ -271,7 +271,7 @@
               return this.__PROXY__.setProtected(...args);
             
         };
-    
+        
         // function 
         RLayer.prototype.isInvisible = function(...args) 
           
@@ -281,7 +281,7 @@
               return this.__PROXY__.isInvisible(...args);
             
         };
-    
+        
         // function 
         RLayer.prototype.setInvisible = function(...args) 
           
@@ -291,7 +291,7 @@
               return this.__PROXY__.setInvisible(...args);
             
         };
-    
+        
         // function 
         RLayer.prototype.isSelected = function(...args) 
           
@@ -301,7 +301,7 @@
               return this.__PROXY__.isSelected(...args);
             
         };
-    
+        
         // function 
         RLayer.prototype.setSelected = function(...args) 
           
@@ -311,7 +311,7 @@
               return this.__PROXY__.setSelected(...args);
             
         };
-    
+        
         // function 
         RLayer.prototype.isUndone = function(...args) 
           
@@ -321,7 +321,7 @@
               return this.__PROXY__.isUndone(...args);
             
         };
-    
+        
         // function 
         RLayer.prototype.isWorkingSet = function(...args) 
           
@@ -331,7 +331,7 @@
               return this.__PROXY__.isWorkingSet(...args);
             
         };
-    
+        
         // function 
         RLayer.prototype.setWorkingSet = function(...args) 
           
@@ -341,7 +341,7 @@
               return this.__PROXY__.setWorkingSet(...args);
             
         };
-    
+        
         // function 
         RLayer.prototype.getPropertyTypeIds = function(...args) 
           
@@ -351,7 +351,7 @@
               return this.__PROXY__.getPropertyTypeIds(...args);
             
         };
-    
+        
         // function 
         RLayer.prototype.getCustomPropertyTypeIds = function(...args) 
           
@@ -361,7 +361,7 @@
               return this.__PROXY__.getCustomPropertyTypeIds(...args);
             
         };
-    
+        
         // function 
         RLayer.prototype.hasPropertyType = function(...args) 
           
@@ -371,7 +371,7 @@
               return this.__PROXY__.hasPropertyType(...args);
             
         };
-    
+        
         // function 
         RLayer.prototype.hasCustomProperties = function(...args) 
           
@@ -381,7 +381,7 @@
               return this.__PROXY__.hasCustomProperties(...args);
             
         };
-    
+        
         // function 
         RLayer.prototype.hasCustomProperty = function(...args) 
           
@@ -391,7 +391,7 @@
               return this.__PROXY__.hasCustomProperty(...args);
             
         };
-    
+        
         // function 
         RLayer.prototype.getCustomProperty = function(...args) 
           
@@ -401,7 +401,7 @@
               return this.__PROXY__.getCustomProperty(...args);
             
         };
-    
+        
         // function 
         RLayer.prototype.getCustomDoubleProperty = function(...args) 
           
@@ -411,7 +411,7 @@
               return this.__PROXY__.getCustomDoubleProperty(...args);
             
         };
-    
+        
         // function 
         RLayer.prototype.getCustomIntProperty = function(...args) 
           
@@ -421,7 +421,7 @@
               return this.__PROXY__.getCustomIntProperty(...args);
             
         };
-    
+        
         // function 
         RLayer.prototype.getCustomBoolProperty = function(...args) 
           
@@ -431,7 +431,7 @@
               return this.__PROXY__.getCustomBoolProperty(...args);
             
         };
-    
+        
         // function 
         RLayer.prototype.setCustomProperty = function(...args) 
           
@@ -441,7 +441,7 @@
               return this.__PROXY__.setCustomProperty(...args);
             
         };
-    
+        
         // function 
         RLayer.prototype.removeCustomProperty = function(...args) 
           
@@ -451,7 +451,7 @@
               return this.__PROXY__.removeCustomProperty(...args);
             
         };
-    
+        
         // function 
         RLayer.prototype.getCustomPropertyTitles = function(...args) 
           
@@ -461,7 +461,7 @@
               return this.__PROXY__.getCustomPropertyTitles(...args);
             
         };
-    
+        
         // function 
         RLayer.prototype.getCustomPropertyKeys = function(...args) 
           
@@ -471,7 +471,7 @@
               return this.__PROXY__.getCustomPropertyKeys(...args);
             
         };
-    
+        
         // function 
         RLayer.prototype.copyCustomPropertiesFrom = function(...args) 
           
@@ -481,7 +481,7 @@
               return this.__PROXY__.copyCustomPropertiesFrom(...args);
             
         };
-    
+        
         // function 
         RLayer.prototype.getComplexity = function(...args) 
           
@@ -491,7 +491,7 @@
               return this.__PROXY__.getComplexity(...args);
             
         };
-    
+        
         // function 
         RLayer.prototype.setAutoUpdatesBlocked = function(...args) 
           
@@ -501,7 +501,7 @@
               return this.__PROXY__.setAutoUpdatesBlocked(...args);
             
         };
-    
+        
         // function 
         RLayer.prototype.dump = function(...args) 
           
@@ -511,7 +511,7 @@
               return this.__PROXY__.dump(...args);
             
         };
-    
+        
         // function 
         RLayer.prototype.validate = function(...args) 
           
@@ -521,7 +521,7 @@
               return this.__PROXY__.validate(...args);
             
         };
-    
+        
         // function 
         RLayer.prototype.print = function(...args) 
           
@@ -531,7 +531,7 @@
               return this.__PROXY__.print(...args);
             
         };
-    
+        
         // function 
         RLayer.prototype.setUndone = function(...args) 
           
@@ -541,7 +541,7 @@
               return this.__PROXY__.setUndone(...args);
             
         };
-    
+        
         // function 
         RLayer.prototype.setId = function(...args) 
           
@@ -551,7 +551,7 @@
               return this.__PROXY__.setId(...args);
             
         };
-    
+        
         // function 
         RLayer.prototype.setHandle = function(...args) 
           
@@ -561,7 +561,7 @@
               return this.__PROXY__.setHandle(...args);
             
         };
-    
+        
         // function 
         RLayer.prototype.setMemberFlag = function(...args) 
           
@@ -571,7 +571,7 @@
               return this.__PROXY__.setMemberFlag(...args);
             
         };
-    
+        
         // function 
         RLayer.prototype.init = function(...args) 
           
@@ -581,7 +581,7 @@
               return this.__PROXY__.init(...args);
             
         };
-    
+        
         // function 
         RLayer.prototype.getRtti = function(...args) 
           
@@ -591,7 +591,7 @@
               return this.__PROXY__.getRtti(...args);
             
         };
-    
+        
         // function 
         RLayer.prototype.getType = function(...args) 
           
@@ -601,7 +601,7 @@
               return this.__PROXY__.getType(...args);
             
         };
-    
+        
         // function 
         RLayer.prototype.clone = function(...args) 
           
@@ -611,7 +611,7 @@
               return this.__PROXY__.clone(...args);
             
         };
-    
+        
         // function 
         RLayer.prototype.getParentLayerId = function(...args) 
           
@@ -621,7 +621,7 @@
               return this.__PROXY__.getParentLayerId(...args);
             
         };
-    
+        
         // function 
         RLayer.prototype.getName = function(...args) 
           
@@ -631,7 +631,7 @@
               return this.__PROXY__.getName(...args);
             
         };
-    
+        
         // function 
         RLayer.prototype.setName = function(...args) 
           
@@ -641,7 +641,7 @@
               return this.__PROXY__.setName(...args);
             
         };
-    
+        
         // function 
         RLayer.prototype.isOffOrFrozen = function(...args) 
           
@@ -651,7 +651,7 @@
               return this.__PROXY__.isOffOrFrozen(...args);
             
         };
-    
+        
         // function 
         RLayer.prototype.isOff = function(...args) 
           
@@ -661,7 +661,7 @@
               return this.__PROXY__.isOff(...args);
             
         };
-    
+        
         // function 
         RLayer.prototype.setOff = function(...args) 
           
@@ -671,7 +671,7 @@
               return this.__PROXY__.setOff(...args);
             
         };
-    
+        
         // function 
         RLayer.prototype.isFrozen = function(...args) 
           
@@ -681,7 +681,7 @@
               return this.__PROXY__.isFrozen(...args);
             
         };
-    
+        
         // function 
         RLayer.prototype.setFrozen = function(...args) 
           
@@ -691,7 +691,7 @@
               return this.__PROXY__.setFrozen(...args);
             
         };
-    
+        
         // function 
         RLayer.prototype.isLocked = function(...args) 
           
@@ -701,7 +701,7 @@
               return this.__PROXY__.isLocked(...args);
             
         };
-    
+        
         // function 
         RLayer.prototype.setLocked = function(...args) 
           
@@ -711,7 +711,7 @@
               return this.__PROXY__.setLocked(...args);
             
         };
-    
+        
         // function 
         RLayer.prototype.isCollapsed = function(...args) 
           
@@ -721,7 +721,7 @@
               return this.__PROXY__.isCollapsed(...args);
             
         };
-    
+        
         // function 
         RLayer.prototype.setCollapsed = function(...args) 
           
@@ -731,7 +731,7 @@
               return this.__PROXY__.setCollapsed(...args);
             
         };
-    
+        
         // function 
         RLayer.prototype.isPlottable = function(...args) 
           
@@ -741,7 +741,7 @@
               return this.__PROXY__.isPlottable(...args);
             
         };
-    
+        
         // function 
         RLayer.prototype.setPlottable = function(...args) 
           
@@ -751,7 +751,7 @@
               return this.__PROXY__.setPlottable(...args);
             
         };
-    
+        
         // function 
         RLayer.prototype.isSnappable = function(...args) 
           
@@ -761,7 +761,7 @@
               return this.__PROXY__.isSnappable(...args);
             
         };
-    
+        
         // function 
         RLayer.prototype.setSnappable = function(...args) 
           
@@ -771,7 +771,7 @@
               return this.__PROXY__.setSnappable(...args);
             
         };
-    
+        
         // function 
         RLayer.prototype.isOffIsFreeze = function(...args) 
           
@@ -781,7 +781,7 @@
               return this.__PROXY__.isOffIsFreeze(...args);
             
         };
-    
+        
         // function 
         RLayer.prototype.setOffIsFreeze = function(...args) 
           
@@ -791,7 +791,7 @@
               return this.__PROXY__.setOffIsFreeze(...args);
             
         };
-    
+        
         // function 
         RLayer.prototype.getColor = function(...args) 
           
@@ -801,7 +801,7 @@
               return this.__PROXY__.getColor(...args);
             
         };
-    
+        
         // function 
         RLayer.prototype.setColor = function(...args) 
           
@@ -811,7 +811,7 @@
               return this.__PROXY__.setColor(...args);
             
         };
-    
+        
         // function 
         RLayer.prototype.getLinetypeId = function(...args) 
           
@@ -821,7 +821,7 @@
               return this.__PROXY__.getLinetypeId(...args);
             
         };
-    
+        
         // function 
         RLayer.prototype.setLinetypeId = function(...args) 
           
@@ -831,7 +831,7 @@
               return this.__PROXY__.setLinetypeId(...args);
             
         };
-    
+        
         // function 
         RLayer.prototype.getLineweight = function(...args) 
           
@@ -841,7 +841,7 @@
               return this.__PROXY__.getLineweight(...args);
             
         };
-    
+        
         // function 
         RLayer.prototype.setLineweight = function(...args) 
           
@@ -851,7 +851,7 @@
               return this.__PROXY__.setLineweight(...args);
             
         };
-    
+        
         // function 
         RLayer.prototype.getProperty = function(...args) 
           
@@ -861,7 +861,7 @@
               return this.__PROXY__.getProperty(...args);
             
         };
-    
+        
         // function 
         RLayer.prototype.setProperty = function(...args) 
           
@@ -871,7 +871,7 @@
               return this.__PROXY__.setProperty(...args);
             
         };
-    
+        
         // function 
         RLayer.prototype.hasChildLayers = function(...args) 
           
@@ -881,7 +881,7 @@
               return this.__PROXY__.hasChildLayers(...args);
             
         };
-    
+        
         // function 
         RLayer.prototype.getChildLayerNames = function(...args) 
           
@@ -891,7 +891,7 @@
               return this.__PROXY__.getChildLayerNames(...args);
             
         };
-    
+        
         // function 
         RLayer.prototype.getParentLayerName = function(...args) 
           
@@ -901,7 +901,7 @@
               return this.__PROXY__.getParentLayerName(...args);
             
         };
-    
+        
         // function 
         RLayer.prototype.getShortLayerName = function(...args) 
           
@@ -911,7 +911,7 @@
               return this.__PROXY__.getShortLayerName(...args);
             
         };
-    
+        
         // function 
         RLayer.prototype.getLayerNameHierarchy = function(...args) 
           
@@ -921,7 +921,7 @@
               return this.__PROXY__.getLayerNameHierarchy(...args);
             
         };
-    
+        
         // function 
         RLayer.prototype.isChildLayerOf = function(...args) 
           
@@ -931,7 +931,7 @@
               return this.__PROXY__.isChildLayerOf(...args);
             
         };
-    
+        
         // function 
         RLayer.prototype.getHierarchySeparator = function(...args) 
           
@@ -941,7 +941,7 @@
               return this.__PROXY__.getHierarchySeparator(...args);
             
         };
-    
+        
         // function 
         RLayer.prototype.hasChildLayersStatic = function(...args) 
           
@@ -951,7 +951,7 @@
               return this.__PROXY__.hasChildLayersStatic(...args);
             
         };
-    
+        
         // function 
         RLayer.prototype.getChildLayerNamesStatic = function(...args) 
           
@@ -961,7 +961,7 @@
               return this.__PROXY__.getChildLayerNamesStatic(...args);
             
         };
-    
+        
         // function 
         RLayer.prototype.getParentLayerNameStatic = function(...args) 
           
@@ -971,7 +971,7 @@
               return this.__PROXY__.getParentLayerNameStatic(...args);
             
         };
-    
+        
         // function 
         RLayer.prototype.getShortLayerNameStatic = function(...args) 
           
@@ -981,7 +981,7 @@
               return this.__PROXY__.getShortLayerNameStatic(...args);
             
         };
-    
+        
         // function 
         RLayer.prototype.getLayerNameHierarchyStatic = function(...args) 
           
@@ -991,7 +991,7 @@
               return this.__PROXY__.getLayerNameHierarchyStatic(...args);
             
         };
-    
+        
         // function 
         RLayer.prototype.isChildLayerOfStatic = function(...args) 
           
@@ -1001,7 +1001,7 @@
               return this.__PROXY__.isChildLayerOfStatic(...args);
             
         };
-    
+        
 
       // static functions:
       

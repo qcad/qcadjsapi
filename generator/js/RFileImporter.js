@@ -109,7 +109,7 @@
               return this.__PROXY__.startImport(...args);
             
         };
-    
+        
         // function 
         RFileImporter.prototype.endImport = function(...args) 
           
@@ -119,7 +119,7 @@
               return this.__PROXY__.endImport(...args);
             
         };
-    
+        
         // function 
         RFileImporter.prototype.importObjectP = function(...args) 
           
@@ -129,7 +129,7 @@
               return this.__PROXY__.importObjectP(...args);
             
         };
-    
+        
         // function 
         RFileImporter.prototype.importObject = function(...args) 
           
@@ -139,7 +139,7 @@
               return this.__PROXY__.importObject(...args);
             
         };
-    
+        
         // function 
         RFileImporter.prototype.setCurrentBlockId = function(...args) 
           
@@ -149,7 +149,7 @@
               return this.__PROXY__.setCurrentBlockId(...args);
             
         };
-    
+        
         // function 
         RFileImporter.prototype.getCurrentBlockId = function(...args) 
           
@@ -159,7 +159,7 @@
               return this.__PROXY__.getCurrentBlockId(...args);
             
         };
-    
+        
         // function 
         RFileImporter.prototype.getDocument = function(...args) 
           
@@ -169,7 +169,7 @@
               return this.__PROXY__.getDocument(...args);
             
         };
-    
+        
         // function 
         RFileImporter.prototype.setDocument = function(...args) 
           
@@ -179,7 +179,7 @@
               return this.__PROXY__.setDocument(...args);
             
         };
-    
+        
         // function 
         RFileImporter.prototype.setKnownVariable = function(...args) 
           
@@ -189,7 +189,7 @@
               return this.__PROXY__.setKnownVariable(...args);
             
         };
-    
+        
         // function 
         RFileImporter.prototype.importFile = function(...args) 
           
@@ -199,7 +199,7 @@
               return this.__PROXY__.importFile(...args);
             
         };
-    
+        
 
       // static functions:
       RFileImporter.prototype.isNullWrapper = function() {

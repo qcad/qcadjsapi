@@ -142,7 +142,7 @@
               return this.__PROXY__.setDocument(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.getDocument = function(...args) 
           
@@ -152,7 +152,7 @@
               return this.__PROXY__.getDocument(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.orderBackToFront = function(...args) 
           
@@ -162,7 +162,7 @@
               return this.__PROXY__.orderBackToFront(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.sortBlocks = function(...args) 
           
@@ -172,7 +172,7 @@
               return this.__PROXY__.sortBlocks(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.sortLayers = function(...args) 
           
@@ -182,7 +182,7 @@
               return this.__PROXY__.sortLayers(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.queryCurrentLayer = function(...args) 
           
@@ -192,7 +192,7 @@
               return this.__PROXY__.queryCurrentLayer(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.queryCurrentView = function(...args) 
           
@@ -202,7 +202,7 @@
               return this.__PROXY__.queryCurrentView(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.setCurrentLayer = function(...args) 
           
@@ -212,7 +212,7 @@
               return this.__PROXY__.setCurrentLayer(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.setCurrentColor = function(...args) 
           
@@ -222,7 +222,7 @@
               return this.__PROXY__.setCurrentColor(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.setCurrentLineweight = function(...args) 
           
@@ -232,7 +232,7 @@
               return this.__PROXY__.setCurrentLineweight(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.setCurrentLinetype = function(...args) 
           
@@ -242,7 +242,7 @@
               return this.__PROXY__.setCurrentLinetype(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.setCurrentLinetypePattern = function(...args) 
           
@@ -252,7 +252,7 @@
               return this.__PROXY__.setCurrentLinetypePattern(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.getCurrentLinetypePattern = function(...args) 
           
@@ -262,7 +262,7 @@
               return this.__PROXY__.getCurrentLinetypePattern(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.queryCurrentLinetype = function(...args) 
           
@@ -272,7 +272,7 @@
               return this.__PROXY__.queryCurrentLinetype(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.queryCurrentBlock = function(...args) 
           
@@ -282,7 +282,7 @@
               return this.__PROXY__.queryCurrentBlock(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.setCurrentViewport = function(...args) 
           
@@ -292,7 +292,7 @@
               return this.__PROXY__.setCurrentViewport(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.unsetCurrentViewport = function(...args) 
           
@@ -302,7 +302,7 @@
               return this.__PROXY__.unsetCurrentViewport(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.getCurrentViewportId = function(...args) 
           
@@ -312,7 +312,7 @@
               return this.__PROXY__.getCurrentViewportId(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.setModelSpaceBlockId = function(...args) 
           
@@ -322,7 +322,7 @@
               return this.__PROXY__.setModelSpaceBlockId(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.getModelSpaceBlockId = function(...args) 
           
@@ -332,7 +332,7 @@
               return this.__PROXY__.getModelSpaceBlockId(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.setCurrentView = function(...args) 
           
@@ -342,7 +342,7 @@
               return this.__PROXY__.setCurrentView(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.setUnit = function(...args) 
           
@@ -352,7 +352,7 @@
               return this.__PROXY__.setUnit(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.getUnit = function(...args) 
           
@@ -362,7 +362,7 @@
               return this.__PROXY__.getUnit(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.setMeasurement = function(...args) 
           
@@ -372,7 +372,7 @@
               return this.__PROXY__.setMeasurement(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.getMeasurement = function(...args) 
           
@@ -382,7 +382,7 @@
               return this.__PROXY__.getMeasurement(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.setDimensionFont = function(...args) 
           
@@ -392,7 +392,7 @@
               return this.__PROXY__.setDimensionFont(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.setLinetypeScale = function(...args) 
           
@@ -402,7 +402,7 @@
               return this.__PROXY__.setLinetypeScale(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.getLinetypeScale = function(...args) 
           
@@ -412,7 +412,7 @@
               return this.__PROXY__.getLinetypeScale(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.hasBlock = function(...args) 
           
@@ -422,7 +422,7 @@
               return this.__PROXY__.hasBlock(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.hasView = function(...args) 
           
@@ -432,7 +432,7 @@
               return this.__PROXY__.hasView(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.setLayer0Id = function(...args) 
           
@@ -442,7 +442,7 @@
               return this.__PROXY__.setLayer0Id(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.getLayer0Id = function(...args) 
           
@@ -452,7 +452,7 @@
               return this.__PROXY__.getLayer0Id(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.hasLayer = function(...args) 
           
@@ -462,7 +462,7 @@
               return this.__PROXY__.hasLayer(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.hasLayerStates = function(...args) 
           
@@ -472,7 +472,7 @@
               return this.__PROXY__.hasLayerStates(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.hasLayerState = function(...args) 
           
@@ -482,7 +482,7 @@
               return this.__PROXY__.hasLayerState(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.hasLayout = function(...args) 
           
@@ -492,7 +492,7 @@
               return this.__PROXY__.hasLayout(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.hasLinetype = function(...args) 
           
@@ -502,7 +502,7 @@
               return this.__PROXY__.hasLinetype(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.hasVariable = function(...args) 
           
@@ -512,7 +512,7 @@
               return this.__PROXY__.hasVariable(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.isEntity = function(...args) 
           
@@ -522,7 +522,7 @@
               return this.__PROXY__.isEntity(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.isLayerLocked = function(...args) 
           
@@ -532,7 +532,7 @@
               return this.__PROXY__.isLayerLocked(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.isParentLayerLocked = function(...args) 
           
@@ -542,7 +542,7 @@
               return this.__PROXY__.isParentLayerLocked(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.isLayerOff = function(...args) 
           
@@ -552,7 +552,7 @@
               return this.__PROXY__.isLayerOff(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.isLayerOffOrFrozen = function(...args) 
           
@@ -562,7 +562,7 @@
               return this.__PROXY__.isLayerOffOrFrozen(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.isLayerFrozen = function(...args) 
           
@@ -572,7 +572,7 @@
               return this.__PROXY__.isLayerFrozen(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.isParentLayerFrozen = function(...args) 
           
@@ -582,7 +582,7 @@
               return this.__PROXY__.isParentLayerFrozen(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.isLayerSnappable = function(...args) 
           
@@ -592,7 +592,7 @@
               return this.__PROXY__.isLayerSnappable(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.isParentLayerSnappable = function(...args) 
           
@@ -602,7 +602,7 @@
               return this.__PROXY__.isParentLayerSnappable(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.isLayerPlottable = function(...args) 
           
@@ -612,7 +612,7 @@
               return this.__PROXY__.isLayerPlottable(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.isParentLayerPlottable = function(...args) 
           
@@ -622,7 +622,7 @@
               return this.__PROXY__.isParentLayerPlottable(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.isBlockFrozen = function(...args) 
           
@@ -632,7 +632,7 @@
               return this.__PROXY__.isBlockFrozen(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.isLayoutBlock = function(...args) 
           
@@ -642,7 +642,7 @@
               return this.__PROXY__.isLayoutBlock(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.setObjectId = function(...args) 
           
@@ -652,7 +652,7 @@
               return this.__PROXY__.setObjectId(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.getLastTransactionId = function(...args) 
           
@@ -662,7 +662,7 @@
               return this.__PROXY__.getLastTransactionId(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.startTransactionGroup = function(...args) 
           
@@ -672,7 +672,7 @@
               return this.__PROXY__.startTransactionGroup(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.getTransactionGroup = function(...args) 
           
@@ -682,7 +682,7 @@
               return this.__PROXY__.getTransactionGroup(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.getMaxObjectId = function(...args) 
           
@@ -692,7 +692,7 @@
               return this.__PROXY__.getMaxObjectId(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.getMaxObjectHandle = function(...args) 
           
@@ -702,7 +702,7 @@
               return this.__PROXY__.getMaxObjectHandle(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.setMaxDrawOrder = function(...args) 
           
@@ -712,7 +712,7 @@
               return this.__PROXY__.setMaxDrawOrder(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.getMaxDrawOrder = function(...args) 
           
@@ -722,7 +722,7 @@
               return this.__PROXY__.getMaxDrawOrder(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.getMinDrawOrder = function(...args) 
           
@@ -732,7 +732,7 @@
               return this.__PROXY__.getMinDrawOrder(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.setModified = function(...args) 
           
@@ -742,7 +742,7 @@
               return this.__PROXY__.setModified(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.isModified = function(...args) 
           
@@ -752,7 +752,7 @@
               return this.__PROXY__.isModified(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.getLastModifiedDateTime = function(...args) 
           
@@ -762,7 +762,7 @@
               return this.__PROXY__.getLastModifiedDateTime(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.getLastModified = function(...args) 
           
@@ -772,7 +772,7 @@
               return this.__PROXY__.getLastModified(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.addModifiedListener = function(...args) 
           
@@ -782,7 +782,7 @@
               return this.__PROXY__.addModifiedListener(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.setNotifyListeners = function(...args) 
           
@@ -792,7 +792,7 @@
               return this.__PROXY__.setNotifyListeners(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.getNotifyListeners = function(...args) 
           
@@ -802,7 +802,7 @@
               return this.__PROXY__.getNotifyListeners(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.setCurrentBlock = function(...args) 
           
@@ -812,7 +812,7 @@
               return this.__PROXY__.setCurrentBlock(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.beginTransaction = function(...args) 
           
@@ -822,7 +822,7 @@
               return this.__PROXY__.beginTransaction(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.commitTransaction = function(...args) 
           
@@ -832,7 +832,7 @@
               return this.__PROXY__.commitTransaction(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.rollbackTransaction = function(...args) 
           
@@ -842,7 +842,7 @@
               return this.__PROXY__.rollbackTransaction(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.queryWorkingSetEntities = function(...args) 
           
@@ -852,7 +852,7 @@
               return this.__PROXY__.queryWorkingSetEntities(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.queryObjectByHandleDirect = function(...args) 
           
@@ -862,7 +862,7 @@
               return this.__PROXY__.queryObjectByHandleDirect(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.clearVisibleCache = function(...args) 
           
@@ -872,7 +872,7 @@
               return this.__PROXY__.clearVisibleCache(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.updateVisibleCache = function(...args) 
           
@@ -882,7 +882,7 @@
               return this.__PROXY__.updateVisibleCache(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.clearSelectionCache = function(...args) 
           
@@ -892,7 +892,7 @@
               return this.__PROXY__.clearSelectionCache(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.updateSelectedEntityMap = function(...args) 
           
@@ -902,7 +902,7 @@
               return this.__PROXY__.updateSelectedEntityMap(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.updateSelectedLayerMap = function(...args) 
           
@@ -912,7 +912,7 @@
               return this.__PROXY__.updateSelectedLayerMap(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.countSelectedEntities = function(...args) 
           
@@ -922,7 +922,7 @@
               return this.__PROXY__.countSelectedEntities(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.clearEntitySelection = function(...args) 
           
@@ -932,7 +932,7 @@
               return this.__PROXY__.clearEntitySelection(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.selectAllEntities = function(...args) 
           
@@ -942,7 +942,7 @@
               return this.__PROXY__.selectAllEntities(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.selectEntity = function(...args) 
           
@@ -952,7 +952,7 @@
               return this.__PROXY__.selectEntity(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.deselectEntity = function(...args) 
           
@@ -962,7 +962,7 @@
               return this.__PROXY__.deselectEntity(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.selectEntities = function(...args) 
           
@@ -972,7 +972,7 @@
               return this.__PROXY__.selectEntities(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.deselectEntities = function(...args) 
           
@@ -982,7 +982,7 @@
               return this.__PROXY__.deselectEntities(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.setEntitySelected = function(...args) 
           
@@ -992,7 +992,7 @@
               return this.__PROXY__.setEntitySelected(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.isSelected = function(...args) 
           
@@ -1002,7 +1002,7 @@
               return this.__PROXY__.isSelected(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.isSelectedWorkingSet = function(...args) 
           
@@ -1012,7 +1012,7 @@
               return this.__PROXY__.isSelectedWorkingSet(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.isEntityVisible = function(...args) 
           
@@ -1022,7 +1022,7 @@
               return this.__PROXY__.isEntityVisible(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.hasSelection = function(...args) 
           
@@ -1032,7 +1032,7 @@
               return this.__PROXY__.hasSelection(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.getBoundingBox = function(...args) 
           
@@ -1042,7 +1042,7 @@
               return this.__PROXY__.getBoundingBox(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.getSelectionBox = function(...args) 
           
@@ -1052,7 +1052,7 @@
               return this.__PROXY__.getSelectionBox(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.getEntitiesBox = function(...args) 
           
@@ -1062,7 +1062,7 @@
               return this.__PROXY__.getEntitiesBox(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.removeObject = function(...args) 
           
@@ -1072,7 +1072,7 @@
               return this.__PROXY__.removeObject(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.saveObject = function(...args) 
           
@@ -1082,7 +1082,7 @@
               return this.__PROXY__.saveObject(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.checkRecursion = function(...args) 
           
@@ -1092,7 +1092,7 @@
               return this.__PROXY__.checkRecursion(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.saveTransaction = function(...args) 
           
@@ -1102,7 +1102,7 @@
               return this.__PROXY__.saveTransaction(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.deleteTransactionsFrom = function(...args) 
           
@@ -1112,7 +1112,7 @@
               return this.__PROXY__.deleteTransactionsFrom(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.getTransaction = function(...args) 
           
@@ -1122,7 +1122,7 @@
               return this.__PROXY__.getTransaction(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.resetTransactionStack = function(...args) 
           
@@ -1132,7 +1132,7 @@
               return this.__PROXY__.resetTransactionStack(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.toggleUndoStatus = function(...args) 
           
@@ -1142,7 +1142,7 @@
               return this.__PROXY__.toggleUndoStatus(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.getMaxTransactionId = function(...args) 
           
@@ -1152,7 +1152,7 @@
               return this.__PROXY__.getMaxTransactionId(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.getVariables = function(...args) 
           
@@ -1162,7 +1162,7 @@
               return this.__PROXY__.getVariables(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.setVariable = function(...args) 
           
@@ -1172,7 +1172,7 @@
               return this.__PROXY__.setVariable(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.getVariable = function(...args) 
           
@@ -1182,7 +1182,7 @@
               return this.__PROXY__.getVariable(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.removeVariable = function(...args) 
           
@@ -1192,7 +1192,7 @@
               return this.__PROXY__.removeVariable(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.setKnownVariable = function(...args) 
           
@@ -1202,7 +1202,7 @@
               return this.__PROXY__.setKnownVariable(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.getLayerStateName = function(...args) 
           
@@ -1212,7 +1212,7 @@
               return this.__PROXY__.getLayerStateName(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.getLayerStateNames = function(...args) 
           
@@ -1222,7 +1222,7 @@
               return this.__PROXY__.getLayerStateNames(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.getLayerStateId = function(...args) 
           
@@ -1232,7 +1232,7 @@
               return this.__PROXY__.getLayerStateId(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.queryVisibleEntityDirect = function(...args) 
           
@@ -1242,7 +1242,7 @@
               return this.__PROXY__.queryVisibleEntityDirect(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.setObjectHandle = function(...args) 
           
@@ -1252,7 +1252,7 @@
               return this.__PROXY__.setObjectHandle(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.setLastTransactionId = function(...args) 
           
@@ -1262,7 +1262,7 @@
               return this.__PROXY__.setLastTransactionId(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.getMaxLineweight = function(...args) 
           
@@ -1272,7 +1272,7 @@
               return this.__PROXY__.getMaxLineweight(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.update = function(...args) 
           
@@ -1282,7 +1282,7 @@
               return this.__PROXY__.update(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.setEntityParentId = function(...args) 
           
@@ -1292,7 +1292,7 @@
               return this.__PROXY__.setEntityParentId(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.clear = function(...args) 
           
@@ -1302,7 +1302,7 @@
               return this.__PROXY__.clear(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.clearLinked = function(...args) 
           
@@ -1312,7 +1312,7 @@
               return this.__PROXY__.clearLinked(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.setLinkedEntityQueriesEnabled = function(...args) 
           
@@ -1322,7 +1322,7 @@
               return this.__PROXY__.setLinkedEntityQueriesEnabled(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.getLinkedEntityQueriesEnabled = function(...args) 
           
@@ -1332,7 +1332,7 @@
               return this.__PROXY__.getLinkedEntityQueriesEnabled(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.queryAllObjects = function(...args) 
           
@@ -1342,7 +1342,7 @@
               return this.__PROXY__.queryAllObjects(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.querySelectedLayers = function(...args) 
           
@@ -1352,7 +1352,7 @@
               return this.__PROXY__.querySelectedLayers(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.queryAllVisibleEntities = function(...args) 
           
@@ -1362,7 +1362,7 @@
               return this.__PROXY__.queryAllVisibleEntities(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.queryAllEntities = function(...args) 
           
@@ -1372,7 +1372,7 @@
               return this.__PROXY__.queryAllEntities(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.queryAllUcs = function(...args) 
           
@@ -1382,7 +1382,7 @@
               return this.__PROXY__.queryAllUcs(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.queryAllLayers = function(...args) 
           
@@ -1392,7 +1392,7 @@
               return this.__PROXY__.queryAllLayers(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.queryAllLayerStates = function(...args) 
           
@@ -1402,7 +1402,7 @@
               return this.__PROXY__.queryAllLayerStates(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.queryAllBlocks = function(...args) 
           
@@ -1412,7 +1412,7 @@
               return this.__PROXY__.queryAllBlocks(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.queryAllLayoutBlocks = function(...args) 
           
@@ -1422,7 +1422,7 @@
               return this.__PROXY__.queryAllLayoutBlocks(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.queryAllLayouts = function(...args) 
           
@@ -1432,7 +1432,7 @@
               return this.__PROXY__.queryAllLayouts(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.queryAllViews = function(...args) 
           
@@ -1442,7 +1442,7 @@
               return this.__PROXY__.queryAllViews(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.queryAllLinetypes = function(...args) 
           
@@ -1452,7 +1452,7 @@
               return this.__PROXY__.queryAllLinetypes(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.queryInfiniteEntities = function(...args) 
           
@@ -1462,7 +1462,7 @@
               return this.__PROXY__.queryInfiniteEntities(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.querySelectedEntities = function(...args) 
           
@@ -1472,7 +1472,7 @@
               return this.__PROXY__.querySelectedEntities(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.queryLayerEntities = function(...args) 
           
@@ -1482,7 +1482,7 @@
               return this.__PROXY__.queryLayerEntities(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.querySelectedLayerEntities = function(...args) 
           
@@ -1492,7 +1492,7 @@
               return this.__PROXY__.querySelectedLayerEntities(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.hasBlockEntities = function(...args) 
           
@@ -1502,7 +1502,7 @@
               return this.__PROXY__.hasBlockEntities(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.queryBlockEntities = function(...args) 
           
@@ -1512,7 +1512,7 @@
               return this.__PROXY__.queryBlockEntities(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.queryLayerBlockEntities = function(...args) 
           
@@ -1522,7 +1522,7 @@
               return this.__PROXY__.queryLayerBlockEntities(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.queryChildEntities = function(...args) 
           
@@ -1532,7 +1532,7 @@
               return this.__PROXY__.queryChildEntities(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.hasChildEntities = function(...args) 
           
@@ -1542,7 +1542,7 @@
               return this.__PROXY__.hasChildEntities(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.queryBlockReferences = function(...args) 
           
@@ -1552,7 +1552,7 @@
               return this.__PROXY__.queryBlockReferences(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.queryAllBlockReferences = function(...args) 
           
@@ -1562,7 +1562,7 @@
               return this.__PROXY__.queryAllBlockReferences(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.queryAllViewports = function(...args) 
           
@@ -1572,7 +1572,7 @@
               return this.__PROXY__.queryAllViewports(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.queryDocumentVariablesDirect = function(...args) 
           
@@ -1582,7 +1582,7 @@
               return this.__PROXY__.queryDocumentVariablesDirect(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.queryDocumentVariables = function(...args) 
           
@@ -1592,7 +1592,7 @@
               return this.__PROXY__.queryDocumentVariables(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.queryDimStyle = function(...args) 
           
@@ -1602,7 +1602,7 @@
               return this.__PROXY__.queryDimStyle(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.queryDimStyleDirect = function(...args) 
           
@@ -1612,7 +1612,7 @@
               return this.__PROXY__.queryDimStyleDirect(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.queryObjectDirect = function(...args) 
           
@@ -1622,7 +1622,7 @@
               return this.__PROXY__.queryObjectDirect(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.queryObjectCC = function(...args) 
           
@@ -1632,7 +1632,7 @@
               return this.__PROXY__.queryObjectCC(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.queryObject = function(...args) 
           
@@ -1642,7 +1642,7 @@
               return this.__PROXY__.queryObject(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.queryObjectByHandle = function(...args) 
           
@@ -1652,7 +1652,7 @@
               return this.__PROXY__.queryObjectByHandle(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.queryEntityDirect = function(...args) 
           
@@ -1662,7 +1662,7 @@
               return this.__PROXY__.queryEntityDirect(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.queryEntity = function(...args) 
           
@@ -1672,7 +1672,7 @@
               return this.__PROXY__.queryEntity(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.queryLayerDirect = function(...args) 
           
@@ -1682,7 +1682,7 @@
               return this.__PROXY__.queryLayerDirect(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.queryLayer = function(...args) 
           
@@ -1692,7 +1692,7 @@
               return this.__PROXY__.queryLayer(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.queryLayerStateDirect = function(...args) 
           
@@ -1702,7 +1702,7 @@
               return this.__PROXY__.queryLayerStateDirect(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.queryLayerState = function(...args) 
           
@@ -1712,7 +1712,7 @@
               return this.__PROXY__.queryLayerState(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.queryLayoutDirect = function(...args) 
           
@@ -1722,7 +1722,7 @@
               return this.__PROXY__.queryLayoutDirect(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.queryLayout = function(...args) 
           
@@ -1732,7 +1732,7 @@
               return this.__PROXY__.queryLayout(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.queryBlockDirect = function(...args) 
           
@@ -1742,7 +1742,7 @@
               return this.__PROXY__.queryBlockDirect(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.queryBlock = function(...args) 
           
@@ -1752,7 +1752,7 @@
               return this.__PROXY__.queryBlock(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.queryView = function(...args) 
           
@@ -1762,7 +1762,7 @@
               return this.__PROXY__.queryView(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.queryUcsDirect = function(...args) 
           
@@ -1772,7 +1772,7 @@
               return this.__PROXY__.queryUcsDirect(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.queryUcs = function(...args) 
           
@@ -1782,7 +1782,7 @@
               return this.__PROXY__.queryUcs(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.queryLinetypeDirect = function(...args) 
           
@@ -1792,7 +1792,7 @@
               return this.__PROXY__.queryLinetypeDirect(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.queryLinetype = function(...args) 
           
@@ -1802,7 +1802,7 @@
               return this.__PROXY__.queryLinetype(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.getLayerName = function(...args) 
           
@@ -1812,7 +1812,7 @@
               return this.__PROXY__.getLayerName(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.getLayerNames = function(...args) 
           
@@ -1822,7 +1822,7 @@
               return this.__PROXY__.getLayerNames(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.getLayerId = function(...args) 
           
@@ -1832,7 +1832,7 @@
               return this.__PROXY__.getLayerId(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.getLayoutName = function(...args) 
           
@@ -1842,7 +1842,7 @@
               return this.__PROXY__.getLayoutName(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.getLayoutNames = function(...args) 
           
@@ -1852,7 +1852,7 @@
               return this.__PROXY__.getLayoutNames(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.getLayoutId = function(...args) 
           
@@ -1862,7 +1862,7 @@
               return this.__PROXY__.getLayoutId(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.getBlockName = function(...args) 
           
@@ -1872,7 +1872,7 @@
               return this.__PROXY__.getBlockName(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.getBlockNameFromHandle = function(...args) 
           
@@ -1882,7 +1882,7 @@
               return this.__PROXY__.getBlockNameFromHandle(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.getBlockNameFromLayout = function(...args) 
           
@@ -1892,7 +1892,7 @@
               return this.__PROXY__.getBlockNameFromLayout(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.getBlockNames = function(...args) 
           
@@ -1902,7 +1902,7 @@
               return this.__PROXY__.getBlockNames(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.getBlockId = function(...args) 
           
@@ -1912,7 +1912,7 @@
               return this.__PROXY__.getBlockId(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.getBlockIdAuto = function(...args) 
           
@@ -1922,7 +1922,7 @@
               return this.__PROXY__.getBlockIdAuto(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.getViewName = function(...args) 
           
@@ -1932,7 +1932,7 @@
               return this.__PROXY__.getViewName(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.getViewNames = function(...args) 
           
@@ -1942,7 +1942,7 @@
               return this.__PROXY__.getViewNames(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.getViewId = function(...args) 
           
@@ -1952,7 +1952,7 @@
               return this.__PROXY__.getViewId(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.getLinetypeName = function(...args) 
           
@@ -1962,7 +1962,7 @@
               return this.__PROXY__.getLinetypeName(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.getLinetypeDescription = function(...args) 
           
@@ -1972,7 +1972,7 @@
               return this.__PROXY__.getLinetypeDescription(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.getLinetypeLabel = function(...args) 
           
@@ -1982,7 +1982,7 @@
               return this.__PROXY__.getLinetypeLabel(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.getLinetypeNames = function(...args) 
           
@@ -1992,7 +1992,7 @@
               return this.__PROXY__.getLinetypeNames(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.getLinetypePatterns = function(...args) 
           
@@ -2002,7 +2002,7 @@
               return this.__PROXY__.getLinetypePatterns(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.getLinetypeId = function(...args) 
           
@@ -2012,7 +2012,7 @@
               return this.__PROXY__.getLinetypeId(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.getNewObjectId = function(...args) 
           
@@ -2022,7 +2022,7 @@
               return this.__PROXY__.getNewObjectId(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.getNewObjectHandle = function(...args) 
           
@@ -2032,7 +2032,7 @@
               return this.__PROXY__.getNewObjectHandle(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.getCurrentLayerId = function(...args) 
           
@@ -2042,7 +2042,7 @@
               return this.__PROXY__.getCurrentLayerId(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.getCurrentBlockId = function(...args) 
           
@@ -2052,7 +2052,7 @@
               return this.__PROXY__.getCurrentBlockId(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.getCurrentViewId = function(...args) 
           
@@ -2062,7 +2062,7 @@
               return this.__PROXY__.getCurrentViewId(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.getCurrentColor = function(...args) 
           
@@ -2072,7 +2072,7 @@
               return this.__PROXY__.getCurrentColor(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.getCurrentLineweight = function(...args) 
           
@@ -2082,7 +2082,7 @@
               return this.__PROXY__.getCurrentLineweight(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.getCurrentLinetypeId = function(...args) 
           
@@ -2092,7 +2092,7 @@
               return this.__PROXY__.getCurrentLinetypeId(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.deleteObject = function(...args) 
           
@@ -2102,7 +2102,7 @@
               return this.__PROXY__.deleteObject(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.setUndoStatus = function(...args) 
           
@@ -2112,7 +2112,7 @@
               return this.__PROXY__.setUndoStatus(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.getDimensionFont = function(...args) 
           
@@ -2122,7 +2122,7 @@
               return this.__PROXY__.getDimensionFont(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.getKnownVariable = function(...args) 
           
@@ -2132,7 +2132,7 @@
               return this.__PROXY__.getKnownVariable(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.isInBackStorage = function(...args) 
           
@@ -2142,7 +2142,7 @@
               return this.__PROXY__.isInBackStorage(...args);
             
         };
-    
+        
         // function 
         RLinkedStorage.prototype.getBackStorage = function(...args) 
           
@@ -2152,7 +2152,7 @@
               return this.__PROXY__.getBackStorage(...args);
             
         };
-    
+        
 
       // static functions:
       RLinkedStorage.prototype.isNullWrapper = function() {

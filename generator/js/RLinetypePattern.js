@@ -186,7 +186,7 @@
               return this.__PROXY__.set(...args);
             
         };
-    
+        
         // function 
         RLinetypePattern.prototype.isValid = function(...args) 
           
@@ -196,7 +196,7 @@
               return this.__PROXY__.isValid(...args);
             
         };
-    
+        
         // function 
         RLinetypePattern.prototype.getNumDashes = function(...args) 
           
@@ -206,7 +206,7 @@
               return this.__PROXY__.getNumDashes(...args);
             
         };
-    
+        
         // function 
         RLinetypePattern.prototype.getName = function(...args) 
           
@@ -216,7 +216,7 @@
               return this.__PROXY__.getName(...args);
             
         };
-    
+        
         // function 
         RLinetypePattern.prototype.setName = function(...args) 
           
@@ -226,7 +226,7 @@
               return this.__PROXY__.setName(...args);
             
         };
-    
+        
         // function 
         RLinetypePattern.prototype.getDescription = function(...args) 
           
@@ -236,7 +236,7 @@
               return this.__PROXY__.getDescription(...args);
             
         };
-    
+        
         // function 
         RLinetypePattern.prototype.setDescription = function(...args) 
           
@@ -246,7 +246,7 @@
               return this.__PROXY__.setDescription(...args);
             
         };
-    
+        
         // function 
         RLinetypePattern.prototype.getScreenScale = function(...args) 
           
@@ -256,7 +256,7 @@
               return this.__PROXY__.getScreenScale(...args);
             
         };
-    
+        
         // function 
         RLinetypePattern.prototype.setScreenScale = function(...args) 
           
@@ -266,7 +266,7 @@
               return this.__PROXY__.setScreenScale(...args);
             
         };
-    
+        
         // function 
         RLinetypePattern.prototype.getNoOffset = function(...args) 
           
@@ -276,7 +276,7 @@
               return this.__PROXY__.getNoOffset(...args);
             
         };
-    
+        
         // function 
         RLinetypePattern.prototype.setNoOffset = function(...args) 
           
@@ -286,7 +286,7 @@
               return this.__PROXY__.setNoOffset(...args);
             
         };
-    
+        
         // function 
         RLinetypePattern.prototype.getLabel = function(...args) 
           
@@ -296,7 +296,7 @@
               return this.__PROXY__.getLabel(...args);
             
         };
-    
+        
         // function 
         RLinetypePattern.prototype.isMetric = function(...args) 
           
@@ -306,7 +306,7 @@
               return this.__PROXY__.isMetric(...args);
             
         };
-    
+        
         // function 
         RLinetypePattern.prototype.setMetric = function(...args) 
           
@@ -316,7 +316,7 @@
               return this.__PROXY__.setMetric(...args);
             
         };
-    
+        
         // function 
         RLinetypePattern.prototype.setPatternString = function(...args) 
           
@@ -326,7 +326,7 @@
               return this.__PROXY__.setPatternString(...args);
             
         };
-    
+        
         // function 
         RLinetypePattern.prototype.getPatternString = function(...args) 
           
@@ -336,7 +336,7 @@
               return this.__PROXY__.getPatternString(...args);
             
         };
-    
+        
         // function 
         RLinetypePattern.prototype.getPattern = function(...args) 
           
@@ -346,7 +346,7 @@
               return this.__PROXY__.getPattern(...args);
             
         };
-    
+        
         // function 
         RLinetypePattern.prototype.getPatternLength = function(...args) 
           
@@ -356,7 +356,7 @@
               return this.__PROXY__.getPatternLength(...args);
             
         };
-    
+        
         // function 
         RLinetypePattern.prototype.getDashLengthAt = function(...args) 
           
@@ -366,7 +366,7 @@
               return this.__PROXY__.getDashLengthAt(...args);
             
         };
-    
+        
         // function 
         RLinetypePattern.prototype.getDashOffsetAt = function(...args) 
           
@@ -376,7 +376,7 @@
               return this.__PROXY__.getDashOffsetAt(...args);
             
         };
-    
+        
         // function 
         RLinetypePattern.prototype.hasShapeNumberAt = function(...args) 
           
@@ -386,7 +386,7 @@
               return this.__PROXY__.hasShapeNumberAt(...args);
             
         };
-    
+        
         // function 
         RLinetypePattern.prototype.getShapeNumberAt = function(...args) 
           
@@ -396,7 +396,7 @@
               return this.__PROXY__.getShapeNumberAt(...args);
             
         };
-    
+        
         // function 
         RLinetypePattern.prototype.setShapeNumberAt = function(...args) 
           
@@ -406,7 +406,7 @@
               return this.__PROXY__.setShapeNumberAt(...args);
             
         };
-    
+        
         // function 
         RLinetypePattern.prototype.hasShapeScaleAt = function(...args) 
           
@@ -416,7 +416,7 @@
               return this.__PROXY__.hasShapeScaleAt(...args);
             
         };
-    
+        
         // function 
         RLinetypePattern.prototype.getShapeScaleAt = function(...args) 
           
@@ -426,7 +426,7 @@
               return this.__PROXY__.getShapeScaleAt(...args);
             
         };
-    
+        
         // function 
         RLinetypePattern.prototype.setShapeScaleAt = function(...args) 
           
@@ -436,7 +436,7 @@
               return this.__PROXY__.setShapeScaleAt(...args);
             
         };
-    
+        
         // function 
         RLinetypePattern.prototype.hasShapeRotationAt = function(...args) 
           
@@ -446,7 +446,7 @@
               return this.__PROXY__.hasShapeRotationAt(...args);
             
         };
-    
+        
         // function 
         RLinetypePattern.prototype.getShapeRotationAt = function(...args) 
           
@@ -456,7 +456,7 @@
               return this.__PROXY__.getShapeRotationAt(...args);
             
         };
-    
+        
         // function 
         RLinetypePattern.prototype.setShapeRotationAt = function(...args) 
           
@@ -466,7 +466,7 @@
               return this.__PROXY__.setShapeRotationAt(...args);
             
         };
-    
+        
         // function 
         RLinetypePattern.prototype.hasShapeOffsetAt = function(...args) 
           
@@ -476,7 +476,7 @@
               return this.__PROXY__.hasShapeOffsetAt(...args);
             
         };
-    
+        
         // function 
         RLinetypePattern.prototype.getShapeOffsetAt = function(...args) 
           
@@ -486,7 +486,7 @@
               return this.__PROXY__.getShapeOffsetAt(...args);
             
         };
-    
+        
         // function 
         RLinetypePattern.prototype.setShapeOffsetAt = function(...args) 
           
@@ -496,7 +496,7 @@
               return this.__PROXY__.setShapeOffsetAt(...args);
             
         };
-    
+        
         // function 
         RLinetypePattern.prototype.hasShapeTextAt = function(...args) 
           
@@ -506,7 +506,7 @@
               return this.__PROXY__.hasShapeTextAt(...args);
             
         };
-    
+        
         // function 
         RLinetypePattern.prototype.getShapeTextAt = function(...args) 
           
@@ -516,7 +516,7 @@
               return this.__PROXY__.getShapeTextAt(...args);
             
         };
-    
+        
         // function 
         RLinetypePattern.prototype.setShapeTextAt = function(...args) 
           
@@ -526,7 +526,7 @@
               return this.__PROXY__.setShapeTextAt(...args);
             
         };
-    
+        
         // function 
         RLinetypePattern.prototype.hasShapeTextStyleAt = function(...args) 
           
@@ -536,7 +536,7 @@
               return this.__PROXY__.hasShapeTextStyleAt(...args);
             
         };
-    
+        
         // function 
         RLinetypePattern.prototype.getShapeTextStyleAt = function(...args) 
           
@@ -546,7 +546,7 @@
               return this.__PROXY__.getShapeTextStyleAt(...args);
             
         };
-    
+        
         // function 
         RLinetypePattern.prototype.setShapeTextStyleAt = function(...args) 
           
@@ -556,7 +556,7 @@
               return this.__PROXY__.setShapeTextStyleAt(...args);
             
         };
-    
+        
         // function 
         RLinetypePattern.prototype.getShapeIndices = function(...args) 
           
@@ -566,7 +566,7 @@
               return this.__PROXY__.getShapeIndices(...args);
             
         };
-    
+        
         // function 
         RLinetypePattern.prototype.hasShapes = function(...args) 
           
@@ -576,7 +576,7 @@
               return this.__PROXY__.hasShapes(...args);
             
         };
-    
+        
         // function 
         RLinetypePattern.prototype.hasShapeAt = function(...args) 
           
@@ -586,7 +586,7 @@
               return this.__PROXY__.hasShapeAt(...args);
             
         };
-    
+        
         // function 
         RLinetypePattern.prototype.getShapeAt = function(...args) 
           
@@ -596,7 +596,7 @@
               return this.__PROXY__.getShapeAt(...args);
             
         };
-    
+        
         // function 
         RLinetypePattern.prototype.updateShapes = function(...args) 
           
@@ -606,7 +606,7 @@
               return this.__PROXY__.updateShapes(...args);
             
         };
-    
+        
         // function 
         RLinetypePattern.prototype.getLargestGap = function(...args) 
           
@@ -616,7 +616,7 @@
               return this.__PROXY__.getLargestGap(...args);
             
         };
-    
+        
         // function 
         RLinetypePattern.prototype.hasDashAt = function(...args) 
           
@@ -626,7 +626,7 @@
               return this.__PROXY__.hasDashAt(...args);
             
         };
-    
+        
         // function 
         RLinetypePattern.prototype.getDelta = function(...args) 
           
@@ -636,7 +636,7 @@
               return this.__PROXY__.getDelta(...args);
             
         };
-    
+        
         // function 
         RLinetypePattern.prototype.getPatternOffset = function(...args) 
           
@@ -646,7 +646,7 @@
               return this.__PROXY__.getPatternOffset(...args);
             
         };
-    
+        
         // function 
         RLinetypePattern.prototype.getSymmetries = function(...args) 
           
@@ -656,7 +656,7 @@
               return this.__PROXY__.getSymmetries(...args);
             
         };
-    
+        
         // function 
         RLinetypePattern.prototype.scale = function(...args) 
           
@@ -666,7 +666,7 @@
               return this.__PROXY__.scale(...args);
             
         };
-    
+        
         // function 
         RLinetypePattern.prototype.isLoaded = function(...args) 
           
@@ -676,7 +676,7 @@
               return this.__PROXY__.isLoaded(...args);
             
         };
-    
+        
         // function 
         RLinetypePattern.prototype.load = function(...args) 
           
@@ -686,7 +686,7 @@
               return this.__PROXY__.load(...args);
             
         };
-    
+        
         // function 
         RLinetypePattern.prototype.initNameMap = function(...args) 
           
@@ -696,7 +696,7 @@
               return this.__PROXY__.initNameMap(...args);
             
         };
-    
+        
 
       // static functions:
       

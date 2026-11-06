@@ -161,7 +161,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.setObjectName(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.isWidgetType = function(...args) 
           
@@ -171,7 +171,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.isWidgetType(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.isWindowType = function(...args) 
           
@@ -181,7 +181,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.isWindowType(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.signalsBlocked = function(...args) 
           
@@ -191,7 +191,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.signalsBlocked(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.blockSignals = function(...args) 
           
@@ -201,7 +201,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.blockSignals(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.findChild = function(...args) 
           
@@ -211,7 +211,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.findChild(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.children = function(...args) 
           
@@ -221,7 +221,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.children(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.installEventFilter = function(...args) 
           
@@ -231,7 +231,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.installEventFilter(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.removeEventFilter = function(...args) 
           
@@ -241,7 +241,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.removeEventFilter(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.dumpObjectTree = function(...args) 
           
@@ -251,7 +251,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.dumpObjectTree(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.dumpObjectInfo = function(...args) 
           
@@ -261,7 +261,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.dumpObjectInfo(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.setProperty = function(...args) 
           
@@ -271,7 +271,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.setProperty(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.property = function(...args) 
           
@@ -281,7 +281,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.property(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.dynamicPropertyNames = function(...args) 
           
@@ -291,7 +291,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.dynamicPropertyNames(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.parent = function(...args) 
           
@@ -301,7 +301,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.parent(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.deleteLater = function(...args) 
           
@@ -311,7 +311,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.deleteLater(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.devType = function(...args) 
           
@@ -321,7 +321,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.devType(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.createWinId = function(...args) 
           
@@ -331,7 +331,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.createWinId(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.isWindow = function(...args) 
           
@@ -341,7 +341,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.isWindow(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.isModal = function(...args) 
           
@@ -351,7 +351,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.isModal(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.setWindowModality = function(...args) 
           
@@ -361,7 +361,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.setWindowModality(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.isEnabled = function(...args) 
           
@@ -371,7 +371,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.isEnabled(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.isEnabledTo = function(...args) 
           
@@ -381,7 +381,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.isEnabledTo(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.setEnabled = function(...args) 
           
@@ -391,7 +391,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.setEnabled(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.setDisabled = function(...args) 
           
@@ -401,7 +401,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.setDisabled(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.setWindowModified = function(...args) 
           
@@ -411,7 +411,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.setWindowModified(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.setMinimumSize = function(...args) 
           
@@ -421,7 +421,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.setMinimumSize(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.setMaximumSize = function(...args) 
           
@@ -431,7 +431,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.setMaximumSize(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.setMinimumWidth = function(...args) 
           
@@ -441,7 +441,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.setMinimumWidth(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.setMinimumHeight = function(...args) 
           
@@ -451,7 +451,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.setMinimumHeight(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.setMaximumWidth = function(...args) 
           
@@ -461,7 +461,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.setMaximumWidth(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.setMaximumHeight = function(...args) 
           
@@ -471,7 +471,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.setMaximumHeight(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.setSizeIncrement = function(...args) 
           
@@ -481,7 +481,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.setSizeIncrement(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.setBaseSize = function(...args) 
           
@@ -491,7 +491,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.setBaseSize(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.setFixedSize = function(...args) 
           
@@ -501,7 +501,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.setFixedSize(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.setFixedWidth = function(...args) 
           
@@ -511,7 +511,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.setFixedWidth(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.setFixedHeight = function(...args) 
           
@@ -521,7 +521,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.setFixedHeight(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.mapToGlobal = function(...args) 
           
@@ -531,7 +531,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.mapToGlobal(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.mapFromGlobal = function(...args) 
           
@@ -541,7 +541,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.mapFromGlobal(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.mapToParent = function(...args) 
           
@@ -551,7 +551,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.mapToParent(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.mapFromParent = function(...args) 
           
@@ -561,7 +561,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.mapFromParent(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.mapTo = function(...args) 
           
@@ -571,7 +571,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.mapTo(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.mapFrom = function(...args) 
           
@@ -581,7 +581,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.mapFrom(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.window = function(...args) 
           
@@ -591,7 +591,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.window(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.nativeParentWidget = function(...args) 
           
@@ -601,7 +601,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.nativeParentWidget(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.topLevelWidget = function(...args) 
           
@@ -611,7 +611,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.topLevelWidget(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.setPalette = function(...args) 
           
@@ -621,7 +621,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.setPalette(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.setBackgroundRole = function(...args) 
           
@@ -631,7 +631,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.setBackgroundRole(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.backgroundRole = function(...args) 
           
@@ -641,7 +641,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.backgroundRole(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.setForegroundRole = function(...args) 
           
@@ -651,7 +651,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.setForegroundRole(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.foregroundRole = function(...args) 
           
@@ -661,7 +661,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.foregroundRole(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.setFont = function(...args) 
           
@@ -671,7 +671,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.setFont(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.fontInfo = function(...args) 
           
@@ -681,7 +681,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.fontInfo(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.setCursor = function(...args) 
           
@@ -691,7 +691,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.setCursor(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.unsetCursor = function(...args) 
           
@@ -701,7 +701,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.unsetCursor(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.setMouseTracking = function(...args) 
           
@@ -711,7 +711,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.setMouseTracking(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.hasMouseTracking = function(...args) 
           
@@ -721,7 +721,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.hasMouseTracking(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.underMouse = function(...args) 
           
@@ -731,7 +731,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.underMouse(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.setTabletTracking = function(...args) 
           
@@ -741,7 +741,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.setTabletTracking(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.hasTabletTracking = function(...args) 
           
@@ -751,7 +751,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.hasTabletTracking(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.setMask = function(...args) 
           
@@ -761,7 +761,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.setMask(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.mask = function(...args) 
           
@@ -771,7 +771,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.mask(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.clearMask = function(...args) 
           
@@ -781,7 +781,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.clearMask(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.grab = function(...args) 
           
@@ -791,7 +791,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.grab(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.grabGesture = function(...args) 
           
@@ -801,7 +801,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.grabGesture(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.ungrabGesture = function(...args) 
           
@@ -811,7 +811,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.ungrabGesture(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.setWindowTitle = function(...args) 
           
@@ -821,7 +821,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.setWindowTitle(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.setStyleSheet = function(...args) 
           
@@ -831,7 +831,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.setStyleSheet(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.setWindowIcon = function(...args) 
           
@@ -841,7 +841,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.setWindowIcon(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.setWindowIconText = function(...args) 
           
@@ -851,7 +851,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.setWindowIconText(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.setWindowRole = function(...args) 
           
@@ -861,7 +861,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.setWindowRole(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.windowRole = function(...args) 
           
@@ -871,7 +871,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.windowRole(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.setWindowFilePath = function(...args) 
           
@@ -881,7 +881,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.setWindowFilePath(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.setWindowOpacity = function(...args) 
           
@@ -891,7 +891,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.setWindowOpacity(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.isWindowModified = function(...args) 
           
@@ -901,7 +901,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.isWindowModified(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.setToolTip = function(...args) 
           
@@ -911,7 +911,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.setToolTip(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.setToolTipDuration = function(...args) 
           
@@ -921,7 +921,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.setToolTipDuration(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.setStatusTip = function(...args) 
           
@@ -931,7 +931,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.setStatusTip(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.setWhatsThis = function(...args) 
           
@@ -941,7 +941,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.setWhatsThis(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.setAccessibleName = function(...args) 
           
@@ -951,7 +951,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.setAccessibleName(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.setAccessibleDescription = function(...args) 
           
@@ -961,7 +961,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.setAccessibleDescription(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.setLayoutDirection = function(...args) 
           
@@ -971,7 +971,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.setLayoutDirection(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.unsetLayoutDirection = function(...args) 
           
@@ -981,7 +981,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.unsetLayoutDirection(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.setLocale = function(...args) 
           
@@ -991,7 +991,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.setLocale(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.unsetLocale = function(...args) 
           
@@ -1001,7 +1001,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.unsetLocale(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.isRightToLeft = function(...args) 
           
@@ -1011,7 +1011,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.isRightToLeft(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.isLeftToRight = function(...args) 
           
@@ -1021,7 +1021,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.isLeftToRight(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.activateWindow = function(...args) 
           
@@ -1031,7 +1031,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.activateWindow(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.clearFocus = function(...args) 
           
@@ -1041,7 +1041,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.clearFocus(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.setFocus = function(...args) 
           
@@ -1051,7 +1051,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.setFocus(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.setFocusPolicy = function(...args) 
           
@@ -1061,7 +1061,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.setFocusPolicy(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.hasFocus = function(...args) 
           
@@ -1071,7 +1071,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.hasFocus(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.setFocusProxy = function(...args) 
           
@@ -1081,7 +1081,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.setFocusProxy(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.focusProxy = function(...args) 
           
@@ -1091,7 +1091,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.focusProxy(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.setContextMenuPolicy = function(...args) 
           
@@ -1101,7 +1101,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.setContextMenuPolicy(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.grabMouse = function(...args) 
           
@@ -1111,7 +1111,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.grabMouse(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.releaseMouse = function(...args) 
           
@@ -1121,7 +1121,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.releaseMouse(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.grabKeyboard = function(...args) 
           
@@ -1131,7 +1131,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.grabKeyboard(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.releaseKeyboard = function(...args) 
           
@@ -1141,7 +1141,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.releaseKeyboard(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.grabShortcut = function(...args) 
           
@@ -1151,7 +1151,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.grabShortcut(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.releaseShortcut = function(...args) 
           
@@ -1161,7 +1161,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.releaseShortcut(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.setShortcutEnabled = function(...args) 
           
@@ -1171,7 +1171,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.setShortcutEnabled(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.setShortcutAutoRepeat = function(...args) 
           
@@ -1181,7 +1181,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.setShortcutAutoRepeat(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.setUpdatesEnabled = function(...args) 
           
@@ -1191,7 +1191,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.setUpdatesEnabled(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.update = function(...args) 
           
@@ -1201,7 +1201,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.update(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.repaint = function(...args) 
           
@@ -1211,7 +1211,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.repaint(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.setVisible = function(...args) 
           
@@ -1221,7 +1221,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.setVisible(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.setHidden = function(...args) 
           
@@ -1231,7 +1231,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.setHidden(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.show = function(...args) 
           
@@ -1241,7 +1241,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.show(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.hide = function(...args) 
           
@@ -1251,7 +1251,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.hide(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.showMinimized = function(...args) 
           
@@ -1261,7 +1261,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.showMinimized(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.showMaximized = function(...args) 
           
@@ -1271,7 +1271,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.showMaximized(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.showFullScreen = function(...args) 
           
@@ -1281,7 +1281,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.showFullScreen(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.showNormal = function(...args) 
           
@@ -1291,7 +1291,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.showNormal(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.close = function(...args) 
           
@@ -1301,7 +1301,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.close(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.raise = function(...args) 
           
@@ -1311,7 +1311,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.raise(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.lower = function(...args) 
           
@@ -1321,7 +1321,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.lower(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.stackUnder = function(...args) 
           
@@ -1331,7 +1331,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.stackUnder(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.move = function(...args) 
           
@@ -1341,7 +1341,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.move(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.resize = function(...args) 
           
@@ -1351,7 +1351,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.resize(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.setGeometry = function(...args) 
           
@@ -1361,7 +1361,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.setGeometry(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.saveGeometry = function(...args) 
           
@@ -1371,7 +1371,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.saveGeometry(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.restoreGeometry = function(...args) 
           
@@ -1381,7 +1381,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.restoreGeometry(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.adjustSize = function(...args) 
           
@@ -1391,7 +1391,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.adjustSize(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.isVisible = function(...args) 
           
@@ -1401,7 +1401,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.isVisible(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.isVisibleTo = function(...args) 
           
@@ -1411,7 +1411,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.isVisibleTo(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.isHidden = function(...args) 
           
@@ -1421,7 +1421,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.isHidden(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.isMinimized = function(...args) 
           
@@ -1431,7 +1431,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.isMinimized(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.isMaximized = function(...args) 
           
@@ -1441,7 +1441,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.isMaximized(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.isFullScreen = function(...args) 
           
@@ -1451,7 +1451,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.isFullScreen(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.windowState = function(...args) 
           
@@ -1461,7 +1461,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.windowState(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.setWindowState = function(...args) 
           
@@ -1471,7 +1471,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.setWindowState(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.overrideWindowState = function(...args) 
           
@@ -1481,7 +1481,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.overrideWindowState(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.setSizePolicy = function(...args) 
           
@@ -1491,7 +1491,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.setSizePolicy(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.heightForWidth = function(...args) 
           
@@ -1501,7 +1501,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.heightForWidth(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.hasHeightForWidth = function(...args) 
           
@@ -1511,7 +1511,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.hasHeightForWidth(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.visibleRegion = function(...args) 
           
@@ -1521,7 +1521,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.visibleRegion(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.setContentsMargins = function(...args) 
           
@@ -1531,7 +1531,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.setContentsMargins(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.contentsMargins = function(...args) 
           
@@ -1541,7 +1541,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.contentsMargins(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.contentsRect = function(...args) 
           
@@ -1551,7 +1551,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.contentsRect(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.layout = function(...args) 
           
@@ -1561,7 +1561,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.layout(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.setLayout = function(...args) 
           
@@ -1571,7 +1571,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.setLayout(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.updateGeometry = function(...args) 
           
@@ -1581,7 +1581,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.updateGeometry(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.setParent = function(...args) 
           
@@ -1591,7 +1591,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.setParent(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.scroll = function(...args) 
           
@@ -1601,7 +1601,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.scroll(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.focusWidget = function(...args) 
           
@@ -1611,7 +1611,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.focusWidget(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.nextInFocusChain = function(...args) 
           
@@ -1621,7 +1621,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.nextInFocusChain(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.previousInFocusChain = function(...args) 
           
@@ -1631,7 +1631,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.previousInFocusChain(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.setAcceptDrops = function(...args) 
           
@@ -1641,7 +1641,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.setAcceptDrops(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.addAction = function(...args) 
           
@@ -1651,7 +1651,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.addAction(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.addActions = function(...args) 
           
@@ -1661,7 +1661,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.addActions(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.insertActions = function(...args) 
           
@@ -1671,7 +1671,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.insertActions(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.insertAction = function(...args) 
           
@@ -1681,7 +1681,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.insertAction(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.removeAction = function(...args) 
           
@@ -1691,7 +1691,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.removeAction(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.actions = function(...args) 
           
@@ -1701,7 +1701,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.actions(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.parentWidget = function(...args) 
           
@@ -1711,7 +1711,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.parentWidget(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.setWindowFlags = function(...args) 
           
@@ -1721,7 +1721,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.setWindowFlags(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.windowFlags = function(...args) 
           
@@ -1731,7 +1731,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.windowFlags(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.setWindowFlag = function(...args) 
           
@@ -1741,7 +1741,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.setWindowFlag(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.overrideWindowFlags = function(...args) 
           
@@ -1751,7 +1751,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.overrideWindowFlags(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.windowType = function(...args) 
           
@@ -1761,7 +1761,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.windowType(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.childAt = function(...args) 
           
@@ -1771,7 +1771,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.childAt(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.setAttribute = function(...args) 
           
@@ -1781,7 +1781,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.setAttribute(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.testAttribute = function(...args) 
           
@@ -1791,7 +1791,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.testAttribute(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.ensurePolished = function(...args) 
           
@@ -1801,7 +1801,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.ensurePolished(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.isAncestorOf = function(...args) 
           
@@ -1811,7 +1811,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.isAncestorOf(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.setAutoFillBackground = function(...args) 
           
@@ -1821,7 +1821,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.setAutoFillBackground(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.event = function(...args) 
           
@@ -1831,7 +1831,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.event(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.mouseDoubleClickEvent = function(...args) 
           
@@ -1841,7 +1841,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.mouseDoubleClickEvent(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.enterEvent = function(...args) 
           
@@ -1851,7 +1851,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.enterEvent(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.leaveEvent = function(...args) 
           
@@ -1861,7 +1861,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.leaveEvent(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.moveEvent = function(...args) 
           
@@ -1871,7 +1871,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.moveEvent(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.closeEvent = function(...args) 
           
@@ -1881,7 +1881,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.closeEvent(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.tabletEvent = function(...args) 
           
@@ -1891,7 +1891,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.tabletEvent(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.dragEnterEvent = function(...args) 
           
@@ -1901,7 +1901,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.dragEnterEvent(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.dragMoveEvent = function(...args) 
           
@@ -1911,7 +1911,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.dragMoveEvent(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.dragLeaveEvent = function(...args) 
           
@@ -1921,7 +1921,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.dragLeaveEvent(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.dropEvent = function(...args) 
           
@@ -1931,7 +1931,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.dropEvent(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.nativeEvent = function(...args) 
           
@@ -1941,7 +1941,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.nativeEvent(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.metric = function(...args) 
           
@@ -1951,7 +1951,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.metric(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.initPainter = function(...args) 
           
@@ -1961,7 +1961,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.initPainter(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.redirected = function(...args) 
           
@@ -1971,7 +1971,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.redirected(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.sharedPainter = function(...args) 
           
@@ -1981,7 +1981,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.sharedPainter(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.setInputMethodHints = function(...args) 
           
@@ -1991,7 +1991,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.setInputMethodHints(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.updateMicroFocus = function(...args) 
           
@@ -2001,7 +2001,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.updateMicroFocus(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.create = function(...args) 
           
@@ -2011,7 +2011,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.create(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.destroy = function(...args) 
           
@@ -2021,7 +2021,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.destroy(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.focusNextPrevChild = function(...args) 
           
@@ -2031,7 +2031,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.focusNextPrevChild(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.focusNextChild = function(...args) 
           
@@ -2041,7 +2041,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.focusNextChild(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.focusPreviousChild = function(...args) 
           
@@ -2051,7 +2051,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.focusPreviousChild(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.setBackingStore = function(...args) 
           
@@ -2061,7 +2061,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.setBackingStore(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.testAttribute_helper = function(...args) 
           
@@ -2071,7 +2071,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.testAttribute_helper(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.takeLayout = function(...args) 
           
@@ -2081,7 +2081,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.takeLayout(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.qt_mac_is_metal = function(...args) 
           
@@ -2091,7 +2091,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.qt_mac_is_metal(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.qt_qwidget_data = function(...args) 
           
@@ -2101,7 +2101,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.qt_qwidget_data(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.qt_widget_private = function(...args) 
           
@@ -2111,7 +2111,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.qt_widget_private(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.setMaxVisibleItems = function(...args) 
           
@@ -2121,7 +2121,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.setMaxVisibleItems(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.setMaxCount = function(...args) 
           
@@ -2131,7 +2131,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.setMaxCount(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.setDuplicatesEnabled = function(...args) 
           
@@ -2141,7 +2141,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.setDuplicatesEnabled(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.setFrame = function(...args) 
           
@@ -2151,7 +2151,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.setFrame(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.hasFrame = function(...args) 
           
@@ -2161,7 +2161,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.hasFrame(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.findText = function(...args) 
           
@@ -2171,7 +2171,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.findText(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.findData = function(...args) 
           
@@ -2181,7 +2181,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.findData(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.setInsertPolicy = function(...args) 
           
@@ -2191,7 +2191,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.setInsertPolicy(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.setSizeAdjustPolicy = function(...args) 
           
@@ -2201,7 +2201,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.setSizeAdjustPolicy(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.setMinimumContentsLength = function(...args) 
           
@@ -2211,7 +2211,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.setMinimumContentsLength(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.setIconSize = function(...args) 
           
@@ -2221,7 +2221,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.setIconSize(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.setPlaceholderText = function(...args) 
           
@@ -2231,7 +2231,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.setPlaceholderText(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.isEditable = function(...args) 
           
@@ -2241,7 +2241,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.isEditable(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.setEditable = function(...args) 
           
@@ -2251,7 +2251,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.setEditable(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.setLineEdit = function(...args) 
           
@@ -2261,7 +2261,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.setLineEdit(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.lineEdit = function(...args) 
           
@@ -2271,7 +2271,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.lineEdit(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.setValidator = function(...args) 
           
@@ -2281,7 +2281,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.setValidator(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.setCompleter = function(...args) 
           
@@ -2291,7 +2291,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.setCompleter(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.completer = function(...args) 
           
@@ -2301,7 +2301,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.completer(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.model = function(...args) 
           
@@ -2311,7 +2311,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.model(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.setModelColumn = function(...args) 
           
@@ -2321,7 +2321,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.setModelColumn(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.itemText = function(...args) 
           
@@ -2331,7 +2331,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.itemText(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.itemIcon = function(...args) 
           
@@ -2341,7 +2341,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.itemIcon(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.itemData = function(...args) 
           
@@ -2351,7 +2351,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.itemData(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.addItem = function(...args) 
           
@@ -2361,7 +2361,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.addItem(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.addItems = function(...args) 
           
@@ -2371,7 +2371,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.addItems(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.insertItem = function(...args) 
           
@@ -2381,7 +2381,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.insertItem(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.insertItems = function(...args) 
           
@@ -2391,7 +2391,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.insertItems(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.insertSeparator = function(...args) 
           
@@ -2401,7 +2401,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.insertSeparator(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.removeItem = function(...args) 
           
@@ -2411,7 +2411,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.removeItem(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.setItemText = function(...args) 
           
@@ -2421,7 +2421,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.setItemText(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.setItemIcon = function(...args) 
           
@@ -2431,7 +2431,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.setItemIcon(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.setItemData = function(...args) 
           
@@ -2441,7 +2441,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.setItemData(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.view = function(...args) 
           
@@ -2451,7 +2451,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.view(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.showPopup = function(...args) 
           
@@ -2461,7 +2461,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.showPopup(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.hidePopup = function(...args) 
           
@@ -2471,7 +2471,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.hidePopup(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.inputMethodQuery = function(...args) 
           
@@ -2481,7 +2481,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.inputMethodQuery(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.clear = function(...args) 
           
@@ -2491,7 +2491,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.clear(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.clearEditText = function(...args) 
           
@@ -2501,7 +2501,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.clearEditText(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.setEditText = function(...args) 
           
@@ -2511,7 +2511,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.setEditText(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.setCurrentIndex = function(...args) 
           
@@ -2521,7 +2521,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.setCurrentIndex(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.setCurrentText = function(...args) 
           
@@ -2531,7 +2531,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.setCurrentText(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.focusInEvent = function(...args) 
           
@@ -2541,7 +2541,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.focusInEvent(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.focusOutEvent = function(...args) 
           
@@ -2551,7 +2551,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.focusOutEvent(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.changeEvent = function(...args) 
           
@@ -2561,7 +2561,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.changeEvent(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.showEvent = function(...args) 
           
@@ -2571,7 +2571,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.showEvent(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.hideEvent = function(...args) 
           
@@ -2581,7 +2581,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.hideEvent(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.mousePressEvent = function(...args) 
           
@@ -2591,7 +2591,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.mousePressEvent(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.mouseReleaseEvent = function(...args) 
           
@@ -2601,7 +2601,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.mouseReleaseEvent(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.keyPressEvent = function(...args) 
           
@@ -2611,7 +2611,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.keyPressEvent(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.keyReleaseEvent = function(...args) 
           
@@ -2621,7 +2621,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.keyReleaseEvent(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.wheelEvent = function(...args) 
           
@@ -2631,7 +2631,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.wheelEvent(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.contextMenuEvent = function(...args) 
           
@@ -2641,7 +2641,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.contextMenuEvent(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.inputMethodEvent = function(...args) 
           
@@ -2651,7 +2651,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.inputMethodEvent(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.initStyleOption = function(...args) 
           
@@ -2661,7 +2661,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.initStyleOption(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.init = function(...args) 
           
@@ -2671,7 +2671,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.init(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.getLineweight = function(...args) 
           
@@ -2681,7 +2681,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.getLineweight(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.setLineweight = function(...args) 
           
@@ -2691,7 +2691,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.setLineweight(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.getOnlyFixed = function(...args) 
           
@@ -2701,7 +2701,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.getOnlyFixed(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.setOnlyFixed = function(...args) 
           
@@ -2711,7 +2711,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.setOnlyFixed(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.getNoDefault = function(...args) 
           
@@ -2721,7 +2721,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.getNoDefault(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.setNoDefault = function(...args) 
           
@@ -2731,7 +2731,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.setNoDefault(...args);
             
         };
-    
+        
         // function 
         RLineweightCombo.prototype.lineweightChanged = function(...args) 
           
@@ -2741,7 +2741,7 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
               return this.__PROXY__.lineweightChanged(...args);
             
         };
-    
+        
 
       // static functions:
       

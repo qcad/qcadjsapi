@@ -105,7 +105,7 @@
               return this.__PROXY__.keyPressed(...args);
             
         };
-    
+        
 
       // static functions:
       RKeyListener.prototype.isNullWrapper = function() {

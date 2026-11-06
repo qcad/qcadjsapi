@@ -134,7 +134,7 @@
               return this.__PROXY__.addAutoLoadFile(...args);
             
         };
-    
+        
         // function 
         RAutoLoadJs.prototype.getAutoLoadFiles = function(...args) 
           
@@ -144,7 +144,7 @@
               return this.__PROXY__.getAutoLoadFiles(...args);
             
         };
-    
+        
 
       // static functions:
       

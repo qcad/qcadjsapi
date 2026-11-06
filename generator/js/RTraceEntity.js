@@ -142,7 +142,7 @@
               return this.__PROXY__.mustAlwaysClone(...args);
             
         };
-    
+        
         // function 
         RTraceEntity.prototype.getDocument = function(...args) 
           
@@ -152,7 +152,7 @@
               return this.__PROXY__.getDocument(...args);
             
         };
-    
+        
         // function 
         RTraceEntity.prototype.setFlag = function(...args) 
           
@@ -162,7 +162,7 @@
               return this.__PROXY__.setFlag(...args);
             
         };
-    
+        
         // function 
         RTraceEntity.prototype.getFlag = function(...args) 
           
@@ -172,7 +172,7 @@
               return this.__PROXY__.getFlag(...args);
             
         };
-    
+        
         // function 
         RTraceEntity.prototype.getId = function(...args) 
           
@@ -182,7 +182,7 @@
               return this.__PROXY__.getId(...args);
             
         };
-    
+        
         // function 
         RTraceEntity.prototype.getHandle = function(...args) 
           
@@ -192,7 +192,7 @@
               return this.__PROXY__.getHandle(...args);
             
         };
-    
+        
         // function 
         RTraceEntity.prototype.isProtected = function(...args) 
           
@@ -202,7 +202,7 @@
               return this.__PROXY__.isProtected(...args);
             
         };
-    
+        
         // function 
         RTraceEntity.prototype.setProtected = function(...args) 
           
@@ -212,7 +212,7 @@
               return this.__PROXY__.setProtected(...args);
             
         };
-    
+        
         // function 
         RTraceEntity.prototype.isInvisible = function(...args) 
           
@@ -222,7 +222,7 @@
               return this.__PROXY__.isInvisible(...args);
             
         };
-    
+        
         // function 
         RTraceEntity.prototype.setInvisible = function(...args) 
           
@@ -232,7 +232,7 @@
               return this.__PROXY__.setInvisible(...args);
             
         };
-    
+        
         // function 
         RTraceEntity.prototype.isUndone = function(...args) 
           
@@ -242,7 +242,7 @@
               return this.__PROXY__.isUndone(...args);
             
         };
-    
+        
         // function 
         RTraceEntity.prototype.isWorkingSet = function(...args) 
           
@@ -252,7 +252,7 @@
               return this.__PROXY__.isWorkingSet(...args);
             
         };
-    
+        
         // function 
         RTraceEntity.prototype.setWorkingSet = function(...args) 
           
@@ -262,7 +262,7 @@
               return this.__PROXY__.setWorkingSet(...args);
             
         };
-    
+        
         // function 
         RTraceEntity.prototype.getPropertyTypeIds = function(...args) 
           
@@ -272,7 +272,7 @@
               return this.__PROXY__.getPropertyTypeIds(...args);
             
         };
-    
+        
         // function 
         RTraceEntity.prototype.getCustomPropertyTypeIds = function(...args) 
           
@@ -282,7 +282,7 @@
               return this.__PROXY__.getCustomPropertyTypeIds(...args);
             
         };
-    
+        
         // function 
         RTraceEntity.prototype.hasPropertyType = function(...args) 
           
@@ -292,7 +292,7 @@
               return this.__PROXY__.hasPropertyType(...args);
             
         };
-    
+        
         // function 
         RTraceEntity.prototype.hasCustomProperties = function(...args) 
           
@@ -302,7 +302,7 @@
               return this.__PROXY__.hasCustomProperties(...args);
             
         };
-    
+        
         // function 
         RTraceEntity.prototype.hasCustomProperty = function(...args) 
           
@@ -312,7 +312,7 @@
               return this.__PROXY__.hasCustomProperty(...args);
             
         };
-    
+        
         // function 
         RTraceEntity.prototype.getCustomProperty = function(...args) 
           
@@ -322,7 +322,7 @@
               return this.__PROXY__.getCustomProperty(...args);
             
         };
-    
+        
         // function 
         RTraceEntity.prototype.getCustomDoubleProperty = function(...args) 
           
@@ -332,7 +332,7 @@
               return this.__PROXY__.getCustomDoubleProperty(...args);
             
         };
-    
+        
         // function 
         RTraceEntity.prototype.getCustomIntProperty = function(...args) 
           
@@ -342,7 +342,7 @@
               return this.__PROXY__.getCustomIntProperty(...args);
             
         };
-    
+        
         // function 
         RTraceEntity.prototype.getCustomBoolProperty = function(...args) 
           
@@ -352,7 +352,7 @@
               return this.__PROXY__.getCustomBoolProperty(...args);
             
         };
-    
+        
         // function 
         RTraceEntity.prototype.setCustomProperty = function(...args) 
           
@@ -362,7 +362,7 @@
               return this.__PROXY__.setCustomProperty(...args);
             
         };
-    
+        
         // function 
         RTraceEntity.prototype.removeCustomProperty = function(...args) 
           
@@ -372,7 +372,7 @@
               return this.__PROXY__.removeCustomProperty(...args);
             
         };
-    
+        
         // function 
         RTraceEntity.prototype.getCustomPropertyTitles = function(...args) 
           
@@ -382,7 +382,7 @@
               return this.__PROXY__.getCustomPropertyTitles(...args);
             
         };
-    
+        
         // function 
         RTraceEntity.prototype.getCustomPropertyKeys = function(...args) 
           
@@ -392,7 +392,7 @@
               return this.__PROXY__.getCustomPropertyKeys(...args);
             
         };
-    
+        
         // function 
         RTraceEntity.prototype.copyCustomPropertiesFrom = function(...args) 
           
@@ -402,7 +402,7 @@
               return this.__PROXY__.copyCustomPropertiesFrom(...args);
             
         };
-    
+        
         // function 
         RTraceEntity.prototype.dump = function(...args) 
           
@@ -412,7 +412,7 @@
               return this.__PROXY__.dump(...args);
             
         };
-    
+        
         // function 
         RTraceEntity.prototype.validate = function(...args) 
           
@@ -422,7 +422,7 @@
               return this.__PROXY__.validate(...args);
             
         };
-    
+        
         // function 
         RTraceEntity.prototype.setUndone = function(...args) 
           
@@ -432,7 +432,7 @@
               return this.__PROXY__.setUndone(...args);
             
         };
-    
+        
         // function 
         RTraceEntity.prototype.setId = function(...args) 
           
@@ -442,7 +442,7 @@
               return this.__PROXY__.setId(...args);
             
         };
-    
+        
         // function 
         RTraceEntity.prototype.setHandle = function(...args) 
           
@@ -452,7 +452,7 @@
               return this.__PROXY__.setHandle(...args);
             
         };
-    
+        
         // function 
         RTraceEntity.prototype.setMemberFlag = function(...args) 
           
@@ -462,7 +462,7 @@
               return this.__PROXY__.setMemberFlag(...args);
             
         };
-    
+        
         // function 
         RTraceEntity.prototype.setDocument = function(...args) 
           
@@ -472,7 +472,7 @@
               return this.__PROXY__.setDocument(...args);
             
         };
-    
+        
         // function 
         RTraceEntity.prototype.getType = function(...args) 
           
@@ -482,7 +482,7 @@
               return this.__PROXY__.getType(...args);
             
         };
-    
+        
         // function 
         RTraceEntity.prototype.isPointType = function(...args) 
           
@@ -492,7 +492,7 @@
               return this.__PROXY__.isPointType(...args);
             
         };
-    
+        
         // function 
         RTraceEntity.prototype.isValid = function(...args) 
           
@@ -502,7 +502,7 @@
               return this.__PROXY__.isValid(...args);
             
         };
-    
+        
         // function 
         RTraceEntity.prototype.isSane = function(...args) 
           
@@ -512,7 +512,7 @@
               return this.__PROXY__.isSane(...args);
             
         };
-    
+        
         // function 
         RTraceEntity.prototype.isSelected = function(...args) 
           
@@ -522,7 +522,7 @@
               return this.__PROXY__.isSelected(...args);
             
         };
-    
+        
         // function 
         RTraceEntity.prototype.setSelected = function(...args) 
           
@@ -532,7 +532,7 @@
               return this.__PROXY__.setSelected(...args);
             
         };
-    
+        
         // function 
         RTraceEntity.prototype.isSelectedWorkingSet = function(...args) 
           
@@ -542,7 +542,7 @@
               return this.__PROXY__.isSelectedWorkingSet(...args);
             
         };
-    
+        
         // function 
         RTraceEntity.prototype.setSelectedWorkingSet = function(...args) 
           
@@ -552,7 +552,7 @@
               return this.__PROXY__.setSelectedWorkingSet(...args);
             
         };
-    
+        
         // function 
         RTraceEntity.prototype.isSelectable = function(...args) 
           
@@ -562,7 +562,7 @@
               return this.__PROXY__.isSelectable(...args);
             
         };
-    
+        
         // function 
         RTraceEntity.prototype.isUpdatesEnabled = function(...args) 
           
@@ -572,7 +572,7 @@
               return this.__PROXY__.isUpdatesEnabled(...args);
             
         };
-    
+        
         // function 
         RTraceEntity.prototype.setUpdatesEnabled = function(...args) 
           
@@ -582,7 +582,7 @@
               return this.__PROXY__.setUpdatesEnabled(...args);
             
         };
-    
+        
         // function 
         RTraceEntity.prototype.cloneOnChange = function(...args) 
           
@@ -592,7 +592,7 @@
               return this.__PROXY__.cloneOnChange(...args);
             
         };
-    
+        
         // function 
         RTraceEntity.prototype.setDrawOrder = function(...args) 
           
@@ -602,7 +602,7 @@
               return this.__PROXY__.setDrawOrder(...args);
             
         };
-    
+        
         // function 
         RTraceEntity.prototype.getDrawOrder = function(...args) 
           
@@ -612,7 +612,7 @@
               return this.__PROXY__.getDrawOrder(...args);
             
         };
-    
+        
         // function 
         RTraceEntity.prototype.setLayerId = function(...args) 
           
@@ -622,7 +622,7 @@
               return this.__PROXY__.setLayerId(...args);
             
         };
-    
+        
         // function 
         RTraceEntity.prototype.setLayerName = function(...args) 
           
@@ -632,7 +632,7 @@
               return this.__PROXY__.setLayerName(...args);
             
         };
-    
+        
         // function 
         RTraceEntity.prototype.getLayerId = function(...args) 
           
@@ -642,7 +642,7 @@
               return this.__PROXY__.getLayerId(...args);
             
         };
-    
+        
         // function 
         RTraceEntity.prototype.getLayerName = function(...args) 
           
@@ -652,7 +652,7 @@
               return this.__PROXY__.getLayerName(...args);
             
         };
-    
+        
         // function 
         RTraceEntity.prototype.setBlockId = function(...args) 
           
@@ -662,7 +662,7 @@
               return this.__PROXY__.setBlockId(...args);
             
         };
-    
+        
         // function 
         RTraceEntity.prototype.getBlockId = function(...args) 
           
@@ -672,7 +672,7 @@
               return this.__PROXY__.getBlockId(...args);
             
         };
-    
+        
         // function 
         RTraceEntity.prototype.getBlockName = function(...args) 
           
@@ -682,7 +682,7 @@
               return this.__PROXY__.getBlockName(...args);
             
         };
-    
+        
         // function 
         RTraceEntity.prototype.getParentId = function(...args) 
           
@@ -692,7 +692,7 @@
               return this.__PROXY__.getParentId(...args);
             
         };
-    
+        
         // function 
         RTraceEntity.prototype.setLinetypeId = function(...args) 
           
@@ -702,7 +702,7 @@
               return this.__PROXY__.setLinetypeId(...args);
             
         };
-    
+        
         // function 
         RTraceEntity.prototype.setLinetypePattern = function(...args) 
           
@@ -712,7 +712,7 @@
               return this.__PROXY__.setLinetypePattern(...args);
             
         };
-    
+        
         // function 
         RTraceEntity.prototype.getLinetypeId = function(...args) 
           
@@ -722,7 +722,7 @@
               return this.__PROXY__.getLinetypeId(...args);
             
         };
-    
+        
         // function 
         RTraceEntity.prototype.getLinetypePattern = function(...args) 
           
@@ -732,7 +732,7 @@
               return this.__PROXY__.getLinetypePattern(...args);
             
         };
-    
+        
         // function 
         RTraceEntity.prototype.setLinetypeScale = function(...args) 
           
@@ -742,7 +742,7 @@
               return this.__PROXY__.setLinetypeScale(...args);
             
         };
-    
+        
         // function 
         RTraceEntity.prototype.getLinetypeScale = function(...args) 
           
@@ -752,7 +752,7 @@
               return this.__PROXY__.getLinetypeScale(...args);
             
         };
-    
+        
         // function 
         RTraceEntity.prototype.setLineweight = function(...args) 
           
@@ -762,7 +762,7 @@
               return this.__PROXY__.setLineweight(...args);
             
         };
-    
+        
         // function 
         RTraceEntity.prototype.getLineweight = function(...args) 
           
@@ -772,7 +772,7 @@
               return this.__PROXY__.getLineweight(...args);
             
         };
-    
+        
         // function 
         RTraceEntity.prototype.setColor = function(...args) 
           
@@ -782,7 +782,7 @@
               return this.__PROXY__.setColor(...args);
             
         };
-    
+        
         // function 
         RTraceEntity.prototype.getColor = function(...args) 
           
@@ -792,7 +792,7 @@
               return this.__PROXY__.getColor(...args);
             
         };
-    
+        
         // function 
         RTraceEntity.prototype.getDisplayColor = function(...args) 
           
@@ -802,7 +802,7 @@
               return this.__PROXY__.getDisplayColor(...args);
             
         };
-    
+        
         // function 
         RTraceEntity.prototype.copyAttributesFrom = function(...args) 
           
@@ -812,7 +812,7 @@
               return this.__PROXY__.copyAttributesFrom(...args);
             
         };
-    
+        
         // function 
         RTraceEntity.prototype.getBoundingBox = function(...args) 
           
@@ -822,7 +822,7 @@
               return this.__PROXY__.getBoundingBox(...args);
             
         };
-    
+        
         // function 
         RTraceEntity.prototype.to2D = function(...args) 
           
@@ -832,7 +832,7 @@
               return this.__PROXY__.to2D(...args);
             
         };
-    
+        
         // function 
         RTraceEntity.prototype.setZ = function(...args) 
           
@@ -842,7 +842,7 @@
               return this.__PROXY__.setZ(...args);
             
         };
-    
+        
         // function 
         RTraceEntity.prototype.getBoundingBoxes = function(...args) 
           
@@ -852,7 +852,7 @@
               return this.__PROXY__.getBoundingBoxes(...args);
             
         };
-    
+        
         // function 
         RTraceEntity.prototype.getHull = function(...args) 
           
@@ -862,7 +862,7 @@
               return this.__PROXY__.getHull(...args);
             
         };
-    
+        
         // function 
         RTraceEntity.prototype.getShapes = function(...args) 
           
@@ -872,7 +872,7 @@
               return this.__PROXY__.getShapes(...args);
             
         };
-    
+        
         // function 
         RTraceEntity.prototype.getClosestSubEntityId = function(...args) 
           
@@ -882,7 +882,7 @@
               return this.__PROXY__.getClosestSubEntityId(...args);
             
         };
-    
+        
         // function 
         RTraceEntity.prototype.getClosestShape = function(...args) 
           
@@ -892,7 +892,7 @@
               return this.__PROXY__.getClosestShape(...args);
             
         };
-    
+        
         // function 
         RTraceEntity.prototype.getClosestSimpleShape = function(...args) 
           
@@ -902,7 +902,7 @@
               return this.__PROXY__.getClosestSimpleShape(...args);
             
         };
-    
+        
         // function 
         RTraceEntity.prototype.isInside = function(...args) 
           
@@ -912,7 +912,7 @@
               return this.__PROXY__.isInside(...args);
             
         };
-    
+        
         // function 
         RTraceEntity.prototype.isOnEntity = function(...args) 
           
@@ -922,7 +922,7 @@
               return this.__PROXY__.isOnEntity(...args);
             
         };
-    
+        
         // function 
         RTraceEntity.prototype.intersectsWith = function(...args) 
           
@@ -932,7 +932,7 @@
               return this.__PROXY__.intersectsWith(...args);
             
         };
-    
+        
         // function 
         RTraceEntity.prototype.getDistanceTo = function(...args) 
           
@@ -942,7 +942,7 @@
               return this.__PROXY__.getDistanceTo(...args);
             
         };
-    
+        
         // function 
         RTraceEntity.prototype.getVectorTo = function(...args) 
           
@@ -952,7 +952,7 @@
               return this.__PROXY__.getVectorTo(...args);
             
         };
-    
+        
         // function 
         RTraceEntity.prototype.getInternalReferencePoints = function(...args) 
           
@@ -962,7 +962,7 @@
               return this.__PROXY__.getInternalReferencePoints(...args);
             
         };
-    
+        
         // function 
         RTraceEntity.prototype.getReferencePoints = function(...args) 
           
@@ -972,7 +972,7 @@
               return this.__PROXY__.getReferencePoints(...args);
             
         };
-    
+        
         // function 
         RTraceEntity.prototype.getPointOnEntity = function(...args) 
           
@@ -982,7 +982,7 @@
               return this.__PROXY__.getPointOnEntity(...args);
             
         };
-    
+        
         // function 
         RTraceEntity.prototype.getEndPoints = function(...args) 
           
@@ -992,7 +992,7 @@
               return this.__PROXY__.getEndPoints(...args);
             
         };
-    
+        
         // function 
         RTraceEntity.prototype.getMiddlePoints = function(...args) 
           
@@ -1002,7 +1002,7 @@
               return this.__PROXY__.getMiddlePoints(...args);
             
         };
-    
+        
         // function 
         RTraceEntity.prototype.getCenterPoints = function(...args) 
           
@@ -1012,7 +1012,7 @@
               return this.__PROXY__.getCenterPoints(...args);
             
         };
-    
+        
         // function 
         RTraceEntity.prototype.getClosestPointOnEntity = function(...args) 
           
@@ -1022,7 +1022,7 @@
               return this.__PROXY__.getClosestPointOnEntity(...args);
             
         };
-    
+        
         // function 
         RTraceEntity.prototype.getPointsWithDistanceToEnd = function(...args) 
           
@@ -1032,7 +1032,7 @@
               return this.__PROXY__.getPointsWithDistanceToEnd(...args);
             
         };
-    
+        
         // function 
         RTraceEntity.prototype.getIntersectionPoints = function(...args) 
           
@@ -1042,7 +1042,7 @@
               return this.__PROXY__.getIntersectionPoints(...args);
             
         };
-    
+        
         // function 
         RTraceEntity.prototype.getIntersectionPointsWithShape = function(...args) 
           
@@ -1052,7 +1052,7 @@
               return this.__PROXY__.getIntersectionPointsWithShape(...args);
             
         };
-    
+        
         // function 
         RTraceEntity.prototype.clickReferencePoint = function(...args) 
           
@@ -1062,7 +1062,7 @@
               return this.__PROXY__.clickReferencePoint(...args);
             
         };
-    
+        
         // function 
         RTraceEntity.prototype.moveReferencePoint = function(...args) 
           
@@ -1072,7 +1072,7 @@
               return this.__PROXY__.moveReferencePoint(...args);
             
         };
-    
+        
         // function 
         RTraceEntity.prototype.move = function(...args) 
           
@@ -1082,7 +1082,7 @@
               return this.__PROXY__.move(...args);
             
         };
-    
+        
         // function 
         RTraceEntity.prototype.rotate = function(...args) 
           
@@ -1092,7 +1092,7 @@
               return this.__PROXY__.rotate(...args);
             
         };
-    
+        
         // function 
         RTraceEntity.prototype.scale = function(...args) 
           
@@ -1102,7 +1102,7 @@
               return this.__PROXY__.scale(...args);
             
         };
-    
+        
         // function 
         RTraceEntity.prototype.scaleNonUniform = function(...args) 
           
@@ -1112,7 +1112,7 @@
               return this.__PROXY__.scaleNonUniform(...args);
             
         };
-    
+        
         // function 
         RTraceEntity.prototype.scaleVisualProperties = function(...args) 
           
@@ -1122,7 +1122,7 @@
               return this.__PROXY__.scaleVisualProperties(...args);
             
         };
-    
+        
         // function 
         RTraceEntity.prototype.setViewportContext = function(...args) 
           
@@ -1132,7 +1132,7 @@
               return this.__PROXY__.setViewportContext(...args);
             
         };
-    
+        
         // function 
         RTraceEntity.prototype.mirror = function(...args) 
           
@@ -1142,7 +1142,7 @@
               return this.__PROXY__.mirror(...args);
             
         };
-    
+        
         // function 
         RTraceEntity.prototype.flipHorizontal = function(...args) 
           
@@ -1152,7 +1152,7 @@
               return this.__PROXY__.flipHorizontal(...args);
             
         };
-    
+        
         // function 
         RTraceEntity.prototype.flipVertical = function(...args) 
           
@@ -1162,7 +1162,7 @@
               return this.__PROXY__.flipVertical(...args);
             
         };
-    
+        
         // function 
         RTraceEntity.prototype.stretch = function(...args) 
           
@@ -1172,7 +1172,7 @@
               return this.__PROXY__.stretch(...args);
             
         };
-    
+        
         // function 
         RTraceEntity.prototype.update = function(...args) 
           
@@ -1182,7 +1182,7 @@
               return this.__PROXY__.update(...args);
             
         };
-    
+        
         // function 
         RTraceEntity.prototype.castToShape = function(...args) 
           
@@ -1192,7 +1192,7 @@
               return this.__PROXY__.castToShape(...args);
             
         };
-    
+        
         // function 
         RTraceEntity.prototype.setAutoUpdatesBlocked = function(...args) 
           
@@ -1202,7 +1202,7 @@
               return this.__PROXY__.setAutoUpdatesBlocked(...args);
             
         };
-    
+        
         // function 
         RTraceEntity.prototype.isVisible = function(...args) 
           
@@ -1212,7 +1212,7 @@
               return this.__PROXY__.isVisible(...args);
             
         };
-    
+        
         // function 
         RTraceEntity.prototype.isEditable = function(...args) 
           
@@ -1222,7 +1222,7 @@
               return this.__PROXY__.isEditable(...args);
             
         };
-    
+        
         // function 
         RTraceEntity.prototype.isInWorkingSet = function(...args) 
           
@@ -1232,7 +1232,7 @@
               return this.__PROXY__.isInWorkingSet(...args);
             
         };
-    
+        
         // function 
         RTraceEntity.prototype.getComplexity = function(...args) 
           
@@ -1242,7 +1242,7 @@
               return this.__PROXY__.getComplexity(...args);
             
         };
-    
+        
         // function 
         RTraceEntity.prototype.setParentId = function(...args) 
           
@@ -1252,7 +1252,7 @@
               return this.__PROXY__.setParentId(...args);
             
         };
-    
+        
         // function 
         RTraceEntity.prototype.init = function(...args) 
           
@@ -1262,7 +1262,7 @@
               return this.__PROXY__.init(...args);
             
         };
-    
+        
         // function 
         RTraceEntity.prototype.getRtti = function(...args) 
           
@@ -1272,7 +1272,7 @@
               return this.__PROXY__.getRtti(...args);
             
         };
-    
+        
         // function 
         RTraceEntity.prototype.getStaticPropertyTypeIds = function(...args) 
           
@@ -1282,7 +1282,7 @@
               return this.__PROXY__.getStaticPropertyTypeIds(...args);
             
         };
-    
+        
         // function 
         RTraceEntity.prototype.clone = function(...args) 
           
@@ -1292,7 +1292,7 @@
               return this.__PROXY__.clone(...args);
             
         };
-    
+        
         // function 
         RTraceEntity.prototype.setProperty = function(...args) 
           
@@ -1302,7 +1302,7 @@
               return this.__PROXY__.setProperty(...args);
             
         };
-    
+        
         // function 
         RTraceEntity.prototype.getProperty = function(...args) 
           
@@ -1312,7 +1312,7 @@
               return this.__PROXY__.getProperty(...args);
             
         };
-    
+        
         // function 
         RTraceEntity.prototype.exportEntity = function(...args) 
           
@@ -1322,7 +1322,7 @@
               return this.__PROXY__.exportEntity(...args);
             
         };
-    
+        
         // function 
         RTraceEntity.prototype.getData = function(...args) 
           
@@ -1332,7 +1332,7 @@
               return this.__PROXY__.getData(...args);
             
         };
-    
+        
         // function 
         RTraceEntity.prototype.getVertexAt = function(...args) 
           
@@ -1342,7 +1342,7 @@
               return this.__PROXY__.getVertexAt(...args);
             
         };
-    
+        
         // function 
         RTraceEntity.prototype.countVertices = function(...args) 
           
@@ -1352,7 +1352,7 @@
               return this.__PROXY__.countVertices(...args);
             
         };
-    
+        
         // function 
         RTraceEntity.prototype.getStartPoint = function(...args) 
           
@@ -1362,7 +1362,7 @@
               return this.__PROXY__.getStartPoint(...args);
             
         };
-    
+        
         // function 
         RTraceEntity.prototype.getEndPoint = function(...args) 
           
@@ -1372,7 +1372,7 @@
               return this.__PROXY__.getEndPoint(...args);
             
         };
-    
+        
         // function 
         RTraceEntity.prototype.getDirection1 = function(...args) 
           
@@ -1382,7 +1382,7 @@
               return this.__PROXY__.getDirection1(...args);
             
         };
-    
+        
         // function 
         RTraceEntity.prototype.getDirection2 = function(...args) 
           
@@ -1392,7 +1392,7 @@
               return this.__PROXY__.getDirection2(...args);
             
         };
-    
+        
         // function 
         RTraceEntity.prototype.reverse = function(...args) 
           
@@ -1402,7 +1402,7 @@
               return this.__PROXY__.reverse(...args);
             
         };
-    
+        
         // function 
         RTraceEntity.prototype.getTrimEnd = function(...args) 
           
@@ -1412,7 +1412,7 @@
               return this.__PROXY__.getTrimEnd(...args);
             
         };
-    
+        
         // function 
         RTraceEntity.prototype.trimStartPoint = function(...args) 
           
@@ -1422,7 +1422,7 @@
               return this.__PROXY__.trimStartPoint(...args);
             
         };
-    
+        
         // function 
         RTraceEntity.prototype.trimEndPoint = function(...args) 
           
@@ -1432,7 +1432,7 @@
               return this.__PROXY__.trimEndPoint(...args);
             
         };
-    
+        
         // function 
         RTraceEntity.prototype.getLength = function(...args) 
           
@@ -1442,7 +1442,7 @@
               return this.__PROXY__.getLength(...args);
             
         };
-    
+        
         // function 
         RTraceEntity.prototype.print = function(...args) 
           
@@ -1452,7 +1452,7 @@
               return this.__PROXY__.print(...args);
             
         };
-    
+        
 
       // static functions:
       

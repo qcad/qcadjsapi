@@ -169,7 +169,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.setObjectName(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.isWidgetType = function(...args) 
           
@@ -179,7 +179,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.isWidgetType(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.isWindowType = function(...args) 
           
@@ -189,7 +189,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.isWindowType(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.signalsBlocked = function(...args) 
           
@@ -199,7 +199,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.signalsBlocked(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.blockSignals = function(...args) 
           
@@ -209,7 +209,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.blockSignals(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.findChild = function(...args) 
           
@@ -219,7 +219,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.findChild(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.children = function(...args) 
           
@@ -229,7 +229,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.children(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.setParent = function(...args) 
           
@@ -239,7 +239,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.setParent(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.installEventFilter = function(...args) 
           
@@ -249,7 +249,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.installEventFilter(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.removeEventFilter = function(...args) 
           
@@ -259,7 +259,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.removeEventFilter(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.dumpObjectTree = function(...args) 
           
@@ -269,7 +269,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.dumpObjectTree(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.dumpObjectInfo = function(...args) 
           
@@ -279,7 +279,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.dumpObjectInfo(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.setProperty = function(...args) 
           
@@ -289,7 +289,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.setProperty(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.property = function(...args) 
           
@@ -299,7 +299,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.property(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.dynamicPropertyNames = function(...args) 
           
@@ -309,7 +309,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.dynamicPropertyNames(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.parent = function(...args) 
           
@@ -319,7 +319,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.parent(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.deleteLater = function(...args) 
           
@@ -329,7 +329,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.deleteLater(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.associatedObjects = function(...args) 
           
@@ -339,7 +339,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.associatedObjects(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.setIconText = function(...args) 
           
@@ -349,7 +349,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.setIconText(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.setWhatsThis = function(...args) 
           
@@ -359,7 +359,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.setWhatsThis(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.setPriority = function(...args) 
           
@@ -369,7 +369,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.setPriority(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.menu = function(...args) 
           
@@ -379,7 +379,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.menu(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.setMenu = function(...args) 
           
@@ -389,7 +389,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.setMenu(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.setSeparator = function(...args) 
           
@@ -399,7 +399,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.setSeparator(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.isSeparator = function(...args) 
           
@@ -409,7 +409,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.isSeparator(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.shortcuts = function(...args) 
           
@@ -419,7 +419,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.shortcuts(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.setShortcutContext = function(...args) 
           
@@ -429,7 +429,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.setShortcutContext(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.setAutoRepeat = function(...args) 
           
@@ -439,7 +439,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.setAutoRepeat(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.setFont = function(...args) 
           
@@ -449,7 +449,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.setFont(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.setCheckable = function(...args) 
           
@@ -459,7 +459,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.setCheckable(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.isCheckable = function(...args) 
           
@@ -469,7 +469,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.isCheckable(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.data = function(...args) 
           
@@ -479,7 +479,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.data(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.setData = function(...args) 
           
@@ -489,7 +489,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.setData(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.isEnabled = function(...args) 
           
@@ -499,7 +499,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.isEnabled(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.isVisible = function(...args) 
           
@@ -509,7 +509,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.isVisible(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.showStatusText = function(...args) 
           
@@ -519,7 +519,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.showStatusText(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.setMenuRole = function(...args) 
           
@@ -529,7 +529,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.setMenuRole(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.setIconVisibleInMenu = function(...args) 
           
@@ -539,7 +539,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.setIconVisibleInMenu(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.isIconVisibleInMenu = function(...args) 
           
@@ -549,7 +549,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.isIconVisibleInMenu(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.setShortcutVisibleInContextMenu = function(...args) 
           
@@ -559,7 +559,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.setShortcutVisibleInContextMenu(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.isShortcutVisibleInContextMenu = function(...args) 
           
@@ -569,7 +569,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.isShortcutVisibleInContextMenu(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.event = function(...args) 
           
@@ -579,7 +579,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.event(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.trigger = function(...args) 
           
@@ -589,7 +589,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.trigger(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.hover = function(...args) 
           
@@ -599,7 +599,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.hover(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.toggle = function(...args) 
           
@@ -609,7 +609,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.toggle(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.setDisabled = function(...args) 
           
@@ -619,7 +619,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.setDisabled(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.setVisible = function(...args) 
           
@@ -629,7 +629,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.setVisible(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.qt_mac_clear_status_text = function(...args) 
           
@@ -639,7 +639,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.qt_mac_clear_status_text(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.setText = function(...args) 
           
@@ -649,7 +649,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.setText(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.initTexts = function(...args) 
           
@@ -659,7 +659,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.initTexts(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.init = function(...args) 
           
@@ -669,7 +669,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.init(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.formatToolTip = function(...args) 
           
@@ -679,7 +679,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.formatToolTip(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.getToolTip = function(...args) 
           
@@ -689,7 +689,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.getToolTip(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.addShortcut = function(...args) 
           
@@ -699,7 +699,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.addShortcut(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.removeShortcuts = function(...args) 
           
@@ -709,7 +709,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.removeShortcuts(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.setShortcut = function(...args) 
           
@@ -719,7 +719,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.setShortcut(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.setDefaultShortcut = function(...args) 
           
@@ -729,7 +729,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.setDefaultShortcut(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.setShortcuts = function(...args) 
           
@@ -739,7 +739,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.setShortcuts(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.setShortcutsFromStrings = function(...args) 
           
@@ -749,7 +749,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.setShortcutsFromStrings(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.getShortcuts = function(...args) 
           
@@ -759,7 +759,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.getShortcuts(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.setDefaultShortcuts = function(...args) 
           
@@ -769,7 +769,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.setDefaultShortcuts(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.getDefaultShortcuts = function(...args) 
           
@@ -779,7 +779,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.getDefaultShortcuts(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.setShortcutText = function(...args) 
           
@@ -789,7 +789,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.setShortcutText(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.getShortcutText = function(...args) 
           
@@ -799,7 +799,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.getShortcutText(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.getShortcutsString = function(...args) 
           
@@ -809,7 +809,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.getShortcutsString(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.setGroupSortOrderStatic = function(...args) 
           
@@ -819,7 +819,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.setGroupSortOrderStatic(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.setGroupSortOrderOverrideStatic = function(...args) 
           
@@ -829,7 +829,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.setGroupSortOrderOverrideStatic(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.getGroupSortOrderStatic = function(...args) 
           
@@ -839,7 +839,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.getGroupSortOrderStatic(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.setSortOrderStatic = function(...args) 
           
@@ -849,7 +849,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.setSortOrderStatic(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.setSortOrderOverrideStatic = function(...args) 
           
@@ -859,7 +859,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.setSortOrderOverrideStatic(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.getSortOrderStatic = function(...args) 
           
@@ -869,7 +869,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.getSortOrderStatic(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.setGroupSortOrder = function(...args) 
           
@@ -879,7 +879,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.setGroupSortOrder(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.setGroupSortOrderOverride = function(...args) 
           
@@ -889,7 +889,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.setGroupSortOrderOverride(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.getGroupSortOrder = function(...args) 
           
@@ -899,7 +899,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.getGroupSortOrder(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.setSortOrder = function(...args) 
           
@@ -909,7 +909,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.setSortOrder(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.setSortOrderOverride = function(...args) 
           
@@ -919,7 +919,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.setSortOrderOverride(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.getSortOrder = function(...args) 
           
@@ -929,7 +929,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.getSortOrder(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.addToMenu = function(...args) 
           
@@ -939,7 +939,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.addToMenu(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.addToToolBar = function(...args) 
           
@@ -949,7 +949,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.addToToolBar(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.fixSeparators = function(...args) 
           
@@ -959,7 +959,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.fixSeparators(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.addSeparatorToWidget = function(...args) 
           
@@ -969,7 +969,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.addSeparatorToWidget(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.addToWidget = function(...args) 
           
@@ -979,7 +979,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.addToWidget(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.removeFromWidget = function(...args) 
           
@@ -989,7 +989,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.removeFromWidget(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.updateIcons = function(...args) 
           
@@ -999,7 +999,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.updateIcons(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.updateIcon = function(...args) 
           
@@ -1009,7 +1009,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.updateIcon(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.setIcon = function(...args) 
           
@@ -1019,7 +1019,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.setIcon(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.disableIcon = function(...args) 
           
@@ -1029,7 +1029,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.disableIcon(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.isIconDisabled = function(...args) 
           
@@ -1039,7 +1039,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.isIconDisabled(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.setToolTip = function(...args) 
           
@@ -1049,7 +1049,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.setToolTip(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.setStatusTip = function(...args) 
           
@@ -1059,7 +1059,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.setStatusTip(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.setEnabled = function(...args) 
           
@@ -1069,7 +1069,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.setEnabled(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.setEnabledOverride = function(...args) 
           
@@ -1079,7 +1079,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.setEnabledOverride(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.setChecked = function(...args) 
           
@@ -1089,7 +1089,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.setChecked(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.triggerGroupDefault = function(...args) 
           
@@ -1099,7 +1099,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.triggerGroupDefault(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.triggerGroupDefaults = function(...args) 
           
@@ -1109,7 +1109,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.triggerGroupDefaults(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.isChecked = function(...args) 
           
@@ -1119,7 +1119,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.isChecked(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.setForceGlobal = function(...args) 
           
@@ -1129,7 +1129,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.setForceGlobal(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.getForceGlobal = function(...args) 
           
@@ -1139,7 +1139,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.getForceGlobal(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.setRequiresDocument = function(...args) 
           
@@ -1149,7 +1149,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.setRequiresDocument(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.getRequiresDocument = function(...args) 
           
@@ -1159,7 +1159,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.getRequiresDocument(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.setRequiresSelection = function(...args) 
           
@@ -1169,7 +1169,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.setRequiresSelection(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.getRequiresSelection = function(...args) 
           
@@ -1179,7 +1179,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.getRequiresSelection(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.setRequiresUndoableTransaction = function(...args) 
           
@@ -1189,7 +1189,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.setRequiresUndoableTransaction(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.getRequiresUndoableTransaction = function(...args) 
           
@@ -1199,7 +1199,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.getRequiresUndoableTransaction(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.setRequiresRedoableTransaction = function(...args) 
           
@@ -1209,7 +1209,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.setRequiresRedoableTransaction(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.getRequiresRedoableTransaction = function(...args) 
           
@@ -1219,7 +1219,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.getRequiresRedoableTransaction(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.setOverride = function(...args) 
           
@@ -1229,7 +1229,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.setOverride(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.isOverride = function(...args) 
           
@@ -1239,7 +1239,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.isOverride(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.setAllowInterrupt = function(...args) 
           
@@ -1249,7 +1249,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.setAllowInterrupt(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.getAllowInterrupt = function(...args) 
           
@@ -1259,7 +1259,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.getAllowInterrupt(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.setNoState = function(...args) 
           
@@ -1269,7 +1269,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.setNoState(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.hasNoState = function(...args) 
           
@@ -1279,7 +1279,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.hasNoState(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.setToggleable = function(...args) 
           
@@ -1289,7 +1289,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.setToggleable(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.isToggleable = function(...args) 
           
@@ -1299,7 +1299,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.isToggleable(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.setUniqueGroup = function(...args) 
           
@@ -1309,7 +1309,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.setUniqueGroup(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.getUniqueGroup = function(...args) 
           
@@ -1319,7 +1319,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.getUniqueGroup(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.getMainCommand = function(...args) 
           
@@ -1329,7 +1329,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.getMainCommand(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.getCommands = function(...args) 
           
@@ -1339,7 +1339,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.getCommands(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.getDefaultCommands = function(...args) 
           
@@ -1349,7 +1349,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.getDefaultCommands(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.setDefaultCommands = function(...args) 
           
@@ -1359,7 +1359,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.setDefaultCommands(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.setCommands = function(...args) 
           
@@ -1369,7 +1369,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.setCommands(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.setScriptFile = function(...args) 
           
@@ -1379,7 +1379,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.setScriptFile(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.getScriptFile = function(...args) 
           
@@ -1389,7 +1389,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.getScriptFile(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.getScriptClass = function(...args) 
           
@@ -1399,7 +1399,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.getScriptClass(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.setGroup = function(...args) 
           
@@ -1409,7 +1409,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.setGroup(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.getGroup = function(...args) 
           
@@ -1419,7 +1419,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.getGroup(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.setGroupDefault = function(...args) 
           
@@ -1429,7 +1429,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.setGroupDefault(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.isGroupDefault = function(...args) 
           
@@ -1439,7 +1439,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.isGroupDefault(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.getActions = function(...args) 
           
@@ -1449,7 +1449,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.getActions(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.triggerByCommand = function(...args) 
           
@@ -1459,7 +1459,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.triggerByCommand(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.triggerByShortcut = function(...args) 
           
@@ -1469,7 +1469,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.triggerByShortcut(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.getByScriptFile = function(...args) 
           
@@ -1479,7 +1479,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.getByScriptFile(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.getByClassName = function(...args) 
           
@@ -1489,7 +1489,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.getByClassName(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.getByCommand = function(...args) 
           
@@ -1499,7 +1499,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.getByCommand(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.triggerByScriptFile = function(...args) 
           
@@ -1509,7 +1509,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.triggerByScriptFile(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.getAvailableCommands = function(...args) 
           
@@ -1519,7 +1519,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.getAvailableCommands(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.clear = function(...args) 
           
@@ -1529,7 +1529,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.clear(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.updateTransactionListener = function(...args) 
           
@@ -1539,7 +1539,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.updateTransactionListener(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.setCurrentBlock = function(...args) 
           
@@ -1549,7 +1549,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.setCurrentBlock(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.updateSelectionListener = function(...args) 
           
@@ -1559,7 +1559,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.updateSelectionListener(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.updateFocus = function(...args) 
           
@@ -1569,7 +1569,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.updateFocus(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.addArgument = function(...args) 
           
@@ -1579,7 +1579,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.addArgument(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.getArguments = function(...args) 
           
@@ -1589,7 +1589,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.getArguments(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.clearArguments = function(...args) 
           
@@ -1599,7 +1599,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.clearArguments(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.setWidgetNamesStatic = function(...args) 
           
@@ -1609,7 +1609,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.setWidgetNamesStatic(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.getWidgetNamesStatic = function(...args) 
           
@@ -1619,7 +1619,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.getWidgetNamesStatic(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.setWidgetNames = function(...args) 
           
@@ -1629,7 +1629,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.setWidgetNames(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.getWidgetNames = function(...args) 
           
@@ -1639,7 +1639,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.getWidgetNames(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.getIconPath = function(...args) 
           
@@ -1649,7 +1649,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.getIconPath(...args);
             
         };
-    
+        
         // function 
         RGuiAction.prototype.slotTrigger = function(...args) 
           
@@ -1659,7 +1659,7 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
               return this.__PROXY__.slotTrigger(...args);
             
         };
-    
+        
 
       // static functions:
       

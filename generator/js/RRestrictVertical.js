@@ -206,7 +206,7 @@
               return this.__PROXY__.getLastSnap(...args);
             
         };
-    
+        
         // function 
         RRestrictVertical.prototype.reset = function(...args) 
           
@@ -216,7 +216,7 @@
               return this.__PROXY__.reset(...args);
             
         };
-    
+        
         // function 
         RRestrictVertical.prototype.restrictSnap = function(...args) 
           
@@ -226,7 +226,7 @@
               return this.__PROXY__.restrictSnap(...args);
             
         };
-    
+        
 
       // static functions:
       RRestrictVertical.prototype.isNullWrapper = function() {

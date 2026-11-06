@@ -109,7 +109,7 @@
               return this.__PROXY__.init(...args);
             
         };
-    
+        
         // function 
         RFileExporter.prototype.getErrorMessage = function(...args) 
           
@@ -119,7 +119,7 @@
               return this.__PROXY__.getErrorMessage(...args);
             
         };
-    
+        
         // function 
         RFileExporter.prototype.setLayerSource = function(...args) 
           
@@ -129,7 +129,7 @@
               return this.__PROXY__.setLayerSource(...args);
             
         };
-    
+        
         // function 
         RFileExporter.prototype.setBlockSource = function(...args) 
           
@@ -139,7 +139,7 @@
               return this.__PROXY__.setBlockSource(...args);
             
         };
-    
+        
       // function 
       RFileExporter.prototype.getDocument = function() 
         
@@ -181,7 +181,7 @@
               return this.__PROXY__.setProjectionRenderingHint(...args);
             
         };
-    
+        
         // function 
         RFileExporter.prototype.getProjectionRenderingHint = function(...args) 
           
@@ -191,7 +191,7 @@
               return this.__PROXY__.getProjectionRenderingHint(...args);
             
         };
-    
+        
         // function 
         RFileExporter.prototype.setClipping = function(...args) 
           
@@ -201,7 +201,7 @@
               return this.__PROXY__.setClipping(...args);
             
         };
-    
+        
         // function 
         RFileExporter.prototype.getClipping = function(...args) 
           
@@ -211,7 +211,7 @@
               return this.__PROXY__.getClipping(...args);
             
         };
-    
+        
         // function 
         RFileExporter.prototype.setPen = function(...args) 
           
@@ -221,7 +221,7 @@
               return this.__PROXY__.setPen(...args);
             
         };
-    
+        
         // function 
         RFileExporter.prototype.getPen = function(...args) 
           
@@ -231,7 +231,7 @@
               return this.__PROXY__.getPen(...args);
             
         };
-    
+        
         // function 
         RFileExporter.prototype.setBrush = function(...args) 
           
@@ -241,7 +241,7 @@
               return this.__PROXY__.setBrush(...args);
             
         };
-    
+        
         // function 
         RFileExporter.prototype.getBrush = function(...args) 
           
@@ -251,7 +251,7 @@
               return this.__PROXY__.getBrush(...args);
             
         };
-    
+        
         // function 
         RFileExporter.prototype.getColor = function(...args) 
           
@@ -261,7 +261,7 @@
               return this.__PROXY__.getColor(...args);
             
         };
-    
+        
         // function 
         RFileExporter.prototype.setEntityAttributes = function(...args) 
           
@@ -271,7 +271,7 @@
               return this.__PROXY__.setEntityAttributes(...args);
             
         };
-    
+        
         // function 
         RFileExporter.prototype.setStyle = function(...args) 
           
@@ -281,7 +281,7 @@
               return this.__PROXY__.setStyle(...args);
             
         };
-    
+        
         // function 
         RFileExporter.prototype.setBrushStyle = function(...args) 
           
@@ -291,7 +291,7 @@
               return this.__PROXY__.setBrushStyle(...args);
             
         };
-    
+        
       // function 
       RFileExporter.prototype.setColor = function() 
         
@@ -385,7 +385,7 @@
               return this.__PROXY__.setLinetypeId(...args);
             
         };
-    
+        
         // function 
         RFileExporter.prototype.setLinetypePattern = function(...args) 
           
@@ -395,7 +395,7 @@
               return this.__PROXY__.setLinetypePattern(...args);
             
         };
-    
+        
         // function 
         RFileExporter.prototype.getLinetypePattern = function(...args) 
           
@@ -405,7 +405,7 @@
               return this.__PROXY__.getLinetypePattern(...args);
             
         };
-    
+        
         // function 
         RFileExporter.prototype.getBlockRefOrEntity = function(...args) 
           
@@ -415,7 +415,7 @@
               return this.__PROXY__.getBlockRefOrEntity(...args);
             
         };
-    
+        
         // function 
         RFileExporter.prototype.getBlockRefOrEntityId = function(...args) 
           
@@ -425,7 +425,7 @@
               return this.__PROXY__.getBlockRefOrEntityId(...args);
             
         };
-    
+        
         // function 
         RFileExporter.prototype.getEntity = function(...args) 
           
@@ -435,7 +435,7 @@
               return this.__PROXY__.getEntity(...args);
             
         };
-    
+        
         // function 
         RFileExporter.prototype.getCurrentBlockRef = function(...args) 
           
@@ -445,7 +445,7 @@
               return this.__PROXY__.getCurrentBlockRef(...args);
             
         };
-    
+        
         // function 
         RFileExporter.prototype.getCurrentViewport = function(...args) 
           
@@ -455,7 +455,7 @@
               return this.__PROXY__.getCurrentViewport(...args);
             
         };
-    
+        
         // function 
         RFileExporter.prototype.isEntitySelected = function(...args) 
           
@@ -465,7 +465,7 @@
               return this.__PROXY__.isEntitySelected(...args);
             
         };
-    
+        
         // function 
         RFileExporter.prototype.isPatternContinuous = function(...args) 
           
@@ -475,7 +475,7 @@
               return this.__PROXY__.isPatternContinuous(...args);
             
         };
-    
+        
       // function 
       RFileExporter.prototype.startExport = function() 
         
@@ -549,7 +549,7 @@
               return this.__PROXY__.exportDocument(...args);
             
         };
-    
+        
         // function 
         RFileExporter.prototype.exportDocumentSettings = function(...args) 
           
@@ -559,7 +559,7 @@
               return this.__PROXY__.exportDocumentSettings(...args);
             
         };
-    
+        
         // function 
         RFileExporter.prototype.exportDocumentSetting = function(...args) 
           
@@ -569,7 +569,7 @@
               return this.__PROXY__.exportDocumentSetting(...args);
             
         };
-    
+        
         // function 
         RFileExporter.prototype.exportLayers = function(...args) 
           
@@ -579,7 +579,7 @@
               return this.__PROXY__.exportLayers(...args);
             
         };
-    
+        
         // function 
         RFileExporter.prototype.exportLayerStates = function(...args) 
           
@@ -589,7 +589,7 @@
               return this.__PROXY__.exportLayerStates(...args);
             
         };
-    
+        
         // function 
         RFileExporter.prototype.exportBlocks = function(...args) 
           
@@ -599,7 +599,7 @@
               return this.__PROXY__.exportBlocks(...args);
             
         };
-    
+        
         // function 
         RFileExporter.prototype.exportViews = function(...args) 
           
@@ -609,7 +609,7 @@
               return this.__PROXY__.exportViews(...args);
             
         };
-    
+        
         // function 
         RFileExporter.prototype.exportLinetypes = function(...args) 
           
@@ -619,7 +619,7 @@
               return this.__PROXY__.exportLinetypes(...args);
             
         };
-    
+        
         // function 
         RFileExporter.prototype.exportLayer = function(...args) 
           
@@ -629,7 +629,7 @@
               return this.__PROXY__.exportLayer(...args);
             
         };
-    
+        
         // function 
         RFileExporter.prototype.exportLayerState = function(...args) 
           
@@ -639,7 +639,7 @@
               return this.__PROXY__.exportLayerState(...args);
             
         };
-    
+        
       // function 
       RFileExporter.prototype.exportBlock = function() 
         
@@ -700,7 +700,7 @@
               return this.__PROXY__.exportView(...args);
             
         };
-    
+        
         // function 
         RFileExporter.prototype.exportLinetype = function(...args) 
           
@@ -710,7 +710,7 @@
               return this.__PROXY__.exportLinetype(...args);
             
         };
-    
+        
       // function 
       RFileExporter.prototype.exportEntities = function() 
         
@@ -753,7 +753,7 @@
               return this.__PROXY__.exportEntity(...args);
             
         };
-    
+        
         // function 
         RFileExporter.prototype.getEntityLayer = function(...args) 
           
@@ -763,7 +763,7 @@
               return this.__PROXY__.getEntityLayer(...args);
             
         };
-    
+        
         // function 
         RFileExporter.prototype.isVisible = function(...args) 
           
@@ -773,7 +773,7 @@
               return this.__PROXY__.isVisible(...args);
             
         };
-    
+        
         // function 
         RFileExporter.prototype.startEntity = function(...args) 
           
@@ -783,7 +783,7 @@
               return this.__PROXY__.startEntity(...args);
             
         };
-    
+        
       // function 
       RFileExporter.prototype.endEntity = function() 
         
@@ -858,7 +858,7 @@
               return this.__PROXY__.unexportEntity(...args);
             
         };
-    
+        
         // function 
         RFileExporter.prototype.exportShapes = function(...args) 
           
@@ -868,7 +868,7 @@
               return this.__PROXY__.exportShapes(...args);
             
         };
-    
+        
       // function 
       RFileExporter.prototype.exportShape = function() 
         
@@ -910,7 +910,7 @@
               return this.__PROXY__.exportShapeSegment(...args);
             
         };
-    
+        
       // function 
       RFileExporter.prototype.exportLine = function() 
         
@@ -953,7 +953,7 @@
               return this.__PROXY__.exportLinetypeShape(...args);
             
         };
-    
+        
       // function 
       RFileExporter.prototype.exportLineSegment = function() 
         
@@ -996,7 +996,7 @@
               return this.__PROXY__.exportXLine(...args);
             
         };
-    
+        
         // function 
         RFileExporter.prototype.exportRay = function(...args) 
           
@@ -1006,7 +1006,7 @@
               return this.__PROXY__.exportRay(...args);
             
         };
-    
+        
       // function 
       RFileExporter.prototype.exportPoint = function() 
         
@@ -1245,7 +1245,7 @@
               return this.__PROXY__.exportSplineSegment(...args);
             
         };
-    
+        
         // function 
         RFileExporter.prototype.exportExplodable = function(...args) 
           
@@ -1255,7 +1255,7 @@
               return this.__PROXY__.exportExplodable(...args);
             
         };
-    
+        
       // function 
       RFileExporter.prototype.exportPainterPaths = function() 
         
@@ -1298,7 +1298,7 @@
               return this.__PROXY__.exportBoundingBoxPaths(...args);
             
         };
-    
+        
       // function 
       RFileExporter.prototype.exportImage = function() 
         
@@ -1374,7 +1374,7 @@
               return this.__PROXY__.exportClipRectangle(...args);
             
         };
-    
+        
       // function 
       RFileExporter.prototype.exportTransform = function() 
         
@@ -1448,7 +1448,7 @@
               return this.__PROXY__.exportThickPolyline(...args);
             
         };
-    
+        
         // function 
         RFileExporter.prototype.exportQuad = function(...args) 
           
@@ -1458,7 +1458,7 @@
               return this.__PROXY__.exportQuad(...args);
             
         };
-    
+        
         // function 
         RFileExporter.prototype.exportVerticalQuad = function(...args) 
           
@@ -1468,7 +1468,7 @@
               return this.__PROXY__.exportVerticalQuad(...args);
             
         };
-    
+        
         // function 
         RFileExporter.prototype.exportBox = function(...args) 
           
@@ -1478,7 +1478,7 @@
               return this.__PROXY__.exportBox(...args);
             
         };
-    
+        
       // function 
       RFileExporter.prototype.exportTriangle = function() 
         
@@ -1520,7 +1520,7 @@
               return this.__PROXY__.exportRectangle(...args);
             
         };
-    
+        
       // function 
       RFileExporter.prototype.getLineTypePatternScale = function() 
         
@@ -1594,7 +1594,7 @@
               return this.__PROXY__.pushEntity(...args);
             
         };
-    
+        
         // function 
         RFileExporter.prototype.popEntity = function(...args) 
           
@@ -1604,7 +1604,7 @@
               return this.__PROXY__.popEntity(...args);
             
         };
-    
+        
         // function 
         RFileExporter.prototype.setDraftMode = function(...args) 
           
@@ -1614,7 +1614,7 @@
               return this.__PROXY__.setDraftMode(...args);
             
         };
-    
+        
         // function 
         RFileExporter.prototype.toggleDraftMode = function(...args) 
           
@@ -1624,7 +1624,7 @@
               return this.__PROXY__.toggleDraftMode(...args);
             
         };
-    
+        
         // function 
         RFileExporter.prototype.getDraftMode = function(...args) 
           
@@ -1634,7 +1634,7 @@
               return this.__PROXY__.getDraftMode(...args);
             
         };
-    
+        
         // function 
         RFileExporter.prototype.setTwoColorSelectedMode = function(...args) 
           
@@ -1644,7 +1644,7 @@
               return this.__PROXY__.setTwoColorSelectedMode(...args);
             
         };
-    
+        
         // function 
         RFileExporter.prototype.getTwoColorSelectedMode = function(...args) 
           
@@ -1654,7 +1654,7 @@
               return this.__PROXY__.getTwoColorSelectedMode(...args);
             
         };
-    
+        
         // function 
         RFileExporter.prototype.setScreenBasedLinetypes = function(...args) 
           
@@ -1664,7 +1664,7 @@
               return this.__PROXY__.setScreenBasedLinetypes(...args);
             
         };
-    
+        
         // function 
         RFileExporter.prototype.toggleScreenBasedLinetypes = function(...args) 
           
@@ -1674,7 +1674,7 @@
               return this.__PROXY__.toggleScreenBasedLinetypes(...args);
             
         };
-    
+        
         // function 
         RFileExporter.prototype.getScreenBasedLinetypes = function(...args) 
           
@@ -1684,7 +1684,7 @@
               return this.__PROXY__.getScreenBasedLinetypes(...args);
             
         };
-    
+        
         // function 
         RFileExporter.prototype.isVisualExporter = function(...args) 
           
@@ -1694,7 +1694,7 @@
               return this.__PROXY__.isVisualExporter(...args);
             
         };
-    
+        
         // function 
         RFileExporter.prototype.setVisualExporter = function(...args) 
           
@@ -1704,7 +1704,7 @@
               return this.__PROXY__.setVisualExporter(...args);
             
         };
-    
+        
         // function 
         RFileExporter.prototype.getExportInvisible = function(...args) 
           
@@ -1714,7 +1714,7 @@
               return this.__PROXY__.getExportInvisible(...args);
             
         };
-    
+        
         // function 
         RFileExporter.prototype.setExportInvisible = function(...args) 
           
@@ -1724,7 +1724,7 @@
               return this.__PROXY__.setExportInvisible(...args);
             
         };
-    
+        
         // function 
         RFileExporter.prototype.getPixelSizeHint = function(...args) 
           
@@ -1734,7 +1734,7 @@
               return this.__PROXY__.getPixelSizeHint(...args);
             
         };
-    
+        
         // function 
         RFileExporter.prototype.getCurrentPixelSizeHint = function(...args) 
           
@@ -1744,7 +1744,7 @@
               return this.__PROXY__.getCurrentPixelSizeHint(...args);
             
         };
-    
+        
         // function 
         RFileExporter.prototype.setPixelSizeHint = function(...args) 
           
@@ -1754,7 +1754,7 @@
               return this.__PROXY__.setPixelSizeHint(...args);
             
         };
-    
+        
         // function 
         RFileExporter.prototype.getPixelUnit = function(...args) 
           
@@ -1764,7 +1764,7 @@
               return this.__PROXY__.getPixelUnit(...args);
             
         };
-    
+        
         // function 
         RFileExporter.prototype.setPixelUnit = function(...args) 
           
@@ -1774,7 +1774,7 @@
               return this.__PROXY__.setPixelUnit(...args);
             
         };
-    
+        
         // function 
         RFileExporter.prototype.getPixelWidth = function(...args) 
           
@@ -1784,7 +1784,7 @@
               return this.__PROXY__.getPixelWidth(...args);
             
         };
-    
+        
         // function 
         RFileExporter.prototype.setPixelWidth = function(...args) 
           
@@ -1794,7 +1794,7 @@
               return this.__PROXY__.setPixelWidth(...args);
             
         };
-    
+        
         // function 
         RFileExporter.prototype.setEnablePatterns = function(...args) 
           
@@ -1804,7 +1804,7 @@
               return this.__PROXY__.setEnablePatterns(...args);
             
         };
-    
+        
         // function 
         RFileExporter.prototype.getCorrectedFileName = function(...args) 
           
@@ -1814,7 +1814,7 @@
               return this.__PROXY__.getCorrectedFileName(...args);
             
         };
-    
+        
       // function 
       RFileExporter.prototype.exportFile = function() 
         

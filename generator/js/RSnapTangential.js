@@ -223,7 +223,7 @@ RSnapTangential.CoordinatePolar = RSnapTangential_Wrapper.CoordinatePolar;
               return this.__PROXY__.suspendEvent(...args);
             
         };
-    
+        
         // function 
         RSnapTangential.prototype.finishEvent = function(...args) 
           
@@ -233,7 +233,7 @@ RSnapTangential.CoordinatePolar = RSnapTangential_Wrapper.CoordinatePolar;
               return this.__PROXY__.finishEvent(...args);
             
         };
-    
+        
         // function 
         RSnapTangential.prototype.getEntityIds = function(...args) 
           
@@ -243,7 +243,7 @@ RSnapTangential.CoordinatePolar = RSnapTangential_Wrapper.CoordinatePolar;
               return this.__PROXY__.getEntityIds(...args);
             
         };
-    
+        
         // function 
         RSnapTangential.prototype.getStatus = function(...args) 
           
@@ -253,7 +253,7 @@ RSnapTangential.CoordinatePolar = RSnapTangential_Wrapper.CoordinatePolar;
               return this.__PROXY__.getStatus(...args);
             
         };
-    
+        
         // function 
         RSnapTangential.prototype.setStatus = function(...args) 
           
@@ -263,7 +263,7 @@ RSnapTangential.CoordinatePolar = RSnapTangential_Wrapper.CoordinatePolar;
               return this.__PROXY__.setStatus(...args);
             
         };
-    
+        
         // function 
         RSnapTangential.prototype.getLastSnap = function(...args) 
           
@@ -273,7 +273,7 @@ RSnapTangential.CoordinatePolar = RSnapTangential_Wrapper.CoordinatePolar;
               return this.__PROXY__.getLastSnap(...args);
             
         };
-    
+        
         // function 
         RSnapTangential.prototype.setLastSnap = function(...args) 
           
@@ -283,7 +283,7 @@ RSnapTangential.CoordinatePolar = RSnapTangential_Wrapper.CoordinatePolar;
               return this.__PROXY__.setLastSnap(...args);
             
         };
-    
+        
         // function 
         RSnapTangential.prototype.reset = function(...args) 
           
@@ -293,7 +293,7 @@ RSnapTangential.CoordinatePolar = RSnapTangential_Wrapper.CoordinatePolar;
               return this.__PROXY__.reset(...args);
             
         };
-    
+        
         // function 
         RSnapTangential.prototype.snap = function(...args) 
           
@@ -303,7 +303,7 @@ RSnapTangential.CoordinatePolar = RSnapTangential_Wrapper.CoordinatePolar;
               return this.__PROXY__.snap(...args);
             
         };
-    
+        
 
       // static functions:
       RSnapTangential.prototype.isNullWrapper = function() {

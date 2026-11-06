@@ -174,7 +174,7 @@ RAttributeDefinitionData.UpsideDown = RAttributeDefinitionData_Wrapper.UpsideDow
               return this.__PROXY__.setFlag(...args);
             
         };
-    
+        
         // function 
         RAttributeDefinitionData.prototype.getFlag = function(...args) 
           
@@ -184,7 +184,7 @@ RAttributeDefinitionData.UpsideDown = RAttributeDefinitionData_Wrapper.UpsideDow
               return this.__PROXY__.getFlag(...args);
             
         };
-    
+        
         // function 
         RAttributeDefinitionData.prototype.isValid = function(...args) 
           
@@ -194,7 +194,7 @@ RAttributeDefinitionData.UpsideDown = RAttributeDefinitionData_Wrapper.UpsideDow
               return this.__PROXY__.isValid(...args);
             
         };
-    
+        
         // function 
         RAttributeDefinitionData.prototype.isSane = function(...args) 
           
@@ -204,7 +204,7 @@ RAttributeDefinitionData.UpsideDown = RAttributeDefinitionData_Wrapper.UpsideDow
               return this.__PROXY__.isSane(...args);
             
         };
-    
+        
         // function 
         RAttributeDefinitionData.prototype.getBoundingBox = function(...args) 
           
@@ -214,7 +214,7 @@ RAttributeDefinitionData.UpsideDown = RAttributeDefinitionData_Wrapper.UpsideDow
               return this.__PROXY__.getBoundingBox(...args);
             
         };
-    
+        
         // function 
         RAttributeDefinitionData.prototype.getRotatedBoundingBox = function(...args) 
           
@@ -224,7 +224,7 @@ RAttributeDefinitionData.UpsideDown = RAttributeDefinitionData_Wrapper.UpsideDow
               return this.__PROXY__.getRotatedBoundingBox(...args);
             
         };
-    
+        
         // function 
         RAttributeDefinitionData.prototype.getWidth = function(...args) 
           
@@ -234,7 +234,7 @@ RAttributeDefinitionData.UpsideDown = RAttributeDefinitionData_Wrapper.UpsideDow
               return this.__PROXY__.getWidth(...args);
             
         };
-    
+        
         // function 
         RAttributeDefinitionData.prototype.getHeight = function(...args) 
           
@@ -244,7 +244,7 @@ RAttributeDefinitionData.UpsideDown = RAttributeDefinitionData_Wrapper.UpsideDow
               return this.__PROXY__.getHeight(...args);
             
         };
-    
+        
         // function 
         RAttributeDefinitionData.prototype.sync = function(...args) 
           
@@ -254,7 +254,7 @@ RAttributeDefinitionData.UpsideDown = RAttributeDefinitionData_Wrapper.UpsideDow
               return this.__PROXY__.sync(...args);
             
         };
-    
+        
         // function 
         RAttributeDefinitionData.prototype.getPointOnEntity = function(...args) 
           
@@ -264,7 +264,7 @@ RAttributeDefinitionData.UpsideDown = RAttributeDefinitionData_Wrapper.UpsideDow
               return this.__PROXY__.getPointOnEntity(...args);
             
         };
-    
+        
         // function 
         RAttributeDefinitionData.prototype.getEndPoints = function(...args) 
           
@@ -274,7 +274,7 @@ RAttributeDefinitionData.UpsideDown = RAttributeDefinitionData_Wrapper.UpsideDow
               return this.__PROXY__.getEndPoints(...args);
             
         };
-    
+        
         // function 
         RAttributeDefinitionData.prototype.getMiddlePoints = function(...args) 
           
@@ -284,7 +284,7 @@ RAttributeDefinitionData.UpsideDown = RAttributeDefinitionData_Wrapper.UpsideDow
               return this.__PROXY__.getMiddlePoints(...args);
             
         };
-    
+        
         // function 
         RAttributeDefinitionData.prototype.getCenterPoints = function(...args) 
           
@@ -294,7 +294,7 @@ RAttributeDefinitionData.UpsideDown = RAttributeDefinitionData_Wrapper.UpsideDow
               return this.__PROXY__.getCenterPoints(...args);
             
         };
-    
+        
         // function 
         RAttributeDefinitionData.prototype.getPointsWithDistanceToEnd = function(...args) 
           
@@ -304,7 +304,7 @@ RAttributeDefinitionData.UpsideDown = RAttributeDefinitionData_Wrapper.UpsideDow
               return this.__PROXY__.getPointsWithDistanceToEnd(...args);
             
         };
-    
+        
         // function 
         RAttributeDefinitionData.prototype.getDistanceTo = function(...args) 
           
@@ -314,7 +314,7 @@ RAttributeDefinitionData.UpsideDown = RAttributeDefinitionData_Wrapper.UpsideDow
               return this.__PROXY__.getDistanceTo(...args);
             
         };
-    
+        
         // function 
         RAttributeDefinitionData.prototype.intersectsWith = function(...args) 
           
@@ -324,7 +324,7 @@ RAttributeDefinitionData.UpsideDown = RAttributeDefinitionData_Wrapper.UpsideDow
               return this.__PROXY__.intersectsWith(...args);
             
         };
-    
+        
         // function 
         RAttributeDefinitionData.prototype.getPosition = function(...args) 
           
@@ -334,7 +334,7 @@ RAttributeDefinitionData.UpsideDown = RAttributeDefinitionData_Wrapper.UpsideDow
               return this.__PROXY__.getPosition(...args);
             
         };
-    
+        
         // function 
         RAttributeDefinitionData.prototype.setPosition = function(...args) 
           
@@ -344,7 +344,7 @@ RAttributeDefinitionData.UpsideDown = RAttributeDefinitionData_Wrapper.UpsideDow
               return this.__PROXY__.setPosition(...args);
             
         };
-    
+        
         // function 
         RAttributeDefinitionData.prototype.getAlignmentPoint = function(...args) 
           
@@ -354,7 +354,7 @@ RAttributeDefinitionData.UpsideDown = RAttributeDefinitionData_Wrapper.UpsideDow
               return this.__PROXY__.getAlignmentPoint(...args);
             
         };
-    
+        
         // function 
         RAttributeDefinitionData.prototype.setAlignmentPoint = function(...args) 
           
@@ -364,7 +364,7 @@ RAttributeDefinitionData.UpsideDown = RAttributeDefinitionData_Wrapper.UpsideDow
               return this.__PROXY__.setAlignmentPoint(...args);
             
         };
-    
+        
         // function 
         RAttributeDefinitionData.prototype.setText = function(...args) 
           
@@ -374,7 +374,7 @@ RAttributeDefinitionData.UpsideDown = RAttributeDefinitionData_Wrapper.UpsideDow
               return this.__PROXY__.setText(...args);
             
         };
-    
+        
         // function 
         RAttributeDefinitionData.prototype.getFontName = function(...args) 
           
@@ -384,7 +384,7 @@ RAttributeDefinitionData.UpsideDown = RAttributeDefinitionData_Wrapper.UpsideDow
               return this.__PROXY__.getFontName(...args);
             
         };
-    
+        
         // function 
         RAttributeDefinitionData.prototype.setFontName = function(...args) 
           
@@ -394,7 +394,7 @@ RAttributeDefinitionData.UpsideDown = RAttributeDefinitionData_Wrapper.UpsideDow
               return this.__PROXY__.setFontName(...args);
             
         };
-    
+        
         // function 
         RAttributeDefinitionData.prototype.getFontFile = function(...args) 
           
@@ -404,7 +404,7 @@ RAttributeDefinitionData.UpsideDown = RAttributeDefinitionData_Wrapper.UpsideDow
               return this.__PROXY__.getFontFile(...args);
             
         };
-    
+        
         // function 
         RAttributeDefinitionData.prototype.setFontFile = function(...args) 
           
@@ -414,7 +414,7 @@ RAttributeDefinitionData.UpsideDown = RAttributeDefinitionData_Wrapper.UpsideDow
               return this.__PROXY__.setFontFile(...args);
             
         };
-    
+        
         // function 
         RAttributeDefinitionData.prototype.isBold = function(...args) 
           
@@ -424,7 +424,7 @@ RAttributeDefinitionData.UpsideDown = RAttributeDefinitionData_Wrapper.UpsideDow
               return this.__PROXY__.isBold(...args);
             
         };
-    
+        
         // function 
         RAttributeDefinitionData.prototype.setBold = function(...args) 
           
@@ -434,7 +434,7 @@ RAttributeDefinitionData.UpsideDown = RAttributeDefinitionData_Wrapper.UpsideDow
               return this.__PROXY__.setBold(...args);
             
         };
-    
+        
         // function 
         RAttributeDefinitionData.prototype.isItalic = function(...args) 
           
@@ -444,7 +444,7 @@ RAttributeDefinitionData.UpsideDown = RAttributeDefinitionData_Wrapper.UpsideDow
               return this.__PROXY__.isItalic(...args);
             
         };
-    
+        
         // function 
         RAttributeDefinitionData.prototype.setItalic = function(...args) 
           
@@ -454,7 +454,7 @@ RAttributeDefinitionData.UpsideDown = RAttributeDefinitionData_Wrapper.UpsideDow
               return this.__PROXY__.setItalic(...args);
             
         };
-    
+        
         // function 
         RAttributeDefinitionData.prototype.getTextHeight = function(...args) 
           
@@ -464,7 +464,7 @@ RAttributeDefinitionData.UpsideDown = RAttributeDefinitionData_Wrapper.UpsideDow
               return this.__PROXY__.getTextHeight(...args);
             
         };
-    
+        
         // function 
         RAttributeDefinitionData.prototype.setTextHeight = function(...args) 
           
@@ -474,7 +474,7 @@ RAttributeDefinitionData.UpsideDown = RAttributeDefinitionData_Wrapper.UpsideDow
               return this.__PROXY__.setTextHeight(...args);
             
         };
-    
+        
         // function 
         RAttributeDefinitionData.prototype.getTextWidth = function(...args) 
           
@@ -484,7 +484,7 @@ RAttributeDefinitionData.UpsideDown = RAttributeDefinitionData_Wrapper.UpsideDow
               return this.__PROXY__.getTextWidth(...args);
             
         };
-    
+        
         // function 
         RAttributeDefinitionData.prototype.setTextWidth = function(...args) 
           
@@ -494,7 +494,7 @@ RAttributeDefinitionData.UpsideDown = RAttributeDefinitionData_Wrapper.UpsideDow
               return this.__PROXY__.setTextWidth(...args);
             
         };
-    
+        
         // function 
         RAttributeDefinitionData.prototype.setVAlign = function(...args) 
           
@@ -504,7 +504,7 @@ RAttributeDefinitionData.UpsideDown = RAttributeDefinitionData_Wrapper.UpsideDow
               return this.__PROXY__.setVAlign(...args);
             
         };
-    
+        
         // function 
         RAttributeDefinitionData.prototype.getVAlign = function(...args) 
           
@@ -514,7 +514,7 @@ RAttributeDefinitionData.UpsideDown = RAttributeDefinitionData_Wrapper.UpsideDow
               return this.__PROXY__.getVAlign(...args);
             
         };
-    
+        
         // function 
         RAttributeDefinitionData.prototype.setHAlign = function(...args) 
           
@@ -524,7 +524,7 @@ RAttributeDefinitionData.UpsideDown = RAttributeDefinitionData_Wrapper.UpsideDow
               return this.__PROXY__.setHAlign(...args);
             
         };
-    
+        
         // function 
         RAttributeDefinitionData.prototype.getHAlign = function(...args) 
           
@@ -534,7 +534,7 @@ RAttributeDefinitionData.UpsideDown = RAttributeDefinitionData_Wrapper.UpsideDow
               return this.__PROXY__.getHAlign(...args);
             
         };
-    
+        
         // function 
         RAttributeDefinitionData.prototype.setDrawingDirection = function(...args) 
           
@@ -544,7 +544,7 @@ RAttributeDefinitionData.UpsideDown = RAttributeDefinitionData_Wrapper.UpsideDow
               return this.__PROXY__.setDrawingDirection(...args);
             
         };
-    
+        
         // function 
         RAttributeDefinitionData.prototype.getDrawingDirection = function(...args) 
           
@@ -554,7 +554,7 @@ RAttributeDefinitionData.UpsideDown = RAttributeDefinitionData_Wrapper.UpsideDow
               return this.__PROXY__.getDrawingDirection(...args);
             
         };
-    
+        
         // function 
         RAttributeDefinitionData.prototype.setLineSpacingStyle = function(...args) 
           
@@ -564,7 +564,7 @@ RAttributeDefinitionData.UpsideDown = RAttributeDefinitionData_Wrapper.UpsideDow
               return this.__PROXY__.setLineSpacingStyle(...args);
             
         };
-    
+        
         // function 
         RAttributeDefinitionData.prototype.getLineSpacingStyle = function(...args) 
           
@@ -574,7 +574,7 @@ RAttributeDefinitionData.UpsideDown = RAttributeDefinitionData_Wrapper.UpsideDow
               return this.__PROXY__.getLineSpacingStyle(...args);
             
         };
-    
+        
         // function 
         RAttributeDefinitionData.prototype.setLineSpacingFactor = function(...args) 
           
@@ -584,7 +584,7 @@ RAttributeDefinitionData.UpsideDown = RAttributeDefinitionData_Wrapper.UpsideDow
               return this.__PROXY__.setLineSpacingFactor(...args);
             
         };
-    
+        
         // function 
         RAttributeDefinitionData.prototype.getLineSpacingFactor = function(...args) 
           
@@ -594,7 +594,7 @@ RAttributeDefinitionData.UpsideDown = RAttributeDefinitionData_Wrapper.UpsideDow
               return this.__PROXY__.getLineSpacingFactor(...args);
             
         };
-    
+        
         // function 
         RAttributeDefinitionData.prototype.setAngle = function(...args) 
           
@@ -604,7 +604,7 @@ RAttributeDefinitionData.UpsideDown = RAttributeDefinitionData_Wrapper.UpsideDow
               return this.__PROXY__.setAngle(...args);
             
         };
-    
+        
         // function 
         RAttributeDefinitionData.prototype.getAngle = function(...args) 
           
@@ -614,7 +614,7 @@ RAttributeDefinitionData.UpsideDown = RAttributeDefinitionData_Wrapper.UpsideDow
               return this.__PROXY__.getAngle(...args);
             
         };
-    
+        
         // function 
         RAttributeDefinitionData.prototype.setXScale = function(...args) 
           
@@ -624,7 +624,7 @@ RAttributeDefinitionData.UpsideDown = RAttributeDefinitionData_Wrapper.UpsideDow
               return this.__PROXY__.setXScale(...args);
             
         };
-    
+        
         // function 
         RAttributeDefinitionData.prototype.getXScale = function(...args) 
           
@@ -634,7 +634,7 @@ RAttributeDefinitionData.UpsideDown = RAttributeDefinitionData_Wrapper.UpsideDow
               return this.__PROXY__.getXScale(...args);
             
         };
-    
+        
         // function 
         RAttributeDefinitionData.prototype.setSimple = function(...args) 
           
@@ -644,7 +644,7 @@ RAttributeDefinitionData.UpsideDown = RAttributeDefinitionData_Wrapper.UpsideDow
               return this.__PROXY__.setSimple(...args);
             
         };
-    
+        
         // function 
         RAttributeDefinitionData.prototype.isSimple = function(...args) 
           
@@ -654,7 +654,7 @@ RAttributeDefinitionData.UpsideDown = RAttributeDefinitionData_Wrapper.UpsideDow
               return this.__PROXY__.isSimple(...args);
             
         };
-    
+        
         // function 
         RAttributeDefinitionData.prototype.setBackward = function(...args) 
           
@@ -664,7 +664,7 @@ RAttributeDefinitionData.UpsideDown = RAttributeDefinitionData_Wrapper.UpsideDow
               return this.__PROXY__.setBackward(...args);
             
         };
-    
+        
         // function 
         RAttributeDefinitionData.prototype.isBackward = function(...args) 
           
@@ -674,7 +674,7 @@ RAttributeDefinitionData.UpsideDown = RAttributeDefinitionData_Wrapper.UpsideDow
               return this.__PROXY__.isBackward(...args);
             
         };
-    
+        
         // function 
         RAttributeDefinitionData.prototype.setUpsideDown = function(...args) 
           
@@ -684,7 +684,7 @@ RAttributeDefinitionData.UpsideDown = RAttributeDefinitionData_Wrapper.UpsideDow
               return this.__PROXY__.setUpsideDown(...args);
             
         };
-    
+        
         // function 
         RAttributeDefinitionData.prototype.isUpsideDown = function(...args) 
           
@@ -694,7 +694,7 @@ RAttributeDefinitionData.UpsideDown = RAttributeDefinitionData_Wrapper.UpsideDow
               return this.__PROXY__.isUpsideDown(...args);
             
         };
-    
+        
         // function 
         RAttributeDefinitionData.prototype.setDimensionLabel = function(...args) 
           
@@ -704,7 +704,7 @@ RAttributeDefinitionData.UpsideDown = RAttributeDefinitionData_Wrapper.UpsideDow
               return this.__PROXY__.setDimensionLabel(...args);
             
         };
-    
+        
         // function 
         RAttributeDefinitionData.prototype.isDimensionLabel = function(...args) 
           
@@ -714,7 +714,7 @@ RAttributeDefinitionData.UpsideDown = RAttributeDefinitionData_Wrapper.UpsideDow
               return this.__PROXY__.isDimensionLabel(...args);
             
         };
-    
+        
         // function 
         RAttributeDefinitionData.prototype.setSelected = function(...args) 
           
@@ -724,7 +724,7 @@ RAttributeDefinitionData.UpsideDown = RAttributeDefinitionData_Wrapper.UpsideDow
               return this.__PROXY__.setSelected(...args);
             
         };
-    
+        
         // function 
         RAttributeDefinitionData.prototype.setHighlighted = function(...args) 
           
@@ -734,7 +734,7 @@ RAttributeDefinitionData.UpsideDown = RAttributeDefinitionData_Wrapper.UpsideDow
               return this.__PROXY__.setHighlighted(...args);
             
         };
-    
+        
         // function 
         RAttributeDefinitionData.prototype.isHighlighted = function(...args) 
           
@@ -744,7 +744,7 @@ RAttributeDefinitionData.UpsideDown = RAttributeDefinitionData_Wrapper.UpsideDow
               return this.__PROXY__.isHighlighted(...args);
             
         };
-    
+        
         // function 
         RAttributeDefinitionData.prototype.getReferencePoints = function(...args) 
           
@@ -754,7 +754,7 @@ RAttributeDefinitionData.UpsideDown = RAttributeDefinitionData_Wrapper.UpsideDow
               return this.__PROXY__.getReferencePoints(...args);
             
         };
-    
+        
         // function 
         RAttributeDefinitionData.prototype.moveReferencePoint = function(...args) 
           
@@ -764,7 +764,7 @@ RAttributeDefinitionData.UpsideDown = RAttributeDefinitionData_Wrapper.UpsideDow
               return this.__PROXY__.moveReferencePoint(...args);
             
         };
-    
+        
         // function 
         RAttributeDefinitionData.prototype.move = function(...args) 
           
@@ -774,7 +774,7 @@ RAttributeDefinitionData.UpsideDown = RAttributeDefinitionData_Wrapper.UpsideDow
               return this.__PROXY__.move(...args);
             
         };
-    
+        
         // function 
         RAttributeDefinitionData.prototype.rotate = function(...args) 
           
@@ -784,7 +784,7 @@ RAttributeDefinitionData.UpsideDown = RAttributeDefinitionData_Wrapper.UpsideDow
               return this.__PROXY__.rotate(...args);
             
         };
-    
+        
         // function 
         RAttributeDefinitionData.prototype.scale = function(...args) 
           
@@ -794,7 +794,7 @@ RAttributeDefinitionData.UpsideDown = RAttributeDefinitionData_Wrapper.UpsideDow
               return this.__PROXY__.scale(...args);
             
         };
-    
+        
         // function 
         RAttributeDefinitionData.prototype.mirror = function(...args) 
           
@@ -804,7 +804,7 @@ RAttributeDefinitionData.UpsideDown = RAttributeDefinitionData_Wrapper.UpsideDow
               return this.__PROXY__.mirror(...args);
             
         };
-    
+        
         // function 
         RAttributeDefinitionData.prototype.flipHorizontal = function(...args) 
           
@@ -814,7 +814,7 @@ RAttributeDefinitionData.UpsideDown = RAttributeDefinitionData_Wrapper.UpsideDow
               return this.__PROXY__.flipHorizontal(...args);
             
         };
-    
+        
         // function 
         RAttributeDefinitionData.prototype.flipVertical = function(...args) 
           
@@ -824,7 +824,7 @@ RAttributeDefinitionData.UpsideDown = RAttributeDefinitionData_Wrapper.UpsideDow
               return this.__PROXY__.flipVertical(...args);
             
         };
-    
+        
         // function 
         RAttributeDefinitionData.prototype.getText = function(...args) 
           
@@ -834,7 +834,7 @@ RAttributeDefinitionData.UpsideDown = RAttributeDefinitionData_Wrapper.UpsideDow
               return this.__PROXY__.getText(...args);
             
         };
-    
+        
         // function 
         RAttributeDefinitionData.prototype.getPlainText = function(...args) 
           
@@ -844,7 +844,7 @@ RAttributeDefinitionData.UpsideDown = RAttributeDefinitionData_Wrapper.UpsideDow
               return this.__PROXY__.getPlainText(...args);
             
         };
-    
+        
         // function 
         RAttributeDefinitionData.prototype.getEscapedText = function(...args) 
           
@@ -854,7 +854,7 @@ RAttributeDefinitionData.UpsideDown = RAttributeDefinitionData_Wrapper.UpsideDow
               return this.__PROXY__.getEscapedText(...args);
             
         };
-    
+        
         // function 
         RAttributeDefinitionData.prototype.getMainFont = function(...args) 
           
@@ -864,7 +864,7 @@ RAttributeDefinitionData.UpsideDown = RAttributeDefinitionData_Wrapper.UpsideDow
               return this.__PROXY__.getMainFont(...args);
             
         };
-    
+        
         // function 
         RAttributeDefinitionData.prototype.update = function(...args) 
           
@@ -874,7 +874,7 @@ RAttributeDefinitionData.UpsideDown = RAttributeDefinitionData_Wrapper.UpsideDow
               return this.__PROXY__.update(...args);
             
         };
-    
+        
         // function 
         RAttributeDefinitionData.prototype.isDirty = function(...args) 
           
@@ -884,7 +884,7 @@ RAttributeDefinitionData.UpsideDown = RAttributeDefinitionData_Wrapper.UpsideDow
               return this.__PROXY__.isDirty(...args);
             
         };
-    
+        
         // function 
         RAttributeDefinitionData.prototype.getPainterPaths = function(...args) 
           
@@ -894,7 +894,7 @@ RAttributeDefinitionData.UpsideDown = RAttributeDefinitionData_Wrapper.UpsideDow
               return this.__PROXY__.getPainterPaths(...args);
             
         };
-    
+        
         // function 
         RAttributeDefinitionData.prototype.getShapes = function(...args) 
           
@@ -904,7 +904,7 @@ RAttributeDefinitionData.UpsideDown = RAttributeDefinitionData_Wrapper.UpsideDow
               return this.__PROXY__.getShapes(...args);
             
         };
-    
+        
         // function 
         RAttributeDefinitionData.prototype.getExploded = function(...args) 
           
@@ -914,7 +914,7 @@ RAttributeDefinitionData.UpsideDown = RAttributeDefinitionData_Wrapper.UpsideDow
               return this.__PROXY__.getExploded(...args);
             
         };
-    
+        
         // function 
         RAttributeDefinitionData.prototype.getClosestShape = function(...args) 
           
@@ -924,7 +924,7 @@ RAttributeDefinitionData.UpsideDown = RAttributeDefinitionData_Wrapper.UpsideDow
               return this.__PROXY__.getClosestShape(...args);
             
         };
-    
+        
         // function 
         RAttributeDefinitionData.prototype.getClosestPointOnEntity = function(...args) 
           
@@ -934,7 +934,7 @@ RAttributeDefinitionData.UpsideDown = RAttributeDefinitionData_Wrapper.UpsideDow
               return this.__PROXY__.getClosestPointOnEntity(...args);
             
         };
-    
+        
         // function 
         RAttributeDefinitionData.prototype.getTextLayouts = function(...args) 
           
@@ -944,7 +944,7 @@ RAttributeDefinitionData.UpsideDown = RAttributeDefinitionData_Wrapper.UpsideDow
               return this.__PROXY__.getTextLayouts(...args);
             
         };
-    
+        
         // function 
         RAttributeDefinitionData.prototype.getSimpleTextBlocks = function(...args) 
           
@@ -954,7 +954,7 @@ RAttributeDefinitionData.UpsideDown = RAttributeDefinitionData_Wrapper.UpsideDow
               return this.__PROXY__.getSimpleTextBlocks(...args);
             
         };
-    
+        
         // function 
         RAttributeDefinitionData.prototype.to2D = function(...args) 
           
@@ -964,7 +964,7 @@ RAttributeDefinitionData.UpsideDown = RAttributeDefinitionData_Wrapper.UpsideDow
               return this.__PROXY__.to2D(...args);
             
         };
-    
+        
         // function 
         RAttributeDefinitionData.prototype.getType = function(...args) 
           
@@ -974,7 +974,7 @@ RAttributeDefinitionData.UpsideDown = RAttributeDefinitionData_Wrapper.UpsideDow
               return this.__PROXY__.getType(...args);
             
         };
-    
+        
         // function 
         RAttributeDefinitionData.prototype.getTag = function(...args) 
           
@@ -984,7 +984,7 @@ RAttributeDefinitionData.UpsideDown = RAttributeDefinitionData_Wrapper.UpsideDow
               return this.__PROXY__.getTag(...args);
             
         };
-    
+        
         // function 
         RAttributeDefinitionData.prototype.setTag = function(...args) 
           
@@ -994,7 +994,7 @@ RAttributeDefinitionData.UpsideDown = RAttributeDefinitionData_Wrapper.UpsideDow
               return this.__PROXY__.setTag(...args);
             
         };
-    
+        
         // function 
         RAttributeDefinitionData.prototype.getPrompt = function(...args) 
           
@@ -1004,7 +1004,7 @@ RAttributeDefinitionData.UpsideDown = RAttributeDefinitionData_Wrapper.UpsideDow
               return this.__PROXY__.getPrompt(...args);
             
         };
-    
+        
         // function 
         RAttributeDefinitionData.prototype.setPrompt = function(...args) 
           
@@ -1014,7 +1014,7 @@ RAttributeDefinitionData.UpsideDown = RAttributeDefinitionData_Wrapper.UpsideDow
               return this.__PROXY__.setPrompt(...args);
             
         };
-    
+        
         // function 
         RAttributeDefinitionData.prototype.isInvisible = function(...args) 
           
@@ -1024,7 +1024,7 @@ RAttributeDefinitionData.UpsideDown = RAttributeDefinitionData_Wrapper.UpsideDow
               return this.__PROXY__.isInvisible(...args);
             
         };
-    
+        
         // function 
         RAttributeDefinitionData.prototype.setInvisible = function(...args) 
           
@@ -1034,7 +1034,7 @@ RAttributeDefinitionData.UpsideDown = RAttributeDefinitionData_Wrapper.UpsideDow
               return this.__PROXY__.setInvisible(...args);
             
         };
-    
+        
         // function 
         RAttributeDefinitionData.prototype.getRenderedText = function(...args) 
           
@@ -1044,7 +1044,7 @@ RAttributeDefinitionData.UpsideDown = RAttributeDefinitionData_Wrapper.UpsideDow
               return this.__PROXY__.getRenderedText(...args);
             
         };
-    
+        
 
       // static functions:
       RAttributeDefinitionData.prototype.isNullWrapper = function() {

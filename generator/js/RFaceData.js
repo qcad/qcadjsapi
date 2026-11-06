@@ -164,7 +164,7 @@
               return this.__PROXY__.isValid(...args);
             
         };
-    
+        
         // function 
         RFaceData.prototype.getEndPoints = function(...args) 
           
@@ -174,7 +174,7 @@
               return this.__PROXY__.getEndPoints(...args);
             
         };
-    
+        
         // function 
         RFaceData.prototype.setZ = function(...args) 
           
@@ -184,7 +184,7 @@
               return this.__PROXY__.setZ(...args);
             
         };
-    
+        
         // function 
         RFaceData.prototype.to2D = function(...args) 
           
@@ -194,7 +194,7 @@
               return this.__PROXY__.to2D(...args);
             
         };
-    
+        
         // function 
         RFaceData.prototype.getBoundingBox = function(...args) 
           
@@ -204,7 +204,7 @@
               return this.__PROXY__.getBoundingBox(...args);
             
         };
-    
+        
         // function 
         RFaceData.prototype.getMiddlePoints = function(...args) 
           
@@ -214,7 +214,7 @@
               return this.__PROXY__.getMiddlePoints(...args);
             
         };
-    
+        
         // function 
         RFaceData.prototype.getCenterPoints = function(...args) 
           
@@ -224,7 +224,7 @@
               return this.__PROXY__.getCenterPoints(...args);
             
         };
-    
+        
         // function 
         RFaceData.prototype.getArcReferencePoints = function(...args) 
           
@@ -234,7 +234,7 @@
               return this.__PROXY__.getArcReferencePoints(...args);
             
         };
-    
+        
         // function 
         RFaceData.prototype.getPointsWithDistanceToEnd = function(...args) 
           
@@ -244,7 +244,7 @@
               return this.__PROXY__.getPointsWithDistanceToEnd(...args);
             
         };
-    
+        
         // function 
         RFaceData.prototype.getIntersectionPoints = function(...args) 
           
@@ -254,7 +254,7 @@
               return this.__PROXY__.getIntersectionPoints(...args);
             
         };
-    
+        
         // function 
         RFaceData.prototype.getVectorTo = function(...args) 
           
@@ -264,7 +264,7 @@
               return this.__PROXY__.getVectorTo(...args);
             
         };
-    
+        
         // function 
         RFaceData.prototype.getDistanceTo = function(...args) 
           
@@ -274,7 +274,7 @@
               return this.__PROXY__.getDistanceTo(...args);
             
         };
-    
+        
         // function 
         RFaceData.prototype.intersectsWith = function(...args) 
           
@@ -284,7 +284,7 @@
               return this.__PROXY__.intersectsWith(...args);
             
         };
-    
+        
         // function 
         RFaceData.prototype.move = function(...args) 
           
@@ -294,7 +294,7 @@
               return this.__PROXY__.move(...args);
             
         };
-    
+        
         // function 
         RFaceData.prototype.rotate = function(...args) 
           
@@ -304,7 +304,7 @@
               return this.__PROXY__.rotate(...args);
             
         };
-    
+        
         // function 
         RFaceData.prototype.scale = function(...args) 
           
@@ -314,7 +314,7 @@
               return this.__PROXY__.scale(...args);
             
         };
-    
+        
         // function 
         RFaceData.prototype.mirror = function(...args) 
           
@@ -324,7 +324,7 @@
               return this.__PROXY__.mirror(...args);
             
         };
-    
+        
         // function 
         RFaceData.prototype.flipHorizontal = function(...args) 
           
@@ -334,7 +334,7 @@
               return this.__PROXY__.flipHorizontal(...args);
             
         };
-    
+        
         // function 
         RFaceData.prototype.flipVertical = function(...args) 
           
@@ -344,7 +344,7 @@
               return this.__PROXY__.flipVertical(...args);
             
         };
-    
+        
         // function 
         RFaceData.prototype.stretch = function(...args) 
           
@@ -354,7 +354,7 @@
               return this.__PROXY__.stretch(...args);
             
         };
-    
+        
         // function 
         RFaceData.prototype.getStartPoint = function(...args) 
           
@@ -364,7 +364,7 @@
               return this.__PROXY__.getStartPoint(...args);
             
         };
-    
+        
         // function 
         RFaceData.prototype.getEndPoint = function(...args) 
           
@@ -374,7 +374,7 @@
               return this.__PROXY__.getEndPoint(...args);
             
         };
-    
+        
         // function 
         RFaceData.prototype.getDirection1 = function(...args) 
           
@@ -384,7 +384,7 @@
               return this.__PROXY__.getDirection1(...args);
             
         };
-    
+        
         // function 
         RFaceData.prototype.getDirection2 = function(...args) 
           
@@ -394,7 +394,7 @@
               return this.__PROXY__.getDirection2(...args);
             
         };
-    
+        
         // function 
         RFaceData.prototype.reverse = function(...args) 
           
@@ -404,7 +404,7 @@
               return this.__PROXY__.reverse(...args);
             
         };
-    
+        
         // function 
         RFaceData.prototype.getVertexAt = function(...args) 
           
@@ -414,7 +414,7 @@
               return this.__PROXY__.getVertexAt(...args);
             
         };
-    
+        
         // function 
         RFaceData.prototype.countVertices = function(...args) 
           
@@ -424,7 +424,7 @@
               return this.__PROXY__.countVertices(...args);
             
         };
-    
+        
         // function 
         RFaceData.prototype.getTrimEnd = function(...args) 
           
@@ -434,7 +434,7 @@
               return this.__PROXY__.getTrimEnd(...args);
             
         };
-    
+        
         // function 
         RFaceData.prototype.trimStartPoint = function(...args) 
           
@@ -444,7 +444,7 @@
               return this.__PROXY__.trimStartPoint(...args);
             
         };
-    
+        
         // function 
         RFaceData.prototype.trimEndPoint = function(...args) 
           
@@ -454,7 +454,7 @@
               return this.__PROXY__.trimEndPoint(...args);
             
         };
-    
+        
         // function 
         RFaceData.prototype.getReferencePoints = function(...args) 
           
@@ -464,7 +464,7 @@
               return this.__PROXY__.getReferencePoints(...args);
             
         };
-    
+        
         // function 
         RFaceData.prototype.moveReferencePoint = function(...args) 
           
@@ -474,7 +474,7 @@
               return this.__PROXY__.moveReferencePoint(...args);
             
         };
-    
+        
         // function 
         RFaceData.prototype.castToShape = function(...args) 
           
@@ -484,7 +484,7 @@
               return this.__PROXY__.castToShape(...args);
             
         };
-    
+        
         // function 
         RFaceData.prototype.getShapes = function(...args) 
           
@@ -494,7 +494,7 @@
               return this.__PROXY__.getShapes(...args);
             
         };
-    
+        
         // function 
         RFaceData.prototype.getGeometry = function(...args) 
           
@@ -504,7 +504,7 @@
               return this.__PROXY__.getGeometry(...args);
             
         };
-    
+        
         // function 
         RFaceData.prototype.getType = function(...args) 
           
@@ -514,7 +514,7 @@
               return this.__PROXY__.getType(...args);
             
         };
-    
+        
 
       // static functions:
       RFaceData.prototype.isNullWrapper = function() {

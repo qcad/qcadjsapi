@@ -105,7 +105,7 @@
               return this.__PROXY__.setProgress(...args);
             
         };
-    
+        
         // function 
         RProgressHandler.prototype.setProgressEnd = function(...args) 
           
@@ -115,7 +115,7 @@
               return this.__PROXY__.setProgressEnd(...args);
             
         };
-    
+        
         // function 
         RProgressHandler.prototype.setProgressText = function(...args) 
           
@@ -125,7 +125,7 @@
               return this.__PROXY__.setProgressText(...args);
             
         };
-    
+        
         // function 
         RProgressHandler.prototype.setProgressEnabled = function(...args) 
           
@@ -135,7 +135,7 @@
               return this.__PROXY__.setProgressEnabled(...args);
             
         };
-    
+        
 
       // static functions:
       RProgressHandler.prototype.isNullWrapper = function() {

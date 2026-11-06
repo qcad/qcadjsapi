@@ -199,7 +199,7 @@ RTransaction.LayerCollapseStatusChange = RTransaction_Wrapper.LayerCollapseStatu
               return this.__PROXY__.setRecordAffectedObjects(...args);
             
         };
-    
+        
         // function 
         RTransaction.prototype.setAllowAll = function(...args) 
           
@@ -209,7 +209,7 @@ RTransaction.LayerCollapseStatusChange = RTransaction_Wrapper.LayerCollapseStatu
               return this.__PROXY__.setAllowAll(...args);
             
         };
-    
+        
         // function 
         RTransaction.prototype.setAllowInvisible = function(...args) 
           
@@ -219,7 +219,7 @@ RTransaction.LayerCollapseStatusChange = RTransaction_Wrapper.LayerCollapseStatu
               return this.__PROXY__.setAllowInvisible(...args);
             
         };
-    
+        
         // function 
         RTransaction.prototype.setSpatialIndexDisabled = function(...args) 
           
@@ -229,7 +229,7 @@ RTransaction.LayerCollapseStatusChange = RTransaction_Wrapper.LayerCollapseStatu
               return this.__PROXY__.setSpatialIndexDisabled(...args);
             
         };
-    
+        
         // function 
         RTransaction.prototype.setExistingBlockDetectionDisabled = function(...args) 
           
@@ -239,7 +239,7 @@ RTransaction.LayerCollapseStatusChange = RTransaction_Wrapper.LayerCollapseStatu
               return this.__PROXY__.setExistingBlockDetectionDisabled(...args);
             
         };
-    
+        
         // function 
         RTransaction.prototype.setExistingLayerDetectionDisabled = function(...args) 
           
@@ -249,7 +249,7 @@ RTransaction.LayerCollapseStatusChange = RTransaction_Wrapper.LayerCollapseStatu
               return this.__PROXY__.setExistingLayerDetectionDisabled(...args);
             
         };
-    
+        
         // function 
         RTransaction.prototype.setExistingLinetypeDetectionDisabled = function(...args) 
           
@@ -259,7 +259,7 @@ RTransaction.LayerCollapseStatusChange = RTransaction_Wrapper.LayerCollapseStatu
               return this.__PROXY__.setExistingLinetypeDetectionDisabled(...args);
             
         };
-    
+        
         // function 
         RTransaction.prototype.setBlockRecursionDetectionDisabled = function(...args) 
           
@@ -269,7 +269,7 @@ RTransaction.LayerCollapseStatusChange = RTransaction_Wrapper.LayerCollapseStatu
               return this.__PROXY__.setBlockRecursionDetectionDisabled(...args);
             
         };
-    
+        
         // function 
         RTransaction.prototype.setKeepHandles = function(...args) 
           
@@ -279,7 +279,7 @@ RTransaction.LayerCollapseStatusChange = RTransaction_Wrapper.LayerCollapseStatu
               return this.__PROXY__.setKeepHandles(...args);
             
         };
-    
+        
         // function 
         RTransaction.prototype.setKeepChildren = function(...args) 
           
@@ -289,7 +289,7 @@ RTransaction.LayerCollapseStatusChange = RTransaction_Wrapper.LayerCollapseStatu
               return this.__PROXY__.setKeepChildren(...args);
             
         };
-    
+        
         // function 
         RTransaction.prototype.isUndoing = function(...args) 
           
@@ -299,7 +299,7 @@ RTransaction.LayerCollapseStatusChange = RTransaction_Wrapper.LayerCollapseStatu
               return this.__PROXY__.isUndoing(...args);
             
         };
-    
+        
         // function 
         RTransaction.prototype.isRedoing = function(...args) 
           
@@ -309,7 +309,7 @@ RTransaction.LayerCollapseStatusChange = RTransaction_Wrapper.LayerCollapseStatu
               return this.__PROXY__.isRedoing(...args);
             
         };
-    
+        
         // function 
         RTransaction.prototype.isUndoable = function(...args) 
           
@@ -319,7 +319,7 @@ RTransaction.LayerCollapseStatusChange = RTransaction_Wrapper.LayerCollapseStatu
               return this.__PROXY__.isUndoable(...args);
             
         };
-    
+        
         // function 
         RTransaction.prototype.isFailed = function(...args) 
           
@@ -329,7 +329,7 @@ RTransaction.LayerCollapseStatusChange = RTransaction_Wrapper.LayerCollapseStatu
               return this.__PROXY__.isFailed(...args);
             
         };
-    
+        
         // function 
         RTransaction.prototype.redo = function(...args) 
           
@@ -339,7 +339,7 @@ RTransaction.LayerCollapseStatusChange = RTransaction_Wrapper.LayerCollapseStatu
               return this.__PROXY__.redo(...args);
             
         };
-    
+        
         // function 
         RTransaction.prototype.undo = function(...args) 
           
@@ -349,7 +349,7 @@ RTransaction.LayerCollapseStatusChange = RTransaction_Wrapper.LayerCollapseStatu
               return this.__PROXY__.undo(...args);
             
         };
-    
+        
         // function 
         RTransaction.prototype.end = function(...args) 
           
@@ -359,7 +359,7 @@ RTransaction.LayerCollapseStatusChange = RTransaction_Wrapper.LayerCollapseStatu
               return this.__PROXY__.end(...args);
             
         };
-    
+        
         // function 
         RTransaction.prototype.updateAffectedBlockReferences = function(...args) 
           
@@ -369,7 +369,7 @@ RTransaction.LayerCollapseStatusChange = RTransaction_Wrapper.LayerCollapseStatu
               return this.__PROXY__.updateAffectedBlockReferences(...args);
             
         };
-    
+        
         // function 
         RTransaction.prototype.setId = function(...args) 
           
@@ -379,7 +379,7 @@ RTransaction.LayerCollapseStatusChange = RTransaction_Wrapper.LayerCollapseStatu
               return this.__PROXY__.setId(...args);
             
         };
-    
+        
         // function 
         RTransaction.prototype.getId = function(...args) 
           
@@ -389,7 +389,7 @@ RTransaction.LayerCollapseStatusChange = RTransaction_Wrapper.LayerCollapseStatu
               return this.__PROXY__.getId(...args);
             
         };
-    
+        
         // function 
         RTransaction.prototype.setGroup = function(...args) 
           
@@ -399,7 +399,7 @@ RTransaction.LayerCollapseStatusChange = RTransaction_Wrapper.LayerCollapseStatu
               return this.__PROXY__.setGroup(...args);
             
         };
-    
+        
         // function 
         RTransaction.prototype.getGroup = function(...args) 
           
@@ -409,7 +409,7 @@ RTransaction.LayerCollapseStatusChange = RTransaction_Wrapper.LayerCollapseStatu
               return this.__PROXY__.getGroup(...args);
             
         };
-    
+        
         // function 
         RTransaction.prototype.getText = function(...args) 
           
@@ -419,7 +419,7 @@ RTransaction.LayerCollapseStatusChange = RTransaction_Wrapper.LayerCollapseStatu
               return this.__PROXY__.getText(...args);
             
         };
-    
+        
         // function 
         RTransaction.prototype.overwriteBlock = function(...args) 
           
@@ -429,7 +429,7 @@ RTransaction.LayerCollapseStatusChange = RTransaction_Wrapper.LayerCollapseStatu
               return this.__PROXY__.overwriteBlock(...args);
             
         };
-    
+        
         // function 
         RTransaction.prototype.addObject = function(...args) 
           
@@ -439,7 +439,7 @@ RTransaction.LayerCollapseStatusChange = RTransaction_Wrapper.LayerCollapseStatu
               return this.__PROXY__.addObject(...args);
             
         };
-    
+        
         // function 
         RTransaction.prototype.addAffectedObject = function(...args) 
           
@@ -449,7 +449,7 @@ RTransaction.LayerCollapseStatusChange = RTransaction_Wrapper.LayerCollapseStatu
               return this.__PROXY__.addAffectedObject(...args);
             
         };
-    
+        
         // function 
         RTransaction.prototype.addAffectedObjects = function(...args) 
           
@@ -459,7 +459,7 @@ RTransaction.LayerCollapseStatusChange = RTransaction_Wrapper.LayerCollapseStatu
               return this.__PROXY__.addAffectedObjects(...args);
             
         };
-    
+        
         // function 
         RTransaction.prototype.deleteObject = function(...args) 
           
@@ -469,7 +469,7 @@ RTransaction.LayerCollapseStatusChange = RTransaction_Wrapper.LayerCollapseStatu
               return this.__PROXY__.deleteObject(...args);
             
         };
-    
+        
         // function 
         RTransaction.prototype.getAffectedObjects = function(...args) 
           
@@ -479,7 +479,7 @@ RTransaction.LayerCollapseStatusChange = RTransaction_Wrapper.LayerCollapseStatu
               return this.__PROXY__.getAffectedObjects(...args);
             
         };
-    
+        
         // function 
         RTransaction.prototype.getStatusChanges = function(...args) 
           
@@ -489,7 +489,7 @@ RTransaction.LayerCollapseStatusChange = RTransaction_Wrapper.LayerCollapseStatu
               return this.__PROXY__.getStatusChanges(...args);
             
         };
-    
+        
         // function 
         RTransaction.prototype.hasStatusChange = function(...args) 
           
@@ -499,7 +499,7 @@ RTransaction.LayerCollapseStatusChange = RTransaction_Wrapper.LayerCollapseStatu
               return this.__PROXY__.hasStatusChange(...args);
             
         };
-    
+        
         // function 
         RTransaction.prototype.getPropertyChanges = function(...args) 
           
@@ -509,7 +509,7 @@ RTransaction.LayerCollapseStatusChange = RTransaction_Wrapper.LayerCollapseStatu
               return this.__PROXY__.getPropertyChanges(...args);
             
         };
-    
+        
         // function 
         RTransaction.prototype.getNewObjectId = function(...args) 
           
@@ -519,7 +519,7 @@ RTransaction.LayerCollapseStatusChange = RTransaction_Wrapper.LayerCollapseStatu
               return this.__PROXY__.getNewObjectId(...args);
             
         };
-    
+        
         // function 
         RTransaction.prototype.hasOnlyChanges = function(...args) 
           
@@ -529,7 +529,7 @@ RTransaction.LayerCollapseStatusChange = RTransaction_Wrapper.LayerCollapseStatu
               return this.__PROXY__.hasOnlyChanges(...args);
             
         };
-    
+        
         // function 
         RTransaction.prototype.fail = function(...args) 
           
@@ -539,7 +539,7 @@ RTransaction.LayerCollapseStatusChange = RTransaction_Wrapper.LayerCollapseStatu
               return this.__PROXY__.fail(...args);
             
         };
-    
+        
         // function 
         RTransaction.prototype.endCycle = function(...args) 
           
@@ -549,7 +549,7 @@ RTransaction.LayerCollapseStatusChange = RTransaction_Wrapper.LayerCollapseStatu
               return this.__PROXY__.endCycle(...args);
             
         };
-    
+        
         // function 
         RTransaction.prototype.isPreview = function(...args) 
           
@@ -559,7 +559,7 @@ RTransaction.LayerCollapseStatusChange = RTransaction_Wrapper.LayerCollapseStatu
               return this.__PROXY__.isPreview(...args);
             
         };
-    
+        
         // function 
         RTransaction.prototype.setTypes = function(...args) 
           
@@ -569,7 +569,7 @@ RTransaction.LayerCollapseStatusChange = RTransaction_Wrapper.LayerCollapseStatu
               return this.__PROXY__.setTypes(...args);
             
         };
-    
+        
         // function 
         RTransaction.prototype.getTypes = function(...args) 
           
@@ -579,7 +579,7 @@ RTransaction.LayerCollapseStatusChange = RTransaction_Wrapper.LayerCollapseStatu
               return this.__PROXY__.getTypes(...args);
             
         };
-    
+        
         // function 
         RTransaction.prototype.setType = function(...args) 
           
@@ -589,7 +589,7 @@ RTransaction.LayerCollapseStatusChange = RTransaction_Wrapper.LayerCollapseStatu
               return this.__PROXY__.setType(...args);
             
         };
-    
+        
         // function 
         RTransaction.prototype.isType = function(...args) 
           
@@ -599,7 +599,7 @@ RTransaction.LayerCollapseStatusChange = RTransaction_Wrapper.LayerCollapseStatu
               return this.__PROXY__.isType(...args);
             
         };
-    
+        
         // function 
         RTransaction.prototype.addPropertyChange = function(...args) 
           
@@ -609,7 +609,7 @@ RTransaction.LayerCollapseStatusChange = RTransaction_Wrapper.LayerCollapseStatu
               return this.__PROXY__.addPropertyChange(...args);
             
         };
-    
+        
         // function 
         RTransaction.prototype.commit = function(...args) 
           
@@ -619,7 +619,7 @@ RTransaction.LayerCollapseStatusChange = RTransaction_Wrapper.LayerCollapseStatu
               return this.__PROXY__.commit(...args);
             
         };
-    
+        
         // function 
         RTransaction.prototype.rollback = function(...args) 
           
@@ -629,7 +629,7 @@ RTransaction.LayerCollapseStatusChange = RTransaction_Wrapper.LayerCollapseStatu
               return this.__PROXY__.rollback(...args);
             
         };
-    
+        
 
       // static functions:
       RTransaction.prototype.isNullWrapper = function() {

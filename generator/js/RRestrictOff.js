@@ -203,7 +203,7 @@
               return this.__PROXY__.getLastSnap(...args);
             
         };
-    
+        
         // function 
         RRestrictOff.prototype.reset = function(...args) 
           
@@ -213,7 +213,7 @@
               return this.__PROXY__.reset(...args);
             
         };
-    
+        
         // function 
         RRestrictOff.prototype.restrictSnap = function(...args) 
           
@@ -223,7 +223,7 @@
               return this.__PROXY__.restrictSnap(...args);
             
         };
-    
+        
 
       // static functions:
       RRestrictOff.prototype.isNullWrapper = function() {

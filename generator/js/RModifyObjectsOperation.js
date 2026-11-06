@@ -177,7 +177,7 @@ RModifyObjectsOperation.Delete = RModifyObjectsOperation_Wrapper.Delete;
               return this.__PROXY__.getEntityTypeFilter(...args);
             
         };
-    
+        
         // function 
         RModifyObjectsOperation.prototype.setRecordAffectedObjects = function(...args) 
           
@@ -187,7 +187,7 @@ RModifyObjectsOperation.Delete = RModifyObjectsOperation_Wrapper.Delete;
               return this.__PROXY__.setRecordAffectedObjects(...args);
             
         };
-    
+        
         // function 
         RModifyObjectsOperation.prototype.setSpatialIndexDisabled = function(...args) 
           
@@ -197,7 +197,7 @@ RModifyObjectsOperation.Delete = RModifyObjectsOperation_Wrapper.Delete;
               return this.__PROXY__.setSpatialIndexDisabled(...args);
             
         };
-    
+        
         // function 
         RModifyObjectsOperation.prototype.setAllowInvisible = function(...args) 
           
@@ -207,7 +207,7 @@ RModifyObjectsOperation.Delete = RModifyObjectsOperation_Wrapper.Delete;
               return this.__PROXY__.setAllowInvisible(...args);
             
         };
-    
+        
         // function 
         RModifyObjectsOperation.prototype.setAllowAll = function(...args) 
           
@@ -217,7 +217,7 @@ RModifyObjectsOperation.Delete = RModifyObjectsOperation_Wrapper.Delete;
               return this.__PROXY__.setAllowAll(...args);
             
         };
-    
+        
         // function 
         RModifyObjectsOperation.prototype.setKeepChildren = function(...args) 
           
@@ -227,7 +227,7 @@ RModifyObjectsOperation.Delete = RModifyObjectsOperation_Wrapper.Delete;
               return this.__PROXY__.setKeepChildren(...args);
             
         };
-    
+        
         // function 
         RModifyObjectsOperation.prototype.setTransactionGroup = function(...args) 
           
@@ -237,7 +237,7 @@ RModifyObjectsOperation.Delete = RModifyObjectsOperation_Wrapper.Delete;
               return this.__PROXY__.setTransactionGroup(...args);
             
         };
-    
+        
         // function 
         RModifyObjectsOperation.prototype.getTransactionGroup = function(...args) 
           
@@ -247,7 +247,7 @@ RModifyObjectsOperation.Delete = RModifyObjectsOperation_Wrapper.Delete;
               return this.__PROXY__.getTransactionGroup(...args);
             
         };
-    
+        
         // function 
         RModifyObjectsOperation.prototype.setText = function(...args) 
           
@@ -257,7 +257,7 @@ RModifyObjectsOperation.Delete = RModifyObjectsOperation_Wrapper.Delete;
               return this.__PROXY__.setText(...args);
             
         };
-    
+        
         // function 
         RModifyObjectsOperation.prototype.getText = function(...args) 
           
@@ -267,7 +267,7 @@ RModifyObjectsOperation.Delete = RModifyObjectsOperation_Wrapper.Delete;
               return this.__PROXY__.getText(...args);
             
         };
-    
+        
         // function 
         RModifyObjectsOperation.prototype.getTransactionTypes = function(...args) 
           
@@ -277,7 +277,7 @@ RModifyObjectsOperation.Delete = RModifyObjectsOperation_Wrapper.Delete;
               return this.__PROXY__.getTransactionTypes(...args);
             
         };
-    
+        
         // function 
         RModifyObjectsOperation.prototype.setTransactionType = function(...args) 
           
@@ -287,7 +287,7 @@ RModifyObjectsOperation.Delete = RModifyObjectsOperation_Wrapper.Delete;
               return this.__PROXY__.setTransactionType(...args);
             
         };
-    
+        
         // function 
         RModifyObjectsOperation.prototype.getTransactionType = function(...args) 
           
@@ -297,7 +297,7 @@ RModifyObjectsOperation.Delete = RModifyObjectsOperation_Wrapper.Delete;
               return this.__PROXY__.getTransactionType(...args);
             
         };
-    
+        
         // function 
         RModifyObjectsOperation.prototype.replaceObject = function(...args) 
           
@@ -307,7 +307,7 @@ RModifyObjectsOperation.Delete = RModifyObjectsOperation_Wrapper.Delete;
               return this.__PROXY__.replaceObject(...args);
             
         };
-    
+        
         // function 
         RModifyObjectsOperation.prototype.getObject = function(...args) 
           
@@ -317,7 +317,7 @@ RModifyObjectsOperation.Delete = RModifyObjectsOperation_Wrapper.Delete;
               return this.__PROXY__.getObject(...args);
             
         };
-    
+        
         // function 
         RModifyObjectsOperation.prototype.endCycle = function(...args) 
           
@@ -327,7 +327,7 @@ RModifyObjectsOperation.Delete = RModifyObjectsOperation_Wrapper.Delete;
               return this.__PROXY__.endCycle(...args);
             
         };
-    
+        
         // function 
         RModifyObjectsOperation.prototype.addObject = function(...args) 
           
@@ -337,7 +337,7 @@ RModifyObjectsOperation.Delete = RModifyObjectsOperation_Wrapper.Delete;
               return this.__PROXY__.addObject(...args);
             
         };
-    
+        
         // function 
         RModifyObjectsOperation.prototype.deleteObject = function(...args) 
           
@@ -347,7 +347,7 @@ RModifyObjectsOperation.Delete = RModifyObjectsOperation_Wrapper.Delete;
               return this.__PROXY__.deleteObject(...args);
             
         };
-    
+        
         // function 
         RModifyObjectsOperation.prototype.apply = function(...args) 
           
@@ -357,7 +357,7 @@ RModifyObjectsOperation.Delete = RModifyObjectsOperation_Wrapper.Delete;
               return this.__PROXY__.apply(...args);
             
         };
-    
+        
         // function 
         RModifyObjectsOperation.prototype.getPreviewCounter = function(...args) 
           
@@ -367,7 +367,7 @@ RModifyObjectsOperation.Delete = RModifyObjectsOperation_Wrapper.Delete;
               return this.__PROXY__.getPreviewCounter(...args);
             
         };
-    
+        
         // function 
         RModifyObjectsOperation.prototype.setLimitPreview = function(...args) 
           
@@ -377,7 +377,7 @@ RModifyObjectsOperation.Delete = RModifyObjectsOperation_Wrapper.Delete;
               return this.__PROXY__.setLimitPreview(...args);
             
         };
-    
+        
         // function 
         RModifyObjectsOperation.prototype.isEmpty = function(...args) 
           
@@ -387,7 +387,7 @@ RModifyObjectsOperation.Delete = RModifyObjectsOperation_Wrapper.Delete;
               return this.__PROXY__.isEmpty(...args);
             
         };
-    
+        
         // function 
         RModifyObjectsOperation.prototype.transformSelection = function(...args) 
           
@@ -397,7 +397,7 @@ RModifyObjectsOperation.Delete = RModifyObjectsOperation_Wrapper.Delete;
               return this.__PROXY__.transformSelection(...args);
             
         };
-    
+        
 
       // static functions:
       RModifyObjectsOperation.prototype.isNullWrapper = function() {

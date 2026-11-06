@@ -105,7 +105,7 @@
               return this.__PROXY__.apply(...args);
             
         };
-    
+        
         // function 
         ROperation.prototype.getEntityTypeFilter = function(...args) 
           
@@ -115,7 +115,7 @@
               return this.__PROXY__.getEntityTypeFilter(...args);
             
         };
-    
+        
         // function 
         ROperation.prototype.setRecordAffectedObjects = function(...args) 
           
@@ -125,7 +125,7 @@
               return this.__PROXY__.setRecordAffectedObjects(...args);
             
         };
-    
+        
         // function 
         ROperation.prototype.setSpatialIndexDisabled = function(...args) 
           
@@ -135,7 +135,7 @@
               return this.__PROXY__.setSpatialIndexDisabled(...args);
             
         };
-    
+        
         // function 
         ROperation.prototype.setAllowInvisible = function(...args) 
           
@@ -145,7 +145,7 @@
               return this.__PROXY__.setAllowInvisible(...args);
             
         };
-    
+        
         // function 
         ROperation.prototype.setAllowAll = function(...args) 
           
@@ -155,7 +155,7 @@
               return this.__PROXY__.setAllowAll(...args);
             
         };
-    
+        
         // function 
         ROperation.prototype.setKeepChildren = function(...args) 
           
@@ -165,7 +165,7 @@
               return this.__PROXY__.setKeepChildren(...args);
             
         };
-    
+        
         // function 
         ROperation.prototype.setTransactionGroup = function(...args) 
           
@@ -175,7 +175,7 @@
               return this.__PROXY__.setTransactionGroup(...args);
             
         };
-    
+        
         // function 
         ROperation.prototype.getTransactionGroup = function(...args) 
           
@@ -185,7 +185,7 @@
               return this.__PROXY__.getTransactionGroup(...args);
             
         };
-    
+        
         // function 
         ROperation.prototype.setText = function(...args) 
           
@@ -195,7 +195,7 @@
               return this.__PROXY__.setText(...args);
             
         };
-    
+        
         // function 
         ROperation.prototype.getText = function(...args) 
           
@@ -205,7 +205,7 @@
               return this.__PROXY__.getText(...args);
             
         };
-    
+        
         // function 
         ROperation.prototype.getTransactionTypes = function(...args) 
           
@@ -215,7 +215,7 @@
               return this.__PROXY__.getTransactionTypes(...args);
             
         };
-    
+        
         // function 
         ROperation.prototype.setTransactionType = function(...args) 
           
@@ -225,7 +225,7 @@
               return this.__PROXY__.setTransactionType(...args);
             
         };
-    
+        
         // function 
         ROperation.prototype.getTransactionType = function(...args) 
           
@@ -235,7 +235,7 @@
               return this.__PROXY__.getTransactionType(...args);
             
         };
-    
+        
 
       // static functions:
       ROperation.prototype.isNullWrapper = function() {

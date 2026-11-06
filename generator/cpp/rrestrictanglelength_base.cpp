@@ -42,7 +42,9 @@
 
       //QJSValue f = self.prototype().property("showUiOptions");
       QJSValue f = self.property("showUiOptions");
-      if (f.isCallable() /*&& !recFlag*/) {
+      // only call into JS if the function is overridden in JS
+      // (not the auto generated forwarder to the ...Super function, see xml2js.xsl):
+      if (f.isCallable() && !f.property("__SUPER__").toBool() /*&& !recFlag*/) {
         QJSValueList args;
         
 
@@ -105,7 +107,9 @@
 
       //QJSValue f = self.prototype().property("hideUiOptions");
       QJSValue f = self.property("hideUiOptions");
-      if (f.isCallable() /*&& !recFlag*/) {
+      // only call into JS if the function is overridden in JS
+      // (not the auto generated forwarder to the ...Super function, see xml2js.xsl):
+      if (f.isCallable() && !f.property("__SUPER__").toBool() /*&& !recFlag*/) {
         QJSValueList args;
         
 

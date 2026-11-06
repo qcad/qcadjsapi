@@ -117,7 +117,7 @@
               return this.__PROXY__.mustAlwaysClone(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.getDocument = function(...args) 
           
@@ -127,7 +127,7 @@
               return this.__PROXY__.getDocument(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.setFlag = function(...args) 
           
@@ -137,7 +137,7 @@
               return this.__PROXY__.setFlag(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.getFlag = function(...args) 
           
@@ -147,7 +147,7 @@
               return this.__PROXY__.getFlag(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.getId = function(...args) 
           
@@ -157,7 +157,7 @@
               return this.__PROXY__.getId(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.getHandle = function(...args) 
           
@@ -167,7 +167,7 @@
               return this.__PROXY__.getHandle(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.isProtected = function(...args) 
           
@@ -177,7 +177,7 @@
               return this.__PROXY__.isProtected(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.setProtected = function(...args) 
           
@@ -187,7 +187,7 @@
               return this.__PROXY__.setProtected(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.isInvisible = function(...args) 
           
@@ -197,7 +197,7 @@
               return this.__PROXY__.isInvisible(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.setInvisible = function(...args) 
           
@@ -207,7 +207,7 @@
               return this.__PROXY__.setInvisible(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.isUndone = function(...args) 
           
@@ -217,7 +217,7 @@
               return this.__PROXY__.isUndone(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.isWorkingSet = function(...args) 
           
@@ -227,7 +227,7 @@
               return this.__PROXY__.isWorkingSet(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.setWorkingSet = function(...args) 
           
@@ -237,7 +237,7 @@
               return this.__PROXY__.setWorkingSet(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.getPropertyTypeIds = function(...args) 
           
@@ -247,7 +247,7 @@
               return this.__PROXY__.getPropertyTypeIds(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.getCustomPropertyTypeIds = function(...args) 
           
@@ -257,7 +257,7 @@
               return this.__PROXY__.getCustomPropertyTypeIds(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.hasPropertyType = function(...args) 
           
@@ -267,7 +267,7 @@
               return this.__PROXY__.hasPropertyType(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.hasCustomProperties = function(...args) 
           
@@ -277,7 +277,7 @@
               return this.__PROXY__.hasCustomProperties(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.hasCustomProperty = function(...args) 
           
@@ -287,7 +287,7 @@
               return this.__PROXY__.hasCustomProperty(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.getCustomProperty = function(...args) 
           
@@ -297,7 +297,7 @@
               return this.__PROXY__.getCustomProperty(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.getCustomDoubleProperty = function(...args) 
           
@@ -307,7 +307,7 @@
               return this.__PROXY__.getCustomDoubleProperty(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.getCustomIntProperty = function(...args) 
           
@@ -317,7 +317,7 @@
               return this.__PROXY__.getCustomIntProperty(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.getCustomBoolProperty = function(...args) 
           
@@ -327,7 +327,7 @@
               return this.__PROXY__.getCustomBoolProperty(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.setCustomProperty = function(...args) 
           
@@ -337,7 +337,7 @@
               return this.__PROXY__.setCustomProperty(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.removeCustomProperty = function(...args) 
           
@@ -347,7 +347,7 @@
               return this.__PROXY__.removeCustomProperty(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.getCustomPropertyTitles = function(...args) 
           
@@ -357,7 +357,7 @@
               return this.__PROXY__.getCustomPropertyTitles(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.getCustomPropertyKeys = function(...args) 
           
@@ -367,7 +367,7 @@
               return this.__PROXY__.getCustomPropertyKeys(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.copyCustomPropertiesFrom = function(...args) 
           
@@ -377,7 +377,7 @@
               return this.__PROXY__.copyCustomPropertiesFrom(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.dump = function(...args) 
           
@@ -387,7 +387,7 @@
               return this.__PROXY__.dump(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.validate = function(...args) 
           
@@ -397,7 +397,7 @@
               return this.__PROXY__.validate(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.setUndone = function(...args) 
           
@@ -407,7 +407,7 @@
               return this.__PROXY__.setUndone(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.setId = function(...args) 
           
@@ -417,7 +417,7 @@
               return this.__PROXY__.setId(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.setHandle = function(...args) 
           
@@ -427,7 +427,7 @@
               return this.__PROXY__.setHandle(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.setMemberFlag = function(...args) 
           
@@ -437,7 +437,7 @@
               return this.__PROXY__.setMemberFlag(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.setDocument = function(...args) 
           
@@ -447,7 +447,7 @@
               return this.__PROXY__.setDocument(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.clone = function(...args) 
           
@@ -457,7 +457,7 @@
               return this.__PROXY__.clone(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.getType = function(...args) 
           
@@ -467,7 +467,7 @@
               return this.__PROXY__.getType(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.isPointType = function(...args) 
           
@@ -477,7 +477,7 @@
               return this.__PROXY__.isPointType(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.isValid = function(...args) 
           
@@ -487,7 +487,7 @@
               return this.__PROXY__.isValid(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.isSane = function(...args) 
           
@@ -497,7 +497,7 @@
               return this.__PROXY__.isSane(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.isSelected = function(...args) 
           
@@ -507,7 +507,7 @@
               return this.__PROXY__.isSelected(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.setSelected = function(...args) 
           
@@ -517,7 +517,7 @@
               return this.__PROXY__.setSelected(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.isSelectedWorkingSet = function(...args) 
           
@@ -527,7 +527,7 @@
               return this.__PROXY__.isSelectedWorkingSet(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.setSelectedWorkingSet = function(...args) 
           
@@ -537,7 +537,7 @@
               return this.__PROXY__.setSelectedWorkingSet(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.isSelectable = function(...args) 
           
@@ -547,7 +547,7 @@
               return this.__PROXY__.isSelectable(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.isUpdatesEnabled = function(...args) 
           
@@ -557,7 +557,7 @@
               return this.__PROXY__.isUpdatesEnabled(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.setUpdatesEnabled = function(...args) 
           
@@ -567,7 +567,7 @@
               return this.__PROXY__.setUpdatesEnabled(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.cloneOnChange = function(...args) 
           
@@ -577,7 +577,7 @@
               return this.__PROXY__.cloneOnChange(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.setDrawOrder = function(...args) 
           
@@ -587,7 +587,7 @@
               return this.__PROXY__.setDrawOrder(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.getDrawOrder = function(...args) 
           
@@ -597,7 +597,7 @@
               return this.__PROXY__.getDrawOrder(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.setLayerId = function(...args) 
           
@@ -607,7 +607,7 @@
               return this.__PROXY__.setLayerId(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.setLayerName = function(...args) 
           
@@ -617,7 +617,7 @@
               return this.__PROXY__.setLayerName(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.getLayerId = function(...args) 
           
@@ -627,7 +627,7 @@
               return this.__PROXY__.getLayerId(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.getLayerName = function(...args) 
           
@@ -637,7 +637,7 @@
               return this.__PROXY__.getLayerName(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.setBlockId = function(...args) 
           
@@ -647,7 +647,7 @@
               return this.__PROXY__.setBlockId(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.getBlockId = function(...args) 
           
@@ -657,7 +657,7 @@
               return this.__PROXY__.getBlockId(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.getBlockName = function(...args) 
           
@@ -667,7 +667,7 @@
               return this.__PROXY__.getBlockName(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.getParentId = function(...args) 
           
@@ -677,7 +677,7 @@
               return this.__PROXY__.getParentId(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.setLinetypeId = function(...args) 
           
@@ -687,7 +687,7 @@
               return this.__PROXY__.setLinetypeId(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.setLinetypePattern = function(...args) 
           
@@ -697,7 +697,7 @@
               return this.__PROXY__.setLinetypePattern(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.getLinetypeId = function(...args) 
           
@@ -707,7 +707,7 @@
               return this.__PROXY__.getLinetypeId(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.getLinetypePattern = function(...args) 
           
@@ -717,7 +717,7 @@
               return this.__PROXY__.getLinetypePattern(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.setLinetypeScale = function(...args) 
           
@@ -727,7 +727,7 @@
               return this.__PROXY__.setLinetypeScale(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.getLinetypeScale = function(...args) 
           
@@ -737,7 +737,7 @@
               return this.__PROXY__.getLinetypeScale(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.setLineweight = function(...args) 
           
@@ -747,7 +747,7 @@
               return this.__PROXY__.setLineweight(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.getLineweight = function(...args) 
           
@@ -757,7 +757,7 @@
               return this.__PROXY__.getLineweight(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.setColor = function(...args) 
           
@@ -767,7 +767,7 @@
               return this.__PROXY__.setColor(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.getColor = function(...args) 
           
@@ -777,7 +777,7 @@
               return this.__PROXY__.getColor(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.getDisplayColor = function(...args) 
           
@@ -787,7 +787,7 @@
               return this.__PROXY__.getDisplayColor(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.copyAttributesFrom = function(...args) 
           
@@ -797,7 +797,7 @@
               return this.__PROXY__.copyAttributesFrom(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.getBoundingBox = function(...args) 
           
@@ -807,7 +807,7 @@
               return this.__PROXY__.getBoundingBox(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.to2D = function(...args) 
           
@@ -817,7 +817,7 @@
               return this.__PROXY__.to2D(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.setZ = function(...args) 
           
@@ -827,7 +827,7 @@
               return this.__PROXY__.setZ(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.getBoundingBoxes = function(...args) 
           
@@ -837,7 +837,7 @@
               return this.__PROXY__.getBoundingBoxes(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.getHull = function(...args) 
           
@@ -847,7 +847,7 @@
               return this.__PROXY__.getHull(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.getShapes = function(...args) 
           
@@ -857,7 +857,7 @@
               return this.__PROXY__.getShapes(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.getClosestSubEntityId = function(...args) 
           
@@ -867,7 +867,7 @@
               return this.__PROXY__.getClosestSubEntityId(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.getClosestShape = function(...args) 
           
@@ -877,7 +877,7 @@
               return this.__PROXY__.getClosestShape(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.getClosestSimpleShape = function(...args) 
           
@@ -887,7 +887,7 @@
               return this.__PROXY__.getClosestSimpleShape(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.isInside = function(...args) 
           
@@ -897,7 +897,7 @@
               return this.__PROXY__.isInside(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.isOnEntity = function(...args) 
           
@@ -907,7 +907,7 @@
               return this.__PROXY__.isOnEntity(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.intersectsWith = function(...args) 
           
@@ -917,7 +917,7 @@
               return this.__PROXY__.intersectsWith(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.getDistanceTo = function(...args) 
           
@@ -927,7 +927,7 @@
               return this.__PROXY__.getDistanceTo(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.getVectorTo = function(...args) 
           
@@ -937,7 +937,7 @@
               return this.__PROXY__.getVectorTo(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.getInternalReferencePoints = function(...args) 
           
@@ -947,7 +947,7 @@
               return this.__PROXY__.getInternalReferencePoints(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.getReferencePoints = function(...args) 
           
@@ -957,7 +957,7 @@
               return this.__PROXY__.getReferencePoints(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.getPointOnEntity = function(...args) 
           
@@ -967,7 +967,7 @@
               return this.__PROXY__.getPointOnEntity(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.getEndPoints = function(...args) 
           
@@ -977,7 +977,7 @@
               return this.__PROXY__.getEndPoints(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.getMiddlePoints = function(...args) 
           
@@ -987,7 +987,7 @@
               return this.__PROXY__.getMiddlePoints(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.getCenterPoints = function(...args) 
           
@@ -997,7 +997,7 @@
               return this.__PROXY__.getCenterPoints(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.getClosestPointOnEntity = function(...args) 
           
@@ -1007,7 +1007,7 @@
               return this.__PROXY__.getClosestPointOnEntity(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.getPointsWithDistanceToEnd = function(...args) 
           
@@ -1017,7 +1017,7 @@
               return this.__PROXY__.getPointsWithDistanceToEnd(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.getIntersectionPoints = function(...args) 
           
@@ -1027,7 +1027,7 @@
               return this.__PROXY__.getIntersectionPoints(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.getIntersectionPointsWithShape = function(...args) 
           
@@ -1037,7 +1037,7 @@
               return this.__PROXY__.getIntersectionPointsWithShape(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.clickReferencePoint = function(...args) 
           
@@ -1047,7 +1047,7 @@
               return this.__PROXY__.clickReferencePoint(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.moveReferencePoint = function(...args) 
           
@@ -1057,7 +1057,7 @@
               return this.__PROXY__.moveReferencePoint(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.move = function(...args) 
           
@@ -1067,7 +1067,7 @@
               return this.__PROXY__.move(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.rotate = function(...args) 
           
@@ -1077,7 +1077,7 @@
               return this.__PROXY__.rotate(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.scale = function(...args) 
           
@@ -1087,7 +1087,7 @@
               return this.__PROXY__.scale(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.scaleNonUniform = function(...args) 
           
@@ -1097,7 +1097,7 @@
               return this.__PROXY__.scaleNonUniform(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.scaleVisualProperties = function(...args) 
           
@@ -1107,7 +1107,7 @@
               return this.__PROXY__.scaleVisualProperties(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.setViewportContext = function(...args) 
           
@@ -1117,7 +1117,7 @@
               return this.__PROXY__.setViewportContext(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.mirror = function(...args) 
           
@@ -1127,7 +1127,7 @@
               return this.__PROXY__.mirror(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.flipHorizontal = function(...args) 
           
@@ -1137,7 +1137,7 @@
               return this.__PROXY__.flipHorizontal(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.flipVertical = function(...args) 
           
@@ -1147,7 +1147,7 @@
               return this.__PROXY__.flipVertical(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.stretch = function(...args) 
           
@@ -1157,7 +1157,7 @@
               return this.__PROXY__.stretch(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.update = function(...args) 
           
@@ -1167,7 +1167,7 @@
               return this.__PROXY__.update(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.castToShape = function(...args) 
           
@@ -1177,7 +1177,7 @@
               return this.__PROXY__.castToShape(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.setAutoUpdatesBlocked = function(...args) 
           
@@ -1187,7 +1187,7 @@
               return this.__PROXY__.setAutoUpdatesBlocked(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.isVisible = function(...args) 
           
@@ -1197,7 +1197,7 @@
               return this.__PROXY__.isVisible(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.isEditable = function(...args) 
           
@@ -1207,7 +1207,7 @@
               return this.__PROXY__.isEditable(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.isInWorkingSet = function(...args) 
           
@@ -1217,7 +1217,7 @@
               return this.__PROXY__.isInWorkingSet(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.getComplexity = function(...args) 
           
@@ -1227,7 +1227,7 @@
               return this.__PROXY__.getComplexity(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.setParentId = function(...args) 
           
@@ -1237,7 +1237,7 @@
               return this.__PROXY__.setParentId(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.setProperty = function(...args) 
           
@@ -1247,7 +1247,7 @@
               return this.__PROXY__.setProperty(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.getProperty = function(...args) 
           
@@ -1257,7 +1257,7 @@
               return this.__PROXY__.getProperty(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.exportEntity = function(...args) 
           
@@ -1267,7 +1267,7 @@
               return this.__PROXY__.exportEntity(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.clearStyleOverrides = function(...args) 
           
@@ -1277,7 +1277,7 @@
               return this.__PROXY__.clearStyleOverrides(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.setDefinitionPoint = function(...args) 
           
@@ -1287,7 +1287,7 @@
               return this.__PROXY__.setDefinitionPoint(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.getDefinitionPoint = function(...args) 
           
@@ -1297,7 +1297,7 @@
               return this.__PROXY__.getDefinitionPoint(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.setText = function(...args) 
           
@@ -1307,7 +1307,7 @@
               return this.__PROXY__.setText(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.getText = function(...args) 
           
@@ -1317,7 +1317,7 @@
               return this.__PROXY__.getText(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.getMeasurement = function(...args) 
           
@@ -1327,7 +1327,7 @@
               return this.__PROXY__.getMeasurement(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.getTextData = function(...args) 
           
@@ -1337,7 +1337,7 @@
               return this.__PROXY__.getTextData(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.updateBoundingBox = function(...args) 
           
@@ -1347,7 +1347,7 @@
               return this.__PROXY__.updateBoundingBox(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.updateTextPositionCenter = function(...args) 
           
@@ -1357,7 +1357,7 @@
               return this.__PROXY__.updateTextPositionCenter(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.updateTextData = function(...args) 
           
@@ -1367,7 +1367,7 @@
               return this.__PROXY__.updateTextData(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.updateShapes = function(...args) 
           
@@ -1377,7 +1377,7 @@
               return this.__PROXY__.updateShapes(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.setTextPosition = function(...args) 
           
@@ -1387,7 +1387,7 @@
               return this.__PROXY__.setTextPosition(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.getTextPosition = function(...args) 
           
@@ -1397,7 +1397,7 @@
               return this.__PROXY__.getTextPosition(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.setFontName = function(...args) 
           
@@ -1407,7 +1407,7 @@
               return this.__PROXY__.setFontName(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.getFontName = function(...args) 
           
@@ -1417,7 +1417,7 @@
               return this.__PROXY__.getFontName(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.hasCustomTextPosition = function(...args) 
           
@@ -1427,7 +1427,7 @@
               return this.__PROXY__.hasCustomTextPosition(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.setCustomTextPosition = function(...args) 
           
@@ -1437,7 +1437,7 @@
               return this.__PROXY__.setCustomTextPosition(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.getLineSpacingStyle = function(...args) 
           
@@ -1447,7 +1447,7 @@
               return this.__PROXY__.getLineSpacingStyle(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.getLineSpacingFactor = function(...args) 
           
@@ -1457,7 +1457,7 @@
               return this.__PROXY__.getLineSpacingFactor(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.getTextRotation = function(...args) 
           
@@ -1467,7 +1467,7 @@
               return this.__PROXY__.getTextRotation(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.getLinearFactor = function(...args) 
           
@@ -1477,7 +1477,7 @@
               return this.__PROXY__.getLinearFactor(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.setLinearFactor = function(...args) 
           
@@ -1487,7 +1487,7 @@
               return this.__PROXY__.setLinearFactor(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.getDimscale = function(...args) 
           
@@ -1497,7 +1497,7 @@
               return this.__PROXY__.getDimscale(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.setDimscale = function(...args) 
           
@@ -1507,7 +1507,7 @@
               return this.__PROXY__.setDimscale(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.getDimBlockName = function(...args) 
           
@@ -1517,7 +1517,7 @@
               return this.__PROXY__.getDimBlockName(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.hasDimensionBlockReference = function(...args) 
           
@@ -1527,7 +1527,7 @@
               return this.__PROXY__.hasDimensionBlockReference(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.isArrow1Flipped = function(...args) 
           
@@ -1537,7 +1537,7 @@
               return this.__PROXY__.isArrow1Flipped(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.setArrow1Flipped = function(...args) 
           
@@ -1547,7 +1547,7 @@
               return this.__PROXY__.setArrow1Flipped(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.isArrow2Flipped = function(...args) 
           
@@ -1557,7 +1557,7 @@
               return this.__PROXY__.isArrow2Flipped(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.setArrow2Flipped = function(...args) 
           
@@ -1567,7 +1567,7 @@
               return this.__PROXY__.setArrow2Flipped(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.isExtLineFix = function(...args) 
           
@@ -1577,7 +1577,7 @@
               return this.__PROXY__.isExtLineFix(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.setExtLineFix = function(...args) 
           
@@ -1587,7 +1587,7 @@
               return this.__PROXY__.setExtLineFix(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.getExtLineFixLength = function(...args) 
           
@@ -1597,7 +1597,7 @@
               return this.__PROXY__.getExtLineFixLength(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.setExtLineFixLength = function(...args) 
           
@@ -1607,7 +1607,7 @@
               return this.__PROXY__.setExtLineFixLength(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.hasOverride = function(...args) 
           
@@ -1617,7 +1617,7 @@
               return this.__PROXY__.hasOverride(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.init = function(...args) 
           
@@ -1627,7 +1627,7 @@
               return this.__PROXY__.init(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.getData = function(...args) 
           
@@ -1637,7 +1637,7 @@
               return this.__PROXY__.getData(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.setExtensionLine1End = function(...args) 
           
@@ -1647,7 +1647,7 @@
               return this.__PROXY__.setExtensionLine1End(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.getExtensionLine1End = function(...args) 
           
@@ -1657,7 +1657,7 @@
               return this.__PROXY__.getExtensionLine1End(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.setExtensionLine2End = function(...args) 
           
@@ -1667,7 +1667,7 @@
               return this.__PROXY__.setExtensionLine2End(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.getExtensionLine2End = function(...args) 
           
@@ -1677,7 +1677,7 @@
               return this.__PROXY__.getExtensionLine2End(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.setDimArcPosition = function(...args) 
           
@@ -1687,7 +1687,7 @@
               return this.__PROXY__.setDimArcPosition(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.getDimArcPosition = function(...args) 
           
@@ -1697,7 +1697,7 @@
               return this.__PROXY__.getDimArcPosition(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.getDimensionArc = function(...args) 
           
@@ -1707,7 +1707,7 @@
               return this.__PROXY__.getDimensionArc(...args);
             
         };
-    
+        
         // function 
         RDimAngularEntity.prototype.print = function(...args) 
           
@@ -1717,7 +1717,7 @@
               return this.__PROXY__.print(...args);
             
         };
-    
+        
 
       // static functions:
       

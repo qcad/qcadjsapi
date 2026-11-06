@@ -160,7 +160,7 @@
               return this.__PROXY__.setOption(...args);
             
         };
-    
+        
         // function 
         RPropertyAttributes.prototype.isReadOnly = function(...args) 
           
@@ -170,7 +170,7 @@
               return this.__PROXY__.isReadOnly(...args);
             
         };
-    
+        
         // function 
         RPropertyAttributes.prototype.setReadOnly = function(...args) 
           
@@ -180,7 +180,7 @@
               return this.__PROXY__.setReadOnly(...args);
             
         };
-    
+        
         // function 
         RPropertyAttributes.prototype.isInvisible = function(...args) 
           
@@ -190,7 +190,7 @@
               return this.__PROXY__.isInvisible(...args);
             
         };
-    
+        
         // function 
         RPropertyAttributes.prototype.setInvisible = function(...args) 
           
@@ -200,7 +200,7 @@
               return this.__PROXY__.setInvisible(...args);
             
         };
-    
+        
         // function 
         RPropertyAttributes.prototype.isUndeletable = function(...args) 
           
@@ -210,7 +210,7 @@
               return this.__PROXY__.isUndeletable(...args);
             
         };
-    
+        
         // function 
         RPropertyAttributes.prototype.setUndeletable = function(...args) 
           
@@ -220,7 +220,7 @@
               return this.__PROXY__.setUndeletable(...args);
             
         };
-    
+        
         // function 
         RPropertyAttributes.prototype.isList = function(...args) 
           
@@ -230,7 +230,7 @@
               return this.__PROXY__.isList(...args);
             
         };
-    
+        
         // function 
         RPropertyAttributes.prototype.setList = function(...args) 
           
@@ -240,7 +240,7 @@
               return this.__PROXY__.setList(...args);
             
         };
-    
+        
         // function 
         RPropertyAttributes.prototype.isAngleType = function(...args) 
           
@@ -250,7 +250,7 @@
               return this.__PROXY__.isAngleType(...args);
             
         };
-    
+        
         // function 
         RPropertyAttributes.prototype.setAngleType = function(...args) 
           
@@ -260,7 +260,7 @@
               return this.__PROXY__.setAngleType(...args);
             
         };
-    
+        
         // function 
         RPropertyAttributes.prototype.getIgnoreCase = function(...args) 
           
@@ -270,7 +270,7 @@
               return this.__PROXY__.getIgnoreCase(...args);
             
         };
-    
+        
         // function 
         RPropertyAttributes.prototype.setIgnoreCase = function(...args) 
           
@@ -280,7 +280,7 @@
               return this.__PROXY__.setIgnoreCase(...args);
             
         };
-    
+        
         // function 
         RPropertyAttributes.prototype.affectsOtherProperties = function(...args) 
           
@@ -290,7 +290,7 @@
               return this.__PROXY__.affectsOtherProperties(...args);
             
         };
-    
+        
         // function 
         RPropertyAttributes.prototype.setAffectsOtherProperties = function(...args) 
           
@@ -300,7 +300,7 @@
               return this.__PROXY__.setAffectsOtherProperties(...args);
             
         };
-    
+        
         // function 
         RPropertyAttributes.prototype.setAllowMixedValue = function(...args) 
           
@@ -310,7 +310,7 @@
               return this.__PROXY__.setAllowMixedValue(...args);
             
         };
-    
+        
         // function 
         RPropertyAttributes.prototype.getAllowMixedValue = function(...args) 
           
@@ -320,7 +320,7 @@
               return this.__PROXY__.getAllowMixedValue(...args);
             
         };
-    
+        
         // function 
         RPropertyAttributes.prototype.getChoices = function(...args) 
           
@@ -330,7 +330,7 @@
               return this.__PROXY__.getChoices(...args);
             
         };
-    
+        
         // function 
         RPropertyAttributes.prototype.setChoices = function(...args) 
           
@@ -340,7 +340,7 @@
               return this.__PROXY__.setChoices(...args);
             
         };
-    
+        
         // function 
         RPropertyAttributes.prototype.hasChoices = function(...args) 
           
@@ -350,7 +350,7 @@
               return this.__PROXY__.hasChoices(...args);
             
         };
-    
+        
         // function 
         RPropertyAttributes.prototype.getStoreIndex = function(...args) 
           
@@ -360,7 +360,7 @@
               return this.__PROXY__.getStoreIndex(...args);
             
         };
-    
+        
         // function 
         RPropertyAttributes.prototype.isRichText = function(...args) 
           
@@ -370,7 +370,7 @@
               return this.__PROXY__.isRichText(...args);
             
         };
-    
+        
         // function 
         RPropertyAttributes.prototype.setRichText = function(...args) 
           
@@ -380,7 +380,7 @@
               return this.__PROXY__.setRichText(...args);
             
         };
-    
+        
         // function 
         RPropertyAttributes.prototype.isStyle = function(...args) 
           
@@ -390,7 +390,7 @@
               return this.__PROXY__.isStyle(...args);
             
         };
-    
+        
         // function 
         RPropertyAttributes.prototype.setStyle = function(...args) 
           
@@ -400,7 +400,27 @@
               return this.__PROXY__.setStyle(...args);
             
         };
-    
+        
+        // function 
+        RPropertyAttributes.prototype.isCustomApp001 = function(...args) 
+          
+        {
+          //print("JS: RPropertyAttributes.prototype.isCustomApp001");
+          
+              return this.__PROXY__.isCustomApp001(...args);
+            
+        };
+        
+        // function 
+        RPropertyAttributes.prototype.setCustomApp001 = function(...args) 
+          
+        {
+          //print("JS: RPropertyAttributes.prototype.setCustomApp001");
+          
+              return this.__PROXY__.setCustomApp001(...args);
+            
+        };
+        
         // function 
         RPropertyAttributes.prototype.mixWith = function(...args) 
           
@@ -410,7 +430,7 @@
               return this.__PROXY__.mixWith(...args);
             
         };
-    
+        
         // function 
         RPropertyAttributes.prototype.isMixed = function(...args) 
           
@@ -420,7 +440,7 @@
               return this.__PROXY__.isMixed(...args);
             
         };
-    
+        
         // function 
         RPropertyAttributes.prototype.setMixed = function(...args) 
           
@@ -430,7 +450,7 @@
               return this.__PROXY__.setMixed(...args);
             
         };
-    
+        
         // function 
         RPropertyAttributes.prototype.isSum = function(...args) 
           
@@ -440,7 +460,7 @@
               return this.__PROXY__.isSum(...args);
             
         };
-    
+        
         // function 
         RPropertyAttributes.prototype.setSum = function(...args) 
           
@@ -450,7 +470,7 @@
               return this.__PROXY__.setSum(...args);
             
         };
-    
+        
         // function 
         RPropertyAttributes.prototype.isOnRequest = function(...args) 
           
@@ -460,7 +480,7 @@
               return this.__PROXY__.isOnRequest(...args);
             
         };
-    
+        
         // function 
         RPropertyAttributes.prototype.setOnRequest = function(...args) 
           
@@ -470,7 +490,7 @@
               return this.__PROXY__.setOnRequest(...args);
             
         };
-    
+        
         // function 
         RPropertyAttributes.prototype.isLabel = function(...args) 
           
@@ -480,7 +500,7 @@
               return this.__PROXY__.isLabel(...args);
             
         };
-    
+        
         // function 
         RPropertyAttributes.prototype.isCustom = function(...args) 
           
@@ -490,7 +510,7 @@
               return this.__PROXY__.isCustom(...args);
             
         };
-    
+        
         // function 
         RPropertyAttributes.prototype.isDimensionLabel = function(...args) 
           
@@ -500,7 +520,7 @@
               return this.__PROXY__.isDimensionLabel(...args);
             
         };
-    
+        
         // function 
         RPropertyAttributes.prototype.setInteger = function(...args) 
           
@@ -510,7 +530,7 @@
               return this.__PROXY__.setInteger(...args);
             
         };
-    
+        
         // function 
         RPropertyAttributes.prototype.isInteger = function(...args) 
           
@@ -520,7 +540,7 @@
               return this.__PROXY__.isInteger(...args);
             
         };
-    
+        
         // function 
         RPropertyAttributes.prototype.isRedundant = function(...args) 
           
@@ -530,7 +550,7 @@
               return this.__PROXY__.isRedundant(...args);
             
         };
-    
+        
         // function 
         RPropertyAttributes.prototype.setRedundant = function(...args) 
           
@@ -540,7 +560,7 @@
               return this.__PROXY__.setRedundant(...args);
             
         };
-    
+        
         // function 
         RPropertyAttributes.prototype.isVisibleToParent = function(...args) 
           
@@ -550,7 +570,7 @@
               return this.__PROXY__.isVisibleToParent(...args);
             
         };
-    
+        
         // function 
         RPropertyAttributes.prototype.isNumericallySorted = function(...args) 
           
@@ -560,7 +580,7 @@
               return this.__PROXY__.isNumericallySorted(...args);
             
         };
-    
+        
         // function 
         RPropertyAttributes.prototype.setNumericallySorted = function(...args) 
           
@@ -570,7 +590,7 @@
               return this.__PROXY__.setNumericallySorted(...args);
             
         };
-    
+        
         // function 
         RPropertyAttributes.prototype.isScaleType = function(...args) 
           
@@ -580,7 +600,7 @@
               return this.__PROXY__.isScaleType(...args);
             
         };
-    
+        
         // function 
         RPropertyAttributes.prototype.setScaleType = function(...args) 
           
@@ -590,7 +610,7 @@
               return this.__PROXY__.setScaleType(...args);
             
         };
-    
+        
         // function 
         RPropertyAttributes.prototype.isAreaType = function(...args) 
           
@@ -600,7 +620,7 @@
               return this.__PROXY__.isAreaType(...args);
             
         };
-    
+        
         // function 
         RPropertyAttributes.prototype.setAreaType = function(...args) 
           
@@ -610,7 +630,7 @@
               return this.__PROXY__.setAreaType(...args);
             
         };
-    
+        
         // function 
         RPropertyAttributes.prototype.isUnitLess = function(...args) 
           
@@ -620,7 +640,7 @@
               return this.__PROXY__.isUnitLess(...args);
             
         };
-    
+        
         // function 
         RPropertyAttributes.prototype.setUnitLess = function(...args) 
           
@@ -630,7 +650,7 @@
               return this.__PROXY__.setUnitLess(...args);
             
         };
-    
+        
         // function 
         RPropertyAttributes.prototype.isPercentage = function(...args) 
           
@@ -640,7 +660,7 @@
               return this.__PROXY__.isPercentage(...args);
             
         };
-    
+        
         // function 
         RPropertyAttributes.prototype.getLabel = function(...args) 
           
@@ -650,7 +670,7 @@
               return this.__PROXY__.getLabel(...args);
             
         };
-    
+        
         // function 
         RPropertyAttributes.prototype.setLabel = function(...args) 
           
@@ -660,7 +680,7 @@
               return this.__PROXY__.setLabel(...args);
             
         };
-    
+        
 
       // static functions:
       RPropertyAttributes.prototype.isNullWrapper = function() {

@@ -164,7 +164,7 @@
               return this.__PROXY__.getDocument(...args);
             
         };
-    
+        
         // function 
         RPolyMeshData.prototype.setDocument = function(...args) 
           
@@ -174,7 +174,7 @@
               return this.__PROXY__.setDocument(...args);
             
         };
-    
+        
         // function 
         RPolyMeshData.prototype.isPointType = function(...args) 
           
@@ -184,7 +184,7 @@
               return this.__PROXY__.isPointType(...args);
             
         };
-    
+        
         // function 
         RPolyMeshData.prototype.getClosestSubEntityId = function(...args) 
           
@@ -194,7 +194,7 @@
               return this.__PROXY__.getClosestSubEntityId(...args);
             
         };
-    
+        
         // function 
         RPolyMeshData.prototype.getClosestShape = function(...args) 
           
@@ -204,7 +204,7 @@
               return this.__PROXY__.getClosestShape(...args);
             
         };
-    
+        
         // function 
         RPolyMeshData.prototype.copyAttributesFrom = function(...args) 
           
@@ -214,7 +214,7 @@
               return this.__PROXY__.copyAttributesFrom(...args);
             
         };
-    
+        
         // function 
         RPolyMeshData.prototype.getBoundingBoxes = function(...args) 
           
@@ -224,7 +224,7 @@
               return this.__PROXY__.getBoundingBoxes(...args);
             
         };
-    
+        
         // function 
         RPolyMeshData.prototype.getHull = function(...args) 
           
@@ -234,7 +234,7 @@
               return this.__PROXY__.getHull(...args);
             
         };
-    
+        
         // function 
         RPolyMeshData.prototype.isUpdatesEnabled = function(...args) 
           
@@ -244,7 +244,7 @@
               return this.__PROXY__.isUpdatesEnabled(...args);
             
         };
-    
+        
         // function 
         RPolyMeshData.prototype.setUpdatesEnabled = function(...args) 
           
@@ -254,7 +254,7 @@
               return this.__PROXY__.setUpdatesEnabled(...args);
             
         };
-    
+        
         // function 
         RPolyMeshData.prototype.isSelected = function(...args) 
           
@@ -264,7 +264,7 @@
               return this.__PROXY__.isSelected(...args);
             
         };
-    
+        
         // function 
         RPolyMeshData.prototype.setSelected = function(...args) 
           
@@ -274,7 +274,7 @@
               return this.__PROXY__.setSelected(...args);
             
         };
-    
+        
         // function 
         RPolyMeshData.prototype.isSelectedWorkingSet = function(...args) 
           
@@ -284,7 +284,7 @@
               return this.__PROXY__.isSelectedWorkingSet(...args);
             
         };
-    
+        
         // function 
         RPolyMeshData.prototype.setSelectedWorkingSet = function(...args) 
           
@@ -294,7 +294,7 @@
               return this.__PROXY__.setSelectedWorkingSet(...args);
             
         };
-    
+        
         // function 
         RPolyMeshData.prototype.getDrawOrder = function(...args) 
           
@@ -304,7 +304,7 @@
               return this.__PROXY__.getDrawOrder(...args);
             
         };
-    
+        
         // function 
         RPolyMeshData.prototype.setDrawOrder = function(...args) 
           
@@ -314,7 +314,7 @@
               return this.__PROXY__.setDrawOrder(...args);
             
         };
-    
+        
         // function 
         RPolyMeshData.prototype.setLayerId = function(...args) 
           
@@ -324,7 +324,7 @@
               return this.__PROXY__.setLayerId(...args);
             
         };
-    
+        
         // function 
         RPolyMeshData.prototype.getLayerId = function(...args) 
           
@@ -334,7 +334,7 @@
               return this.__PROXY__.getLayerId(...args);
             
         };
-    
+        
         // function 
         RPolyMeshData.prototype.setLayerName = function(...args) 
           
@@ -344,7 +344,7 @@
               return this.__PROXY__.setLayerName(...args);
             
         };
-    
+        
         // function 
         RPolyMeshData.prototype.getLayerName = function(...args) 
           
@@ -354,7 +354,7 @@
               return this.__PROXY__.getLayerName(...args);
             
         };
-    
+        
         // function 
         RPolyMeshData.prototype.setBlockId = function(...args) 
           
@@ -364,7 +364,7 @@
               return this.__PROXY__.setBlockId(...args);
             
         };
-    
+        
         // function 
         RPolyMeshData.prototype.getBlockId = function(...args) 
           
@@ -374,7 +374,7 @@
               return this.__PROXY__.getBlockId(...args);
             
         };
-    
+        
         // function 
         RPolyMeshData.prototype.setParentId = function(...args) 
           
@@ -384,7 +384,7 @@
               return this.__PROXY__.setParentId(...args);
             
         };
-    
+        
         // function 
         RPolyMeshData.prototype.getParentId = function(...args) 
           
@@ -394,7 +394,7 @@
               return this.__PROXY__.getParentId(...args);
             
         };
-    
+        
         // function 
         RPolyMeshData.prototype.getBlockName = function(...args) 
           
@@ -404,7 +404,7 @@
               return this.__PROXY__.getBlockName(...args);
             
         };
-    
+        
         // function 
         RPolyMeshData.prototype.setLinetypeId = function(...args) 
           
@@ -414,7 +414,7 @@
               return this.__PROXY__.setLinetypeId(...args);
             
         };
-    
+        
         // function 
         RPolyMeshData.prototype.getLinetypeId = function(...args) 
           
@@ -424,7 +424,7 @@
               return this.__PROXY__.getLinetypeId(...args);
             
         };
-    
+        
         // function 
         RPolyMeshData.prototype.setLinetypePattern = function(...args) 
           
@@ -434,7 +434,7 @@
               return this.__PROXY__.setLinetypePattern(...args);
             
         };
-    
+        
         // function 
         RPolyMeshData.prototype.getLinetypePattern = function(...args) 
           
@@ -444,7 +444,7 @@
               return this.__PROXY__.getLinetypePattern(...args);
             
         };
-    
+        
         // function 
         RPolyMeshData.prototype.setLinetypeScale = function(...args) 
           
@@ -454,7 +454,7 @@
               return this.__PROXY__.setLinetypeScale(...args);
             
         };
-    
+        
         // function 
         RPolyMeshData.prototype.getLinetypeScale = function(...args) 
           
@@ -464,7 +464,7 @@
               return this.__PROXY__.getLinetypeScale(...args);
             
         };
-    
+        
         // function 
         RPolyMeshData.prototype.getLineweight = function(...args) 
           
@@ -474,7 +474,7 @@
               return this.__PROXY__.getLineweight(...args);
             
         };
-    
+        
         // function 
         RPolyMeshData.prototype.setLineweight = function(...args) 
           
@@ -484,7 +484,7 @@
               return this.__PROXY__.setLineweight(...args);
             
         };
-    
+        
         // function 
         RPolyMeshData.prototype.setColor = function(...args) 
           
@@ -494,7 +494,7 @@
               return this.__PROXY__.setColor(...args);
             
         };
-    
+        
         // function 
         RPolyMeshData.prototype.getColor = function(...args) 
           
@@ -504,7 +504,7 @@
               return this.__PROXY__.getColor(...args);
             
         };
-    
+        
         // function 
         RPolyMeshData.prototype.getDisplayColor = function(...args) 
           
@@ -514,7 +514,7 @@
               return this.__PROXY__.getDisplayColor(...args);
             
         };
-    
+        
         // function 
         RPolyMeshData.prototype.getInternalReferencePoints = function(...args) 
           
@@ -524,7 +524,7 @@
               return this.__PROXY__.getInternalReferencePoints(...args);
             
         };
-    
+        
         // function 
         RPolyMeshData.prototype.getPointOnEntity = function(...args) 
           
@@ -534,7 +534,7 @@
               return this.__PROXY__.getPointOnEntity(...args);
             
         };
-    
+        
         // function 
         RPolyMeshData.prototype.getEndPoints = function(...args) 
           
@@ -544,7 +544,7 @@
               return this.__PROXY__.getEndPoints(...args);
             
         };
-    
+        
         // function 
         RPolyMeshData.prototype.getMiddlePoints = function(...args) 
           
@@ -554,7 +554,7 @@
               return this.__PROXY__.getMiddlePoints(...args);
             
         };
-    
+        
         // function 
         RPolyMeshData.prototype.getCenterPoints = function(...args) 
           
@@ -564,7 +564,7 @@
               return this.__PROXY__.getCenterPoints(...args);
             
         };
-    
+        
         // function 
         RPolyMeshData.prototype.getArcReferencePoints = function(...args) 
           
@@ -574,7 +574,7 @@
               return this.__PROXY__.getArcReferencePoints(...args);
             
         };
-    
+        
         // function 
         RPolyMeshData.prototype.getPointsWithDistanceToEnd = function(...args) 
           
@@ -584,7 +584,7 @@
               return this.__PROXY__.getPointsWithDistanceToEnd(...args);
             
         };
-    
+        
         // function 
         RPolyMeshData.prototype.getClosestPointOnEntity = function(...args) 
           
@@ -594,7 +594,7 @@
               return this.__PROXY__.getClosestPointOnEntity(...args);
             
         };
-    
+        
         // function 
         RPolyMeshData.prototype.getIntersectionPoints = function(...args) 
           
@@ -604,7 +604,7 @@
               return this.__PROXY__.getIntersectionPoints(...args);
             
         };
-    
+        
         // function 
         RPolyMeshData.prototype.getVectorTo = function(...args) 
           
@@ -614,7 +614,7 @@
               return this.__PROXY__.getVectorTo(...args);
             
         };
-    
+        
         // function 
         RPolyMeshData.prototype.getDistanceTo = function(...args) 
           
@@ -624,7 +624,7 @@
               return this.__PROXY__.getDistanceTo(...args);
             
         };
-    
+        
         // function 
         RPolyMeshData.prototype.isInside = function(...args) 
           
@@ -634,7 +634,7 @@
               return this.__PROXY__.isInside(...args);
             
         };
-    
+        
         // function 
         RPolyMeshData.prototype.isOnEntity = function(...args) 
           
@@ -644,7 +644,7 @@
               return this.__PROXY__.isOnEntity(...args);
             
         };
-    
+        
         // function 
         RPolyMeshData.prototype.intersectsWith = function(...args) 
           
@@ -654,7 +654,7 @@
               return this.__PROXY__.intersectsWith(...args);
             
         };
-    
+        
         // function 
         RPolyMeshData.prototype.clickReferencePoint = function(...args) 
           
@@ -664,7 +664,7 @@
               return this.__PROXY__.clickReferencePoint(...args);
             
         };
-    
+        
         // function 
         RPolyMeshData.prototype.scaleVisualProperties = function(...args) 
           
@@ -674,7 +674,7 @@
               return this.__PROXY__.scaleVisualProperties(...args);
             
         };
-    
+        
         // function 
         RPolyMeshData.prototype.update = function(...args) 
           
@@ -684,7 +684,7 @@
               return this.__PROXY__.update(...args);
             
         };
-    
+        
         // function 
         RPolyMeshData.prototype.setAutoUpdatesBlocked = function(...args) 
           
@@ -694,7 +694,7 @@
               return this.__PROXY__.setAutoUpdatesBlocked(...args);
             
         };
-    
+        
         // function 
         RPolyMeshData.prototype.getType = function(...args) 
           
@@ -704,7 +704,7 @@
               return this.__PROXY__.getType(...args);
             
         };
-    
+        
         // function 
         RPolyMeshData.prototype.isValid = function(...args) 
           
@@ -714,7 +714,7 @@
               return this.__PROXY__.isValid(...args);
             
         };
-    
+        
         // function 
         RPolyMeshData.prototype.isSane = function(...args) 
           
@@ -724,7 +724,7 @@
               return this.__PROXY__.isSane(...args);
             
         };
-    
+        
         // function 
         RPolyMeshData.prototype.cloneOnChange = function(...args) 
           
@@ -734,7 +734,7 @@
               return this.__PROXY__.cloneOnChange(...args);
             
         };
-    
+        
         // function 
         RPolyMeshData.prototype.clear = function(...args) 
           
@@ -744,7 +744,7 @@
               return this.__PROXY__.clear(...args);
             
         };
-    
+        
         // function 
         RPolyMeshData.prototype.getVertices = function(...args) 
           
@@ -754,7 +754,7 @@
               return this.__PROXY__.getVertices(...args);
             
         };
-    
+        
         // function 
         RPolyMeshData.prototype.setVertices = function(...args) 
           
@@ -764,7 +764,7 @@
               return this.__PROXY__.setVertices(...args);
             
         };
-    
+        
         // function 
         RPolyMeshData.prototype.countVertices = function(...args) 
           
@@ -774,7 +774,7 @@
               return this.__PROXY__.countVertices(...args);
             
         };
-    
+        
         // function 
         RPolyMeshData.prototype.getVertexAt = function(...args) 
           
@@ -784,7 +784,7 @@
               return this.__PROXY__.getVertexAt(...args);
             
         };
-    
+        
         // function 
         RPolyMeshData.prototype.setVertexAt = function(...args) 
           
@@ -794,7 +794,7 @@
               return this.__PROXY__.setVertexAt(...args);
             
         };
-    
+        
         // function 
         RPolyMeshData.prototype.addVertex = function(...args) 
           
@@ -804,7 +804,7 @@
               return this.__PROXY__.addVertex(...args);
             
         };
-    
+        
         // function 
         RPolyMeshData.prototype.getFaces = function(...args) 
           
@@ -814,7 +814,7 @@
               return this.__PROXY__.getFaces(...args);
             
         };
-    
+        
         // function 
         RPolyMeshData.prototype.setFaces = function(...args) 
           
@@ -824,7 +824,7 @@
               return this.__PROXY__.setFaces(...args);
             
         };
-    
+        
         // function 
         RPolyMeshData.prototype.countFaces = function(...args) 
           
@@ -834,7 +834,7 @@
               return this.__PROXY__.countFaces(...args);
             
         };
-    
+        
         // function 
         RPolyMeshData.prototype.getFace = function(...args) 
           
@@ -844,7 +844,7 @@
               return this.__PROXY__.getFace(...args);
             
         };
-    
+        
         // function 
         RPolyMeshData.prototype.getFaceVertexCount = function(...args) 
           
@@ -854,7 +854,7 @@
               return this.__PROXY__.getFaceVertexCount(...args);
             
         };
-    
+        
         // function 
         RPolyMeshData.prototype.addFace = function(...args) 
           
@@ -864,7 +864,7 @@
               return this.__PROXY__.addFace(...args);
             
         };
-    
+        
         // function 
         RPolyMeshData.prototype.addTriangle = function(...args) 
           
@@ -874,7 +874,7 @@
               return this.__PROXY__.addTriangle(...args);
             
         };
-    
+        
         // function 
         RPolyMeshData.prototype.addQuad = function(...args) 
           
@@ -884,7 +884,7 @@
               return this.__PROXY__.addQuad(...args);
             
         };
-    
+        
         // function 
         RPolyMeshData.prototype.isTriangleMesh = function(...args) 
           
@@ -894,7 +894,7 @@
               return this.__PROXY__.isTriangleMesh(...args);
             
         };
-    
+        
         // function 
         RPolyMeshData.prototype.hasHiddenEdges = function(...args) 
           
@@ -904,7 +904,7 @@
               return this.__PROXY__.hasHiddenEdges(...args);
             
         };
-    
+        
         // function 
         RPolyMeshData.prototype.getHiddenEdges = function(...args) 
           
@@ -914,7 +914,7 @@
               return this.__PROXY__.getHiddenEdges(...args);
             
         };
-    
+        
         // function 
         RPolyMeshData.prototype.setHiddenEdges = function(...args) 
           
@@ -924,7 +924,7 @@
               return this.__PROXY__.setHiddenEdges(...args);
             
         };
-    
+        
         // function 
         RPolyMeshData.prototype.isEdgeHidden = function(...args) 
           
@@ -934,7 +934,7 @@
               return this.__PROXY__.isEdgeHidden(...args);
             
         };
-    
+        
         // function 
         RPolyMeshData.prototype.setEdgeHidden = function(...args) 
           
@@ -944,7 +944,7 @@
               return this.__PROXY__.setEdgeHidden(...args);
             
         };
-    
+        
         // function 
         RPolyMeshData.prototype.append = function(...args) 
           
@@ -954,7 +954,7 @@
               return this.__PROXY__.append(...args);
             
         };
-    
+        
         // function 
         RPolyMeshData.prototype.getTriangles = function(...args) 
           
@@ -964,7 +964,7 @@
               return this.__PROXY__.getTriangles(...args);
             
         };
-    
+        
         // function 
         RPolyMeshData.prototype.split = function(...args) 
           
@@ -974,7 +974,7 @@
               return this.__PROXY__.split(...args);
             
         };
-    
+        
         // function 
         RPolyMeshData.prototype.getBoundingBox = function(...args) 
           
@@ -984,7 +984,7 @@
               return this.__PROXY__.getBoundingBox(...args);
             
         };
-    
+        
         // function 
         RPolyMeshData.prototype.to2D = function(...args) 
           
@@ -994,7 +994,7 @@
               return this.__PROXY__.to2D(...args);
             
         };
-    
+        
         // function 
         RPolyMeshData.prototype.setZ = function(...args) 
           
@@ -1004,7 +1004,7 @@
               return this.__PROXY__.setZ(...args);
             
         };
-    
+        
         // function 
         RPolyMeshData.prototype.getShapes = function(...args) 
           
@@ -1014,7 +1014,7 @@
               return this.__PROXY__.getShapes(...args);
             
         };
-    
+        
         // function 
         RPolyMeshData.prototype.getReferencePoints = function(...args) 
           
@@ -1024,7 +1024,7 @@
               return this.__PROXY__.getReferencePoints(...args);
             
         };
-    
+        
         // function 
         RPolyMeshData.prototype.moveReferencePoint = function(...args) 
           
@@ -1034,7 +1034,7 @@
               return this.__PROXY__.moveReferencePoint(...args);
             
         };
-    
+        
         // function 
         RPolyMeshData.prototype.move = function(...args) 
           
@@ -1044,7 +1044,7 @@
               return this.__PROXY__.move(...args);
             
         };
-    
+        
         // function 
         RPolyMeshData.prototype.rotate = function(...args) 
           
@@ -1054,7 +1054,7 @@
               return this.__PROXY__.rotate(...args);
             
         };
-    
+        
         // function 
         RPolyMeshData.prototype.scale = function(...args) 
           
@@ -1064,7 +1064,7 @@
               return this.__PROXY__.scale(...args);
             
         };
-    
+        
         // function 
         RPolyMeshData.prototype.mirror = function(...args) 
           
@@ -1074,7 +1074,7 @@
               return this.__PROXY__.mirror(...args);
             
         };
-    
+        
         // function 
         RPolyMeshData.prototype.flipHorizontal = function(...args) 
           
@@ -1084,7 +1084,7 @@
               return this.__PROXY__.flipHorizontal(...args);
             
         };
-    
+        
         // function 
         RPolyMeshData.prototype.flipVertical = function(...args) 
           
@@ -1094,7 +1094,7 @@
               return this.__PROXY__.flipVertical(...args);
             
         };
-    
+        
         // function 
         RPolyMeshData.prototype.stretch = function(...args) 
           
@@ -1104,7 +1104,7 @@
               return this.__PROXY__.stretch(...args);
             
         };
-    
+        
         // function 
         RPolyMeshData.prototype.hasProxy = function(...args) 
           
@@ -1114,7 +1114,7 @@
               return this.__PROXY__.hasProxy(...args);
             
         };
-    
+        
         // function 
         RPolyMeshData.prototype.updateFaceIndex = function(...args) 
           
@@ -1124,7 +1124,7 @@
               return this.__PROXY__.updateFaceIndex(...args);
             
         };
-    
+        
 
       // static functions:
       

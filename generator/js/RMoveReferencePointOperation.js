@@ -138,7 +138,7 @@
               return this.__PROXY__.getEntityTypeFilter(...args);
             
         };
-    
+        
         // function 
         RMoveReferencePointOperation.prototype.setRecordAffectedObjects = function(...args) 
           
@@ -148,7 +148,7 @@
               return this.__PROXY__.setRecordAffectedObjects(...args);
             
         };
-    
+        
         // function 
         RMoveReferencePointOperation.prototype.setSpatialIndexDisabled = function(...args) 
           
@@ -158,7 +158,7 @@
               return this.__PROXY__.setSpatialIndexDisabled(...args);
             
         };
-    
+        
         // function 
         RMoveReferencePointOperation.prototype.setAllowInvisible = function(...args) 
           
@@ -168,7 +168,7 @@
               return this.__PROXY__.setAllowInvisible(...args);
             
         };
-    
+        
         // function 
         RMoveReferencePointOperation.prototype.setAllowAll = function(...args) 
           
@@ -178,7 +178,7 @@
               return this.__PROXY__.setAllowAll(...args);
             
         };
-    
+        
         // function 
         RMoveReferencePointOperation.prototype.setKeepChildren = function(...args) 
           
@@ -188,7 +188,7 @@
               return this.__PROXY__.setKeepChildren(...args);
             
         };
-    
+        
         // function 
         RMoveReferencePointOperation.prototype.setTransactionGroup = function(...args) 
           
@@ -198,7 +198,7 @@
               return this.__PROXY__.setTransactionGroup(...args);
             
         };
-    
+        
         // function 
         RMoveReferencePointOperation.prototype.getTransactionGroup = function(...args) 
           
@@ -208,7 +208,7 @@
               return this.__PROXY__.getTransactionGroup(...args);
             
         };
-    
+        
         // function 
         RMoveReferencePointOperation.prototype.setText = function(...args) 
           
@@ -218,7 +218,7 @@
               return this.__PROXY__.setText(...args);
             
         };
-    
+        
         // function 
         RMoveReferencePointOperation.prototype.getText = function(...args) 
           
@@ -228,7 +228,7 @@
               return this.__PROXY__.getText(...args);
             
         };
-    
+        
         // function 
         RMoveReferencePointOperation.prototype.getTransactionTypes = function(...args) 
           
@@ -238,7 +238,7 @@
               return this.__PROXY__.getTransactionTypes(...args);
             
         };
-    
+        
         // function 
         RMoveReferencePointOperation.prototype.setTransactionType = function(...args) 
           
@@ -248,7 +248,7 @@
               return this.__PROXY__.setTransactionType(...args);
             
         };
-    
+        
         // function 
         RMoveReferencePointOperation.prototype.getTransactionType = function(...args) 
           
@@ -258,7 +258,7 @@
               return this.__PROXY__.getTransactionType(...args);
             
         };
-    
+        
         // function 
         RMoveReferencePointOperation.prototype.apply = function(...args) 
           
@@ -268,7 +268,7 @@
               return this.__PROXY__.apply(...args);
             
         };
-    
+        
         // function 
         RMoveReferencePointOperation.prototype.setGraphicsScene = function(...args) 
           
@@ -278,7 +278,7 @@
               return this.__PROXY__.setGraphicsScene(...args);
             
         };
-    
+        
 
       // static functions:
       RMoveReferencePointOperation.prototype.isNullWrapper = function() {

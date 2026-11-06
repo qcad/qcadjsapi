@@ -105,7 +105,7 @@
               return this.__PROXY__.updateSnap(...args);
             
         };
-    
+        
 
       // static functions:
       RSnapListener.prototype.isNullWrapper = function() {

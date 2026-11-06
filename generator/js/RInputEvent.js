@@ -135,7 +135,7 @@
               return this.__PROXY__.getModelPosition(...args);
             
         };
-    
+        
         // function 
         RInputEvent.prototype.setModelPosition = function(...args) 
           
@@ -145,7 +145,7 @@
               return this.__PROXY__.setModelPosition(...args);
             
         };
-    
+        
         // function 
         RInputEvent.prototype.getCursorPosition = function(...args) 
           
@@ -155,7 +155,7 @@
               return this.__PROXY__.getCursorPosition(...args);
             
         };
-    
+        
         // function 
         RInputEvent.prototype.setCursorPosition = function(...args) 
           
@@ -165,7 +165,7 @@
               return this.__PROXY__.setCursorPosition(...args);
             
         };
-    
+        
         // function 
         RInputEvent.prototype.getScreenPosition = function(...args) 
           
@@ -175,7 +175,7 @@
               return this.__PROXY__.getScreenPosition(...args);
             
         };
-    
+        
         // function 
         RInputEvent.prototype.setScreenPosition = function(...args) 
           
@@ -185,7 +185,7 @@
               return this.__PROXY__.setScreenPosition(...args);
             
         };
-    
+        
         // function 
         RInputEvent.prototype.getGraphicsView = function(...args) 
           
@@ -195,7 +195,7 @@
               return this.__PROXY__.getGraphicsView(...args);
             
         };
-    
+        
         // function 
         RInputEvent.prototype.getGraphicsScene = function(...args) 
           
@@ -205,7 +205,7 @@
               return this.__PROXY__.getGraphicsScene(...args);
             
         };
-    
+        
         // function 
         RInputEvent.prototype.isValid = function(...args) 
           
@@ -215,7 +215,7 @@
               return this.__PROXY__.isValid(...args);
             
         };
-    
+        
 
       // static functions:
       RInputEvent.prototype.isNullWrapper = function() {

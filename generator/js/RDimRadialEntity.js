@@ -146,7 +146,7 @@
               return this.__PROXY__.mustAlwaysClone(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.getDocument = function(...args) 
           
@@ -156,7 +156,7 @@
               return this.__PROXY__.getDocument(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.setFlag = function(...args) 
           
@@ -166,7 +166,7 @@
               return this.__PROXY__.setFlag(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.getFlag = function(...args) 
           
@@ -176,7 +176,7 @@
               return this.__PROXY__.getFlag(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.getId = function(...args) 
           
@@ -186,7 +186,7 @@
               return this.__PROXY__.getId(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.getHandle = function(...args) 
           
@@ -196,7 +196,7 @@
               return this.__PROXY__.getHandle(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.isProtected = function(...args) 
           
@@ -206,7 +206,7 @@
               return this.__PROXY__.isProtected(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.setProtected = function(...args) 
           
@@ -216,7 +216,7 @@
               return this.__PROXY__.setProtected(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.isInvisible = function(...args) 
           
@@ -226,7 +226,7 @@
               return this.__PROXY__.isInvisible(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.setInvisible = function(...args) 
           
@@ -236,7 +236,7 @@
               return this.__PROXY__.setInvisible(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.isUndone = function(...args) 
           
@@ -246,7 +246,7 @@
               return this.__PROXY__.isUndone(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.isWorkingSet = function(...args) 
           
@@ -256,7 +256,7 @@
               return this.__PROXY__.isWorkingSet(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.setWorkingSet = function(...args) 
           
@@ -266,7 +266,7 @@
               return this.__PROXY__.setWorkingSet(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.getPropertyTypeIds = function(...args) 
           
@@ -276,7 +276,7 @@
               return this.__PROXY__.getPropertyTypeIds(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.getCustomPropertyTypeIds = function(...args) 
           
@@ -286,7 +286,7 @@
               return this.__PROXY__.getCustomPropertyTypeIds(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.hasPropertyType = function(...args) 
           
@@ -296,7 +296,7 @@
               return this.__PROXY__.hasPropertyType(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.hasCustomProperties = function(...args) 
           
@@ -306,7 +306,7 @@
               return this.__PROXY__.hasCustomProperties(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.hasCustomProperty = function(...args) 
           
@@ -316,7 +316,7 @@
               return this.__PROXY__.hasCustomProperty(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.getCustomProperty = function(...args) 
           
@@ -326,7 +326,7 @@
               return this.__PROXY__.getCustomProperty(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.getCustomDoubleProperty = function(...args) 
           
@@ -336,7 +336,7 @@
               return this.__PROXY__.getCustomDoubleProperty(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.getCustomIntProperty = function(...args) 
           
@@ -346,7 +346,7 @@
               return this.__PROXY__.getCustomIntProperty(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.getCustomBoolProperty = function(...args) 
           
@@ -356,7 +356,7 @@
               return this.__PROXY__.getCustomBoolProperty(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.setCustomProperty = function(...args) 
           
@@ -366,7 +366,7 @@
               return this.__PROXY__.setCustomProperty(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.removeCustomProperty = function(...args) 
           
@@ -376,7 +376,7 @@
               return this.__PROXY__.removeCustomProperty(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.getCustomPropertyTitles = function(...args) 
           
@@ -386,7 +386,7 @@
               return this.__PROXY__.getCustomPropertyTitles(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.getCustomPropertyKeys = function(...args) 
           
@@ -396,7 +396,7 @@
               return this.__PROXY__.getCustomPropertyKeys(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.copyCustomPropertiesFrom = function(...args) 
           
@@ -406,7 +406,7 @@
               return this.__PROXY__.copyCustomPropertiesFrom(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.dump = function(...args) 
           
@@ -416,7 +416,7 @@
               return this.__PROXY__.dump(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.validate = function(...args) 
           
@@ -426,7 +426,7 @@
               return this.__PROXY__.validate(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.setUndone = function(...args) 
           
@@ -436,7 +436,7 @@
               return this.__PROXY__.setUndone(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.setId = function(...args) 
           
@@ -446,7 +446,7 @@
               return this.__PROXY__.setId(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.setHandle = function(...args) 
           
@@ -456,7 +456,7 @@
               return this.__PROXY__.setHandle(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.setMemberFlag = function(...args) 
           
@@ -466,7 +466,7 @@
               return this.__PROXY__.setMemberFlag(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.setDocument = function(...args) 
           
@@ -476,7 +476,7 @@
               return this.__PROXY__.setDocument(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.getType = function(...args) 
           
@@ -486,7 +486,7 @@
               return this.__PROXY__.getType(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.isPointType = function(...args) 
           
@@ -496,7 +496,7 @@
               return this.__PROXY__.isPointType(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.isValid = function(...args) 
           
@@ -506,7 +506,7 @@
               return this.__PROXY__.isValid(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.isSane = function(...args) 
           
@@ -516,7 +516,7 @@
               return this.__PROXY__.isSane(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.isSelected = function(...args) 
           
@@ -526,7 +526,7 @@
               return this.__PROXY__.isSelected(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.setSelected = function(...args) 
           
@@ -536,7 +536,7 @@
               return this.__PROXY__.setSelected(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.isSelectedWorkingSet = function(...args) 
           
@@ -546,7 +546,7 @@
               return this.__PROXY__.isSelectedWorkingSet(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.setSelectedWorkingSet = function(...args) 
           
@@ -556,7 +556,7 @@
               return this.__PROXY__.setSelectedWorkingSet(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.isSelectable = function(...args) 
           
@@ -566,7 +566,7 @@
               return this.__PROXY__.isSelectable(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.isUpdatesEnabled = function(...args) 
           
@@ -576,7 +576,7 @@
               return this.__PROXY__.isUpdatesEnabled(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.setUpdatesEnabled = function(...args) 
           
@@ -586,7 +586,7 @@
               return this.__PROXY__.setUpdatesEnabled(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.cloneOnChange = function(...args) 
           
@@ -596,7 +596,7 @@
               return this.__PROXY__.cloneOnChange(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.setDrawOrder = function(...args) 
           
@@ -606,7 +606,7 @@
               return this.__PROXY__.setDrawOrder(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.getDrawOrder = function(...args) 
           
@@ -616,7 +616,7 @@
               return this.__PROXY__.getDrawOrder(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.setLayerId = function(...args) 
           
@@ -626,7 +626,7 @@
               return this.__PROXY__.setLayerId(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.setLayerName = function(...args) 
           
@@ -636,7 +636,7 @@
               return this.__PROXY__.setLayerName(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.getLayerId = function(...args) 
           
@@ -646,7 +646,7 @@
               return this.__PROXY__.getLayerId(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.getLayerName = function(...args) 
           
@@ -656,7 +656,7 @@
               return this.__PROXY__.getLayerName(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.setBlockId = function(...args) 
           
@@ -666,7 +666,7 @@
               return this.__PROXY__.setBlockId(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.getBlockId = function(...args) 
           
@@ -676,7 +676,7 @@
               return this.__PROXY__.getBlockId(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.getBlockName = function(...args) 
           
@@ -686,7 +686,7 @@
               return this.__PROXY__.getBlockName(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.getParentId = function(...args) 
           
@@ -696,7 +696,7 @@
               return this.__PROXY__.getParentId(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.setLinetypeId = function(...args) 
           
@@ -706,7 +706,7 @@
               return this.__PROXY__.setLinetypeId(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.setLinetypePattern = function(...args) 
           
@@ -716,7 +716,7 @@
               return this.__PROXY__.setLinetypePattern(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.getLinetypeId = function(...args) 
           
@@ -726,7 +726,7 @@
               return this.__PROXY__.getLinetypeId(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.getLinetypePattern = function(...args) 
           
@@ -736,7 +736,7 @@
               return this.__PROXY__.getLinetypePattern(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.setLinetypeScale = function(...args) 
           
@@ -746,7 +746,7 @@
               return this.__PROXY__.setLinetypeScale(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.getLinetypeScale = function(...args) 
           
@@ -756,7 +756,7 @@
               return this.__PROXY__.getLinetypeScale(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.setLineweight = function(...args) 
           
@@ -766,7 +766,7 @@
               return this.__PROXY__.setLineweight(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.getLineweight = function(...args) 
           
@@ -776,7 +776,7 @@
               return this.__PROXY__.getLineweight(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.setColor = function(...args) 
           
@@ -786,7 +786,7 @@
               return this.__PROXY__.setColor(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.getColor = function(...args) 
           
@@ -796,7 +796,7 @@
               return this.__PROXY__.getColor(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.getDisplayColor = function(...args) 
           
@@ -806,7 +806,7 @@
               return this.__PROXY__.getDisplayColor(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.copyAttributesFrom = function(...args) 
           
@@ -816,7 +816,7 @@
               return this.__PROXY__.copyAttributesFrom(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.getBoundingBox = function(...args) 
           
@@ -826,7 +826,7 @@
               return this.__PROXY__.getBoundingBox(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.to2D = function(...args) 
           
@@ -836,7 +836,7 @@
               return this.__PROXY__.to2D(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.setZ = function(...args) 
           
@@ -846,7 +846,7 @@
               return this.__PROXY__.setZ(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.getBoundingBoxes = function(...args) 
           
@@ -856,7 +856,7 @@
               return this.__PROXY__.getBoundingBoxes(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.getHull = function(...args) 
           
@@ -866,7 +866,7 @@
               return this.__PROXY__.getHull(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.getShapes = function(...args) 
           
@@ -876,7 +876,7 @@
               return this.__PROXY__.getShapes(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.getClosestSubEntityId = function(...args) 
           
@@ -886,7 +886,7 @@
               return this.__PROXY__.getClosestSubEntityId(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.getClosestShape = function(...args) 
           
@@ -896,7 +896,7 @@
               return this.__PROXY__.getClosestShape(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.getClosestSimpleShape = function(...args) 
           
@@ -906,7 +906,7 @@
               return this.__PROXY__.getClosestSimpleShape(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.isInside = function(...args) 
           
@@ -916,7 +916,7 @@
               return this.__PROXY__.isInside(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.isOnEntity = function(...args) 
           
@@ -926,7 +926,7 @@
               return this.__PROXY__.isOnEntity(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.intersectsWith = function(...args) 
           
@@ -936,7 +936,7 @@
               return this.__PROXY__.intersectsWith(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.getDistanceTo = function(...args) 
           
@@ -946,7 +946,7 @@
               return this.__PROXY__.getDistanceTo(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.getVectorTo = function(...args) 
           
@@ -956,7 +956,7 @@
               return this.__PROXY__.getVectorTo(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.getInternalReferencePoints = function(...args) 
           
@@ -966,7 +966,7 @@
               return this.__PROXY__.getInternalReferencePoints(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.getReferencePoints = function(...args) 
           
@@ -976,7 +976,7 @@
               return this.__PROXY__.getReferencePoints(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.getPointOnEntity = function(...args) 
           
@@ -986,7 +986,7 @@
               return this.__PROXY__.getPointOnEntity(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.getEndPoints = function(...args) 
           
@@ -996,7 +996,7 @@
               return this.__PROXY__.getEndPoints(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.getMiddlePoints = function(...args) 
           
@@ -1006,7 +1006,7 @@
               return this.__PROXY__.getMiddlePoints(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.getCenterPoints = function(...args) 
           
@@ -1016,7 +1016,7 @@
               return this.__PROXY__.getCenterPoints(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.getClosestPointOnEntity = function(...args) 
           
@@ -1026,7 +1026,7 @@
               return this.__PROXY__.getClosestPointOnEntity(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.getPointsWithDistanceToEnd = function(...args) 
           
@@ -1036,7 +1036,7 @@
               return this.__PROXY__.getPointsWithDistanceToEnd(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.getIntersectionPoints = function(...args) 
           
@@ -1046,7 +1046,7 @@
               return this.__PROXY__.getIntersectionPoints(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.getIntersectionPointsWithShape = function(...args) 
           
@@ -1056,7 +1056,7 @@
               return this.__PROXY__.getIntersectionPointsWithShape(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.clickReferencePoint = function(...args) 
           
@@ -1066,7 +1066,7 @@
               return this.__PROXY__.clickReferencePoint(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.moveReferencePoint = function(...args) 
           
@@ -1076,7 +1076,7 @@
               return this.__PROXY__.moveReferencePoint(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.move = function(...args) 
           
@@ -1086,7 +1086,7 @@
               return this.__PROXY__.move(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.rotate = function(...args) 
           
@@ -1096,7 +1096,7 @@
               return this.__PROXY__.rotate(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.scale = function(...args) 
           
@@ -1106,7 +1106,7 @@
               return this.__PROXY__.scale(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.scaleNonUniform = function(...args) 
           
@@ -1116,7 +1116,7 @@
               return this.__PROXY__.scaleNonUniform(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.scaleVisualProperties = function(...args) 
           
@@ -1126,7 +1126,7 @@
               return this.__PROXY__.scaleVisualProperties(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.setViewportContext = function(...args) 
           
@@ -1136,7 +1136,7 @@
               return this.__PROXY__.setViewportContext(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.mirror = function(...args) 
           
@@ -1146,7 +1146,7 @@
               return this.__PROXY__.mirror(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.flipHorizontal = function(...args) 
           
@@ -1156,7 +1156,7 @@
               return this.__PROXY__.flipHorizontal(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.flipVertical = function(...args) 
           
@@ -1166,7 +1166,7 @@
               return this.__PROXY__.flipVertical(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.stretch = function(...args) 
           
@@ -1176,7 +1176,7 @@
               return this.__PROXY__.stretch(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.update = function(...args) 
           
@@ -1186,7 +1186,7 @@
               return this.__PROXY__.update(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.castToShape = function(...args) 
           
@@ -1196,7 +1196,7 @@
               return this.__PROXY__.castToShape(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.setAutoUpdatesBlocked = function(...args) 
           
@@ -1206,7 +1206,7 @@
               return this.__PROXY__.setAutoUpdatesBlocked(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.isVisible = function(...args) 
           
@@ -1216,7 +1216,7 @@
               return this.__PROXY__.isVisible(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.isEditable = function(...args) 
           
@@ -1226,7 +1226,7 @@
               return this.__PROXY__.isEditable(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.isInWorkingSet = function(...args) 
           
@@ -1236,7 +1236,7 @@
               return this.__PROXY__.isInWorkingSet(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.getComplexity = function(...args) 
           
@@ -1246,7 +1246,7 @@
               return this.__PROXY__.getComplexity(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.setParentId = function(...args) 
           
@@ -1256,7 +1256,7 @@
               return this.__PROXY__.setParentId(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.exportEntity = function(...args) 
           
@@ -1266,7 +1266,7 @@
               return this.__PROXY__.exportEntity(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.clearStyleOverrides = function(...args) 
           
@@ -1276,7 +1276,7 @@
               return this.__PROXY__.clearStyleOverrides(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.setDefinitionPoint = function(...args) 
           
@@ -1286,7 +1286,7 @@
               return this.__PROXY__.setDefinitionPoint(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.getDefinitionPoint = function(...args) 
           
@@ -1296,7 +1296,7 @@
               return this.__PROXY__.getDefinitionPoint(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.setText = function(...args) 
           
@@ -1306,7 +1306,7 @@
               return this.__PROXY__.setText(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.getText = function(...args) 
           
@@ -1316,7 +1316,7 @@
               return this.__PROXY__.getText(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.getMeasurement = function(...args) 
           
@@ -1326,7 +1326,7 @@
               return this.__PROXY__.getMeasurement(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.getTextData = function(...args) 
           
@@ -1336,7 +1336,7 @@
               return this.__PROXY__.getTextData(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.updateBoundingBox = function(...args) 
           
@@ -1346,7 +1346,7 @@
               return this.__PROXY__.updateBoundingBox(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.updateTextPositionCenter = function(...args) 
           
@@ -1356,7 +1356,7 @@
               return this.__PROXY__.updateTextPositionCenter(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.updateTextData = function(...args) 
           
@@ -1366,7 +1366,7 @@
               return this.__PROXY__.updateTextData(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.updateShapes = function(...args) 
           
@@ -1376,7 +1376,7 @@
               return this.__PROXY__.updateShapes(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.setTextPosition = function(...args) 
           
@@ -1386,7 +1386,7 @@
               return this.__PROXY__.setTextPosition(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.getTextPosition = function(...args) 
           
@@ -1396,7 +1396,7 @@
               return this.__PROXY__.getTextPosition(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.setFontName = function(...args) 
           
@@ -1406,7 +1406,7 @@
               return this.__PROXY__.setFontName(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.getFontName = function(...args) 
           
@@ -1416,7 +1416,7 @@
               return this.__PROXY__.getFontName(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.hasCustomTextPosition = function(...args) 
           
@@ -1426,7 +1426,7 @@
               return this.__PROXY__.hasCustomTextPosition(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.setCustomTextPosition = function(...args) 
           
@@ -1436,7 +1436,7 @@
               return this.__PROXY__.setCustomTextPosition(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.getLineSpacingStyle = function(...args) 
           
@@ -1446,7 +1446,7 @@
               return this.__PROXY__.getLineSpacingStyle(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.getLineSpacingFactor = function(...args) 
           
@@ -1456,7 +1456,7 @@
               return this.__PROXY__.getLineSpacingFactor(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.getTextRotation = function(...args) 
           
@@ -1466,7 +1466,7 @@
               return this.__PROXY__.getTextRotation(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.getLinearFactor = function(...args) 
           
@@ -1476,7 +1476,7 @@
               return this.__PROXY__.getLinearFactor(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.setLinearFactor = function(...args) 
           
@@ -1486,7 +1486,7 @@
               return this.__PROXY__.setLinearFactor(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.getDimscale = function(...args) 
           
@@ -1496,7 +1496,7 @@
               return this.__PROXY__.getDimscale(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.setDimscale = function(...args) 
           
@@ -1506,7 +1506,7 @@
               return this.__PROXY__.setDimscale(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.getDimBlockName = function(...args) 
           
@@ -1516,7 +1516,7 @@
               return this.__PROXY__.getDimBlockName(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.hasDimensionBlockReference = function(...args) 
           
@@ -1526,7 +1526,7 @@
               return this.__PROXY__.hasDimensionBlockReference(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.isArrow1Flipped = function(...args) 
           
@@ -1536,7 +1536,7 @@
               return this.__PROXY__.isArrow1Flipped(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.setArrow1Flipped = function(...args) 
           
@@ -1546,7 +1546,7 @@
               return this.__PROXY__.setArrow1Flipped(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.isArrow2Flipped = function(...args) 
           
@@ -1556,7 +1556,7 @@
               return this.__PROXY__.isArrow2Flipped(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.setArrow2Flipped = function(...args) 
           
@@ -1566,7 +1566,7 @@
               return this.__PROXY__.setArrow2Flipped(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.isExtLineFix = function(...args) 
           
@@ -1576,7 +1576,7 @@
               return this.__PROXY__.isExtLineFix(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.setExtLineFix = function(...args) 
           
@@ -1586,7 +1586,7 @@
               return this.__PROXY__.setExtLineFix(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.getExtLineFixLength = function(...args) 
           
@@ -1596,7 +1596,7 @@
               return this.__PROXY__.getExtLineFixLength(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.setExtLineFixLength = function(...args) 
           
@@ -1606,7 +1606,7 @@
               return this.__PROXY__.setExtLineFixLength(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.hasOverride = function(...args) 
           
@@ -1616,7 +1616,7 @@
               return this.__PROXY__.hasOverride(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.init = function(...args) 
           
@@ -1626,7 +1626,7 @@
               return this.__PROXY__.init(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.getRtti = function(...args) 
           
@@ -1636,7 +1636,7 @@
               return this.__PROXY__.getRtti(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.getStaticPropertyTypeIds = function(...args) 
           
@@ -1646,7 +1646,7 @@
               return this.__PROXY__.getStaticPropertyTypeIds(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.clone = function(...args) 
           
@@ -1656,7 +1656,7 @@
               return this.__PROXY__.clone(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.setProperty = function(...args) 
           
@@ -1666,7 +1666,7 @@
               return this.__PROXY__.setProperty(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.getProperty = function(...args) 
           
@@ -1676,7 +1676,7 @@
               return this.__PROXY__.getProperty(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.getData = function(...args) 
           
@@ -1686,7 +1686,7 @@
               return this.__PROXY__.getData(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.setData = function(...args) 
           
@@ -1696,7 +1696,7 @@
               return this.__PROXY__.setData(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.setChordPoint = function(...args) 
           
@@ -1706,7 +1706,7 @@
               return this.__PROXY__.setChordPoint(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.getChordPoint = function(...args) 
           
@@ -1716,7 +1716,7 @@
               return this.__PROXY__.getChordPoint(...args);
             
         };
-    
+        
         // function 
         RDimRadialEntity.prototype.print = function(...args) 
           
@@ -1726,7 +1726,7 @@
               return this.__PROXY__.print(...args);
             
         };
-    
+        
 
       // static functions:
       

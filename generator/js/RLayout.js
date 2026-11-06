@@ -164,7 +164,7 @@
               return this.__PROXY__.mustAlwaysClone(...args);
             
         };
-    
+        
         // function 
         RLayout.prototype.getDocument = function(...args) 
           
@@ -174,7 +174,7 @@
               return this.__PROXY__.getDocument(...args);
             
         };
-    
+        
         // function 
         RLayout.prototype.setDocument = function(...args) 
           
@@ -184,7 +184,7 @@
               return this.__PROXY__.setDocument(...args);
             
         };
-    
+        
         // function 
         RLayout.prototype.setFlag = function(...args) 
           
@@ -194,7 +194,7 @@
               return this.__PROXY__.setFlag(...args);
             
         };
-    
+        
         // function 
         RLayout.prototype.getFlag = function(...args) 
           
@@ -204,7 +204,7 @@
               return this.__PROXY__.getFlag(...args);
             
         };
-    
+        
         // function 
         RLayout.prototype.getId = function(...args) 
           
@@ -214,7 +214,7 @@
               return this.__PROXY__.getId(...args);
             
         };
-    
+        
         // function 
         RLayout.prototype.getHandle = function(...args) 
           
@@ -224,7 +224,7 @@
               return this.__PROXY__.getHandle(...args);
             
         };
-    
+        
         // function 
         RLayout.prototype.isProtected = function(...args) 
           
@@ -234,7 +234,7 @@
               return this.__PROXY__.isProtected(...args);
             
         };
-    
+        
         // function 
         RLayout.prototype.setProtected = function(...args) 
           
@@ -244,7 +244,7 @@
               return this.__PROXY__.setProtected(...args);
             
         };
-    
+        
         // function 
         RLayout.prototype.isInvisible = function(...args) 
           
@@ -254,7 +254,7 @@
               return this.__PROXY__.isInvisible(...args);
             
         };
-    
+        
         // function 
         RLayout.prototype.setInvisible = function(...args) 
           
@@ -264,7 +264,7 @@
               return this.__PROXY__.setInvisible(...args);
             
         };
-    
+        
         // function 
         RLayout.prototype.isSelected = function(...args) 
           
@@ -274,7 +274,7 @@
               return this.__PROXY__.isSelected(...args);
             
         };
-    
+        
         // function 
         RLayout.prototype.setSelected = function(...args) 
           
@@ -284,7 +284,7 @@
               return this.__PROXY__.setSelected(...args);
             
         };
-    
+        
         // function 
         RLayout.prototype.isUndone = function(...args) 
           
@@ -294,7 +294,7 @@
               return this.__PROXY__.isUndone(...args);
             
         };
-    
+        
         // function 
         RLayout.prototype.isWorkingSet = function(...args) 
           
@@ -304,7 +304,7 @@
               return this.__PROXY__.isWorkingSet(...args);
             
         };
-    
+        
         // function 
         RLayout.prototype.setWorkingSet = function(...args) 
           
@@ -314,7 +314,7 @@
               return this.__PROXY__.setWorkingSet(...args);
             
         };
-    
+        
         // function 
         RLayout.prototype.getPropertyTypeIds = function(...args) 
           
@@ -324,7 +324,7 @@
               return this.__PROXY__.getPropertyTypeIds(...args);
             
         };
-    
+        
         // function 
         RLayout.prototype.getCustomPropertyTypeIds = function(...args) 
           
@@ -334,7 +334,7 @@
               return this.__PROXY__.getCustomPropertyTypeIds(...args);
             
         };
-    
+        
         // function 
         RLayout.prototype.hasPropertyType = function(...args) 
           
@@ -344,7 +344,7 @@
               return this.__PROXY__.hasPropertyType(...args);
             
         };
-    
+        
         // function 
         RLayout.prototype.hasCustomProperties = function(...args) 
           
@@ -354,7 +354,7 @@
               return this.__PROXY__.hasCustomProperties(...args);
             
         };
-    
+        
         // function 
         RLayout.prototype.hasCustomProperty = function(...args) 
           
@@ -364,7 +364,7 @@
               return this.__PROXY__.hasCustomProperty(...args);
             
         };
-    
+        
         // function 
         RLayout.prototype.getCustomProperty = function(...args) 
           
@@ -374,7 +374,7 @@
               return this.__PROXY__.getCustomProperty(...args);
             
         };
-    
+        
         // function 
         RLayout.prototype.getCustomDoubleProperty = function(...args) 
           
@@ -384,7 +384,7 @@
               return this.__PROXY__.getCustomDoubleProperty(...args);
             
         };
-    
+        
         // function 
         RLayout.prototype.getCustomIntProperty = function(...args) 
           
@@ -394,7 +394,7 @@
               return this.__PROXY__.getCustomIntProperty(...args);
             
         };
-    
+        
         // function 
         RLayout.prototype.getCustomBoolProperty = function(...args) 
           
@@ -404,7 +404,7 @@
               return this.__PROXY__.getCustomBoolProperty(...args);
             
         };
-    
+        
         // function 
         RLayout.prototype.setCustomProperty = function(...args) 
           
@@ -414,7 +414,7 @@
               return this.__PROXY__.setCustomProperty(...args);
             
         };
-    
+        
         // function 
         RLayout.prototype.removeCustomProperty = function(...args) 
           
@@ -424,7 +424,7 @@
               return this.__PROXY__.removeCustomProperty(...args);
             
         };
-    
+        
         // function 
         RLayout.prototype.getCustomPropertyTitles = function(...args) 
           
@@ -434,7 +434,7 @@
               return this.__PROXY__.getCustomPropertyTitles(...args);
             
         };
-    
+        
         // function 
         RLayout.prototype.getCustomPropertyKeys = function(...args) 
           
@@ -444,7 +444,7 @@
               return this.__PROXY__.getCustomPropertyKeys(...args);
             
         };
-    
+        
         // function 
         RLayout.prototype.copyCustomPropertiesFrom = function(...args) 
           
@@ -454,7 +454,7 @@
               return this.__PROXY__.copyCustomPropertiesFrom(...args);
             
         };
-    
+        
         // function 
         RLayout.prototype.getComplexity = function(...args) 
           
@@ -464,7 +464,7 @@
               return this.__PROXY__.getComplexity(...args);
             
         };
-    
+        
         // function 
         RLayout.prototype.setAutoUpdatesBlocked = function(...args) 
           
@@ -474,7 +474,7 @@
               return this.__PROXY__.setAutoUpdatesBlocked(...args);
             
         };
-    
+        
         // function 
         RLayout.prototype.dump = function(...args) 
           
@@ -484,7 +484,7 @@
               return this.__PROXY__.dump(...args);
             
         };
-    
+        
         // function 
         RLayout.prototype.validate = function(...args) 
           
@@ -494,7 +494,7 @@
               return this.__PROXY__.validate(...args);
             
         };
-    
+        
         // function 
         RLayout.prototype.setUndone = function(...args) 
           
@@ -504,7 +504,7 @@
               return this.__PROXY__.setUndone(...args);
             
         };
-    
+        
         // function 
         RLayout.prototype.setId = function(...args) 
           
@@ -514,7 +514,7 @@
               return this.__PROXY__.setId(...args);
             
         };
-    
+        
         // function 
         RLayout.prototype.setHandle = function(...args) 
           
@@ -524,7 +524,7 @@
               return this.__PROXY__.setHandle(...args);
             
         };
-    
+        
         // function 
         RLayout.prototype.setMemberFlag = function(...args) 
           
@@ -534,7 +534,7 @@
               return this.__PROXY__.setMemberFlag(...args);
             
         };
-    
+        
         // function 
         RLayout.prototype.init = function(...args) 
           
@@ -544,7 +544,7 @@
               return this.__PROXY__.init(...args);
             
         };
-    
+        
         // function 
         RLayout.prototype.getRtti = function(...args) 
           
@@ -554,7 +554,7 @@
               return this.__PROXY__.getRtti(...args);
             
         };
-    
+        
         // function 
         RLayout.prototype.getType = function(...args) 
           
@@ -564,7 +564,7 @@
               return this.__PROXY__.getType(...args);
             
         };
-    
+        
         // function 
         RLayout.prototype.clone = function(...args) 
           
@@ -574,7 +574,7 @@
               return this.__PROXY__.clone(...args);
             
         };
-    
+        
         // function 
         RLayout.prototype.getName = function(...args) 
           
@@ -584,7 +584,7 @@
               return this.__PROXY__.getName(...args);
             
         };
-    
+        
         // function 
         RLayout.prototype.setName = function(...args) 
           
@@ -594,7 +594,7 @@
               return this.__PROXY__.setName(...args);
             
         };
-    
+        
         // function 
         RLayout.prototype.getTabOrder = function(...args) 
           
@@ -604,7 +604,7 @@
               return this.__PROXY__.getTabOrder(...args);
             
         };
-    
+        
         // function 
         RLayout.prototype.setTabOrder = function(...args) 
           
@@ -614,7 +614,7 @@
               return this.__PROXY__.setTabOrder(...args);
             
         };
-    
+        
         // function 
         RLayout.prototype.setMinLimits = function(...args) 
           
@@ -624,7 +624,7 @@
               return this.__PROXY__.setMinLimits(...args);
             
         };
-    
+        
         // function 
         RLayout.prototype.getMinLimits = function(...args) 
           
@@ -634,7 +634,7 @@
               return this.__PROXY__.getMinLimits(...args);
             
         };
-    
+        
         // function 
         RLayout.prototype.setMaxLimits = function(...args) 
           
@@ -644,7 +644,7 @@
               return this.__PROXY__.setMaxLimits(...args);
             
         };
-    
+        
         // function 
         RLayout.prototype.getMaxLimits = function(...args) 
           
@@ -654,7 +654,7 @@
               return this.__PROXY__.getMaxLimits(...args);
             
         };
-    
+        
         // function 
         RLayout.prototype.setInsertionBase = function(...args) 
           
@@ -664,7 +664,7 @@
               return this.__PROXY__.setInsertionBase(...args);
             
         };
-    
+        
         // function 
         RLayout.prototype.getInsertionBase = function(...args) 
           
@@ -674,7 +674,7 @@
               return this.__PROXY__.getInsertionBase(...args);
             
         };
-    
+        
         // function 
         RLayout.prototype.setMinExtents = function(...args) 
           
@@ -684,7 +684,7 @@
               return this.__PROXY__.setMinExtents(...args);
             
         };
-    
+        
         // function 
         RLayout.prototype.getMinExtents = function(...args) 
           
@@ -694,7 +694,7 @@
               return this.__PROXY__.getMinExtents(...args);
             
         };
-    
+        
         // function 
         RLayout.prototype.setMaxExtents = function(...args) 
           
@@ -704,7 +704,7 @@
               return this.__PROXY__.setMaxExtents(...args);
             
         };
-    
+        
         // function 
         RLayout.prototype.getMaxExtents = function(...args) 
           
@@ -714,7 +714,7 @@
               return this.__PROXY__.getMaxExtents(...args);
             
         };
-    
+        
         // function 
         RLayout.prototype.setPlotPaperMarginLeftMM = function(...args) 
           
@@ -724,7 +724,7 @@
               return this.__PROXY__.setPlotPaperMarginLeftMM(...args);
             
         };
-    
+        
         // function 
         RLayout.prototype.setPlotPaperMarginBottomMM = function(...args) 
           
@@ -734,7 +734,7 @@
               return this.__PROXY__.setPlotPaperMarginBottomMM(...args);
             
         };
-    
+        
         // function 
         RLayout.prototype.setPlotPaperMarginRightMM = function(...args) 
           
@@ -744,7 +744,7 @@
               return this.__PROXY__.setPlotPaperMarginRightMM(...args);
             
         };
-    
+        
         // function 
         RLayout.prototype.setPlotPaperMarginTopMM = function(...args) 
           
@@ -754,7 +754,7 @@
               return this.__PROXY__.setPlotPaperMarginTopMM(...args);
             
         };
-    
+        
         // function 
         RLayout.prototype.setPlotPaperSize = function(...args) 
           
@@ -764,7 +764,7 @@
               return this.__PROXY__.setPlotPaperSize(...args);
             
         };
-    
+        
         // function 
         RLayout.prototype.setPlotOrigin = function(...args) 
           
@@ -774,7 +774,7 @@
               return this.__PROXY__.setPlotOrigin(...args);
             
         };
-    
+        
         // function 
         RLayout.prototype.setPlotWindowAreaMin = function(...args) 
           
@@ -784,7 +784,7 @@
               return this.__PROXY__.setPlotWindowAreaMin(...args);
             
         };
-    
+        
         // function 
         RLayout.prototype.setPlotWindowAreaMax = function(...args) 
           
@@ -794,7 +794,7 @@
               return this.__PROXY__.setPlotWindowAreaMax(...args);
             
         };
-    
+        
         // function 
         RLayout.prototype.setNumeratorCustomScale = function(...args) 
           
@@ -804,7 +804,7 @@
               return this.__PROXY__.setNumeratorCustomScale(...args);
             
         };
-    
+        
         // function 
         RLayout.prototype.setDenominatorCustomScale = function(...args) 
           
@@ -814,7 +814,7 @@
               return this.__PROXY__.setDenominatorCustomScale(...args);
             
         };
-    
+        
         // function 
         RLayout.prototype.setPlotPaperUnits = function(...args) 
           
@@ -824,7 +824,7 @@
               return this.__PROXY__.setPlotPaperUnits(...args);
             
         };
-    
+        
         // function 
         RLayout.prototype.setPlotRotation = function(...args) 
           
@@ -834,7 +834,7 @@
               return this.__PROXY__.setPlotRotation(...args);
             
         };
-    
+        
         // function 
         RLayout.prototype.setPlotType = function(...args) 
           
@@ -844,7 +844,7 @@
               return this.__PROXY__.setPlotType(...args);
             
         };
-    
+        
         // function 
         RLayout.prototype.setUseStandardScale = function(...args) 
           
@@ -854,7 +854,7 @@
               return this.__PROXY__.setUseStandardScale(...args);
             
         };
-    
+        
         // function 
         RLayout.prototype.setStandardScale = function(...args) 
           
@@ -864,7 +864,7 @@
               return this.__PROXY__.setStandardScale(...args);
             
         };
-    
+        
         // function 
         RLayout.prototype.setStandardScaleType = function(...args) 
           
@@ -874,7 +874,7 @@
               return this.__PROXY__.setStandardScaleType(...args);
             
         };
-    
+        
         // function 
         RLayout.prototype.setCanonicalMediaName = function(...args) 
           
@@ -884,7 +884,7 @@
               return this.__PROXY__.setCanonicalMediaName(...args);
             
         };
-    
+        
         // function 
         RLayout.prototype.getPlotPaperMarginLeftMM = function(...args) 
           
@@ -894,7 +894,7 @@
               return this.__PROXY__.getPlotPaperMarginLeftMM(...args);
             
         };
-    
+        
         // function 
         RLayout.prototype.getPlotPaperMarginBottomMM = function(...args) 
           
@@ -904,7 +904,7 @@
               return this.__PROXY__.getPlotPaperMarginBottomMM(...args);
             
         };
-    
+        
         // function 
         RLayout.prototype.getPlotPaperMarginRightMM = function(...args) 
           
@@ -914,7 +914,7 @@
               return this.__PROXY__.getPlotPaperMarginRightMM(...args);
             
         };
-    
+        
         // function 
         RLayout.prototype.getPlotPaperMarginTopMM = function(...args) 
           
@@ -924,7 +924,7 @@
               return this.__PROXY__.getPlotPaperMarginTopMM(...args);
             
         };
-    
+        
         // function 
         RLayout.prototype.getPlotPaperSize = function(...args) 
           
@@ -934,7 +934,7 @@
               return this.__PROXY__.getPlotPaperSize(...args);
             
         };
-    
+        
         // function 
         RLayout.prototype.getPlotOrigin = function(...args) 
           
@@ -944,7 +944,7 @@
               return this.__PROXY__.getPlotOrigin(...args);
             
         };
-    
+        
         // function 
         RLayout.prototype.getPlotWindowAreaMin = function(...args) 
           
@@ -954,7 +954,7 @@
               return this.__PROXY__.getPlotWindowAreaMin(...args);
             
         };
-    
+        
         // function 
         RLayout.prototype.getPlotWindowAreaMax = function(...args) 
           
@@ -964,7 +964,7 @@
               return this.__PROXY__.getPlotWindowAreaMax(...args);
             
         };
-    
+        
         // function 
         RLayout.prototype.getNumeratorCustomScale = function(...args) 
           
@@ -974,7 +974,7 @@
               return this.__PROXY__.getNumeratorCustomScale(...args);
             
         };
-    
+        
         // function 
         RLayout.prototype.getDenominatorCustomScale = function(...args) 
           
@@ -984,7 +984,7 @@
               return this.__PROXY__.getDenominatorCustomScale(...args);
             
         };
-    
+        
         // function 
         RLayout.prototype.getPlotPaperUnits = function(...args) 
           
@@ -994,7 +994,7 @@
               return this.__PROXY__.getPlotPaperUnits(...args);
             
         };
-    
+        
         // function 
         RLayout.prototype.getPlotRotation = function(...args) 
           
@@ -1004,7 +1004,7 @@
               return this.__PROXY__.getPlotRotation(...args);
             
         };
-    
+        
         // function 
         RLayout.prototype.getPlotType = function(...args) 
           
@@ -1014,7 +1014,7 @@
               return this.__PROXY__.getPlotType(...args);
             
         };
-    
+        
         // function 
         RLayout.prototype.getUseStandardScale = function(...args) 
           
@@ -1024,7 +1024,7 @@
               return this.__PROXY__.getUseStandardScale(...args);
             
         };
-    
+        
         // function 
         RLayout.prototype.getStandardScale = function(...args) 
           
@@ -1034,7 +1034,7 @@
               return this.__PROXY__.getStandardScale(...args);
             
         };
-    
+        
         // function 
         RLayout.prototype.getStandardScaleType = function(...args) 
           
@@ -1044,7 +1044,7 @@
               return this.__PROXY__.getStandardScaleType(...args);
             
         };
-    
+        
         // function 
         RLayout.prototype.getCanonicalMediaName = function(...args) 
           
@@ -1054,7 +1054,7 @@
               return this.__PROXY__.getCanonicalMediaName(...args);
             
         };
-    
+        
         // function 
         RLayout.prototype.getProperty = function(...args) 
           
@@ -1064,7 +1064,7 @@
               return this.__PROXY__.getProperty(...args);
             
         };
-    
+        
         // function 
         RLayout.prototype.setProperty = function(...args) 
           
@@ -1074,7 +1074,7 @@
               return this.__PROXY__.setProperty(...args);
             
         };
-    
+        
         // function 
         RLayout.prototype.print = function(...args) 
           
@@ -1084,7 +1084,7 @@
               return this.__PROXY__.print(...args);
             
         };
-    
+        
 
       // static functions:
       

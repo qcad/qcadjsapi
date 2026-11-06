@@ -223,7 +223,7 @@ RSnapPerpendicular.CoordinatePolar = RSnapPerpendicular_Wrapper.CoordinatePolar;
               return this.__PROXY__.suspendEvent(...args);
             
         };
-    
+        
         // function 
         RSnapPerpendicular.prototype.finishEvent = function(...args) 
           
@@ -233,7 +233,7 @@ RSnapPerpendicular.CoordinatePolar = RSnapPerpendicular_Wrapper.CoordinatePolar;
               return this.__PROXY__.finishEvent(...args);
             
         };
-    
+        
         // function 
         RSnapPerpendicular.prototype.getEntityIds = function(...args) 
           
@@ -243,7 +243,7 @@ RSnapPerpendicular.CoordinatePolar = RSnapPerpendicular_Wrapper.CoordinatePolar;
               return this.__PROXY__.getEntityIds(...args);
             
         };
-    
+        
         // function 
         RSnapPerpendicular.prototype.getStatus = function(...args) 
           
@@ -253,7 +253,7 @@ RSnapPerpendicular.CoordinatePolar = RSnapPerpendicular_Wrapper.CoordinatePolar;
               return this.__PROXY__.getStatus(...args);
             
         };
-    
+        
         // function 
         RSnapPerpendicular.prototype.setStatus = function(...args) 
           
@@ -263,7 +263,7 @@ RSnapPerpendicular.CoordinatePolar = RSnapPerpendicular_Wrapper.CoordinatePolar;
               return this.__PROXY__.setStatus(...args);
             
         };
-    
+        
         // function 
         RSnapPerpendicular.prototype.getLastSnap = function(...args) 
           
@@ -273,7 +273,7 @@ RSnapPerpendicular.CoordinatePolar = RSnapPerpendicular_Wrapper.CoordinatePolar;
               return this.__PROXY__.getLastSnap(...args);
             
         };
-    
+        
         // function 
         RSnapPerpendicular.prototype.setLastSnap = function(...args) 
           
@@ -283,7 +283,7 @@ RSnapPerpendicular.CoordinatePolar = RSnapPerpendicular_Wrapper.CoordinatePolar;
               return this.__PROXY__.setLastSnap(...args);
             
         };
-    
+        
         // function 
         RSnapPerpendicular.prototype.reset = function(...args) 
           
@@ -293,7 +293,7 @@ RSnapPerpendicular.CoordinatePolar = RSnapPerpendicular_Wrapper.CoordinatePolar;
               return this.__PROXY__.reset(...args);
             
         };
-    
+        
         // function 
         RSnapPerpendicular.prototype.snap = function(...args) 
           
@@ -303,7 +303,7 @@ RSnapPerpendicular.CoordinatePolar = RSnapPerpendicular_Wrapper.CoordinatePolar;
               return this.__PROXY__.snap(...args);
             
         };
-    
+        
 
       // static functions:
       RSnapPerpendicular.prototype.isNullWrapper = function() {

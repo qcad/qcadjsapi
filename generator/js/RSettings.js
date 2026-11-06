@@ -134,7 +134,7 @@
               return this.__PROXY__.uninit(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.setNoWrite = function(...args) 
           
@@ -144,7 +144,7 @@
               return this.__PROXY__.setNoWrite(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.getAppId = function(...args) 
           
@@ -154,7 +154,7 @@
               return this.__PROXY__.getAppId(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.getDevicePixelRatio = function(...args) 
           
@@ -164,7 +164,7 @@
               return this.__PROXY__.getDevicePixelRatio(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.getLocale = function(...args) 
           
@@ -174,7 +174,7 @@
               return this.__PROXY__.getLocale(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.loadTranslations = function(...args) 
           
@@ -184,7 +184,7 @@
               return this.__PROXY__.loadTranslations(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.translate = function(...args) 
           
@@ -194,7 +194,7 @@
               return this.__PROXY__.translate(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.getOriginalArguments = function(...args) 
           
@@ -204,7 +204,7 @@
               return this.__PROXY__.getOriginalArguments(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.setOriginalArguments = function(...args) 
           
@@ -214,7 +214,7 @@
               return this.__PROXY__.setOriginalArguments(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.getArgument = function(...args) 
           
@@ -224,7 +224,7 @@
               return this.__PROXY__.getArgument(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.getArguments = function(...args) 
           
@@ -234,7 +234,7 @@
               return this.__PROXY__.getArguments(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.getIntArgument = function(...args) 
           
@@ -244,7 +244,7 @@
               return this.__PROXY__.getIntArgument(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.getIntListArgument = function(...args) 
           
@@ -254,7 +254,7 @@
               return this.__PROXY__.getIntListArgument(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.getFloatArgument = function(...args) 
           
@@ -264,7 +264,7 @@
               return this.__PROXY__.getFloatArgument(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.getColorArgument = function(...args) 
           
@@ -274,7 +274,7 @@
               return this.__PROXY__.getColorArgument(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.getVectorArgument = function(...args) 
           
@@ -284,7 +284,7 @@
               return this.__PROXY__.getVectorArgument(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.getBoxArgument = function(...args) 
           
@@ -294,7 +294,7 @@
               return this.__PROXY__.getBoxArgument(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.testArgument = function(...args) 
           
@@ -304,7 +304,7 @@
               return this.__PROXY__.testArgument(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.isDeployed = function(...args) 
           
@@ -314,7 +314,7 @@
               return this.__PROXY__.isDeployed(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.getApplicationPath = function(...args) 
           
@@ -324,7 +324,7 @@
               return this.__PROXY__.getApplicationPath(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.getPluginPaths = function(...args) 
           
@@ -334,7 +334,7 @@
               return this.__PROXY__.getPluginPaths(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.getPluginPath = function(...args) 
           
@@ -344,7 +344,7 @@
               return this.__PROXY__.getPluginPath(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.getThemePath = function(...args) 
           
@@ -354,7 +354,7 @@
               return this.__PROXY__.getThemePath(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.getStandardLocation = function(...args) 
           
@@ -364,7 +364,7 @@
               return this.__PROXY__.getStandardLocation(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.getCacheLocation = function(...args) 
           
@@ -374,7 +374,7 @@
               return this.__PROXY__.getCacheLocation(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.getDataLocation = function(...args) 
           
@@ -384,7 +384,7 @@
               return this.__PROXY__.getDataLocation(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.getTempLocation = function(...args) 
           
@@ -394,7 +394,7 @@
               return this.__PROXY__.getTempLocation(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.getDesktopLocation = function(...args) 
           
@@ -404,7 +404,7 @@
               return this.__PROXY__.getDesktopLocation(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.getDocumentsLocation = function(...args) 
           
@@ -414,7 +414,7 @@
               return this.__PROXY__.getDocumentsLocation(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.getHomeLocation = function(...args) 
           
@@ -424,7 +424,7 @@
               return this.__PROXY__.getHomeLocation(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.getPluginsLocation = function(...args) 
           
@@ -434,7 +434,7 @@
               return this.__PROXY__.getPluginsLocation(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.isGuiEnabled = function(...args) 
           
@@ -444,7 +444,7 @@
               return this.__PROXY__.isGuiEnabled(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.isDebuggerEnabled = function(...args) 
           
@@ -454,7 +454,7 @@
               return this.__PROXY__.isDebuggerEnabled(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.hasQuitFlag = function(...args) 
           
@@ -464,7 +464,7 @@
               return this.__PROXY__.hasQuitFlag(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.setQuitFlag = function(...args) 
           
@@ -474,7 +474,7 @@
               return this.__PROXY__.setQuitFlag(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.getFileName = function(...args) 
           
@@ -484,7 +484,7 @@
               return this.__PROXY__.getFileName(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.getPath = function(...args) 
           
@@ -494,7 +494,7 @@
               return this.__PROXY__.getPath(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.getLaunchPath = function(...args) 
           
@@ -504,7 +504,7 @@
               return this.__PROXY__.getLaunchPath(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.setLaunchPath = function(...args) 
           
@@ -514,7 +514,7 @@
               return this.__PROXY__.setLaunchPath(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.setRulerFont = function(...args) 
           
@@ -524,7 +524,7 @@
               return this.__PROXY__.setRulerFont(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.getRulerFont = function(...args) 
           
@@ -534,7 +534,7 @@
               return this.__PROXY__.getRulerFont(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.setSnapLabelFont = function(...args) 
           
@@ -544,7 +544,7 @@
               return this.__PROXY__.setSnapLabelFont(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.getSnapLabelFont = function(...args) 
           
@@ -554,7 +554,7 @@
               return this.__PROXY__.getSnapLabelFont(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.getInfoLabelFont = function(...args) 
           
@@ -564,7 +564,7 @@
               return this.__PROXY__.getInfoLabelFont(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.getStatusBarFont = function(...args) 
           
@@ -574,7 +574,7 @@
               return this.__PROXY__.getStatusBarFont(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.getSelectionColor = function(...args) 
           
@@ -584,7 +584,7 @@
               return this.__PROXY__.getSelectionColor(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.getReferencePointColor = function(...args) 
           
@@ -594,7 +594,7 @@
               return this.__PROXY__.getReferencePointColor(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.getStartReferencePointColor = function(...args) 
           
@@ -604,7 +604,7 @@
               return this.__PROXY__.getStartReferencePointColor(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.getEndReferencePointColor = function(...args) 
           
@@ -614,7 +614,7 @@
               return this.__PROXY__.getEndReferencePointColor(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.getSecondaryReferencePointColor = function(...args) 
           
@@ -624,7 +624,7 @@
               return this.__PROXY__.getSecondaryReferencePointColor(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.getTertiaryReferencePointColor = function(...args) 
           
@@ -634,7 +634,7 @@
               return this.__PROXY__.getTertiaryReferencePointColor(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.getHighResolutionGraphicsView = function(...args) 
           
@@ -644,7 +644,7 @@
               return this.__PROXY__.getHighResolutionGraphicsView(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.getAutoScaleGrid = function(...args) 
           
@@ -654,7 +654,7 @@
               return this.__PROXY__.getAutoScaleGrid(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.getAutoScaleMetaGrid = function(...args) 
           
@@ -664,7 +664,7 @@
               return this.__PROXY__.getAutoScaleMetaGrid(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.getAutoScalePatterns = function(...args) 
           
@@ -674,7 +674,7 @@
               return this.__PROXY__.getAutoScalePatterns(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.getAutoZoomOnLoad = function(...args) 
           
@@ -684,7 +684,7 @@
               return this.__PROXY__.getAutoZoomOnLoad(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.getColorCorrection = function(...args) 
           
@@ -694,7 +694,7 @@
               return this.__PROXY__.getColorCorrection(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.getColorCorrectionDisableForPrinting = function(...args) 
           
@@ -704,7 +704,7 @@
               return this.__PROXY__.getColorCorrectionDisableForPrinting(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.getColorThreshold = function(...args) 
           
@@ -714,7 +714,7 @@
               return this.__PROXY__.getColorThreshold(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.getFadingFactor = function(...args) 
           
@@ -724,7 +724,7 @@
               return this.__PROXY__.getFadingFactor(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.getTextHeightThreshold = function(...args) 
           
@@ -734,7 +734,7 @@
               return this.__PROXY__.getTextHeightThreshold(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.getArcAngleLengthThreshold = function(...args) 
           
@@ -744,7 +744,7 @@
               return this.__PROXY__.getArcAngleLengthThreshold(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.getMinArcAngleStep = function(...args) 
           
@@ -754,7 +754,7 @@
               return this.__PROXY__.getMinArcAngleStep(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.getDashThreshold = function(...args) 
           
@@ -764,7 +764,7 @@
               return this.__PROXY__.getDashThreshold(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.getQtVersion = function(...args) 
           
@@ -774,7 +774,7 @@
               return this.__PROXY__.getQtVersion(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.getQtVersionString = function(...args) 
           
@@ -784,7 +784,7 @@
               return this.__PROXY__.getQtVersionString(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.isQt = function(...args) 
           
@@ -794,7 +794,7 @@
               return this.__PROXY__.isQt(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.getCompilerVersion = function(...args) 
           
@@ -804,7 +804,7 @@
               return this.__PROXY__.getCompilerVersion(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.getOSVersion = function(...args) 
           
@@ -814,7 +814,7 @@
               return this.__PROXY__.getOSVersion(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.getReleaseDate = function(...args) 
           
@@ -824,7 +824,7 @@
               return this.__PROXY__.getReleaseDate(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.getVersionString = function(...args) 
           
@@ -834,7 +834,7 @@
               return this.__PROXY__.getVersionString(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.getNumericalVersionString = function(...args) 
           
@@ -844,7 +844,7 @@
               return this.__PROXY__.getNumericalVersionString(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.getMajorVersion = function(...args) 
           
@@ -854,7 +854,7 @@
               return this.__PROXY__.getMajorVersion(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.getMinorVersion = function(...args) 
           
@@ -864,7 +864,7 @@
               return this.__PROXY__.getMinorVersion(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.getRevisionVersion = function(...args) 
           
@@ -874,7 +874,7 @@
               return this.__PROXY__.getRevisionVersion(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.getBuildVersion = function(...args) 
           
@@ -884,7 +884,7 @@
               return this.__PROXY__.getBuildVersion(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.getRevisionString = function(...args) 
           
@@ -894,7 +894,7 @@
               return this.__PROXY__.getRevisionString(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.setFirstStart = function(...args) 
           
@@ -904,7 +904,7 @@
               return this.__PROXY__.setFirstStart(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.isFirstStart = function(...args) 
           
@@ -914,7 +914,7 @@
               return this.__PROXY__.isFirstStart(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.setNewVersion = function(...args) 
           
@@ -924,7 +924,7 @@
               return this.__PROXY__.setNewVersion(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.isNewVersion = function(...args) 
           
@@ -934,7 +934,7 @@
               return this.__PROXY__.isNewVersion(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.setPreviousVersion = function(...args) 
           
@@ -944,7 +944,7 @@
               return this.__PROXY__.setPreviousVersion(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.getCurrentVersion = function(...args) 
           
@@ -954,7 +954,7 @@
               return this.__PROXY__.getCurrentVersion(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.getPreviousVersion = function(...args) 
           
@@ -964,7 +964,7 @@
               return this.__PROXY__.getPreviousVersion(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.isUpdated = function(...args) 
           
@@ -974,7 +974,7 @@
               return this.__PROXY__.isUpdated(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.getSnapRange = function(...args) 
           
@@ -984,7 +984,7 @@
               return this.__PROXY__.getSnapRange(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.getPickRange = function(...args) 
           
@@ -994,7 +994,7 @@
               return this.__PROXY__.getPickRange(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.getZeroWeightWeight = function(...args) 
           
@@ -1004,7 +1004,7 @@
               return this.__PROXY__.getZeroWeightWeight(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.getPreviewEntities = function(...args) 
           
@@ -1014,7 +1014,7 @@
               return this.__PROXY__.getPreviewEntities(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.getLimitZoomAndScroll = function(...args) 
           
@@ -1024,7 +1024,7 @@
               return this.__PROXY__.getLimitZoomAndScroll(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.getShowCrosshair = function(...args) 
           
@@ -1034,7 +1034,7 @@
               return this.__PROXY__.getShowCrosshair(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.setShowCrosshair = function(...args) 
           
@@ -1044,7 +1044,7 @@
               return this.__PROXY__.setShowCrosshair(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.getShowLargeCrosshair = function(...args) 
           
@@ -1054,7 +1054,7 @@
               return this.__PROXY__.getShowLargeCrosshair(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.setShowLargeCrosshair = function(...args) 
           
@@ -1064,7 +1064,7 @@
               return this.__PROXY__.setShowLargeCrosshair(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.getShowLargeOriginAxis = function(...args) 
           
@@ -1074,7 +1074,7 @@
               return this.__PROXY__.getShowLargeOriginAxis(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.setShowLargeOriginAxis = function(...args) 
           
@@ -1084,7 +1084,7 @@
               return this.__PROXY__.setShowLargeOriginAxis(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.getConcurrentDrawing = function(...args) 
           
@@ -1094,7 +1094,7 @@
               return this.__PROXY__.getConcurrentDrawing(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.setConcurrentDrawing = function(...args) 
           
@@ -1104,7 +1104,7 @@
               return this.__PROXY__.setConcurrentDrawing(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.getNumberLocale = function(...args) 
           
@@ -1114,7 +1114,7 @@
               return this.__PROXY__.getNumberLocale(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.initRecentFiles = function(...args) 
           
@@ -1124,7 +1124,7 @@
               return this.__PROXY__.initRecentFiles(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.addRecentFile = function(...args) 
           
@@ -1134,7 +1134,7 @@
               return this.__PROXY__.addRecentFile(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.removeRecentFile = function(...args) 
           
@@ -1144,7 +1144,7 @@
               return this.__PROXY__.removeRecentFile(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.getRecentFiles = function(...args) 
           
@@ -1154,7 +1154,7 @@
               return this.__PROXY__.getRecentFiles(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.clearRecentFiles = function(...args) 
           
@@ -1164,7 +1164,7 @@
               return this.__PROXY__.clearRecentFiles(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.getThumbnailFilePath = function(...args) 
           
@@ -1174,7 +1174,7 @@
               return this.__PROXY__.getThumbnailFilePath(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.getColor = function(...args) 
           
@@ -1184,7 +1184,7 @@
               return this.__PROXY__.getColor(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.hasValue = function(...args) 
           
@@ -1194,7 +1194,7 @@
               return this.__PROXY__.hasValue(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.getValue = function(...args) 
           
@@ -1204,7 +1204,7 @@
               return this.__PROXY__.getValue(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.getColorValue = function(...args) 
           
@@ -1214,7 +1214,7 @@
               return this.__PROXY__.getColorValue(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.getBoolValue = function(...args) 
           
@@ -1224,7 +1224,7 @@
               return this.__PROXY__.getBoolValue(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.getDoubleValue = function(...args) 
           
@@ -1234,7 +1234,7 @@
               return this.__PROXY__.getDoubleValue(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.getIntValue = function(...args) 
           
@@ -1244,7 +1244,7 @@
               return this.__PROXY__.getIntValue(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.getStringValue = function(...args) 
           
@@ -1254,7 +1254,7 @@
               return this.__PROXY__.getStringValue(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.getStringListValue = function(...args) 
           
@@ -1264,7 +1264,7 @@
               return this.__PROXY__.getStringListValue(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.getCharValue = function(...args) 
           
@@ -1274,7 +1274,7 @@
               return this.__PROXY__.getCharValue(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.setValue = function(...args) 
           
@@ -1284,7 +1284,7 @@
               return this.__PROXY__.setValue(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.removeValue = function(...args) 
           
@@ -1294,7 +1294,7 @@
               return this.__PROXY__.removeValue(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.setDefaultValue = function(...args) 
           
@@ -1304,7 +1304,7 @@
               return this.__PROXY__.setDefaultValue(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.getDefaultValue = function(...args) 
           
@@ -1314,7 +1314,7 @@
               return this.__PROXY__.getDefaultValue(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.hasDefaultValue = function(...args) 
           
@@ -1324,7 +1324,7 @@
               return this.__PROXY__.hasDefaultValue(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.setApplicationNameOverride = function(...args) 
           
@@ -1334,7 +1334,7 @@
               return this.__PROXY__.setApplicationNameOverride(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.getApplicationNameOverride = function(...args) 
           
@@ -1344,7 +1344,7 @@
               return this.__PROXY__.getApplicationNameOverride(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.hasApplicationNameOverride = function(...args) 
           
@@ -1354,7 +1354,7 @@
               return this.__PROXY__.hasApplicationNameOverride(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.getAllKeys = function(...args) 
           
@@ -1364,7 +1364,7 @@
               return this.__PROXY__.getAllKeys(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.getQSettings = function(...args) 
           
@@ -1374,7 +1374,7 @@
               return this.__PROXY__.getQSettings(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.resetCache = function(...args) 
           
@@ -1384,7 +1384,7 @@
               return this.__PROXY__.resetCache(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.setXDataEnabled = function(...args) 
           
@@ -1394,7 +1394,7 @@
               return this.__PROXY__.setXDataEnabled(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.isXDataEnabled = function(...args) 
           
@@ -1404,7 +1404,7 @@
               return this.__PROXY__.isXDataEnabled(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.setNextVersionEnabled = function(...args) 
           
@@ -1414,7 +1414,7 @@
               return this.__PROXY__.setNextVersionEnabled(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.isNextVersionEnabled = function(...args) 
           
@@ -1424,7 +1424,7 @@
               return this.__PROXY__.isNextVersionEnabled(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.getAutoScaleLinetypePatterns = function(...args) 
           
@@ -1434,7 +1434,7 @@
               return this.__PROXY__.getAutoScaleLinetypePatterns(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.getApplyLineweightToPoints = function(...args) 
           
@@ -1444,7 +1444,7 @@
               return this.__PROXY__.getApplyLineweightToPoints(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.getScreenBasedLineweightScaleFactor = function(...args) 
           
@@ -1454,7 +1454,7 @@
               return this.__PROXY__.getScreenBasedLineweightScaleFactor(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.getUseSecondarySelectionColor = function(...args) 
           
@@ -1464,7 +1464,7 @@
               return this.__PROXY__.getUseSecondarySelectionColor(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.getUseSolidLineSelection = function(...args) 
           
@@ -1474,7 +1474,7 @@
               return this.__PROXY__.getUseSolidLineSelection(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.getMouseThreshold = function(...args) 
           
@@ -1484,7 +1484,7 @@
               return this.__PROXY__.getMouseThreshold(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.getPositionByMousePress = function(...args) 
           
@@ -1494,7 +1494,7 @@
               return this.__PROXY__.getPositionByMousePress(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.setAllowMouseMoveInterruptionsOverride = function(...args) 
           
@@ -1504,7 +1504,7 @@
               return this.__PROXY__.setAllowMouseMoveInterruptionsOverride(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.getAllowMouseMoveInterruptions = function(...args) 
           
@@ -1514,7 +1514,7 @@
               return this.__PROXY__.getAllowMouseMoveInterruptions(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.isTextRenderedAsText = function(...args) 
           
@@ -1524,7 +1524,7 @@
               return this.__PROXY__.isTextRenderedAsText(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.isLayer0CompatibilityOn = function(...args) 
           
@@ -1534,7 +1534,7 @@
               return this.__PROXY__.isLayer0CompatibilityOn(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.getSelectBlockWithAttribute = function(...args) 
           
@@ -1544,7 +1544,7 @@
               return this.__PROXY__.getSelectBlockWithAttribute(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.getHideAttributeWithBlock = function(...args) 
           
@@ -1554,7 +1554,7 @@
               return this.__PROXY__.getHideAttributeWithBlock(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.getImportRecomputedDimBlocks = function(...args) 
           
@@ -1564,7 +1564,7 @@
               return this.__PROXY__.getImportRecomputedDimBlocks(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.getIgnoreBlockReferencePoint = function(...args) 
           
@@ -1574,7 +1574,7 @@
               return this.__PROXY__.getIgnoreBlockReferencePoint(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.getIgnoreAllReferencePoints = function(...args) 
           
@@ -1584,7 +1584,7 @@
               return this.__PROXY__.getIgnoreAllReferencePoints(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.getReferencePointSize = function(...args) 
           
@@ -1594,7 +1594,7 @@
               return this.__PROXY__.getReferencePointSize(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.getReferencePointShape = function(...args) 
           
@@ -1604,7 +1604,7 @@
               return this.__PROXY__.getReferencePointShape(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.getMaxReferencePointEntities = function(...args) 
           
@@ -1614,7 +1614,7 @@
               return this.__PROXY__.getMaxReferencePointEntities(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.getMaxReferencePointEntitiesDisplay = function(...args) 
           
@@ -1624,7 +1624,7 @@
               return this.__PROXY__.getMaxReferencePointEntitiesDisplay(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.getPropertyEditorShowOnRequest = function(...args) 
           
@@ -1634,7 +1634,7 @@
               return this.__PROXY__.getPropertyEditorShowOnRequest(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.getSimpleTextAlignLeft = function(...args) 
           
@@ -1644,7 +1644,7 @@
               return this.__PROXY__.getSimpleTextAlignLeft(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.getPolarCoordinateSeparator = function(...args) 
           
@@ -1654,7 +1654,7 @@
               return this.__PROXY__.getPolarCoordinateSeparator(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.getCartesianCoordinateSeparator = function(...args) 
           
@@ -1664,7 +1664,7 @@
               return this.__PROXY__.getCartesianCoordinateSeparator(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.getRelativeCoordinatePrefix = function(...args) 
           
@@ -1674,7 +1674,7 @@
               return this.__PROXY__.getRelativeCoordinatePrefix(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.isDarkMode = function(...args) 
           
@@ -1684,7 +1684,7 @@
               return this.__PROXY__.isDarkMode(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.hasDarkGuiBackground = function(...args) 
           
@@ -1694,7 +1694,7 @@
               return this.__PROXY__.hasDarkGuiBackground(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.getAppearance = function(...args) 
           
@@ -1704,7 +1704,7 @@
               return this.__PROXY__.getAppearance(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.applyAppearance = function(...args) 
           
@@ -1714,7 +1714,7 @@
               return this.__PROXY__.applyAppearance(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.hasCustomStyleSheet = function(...args) 
           
@@ -1724,7 +1724,7 @@
               return this.__PROXY__.hasCustomStyleSheet(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.getPrinterNames = function(...args) 
           
@@ -1734,7 +1734,7 @@
               return this.__PROXY__.getPrinterNames(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.getDefaultPrinterName = function(...args) 
           
@@ -1744,7 +1744,7 @@
               return this.__PROXY__.getDefaultPrinterName(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.appendOpenGLMessage = function(...args) 
           
@@ -1754,7 +1754,7 @@
               return this.__PROXY__.appendOpenGLMessage(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.getOpenGLMessages = function(...args) 
           
@@ -1764,7 +1764,7 @@
               return this.__PROXY__.getOpenGLMessages(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.useQml = function(...args) 
           
@@ -1774,7 +1774,7 @@
               return this.__PROXY__.useQml(...args);
             
         };
-    
+        
         // function 
         RSettings.prototype.getWidgetSelectionColor = function(...args) 
           
@@ -1784,7 +1784,7 @@
               return this.__PROXY__.getWidgetSelectionColor(...args);
             
         };
-    
+        
 
       // static functions:
       

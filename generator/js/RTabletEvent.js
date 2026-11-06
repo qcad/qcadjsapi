@@ -105,7 +105,7 @@
               return this.__PROXY__.getModelPosition(...args);
             
         };
-    
+        
         // function 
         RTabletEvent.prototype.getUcsPosition = function(...args) 
           
@@ -115,7 +115,7 @@
               return this.__PROXY__.getUcsPosition(...args);
             
         };
-    
+        
         // function 
         RTabletEvent.prototype.getScreenPosition = function(...args) 
           
@@ -125,7 +125,7 @@
               return this.__PROXY__.getScreenPosition(...args);
             
         };
-    
+        
         // function 
         RTabletEvent.prototype.getGraphicsView = function(...args) 
           
@@ -135,7 +135,7 @@
               return this.__PROXY__.getGraphicsView(...args);
             
         };
-    
+        
         // function 
         RTabletEvent.prototype.getGraphicsScene = function(...args) 
           
@@ -145,7 +145,7 @@
               return this.__PROXY__.getGraphicsScene(...args);
             
         };
-    
+        
 
       // static functions:
       RTabletEvent.prototype.isNullWrapper = function() {

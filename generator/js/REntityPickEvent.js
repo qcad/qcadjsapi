@@ -138,7 +138,7 @@
               return this.__PROXY__.getModelPosition(...args);
             
         };
-    
+        
         // function 
         REntityPickEvent.prototype.setModelPosition = function(...args) 
           
@@ -148,7 +148,7 @@
               return this.__PROXY__.setModelPosition(...args);
             
         };
-    
+        
         // function 
         REntityPickEvent.prototype.getCursorPosition = function(...args) 
           
@@ -158,7 +158,7 @@
               return this.__PROXY__.getCursorPosition(...args);
             
         };
-    
+        
         // function 
         REntityPickEvent.prototype.setCursorPosition = function(...args) 
           
@@ -168,7 +168,7 @@
               return this.__PROXY__.setCursorPosition(...args);
             
         };
-    
+        
         // function 
         REntityPickEvent.prototype.getScreenPosition = function(...args) 
           
@@ -178,7 +178,7 @@
               return this.__PROXY__.getScreenPosition(...args);
             
         };
-    
+        
         // function 
         REntityPickEvent.prototype.setScreenPosition = function(...args) 
           
@@ -188,7 +188,7 @@
               return this.__PROXY__.setScreenPosition(...args);
             
         };
-    
+        
         // function 
         REntityPickEvent.prototype.getGraphicsView = function(...args) 
           
@@ -198,7 +198,7 @@
               return this.__PROXY__.getGraphicsView(...args);
             
         };
-    
+        
         // function 
         REntityPickEvent.prototype.getGraphicsScene = function(...args) 
           
@@ -208,7 +208,7 @@
               return this.__PROXY__.getGraphicsScene(...args);
             
         };
-    
+        
         // function 
         REntityPickEvent.prototype.getEntityId = function(...args) 
           
@@ -218,7 +218,7 @@
               return this.__PROXY__.getEntityId(...args);
             
         };
-    
+        
         // function 
         REntityPickEvent.prototype.setModifiers = function(...args) 
           
@@ -228,7 +228,7 @@
               return this.__PROXY__.setModifiers(...args);
             
         };
-    
+        
         // function 
         REntityPickEvent.prototype.getModifiers = function(...args) 
           
@@ -238,7 +238,7 @@
               return this.__PROXY__.getModifiers(...args);
             
         };
-    
+        
         // function 
         REntityPickEvent.prototype.isValid = function(...args) 
           
@@ -248,7 +248,7 @@
               return this.__PROXY__.isValid(...args);
             
         };
-    
+        
 
       // static functions:
       REntityPickEvent.prototype.isNullWrapper = function() {

@@ -37,7 +37,9 @@
 
       //QJSValue f = self.prototype().property("getFilterStrings");
       QJSValue f = self.property("getFilterStrings");
-      if (f.isCallable() /*&& !recFlag*/) {
+      // only call into JS if the function is overridden in JS
+      // (not the auto generated forwarder to the ...Super function, see xml2js.xsl):
+      if (f.isCallable() && !f.property("__SUPER__").toBool() /*&& !recFlag*/) {
         QJSValueList args;
         
 
@@ -99,7 +101,9 @@
 
       //QJSValue f = self.prototype().property("canImport");
       QJSValue f = self.property("canImport");
-      if (f.isCallable() /*&& !recFlag*/) {
+      // only call into JS if the function is overridden in JS
+      // (not the auto generated forwarder to the ...Super function, see xml2js.xsl):
+      if (f.isCallable() && !f.property("__SUPER__").toBool() /*&& !recFlag*/) {
         QJSValueList args;
         
 
@@ -175,7 +179,9 @@ nameFilter
 
       //QJSValue f = self.prototype().property("instantiate");
       QJSValue f = self.property("instantiate");
-      if (f.isCallable() /*&& !recFlag*/) {
+      // only call into JS if the function is overridden in JS
+      // (not the auto generated forwarder to the ...Super function, see xml2js.xsl):
+      if (f.isCallable() && !f.property("__SUPER__").toBool() /*&& !recFlag*/) {
         QJSValueList args;
         
 

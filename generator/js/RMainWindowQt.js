@@ -159,7 +159,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.setObjectName(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.isWidgetType = function(...args) 
           
@@ -169,7 +169,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.isWidgetType(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.isWindowType = function(...args) 
           
@@ -179,7 +179,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.isWindowType(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.signalsBlocked = function(...args) 
           
@@ -189,7 +189,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.signalsBlocked(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.blockSignals = function(...args) 
           
@@ -199,7 +199,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.blockSignals(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.findChild = function(...args) 
           
@@ -209,7 +209,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.findChild(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.children = function(...args) 
           
@@ -219,7 +219,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.children(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.installEventFilter = function(...args) 
           
@@ -229,7 +229,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.installEventFilter(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.removeEventFilter = function(...args) 
           
@@ -239,7 +239,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.removeEventFilter(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.dumpObjectTree = function(...args) 
           
@@ -249,7 +249,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.dumpObjectTree(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.dumpObjectInfo = function(...args) 
           
@@ -259,7 +259,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.dumpObjectInfo(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.setProperty = function(...args) 
           
@@ -269,7 +269,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.setProperty(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.property = function(...args) 
           
@@ -279,7 +279,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.property(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.dynamicPropertyNames = function(...args) 
           
@@ -289,7 +289,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.dynamicPropertyNames(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.parent = function(...args) 
           
@@ -299,7 +299,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.parent(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.deleteLater = function(...args) 
           
@@ -309,7 +309,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.deleteLater(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.devType = function(...args) 
           
@@ -319,7 +319,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.devType(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.createWinId = function(...args) 
           
@@ -329,7 +329,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.createWinId(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.isWindow = function(...args) 
           
@@ -339,7 +339,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.isWindow(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.isModal = function(...args) 
           
@@ -349,7 +349,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.isModal(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.setWindowModality = function(...args) 
           
@@ -359,7 +359,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.setWindowModality(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.isEnabled = function(...args) 
           
@@ -369,7 +369,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.isEnabled(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.isEnabledTo = function(...args) 
           
@@ -379,7 +379,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.isEnabledTo(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.setEnabled = function(...args) 
           
@@ -389,7 +389,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.setEnabled(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.setDisabled = function(...args) 
           
@@ -399,7 +399,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.setDisabled(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.setWindowModified = function(...args) 
           
@@ -409,7 +409,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.setWindowModified(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.setMinimumSize = function(...args) 
           
@@ -419,7 +419,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.setMinimumSize(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.setMaximumSize = function(...args) 
           
@@ -429,7 +429,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.setMaximumSize(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.setMinimumWidth = function(...args) 
           
@@ -439,7 +439,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.setMinimumWidth(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.setMinimumHeight = function(...args) 
           
@@ -449,7 +449,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.setMinimumHeight(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.setMaximumWidth = function(...args) 
           
@@ -459,7 +459,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.setMaximumWidth(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.setMaximumHeight = function(...args) 
           
@@ -469,7 +469,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.setMaximumHeight(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.setSizeIncrement = function(...args) 
           
@@ -479,7 +479,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.setSizeIncrement(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.setBaseSize = function(...args) 
           
@@ -489,7 +489,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.setBaseSize(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.setFixedSize = function(...args) 
           
@@ -499,7 +499,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.setFixedSize(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.setFixedWidth = function(...args) 
           
@@ -509,7 +509,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.setFixedWidth(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.setFixedHeight = function(...args) 
           
@@ -519,7 +519,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.setFixedHeight(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.mapToGlobal = function(...args) 
           
@@ -529,7 +529,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.mapToGlobal(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.mapFromGlobal = function(...args) 
           
@@ -539,7 +539,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.mapFromGlobal(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.mapToParent = function(...args) 
           
@@ -549,7 +549,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.mapToParent(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.mapFromParent = function(...args) 
           
@@ -559,7 +559,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.mapFromParent(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.mapTo = function(...args) 
           
@@ -569,7 +569,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.mapTo(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.mapFrom = function(...args) 
           
@@ -579,7 +579,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.mapFrom(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.window = function(...args) 
           
@@ -589,7 +589,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.window(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.nativeParentWidget = function(...args) 
           
@@ -599,7 +599,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.nativeParentWidget(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.topLevelWidget = function(...args) 
           
@@ -609,7 +609,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.topLevelWidget(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.setPalette = function(...args) 
           
@@ -619,7 +619,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.setPalette(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.setBackgroundRole = function(...args) 
           
@@ -629,7 +629,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.setBackgroundRole(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.backgroundRole = function(...args) 
           
@@ -639,7 +639,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.backgroundRole(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.setForegroundRole = function(...args) 
           
@@ -649,7 +649,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.setForegroundRole(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.foregroundRole = function(...args) 
           
@@ -659,7 +659,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.foregroundRole(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.setFont = function(...args) 
           
@@ -669,7 +669,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.setFont(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.fontInfo = function(...args) 
           
@@ -679,7 +679,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.fontInfo(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.setCursor = function(...args) 
           
@@ -689,7 +689,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.setCursor(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.unsetCursor = function(...args) 
           
@@ -699,7 +699,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.unsetCursor(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.setMouseTracking = function(...args) 
           
@@ -709,7 +709,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.setMouseTracking(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.hasMouseTracking = function(...args) 
           
@@ -719,7 +719,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.hasMouseTracking(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.underMouse = function(...args) 
           
@@ -729,7 +729,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.underMouse(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.setTabletTracking = function(...args) 
           
@@ -739,7 +739,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.setTabletTracking(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.hasTabletTracking = function(...args) 
           
@@ -749,7 +749,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.hasTabletTracking(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.setMask = function(...args) 
           
@@ -759,7 +759,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.setMask(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.mask = function(...args) 
           
@@ -769,7 +769,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.mask(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.clearMask = function(...args) 
           
@@ -779,7 +779,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.clearMask(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.grab = function(...args) 
           
@@ -789,7 +789,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.grab(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.grabGesture = function(...args) 
           
@@ -799,7 +799,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.grabGesture(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.ungrabGesture = function(...args) 
           
@@ -809,7 +809,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.ungrabGesture(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.setWindowTitle = function(...args) 
           
@@ -819,7 +819,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.setWindowTitle(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.setStyleSheet = function(...args) 
           
@@ -829,7 +829,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.setStyleSheet(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.setWindowIcon = function(...args) 
           
@@ -839,7 +839,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.setWindowIcon(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.setWindowIconText = function(...args) 
           
@@ -849,7 +849,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.setWindowIconText(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.setWindowRole = function(...args) 
           
@@ -859,7 +859,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.setWindowRole(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.windowRole = function(...args) 
           
@@ -869,7 +869,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.windowRole(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.setWindowFilePath = function(...args) 
           
@@ -879,7 +879,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.setWindowFilePath(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.setWindowOpacity = function(...args) 
           
@@ -889,7 +889,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.setWindowOpacity(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.isWindowModified = function(...args) 
           
@@ -899,7 +899,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.isWindowModified(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.setToolTip = function(...args) 
           
@@ -909,7 +909,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.setToolTip(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.setToolTipDuration = function(...args) 
           
@@ -919,7 +919,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.setToolTipDuration(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.setStatusTip = function(...args) 
           
@@ -929,7 +929,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.setStatusTip(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.setWhatsThis = function(...args) 
           
@@ -939,7 +939,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.setWhatsThis(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.setAccessibleName = function(...args) 
           
@@ -949,7 +949,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.setAccessibleName(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.setAccessibleDescription = function(...args) 
           
@@ -959,7 +959,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.setAccessibleDescription(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.setLayoutDirection = function(...args) 
           
@@ -969,7 +969,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.setLayoutDirection(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.unsetLayoutDirection = function(...args) 
           
@@ -979,7 +979,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.unsetLayoutDirection(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.setLocale = function(...args) 
           
@@ -989,7 +989,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.setLocale(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.unsetLocale = function(...args) 
           
@@ -999,7 +999,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.unsetLocale(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.isRightToLeft = function(...args) 
           
@@ -1009,7 +1009,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.isRightToLeft(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.isLeftToRight = function(...args) 
           
@@ -1019,7 +1019,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.isLeftToRight(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.activateWindow = function(...args) 
           
@@ -1029,7 +1029,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.activateWindow(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.clearFocus = function(...args) 
           
@@ -1039,7 +1039,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.clearFocus(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.setFocus = function(...args) 
           
@@ -1049,7 +1049,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.setFocus(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.setFocusPolicy = function(...args) 
           
@@ -1059,7 +1059,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.setFocusPolicy(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.hasFocus = function(...args) 
           
@@ -1069,7 +1069,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.hasFocus(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.setFocusProxy = function(...args) 
           
@@ -1079,7 +1079,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.setFocusProxy(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.focusProxy = function(...args) 
           
@@ -1089,7 +1089,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.focusProxy(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.setContextMenuPolicy = function(...args) 
           
@@ -1099,7 +1099,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.setContextMenuPolicy(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.grabMouse = function(...args) 
           
@@ -1109,7 +1109,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.grabMouse(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.releaseMouse = function(...args) 
           
@@ -1119,7 +1119,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.releaseMouse(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.grabKeyboard = function(...args) 
           
@@ -1129,7 +1129,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.grabKeyboard(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.releaseKeyboard = function(...args) 
           
@@ -1139,7 +1139,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.releaseKeyboard(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.grabShortcut = function(...args) 
           
@@ -1149,7 +1149,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.grabShortcut(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.releaseShortcut = function(...args) 
           
@@ -1159,7 +1159,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.releaseShortcut(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.setShortcutEnabled = function(...args) 
           
@@ -1169,7 +1169,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.setShortcutEnabled(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.setShortcutAutoRepeat = function(...args) 
           
@@ -1179,7 +1179,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.setShortcutAutoRepeat(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.setUpdatesEnabled = function(...args) 
           
@@ -1189,7 +1189,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.setUpdatesEnabled(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.update = function(...args) 
           
@@ -1199,7 +1199,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.update(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.repaint = function(...args) 
           
@@ -1209,7 +1209,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.repaint(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.setVisible = function(...args) 
           
@@ -1219,7 +1219,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.setVisible(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.setHidden = function(...args) 
           
@@ -1229,7 +1229,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.setHidden(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.show = function(...args) 
           
@@ -1239,7 +1239,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.show(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.hide = function(...args) 
           
@@ -1249,7 +1249,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.hide(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.showMinimized = function(...args) 
           
@@ -1259,7 +1259,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.showMinimized(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.showMaximized = function(...args) 
           
@@ -1269,7 +1269,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.showMaximized(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.showFullScreen = function(...args) 
           
@@ -1279,7 +1279,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.showFullScreen(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.showNormal = function(...args) 
           
@@ -1289,7 +1289,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.showNormal(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.close = function(...args) 
           
@@ -1299,7 +1299,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.close(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.raise = function(...args) 
           
@@ -1309,7 +1309,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.raise(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.lower = function(...args) 
           
@@ -1319,7 +1319,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.lower(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.stackUnder = function(...args) 
           
@@ -1329,7 +1329,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.stackUnder(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.setGeometry = function(...args) 
           
@@ -1339,7 +1339,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.setGeometry(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.saveGeometry = function(...args) 
           
@@ -1349,7 +1349,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.saveGeometry(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.restoreGeometry = function(...args) 
           
@@ -1359,7 +1359,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.restoreGeometry(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.adjustSize = function(...args) 
           
@@ -1369,7 +1369,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.adjustSize(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.isVisible = function(...args) 
           
@@ -1379,7 +1379,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.isVisible(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.isVisibleTo = function(...args) 
           
@@ -1389,7 +1389,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.isVisibleTo(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.isHidden = function(...args) 
           
@@ -1399,7 +1399,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.isHidden(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.isMinimized = function(...args) 
           
@@ -1409,7 +1409,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.isMinimized(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.isMaximized = function(...args) 
           
@@ -1419,7 +1419,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.isMaximized(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.isFullScreen = function(...args) 
           
@@ -1429,7 +1429,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.isFullScreen(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.windowState = function(...args) 
           
@@ -1439,7 +1439,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.windowState(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.setWindowState = function(...args) 
           
@@ -1449,7 +1449,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.setWindowState(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.overrideWindowState = function(...args) 
           
@@ -1459,7 +1459,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.overrideWindowState(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.setSizePolicy = function(...args) 
           
@@ -1469,7 +1469,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.setSizePolicy(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.heightForWidth = function(...args) 
           
@@ -1479,7 +1479,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.heightForWidth(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.hasHeightForWidth = function(...args) 
           
@@ -1489,7 +1489,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.hasHeightForWidth(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.visibleRegion = function(...args) 
           
@@ -1499,7 +1499,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.visibleRegion(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.setContentsMargins = function(...args) 
           
@@ -1509,7 +1509,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.setContentsMargins(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.contentsMargins = function(...args) 
           
@@ -1519,7 +1519,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.contentsMargins(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.contentsRect = function(...args) 
           
@@ -1529,7 +1529,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.contentsRect(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.layout = function(...args) 
           
@@ -1539,7 +1539,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.layout(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.setLayout = function(...args) 
           
@@ -1549,7 +1549,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.setLayout(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.updateGeometry = function(...args) 
           
@@ -1559,7 +1559,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.updateGeometry(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.setParent = function(...args) 
           
@@ -1569,7 +1569,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.setParent(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.scroll = function(...args) 
           
@@ -1579,7 +1579,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.scroll(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.focusWidget = function(...args) 
           
@@ -1589,7 +1589,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.focusWidget(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.nextInFocusChain = function(...args) 
           
@@ -1599,7 +1599,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.nextInFocusChain(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.previousInFocusChain = function(...args) 
           
@@ -1609,7 +1609,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.previousInFocusChain(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.setAcceptDrops = function(...args) 
           
@@ -1619,7 +1619,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.setAcceptDrops(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.addAction = function(...args) 
           
@@ -1629,7 +1629,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.addAction(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.addActions = function(...args) 
           
@@ -1639,7 +1639,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.addActions(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.insertActions = function(...args) 
           
@@ -1649,7 +1649,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.insertActions(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.insertAction = function(...args) 
           
@@ -1659,7 +1659,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.insertAction(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.removeAction = function(...args) 
           
@@ -1669,7 +1669,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.removeAction(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.actions = function(...args) 
           
@@ -1679,7 +1679,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.actions(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.parentWidget = function(...args) 
           
@@ -1689,7 +1689,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.parentWidget(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.setWindowFlags = function(...args) 
           
@@ -1699,7 +1699,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.setWindowFlags(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.windowFlags = function(...args) 
           
@@ -1709,7 +1709,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.windowFlags(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.setWindowFlag = function(...args) 
           
@@ -1719,7 +1719,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.setWindowFlag(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.overrideWindowFlags = function(...args) 
           
@@ -1729,7 +1729,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.overrideWindowFlags(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.windowType = function(...args) 
           
@@ -1739,7 +1739,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.windowType(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.childAt = function(...args) 
           
@@ -1749,7 +1749,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.childAt(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.setAttribute = function(...args) 
           
@@ -1759,7 +1759,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.setAttribute(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.testAttribute = function(...args) 
           
@@ -1769,7 +1769,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.testAttribute(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.ensurePolished = function(...args) 
           
@@ -1779,7 +1779,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.ensurePolished(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.isAncestorOf = function(...args) 
           
@@ -1789,7 +1789,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.isAncestorOf(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.setAutoFillBackground = function(...args) 
           
@@ -1799,7 +1799,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.setAutoFillBackground(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.mouseDoubleClickEvent = function(...args) 
           
@@ -1809,7 +1809,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.mouseDoubleClickEvent(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.wheelEvent = function(...args) 
           
@@ -1819,7 +1819,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.wheelEvent(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.keyPressEvent = function(...args) 
           
@@ -1829,7 +1829,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.keyPressEvent(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.keyReleaseEvent = function(...args) 
           
@@ -1839,7 +1839,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.keyReleaseEvent(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.focusInEvent = function(...args) 
           
@@ -1849,7 +1849,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.focusInEvent(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.focusOutEvent = function(...args) 
           
@@ -1859,7 +1859,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.focusOutEvent(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.enterEvent = function(...args) 
           
@@ -1869,7 +1869,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.enterEvent(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.leaveEvent = function(...args) 
           
@@ -1879,7 +1879,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.leaveEvent(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.moveEvent = function(...args) 
           
@@ -1889,7 +1889,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.moveEvent(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.tabletEvent = function(...args) 
           
@@ -1899,7 +1899,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.tabletEvent(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.dragMoveEvent = function(...args) 
           
@@ -1909,7 +1909,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.dragMoveEvent(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.dragLeaveEvent = function(...args) 
           
@@ -1919,7 +1919,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.dragLeaveEvent(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.showEvent = function(...args) 
           
@@ -1929,7 +1929,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.showEvent(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.hideEvent = function(...args) 
           
@@ -1939,7 +1939,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.hideEvent(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.nativeEvent = function(...args) 
           
@@ -1949,7 +1949,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.nativeEvent(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.changeEvent = function(...args) 
           
@@ -1959,7 +1959,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.changeEvent(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.metric = function(...args) 
           
@@ -1969,7 +1969,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.metric(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.initPainter = function(...args) 
           
@@ -1979,7 +1979,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.initPainter(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.redirected = function(...args) 
           
@@ -1989,7 +1989,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.redirected(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.sharedPainter = function(...args) 
           
@@ -1999,7 +1999,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.sharedPainter(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.inputMethodEvent = function(...args) 
           
@@ -2009,7 +2009,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.inputMethodEvent(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.inputMethodQuery = function(...args) 
           
@@ -2019,7 +2019,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.inputMethodQuery(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.setInputMethodHints = function(...args) 
           
@@ -2029,7 +2029,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.setInputMethodHints(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.updateMicroFocus = function(...args) 
           
@@ -2039,7 +2039,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.updateMicroFocus(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.create = function(...args) 
           
@@ -2049,7 +2049,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.create(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.destroy = function(...args) 
           
@@ -2059,7 +2059,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.destroy(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.focusNextPrevChild = function(...args) 
           
@@ -2069,7 +2069,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.focusNextPrevChild(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.focusNextChild = function(...args) 
           
@@ -2079,7 +2079,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.focusNextChild(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.focusPreviousChild = function(...args) 
           
@@ -2089,7 +2089,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.focusPreviousChild(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.setBackingStore = function(...args) 
           
@@ -2099,7 +2099,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.setBackingStore(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.testAttribute_helper = function(...args) 
           
@@ -2109,7 +2109,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.testAttribute_helper(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.takeLayout = function(...args) 
           
@@ -2119,7 +2119,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.takeLayout(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.qt_mac_is_metal = function(...args) 
           
@@ -2129,7 +2129,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.qt_mac_is_metal(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.qt_qwidget_data = function(...args) 
           
@@ -2139,7 +2139,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.qt_qwidget_data(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.qt_widget_private = function(...args) 
           
@@ -2149,7 +2149,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.qt_widget_private(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.notifyListeners = function(...args) 
           
@@ -2159,7 +2159,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.notifyListeners(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.addCoordinateListener = function(...args) 
           
@@ -2169,7 +2169,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.addCoordinateListener(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.removeCoordinateListener = function(...args) 
           
@@ -2179,7 +2179,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.removeCoordinateListener(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.notifyCoordinateListeners = function(...args) 
           
@@ -2189,7 +2189,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.notifyCoordinateListeners(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.addSelectionListener = function(...args) 
           
@@ -2199,7 +2199,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.addSelectionListener(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.removeSelectionListener = function(...args) 
           
@@ -2209,7 +2209,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.removeSelectionListener(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.notifySelectionListeners = function(...args) 
           
@@ -2219,7 +2219,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.notifySelectionListeners(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.addPropertyListener = function(...args) 
           
@@ -2229,7 +2229,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.addPropertyListener(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.removePropertyListener = function(...args) 
           
@@ -2239,7 +2239,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.removePropertyListener(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.notifyPropertyListeners = function(...args) 
           
@@ -2249,7 +2249,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.notifyPropertyListeners(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.addExportListener = function(...args) 
           
@@ -2259,7 +2259,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.addExportListener(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.prependExportListener = function(...args) 
           
@@ -2269,7 +2269,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.prependExportListener(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.removeExportListener = function(...args) 
           
@@ -2279,7 +2279,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.removeExportListener(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.notifyExportListenersPre = function(...args) 
           
@@ -2289,7 +2289,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.notifyExportListenersPre(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.notifyExportListenersPost = function(...args) 
           
@@ -2299,7 +2299,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.notifyExportListenersPost(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.notifyExportListenersEnd = function(...args) 
           
@@ -2309,7 +2309,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.notifyExportListenersEnd(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.addEntityExportListener = function(...args) 
           
@@ -2319,7 +2319,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.addEntityExportListener(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.removeEntityExportListener = function(...args) 
           
@@ -2329,7 +2329,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.removeEntityExportListener(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.notifyEntityExportListeners = function(...args) 
           
@@ -2339,7 +2339,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.notifyEntityExportListeners(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.addImportListener = function(...args) 
           
@@ -2349,7 +2349,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.addImportListener(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.removeImportListener = function(...args) 
           
@@ -2359,7 +2359,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.removeImportListener(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.notifyImportListenersPre = function(...args) 
           
@@ -2369,7 +2369,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.notifyImportListenersPre(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.notifyImportListenersPost = function(...args) 
           
@@ -2379,7 +2379,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.notifyImportListenersPost(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.addTransactionListener = function(...args) 
           
@@ -2389,7 +2389,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.addTransactionListener(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.removeTransactionListener = function(...args) 
           
@@ -2399,7 +2399,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.removeTransactionListener(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.notifyTransactionListeners = function(...args) 
           
@@ -2409,7 +2409,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.notifyTransactionListeners(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.addInterTransactionListener = function(...args) 
           
@@ -2419,7 +2419,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.addInterTransactionListener(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.removeInterTransactionListener = function(...args) 
           
@@ -2429,7 +2429,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.removeInterTransactionListener(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.notifyInterTransactionListeners = function(...args) 
           
@@ -2439,7 +2439,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.notifyInterTransactionListeners(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.addNewDocumentListener = function(...args) 
           
@@ -2449,7 +2449,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.addNewDocumentListener(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.removeNewDocumentListener = function(...args) 
           
@@ -2459,7 +2459,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.removeNewDocumentListener(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.notifyNewDocumentListeners = function(...args) 
           
@@ -2469,7 +2469,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.notifyNewDocumentListeners(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.addSnapListener = function(...args) 
           
@@ -2479,7 +2479,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.addSnapListener(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.removeSnapListener = function(...args) 
           
@@ -2489,7 +2489,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.removeSnapListener(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.notifySnapListeners = function(...args) 
           
@@ -2499,7 +2499,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.notifySnapListeners(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.addFocusListener = function(...args) 
           
@@ -2509,7 +2509,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.addFocusListener(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.removeFocusListener = function(...args) 
           
@@ -2519,7 +2519,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.removeFocusListener(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.notifyFocusListeners = function(...args) 
           
@@ -2529,7 +2529,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.notifyFocusListeners(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.addKeyListener = function(...args) 
           
@@ -2539,7 +2539,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.addKeyListener(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.removeKeyListener = function(...args) 
           
@@ -2549,7 +2549,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.removeKeyListener(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.notifyKeyListeners = function(...args) 
           
@@ -2559,7 +2559,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.notifyKeyListeners(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.addViewFocusListener = function(...args) 
           
@@ -2569,7 +2569,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.addViewFocusListener(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.removeViewFocusListener = function(...args) 
           
@@ -2579,7 +2579,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.removeViewFocusListener(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.notifyViewFocusListeners = function(...args) 
           
@@ -2589,7 +2589,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.notifyViewFocusListeners(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.addPreferencesListener = function(...args) 
           
@@ -2599,7 +2599,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.addPreferencesListener(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.removePreferencesListener = function(...args) 
           
@@ -2609,7 +2609,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.removePreferencesListener(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.notifyPreferencesListeners = function(...args) 
           
@@ -2619,7 +2619,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.notifyPreferencesListeners(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.propertyChangeEvent = function(...args) 
           
@@ -2629,7 +2629,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.propertyChangeEvent(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.addUcsListener = function(...args) 
           
@@ -2639,7 +2639,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.addUcsListener(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.removeUcsListener = function(...args) 
           
@@ -2649,7 +2649,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.removeUcsListener(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.notifyUcsListeners = function(...args) 
           
@@ -2659,7 +2659,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.notifyUcsListeners(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.addLayerListener = function(...args) 
           
@@ -2669,7 +2669,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.addLayerListener(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.removeLayerListener = function(...args) 
           
@@ -2679,7 +2679,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.removeLayerListener(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.notifyLayerListeners = function(...args) 
           
@@ -2689,7 +2689,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.notifyLayerListeners(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.notifyLayerListenersCurrentLayer = function(...args) 
           
@@ -2699,7 +2699,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.notifyLayerListenersCurrentLayer(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.addBlockListener = function(...args) 
           
@@ -2709,7 +2709,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.addBlockListener(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.removeBlockListener = function(...args) 
           
@@ -2719,7 +2719,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.removeBlockListener(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.notifyBlockListeners = function(...args) 
           
@@ -2729,7 +2729,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.notifyBlockListeners(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.notifyBlockListenersCurrentBlock = function(...args) 
           
@@ -2739,7 +2739,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.notifyBlockListenersCurrentBlock(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.addViewListener = function(...args) 
           
@@ -2749,7 +2749,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.addViewListener(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.removeViewListener = function(...args) 
           
@@ -2759,7 +2759,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.removeViewListener(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.notifyViewListeners = function(...args) 
           
@@ -2769,7 +2769,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.notifyViewListeners(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.addPenListener = function(...args) 
           
@@ -2779,7 +2779,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.addPenListener(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.removePenListener = function(...args) 
           
@@ -2789,7 +2789,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.removePenListener(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.notifyPenListeners = function(...args) 
           
@@ -2799,7 +2799,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.notifyPenListeners(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.addPaletteListener = function(...args) 
           
@@ -2809,7 +2809,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.addPaletteListener(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.removePaletteListener = function(...args) 
           
@@ -2819,7 +2819,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.removePaletteListener(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.notifyPaletteListeners = function(...args) 
           
@@ -2829,7 +2829,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.notifyPaletteListeners(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.ucsSetEvent = function(...args) 
           
@@ -2839,7 +2839,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.ucsSetEvent(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.eval = function(...args) 
           
@@ -2849,7 +2849,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.eval(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.iconSize = function(...args) 
           
@@ -2859,7 +2859,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.iconSize(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.setIconSize = function(...args) 
           
@@ -2869,7 +2869,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.setIconSize(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.setToolButtonStyle = function(...args) 
           
@@ -2879,7 +2879,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.setToolButtonStyle(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.isAnimated = function(...args) 
           
@@ -2889,7 +2889,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.isAnimated(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.isDockNestingEnabled = function(...args) 
           
@@ -2899,7 +2899,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.isDockNestingEnabled(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.setDocumentMode = function(...args) 
           
@@ -2909,7 +2909,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.setDocumentMode(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.setTabShape = function(...args) 
           
@@ -2919,7 +2919,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.setTabShape(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.tabPosition = function(...args) 
           
@@ -2929,7 +2929,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.tabPosition(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.setTabPosition = function(...args) 
           
@@ -2939,7 +2939,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.setTabPosition(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.setDockOptions = function(...args) 
           
@@ -2949,7 +2949,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.setDockOptions(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.isSeparator = function(...args) 
           
@@ -2959,7 +2959,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.isSeparator(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.menuBar = function(...args) 
           
@@ -2969,7 +2969,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.menuBar(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.setMenuBar = function(...args) 
           
@@ -2979,7 +2979,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.setMenuBar(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.menuWidget = function(...args) 
           
@@ -2989,7 +2989,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.menuWidget(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.setMenuWidget = function(...args) 
           
@@ -2999,7 +2999,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.setMenuWidget(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.statusBar = function(...args) 
           
@@ -3009,7 +3009,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.statusBar(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.setStatusBar = function(...args) 
           
@@ -3019,7 +3019,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.setStatusBar(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.centralWidget = function(...args) 
           
@@ -3029,7 +3029,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.centralWidget(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.setCentralWidget = function(...args) 
           
@@ -3039,7 +3039,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.setCentralWidget(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.takeCentralWidget = function(...args) 
           
@@ -3049,7 +3049,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.takeCentralWidget(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.setCorner = function(...args) 
           
@@ -3059,7 +3059,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.setCorner(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.corner = function(...args) 
           
@@ -3069,7 +3069,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.corner(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.addToolBarBreak = function(...args) 
           
@@ -3079,7 +3079,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.addToolBarBreak(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.insertToolBarBreak = function(...args) 
           
@@ -3089,7 +3089,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.insertToolBarBreak(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.addToolBar = function(...args) 
           
@@ -3099,7 +3099,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.addToolBar(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.insertToolBar = function(...args) 
           
@@ -3109,7 +3109,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.insertToolBar(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.removeToolBar = function(...args) 
           
@@ -3119,7 +3119,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.removeToolBar(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.removeToolBarBreak = function(...args) 
           
@@ -3129,7 +3129,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.removeToolBarBreak(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.toolBarArea = function(...args) 
           
@@ -3139,7 +3139,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.toolBarArea(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.toolBarBreak = function(...args) 
           
@@ -3149,7 +3149,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.toolBarBreak(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.addDockWidget = function(...args) 
           
@@ -3159,7 +3159,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.addDockWidget(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.splitDockWidget = function(...args) 
           
@@ -3169,7 +3169,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.splitDockWidget(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.tabifyDockWidget = function(...args) 
           
@@ -3179,7 +3179,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.tabifyDockWidget(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.tabifiedDockWidgets = function(...args) 
           
@@ -3189,7 +3189,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.tabifiedDockWidgets(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.removeDockWidget = function(...args) 
           
@@ -3199,7 +3199,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.removeDockWidget(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.restoreDockWidget = function(...args) 
           
@@ -3209,7 +3209,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.restoreDockWidget(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.dockWidgetArea = function(...args) 
           
@@ -3219,7 +3219,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.dockWidgetArea(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.resizeDocks = function(...args) 
           
@@ -3229,7 +3229,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.resizeDocks(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.saveState = function(...args) 
           
@@ -3239,7 +3239,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.saveState(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.restoreState = function(...args) 
           
@@ -3249,7 +3249,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.restoreState(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.setAnimated = function(...args) 
           
@@ -3259,7 +3259,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.setAnimated(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.setDockNestingEnabled = function(...args) 
           
@@ -3269,7 +3269,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.setDockNestingEnabled(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.setUnifiedTitleAndToolBarOnMac = function(...args) 
           
@@ -3279,7 +3279,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.setUnifiedTitleAndToolBarOnMac(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.getMainWindow = function(...args) 
           
@@ -3289,7 +3289,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.getMainWindow(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.getWidth = function(...args) 
           
@@ -3299,7 +3299,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.getWidth(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.getHeight = function(...args) 
           
@@ -3309,7 +3309,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.getHeight(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.getPositionX = function(...args) 
           
@@ -3319,7 +3319,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.getPositionX(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.getPositionY = function(...args) 
           
@@ -3329,7 +3329,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.getPositionY(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.resize = function(...args) 
           
@@ -3339,7 +3339,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.resize(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.move = function(...args) 
           
@@ -3349,7 +3349,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.move(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.disable = function(...args) 
           
@@ -3359,7 +3359,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.disable(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.enable = function(...args) 
           
@@ -3369,7 +3369,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.enable(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.getDocument = function(...args) 
           
@@ -3379,7 +3379,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.getDocument(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.getDocumentInterface = function(...args) 
           
@@ -3389,7 +3389,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.getDocumentInterface(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.handleUserMessage = function(...args) 
           
@@ -3399,7 +3399,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.handleUserMessage(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.handleUserInfo = function(...args) 
           
@@ -3409,7 +3409,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.handleUserInfo(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.handleUserWarning = function(...args) 
           
@@ -3419,7 +3419,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.handleUserWarning(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.handleUserCommand = function(...args) 
           
@@ -3429,7 +3429,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.handleUserCommand(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.postSelectionChangedEvent = function(...args) 
           
@@ -3439,7 +3439,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.postSelectionChangedEvent(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.postTransactionEvent = function(...args) 
           
@@ -3449,7 +3449,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.postTransactionEvent(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.postPropertyEvent = function(...args) 
           
@@ -3459,7 +3459,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.postPropertyEvent(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.postCloseEvent = function(...args) 
           
@@ -3469,7 +3469,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.postCloseEvent(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.getMdiChild = function(...args) 
           
@@ -3479,7 +3479,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.getMdiChild(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.getTabBar = function(...args) 
           
@@ -3489,7 +3489,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.getTabBar(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.getMdiArea = function(...args) 
           
@@ -3499,7 +3499,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.getMdiArea(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.cancelProgress = function(...args) 
           
@@ -3509,7 +3509,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.cancelProgress(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.setProgress = function(...args) 
           
@@ -3519,7 +3519,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.setProgress(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.setProgressEnd = function(...args) 
           
@@ -3529,7 +3529,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.setProgressEnd(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.setProgressText = function(...args) 
           
@@ -3539,7 +3539,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.setProgressText(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.setCommandPrompt = function(...args) 
           
@@ -3549,7 +3549,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.setCommandPrompt(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.setLeftMouseTip = function(...args) 
           
@@ -3559,7 +3559,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.setLeftMouseTip(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.setRightMouseTip = function(...args) 
           
@@ -3569,7 +3569,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.setRightMouseTip(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.showContextMenu = function(...args) 
           
@@ -3579,7 +3579,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.showContextMenu(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.requestResourceBlockEditing = function(...args) 
           
@@ -3589,7 +3589,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.requestResourceBlockEditing(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.escapeEvent = function(...args) 
           
@@ -3599,7 +3599,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.escapeEvent(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.setGraphicsViewCursor = function(...args) 
           
@@ -3609,7 +3609,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.setGraphicsViewCursor(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.readSettings = function(...args) 
           
@@ -3619,7 +3619,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.readSettings(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.writeSettings = function(...args) 
           
@@ -3629,7 +3629,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.writeSettings(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.createPopupMenu = function(...args) 
           
@@ -3639,7 +3639,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.createPopupMenu(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.getChildWidget = function(...args) 
           
@@ -3649,7 +3649,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.getChildWidget(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.getDockWidgets = function(...args) 
           
@@ -3659,7 +3659,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.getDockWidgets(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.getToolBars = function(...args) 
           
@@ -3669,7 +3669,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.getToolBars(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.clearKeyLog = function(...args) 
           
@@ -3679,7 +3679,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.clearKeyLog(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.getKeyLog = function(...args) 
           
@@ -3689,7 +3689,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.getKeyLog(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.quit = function(...args) 
           
@@ -3699,7 +3699,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.quit(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.currentTabChanged = function(...args) 
           
@@ -3709,7 +3709,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.currentTabChanged(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.subWindowActivated = function(...args) 
           
@@ -3719,7 +3719,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.subWindowActivated(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.closeEvent = function(...args) 
           
@@ -3729,7 +3729,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.closeEvent(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.dropEvent = function(...args) 
           
@@ -3739,7 +3739,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.dropEvent(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.dragEnterEvent = function(...args) 
           
@@ -3749,7 +3749,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.dragEnterEvent(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.event = function(...args) 
           
@@ -3759,7 +3759,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.event(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.updateGuiActions = function(...args) 
           
@@ -3769,7 +3769,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.updateGuiActions(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.initGuiActions = function(...args) 
           
@@ -3779,7 +3779,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.initGuiActions(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.updateScenes = function(...args) 
           
@@ -3789,7 +3789,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.updateScenes(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.notifyListenersSlot = function(...args) 
           
@@ -3799,7 +3799,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.notifyListenersSlot(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.suspendAndResume = function(...args) 
           
@@ -3809,7 +3809,7 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.suspendAndResume(...args);
             
         };
-    
+        
         // function 
         RMainWindowQt.prototype.paintEvent = function(...args) 
           
@@ -3819,7 +3819,8 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.paintEventSuper(...args);
             
         };
-    
+        RMainWindowQt.prototype.paintEvent.__SUPER__ = true;
+        
         // function 
         RMainWindowQt.prototype.mouseMoveEvent = function(...args) 
           
@@ -3829,7 +3830,8 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.mouseMoveEventSuper(...args);
             
         };
-    
+        RMainWindowQt.prototype.mouseMoveEvent.__SUPER__ = true;
+        
         // function 
         RMainWindowQt.prototype.resizeEvent = function(...args) 
           
@@ -3839,7 +3841,8 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
               return this.__PROXY__.resizeEventSuper(...args);
             
         };
-    
+        RMainWindowQt.prototype.resizeEvent.__SUPER__ = true;
+        
 
       // static functions:
       

@@ -186,7 +186,7 @@
               return this.__PROXY__.isValid(...args);
             
         };
-    
+        
         // function 
         RMatrix.prototype.createIdentity2x2 = function(...args) 
           
@@ -196,7 +196,7 @@
               return this.__PROXY__.createIdentity2x2(...args);
             
         };
-    
+        
         // function 
         RMatrix.prototype.createIdentity3x3 = function(...args) 
           
@@ -206,7 +206,7 @@
               return this.__PROXY__.createIdentity3x3(...args);
             
         };
-    
+        
         // function 
         RMatrix.prototype.createIdentity = function(...args) 
           
@@ -216,7 +216,7 @@
               return this.__PROXY__.createIdentity(...args);
             
         };
-    
+        
         // function 
         RMatrix.prototype.createRotation = function(...args) 
           
@@ -226,7 +226,7 @@
               return this.__PROXY__.createRotation(...args);
             
         };
-    
+        
         // function 
         RMatrix.prototype.create2x2 = function(...args) 
           
@@ -236,7 +236,7 @@
               return this.__PROXY__.create2x2(...args);
             
         };
-    
+        
         // function 
         RMatrix.prototype.create3x3 = function(...args) 
           
@@ -246,7 +246,7 @@
               return this.__PROXY__.create3x3(...args);
             
         };
-    
+        
         // function 
         RMatrix.prototype.create3x1 = function(...args) 
           
@@ -256,7 +256,7 @@
               return this.__PROXY__.create3x1(...args);
             
         };
-    
+        
         // function 
         RMatrix.prototype.create2x3 = function(...args) 
           
@@ -266,7 +266,7 @@
               return this.__PROXY__.create2x3(...args);
             
         };
-    
+        
         // function 
         RMatrix.prototype.operator_assign = function(...args) 
           
@@ -276,7 +276,7 @@
               return this.__PROXY__.operator_assign(...args);
             
         };
-    
+        
         // function 
         RMatrix.prototype.operator_equal = function(...args) 
           
@@ -286,7 +286,7 @@
               return this.__PROXY__.operator_equal(...args);
             
         };
-    
+        
         // function 
         RMatrix.prototype.operator_multiply_assign = function(...args) 
           
@@ -296,7 +296,7 @@
               return this.__PROXY__.operator_multiply_assign(...args);
             
         };
-    
+        
         // function 
         RMatrix.prototype.operator_multiply = function(...args) 
           
@@ -306,7 +306,7 @@
               return this.__PROXY__.operator_multiply(...args);
             
         };
-    
+        
         // function 
         RMatrix.prototype.multiplyWith = function(...args) 
           
@@ -316,7 +316,7 @@
               return this.__PROXY__.multiplyWith(...args);
             
         };
-    
+        
         // function 
         RMatrix.prototype.init = function(...args) 
           
@@ -326,7 +326,7 @@
               return this.__PROXY__.init(...args);
             
         };
-    
+        
         // function 
         RMatrix.prototype.reset = function(...args) 
           
@@ -336,7 +336,7 @@
               return this.__PROXY__.reset(...args);
             
         };
-    
+        
         // function 
         RMatrix.prototype.clear = function(...args) 
           
@@ -346,7 +346,7 @@
               return this.__PROXY__.clear(...args);
             
         };
-    
+        
         // function 
         RMatrix.prototype.set3x3 = function(...args) 
           
@@ -356,7 +356,7 @@
               return this.__PROXY__.set3x3(...args);
             
         };
-    
+        
         // function 
         RMatrix.prototype.set3x1 = function(...args) 
           
@@ -366,7 +366,7 @@
               return this.__PROXY__.set3x1(...args);
             
         };
-    
+        
         // function 
         RMatrix.prototype.set2x3 = function(...args) 
           
@@ -376,7 +376,7 @@
               return this.__PROXY__.set2x3(...args);
             
         };
-    
+        
         // function 
         RMatrix.prototype.set = function(...args) 
           
@@ -386,7 +386,7 @@
               return this.__PROXY__.set(...args);
             
         };
-    
+        
         // function 
         RMatrix.prototype.get = function(...args) 
           
@@ -396,7 +396,7 @@
               return this.__PROXY__.get(...args);
             
         };
-    
+        
         // function 
         RMatrix.prototype.getRows = function(...args) 
           
@@ -406,7 +406,7 @@
               return this.__PROXY__.getRows(...args);
             
         };
-    
+        
         // function 
         RMatrix.prototype.getCols = function(...args) 
           
@@ -416,7 +416,7 @@
               return this.__PROXY__.getCols(...args);
             
         };
-    
+        
         // function 
         RMatrix.prototype.rref = function(...args) 
           
@@ -426,7 +426,7 @@
               return this.__PROXY__.rref(...args);
             
         };
-    
+        
         // function 
         RMatrix.prototype.getInverse = function(...args) 
           
@@ -436,7 +436,7 @@
               return this.__PROXY__.getInverse(...args);
             
         };
-    
+        
         // function 
         RMatrix.prototype.getTransposed = function(...args) 
           
@@ -446,7 +446,7 @@
               return this.__PROXY__.getTransposed(...args);
             
         };
-    
+        
         // function 
         RMatrix.prototype.getAppended = function(...args) 
           
@@ -456,7 +456,7 @@
               return this.__PROXY__.getAppended(...args);
             
         };
-    
+        
         // function 
         RMatrix.prototype.isRotationAndUniformScale = function(...args) 
           
@@ -466,7 +466,7 @@
               return this.__PROXY__.isRotationAndUniformScale(...args);
             
         };
-    
+        
         // function 
         RMatrix.prototype.getUniformScaleFactor = function(...args) 
           
@@ -476,7 +476,7 @@
               return this.__PROXY__.getUniformScaleFactor(...args);
             
         };
-    
+        
         // function 
         RMatrix.prototype.getRotationAngle = function(...args) 
           
@@ -486,7 +486,7 @@
               return this.__PROXY__.getRotationAngle(...args);
             
         };
-    
+        
         // function 
         RMatrix.prototype.ref = function(...args) 
           
@@ -496,7 +496,7 @@
               return this.__PROXY__.ref(...args);
             
         };
-    
+        
         // function 
         RMatrix.prototype.multiplyRow = function(...args) 
           
@@ -506,7 +506,7 @@
               return this.__PROXY__.multiplyRow(...args);
             
         };
-    
+        
         // function 
         RMatrix.prototype.addRow = function(...args) 
           
@@ -516,7 +516,7 @@
               return this.__PROXY__.addRow(...args);
             
         };
-    
+        
         // function 
         RMatrix.prototype.swapRows = function(...args) 
           
@@ -526,7 +526,7 @@
               return this.__PROXY__.swapRows(...args);
             
         };
-    
+        
         // function 
         RMatrix.prototype.getPivotRow = function(...args) 
           
@@ -536,7 +536,7 @@
               return this.__PROXY__.getPivotRow(...args);
             
         };
-    
+        
         // function 
         RMatrix.prototype.getPivotCol = function(...args) 
           
@@ -546,7 +546,7 @@
               return this.__PROXY__.getPivotCol(...args);
             
         };
-    
+        
 
       // static functions:
       

@@ -186,7 +186,7 @@
               return this.__PROXY__.isEmpty(...args);
             
         };
-    
+        
         // function 
         RTextLayout.prototype.isTTF = function(...args) 
           
@@ -196,7 +196,7 @@
               return this.__PROXY__.isTTF(...args);
             
         };
-    
+        
         // function 
         RTextLayout.prototype.hasPainterPath = function(...args) 
           
@@ -206,7 +206,7 @@
               return this.__PROXY__.hasPainterPath(...args);
             
         };
-    
+        
         // function 
         RTextLayout.prototype.getLayout = function(...args) 
           
@@ -216,7 +216,7 @@
               return this.__PROXY__.getLayout(...args);
             
         };
-    
+        
         // function 
         RTextLayout.prototype.getTransform = function(...args) 
           
@@ -226,7 +226,7 @@
               return this.__PROXY__.getTransform(...args);
             
         };
-    
+        
         // function 
         RTextLayout.prototype.getColor = function(...args) 
           
@@ -236,7 +236,7 @@
               return this.__PROXY__.getColor(...args);
             
         };
-    
+        
         // function 
         RTextLayout.prototype.getText = function(...args) 
           
@@ -246,7 +246,7 @@
               return this.__PROXY__.getText(...args);
             
         };
-    
+        
         // function 
         RTextLayout.prototype.getFont = function(...args) 
           
@@ -256,7 +256,7 @@
               return this.__PROXY__.getFont(...args);
             
         };
-    
+        
         // function 
         RTextLayout.prototype.isBold = function(...args) 
           
@@ -266,7 +266,7 @@
               return this.__PROXY__.isBold(...args);
             
         };
-    
+        
         // function 
         RTextLayout.prototype.isItalic = function(...args) 
           
@@ -276,7 +276,7 @@
               return this.__PROXY__.isItalic(...args);
             
         };
-    
+        
         // function 
         RTextLayout.prototype.isUnderline = function(...args) 
           
@@ -286,7 +286,7 @@
               return this.__PROXY__.isUnderline(...args);
             
         };
-    
+        
         // function 
         RTextLayout.prototype.getHeight = function(...args) 
           
@@ -296,7 +296,7 @@
               return this.__PROXY__.getHeight(...args);
             
         };
-    
+        
         // function 
         RTextLayout.prototype.getBoundingBox = function(...args) 
           
@@ -306,7 +306,7 @@
               return this.__PROXY__.getBoundingBox(...args);
             
         };
-    
+        
 
       // static functions:
       RTextLayout.prototype.isNullWrapper = function() {

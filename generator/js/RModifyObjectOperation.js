@@ -143,7 +143,7 @@
               return this.__PROXY__.apply(...args);
             
         };
-    
+        
         // function 
         RModifyObjectOperation.prototype.getEntityTypeFilter = function(...args) 
           
@@ -153,7 +153,7 @@
               return this.__PROXY__.getEntityTypeFilter(...args);
             
         };
-    
+        
         // function 
         RModifyObjectOperation.prototype.setRecordAffectedObjects = function(...args) 
           
@@ -163,7 +163,7 @@
               return this.__PROXY__.setRecordAffectedObjects(...args);
             
         };
-    
+        
         // function 
         RModifyObjectOperation.prototype.setSpatialIndexDisabled = function(...args) 
           
@@ -173,7 +173,7 @@
               return this.__PROXY__.setSpatialIndexDisabled(...args);
             
         };
-    
+        
         // function 
         RModifyObjectOperation.prototype.setAllowInvisible = function(...args) 
           
@@ -183,7 +183,7 @@
               return this.__PROXY__.setAllowInvisible(...args);
             
         };
-    
+        
         // function 
         RModifyObjectOperation.prototype.setAllowAll = function(...args) 
           
@@ -193,7 +193,7 @@
               return this.__PROXY__.setAllowAll(...args);
             
         };
-    
+        
         // function 
         RModifyObjectOperation.prototype.setKeepChildren = function(...args) 
           
@@ -203,7 +203,7 @@
               return this.__PROXY__.setKeepChildren(...args);
             
         };
-    
+        
         // function 
         RModifyObjectOperation.prototype.setTransactionGroup = function(...args) 
           
@@ -213,7 +213,7 @@
               return this.__PROXY__.setTransactionGroup(...args);
             
         };
-    
+        
         // function 
         RModifyObjectOperation.prototype.getTransactionGroup = function(...args) 
           
@@ -223,7 +223,7 @@
               return this.__PROXY__.getTransactionGroup(...args);
             
         };
-    
+        
         // function 
         RModifyObjectOperation.prototype.setText = function(...args) 
           
@@ -233,7 +233,7 @@
               return this.__PROXY__.setText(...args);
             
         };
-    
+        
         // function 
         RModifyObjectOperation.prototype.getText = function(...args) 
           
@@ -243,7 +243,7 @@
               return this.__PROXY__.getText(...args);
             
         };
-    
+        
         // function 
         RModifyObjectOperation.prototype.getTransactionTypes = function(...args) 
           
@@ -253,7 +253,7 @@
               return this.__PROXY__.getTransactionTypes(...args);
             
         };
-    
+        
         // function 
         RModifyObjectOperation.prototype.setTransactionType = function(...args) 
           
@@ -263,7 +263,7 @@
               return this.__PROXY__.setTransactionType(...args);
             
         };
-    
+        
         // function 
         RModifyObjectOperation.prototype.getTransactionType = function(...args) 
           
@@ -273,7 +273,7 @@
               return this.__PROXY__.getTransactionType(...args);
             
         };
-    
+        
 
       // static functions:
       RModifyObjectOperation.prototype.isNullWrapper = function() {

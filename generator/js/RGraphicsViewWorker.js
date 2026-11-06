@@ -109,7 +109,7 @@
               return this.__PROXY__.setObjectName(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewWorker.prototype.isWidgetType = function(...args) 
           
@@ -119,7 +119,7 @@
               return this.__PROXY__.isWidgetType(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewWorker.prototype.isWindowType = function(...args) 
           
@@ -129,7 +129,7 @@
               return this.__PROXY__.isWindowType(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewWorker.prototype.signalsBlocked = function(...args) 
           
@@ -139,7 +139,7 @@
               return this.__PROXY__.signalsBlocked(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewWorker.prototype.blockSignals = function(...args) 
           
@@ -149,7 +149,7 @@
               return this.__PROXY__.blockSignals(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewWorker.prototype.findChild = function(...args) 
           
@@ -159,7 +159,7 @@
               return this.__PROXY__.findChild(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewWorker.prototype.children = function(...args) 
           
@@ -169,7 +169,7 @@
               return this.__PROXY__.children(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewWorker.prototype.setParent = function(...args) 
           
@@ -179,7 +179,7 @@
               return this.__PROXY__.setParent(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewWorker.prototype.installEventFilter = function(...args) 
           
@@ -189,7 +189,7 @@
               return this.__PROXY__.installEventFilter(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewWorker.prototype.removeEventFilter = function(...args) 
           
@@ -199,7 +199,7 @@
               return this.__PROXY__.removeEventFilter(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewWorker.prototype.dumpObjectTree = function(...args) 
           
@@ -209,7 +209,7 @@
               return this.__PROXY__.dumpObjectTree(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewWorker.prototype.dumpObjectInfo = function(...args) 
           
@@ -219,7 +219,7 @@
               return this.__PROXY__.dumpObjectInfo(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewWorker.prototype.setProperty = function(...args) 
           
@@ -229,7 +229,7 @@
               return this.__PROXY__.setProperty(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewWorker.prototype.property = function(...args) 
           
@@ -239,7 +239,7 @@
               return this.__PROXY__.property(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewWorker.prototype.dynamicPropertyNames = function(...args) 
           
@@ -249,7 +249,7 @@
               return this.__PROXY__.dynamicPropertyNames(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewWorker.prototype.parent = function(...args) 
           
@@ -259,7 +259,7 @@
               return this.__PROXY__.parent(...args);
             
         };
-    
+        
         // function 
         RGraphicsViewWorker.prototype.deleteLater = function(...args) 
           
@@ -269,7 +269,7 @@
               return this.__PROXY__.deleteLater(...args);
             
         };
-    
+        
 
       // static functions:
       

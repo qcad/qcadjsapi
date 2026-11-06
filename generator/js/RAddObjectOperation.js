@@ -203,7 +203,7 @@ RAddObjectOperation.Delete = RAddObjectOperation_Wrapper.Delete;
               return this.__PROXY__.getEntityTypeFilter(...args);
             
         };
-    
+        
         // function 
         RAddObjectOperation.prototype.setRecordAffectedObjects = function(...args) 
           
@@ -213,7 +213,7 @@ RAddObjectOperation.Delete = RAddObjectOperation_Wrapper.Delete;
               return this.__PROXY__.setRecordAffectedObjects(...args);
             
         };
-    
+        
         // function 
         RAddObjectOperation.prototype.setSpatialIndexDisabled = function(...args) 
           
@@ -223,7 +223,7 @@ RAddObjectOperation.Delete = RAddObjectOperation_Wrapper.Delete;
               return this.__PROXY__.setSpatialIndexDisabled(...args);
             
         };
-    
+        
         // function 
         RAddObjectOperation.prototype.setAllowInvisible = function(...args) 
           
@@ -233,7 +233,7 @@ RAddObjectOperation.Delete = RAddObjectOperation_Wrapper.Delete;
               return this.__PROXY__.setAllowInvisible(...args);
             
         };
-    
+        
         // function 
         RAddObjectOperation.prototype.setAllowAll = function(...args) 
           
@@ -243,7 +243,7 @@ RAddObjectOperation.Delete = RAddObjectOperation_Wrapper.Delete;
               return this.__PROXY__.setAllowAll(...args);
             
         };
-    
+        
         // function 
         RAddObjectOperation.prototype.setKeepChildren = function(...args) 
           
@@ -253,7 +253,7 @@ RAddObjectOperation.Delete = RAddObjectOperation_Wrapper.Delete;
               return this.__PROXY__.setKeepChildren(...args);
             
         };
-    
+        
         // function 
         RAddObjectOperation.prototype.setTransactionGroup = function(...args) 
           
@@ -263,7 +263,7 @@ RAddObjectOperation.Delete = RAddObjectOperation_Wrapper.Delete;
               return this.__PROXY__.setTransactionGroup(...args);
             
         };
-    
+        
         // function 
         RAddObjectOperation.prototype.getTransactionGroup = function(...args) 
           
@@ -273,7 +273,7 @@ RAddObjectOperation.Delete = RAddObjectOperation_Wrapper.Delete;
               return this.__PROXY__.getTransactionGroup(...args);
             
         };
-    
+        
         // function 
         RAddObjectOperation.prototype.setText = function(...args) 
           
@@ -283,7 +283,7 @@ RAddObjectOperation.Delete = RAddObjectOperation_Wrapper.Delete;
               return this.__PROXY__.setText(...args);
             
         };
-    
+        
         // function 
         RAddObjectOperation.prototype.getText = function(...args) 
           
@@ -293,7 +293,7 @@ RAddObjectOperation.Delete = RAddObjectOperation_Wrapper.Delete;
               return this.__PROXY__.getText(...args);
             
         };
-    
+        
         // function 
         RAddObjectOperation.prototype.getTransactionTypes = function(...args) 
           
@@ -303,7 +303,7 @@ RAddObjectOperation.Delete = RAddObjectOperation_Wrapper.Delete;
               return this.__PROXY__.getTransactionTypes(...args);
             
         };
-    
+        
         // function 
         RAddObjectOperation.prototype.setTransactionType = function(...args) 
           
@@ -313,7 +313,7 @@ RAddObjectOperation.Delete = RAddObjectOperation_Wrapper.Delete;
               return this.__PROXY__.setTransactionType(...args);
             
         };
-    
+        
         // function 
         RAddObjectOperation.prototype.getTransactionType = function(...args) 
           
@@ -323,7 +323,7 @@ RAddObjectOperation.Delete = RAddObjectOperation_Wrapper.Delete;
               return this.__PROXY__.getTransactionType(...args);
             
         };
-    
+        
         // function 
         RAddObjectOperation.prototype.replaceObject = function(...args) 
           
@@ -333,7 +333,7 @@ RAddObjectOperation.Delete = RAddObjectOperation_Wrapper.Delete;
               return this.__PROXY__.replaceObject(...args);
             
         };
-    
+        
         // function 
         RAddObjectOperation.prototype.getObject = function(...args) 
           
@@ -343,7 +343,7 @@ RAddObjectOperation.Delete = RAddObjectOperation_Wrapper.Delete;
               return this.__PROXY__.getObject(...args);
             
         };
-    
+        
         // function 
         RAddObjectOperation.prototype.endCycle = function(...args) 
           
@@ -353,7 +353,7 @@ RAddObjectOperation.Delete = RAddObjectOperation_Wrapper.Delete;
               return this.__PROXY__.endCycle(...args);
             
         };
-    
+        
         // function 
         RAddObjectOperation.prototype.addObject = function(...args) 
           
@@ -363,7 +363,7 @@ RAddObjectOperation.Delete = RAddObjectOperation_Wrapper.Delete;
               return this.__PROXY__.addObject(...args);
             
         };
-    
+        
         // function 
         RAddObjectOperation.prototype.deleteObject = function(...args) 
           
@@ -373,7 +373,7 @@ RAddObjectOperation.Delete = RAddObjectOperation_Wrapper.Delete;
               return this.__PROXY__.deleteObject(...args);
             
         };
-    
+        
         // function 
         RAddObjectOperation.prototype.apply = function(...args) 
           
@@ -383,7 +383,7 @@ RAddObjectOperation.Delete = RAddObjectOperation_Wrapper.Delete;
               return this.__PROXY__.apply(...args);
             
         };
-    
+        
         // function 
         RAddObjectOperation.prototype.getPreviewCounter = function(...args) 
           
@@ -393,7 +393,7 @@ RAddObjectOperation.Delete = RAddObjectOperation_Wrapper.Delete;
               return this.__PROXY__.getPreviewCounter(...args);
             
         };
-    
+        
         // function 
         RAddObjectOperation.prototype.setLimitPreview = function(...args) 
           
@@ -403,7 +403,7 @@ RAddObjectOperation.Delete = RAddObjectOperation_Wrapper.Delete;
               return this.__PROXY__.setLimitPreview(...args);
             
         };
-    
+        
         // function 
         RAddObjectOperation.prototype.isEmpty = function(...args) 
           
@@ -413,7 +413,7 @@ RAddObjectOperation.Delete = RAddObjectOperation_Wrapper.Delete;
               return this.__PROXY__.isEmpty(...args);
             
         };
-    
+        
 
       // static functions:
       RAddObjectOperation.prototype.isNullWrapper = function() {

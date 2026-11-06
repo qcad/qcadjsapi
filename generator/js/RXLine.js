@@ -229,7 +229,7 @@ RXLine.Ray = RXLine_Wrapper.Ray;
               return this.__PROXY__.isValid(...args);
             
         };
-    
+        
         // function 
         RXLine.prototype.isInterpolated = function(...args) 
           
@@ -239,7 +239,7 @@ RXLine.Ray = RXLine_Wrapper.Ray;
               return this.__PROXY__.isInterpolated(...args);
             
         };
-    
+        
         // function 
         RXLine.prototype.getClosestPointOnShape = function(...args) 
           
@@ -249,7 +249,7 @@ RXLine.Ray = RXLine_Wrapper.Ray;
               return this.__PROXY__.getClosestPointOnShape(...args);
             
         };
-    
+        
         // function 
         RXLine.prototype.to2D = function(...args) 
           
@@ -259,7 +259,7 @@ RXLine.Ray = RXLine_Wrapper.Ray;
               return this.__PROXY__.to2D(...args);
             
         };
-    
+        
         // function 
         RXLine.prototype.equals = function(...args) 
           
@@ -269,7 +269,7 @@ RXLine.Ray = RXLine_Wrapper.Ray;
               return this.__PROXY__.equals(...args);
             
         };
-    
+        
         // function 
         RXLine.prototype.getIntProperties = function(...args) 
           
@@ -279,7 +279,7 @@ RXLine.Ray = RXLine_Wrapper.Ray;
               return this.__PROXY__.getIntProperties(...args);
             
         };
-    
+        
         // function 
         RXLine.prototype.getDoubleProperties = function(...args) 
           
@@ -289,7 +289,7 @@ RXLine.Ray = RXLine_Wrapper.Ray;
               return this.__PROXY__.getDoubleProperties(...args);
             
         };
-    
+        
         // function 
         RXLine.prototype.getBoolProperties = function(...args) 
           
@@ -299,7 +299,7 @@ RXLine.Ray = RXLine_Wrapper.Ray;
               return this.__PROXY__.getBoolProperties(...args);
             
         };
-    
+        
         // function 
         RXLine.prototype.getDistanceTo = function(...args) 
           
@@ -309,7 +309,7 @@ RXLine.Ray = RXLine_Wrapper.Ray;
               return this.__PROXY__.getDistanceTo(...args);
             
         };
-    
+        
         // function 
         RXLine.prototype.getMaxDistanceTo = function(...args) 
           
@@ -319,7 +319,7 @@ RXLine.Ray = RXLine_Wrapper.Ray;
               return this.__PROXY__.getMaxDistanceTo(...args);
             
         };
-    
+        
         // function 
         RXLine.prototype.isOnShape = function(...args) 
           
@@ -329,7 +329,7 @@ RXLine.Ray = RXLine_Wrapper.Ray;
               return this.__PROXY__.isOnShape(...args);
             
         };
-    
+        
         // function 
         RXLine.prototype.filterOnShape = function(...args) 
           
@@ -339,7 +339,7 @@ RXLine.Ray = RXLine_Wrapper.Ray;
               return this.__PROXY__.filterOnShape(...args);
             
         };
-    
+        
         // function 
         RXLine.prototype.getVectorFromEndpointTo = function(...args) 
           
@@ -349,7 +349,7 @@ RXLine.Ray = RXLine_Wrapper.Ray;
               return this.__PROXY__.getVectorFromEndpointTo(...args);
             
         };
-    
+        
         // function 
         RXLine.prototype.getArcReferencePoints = function(...args) 
           
@@ -359,7 +359,7 @@ RXLine.Ray = RXLine_Wrapper.Ray;
               return this.__PROXY__.getArcReferencePoints(...args);
             
         };
-    
+        
         // function 
         RXLine.prototype.getPointOnShape = function(...args) 
           
@@ -369,7 +369,7 @@ RXLine.Ray = RXLine_Wrapper.Ray;
               return this.__PROXY__.getPointOnShape(...args);
             
         };
-    
+        
         // function 
         RXLine.prototype.getPointWithDistanceToStart = function(...args) 
           
@@ -379,7 +379,7 @@ RXLine.Ray = RXLine_Wrapper.Ray;
               return this.__PROXY__.getPointWithDistanceToStart(...args);
             
         };
-    
+        
         // function 
         RXLine.prototype.getPointWithDistanceToEnd = function(...args) 
           
@@ -389,7 +389,7 @@ RXLine.Ray = RXLine_Wrapper.Ray;
               return this.__PROXY__.getPointWithDistanceToEnd(...args);
             
         };
-    
+        
         // function 
         RXLine.prototype.getAngleAtPoint = function(...args) 
           
@@ -399,7 +399,7 @@ RXLine.Ray = RXLine_Wrapper.Ray;
               return this.__PROXY__.getAngleAtPoint(...args);
             
         };
-    
+        
         // function 
         RXLine.prototype.getPointAtPercent = function(...args) 
           
@@ -409,7 +409,7 @@ RXLine.Ray = RXLine_Wrapper.Ray;
               return this.__PROXY__.getPointAtPercent(...args);
             
         };
-    
+        
         // function 
         RXLine.prototype.getAngleAtPercent = function(...args) 
           
@@ -419,7 +419,7 @@ RXLine.Ray = RXLine_Wrapper.Ray;
               return this.__PROXY__.getAngleAtPercent(...args);
             
         };
-    
+        
         // function 
         RXLine.prototype.intersectsWith = function(...args) 
           
@@ -429,7 +429,7 @@ RXLine.Ray = RXLine_Wrapper.Ray;
               return this.__PROXY__.intersectsWith(...args);
             
         };
-    
+        
         // function 
         RXLine.prototype.getIntersectionPoints = function(...args) 
           
@@ -439,7 +439,7 @@ RXLine.Ray = RXLine_Wrapper.Ray;
               return this.__PROXY__.getIntersectionPoints(...args);
             
         };
-    
+        
         // function 
         RXLine.prototype.getSelfIntersectionPoints = function(...args) 
           
@@ -449,7 +449,7 @@ RXLine.Ray = RXLine_Wrapper.Ray;
               return this.__PROXY__.getSelfIntersectionPoints(...args);
             
         };
-    
+        
         // function 
         RXLine.prototype.getDistancesFromStart = function(...args) 
           
@@ -459,7 +459,7 @@ RXLine.Ray = RXLine_Wrapper.Ray;
               return this.__PROXY__.getDistancesFromStart(...args);
             
         };
-    
+        
         // function 
         RXLine.prototype.flipHorizontal = function(...args) 
           
@@ -469,7 +469,7 @@ RXLine.Ray = RXLine_Wrapper.Ray;
               return this.__PROXY__.flipHorizontal(...args);
             
         };
-    
+        
         // function 
         RXLine.prototype.flipVertical = function(...args) 
           
@@ -479,7 +479,7 @@ RXLine.Ray = RXLine_Wrapper.Ray;
               return this.__PROXY__.flipVertical(...args);
             
         };
-    
+        
         // function 
         RXLine.prototype.dump = function(...args) 
           
@@ -489,7 +489,7 @@ RXLine.Ray = RXLine_Wrapper.Ray;
               return this.__PROXY__.dump(...args);
             
         };
-    
+        
         // function 
         RXLine.prototype.getShapeType = function(...args) 
           
@@ -499,7 +499,7 @@ RXLine.Ray = RXLine_Wrapper.Ray;
               return this.__PROXY__.getShapeType(...args);
             
         };
-    
+        
         // function 
         RXLine.prototype.getLineShape = function(...args) 
           
@@ -509,7 +509,7 @@ RXLine.Ray = RXLine_Wrapper.Ray;
               return this.__PROXY__.getLineShape(...args);
             
         };
-    
+        
         // function 
         RXLine.prototype.clone = function(...args) 
           
@@ -519,7 +519,7 @@ RXLine.Ray = RXLine_Wrapper.Ray;
               return this.__PROXY__.clone(...args);
             
         };
-    
+        
         // function 
         RXLine.prototype.isDirected = function(...args) 
           
@@ -529,7 +529,7 @@ RXLine.Ray = RXLine_Wrapper.Ray;
               return this.__PROXY__.isDirected(...args);
             
         };
-    
+        
         // function 
         RXLine.prototype.getBoundingBox = function(...args) 
           
@@ -539,7 +539,7 @@ RXLine.Ray = RXLine_Wrapper.Ray;
               return this.__PROXY__.getBoundingBox(...args);
             
         };
-    
+        
         // function 
         RXLine.prototype.setZ = function(...args) 
           
@@ -549,7 +549,7 @@ RXLine.Ray = RXLine_Wrapper.Ray;
               return this.__PROXY__.setZ(...args);
             
         };
-    
+        
         // function 
         RXLine.prototype.getVectorProperties = function(...args) 
           
@@ -559,7 +559,7 @@ RXLine.Ray = RXLine_Wrapper.Ray;
               return this.__PROXY__.getVectorProperties(...args);
             
         };
-    
+        
         // function 
         RXLine.prototype.getEndPoints = function(...args) 
           
@@ -569,7 +569,7 @@ RXLine.Ray = RXLine_Wrapper.Ray;
               return this.__PROXY__.getEndPoints(...args);
             
         };
-    
+        
         // function 
         RXLine.prototype.getMiddlePoints = function(...args) 
           
@@ -579,7 +579,7 @@ RXLine.Ray = RXLine_Wrapper.Ray;
               return this.__PROXY__.getMiddlePoints(...args);
             
         };
-    
+        
         // function 
         RXLine.prototype.getCenterPoints = function(...args) 
           
@@ -589,7 +589,7 @@ RXLine.Ray = RXLine_Wrapper.Ray;
               return this.__PROXY__.getCenterPoints(...args);
             
         };
-    
+        
         // function 
         RXLine.prototype.getPointsWithDistanceToEnd = function(...args) 
           
@@ -599,7 +599,7 @@ RXLine.Ray = RXLine_Wrapper.Ray;
               return this.__PROXY__.getPointsWithDistanceToEnd(...args);
             
         };
-    
+        
         // function 
         RXLine.prototype.getPointCloud = function(...args) 
           
@@ -609,7 +609,7 @@ RXLine.Ray = RXLine_Wrapper.Ray;
               return this.__PROXY__.getPointCloud(...args);
             
         };
-    
+        
         // function 
         RXLine.prototype.getAngleAt = function(...args) 
           
@@ -619,7 +619,7 @@ RXLine.Ray = RXLine_Wrapper.Ray;
               return this.__PROXY__.getAngleAt(...args);
             
         };
-    
+        
         // function 
         RXLine.prototype.getVectorTo = function(...args) 
           
@@ -629,7 +629,7 @@ RXLine.Ray = RXLine_Wrapper.Ray;
               return this.__PROXY__.getVectorTo(...args);
             
         };
-    
+        
         // function 
         RXLine.prototype.getBasePoint = function(...args) 
           
@@ -639,7 +639,7 @@ RXLine.Ray = RXLine_Wrapper.Ray;
               return this.__PROXY__.getBasePoint(...args);
             
         };
-    
+        
         // function 
         RXLine.prototype.setBasePoint = function(...args) 
           
@@ -649,7 +649,7 @@ RXLine.Ray = RXLine_Wrapper.Ray;
               return this.__PROXY__.setBasePoint(...args);
             
         };
-    
+        
         // function 
         RXLine.prototype.getSecondPoint = function(...args) 
           
@@ -659,7 +659,7 @@ RXLine.Ray = RXLine_Wrapper.Ray;
               return this.__PROXY__.getSecondPoint(...args);
             
         };
-    
+        
         // function 
         RXLine.prototype.setSecondPoint = function(...args) 
           
@@ -669,7 +669,7 @@ RXLine.Ray = RXLine_Wrapper.Ray;
               return this.__PROXY__.setSecondPoint(...args);
             
         };
-    
+        
         // function 
         RXLine.prototype.getDirectionVector = function(...args) 
           
@@ -679,7 +679,7 @@ RXLine.Ray = RXLine_Wrapper.Ray;
               return this.__PROXY__.getDirectionVector(...args);
             
         };
-    
+        
         // function 
         RXLine.prototype.setDirectionVector = function(...args) 
           
@@ -689,7 +689,7 @@ RXLine.Ray = RXLine_Wrapper.Ray;
               return this.__PROXY__.setDirectionVector(...args);
             
         };
-    
+        
         // function 
         RXLine.prototype.getMiddlePoint = function(...args) 
           
@@ -699,7 +699,7 @@ RXLine.Ray = RXLine_Wrapper.Ray;
               return this.__PROXY__.getMiddlePoint(...args);
             
         };
-    
+        
         // function 
         RXLine.prototype.getLength = function(...args) 
           
@@ -709,7 +709,7 @@ RXLine.Ray = RXLine_Wrapper.Ray;
               return this.__PROXY__.getLength(...args);
             
         };
-    
+        
         // function 
         RXLine.prototype.setLength = function(...args) 
           
@@ -719,7 +719,7 @@ RXLine.Ray = RXLine_Wrapper.Ray;
               return this.__PROXY__.setLength(...args);
             
         };
-    
+        
         // function 
         RXLine.prototype.getAngle = function(...args) 
           
@@ -729,7 +729,7 @@ RXLine.Ray = RXLine_Wrapper.Ray;
               return this.__PROXY__.getAngle(...args);
             
         };
-    
+        
         // function 
         RXLine.prototype.setAngle = function(...args) 
           
@@ -739,7 +739,7 @@ RXLine.Ray = RXLine_Wrapper.Ray;
               return this.__PROXY__.setAngle(...args);
             
         };
-    
+        
         // function 
         RXLine.prototype.getDirection1 = function(...args) 
           
@@ -749,7 +749,7 @@ RXLine.Ray = RXLine_Wrapper.Ray;
               return this.__PROXY__.getDirection1(...args);
             
         };
-    
+        
         // function 
         RXLine.prototype.getDirection2 = function(...args) 
           
@@ -759,7 +759,7 @@ RXLine.Ray = RXLine_Wrapper.Ray;
               return this.__PROXY__.getDirection2(...args);
             
         };
-    
+        
         // function 
         RXLine.prototype.getSideOfPoint = function(...args) 
           
@@ -769,7 +769,7 @@ RXLine.Ray = RXLine_Wrapper.Ray;
               return this.__PROXY__.getSideOfPoint(...args);
             
         };
-    
+        
         // function 
         RXLine.prototype.getStartPoint = function(...args) 
           
@@ -779,7 +779,7 @@ RXLine.Ray = RXLine_Wrapper.Ray;
               return this.__PROXY__.getStartPoint(...args);
             
         };
-    
+        
         // function 
         RXLine.prototype.getEndPoint = function(...args) 
           
@@ -789,7 +789,7 @@ RXLine.Ray = RXLine_Wrapper.Ray;
               return this.__PROXY__.getEndPoint(...args);
             
         };
-    
+        
         // function 
         RXLine.prototype.trimStartPoint = function(...args) 
           
@@ -799,7 +799,7 @@ RXLine.Ray = RXLine_Wrapper.Ray;
               return this.__PROXY__.trimStartPoint(...args);
             
         };
-    
+        
         // function 
         RXLine.prototype.trimEndPoint = function(...args) 
           
@@ -809,7 +809,7 @@ RXLine.Ray = RXLine_Wrapper.Ray;
               return this.__PROXY__.trimEndPoint(...args);
             
         };
-    
+        
         // function 
         RXLine.prototype.getTrimEnd = function(...args) 
           
@@ -819,7 +819,7 @@ RXLine.Ray = RXLine_Wrapper.Ray;
               return this.__PROXY__.getTrimEnd(...args);
             
         };
-    
+        
         // function 
         RXLine.prototype.getDistanceFromStart = function(...args) 
           
@@ -829,7 +829,7 @@ RXLine.Ray = RXLine_Wrapper.Ray;
               return this.__PROXY__.getDistanceFromStart(...args);
             
         };
-    
+        
         // function 
         RXLine.prototype.getClippedLine = function(...args) 
           
@@ -839,7 +839,7 @@ RXLine.Ray = RXLine_Wrapper.Ray;
               return this.__PROXY__.getClippedLine(...args);
             
         };
-    
+        
         // function 
         RXLine.prototype.move = function(...args) 
           
@@ -849,7 +849,7 @@ RXLine.Ray = RXLine_Wrapper.Ray;
               return this.__PROXY__.move(...args);
             
         };
-    
+        
         // function 
         RXLine.prototype.rotate = function(...args) 
           
@@ -859,7 +859,7 @@ RXLine.Ray = RXLine_Wrapper.Ray;
               return this.__PROXY__.rotate(...args);
             
         };
-    
+        
         // function 
         RXLine.prototype.scale = function(...args) 
           
@@ -869,7 +869,7 @@ RXLine.Ray = RXLine_Wrapper.Ray;
               return this.__PROXY__.scale(...args);
             
         };
-    
+        
         // function 
         RXLine.prototype.mirror = function(...args) 
           
@@ -879,7 +879,7 @@ RXLine.Ray = RXLine_Wrapper.Ray;
               return this.__PROXY__.mirror(...args);
             
         };
-    
+        
         // function 
         RXLine.prototype.reverse = function(...args) 
           
@@ -889,7 +889,7 @@ RXLine.Ray = RXLine_Wrapper.Ray;
               return this.__PROXY__.reverse(...args);
             
         };
-    
+        
         // function 
         RXLine.prototype.stretch = function(...args) 
           
@@ -899,7 +899,7 @@ RXLine.Ray = RXLine_Wrapper.Ray;
               return this.__PROXY__.stretch(...args);
             
         };
-    
+        
         // function 
         RXLine.prototype.getTransformed = function(...args) 
           
@@ -909,7 +909,7 @@ RXLine.Ray = RXLine_Wrapper.Ray;
               return this.__PROXY__.getTransformed(...args);
             
         };
-    
+        
         // function 
         RXLine.prototype.getOffsetShapes = function(...args) 
           
@@ -919,7 +919,7 @@ RXLine.Ray = RXLine_Wrapper.Ray;
               return this.__PROXY__.getOffsetShapes(...args);
             
         };
-    
+        
         // function 
         RXLine.prototype.splitAt = function(...args) 
           
@@ -929,7 +929,7 @@ RXLine.Ray = RXLine_Wrapper.Ray;
               return this.__PROXY__.splitAt(...args);
             
         };
-    
+        
         // function 
         RXLine.prototype.print = function(...args) 
           
@@ -939,7 +939,7 @@ RXLine.Ray = RXLine_Wrapper.Ray;
               return this.__PROXY__.print(...args);
             
         };
-    
+        
         // function 
         RXLine.prototype.copy = function(...args) 
           
@@ -949,7 +949,7 @@ RXLine.Ray = RXLine_Wrapper.Ray;
               return this.__PROXY__.copy(...args);
             
         };
-    
+        
 
       // static functions:
       RXLine.prototype.isNullWrapper = function() {

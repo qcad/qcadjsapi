@@ -207,7 +207,7 @@ RSpline.Ray = RSpline_Wrapper.Ray;
               return this.__PROXY__.getClosestPointOnShape(...args);
             
         };
-    
+        
         // function 
         RSpline.prototype.to2D = function(...args) 
           
@@ -217,7 +217,7 @@ RSpline.Ray = RSpline_Wrapper.Ray;
               return this.__PROXY__.to2D(...args);
             
         };
-    
+        
         // function 
         RSpline.prototype.equals = function(...args) 
           
@@ -227,7 +227,7 @@ RSpline.Ray = RSpline_Wrapper.Ray;
               return this.__PROXY__.equals(...args);
             
         };
-    
+        
         // function 
         RSpline.prototype.getDistanceTo = function(...args) 
           
@@ -237,7 +237,7 @@ RSpline.Ray = RSpline_Wrapper.Ray;
               return this.__PROXY__.getDistanceTo(...args);
             
         };
-    
+        
         // function 
         RSpline.prototype.getMaxDistanceTo = function(...args) 
           
@@ -247,7 +247,7 @@ RSpline.Ray = RSpline_Wrapper.Ray;
               return this.__PROXY__.getMaxDistanceTo(...args);
             
         };
-    
+        
         // function 
         RSpline.prototype.filterOnShape = function(...args) 
           
@@ -257,7 +257,7 @@ RSpline.Ray = RSpline_Wrapper.Ray;
               return this.__PROXY__.filterOnShape(...args);
             
         };
-    
+        
         // function 
         RSpline.prototype.getVectorFromEndpointTo = function(...args) 
           
@@ -267,7 +267,7 @@ RSpline.Ray = RSpline_Wrapper.Ray;
               return this.__PROXY__.getVectorFromEndpointTo(...args);
             
         };
-    
+        
         // function 
         RSpline.prototype.getArcReferencePoints = function(...args) 
           
@@ -277,7 +277,7 @@ RSpline.Ray = RSpline_Wrapper.Ray;
               return this.__PROXY__.getArcReferencePoints(...args);
             
         };
-    
+        
         // function 
         RSpline.prototype.getPointOnShape = function(...args) 
           
@@ -287,7 +287,7 @@ RSpline.Ray = RSpline_Wrapper.Ray;
               return this.__PROXY__.getPointOnShape(...args);
             
         };
-    
+        
         // function 
         RSpline.prototype.getPointWithDistanceToStart = function(...args) 
           
@@ -297,7 +297,7 @@ RSpline.Ray = RSpline_Wrapper.Ray;
               return this.__PROXY__.getPointWithDistanceToStart(...args);
             
         };
-    
+        
         // function 
         RSpline.prototype.getPointWithDistanceToEnd = function(...args) 
           
@@ -307,7 +307,7 @@ RSpline.Ray = RSpline_Wrapper.Ray;
               return this.__PROXY__.getPointWithDistanceToEnd(...args);
             
         };
-    
+        
         // function 
         RSpline.prototype.getAngleAtPoint = function(...args) 
           
@@ -317,7 +317,7 @@ RSpline.Ray = RSpline_Wrapper.Ray;
               return this.__PROXY__.getAngleAtPoint(...args);
             
         };
-    
+        
         // function 
         RSpline.prototype.getPointAtPercent = function(...args) 
           
@@ -327,7 +327,7 @@ RSpline.Ray = RSpline_Wrapper.Ray;
               return this.__PROXY__.getPointAtPercent(...args);
             
         };
-    
+        
         // function 
         RSpline.prototype.getAngleAtPercent = function(...args) 
           
@@ -337,7 +337,7 @@ RSpline.Ray = RSpline_Wrapper.Ray;
               return this.__PROXY__.getAngleAtPercent(...args);
             
         };
-    
+        
         // function 
         RSpline.prototype.intersectsWith = function(...args) 
           
@@ -347,7 +347,7 @@ RSpline.Ray = RSpline_Wrapper.Ray;
               return this.__PROXY__.intersectsWith(...args);
             
         };
-    
+        
         // function 
         RSpline.prototype.getIntersectionPoints = function(...args) 
           
@@ -357,7 +357,7 @@ RSpline.Ray = RSpline_Wrapper.Ray;
               return this.__PROXY__.getIntersectionPoints(...args);
             
         };
-    
+        
         // function 
         RSpline.prototype.getDistancesFromStart = function(...args) 
           
@@ -367,7 +367,7 @@ RSpline.Ray = RSpline_Wrapper.Ray;
               return this.__PROXY__.getDistancesFromStart(...args);
             
         };
-    
+        
         // function 
         RSpline.prototype.getOffsetShapes = function(...args) 
           
@@ -377,7 +377,7 @@ RSpline.Ray = RSpline_Wrapper.Ray;
               return this.__PROXY__.getOffsetShapes(...args);
             
         };
-    
+        
         // function 
         RSpline.prototype.dump = function(...args) 
           
@@ -387,7 +387,7 @@ RSpline.Ray = RSpline_Wrapper.Ray;
               return this.__PROXY__.dump(...args);
             
         };
-    
+        
         // function 
         RSpline.prototype.getShapeType = function(...args) 
           
@@ -397,7 +397,7 @@ RSpline.Ray = RSpline_Wrapper.Ray;
               return this.__PROXY__.getShapeType(...args);
             
         };
-    
+        
         // function 
         RSpline.prototype.clone = function(...args) 
           
@@ -407,7 +407,7 @@ RSpline.Ray = RSpline_Wrapper.Ray;
               return this.__PROXY__.clone(...args);
             
         };
-    
+        
         // function 
         RSpline.prototype.isDirected = function(...args) 
           
@@ -417,7 +417,7 @@ RSpline.Ray = RSpline_Wrapper.Ray;
               return this.__PROXY__.isDirected(...args);
             
         };
-    
+        
         // function 
         RSpline.prototype.copySpline = function(...args) 
           
@@ -427,7 +427,7 @@ RSpline.Ray = RSpline_Wrapper.Ray;
               return this.__PROXY__.copySpline(...args);
             
         };
-    
+        
         // function 
         RSpline.prototype.createSplinesFromArc = function(...args) 
           
@@ -437,7 +437,7 @@ RSpline.Ray = RSpline_Wrapper.Ray;
               return this.__PROXY__.createSplinesFromArc(...args);
             
         };
-    
+        
         // function 
         RSpline.prototype.createBezierFromSmallArc = function(...args) 
           
@@ -447,7 +447,7 @@ RSpline.Ray = RSpline_Wrapper.Ray;
               return this.__PROXY__.createBezierFromSmallArc(...args);
             
         };
-    
+        
         // function 
         RSpline.prototype.setZ = function(...args) 
           
@@ -457,7 +457,7 @@ RSpline.Ray = RSpline_Wrapper.Ray;
               return this.__PROXY__.setZ(...args);
             
         };
-    
+        
         // function 
         RSpline.prototype.getVectorProperties = function(...args) 
           
@@ -467,7 +467,7 @@ RSpline.Ray = RSpline_Wrapper.Ray;
               return this.__PROXY__.getVectorProperties(...args);
             
         };
-    
+        
         // function 
         RSpline.prototype.getIntProperties = function(...args) 
           
@@ -477,7 +477,7 @@ RSpline.Ray = RSpline_Wrapper.Ray;
               return this.__PROXY__.getIntProperties(...args);
             
         };
-    
+        
         // function 
         RSpline.prototype.getDoubleProperties = function(...args) 
           
@@ -487,7 +487,7 @@ RSpline.Ray = RSpline_Wrapper.Ray;
               return this.__PROXY__.getDoubleProperties(...args);
             
         };
-    
+        
         // function 
         RSpline.prototype.getBoolProperties = function(...args) 
           
@@ -497,7 +497,7 @@ RSpline.Ray = RSpline_Wrapper.Ray;
               return this.__PROXY__.getBoolProperties(...args);
             
         };
-    
+        
         // function 
         RSpline.prototype.isInterpolated = function(...args) 
           
@@ -507,7 +507,7 @@ RSpline.Ray = RSpline_Wrapper.Ray;
               return this.__PROXY__.isInterpolated(...args);
             
         };
-    
+        
         // function 
         RSpline.prototype.appendControlPoint = function(...args) 
           
@@ -517,7 +517,7 @@ RSpline.Ray = RSpline_Wrapper.Ray;
               return this.__PROXY__.appendControlPoint(...args);
             
         };
-    
+        
         // function 
         RSpline.prototype.appendControlPoints = function(...args) 
           
@@ -527,7 +527,7 @@ RSpline.Ray = RSpline_Wrapper.Ray;
               return this.__PROXY__.appendControlPoints(...args);
             
         };
-    
+        
         // function 
         RSpline.prototype.removeLastControlPoint = function(...args) 
           
@@ -537,7 +537,7 @@ RSpline.Ray = RSpline_Wrapper.Ray;
               return this.__PROXY__.removeLastControlPoint(...args);
             
         };
-    
+        
         // function 
         RSpline.prototype.setControlPoints = function(...args) 
           
@@ -547,7 +547,7 @@ RSpline.Ray = RSpline_Wrapper.Ray;
               return this.__PROXY__.setControlPoints(...args);
             
         };
-    
+        
         // function 
         RSpline.prototype.getControlPoints = function(...args) 
           
@@ -557,7 +557,7 @@ RSpline.Ray = RSpline_Wrapper.Ray;
               return this.__PROXY__.getControlPoints(...args);
             
         };
-    
+        
         // function 
         RSpline.prototype.getControlPointsWrapped = function(...args) 
           
@@ -567,7 +567,7 @@ RSpline.Ray = RSpline_Wrapper.Ray;
               return this.__PROXY__.getControlPointsWrapped(...args);
             
         };
-    
+        
         // function 
         RSpline.prototype.countControlPoints = function(...args) 
           
@@ -577,7 +577,7 @@ RSpline.Ray = RSpline_Wrapper.Ray;
               return this.__PROXY__.countControlPoints(...args);
             
         };
-    
+        
         // function 
         RSpline.prototype.getControlPointAt = function(...args) 
           
@@ -587,7 +587,7 @@ RSpline.Ray = RSpline_Wrapper.Ray;
               return this.__PROXY__.getControlPointAt(...args);
             
         };
-    
+        
         // function 
         RSpline.prototype.appendFitPoint = function(...args) 
           
@@ -597,7 +597,7 @@ RSpline.Ray = RSpline_Wrapper.Ray;
               return this.__PROXY__.appendFitPoint(...args);
             
         };
-    
+        
         // function 
         RSpline.prototype.prependFitPoint = function(...args) 
           
@@ -607,7 +607,7 @@ RSpline.Ray = RSpline_Wrapper.Ray;
               return this.__PROXY__.prependFitPoint(...args);
             
         };
-    
+        
         // function 
         RSpline.prototype.insertFitPointAt = function(...args) 
           
@@ -617,7 +617,7 @@ RSpline.Ray = RSpline_Wrapper.Ray;
               return this.__PROXY__.insertFitPointAt(...args);
             
         };
-    
+        
         // function 
         RSpline.prototype.removeFitPointAt = function(...args) 
           
@@ -627,7 +627,7 @@ RSpline.Ray = RSpline_Wrapper.Ray;
               return this.__PROXY__.removeFitPointAt(...args);
             
         };
-    
+        
         // function 
         RSpline.prototype.removeFirstFitPoint = function(...args) 
           
@@ -637,7 +637,7 @@ RSpline.Ray = RSpline_Wrapper.Ray;
               return this.__PROXY__.removeFirstFitPoint(...args);
             
         };
-    
+        
         // function 
         RSpline.prototype.removeLastFitPoint = function(...args) 
           
@@ -647,7 +647,7 @@ RSpline.Ray = RSpline_Wrapper.Ray;
               return this.__PROXY__.removeLastFitPoint(...args);
             
         };
-    
+        
         // function 
         RSpline.prototype.setFitPoints = function(...args) 
           
@@ -657,7 +657,7 @@ RSpline.Ray = RSpline_Wrapper.Ray;
               return this.__PROXY__.setFitPoints(...args);
             
         };
-    
+        
         // function 
         RSpline.prototype.getFitPoints = function(...args) 
           
@@ -667,7 +667,7 @@ RSpline.Ray = RSpline_Wrapper.Ray;
               return this.__PROXY__.getFitPoints(...args);
             
         };
-    
+        
         // function 
         RSpline.prototype.countFitPoints = function(...args) 
           
@@ -677,7 +677,7 @@ RSpline.Ray = RSpline_Wrapper.Ray;
               return this.__PROXY__.countFitPoints(...args);
             
         };
-    
+        
         // function 
         RSpline.prototype.hasFitPoints = function(...args) 
           
@@ -687,7 +687,7 @@ RSpline.Ray = RSpline_Wrapper.Ray;
               return this.__PROXY__.hasFitPoints(...args);
             
         };
-    
+        
         // function 
         RSpline.prototype.getFitPointAt = function(...args) 
           
@@ -697,7 +697,7 @@ RSpline.Ray = RSpline_Wrapper.Ray;
               return this.__PROXY__.getFitPointAt(...args);
             
         };
-    
+        
         // function 
         RSpline.prototype.getKnotVector = function(...args) 
           
@@ -707,7 +707,7 @@ RSpline.Ray = RSpline_Wrapper.Ray;
               return this.__PROXY__.getKnotVector(...args);
             
         };
-    
+        
         // function 
         RSpline.prototype.getActualKnotVector = function(...args) 
           
@@ -717,7 +717,7 @@ RSpline.Ray = RSpline_Wrapper.Ray;
               return this.__PROXY__.getActualKnotVector(...args);
             
         };
-    
+        
         // function 
         RSpline.prototype.setKnotVector = function(...args) 
           
@@ -727,7 +727,7 @@ RSpline.Ray = RSpline_Wrapper.Ray;
               return this.__PROXY__.setKnotVector(...args);
             
         };
-    
+        
         // function 
         RSpline.prototype.appendKnot = function(...args) 
           
@@ -737,7 +737,7 @@ RSpline.Ray = RSpline_Wrapper.Ray;
               return this.__PROXY__.appendKnot(...args);
             
         };
-    
+        
         // function 
         RSpline.prototype.getWeights = function(...args) 
           
@@ -747,7 +747,7 @@ RSpline.Ray = RSpline_Wrapper.Ray;
               return this.__PROXY__.getWeights(...args);
             
         };
-    
+        
         // function 
         RSpline.prototype.setWeights = function(...args) 
           
@@ -757,7 +757,7 @@ RSpline.Ray = RSpline_Wrapper.Ray;
               return this.__PROXY__.setWeights(...args);
             
         };
-    
+        
         // function 
         RSpline.prototype.setDegree = function(...args) 
           
@@ -767,7 +767,7 @@ RSpline.Ray = RSpline_Wrapper.Ray;
               return this.__PROXY__.setDegree(...args);
             
         };
-    
+        
         // function 
         RSpline.prototype.getDegree = function(...args) 
           
@@ -777,7 +777,7 @@ RSpline.Ray = RSpline_Wrapper.Ray;
               return this.__PROXY__.getDegree(...args);
             
         };
-    
+        
         // function 
         RSpline.prototype.getOrder = function(...args) 
           
@@ -787,7 +787,7 @@ RSpline.Ray = RSpline_Wrapper.Ray;
               return this.__PROXY__.getOrder(...args);
             
         };
-    
+        
         // function 
         RSpline.prototype.setPeriodic = function(...args) 
           
@@ -797,7 +797,7 @@ RSpline.Ray = RSpline_Wrapper.Ray;
               return this.__PROXY__.setPeriodic(...args);
             
         };
-    
+        
         // function 
         RSpline.prototype.isClosed = function(...args) 
           
@@ -807,7 +807,7 @@ RSpline.Ray = RSpline_Wrapper.Ray;
               return this.__PROXY__.isClosed(...args);
             
         };
-    
+        
         // function 
         RSpline.prototype.isGeometricallyClosed = function(...args) 
           
@@ -817,7 +817,7 @@ RSpline.Ray = RSpline_Wrapper.Ray;
               return this.__PROXY__.isGeometricallyClosed(...args);
             
         };
-    
+        
         // function 
         RSpline.prototype.isPeriodic = function(...args) 
           
@@ -827,7 +827,7 @@ RSpline.Ray = RSpline_Wrapper.Ray;
               return this.__PROXY__.isPeriodic(...args);
             
         };
-    
+        
         // function 
         RSpline.prototype.getDirection1 = function(...args) 
           
@@ -837,7 +837,7 @@ RSpline.Ray = RSpline_Wrapper.Ray;
               return this.__PROXY__.getDirection1(...args);
             
         };
-    
+        
         // function 
         RSpline.prototype.getDirection2 = function(...args) 
           
@@ -847,7 +847,7 @@ RSpline.Ray = RSpline_Wrapper.Ray;
               return this.__PROXY__.getDirection2(...args);
             
         };
-    
+        
         // function 
         RSpline.prototype.getSideOfPoint = function(...args) 
           
@@ -857,7 +857,7 @@ RSpline.Ray = RSpline_Wrapper.Ray;
               return this.__PROXY__.getSideOfPoint(...args);
             
         };
-    
+        
         // function 
         RSpline.prototype.getStartPoint = function(...args) 
           
@@ -867,7 +867,7 @@ RSpline.Ray = RSpline_Wrapper.Ray;
               return this.__PROXY__.getStartPoint(...args);
             
         };
-    
+        
         // function 
         RSpline.prototype.getEndPoint = function(...args) 
           
@@ -877,7 +877,7 @@ RSpline.Ray = RSpline_Wrapper.Ray;
               return this.__PROXY__.getEndPoint(...args);
             
         };
-    
+        
         // function 
         RSpline.prototype.setStartPoint = function(...args) 
           
@@ -887,7 +887,7 @@ RSpline.Ray = RSpline_Wrapper.Ray;
               return this.__PROXY__.setStartPoint(...args);
             
         };
-    
+        
         // function 
         RSpline.prototype.setEndPoint = function(...args) 
           
@@ -897,7 +897,7 @@ RSpline.Ray = RSpline_Wrapper.Ray;
               return this.__PROXY__.setEndPoint(...args);
             
         };
-    
+        
         // function 
         RSpline.prototype.setTangents = function(...args) 
           
@@ -907,7 +907,7 @@ RSpline.Ray = RSpline_Wrapper.Ray;
               return this.__PROXY__.setTangents(...args);
             
         };
-    
+        
         // function 
         RSpline.prototype.unsetTangents = function(...args) 
           
@@ -917,7 +917,7 @@ RSpline.Ray = RSpline_Wrapper.Ray;
               return this.__PROXY__.unsetTangents(...args);
             
         };
-    
+        
         // function 
         RSpline.prototype.setTangentAtStart = function(...args) 
           
@@ -927,7 +927,7 @@ RSpline.Ray = RSpline_Wrapper.Ray;
               return this.__PROXY__.setTangentAtStart(...args);
             
         };
-    
+        
         // function 
         RSpline.prototype.getTangentAtStart = function(...args) 
           
@@ -937,7 +937,7 @@ RSpline.Ray = RSpline_Wrapper.Ray;
               return this.__PROXY__.getTangentAtStart(...args);
             
         };
-    
+        
         // function 
         RSpline.prototype.unsetTangentAtStart = function(...args) 
           
@@ -947,7 +947,7 @@ RSpline.Ray = RSpline_Wrapper.Ray;
               return this.__PROXY__.unsetTangentAtStart(...args);
             
         };
-    
+        
         // function 
         RSpline.prototype.setTangentAtEnd = function(...args) 
           
@@ -957,7 +957,7 @@ RSpline.Ray = RSpline_Wrapper.Ray;
               return this.__PROXY__.setTangentAtEnd(...args);
             
         };
-    
+        
         // function 
         RSpline.prototype.getTangentAtEnd = function(...args) 
           
@@ -967,7 +967,7 @@ RSpline.Ray = RSpline_Wrapper.Ray;
               return this.__PROXY__.getTangentAtEnd(...args);
             
         };
-    
+        
         // function 
         RSpline.prototype.unsetTangentAtEnd = function(...args) 
           
@@ -977,7 +977,7 @@ RSpline.Ray = RSpline_Wrapper.Ray;
               return this.__PROXY__.unsetTangentAtEnd(...args);
             
         };
-    
+        
         // function 
         RSpline.prototype.updateTangentsPeriodic = function(...args) 
           
@@ -987,7 +987,7 @@ RSpline.Ray = RSpline_Wrapper.Ray;
               return this.__PROXY__.updateTangentsPeriodic(...args);
             
         };
-    
+        
         // function 
         RSpline.prototype.getBoundingBox = function(...args) 
           
@@ -997,7 +997,7 @@ RSpline.Ray = RSpline_Wrapper.Ray;
               return this.__PROXY__.getBoundingBox(...args);
             
         };
-    
+        
         // function 
         RSpline.prototype.getLength = function(...args) 
           
@@ -1007,7 +1007,7 @@ RSpline.Ray = RSpline_Wrapper.Ray;
               return this.__PROXY__.getLength(...args);
             
         };
-    
+        
         // function 
         RSpline.prototype.getPointAt = function(...args) 
           
@@ -1017,7 +1017,7 @@ RSpline.Ray = RSpline_Wrapper.Ray;
               return this.__PROXY__.getPointAt(...args);
             
         };
-    
+        
         // function 
         RSpline.prototype.getPointAtDistance = function(...args) 
           
@@ -1027,7 +1027,7 @@ RSpline.Ray = RSpline_Wrapper.Ray;
               return this.__PROXY__.getPointAtDistance(...args);
             
         };
-    
+        
         // function 
         RSpline.prototype.getAngleAt = function(...args) 
           
@@ -1037,7 +1037,7 @@ RSpline.Ray = RSpline_Wrapper.Ray;
               return this.__PROXY__.getAngleAt(...args);
             
         };
-    
+        
         // function 
         RSpline.prototype.getEndPoints = function(...args) 
           
@@ -1047,7 +1047,7 @@ RSpline.Ray = RSpline_Wrapper.Ray;
               return this.__PROXY__.getEndPoints(...args);
             
         };
-    
+        
         // function 
         RSpline.prototype.getMiddlePoint = function(...args) 
           
@@ -1057,7 +1057,7 @@ RSpline.Ray = RSpline_Wrapper.Ray;
               return this.__PROXY__.getMiddlePoint(...args);
             
         };
-    
+        
         // function 
         RSpline.prototype.getMiddlePoints = function(...args) 
           
@@ -1067,7 +1067,7 @@ RSpline.Ray = RSpline_Wrapper.Ray;
               return this.__PROXY__.getMiddlePoints(...args);
             
         };
-    
+        
         // function 
         RSpline.prototype.getCenterPoints = function(...args) 
           
@@ -1077,7 +1077,7 @@ RSpline.Ray = RSpline_Wrapper.Ray;
               return this.__PROXY__.getCenterPoints(...args);
             
         };
-    
+        
         // function 
         RSpline.prototype.getPointsWithDistanceToEnd = function(...args) 
           
@@ -1087,7 +1087,7 @@ RSpline.Ray = RSpline_Wrapper.Ray;
               return this.__PROXY__.getPointsWithDistanceToEnd(...args);
             
         };
-    
+        
         // function 
         RSpline.prototype.getPointCloud = function(...args) 
           
@@ -1097,7 +1097,7 @@ RSpline.Ray = RSpline_Wrapper.Ray;
               return this.__PROXY__.getPointCloud(...args);
             
         };
-    
+        
         // function 
         RSpline.prototype.getVectorTo = function(...args) 
           
@@ -1107,7 +1107,7 @@ RSpline.Ray = RSpline_Wrapper.Ray;
               return this.__PROXY__.getVectorTo(...args);
             
         };
-    
+        
         // function 
         RSpline.prototype.isOnShape = function(...args) 
           
@@ -1117,7 +1117,7 @@ RSpline.Ray = RSpline_Wrapper.Ray;
               return this.__PROXY__.isOnShape(...args);
             
         };
-    
+        
         // function 
         RSpline.prototype.move = function(...args) 
           
@@ -1127,7 +1127,7 @@ RSpline.Ray = RSpline_Wrapper.Ray;
               return this.__PROXY__.move(...args);
             
         };
-    
+        
         // function 
         RSpline.prototype.rotate = function(...args) 
           
@@ -1137,7 +1137,7 @@ RSpline.Ray = RSpline_Wrapper.Ray;
               return this.__PROXY__.rotate(...args);
             
         };
-    
+        
         // function 
         RSpline.prototype.scale = function(...args) 
           
@@ -1147,7 +1147,7 @@ RSpline.Ray = RSpline_Wrapper.Ray;
               return this.__PROXY__.scale(...args);
             
         };
-    
+        
         // function 
         RSpline.prototype.mirror = function(...args) 
           
@@ -1157,7 +1157,7 @@ RSpline.Ray = RSpline_Wrapper.Ray;
               return this.__PROXY__.mirror(...args);
             
         };
-    
+        
         // function 
         RSpline.prototype.flipHorizontal = function(...args) 
           
@@ -1167,7 +1167,7 @@ RSpline.Ray = RSpline_Wrapper.Ray;
               return this.__PROXY__.flipHorizontal(...args);
             
         };
-    
+        
         // function 
         RSpline.prototype.flipVertical = function(...args) 
           
@@ -1177,7 +1177,7 @@ RSpline.Ray = RSpline_Wrapper.Ray;
               return this.__PROXY__.flipVertical(...args);
             
         };
-    
+        
         // function 
         RSpline.prototype.reverse = function(...args) 
           
@@ -1187,7 +1187,7 @@ RSpline.Ray = RSpline_Wrapper.Ray;
               return this.__PROXY__.reverse(...args);
             
         };
-    
+        
         // function 
         RSpline.prototype.stretch = function(...args) 
           
@@ -1197,7 +1197,7 @@ RSpline.Ray = RSpline_Wrapper.Ray;
               return this.__PROXY__.stretch(...args);
             
         };
-    
+        
         // function 
         RSpline.prototype.getTransformed = function(...args) 
           
@@ -1207,7 +1207,7 @@ RSpline.Ray = RSpline_Wrapper.Ray;
               return this.__PROXY__.getTransformed(...args);
             
         };
-    
+        
         // function 
         RSpline.prototype.getTrimEnd = function(...args) 
           
@@ -1217,7 +1217,7 @@ RSpline.Ray = RSpline_Wrapper.Ray;
               return this.__PROXY__.getTrimEnd(...args);
             
         };
-    
+        
         // function 
         RSpline.prototype.trimStartPoint = function(...args) 
           
@@ -1227,7 +1227,7 @@ RSpline.Ray = RSpline_Wrapper.Ray;
               return this.__PROXY__.trimStartPoint(...args);
             
         };
-    
+        
         // function 
         RSpline.prototype.trimEndPoint = function(...args) 
           
@@ -1237,7 +1237,7 @@ RSpline.Ray = RSpline_Wrapper.Ray;
               return this.__PROXY__.trimEndPoint(...args);
             
         };
-    
+        
         // function 
         RSpline.prototype.getDistanceFromStart = function(...args) 
           
@@ -1247,7 +1247,7 @@ RSpline.Ray = RSpline_Wrapper.Ray;
               return this.__PROXY__.getDistanceFromStart(...args);
             
         };
-    
+        
         // function 
         RSpline.prototype.splitAtPoints = function(...args) 
           
@@ -1257,7 +1257,7 @@ RSpline.Ray = RSpline_Wrapper.Ray;
               return this.__PROXY__.splitAtPoints(...args);
             
         };
-    
+        
         // function 
         RSpline.prototype.splitAtParams = function(...args) 
           
@@ -1267,7 +1267,7 @@ RSpline.Ray = RSpline_Wrapper.Ray;
               return this.__PROXY__.splitAtParams(...args);
             
         };
-    
+        
         // function 
         RSpline.prototype.toPolyline = function(...args) 
           
@@ -1277,7 +1277,7 @@ RSpline.Ray = RSpline_Wrapper.Ray;
               return this.__PROXY__.toPolyline(...args);
             
         };
-    
+        
         // function 
         RSpline.prototype.approximateWithArcs = function(...args) 
           
@@ -1287,7 +1287,7 @@ RSpline.Ray = RSpline_Wrapper.Ray;
               return this.__PROXY__.approximateWithArcs(...args);
             
         };
-    
+        
         // function 
         RSpline.prototype.getExploded = function(...args) 
           
@@ -1297,7 +1297,7 @@ RSpline.Ray = RSpline_Wrapper.Ray;
               return this.__PROXY__.getExploded(...args);
             
         };
-    
+        
         // function 
         RSpline.prototype.getExplodedBezier = function(...args) 
           
@@ -1307,7 +1307,7 @@ RSpline.Ray = RSpline_Wrapper.Ray;
               return this.__PROXY__.getExplodedBezier(...args);
             
         };
-    
+        
         // function 
         RSpline.prototype.getExplodedWithSegmentLength = function(...args) 
           
@@ -1317,7 +1317,7 @@ RSpline.Ray = RSpline_Wrapper.Ray;
               return this.__PROXY__.getExplodedWithSegmentLength(...args);
             
         };
-    
+        
         // function 
         RSpline.prototype.getBezierSegments = function(...args) 
           
@@ -1327,7 +1327,7 @@ RSpline.Ray = RSpline_Wrapper.Ray;
               return this.__PROXY__.getBezierSegments(...args);
             
         };
-    
+        
         // function 
         RSpline.prototype.isValid = function(...args) 
           
@@ -1337,7 +1337,7 @@ RSpline.Ray = RSpline_Wrapper.Ray;
               return this.__PROXY__.isValid(...args);
             
         };
-    
+        
         // function 
         RSpline.prototype.getTDelta = function(...args) 
           
@@ -1347,7 +1347,7 @@ RSpline.Ray = RSpline_Wrapper.Ray;
               return this.__PROXY__.getTDelta(...args);
             
         };
-    
+        
         // function 
         RSpline.prototype.getTMin = function(...args) 
           
@@ -1357,7 +1357,7 @@ RSpline.Ray = RSpline_Wrapper.Ray;
               return this.__PROXY__.getTMin(...args);
             
         };
-    
+        
         // function 
         RSpline.prototype.getTMax = function(...args) 
           
@@ -1367,7 +1367,7 @@ RSpline.Ray = RSpline_Wrapper.Ray;
               return this.__PROXY__.getTMax(...args);
             
         };
-    
+        
         // function 
         RSpline.prototype.getTAtPoint = function(...args) 
           
@@ -1377,7 +1377,7 @@ RSpline.Ray = RSpline_Wrapper.Ray;
               return this.__PROXY__.getTAtPoint(...args);
             
         };
-    
+        
         // function 
         RSpline.prototype.getTAtDistance = function(...args) 
           
@@ -1387,7 +1387,7 @@ RSpline.Ray = RSpline_Wrapper.Ray;
               return this.__PROXY__.getTAtDistance(...args);
             
         };
-    
+        
         // function 
         RSpline.prototype.getDistanceAtT = function(...args) 
           
@@ -1397,7 +1397,7 @@ RSpline.Ray = RSpline_Wrapper.Ray;
               return this.__PROXY__.getDistanceAtT(...args);
             
         };
-    
+        
         // function 
         RSpline.prototype.getSegments = function(...args) 
           
@@ -1407,7 +1407,7 @@ RSpline.Ray = RSpline_Wrapper.Ray;
               return this.__PROXY__.getSegments(...args);
             
         };
-    
+        
         // function 
         RSpline.prototype.getDiscontinuities = function(...args) 
           
@@ -1417,7 +1417,7 @@ RSpline.Ray = RSpline_Wrapper.Ray;
               return this.__PROXY__.getDiscontinuities(...args);
             
         };
-    
+        
         // function 
         RSpline.prototype.simplify = function(...args) 
           
@@ -1427,7 +1427,7 @@ RSpline.Ray = RSpline_Wrapper.Ray;
               return this.__PROXY__.simplify(...args);
             
         };
-    
+        
         // function 
         RSpline.prototype.updateFromControlPoints = function(...args) 
           
@@ -1437,7 +1437,7 @@ RSpline.Ray = RSpline_Wrapper.Ray;
               return this.__PROXY__.updateFromControlPoints(...args);
             
         };
-    
+        
         // function 
         RSpline.prototype.updateFromFitPoints = function(...args) 
           
@@ -1447,7 +1447,7 @@ RSpline.Ray = RSpline_Wrapper.Ray;
               return this.__PROXY__.updateFromFitPoints(...args);
             
         };
-    
+        
         // function 
         RSpline.prototype.update = function(...args) 
           
@@ -1457,7 +1457,7 @@ RSpline.Ray = RSpline_Wrapper.Ray;
               return this.__PROXY__.update(...args);
             
         };
-    
+        
         // function 
         RSpline.prototype.splitAt = function(...args) 
           
@@ -1467,7 +1467,7 @@ RSpline.Ray = RSpline_Wrapper.Ray;
               return this.__PROXY__.splitAt(...args);
             
         };
-    
+        
         // function 
         RSpline.prototype.isDirty = function(...args) 
           
@@ -1477,7 +1477,7 @@ RSpline.Ray = RSpline_Wrapper.Ray;
               return this.__PROXY__.isDirty(...args);
             
         };
-    
+        
         // function 
         RSpline.prototype.getSelfIntersectionPoints = function(...args) 
           
@@ -1487,7 +1487,7 @@ RSpline.Ray = RSpline_Wrapper.Ray;
               return this.__PROXY__.getSelfIntersectionPoints(...args);
             
         };
-    
+        
         // function 
         RSpline.prototype.hasProxy = function(...args) 
           
@@ -1497,7 +1497,7 @@ RSpline.Ray = RSpline_Wrapper.Ray;
               return this.__PROXY__.hasProxy(...args);
             
         };
-    
+        
         // function 
         RSpline.prototype.appendToExploded = function(...args) 
           
@@ -1507,7 +1507,7 @@ RSpline.Ray = RSpline_Wrapper.Ray;
               return this.__PROXY__.appendToExploded(...args);
             
         };
-    
+        
         // function 
         RSpline.prototype.invalidate = function(...args) 
           
@@ -1517,7 +1517,7 @@ RSpline.Ray = RSpline_Wrapper.Ray;
               return this.__PROXY__.invalidate(...args);
             
         };
-    
+        
         // function 
         RSpline.prototype.updateInternal = function(...args) 
           
@@ -1527,7 +1527,7 @@ RSpline.Ray = RSpline_Wrapper.Ray;
               return this.__PROXY__.updateInternal(...args);
             
         };
-    
+        
         // function 
         RSpline.prototype.updateBoundingBox = function(...args) 
           
@@ -1537,7 +1537,7 @@ RSpline.Ray = RSpline_Wrapper.Ray;
               return this.__PROXY__.updateBoundingBox(...args);
             
         };
-    
+        
         // function 
         RSpline.prototype.print = function(...args) 
           
@@ -1547,7 +1547,7 @@ RSpline.Ray = RSpline_Wrapper.Ray;
               return this.__PROXY__.print(...args);
             
         };
-    
+        
         // function 
         RSpline.prototype.copy = function(...args) 
           
@@ -1557,7 +1557,7 @@ RSpline.Ray = RSpline_Wrapper.Ray;
               return this.__PROXY__.copy(...args);
             
         };
-    
+        
 
       // static functions:
       

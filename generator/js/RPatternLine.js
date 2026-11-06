@@ -134,7 +134,7 @@
               return this.__PROXY__.getPainterPath(...args);
             
         };
-    
+        
         // function 
         RPatternLine.prototype.hasDots = function(...args) 
           
@@ -144,7 +144,7 @@
               return this.__PROXY__.hasDots(...args);
             
         };
-    
+        
         // function 
         RPatternLine.prototype.getLines = function(...args) 
           
@@ -154,7 +154,7 @@
               return this.__PROXY__.getLines(...args);
             
         };
-    
+        
         // function 
         RPatternLine.prototype.getLength = function(...args) 
           
@@ -164,7 +164,7 @@
               return this.__PROXY__.getLength(...args);
             
         };
-    
+        
         // function 
         RPatternLine.prototype.getAngle = function(...args) 
           
@@ -174,7 +174,7 @@
               return this.__PROXY__.getAngle(...args);
             
         };
-    
+        
         // function 
         RPatternLine.prototype.getOffset = function(...args) 
           
@@ -184,7 +184,7 @@
               return this.__PROXY__.getOffset(...args);
             
         };
-    
+        
         // function 
         RPatternLine.prototype.getBasePoint = function(...args) 
           
@@ -194,7 +194,7 @@
               return this.__PROXY__.getBasePoint(...args);
             
         };
-    
+        
         // function 
         RPatternLine.prototype.getDashes = function(...args) 
           
@@ -204,7 +204,7 @@
               return this.__PROXY__.getDashes(...args);
             
         };
-    
+        
         // function 
         RPatternLine.prototype.scale = function(...args) 
           
@@ -214,7 +214,7 @@
               return this.__PROXY__.scale(...args);
             
         };
-    
+        
         // function 
         RPatternLine.prototype.rotate = function(...args) 
           
@@ -224,7 +224,7 @@
               return this.__PROXY__.rotate(...args);
             
         };
-    
+        
 
       // static functions:
       RPatternLine.prototype.isNullWrapper = function() {

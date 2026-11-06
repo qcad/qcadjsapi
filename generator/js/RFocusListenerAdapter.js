@@ -142,7 +142,8 @@
               return this.__PROXY__.eventFilterSuper(...args);
             
         };
-    
+        RFocusListenerAdapter.prototype.eventFilter.__SUPER__ = true;
+        
         // function 
         RFocusListenerAdapter.prototype.setObjectName = function(...args) 
           
@@ -152,7 +153,7 @@
               return this.__PROXY__.setObjectName(...args);
             
         };
-    
+        
         // function 
         RFocusListenerAdapter.prototype.isWidgetType = function(...args) 
           
@@ -162,7 +163,7 @@
               return this.__PROXY__.isWidgetType(...args);
             
         };
-    
+        
         // function 
         RFocusListenerAdapter.prototype.isWindowType = function(...args) 
           
@@ -172,7 +173,7 @@
               return this.__PROXY__.isWindowType(...args);
             
         };
-    
+        
         // function 
         RFocusListenerAdapter.prototype.signalsBlocked = function(...args) 
           
@@ -182,7 +183,7 @@
               return this.__PROXY__.signalsBlocked(...args);
             
         };
-    
+        
         // function 
         RFocusListenerAdapter.prototype.blockSignals = function(...args) 
           
@@ -192,7 +193,7 @@
               return this.__PROXY__.blockSignals(...args);
             
         };
-    
+        
         // function 
         RFocusListenerAdapter.prototype.findChild = function(...args) 
           
@@ -202,7 +203,7 @@
               return this.__PROXY__.findChild(...args);
             
         };
-    
+        
         // function 
         RFocusListenerAdapter.prototype.children = function(...args) 
           
@@ -212,7 +213,7 @@
               return this.__PROXY__.children(...args);
             
         };
-    
+        
         // function 
         RFocusListenerAdapter.prototype.setParent = function(...args) 
           
@@ -222,7 +223,7 @@
               return this.__PROXY__.setParent(...args);
             
         };
-    
+        
         // function 
         RFocusListenerAdapter.prototype.installEventFilter = function(...args) 
           
@@ -232,7 +233,7 @@
               return this.__PROXY__.installEventFilter(...args);
             
         };
-    
+        
         // function 
         RFocusListenerAdapter.prototype.removeEventFilter = function(...args) 
           
@@ -242,7 +243,7 @@
               return this.__PROXY__.removeEventFilter(...args);
             
         };
-    
+        
         // function 
         RFocusListenerAdapter.prototype.dumpObjectTree = function(...args) 
           
@@ -252,7 +253,7 @@
               return this.__PROXY__.dumpObjectTree(...args);
             
         };
-    
+        
         // function 
         RFocusListenerAdapter.prototype.dumpObjectInfo = function(...args) 
           
@@ -262,7 +263,7 @@
               return this.__PROXY__.dumpObjectInfo(...args);
             
         };
-    
+        
         // function 
         RFocusListenerAdapter.prototype.setProperty = function(...args) 
           
@@ -272,7 +273,7 @@
               return this.__PROXY__.setProperty(...args);
             
         };
-    
+        
         // function 
         RFocusListenerAdapter.prototype.property = function(...args) 
           
@@ -282,7 +283,7 @@
               return this.__PROXY__.property(...args);
             
         };
-    
+        
         // function 
         RFocusListenerAdapter.prototype.dynamicPropertyNames = function(...args) 
           
@@ -292,7 +293,7 @@
               return this.__PROXY__.dynamicPropertyNames(...args);
             
         };
-    
+        
         // function 
         RFocusListenerAdapter.prototype.parent = function(...args) 
           
@@ -302,7 +303,7 @@
               return this.__PROXY__.parent(...args);
             
         };
-    
+        
         // function 
         RFocusListenerAdapter.prototype.deleteLater = function(...args) 
           
@@ -312,7 +313,7 @@
               return this.__PROXY__.deleteLater(...args);
             
         };
-    
+        
       // function 
       RFocusListenerAdapter.prototype.updateFocus = function() 
         

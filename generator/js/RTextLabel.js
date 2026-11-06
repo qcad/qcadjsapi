@@ -182,7 +182,7 @@ RTextLabel.Ray = RTextLabel_Wrapper.Ray;
               return this.__PROXY__.isValid(...args);
             
         };
-    
+        
         // function 
         RTextLabel.prototype.isInterpolated = function(...args) 
           
@@ -192,7 +192,7 @@ RTextLabel.Ray = RTextLabel_Wrapper.Ray;
               return this.__PROXY__.isInterpolated(...args);
             
         };
-    
+        
         // function 
         RTextLabel.prototype.getClosestPointOnShape = function(...args) 
           
@@ -202,7 +202,7 @@ RTextLabel.Ray = RTextLabel_Wrapper.Ray;
               return this.__PROXY__.getClosestPointOnShape(...args);
             
         };
-    
+        
         // function 
         RTextLabel.prototype.to2D = function(...args) 
           
@@ -212,7 +212,7 @@ RTextLabel.Ray = RTextLabel_Wrapper.Ray;
               return this.__PROXY__.to2D(...args);
             
         };
-    
+        
         // function 
         RTextLabel.prototype.equals = function(...args) 
           
@@ -222,7 +222,7 @@ RTextLabel.Ray = RTextLabel_Wrapper.Ray;
               return this.__PROXY__.equals(...args);
             
         };
-    
+        
         // function 
         RTextLabel.prototype.getIntProperties = function(...args) 
           
@@ -232,7 +232,7 @@ RTextLabel.Ray = RTextLabel_Wrapper.Ray;
               return this.__PROXY__.getIntProperties(...args);
             
         };
-    
+        
         // function 
         RTextLabel.prototype.getDoubleProperties = function(...args) 
           
@@ -242,7 +242,7 @@ RTextLabel.Ray = RTextLabel_Wrapper.Ray;
               return this.__PROXY__.getDoubleProperties(...args);
             
         };
-    
+        
         // function 
         RTextLabel.prototype.getBoolProperties = function(...args) 
           
@@ -252,7 +252,7 @@ RTextLabel.Ray = RTextLabel_Wrapper.Ray;
               return this.__PROXY__.getBoolProperties(...args);
             
         };
-    
+        
         // function 
         RTextLabel.prototype.getDistanceTo = function(...args) 
           
@@ -262,7 +262,7 @@ RTextLabel.Ray = RTextLabel_Wrapper.Ray;
               return this.__PROXY__.getDistanceTo(...args);
             
         };
-    
+        
         // function 
         RTextLabel.prototype.getMaxDistanceTo = function(...args) 
           
@@ -272,7 +272,7 @@ RTextLabel.Ray = RTextLabel_Wrapper.Ray;
               return this.__PROXY__.getMaxDistanceTo(...args);
             
         };
-    
+        
         // function 
         RTextLabel.prototype.isOnShape = function(...args) 
           
@@ -282,7 +282,7 @@ RTextLabel.Ray = RTextLabel_Wrapper.Ray;
               return this.__PROXY__.isOnShape(...args);
             
         };
-    
+        
         // function 
         RTextLabel.prototype.filterOnShape = function(...args) 
           
@@ -292,7 +292,7 @@ RTextLabel.Ray = RTextLabel_Wrapper.Ray;
               return this.__PROXY__.filterOnShape(...args);
             
         };
-    
+        
         // function 
         RTextLabel.prototype.getVectorFromEndpointTo = function(...args) 
           
@@ -302,7 +302,7 @@ RTextLabel.Ray = RTextLabel_Wrapper.Ray;
               return this.__PROXY__.getVectorFromEndpointTo(...args);
             
         };
-    
+        
         // function 
         RTextLabel.prototype.getArcReferencePoints = function(...args) 
           
@@ -312,7 +312,7 @@ RTextLabel.Ray = RTextLabel_Wrapper.Ray;
               return this.__PROXY__.getArcReferencePoints(...args);
             
         };
-    
+        
         // function 
         RTextLabel.prototype.getPointOnShape = function(...args) 
           
@@ -322,7 +322,7 @@ RTextLabel.Ray = RTextLabel_Wrapper.Ray;
               return this.__PROXY__.getPointOnShape(...args);
             
         };
-    
+        
         // function 
         RTextLabel.prototype.getPointWithDistanceToStart = function(...args) 
           
@@ -332,7 +332,7 @@ RTextLabel.Ray = RTextLabel_Wrapper.Ray;
               return this.__PROXY__.getPointWithDistanceToStart(...args);
             
         };
-    
+        
         // function 
         RTextLabel.prototype.getPointWithDistanceToEnd = function(...args) 
           
@@ -342,7 +342,7 @@ RTextLabel.Ray = RTextLabel_Wrapper.Ray;
               return this.__PROXY__.getPointWithDistanceToEnd(...args);
             
         };
-    
+        
         // function 
         RTextLabel.prototype.getAngleAtPoint = function(...args) 
           
@@ -352,7 +352,7 @@ RTextLabel.Ray = RTextLabel_Wrapper.Ray;
               return this.__PROXY__.getAngleAtPoint(...args);
             
         };
-    
+        
         // function 
         RTextLabel.prototype.getPointAtPercent = function(...args) 
           
@@ -362,7 +362,7 @@ RTextLabel.Ray = RTextLabel_Wrapper.Ray;
               return this.__PROXY__.getPointAtPercent(...args);
             
         };
-    
+        
         // function 
         RTextLabel.prototype.getAngleAtPercent = function(...args) 
           
@@ -372,7 +372,7 @@ RTextLabel.Ray = RTextLabel_Wrapper.Ray;
               return this.__PROXY__.getAngleAtPercent(...args);
             
         };
-    
+        
         // function 
         RTextLabel.prototype.intersectsWith = function(...args) 
           
@@ -382,7 +382,7 @@ RTextLabel.Ray = RTextLabel_Wrapper.Ray;
               return this.__PROXY__.intersectsWith(...args);
             
         };
-    
+        
         // function 
         RTextLabel.prototype.getIntersectionPoints = function(...args) 
           
@@ -392,7 +392,7 @@ RTextLabel.Ray = RTextLabel_Wrapper.Ray;
               return this.__PROXY__.getIntersectionPoints(...args);
             
         };
-    
+        
         // function 
         RTextLabel.prototype.getSelfIntersectionPoints = function(...args) 
           
@@ -402,7 +402,7 @@ RTextLabel.Ray = RTextLabel_Wrapper.Ray;
               return this.__PROXY__.getSelfIntersectionPoints(...args);
             
         };
-    
+        
         // function 
         RTextLabel.prototype.isDirected = function(...args) 
           
@@ -412,7 +412,7 @@ RTextLabel.Ray = RTextLabel_Wrapper.Ray;
               return this.__PROXY__.isDirected(...args);
             
         };
-    
+        
         // function 
         RTextLabel.prototype.getDirection1 = function(...args) 
           
@@ -422,7 +422,7 @@ RTextLabel.Ray = RTextLabel_Wrapper.Ray;
               return this.__PROXY__.getDirection1(...args);
             
         };
-    
+        
         // function 
         RTextLabel.prototype.getDirection2 = function(...args) 
           
@@ -432,7 +432,7 @@ RTextLabel.Ray = RTextLabel_Wrapper.Ray;
               return this.__PROXY__.getDirection2(...args);
             
         };
-    
+        
         // function 
         RTextLabel.prototype.getSideOfPoint = function(...args) 
           
@@ -442,7 +442,7 @@ RTextLabel.Ray = RTextLabel_Wrapper.Ray;
               return this.__PROXY__.getSideOfPoint(...args);
             
         };
-    
+        
         // function 
         RTextLabel.prototype.getStartPoint = function(...args) 
           
@@ -452,7 +452,7 @@ RTextLabel.Ray = RTextLabel_Wrapper.Ray;
               return this.__PROXY__.getStartPoint(...args);
             
         };
-    
+        
         // function 
         RTextLabel.prototype.getEndPoint = function(...args) 
           
@@ -462,7 +462,7 @@ RTextLabel.Ray = RTextLabel_Wrapper.Ray;
               return this.__PROXY__.getEndPoint(...args);
             
         };
-    
+        
         // function 
         RTextLabel.prototype.getMiddlePoint = function(...args) 
           
@@ -472,7 +472,7 @@ RTextLabel.Ray = RTextLabel_Wrapper.Ray;
               return this.__PROXY__.getMiddlePoint(...args);
             
         };
-    
+        
         // function 
         RTextLabel.prototype.reverse = function(...args) 
           
@@ -482,7 +482,7 @@ RTextLabel.Ray = RTextLabel_Wrapper.Ray;
               return this.__PROXY__.reverse(...args);
             
         };
-    
+        
         // function 
         RTextLabel.prototype.trimStartPoint = function(...args) 
           
@@ -492,7 +492,7 @@ RTextLabel.Ray = RTextLabel_Wrapper.Ray;
               return this.__PROXY__.trimStartPoint(...args);
             
         };
-    
+        
         // function 
         RTextLabel.prototype.trimEndPoint = function(...args) 
           
@@ -502,7 +502,7 @@ RTextLabel.Ray = RTextLabel_Wrapper.Ray;
               return this.__PROXY__.trimEndPoint(...args);
             
         };
-    
+        
         // function 
         RTextLabel.prototype.getTrimEnd = function(...args) 
           
@@ -512,7 +512,7 @@ RTextLabel.Ray = RTextLabel_Wrapper.Ray;
               return this.__PROXY__.getTrimEnd(...args);
             
         };
-    
+        
         // function 
         RTextLabel.prototype.getDistanceFromStart = function(...args) 
           
@@ -522,7 +522,7 @@ RTextLabel.Ray = RTextLabel_Wrapper.Ray;
               return this.__PROXY__.getDistanceFromStart(...args);
             
         };
-    
+        
         // function 
         RTextLabel.prototype.getDistancesFromStart = function(...args) 
           
@@ -532,7 +532,7 @@ RTextLabel.Ray = RTextLabel_Wrapper.Ray;
               return this.__PROXY__.getDistancesFromStart(...args);
             
         };
-    
+        
         // function 
         RTextLabel.prototype.stretch = function(...args) 
           
@@ -542,7 +542,7 @@ RTextLabel.Ray = RTextLabel_Wrapper.Ray;
               return this.__PROXY__.stretch(...args);
             
         };
-    
+        
         // function 
         RTextLabel.prototype.getOffsetShapes = function(...args) 
           
@@ -552,7 +552,7 @@ RTextLabel.Ray = RTextLabel_Wrapper.Ray;
               return this.__PROXY__.getOffsetShapes(...args);
             
         };
-    
+        
         // function 
         RTextLabel.prototype.splitAt = function(...args) 
           
@@ -562,7 +562,7 @@ RTextLabel.Ray = RTextLabel_Wrapper.Ray;
               return this.__PROXY__.splitAt(...args);
             
         };
-    
+        
         // function 
         RTextLabel.prototype.dump = function(...args) 
           
@@ -572,7 +572,7 @@ RTextLabel.Ray = RTextLabel_Wrapper.Ray;
               return this.__PROXY__.dump(...args);
             
         };
-    
+        
         // function 
         RTextLabel.prototype.getShapeType = function(...args) 
           
@@ -582,7 +582,7 @@ RTextLabel.Ray = RTextLabel_Wrapper.Ray;
               return this.__PROXY__.getShapeType(...args);
             
         };
-    
+        
         // function 
         RTextLabel.prototype.setZ = function(...args) 
           
@@ -592,7 +592,7 @@ RTextLabel.Ray = RTextLabel_Wrapper.Ray;
               return this.__PROXY__.setZ(...args);
             
         };
-    
+        
         // function 
         RTextLabel.prototype.getVectorProperties = function(...args) 
           
@@ -602,7 +602,7 @@ RTextLabel.Ray = RTextLabel_Wrapper.Ray;
               return this.__PROXY__.getVectorProperties(...args);
             
         };
-    
+        
         // function 
         RTextLabel.prototype.getPosition = function(...args) 
           
@@ -612,7 +612,7 @@ RTextLabel.Ray = RTextLabel_Wrapper.Ray;
               return this.__PROXY__.getPosition(...args);
             
         };
-    
+        
         // function 
         RTextLabel.prototype.setPosition = function(...args) 
           
@@ -622,7 +622,7 @@ RTextLabel.Ray = RTextLabel_Wrapper.Ray;
               return this.__PROXY__.setPosition(...args);
             
         };
-    
+        
         // function 
         RTextLabel.prototype.getBoundingBox = function(...args) 
           
@@ -632,7 +632,7 @@ RTextLabel.Ray = RTextLabel_Wrapper.Ray;
               return this.__PROXY__.getBoundingBox(...args);
             
         };
-    
+        
         // function 
         RTextLabel.prototype.getLength = function(...args) 
           
@@ -642,7 +642,7 @@ RTextLabel.Ray = RTextLabel_Wrapper.Ray;
               return this.__PROXY__.getLength(...args);
             
         };
-    
+        
         // function 
         RTextLabel.prototype.getEndPoints = function(...args) 
           
@@ -652,7 +652,7 @@ RTextLabel.Ray = RTextLabel_Wrapper.Ray;
               return this.__PROXY__.getEndPoints(...args);
             
         };
-    
+        
         // function 
         RTextLabel.prototype.getMiddlePoints = function(...args) 
           
@@ -662,7 +662,7 @@ RTextLabel.Ray = RTextLabel_Wrapper.Ray;
               return this.__PROXY__.getMiddlePoints(...args);
             
         };
-    
+        
         // function 
         RTextLabel.prototype.getCenterPoints = function(...args) 
           
@@ -672,7 +672,7 @@ RTextLabel.Ray = RTextLabel_Wrapper.Ray;
               return this.__PROXY__.getCenterPoints(...args);
             
         };
-    
+        
         // function 
         RTextLabel.prototype.getPointsWithDistanceToEnd = function(...args) 
           
@@ -682,7 +682,7 @@ RTextLabel.Ray = RTextLabel_Wrapper.Ray;
               return this.__PROXY__.getPointsWithDistanceToEnd(...args);
             
         };
-    
+        
         // function 
         RTextLabel.prototype.getPointCloud = function(...args) 
           
@@ -692,7 +692,7 @@ RTextLabel.Ray = RTextLabel_Wrapper.Ray;
               return this.__PROXY__.getPointCloud(...args);
             
         };
-    
+        
         // function 
         RTextLabel.prototype.getAngleAt = function(...args) 
           
@@ -702,7 +702,7 @@ RTextLabel.Ray = RTextLabel_Wrapper.Ray;
               return this.__PROXY__.getAngleAt(...args);
             
         };
-    
+        
         // function 
         RTextLabel.prototype.getVectorTo = function(...args) 
           
@@ -712,7 +712,7 @@ RTextLabel.Ray = RTextLabel_Wrapper.Ray;
               return this.__PROXY__.getVectorTo(...args);
             
         };
-    
+        
         // function 
         RTextLabel.prototype.move = function(...args) 
           
@@ -722,7 +722,7 @@ RTextLabel.Ray = RTextLabel_Wrapper.Ray;
               return this.__PROXY__.move(...args);
             
         };
-    
+        
         // function 
         RTextLabel.prototype.rotate = function(...args) 
           
@@ -732,7 +732,7 @@ RTextLabel.Ray = RTextLabel_Wrapper.Ray;
               return this.__PROXY__.rotate(...args);
             
         };
-    
+        
         // function 
         RTextLabel.prototype.scale = function(...args) 
           
@@ -742,7 +742,7 @@ RTextLabel.Ray = RTextLabel_Wrapper.Ray;
               return this.__PROXY__.scale(...args);
             
         };
-    
+        
         // function 
         RTextLabel.prototype.mirror = function(...args) 
           
@@ -752,7 +752,7 @@ RTextLabel.Ray = RTextLabel_Wrapper.Ray;
               return this.__PROXY__.mirror(...args);
             
         };
-    
+        
         // function 
         RTextLabel.prototype.flipHorizontal = function(...args) 
           
@@ -762,7 +762,7 @@ RTextLabel.Ray = RTextLabel_Wrapper.Ray;
               return this.__PROXY__.flipHorizontal(...args);
             
         };
-    
+        
         // function 
         RTextLabel.prototype.flipVertical = function(...args) 
           
@@ -772,7 +772,7 @@ RTextLabel.Ray = RTextLabel_Wrapper.Ray;
               return this.__PROXY__.flipVertical(...args);
             
         };
-    
+        
         // function 
         RTextLabel.prototype.getTransformed = function(...args) 
           
@@ -782,7 +782,7 @@ RTextLabel.Ray = RTextLabel_Wrapper.Ray;
               return this.__PROXY__.getTransformed(...args);
             
         };
-    
+        
         // function 
         RTextLabel.prototype.copy = function(...args) 
           
@@ -792,7 +792,7 @@ RTextLabel.Ray = RTextLabel_Wrapper.Ray;
               return this.__PROXY__.copy(...args);
             
         };
-    
+        
         // function 
         RTextLabel.prototype.clone = function(...args) 
           
@@ -802,7 +802,7 @@ RTextLabel.Ray = RTextLabel_Wrapper.Ray;
               return this.__PROXY__.clone(...args);
             
         };
-    
+        
         // function 
         RTextLabel.prototype.getText = function(...args) 
           
@@ -812,7 +812,7 @@ RTextLabel.Ray = RTextLabel_Wrapper.Ray;
               return this.__PROXY__.getText(...args);
             
         };
-    
+        
         // function 
         RTextLabel.prototype.getUserData = function(...args) 
           
@@ -822,7 +822,7 @@ RTextLabel.Ray = RTextLabel_Wrapper.Ray;
               return this.__PROXY__.getUserData(...args);
             
         };
-    
+        
         // function 
         RTextLabel.prototype.print = function(...args) 
           
@@ -832,7 +832,7 @@ RTextLabel.Ray = RTextLabel_Wrapper.Ray;
               return this.__PROXY__.print(...args);
             
         };
-    
+        
 
       // static functions:
       

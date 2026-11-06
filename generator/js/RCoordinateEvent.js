@@ -316,7 +316,7 @@ RCoordinateEvent.MaxUser = RCoordinateEvent_Wrapper.MaxUser;
               return this.__PROXY__.type(...args);
             
         };
-    
+        
         // function 
         RCoordinateEvent.prototype.spontaneous = function(...args) 
           
@@ -326,7 +326,7 @@ RCoordinateEvent.MaxUser = RCoordinateEvent_Wrapper.MaxUser;
               return this.__PROXY__.spontaneous(...args);
             
         };
-    
+        
         // function 
         RCoordinateEvent.prototype.setAccepted = function(...args) 
           
@@ -336,7 +336,7 @@ RCoordinateEvent.MaxUser = RCoordinateEvent_Wrapper.MaxUser;
               return this.__PROXY__.setAccepted(...args);
             
         };
-    
+        
         // function 
         RCoordinateEvent.prototype.isAccepted = function(...args) 
           
@@ -346,7 +346,7 @@ RCoordinateEvent.MaxUser = RCoordinateEvent_Wrapper.MaxUser;
               return this.__PROXY__.isAccepted(...args);
             
         };
-    
+        
         // function 
         RCoordinateEvent.prototype.accept = function(...args) 
           
@@ -356,7 +356,7 @@ RCoordinateEvent.MaxUser = RCoordinateEvent_Wrapper.MaxUser;
               return this.__PROXY__.accept(...args);
             
         };
-    
+        
         // function 
         RCoordinateEvent.prototype.ignore = function(...args) 
           
@@ -366,7 +366,7 @@ RCoordinateEvent.MaxUser = RCoordinateEvent_Wrapper.MaxUser;
               return this.__PROXY__.ignore(...args);
             
         };
-    
+        
         // function 
         RCoordinateEvent.prototype.isInputEvent = function(...args) 
           
@@ -376,7 +376,7 @@ RCoordinateEvent.MaxUser = RCoordinateEvent_Wrapper.MaxUser;
               return this.__PROXY__.isInputEvent(...args);
             
         };
-    
+        
         // function 
         RCoordinateEvent.prototype.isPointerEvent = function(...args) 
           
@@ -386,7 +386,7 @@ RCoordinateEvent.MaxUser = RCoordinateEvent_Wrapper.MaxUser;
               return this.__PROXY__.isPointerEvent(...args);
             
         };
-    
+        
         // function 
         RCoordinateEvent.prototype.isSinglePointEvent = function(...args) 
           
@@ -396,7 +396,7 @@ RCoordinateEvent.MaxUser = RCoordinateEvent_Wrapper.MaxUser;
               return this.__PROXY__.isSinglePointEvent(...args);
             
         };
-    
+        
         // function 
         RCoordinateEvent.prototype.clone = function(...args) 
           
@@ -406,7 +406,7 @@ RCoordinateEvent.MaxUser = RCoordinateEvent_Wrapper.MaxUser;
               return this.__PROXY__.clone(...args);
             
         };
-    
+        
         // function 
         RCoordinateEvent.prototype.setSpontaneous = function(...args) 
           
@@ -416,7 +416,7 @@ RCoordinateEvent.MaxUser = RCoordinateEvent_Wrapper.MaxUser;
               return this.__PROXY__.setSpontaneous(...args);
             
         };
-    
+        
         // function 
         RCoordinateEvent.prototype.getModelPosition = function(...args) 
           
@@ -426,7 +426,7 @@ RCoordinateEvent.MaxUser = RCoordinateEvent_Wrapper.MaxUser;
               return this.__PROXY__.getModelPosition(...args);
             
         };
-    
+        
         // function 
         RCoordinateEvent.prototype.setModelPosition = function(...args) 
           
@@ -436,7 +436,7 @@ RCoordinateEvent.MaxUser = RCoordinateEvent_Wrapper.MaxUser;
               return this.__PROXY__.setModelPosition(...args);
             
         };
-    
+        
         // function 
         RCoordinateEvent.prototype.getCursorPosition = function(...args) 
           
@@ -446,7 +446,7 @@ RCoordinateEvent.MaxUser = RCoordinateEvent_Wrapper.MaxUser;
               return this.__PROXY__.getCursorPosition(...args);
             
         };
-    
+        
         // function 
         RCoordinateEvent.prototype.setCursorPosition = function(...args) 
           
@@ -456,7 +456,7 @@ RCoordinateEvent.MaxUser = RCoordinateEvent_Wrapper.MaxUser;
               return this.__PROXY__.setCursorPosition(...args);
             
         };
-    
+        
         // function 
         RCoordinateEvent.prototype.getScreenPosition = function(...args) 
           
@@ -466,7 +466,7 @@ RCoordinateEvent.MaxUser = RCoordinateEvent_Wrapper.MaxUser;
               return this.__PROXY__.getScreenPosition(...args);
             
         };
-    
+        
         // function 
         RCoordinateEvent.prototype.setScreenPosition = function(...args) 
           
@@ -476,7 +476,7 @@ RCoordinateEvent.MaxUser = RCoordinateEvent_Wrapper.MaxUser;
               return this.__PROXY__.setScreenPosition(...args);
             
         };
-    
+        
         // function 
         RCoordinateEvent.prototype.getGraphicsView = function(...args) 
           
@@ -486,7 +486,7 @@ RCoordinateEvent.MaxUser = RCoordinateEvent_Wrapper.MaxUser;
               return this.__PROXY__.getGraphicsView(...args);
             
         };
-    
+        
         // function 
         RCoordinateEvent.prototype.getGraphicsScene = function(...args) 
           
@@ -496,7 +496,7 @@ RCoordinateEvent.MaxUser = RCoordinateEvent_Wrapper.MaxUser;
               return this.__PROXY__.getGraphicsScene(...args);
             
         };
-    
+        
         // function 
         RCoordinateEvent.prototype.isValid = function(...args) 
           
@@ -506,7 +506,7 @@ RCoordinateEvent.MaxUser = RCoordinateEvent_Wrapper.MaxUser;
               return this.__PROXY__.isValid(...args);
             
         };
-    
+        
         // function 
         RCoordinateEvent.prototype.setModifiers = function(...args) 
           
@@ -516,7 +516,7 @@ RCoordinateEvent.MaxUser = RCoordinateEvent_Wrapper.MaxUser;
               return this.__PROXY__.setModifiers(...args);
             
         };
-    
+        
         // function 
         RCoordinateEvent.prototype.getModifiers = function(...args) 
           
@@ -526,7 +526,7 @@ RCoordinateEvent.MaxUser = RCoordinateEvent_Wrapper.MaxUser;
               return this.__PROXY__.getModifiers(...args);
             
         };
-    
+        
 
       // static functions:
       RCoordinateEvent.prototype.isNullWrapper = function() {

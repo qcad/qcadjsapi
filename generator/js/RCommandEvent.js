@@ -134,7 +134,7 @@
               return this.__PROXY__.getCommand(...args);
             
         };
-    
+        
         // function 
         RCommandEvent.prototype.accept = function(...args) 
           
@@ -144,7 +144,7 @@
               return this.__PROXY__.accept(...args);
             
         };
-    
+        
         // function 
         RCommandEvent.prototype.isAccepted = function(...args) 
           
@@ -154,7 +154,7 @@
               return this.__PROXY__.isAccepted(...args);
             
         };
-    
+        
 
       // static functions:
       RCommandEvent.prototype.isNullWrapper = function() {

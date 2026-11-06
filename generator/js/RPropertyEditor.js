@@ -146,7 +146,8 @@
               return this.__PROXY__.eventFilterSuper(...args);
             
         };
-    
+        RPropertyEditor.prototype.eventFilter.__SUPER__ = true;
+        
         // function 
         RPropertyEditor.prototype.setObjectName = function(...args) 
           
@@ -156,7 +157,7 @@
               return this.__PROXY__.setObjectName(...args);
             
         };
-    
+        
         // function 
         RPropertyEditor.prototype.isWidgetType = function(...args) 
           
@@ -166,7 +167,7 @@
               return this.__PROXY__.isWidgetType(...args);
             
         };
-    
+        
         // function 
         RPropertyEditor.prototype.isWindowType = function(...args) 
           
@@ -176,7 +177,7 @@
               return this.__PROXY__.isWindowType(...args);
             
         };
-    
+        
         // function 
         RPropertyEditor.prototype.signalsBlocked = function(...args) 
           
@@ -186,7 +187,7 @@
               return this.__PROXY__.signalsBlocked(...args);
             
         };
-    
+        
         // function 
         RPropertyEditor.prototype.blockSignals = function(...args) 
           
@@ -196,7 +197,7 @@
               return this.__PROXY__.blockSignals(...args);
             
         };
-    
+        
         // function 
         RPropertyEditor.prototype.findChild = function(...args) 
           
@@ -206,7 +207,7 @@
               return this.__PROXY__.findChild(...args);
             
         };
-    
+        
         // function 
         RPropertyEditor.prototype.children = function(...args) 
           
@@ -216,7 +217,7 @@
               return this.__PROXY__.children(...args);
             
         };
-    
+        
         // function 
         RPropertyEditor.prototype.setParent = function(...args) 
           
@@ -226,7 +227,7 @@
               return this.__PROXY__.setParent(...args);
             
         };
-    
+        
         // function 
         RPropertyEditor.prototype.installEventFilter = function(...args) 
           
@@ -236,7 +237,7 @@
               return this.__PROXY__.installEventFilter(...args);
             
         };
-    
+        
         // function 
         RPropertyEditor.prototype.removeEventFilter = function(...args) 
           
@@ -246,7 +247,7 @@
               return this.__PROXY__.removeEventFilter(...args);
             
         };
-    
+        
         // function 
         RPropertyEditor.prototype.dumpObjectTree = function(...args) 
           
@@ -256,7 +257,7 @@
               return this.__PROXY__.dumpObjectTree(...args);
             
         };
-    
+        
         // function 
         RPropertyEditor.prototype.dumpObjectInfo = function(...args) 
           
@@ -266,7 +267,7 @@
               return this.__PROXY__.dumpObjectInfo(...args);
             
         };
-    
+        
         // function 
         RPropertyEditor.prototype.setProperty = function(...args) 
           
@@ -276,7 +277,7 @@
               return this.__PROXY__.setProperty(...args);
             
         };
-    
+        
         // function 
         RPropertyEditor.prototype.property = function(...args) 
           
@@ -286,7 +287,7 @@
               return this.__PROXY__.property(...args);
             
         };
-    
+        
         // function 
         RPropertyEditor.prototype.dynamicPropertyNames = function(...args) 
           
@@ -296,7 +297,7 @@
               return this.__PROXY__.dynamicPropertyNames(...args);
             
         };
-    
+        
         // function 
         RPropertyEditor.prototype.parent = function(...args) 
           
@@ -306,7 +307,7 @@
               return this.__PROXY__.parent(...args);
             
         };
-    
+        
         // function 
         RPropertyEditor.prototype.deleteLater = function(...args) 
           
@@ -316,7 +317,7 @@
               return this.__PROXY__.deleteLater(...args);
             
         };
-    
+        
         // function 
         RPropertyEditor.prototype.getInstance = function(...args) 
           
@@ -326,7 +327,7 @@
               return this.__PROXY__.getInstance(...args);
             
         };
-    
+        
       // function 
       RPropertyEditor.prototype.updateFromDocument = function() 
         
@@ -499,7 +500,7 @@
               return this.__PROXY__.updateLayers(...args);
             
         };
-    
+        
         // function 
         RPropertyEditor.prototype.setCurrentLayer = function(...args) 
           
@@ -509,7 +510,7 @@
               return this.__PROXY__.setCurrentLayer(...args);
             
         };
-    
+        
         // function 
         RPropertyEditor.prototype.clearLayers = function(...args) 
           
@@ -519,7 +520,7 @@
               return this.__PROXY__.clearLayers(...args);
             
         };
-    
+        
         // function 
         RPropertyEditor.prototype.propertyChanged = function(...args) 
           
@@ -529,7 +530,7 @@
               return this.__PROXY__.propertyChanged(...args);
             
         };
-    
+        
         // function 
         RPropertyEditor.prototype.listPropertyChanged = function(...args) 
           
@@ -539,7 +540,7 @@
               return this.__PROXY__.listPropertyChanged(...args);
             
         };
-    
+        
         // function 
         RPropertyEditor.prototype.getGroupTitles = function(...args) 
           
@@ -549,7 +550,7 @@
               return this.__PROXY__.getGroupTitles(...args);
             
         };
-    
+        
         // function 
         RPropertyEditor.prototype.getPropertyTitles = function(...args) 
           
@@ -559,7 +560,7 @@
               return this.__PROXY__.getPropertyTitles(...args);
             
         };
-    
+        
         // function 
         RPropertyEditor.prototype.getPropertyValue = function(...args) 
           
@@ -569,7 +570,7 @@
               return this.__PROXY__.getPropertyValue(...args);
             
         };
-    
+        
         // function 
         RPropertyEditor.prototype.getPropertyAttributes = function(...args) 
           
@@ -579,7 +580,7 @@
               return this.__PROXY__.getPropertyAttributes(...args);
             
         };
-    
+        
         // function 
         RPropertyEditor.prototype.getCustomPropertyAttributes = function(...args) 
           
@@ -589,7 +590,7 @@
               return this.__PROXY__.getCustomPropertyAttributes(...args);
             
         };
-    
+        
         // function 
         RPropertyEditor.prototype.getTypes = function(...args) 
           
@@ -599,7 +600,7 @@
               return this.__PROXY__.getTypes(...args);
             
         };
-    
+        
         // function 
         RPropertyEditor.prototype.getTypeCount = function(...args) 
           
@@ -609,7 +610,7 @@
               return this.__PROXY__.getTypeCount(...args);
             
         };
-    
+        
         // function 
         RPropertyEditor.prototype.setEntityTypeFilter = function(...args) 
           
@@ -619,7 +620,7 @@
               return this.__PROXY__.setEntityTypeFilter(...args);
             
         };
-    
+        
         // function 
         RPropertyEditor.prototype.getEntityTypeFilter = function(...args) 
           
@@ -629,7 +630,7 @@
               return this.__PROXY__.getEntityTypeFilter(...args);
             
         };
-    
+        
         // function 
         RPropertyEditor.prototype.getAppProperties = function(...args) 
           
@@ -639,7 +640,7 @@
               return this.__PROXY__.getAppProperties(...args);
             
         };
-    
+        
         // function 
         RPropertyEditor.prototype.checkType = function(...args) 
           
@@ -649,7 +650,7 @@
               return this.__PROXY__.checkType(...args);
             
         };
-    
+        
         // function 
         RPropertyEditor.prototype.makeReadOnly = function(...args) 
           
@@ -659,7 +660,7 @@
               return this.__PROXY__.makeReadOnly(...args);
             
         };
-    
+        
         // function 
         RPropertyEditor.prototype.updateEditor = function(...args) 
           
@@ -669,7 +670,8 @@
               return this.__PROXY__.updateEditorSuper(...args);
             
         };
-    
+        RPropertyEditor.prototype.updateEditor.__SUPER__ = true;
+        
       // function 
       RPropertyEditor.prototype.updateGui = function() 
         
@@ -712,7 +714,8 @@
               return this.__PROXY__.updatePropertySuper(...args);
             
         };
-    
+        RPropertyEditor.prototype.updateProperty.__SUPER__ = true;
+        
         // function 
         RPropertyEditor.prototype.showCustomAppProperties = function(...args) 
           
@@ -722,7 +725,8 @@
               return this.__PROXY__.showCustomAppPropertiesSuper(...args);
             
         };
-    
+        RPropertyEditor.prototype.showCustomAppProperties.__SUPER__ = true;
+        
 
       // static functions:
       

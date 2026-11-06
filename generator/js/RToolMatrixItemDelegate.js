@@ -153,7 +153,7 @@ RToolMatrixItemDelegate.RevertModelCache = RToolMatrixItemDelegate_Wrapper.Rever
               return this.__PROXY__.setObjectName(...args);
             
         };
-    
+        
         // function 
         RToolMatrixItemDelegate.prototype.isWidgetType = function(...args) 
           
@@ -163,7 +163,7 @@ RToolMatrixItemDelegate.RevertModelCache = RToolMatrixItemDelegate_Wrapper.Rever
               return this.__PROXY__.isWidgetType(...args);
             
         };
-    
+        
         // function 
         RToolMatrixItemDelegate.prototype.isWindowType = function(...args) 
           
@@ -173,7 +173,7 @@ RToolMatrixItemDelegate.RevertModelCache = RToolMatrixItemDelegate_Wrapper.Rever
               return this.__PROXY__.isWindowType(...args);
             
         };
-    
+        
         // function 
         RToolMatrixItemDelegate.prototype.signalsBlocked = function(...args) 
           
@@ -183,7 +183,7 @@ RToolMatrixItemDelegate.RevertModelCache = RToolMatrixItemDelegate_Wrapper.Rever
               return this.__PROXY__.signalsBlocked(...args);
             
         };
-    
+        
         // function 
         RToolMatrixItemDelegate.prototype.blockSignals = function(...args) 
           
@@ -193,7 +193,7 @@ RToolMatrixItemDelegate.RevertModelCache = RToolMatrixItemDelegate_Wrapper.Rever
               return this.__PROXY__.blockSignals(...args);
             
         };
-    
+        
         // function 
         RToolMatrixItemDelegate.prototype.findChild = function(...args) 
           
@@ -203,7 +203,7 @@ RToolMatrixItemDelegate.RevertModelCache = RToolMatrixItemDelegate_Wrapper.Rever
               return this.__PROXY__.findChild(...args);
             
         };
-    
+        
         // function 
         RToolMatrixItemDelegate.prototype.children = function(...args) 
           
@@ -213,7 +213,7 @@ RToolMatrixItemDelegate.RevertModelCache = RToolMatrixItemDelegate_Wrapper.Rever
               return this.__PROXY__.children(...args);
             
         };
-    
+        
         // function 
         RToolMatrixItemDelegate.prototype.setParent = function(...args) 
           
@@ -223,7 +223,7 @@ RToolMatrixItemDelegate.RevertModelCache = RToolMatrixItemDelegate_Wrapper.Rever
               return this.__PROXY__.setParent(...args);
             
         };
-    
+        
         // function 
         RToolMatrixItemDelegate.prototype.installEventFilter = function(...args) 
           
@@ -233,7 +233,7 @@ RToolMatrixItemDelegate.RevertModelCache = RToolMatrixItemDelegate_Wrapper.Rever
               return this.__PROXY__.installEventFilter(...args);
             
         };
-    
+        
         // function 
         RToolMatrixItemDelegate.prototype.removeEventFilter = function(...args) 
           
@@ -243,7 +243,7 @@ RToolMatrixItemDelegate.RevertModelCache = RToolMatrixItemDelegate_Wrapper.Rever
               return this.__PROXY__.removeEventFilter(...args);
             
         };
-    
+        
         // function 
         RToolMatrixItemDelegate.prototype.dumpObjectTree = function(...args) 
           
@@ -253,7 +253,7 @@ RToolMatrixItemDelegate.RevertModelCache = RToolMatrixItemDelegate_Wrapper.Rever
               return this.__PROXY__.dumpObjectTree(...args);
             
         };
-    
+        
         // function 
         RToolMatrixItemDelegate.prototype.dumpObjectInfo = function(...args) 
           
@@ -263,7 +263,7 @@ RToolMatrixItemDelegate.RevertModelCache = RToolMatrixItemDelegate_Wrapper.Rever
               return this.__PROXY__.dumpObjectInfo(...args);
             
         };
-    
+        
         // function 
         RToolMatrixItemDelegate.prototype.setProperty = function(...args) 
           
@@ -273,7 +273,7 @@ RToolMatrixItemDelegate.RevertModelCache = RToolMatrixItemDelegate_Wrapper.Rever
               return this.__PROXY__.setProperty(...args);
             
         };
-    
+        
         // function 
         RToolMatrixItemDelegate.prototype.property = function(...args) 
           
@@ -283,7 +283,7 @@ RToolMatrixItemDelegate.RevertModelCache = RToolMatrixItemDelegate_Wrapper.Rever
               return this.__PROXY__.property(...args);
             
         };
-    
+        
         // function 
         RToolMatrixItemDelegate.prototype.dynamicPropertyNames = function(...args) 
           
@@ -293,7 +293,7 @@ RToolMatrixItemDelegate.RevertModelCache = RToolMatrixItemDelegate_Wrapper.Rever
               return this.__PROXY__.dynamicPropertyNames(...args);
             
         };
-    
+        
         // function 
         RToolMatrixItemDelegate.prototype.parent = function(...args) 
           
@@ -303,7 +303,7 @@ RToolMatrixItemDelegate.RevertModelCache = RToolMatrixItemDelegate_Wrapper.Rever
               return this.__PROXY__.parent(...args);
             
         };
-    
+        
         // function 
         RToolMatrixItemDelegate.prototype.deleteLater = function(...args) 
           
@@ -313,7 +313,7 @@ RToolMatrixItemDelegate.RevertModelCache = RToolMatrixItemDelegate_Wrapper.Rever
               return this.__PROXY__.deleteLater(...args);
             
         };
-    
+        
         // function 
         RToolMatrixItemDelegate.prototype.destroyEditor = function(...args) 
           
@@ -323,7 +323,7 @@ RToolMatrixItemDelegate.RevertModelCache = RToolMatrixItemDelegate_Wrapper.Rever
               return this.__PROXY__.destroyEditor(...args);
             
         };
-    
+        
         // function 
         RToolMatrixItemDelegate.prototype.paintingRoles = function(...args) 
           
@@ -333,7 +333,7 @@ RToolMatrixItemDelegate.RevertModelCache = RToolMatrixItemDelegate_Wrapper.Rever
               return this.__PROXY__.paintingRoles(...args);
             
         };
-    
+        
         // function 
         RToolMatrixItemDelegate.prototype.hasClipping = function(...args) 
           
@@ -343,7 +343,7 @@ RToolMatrixItemDelegate.RevertModelCache = RToolMatrixItemDelegate_Wrapper.Rever
               return this.__PROXY__.hasClipping(...args);
             
         };
-    
+        
         // function 
         RToolMatrixItemDelegate.prototype.setClipping = function(...args) 
           
@@ -353,7 +353,7 @@ RToolMatrixItemDelegate.RevertModelCache = RToolMatrixItemDelegate_Wrapper.Rever
               return this.__PROXY__.setClipping(...args);
             
         };
-    
+        
         // function 
         RToolMatrixItemDelegate.prototype.createEditor = function(...args) 
           
@@ -363,7 +363,8 @@ RToolMatrixItemDelegate.RevertModelCache = RToolMatrixItemDelegate_Wrapper.Rever
               return this.__PROXY__.createEditorSuper(...args);
             
         };
-    
+        RToolMatrixItemDelegate.prototype.createEditor.__SUPER__ = true;
+        
         // function 
         RToolMatrixItemDelegate.prototype.setEditorData = function(...args) 
           
@@ -373,7 +374,7 @@ RToolMatrixItemDelegate.RevertModelCache = RToolMatrixItemDelegate_Wrapper.Rever
               return this.__PROXY__.setEditorData(...args);
             
         };
-    
+        
         // function 
         RToolMatrixItemDelegate.prototype.setModelData = function(...args) 
           
@@ -383,7 +384,7 @@ RToolMatrixItemDelegate.RevertModelCache = RToolMatrixItemDelegate_Wrapper.Rever
               return this.__PROXY__.setModelData(...args);
             
         };
-    
+        
         // function 
         RToolMatrixItemDelegate.prototype.eventFilter = function(...args) 
           
@@ -393,7 +394,7 @@ RToolMatrixItemDelegate.RevertModelCache = RToolMatrixItemDelegate_Wrapper.Rever
               return this.__PROXY__.eventFilter(...args);
             
         };
-    
+        
 
       // static functions:
       

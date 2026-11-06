@@ -105,7 +105,7 @@
               return this.__PROXY__.updateTransactionListener(...args);
             
         };
-    
+        
         // function 
         RTransactionListener.prototype.setCurrentBlock = function(...args) 
           
@@ -115,7 +115,7 @@
               return this.__PROXY__.setCurrentBlock(...args);
             
         };
-    
+        
 
       // static functions:
       RTransactionListener.prototype.isNullWrapper = function() {

@@ -105,7 +105,7 @@
               return this.__PROXY__.setGraphicsView(...args);
             
         };
-    
+        
         // function 
         RRuler.prototype.getOrientation = function(...args) 
           
@@ -115,7 +115,7 @@
               return this.__PROXY__.getOrientation(...args);
             
         };
-    
+        
         // function 
         RRuler.prototype.setOrientation = function(...args) 
           
@@ -125,7 +125,7 @@
               return this.__PROXY__.setOrientation(...args);
             
         };
-    
+        
         // function 
         RRuler.prototype.paintTick = function(...args) 
           
@@ -135,7 +135,7 @@
               return this.__PROXY__.paintTick(...args);
             
         };
-    
+        
         // function 
         RRuler.prototype.getFont = function(...args) 
           
@@ -145,7 +145,7 @@
               return this.__PROXY__.getFont(...args);
             
         };
-    
+        
         // function 
         RRuler.prototype.updateViewport = function(...args) 
           
@@ -155,7 +155,7 @@
               return this.__PROXY__.updateViewport(...args);
             
         };
-    
+        
 
       // static functions:
       RRuler.prototype.isNullWrapper = function() {

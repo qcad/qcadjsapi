@@ -187,7 +187,7 @@
               return this.__PROXY__.set(...args);
             
         };
-    
+        
         // function 
         RVector.prototype.setPolar = function(...args) 
           
@@ -197,7 +197,7 @@
               return this.__PROXY__.setPolar(...args);
             
         };
-    
+        
         // function 
         RVector.prototype.get2D = function(...args) 
           
@@ -207,7 +207,7 @@
               return this.__PROXY__.get2D(...args);
             
         };
-    
+        
         // function 
         RVector.prototype.isValid = function(...args) 
           
@@ -217,7 +217,7 @@
               return this.__PROXY__.isValid(...args);
             
         };
-    
+        
         // function 
         RVector.prototype.isZero = function(...args) 
           
@@ -227,7 +227,7 @@
               return this.__PROXY__.isZero(...args);
             
         };
-    
+        
         // function 
         RVector.prototype.isSane = function(...args) 
           
@@ -237,7 +237,7 @@
               return this.__PROXY__.isSane(...args);
             
         };
-    
+        
         // function 
         RVector.prototype.isNaN = function(...args) 
           
@@ -247,7 +247,7 @@
               return this.__PROXY__.isNaN(...args);
             
         };
-    
+        
         // function 
         RVector.prototype.isInside = function(...args) 
           
@@ -257,7 +257,7 @@
               return this.__PROXY__.isInside(...args);
             
         };
-    
+        
         // function 
         RVector.prototype.equalsFuzzy = function(...args) 
           
@@ -267,7 +267,7 @@
               return this.__PROXY__.equalsFuzzy(...args);
             
         };
-    
+        
         // function 
         RVector.prototype.equalsFuzzy2D = function(...args) 
           
@@ -277,7 +277,7 @@
               return this.__PROXY__.equalsFuzzy2D(...args);
             
         };
-    
+        
         // function 
         RVector.prototype.getDistanceTo = function(...args) 
           
@@ -287,7 +287,7 @@
               return this.__PROXY__.getDistanceTo(...args);
             
         };
-    
+        
         // function 
         RVector.prototype.getDistanceTo2D = function(...args) 
           
@@ -297,7 +297,7 @@
               return this.__PROXY__.getDistanceTo2D(...args);
             
         };
-    
+        
         // function 
         RVector.prototype.setAngle = function(...args) 
           
@@ -307,7 +307,7 @@
               return this.__PROXY__.setAngle(...args);
             
         };
-    
+        
         // function 
         RVector.prototype.getAngle = function(...args) 
           
@@ -317,7 +317,7 @@
               return this.__PROXY__.getAngle(...args);
             
         };
-    
+        
         // function 
         RVector.prototype.getAngleToPlaneXY = function(...args) 
           
@@ -327,7 +327,7 @@
               return this.__PROXY__.getAngleToPlaneXY(...args);
             
         };
-    
+        
         // function 
         RVector.prototype.getAngleTo = function(...args) 
           
@@ -337,7 +337,7 @@
               return this.__PROXY__.getAngleTo(...args);
             
         };
-    
+        
         // function 
         RVector.prototype.setMagnitude2D = function(...args) 
           
@@ -347,7 +347,7 @@
               return this.__PROXY__.setMagnitude2D(...args);
             
         };
-    
+        
         // function 
         RVector.prototype.getMagnitude = function(...args) 
           
@@ -357,7 +357,7 @@
               return this.__PROXY__.getMagnitude(...args);
             
         };
-    
+        
         // function 
         RVector.prototype.getSquaredMagnitude = function(...args) 
           
@@ -367,7 +367,7 @@
               return this.__PROXY__.getSquaredMagnitude(...args);
             
         };
-    
+        
         // function 
         RVector.prototype.getMagnitude2D = function(...args) 
           
@@ -377,7 +377,7 @@
               return this.__PROXY__.getMagnitude2D(...args);
             
         };
-    
+        
         // function 
         RVector.prototype.getLerp = function(...args) 
           
@@ -387,7 +387,7 @@
               return this.__PROXY__.getLerp(...args);
             
         };
-    
+        
         // function 
         RVector.prototype.getUnitVector = function(...args) 
           
@@ -397,7 +397,7 @@
               return this.__PROXY__.getUnitVector(...args);
             
         };
-    
+        
         // function 
         RVector.prototype.setX = function(...args) 
           
@@ -407,7 +407,7 @@
               return this.__PROXY__.setX(...args);
             
         };
-    
+        
         // function 
         RVector.prototype.getX = function(...args) 
           
@@ -417,7 +417,7 @@
               return this.__PROXY__.getX(...args);
             
         };
-    
+        
         // function 
         RVector.prototype.setY = function(...args) 
           
@@ -427,7 +427,7 @@
               return this.__PROXY__.setY(...args);
             
         };
-    
+        
         // function 
         RVector.prototype.getY = function(...args) 
           
@@ -437,7 +437,7 @@
               return this.__PROXY__.getY(...args);
             
         };
-    
+        
         // function 
         RVector.prototype.setZ = function(...args) 
           
@@ -447,7 +447,7 @@
               return this.__PROXY__.setZ(...args);
             
         };
-    
+        
         // function 
         RVector.prototype.getZ = function(...args) 
           
@@ -457,7 +457,7 @@
               return this.__PROXY__.getZ(...args);
             
         };
-    
+        
         // function 
         RVector.prototype.isInWindow = function(...args) 
           
@@ -467,7 +467,7 @@
               return this.__PROXY__.isInWindow(...args);
             
         };
-    
+        
         // function 
         RVector.prototype.move = function(...args) 
           
@@ -477,7 +477,7 @@
               return this.__PROXY__.move(...args);
             
         };
-    
+        
         // function 
         RVector.prototype.moveList = function(...args) 
           
@@ -487,7 +487,7 @@
               return this.__PROXY__.moveList(...args);
             
         };
-    
+        
         // function 
         RVector.prototype.rotate = function(...args) 
           
@@ -497,7 +497,7 @@
               return this.__PROXY__.rotate(...args);
             
         };
-    
+        
         // function 
         RVector.prototype.getRotated = function(...args) 
           
@@ -507,7 +507,7 @@
               return this.__PROXY__.getRotated(...args);
             
         };
-    
+        
         // function 
         RVector.prototype.rotate3D = function(...args) 
           
@@ -517,7 +517,7 @@
               return this.__PROXY__.rotate3D(...args);
             
         };
-    
+        
         // function 
         RVector.prototype.rotateList = function(...args) 
           
@@ -527,7 +527,7 @@
               return this.__PROXY__.rotateList(...args);
             
         };
-    
+        
         // function 
         RVector.prototype.scale = function(...args) 
           
@@ -537,7 +537,7 @@
               return this.__PROXY__.scale(...args);
             
         };
-    
+        
         // function 
         RVector.prototype.getScaled = function(...args) 
           
@@ -547,7 +547,7 @@
               return this.__PROXY__.getScaled(...args);
             
         };
-    
+        
         // function 
         RVector.prototype.scaleList = function(...args) 
           
@@ -557,7 +557,7 @@
               return this.__PROXY__.scaleList(...args);
             
         };
-    
+        
         // function 
         RVector.prototype.mirror = function(...args) 
           
@@ -567,7 +567,7 @@
               return this.__PROXY__.mirror(...args);
             
         };
-    
+        
         // function 
         RVector.prototype.getMirrored = function(...args) 
           
@@ -577,7 +577,7 @@
               return this.__PROXY__.getMirrored(...args);
             
         };
-    
+        
         // function 
         RVector.prototype.flipHorizontal = function(...args) 
           
@@ -587,7 +587,7 @@
               return this.__PROXY__.flipHorizontal(...args);
             
         };
-    
+        
         // function 
         RVector.prototype.flipVertical = function(...args) 
           
@@ -597,7 +597,7 @@
               return this.__PROXY__.flipVertical(...args);
             
         };
-    
+        
         // function 
         RVector.prototype.stretch = function(...args) 
           
@@ -607,7 +607,7 @@
               return this.__PROXY__.stretch(...args);
             
         };
-    
+        
         // function 
         RVector.prototype.isoProject = function(...args) 
           
@@ -617,7 +617,7 @@
               return this.__PROXY__.isoProject(...args);
             
         };
-    
+        
         // function 
         RVector.prototype.axonometricProjection = function(...args) 
           
@@ -627,7 +627,7 @@
               return this.__PROXY__.axonometricProjection(...args);
             
         };
-    
+        
         // function 
         RVector.prototype.obliqueProjection = function(...args) 
           
@@ -637,7 +637,7 @@
               return this.__PROXY__.obliqueProjection(...args);
             
         };
-    
+        
         // function 
         RVector.prototype.transform = function(...args) 
           
@@ -647,7 +647,7 @@
               return this.__PROXY__.transform(...args);
             
         };
-    
+        
         // function 
         RVector.prototype.transform2DM = function(...args) 
           
@@ -657,7 +657,7 @@
               return this.__PROXY__.transform2DM(...args);
             
         };
-    
+        
         // function 
         RVector.prototype.transform2D = function(...args) 
           
@@ -667,7 +667,7 @@
               return this.__PROXY__.transform2D(...args);
             
         };
-    
+        
         // function 
         RVector.prototype.getTransformed = function(...args) 
           
@@ -677,7 +677,7 @@
               return this.__PROXY__.getTransformed(...args);
             
         };
-    
+        
         // function 
         RVector.prototype.getTransformed2DM = function(...args) 
           
@@ -687,7 +687,7 @@
               return this.__PROXY__.getTransformed2DM(...args);
             
         };
-    
+        
         // function 
         RVector.prototype.getTransformed2D = function(...args) 
           
@@ -697,7 +697,7 @@
               return this.__PROXY__.getTransformed2D(...args);
             
         };
-    
+        
         // function 
         RVector.prototype.getDividedComponents = function(...args) 
           
@@ -707,7 +707,7 @@
               return this.__PROXY__.getDividedComponents(...args);
             
         };
-    
+        
         // function 
         RVector.prototype.getMultipliedComponents = function(...args) 
           
@@ -717,7 +717,7 @@
               return this.__PROXY__.getMultipliedComponents(...args);
             
         };
-    
+        
         // function 
         RVector.prototype.getClosest = function(...args) 
           
@@ -727,7 +727,7 @@
               return this.__PROXY__.getClosest(...args);
             
         };
-    
+        
         // function 
         RVector.prototype.getClosest2D = function(...args) 
           
@@ -737,7 +737,7 @@
               return this.__PROXY__.getClosest2D(...args);
             
         };
-    
+        
         // function 
         RVector.prototype.getClosestDistance = function(...args) 
           
@@ -747,7 +747,7 @@
               return this.__PROXY__.getClosestDistance(...args);
             
         };
-    
+        
         // function 
         RVector.prototype.getClosestIndex = function(...args) 
           
@@ -757,7 +757,7 @@
               return this.__PROXY__.getClosestIndex(...args);
             
         };
-    
+        
         // function 
         RVector.prototype.getClosestIndex2D = function(...args) 
           
@@ -767,7 +767,7 @@
               return this.__PROXY__.getClosestIndex2D(...args);
             
         };
-    
+        
         // function 
         RVector.prototype.operator_add = function(...args) 
           
@@ -777,7 +777,7 @@
               return this.__PROXY__.operator_add(...args);
             
         };
-    
+        
         // function 
         RVector.prototype.operator_subtract = function(...args) 
           
@@ -787,7 +787,7 @@
               return this.__PROXY__.operator_subtract(...args);
             
         };
-    
+        
         // function 
         RVector.prototype.operator_multiply = function(...args) 
           
@@ -797,7 +797,7 @@
               return this.__PROXY__.operator_multiply(...args);
             
         };
-    
+        
         // function 
         RVector.prototype.operator_divide = function(...args) 
           
@@ -807,7 +807,7 @@
               return this.__PROXY__.operator_divide(...args);
             
         };
-    
+        
         // function 
         RVector.prototype.getNegated = function(...args) 
           
@@ -817,7 +817,7 @@
               return this.__PROXY__.getNegated(...args);
             
         };
-    
+        
         // function 
         RVector.prototype.getAbsolute = function(...args) 
           
@@ -827,7 +827,7 @@
               return this.__PROXY__.getAbsolute(...args);
             
         };
-    
+        
         // function 
         RVector.prototype.dot = function(...args) 
           
@@ -837,7 +837,7 @@
               return this.__PROXY__.dot(...args);
             
         };
-    
+        
         // function 
         RVector.prototype.normalize = function(...args) 
           
@@ -847,7 +847,7 @@
               return this.__PROXY__.normalize(...args);
             
         };
-    
+        
         // function 
         RVector.prototype.getNormalized = function(...args) 
           
@@ -857,7 +857,7 @@
               return this.__PROXY__.getNormalized(...args);
             
         };
-    
+        
         // function 
         RVector.prototype.operator_add_assign = function(...args) 
           
@@ -867,7 +867,7 @@
               return this.__PROXY__.operator_add_assign(...args);
             
         };
-    
+        
         // function 
         RVector.prototype.operator_subtract_assign = function(...args) 
           
@@ -877,7 +877,7 @@
               return this.__PROXY__.operator_subtract_assign(...args);
             
         };
-    
+        
         // function 
         RVector.prototype.operator_multiply_assign = function(...args) 
           
@@ -887,7 +887,7 @@
               return this.__PROXY__.operator_multiply_assign(...args);
             
         };
-    
+        
         // function 
         RVector.prototype.operator_divide_assign = function(...args) 
           
@@ -897,7 +897,7 @@
               return this.__PROXY__.operator_divide_assign(...args);
             
         };
-    
+        
         // function 
         RVector.prototype.operator_equal = function(...args) 
           
@@ -907,7 +907,7 @@
               return this.__PROXY__.operator_equal(...args);
             
         };
-    
+        
         // function 
         RVector.prototype.operator_unequal = function(...args) 
           
@@ -917,7 +917,7 @@
               return this.__PROXY__.operator_unequal(...args);
             
         };
-    
+        
         // function 
         RVector.prototype.getFloor = function(...args) 
           
@@ -927,7 +927,7 @@
               return this.__PROXY__.getFloor(...args);
             
         };
-    
+        
         // function 
         RVector.prototype.getCeil = function(...args) 
           
@@ -937,7 +937,7 @@
               return this.__PROXY__.getCeil(...args);
             
         };
-    
+        
         // function 
         RVector.prototype.lteXY = function(...args) 
           
@@ -947,7 +947,7 @@
               return this.__PROXY__.lteXY(...args);
             
         };
-    
+        
         // function 
         RVector.prototype.gteXY = function(...args) 
           
@@ -957,7 +957,7 @@
               return this.__PROXY__.gteXY(...args);
             
         };
-    
+        
         // function 
         RVector.prototype.copy = function(...args) 
           
@@ -967,7 +967,7 @@
               return this.__PROXY__.copy(...args);
             
         };
-    
+        
         // function 
         RVector.prototype.containsFuzzy = function(...args) 
           
@@ -977,7 +977,7 @@
               return this.__PROXY__.containsFuzzy(...args);
             
         };
-    
+        
         // function 
         RVector.prototype.findFirstFuzzy = function(...args) 
           
@@ -987,7 +987,7 @@
               return this.__PROXY__.findFirstFuzzy(...args);
             
         };
-    
+        
         // function 
         RVector.prototype.getMinimum = function(...args) 
           
@@ -997,7 +997,7 @@
               return this.__PROXY__.getMinimum(...args);
             
         };
-    
+        
         // function 
         RVector.prototype.getMaximum = function(...args) 
           
@@ -1007,7 +1007,7 @@
               return this.__PROXY__.getMaximum(...args);
             
         };
-    
+        
         // function 
         RVector.prototype.getMinimumX = function(...args) 
           
@@ -1017,7 +1017,7 @@
               return this.__PROXY__.getMinimumX(...args);
             
         };
-    
+        
         // function 
         RVector.prototype.getMaximumX = function(...args) 
           
@@ -1027,7 +1027,7 @@
               return this.__PROXY__.getMaximumX(...args);
             
         };
-    
+        
         // function 
         RVector.prototype.getMinimumY = function(...args) 
           
@@ -1037,7 +1037,7 @@
               return this.__PROXY__.getMinimumY(...args);
             
         };
-    
+        
         // function 
         RVector.prototype.getMaximumY = function(...args) 
           
@@ -1047,7 +1047,7 @@
               return this.__PROXY__.getMaximumY(...args);
             
         };
-    
+        
         // function 
         RVector.prototype.getAverage = function(...args) 
           
@@ -1057,7 +1057,7 @@
               return this.__PROXY__.getAverage(...args);
             
         };
-    
+        
         // function 
         RVector.prototype.getIntersection = function(...args) 
           
@@ -1067,7 +1067,7 @@
               return this.__PROXY__.getIntersection(...args);
             
         };
-    
+        
         // function 
         RVector.prototype.getUnique = function(...args) 
           
@@ -1077,7 +1077,7 @@
               return this.__PROXY__.getUnique(...args);
             
         };
-    
+        
         // function 
         RVector.prototype.getXList = function(...args) 
           
@@ -1087,7 +1087,7 @@
               return this.__PROXY__.getXList(...args);
             
         };
-    
+        
         // function 
         RVector.prototype.getYList = function(...args) 
           
@@ -1097,7 +1097,7 @@
               return this.__PROXY__.getYList(...args);
             
         };
-    
+        
         // function 
         RVector.prototype.getZList = function(...args) 
           
@@ -1107,7 +1107,7 @@
               return this.__PROXY__.getZList(...args);
             
         };
-    
+        
         // function 
         RVector.prototype.getCrossProduct = function(...args) 
           
@@ -1117,7 +1117,7 @@
               return this.__PROXY__.getCrossProduct(...args);
             
         };
-    
+        
         // function 
         RVector.prototype.getDotProduct = function(...args) 
           
@@ -1127,7 +1127,7 @@
               return this.__PROXY__.getDotProduct(...args);
             
         };
-    
+        
         // function 
         RVector.prototype.createPolar = function(...args) 
           
@@ -1137,7 +1137,7 @@
               return this.__PROXY__.createPolar(...args);
             
         };
-    
+        
         // function 
         RVector.prototype.lessThanX = function(...args) 
           
@@ -1147,7 +1147,7 @@
               return this.__PROXY__.lessThanX(...args);
             
         };
-    
+        
         // function 
         RVector.prototype.greaterThanX = function(...args) 
           
@@ -1157,7 +1157,7 @@
               return this.__PROXY__.greaterThanX(...args);
             
         };
-    
+        
         // function 
         RVector.prototype.lessThanY = function(...args) 
           
@@ -1167,7 +1167,7 @@
               return this.__PROXY__.lessThanY(...args);
             
         };
-    
+        
         // function 
         RVector.prototype.greaterThanY = function(...args) 
           
@@ -1177,7 +1177,7 @@
               return this.__PROXY__.greaterThanY(...args);
             
         };
-    
+        
         // function 
         RVector.prototype.lessThanEqualXY = function(...args) 
           
@@ -1187,7 +1187,7 @@
               return this.__PROXY__.lessThanEqualXY(...args);
             
         };
-    
+        
         // function 
         RVector.prototype.greaterThanEqualXY = function(...args) 
           
@@ -1197,7 +1197,7 @@
               return this.__PROXY__.greaterThanEqualXY(...args);
             
         };
-    
+        
         // function 
         RVector.prototype.getSortedByDistance = function(...args) 
           
@@ -1207,7 +1207,7 @@
               return this.__PROXY__.getSortedByDistance(...args);
             
         };
-    
+        
         // function 
         RVector.prototype.getSortedLeftRightTopBottom = function(...args) 
           
@@ -1217,7 +1217,7 @@
               return this.__PROXY__.getSortedLeftRightTopBottom(...args);
             
         };
-    
+        
         // function 
         RVector.prototype.getSortedByAngle = function(...args) 
           
@@ -1227,7 +1227,7 @@
               return this.__PROXY__.getSortedByAngle(...args);
             
         };
-    
+        
 
       // static functions:
       

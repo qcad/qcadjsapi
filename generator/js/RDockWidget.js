@@ -183,7 +183,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.setObjectName(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.isWidgetType = function(...args) 
           
@@ -193,7 +193,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.isWidgetType(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.isWindowType = function(...args) 
           
@@ -203,7 +203,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.isWindowType(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.signalsBlocked = function(...args) 
           
@@ -213,7 +213,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.signalsBlocked(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.blockSignals = function(...args) 
           
@@ -223,7 +223,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.blockSignals(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.findChild = function(...args) 
           
@@ -233,7 +233,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.findChild(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.children = function(...args) 
           
@@ -243,7 +243,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.children(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.installEventFilter = function(...args) 
           
@@ -253,7 +253,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.installEventFilter(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.removeEventFilter = function(...args) 
           
@@ -263,7 +263,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.removeEventFilter(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.dumpObjectTree = function(...args) 
           
@@ -273,7 +273,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.dumpObjectTree(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.dumpObjectInfo = function(...args) 
           
@@ -283,7 +283,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.dumpObjectInfo(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.setProperty = function(...args) 
           
@@ -293,7 +293,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.setProperty(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.property = function(...args) 
           
@@ -303,7 +303,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.property(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.dynamicPropertyNames = function(...args) 
           
@@ -313,7 +313,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.dynamicPropertyNames(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.parent = function(...args) 
           
@@ -323,7 +323,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.parent(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.deleteLater = function(...args) 
           
@@ -333,7 +333,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.deleteLater(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.devType = function(...args) 
           
@@ -343,7 +343,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.devType(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.createWinId = function(...args) 
           
@@ -353,7 +353,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.createWinId(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.isWindow = function(...args) 
           
@@ -363,7 +363,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.isWindow(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.isModal = function(...args) 
           
@@ -373,7 +373,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.isModal(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.setWindowModality = function(...args) 
           
@@ -383,7 +383,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.setWindowModality(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.isEnabled = function(...args) 
           
@@ -393,7 +393,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.isEnabled(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.isEnabledTo = function(...args) 
           
@@ -403,7 +403,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.isEnabledTo(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.setEnabled = function(...args) 
           
@@ -413,7 +413,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.setEnabled(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.setDisabled = function(...args) 
           
@@ -423,7 +423,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.setDisabled(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.setWindowModified = function(...args) 
           
@@ -433,7 +433,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.setWindowModified(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.setMinimumSize = function(...args) 
           
@@ -443,7 +443,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.setMinimumSize(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.setMaximumSize = function(...args) 
           
@@ -453,7 +453,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.setMaximumSize(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.setMinimumWidth = function(...args) 
           
@@ -463,7 +463,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.setMinimumWidth(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.setMinimumHeight = function(...args) 
           
@@ -473,7 +473,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.setMinimumHeight(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.setMaximumWidth = function(...args) 
           
@@ -483,7 +483,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.setMaximumWidth(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.setMaximumHeight = function(...args) 
           
@@ -493,7 +493,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.setMaximumHeight(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.setSizeIncrement = function(...args) 
           
@@ -503,7 +503,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.setSizeIncrement(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.setBaseSize = function(...args) 
           
@@ -513,7 +513,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.setBaseSize(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.setFixedSize = function(...args) 
           
@@ -523,7 +523,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.setFixedSize(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.setFixedWidth = function(...args) 
           
@@ -533,7 +533,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.setFixedWidth(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.setFixedHeight = function(...args) 
           
@@ -543,7 +543,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.setFixedHeight(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.mapToGlobal = function(...args) 
           
@@ -553,7 +553,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.mapToGlobal(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.mapFromGlobal = function(...args) 
           
@@ -563,7 +563,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.mapFromGlobal(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.mapToParent = function(...args) 
           
@@ -573,7 +573,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.mapToParent(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.mapFromParent = function(...args) 
           
@@ -583,7 +583,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.mapFromParent(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.mapTo = function(...args) 
           
@@ -593,7 +593,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.mapTo(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.mapFrom = function(...args) 
           
@@ -603,7 +603,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.mapFrom(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.window = function(...args) 
           
@@ -613,7 +613,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.window(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.nativeParentWidget = function(...args) 
           
@@ -623,7 +623,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.nativeParentWidget(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.topLevelWidget = function(...args) 
           
@@ -633,7 +633,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.topLevelWidget(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.setPalette = function(...args) 
           
@@ -643,7 +643,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.setPalette(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.setBackgroundRole = function(...args) 
           
@@ -653,7 +653,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.setBackgroundRole(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.backgroundRole = function(...args) 
           
@@ -663,7 +663,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.backgroundRole(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.setForegroundRole = function(...args) 
           
@@ -673,7 +673,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.setForegroundRole(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.foregroundRole = function(...args) 
           
@@ -683,7 +683,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.foregroundRole(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.setFont = function(...args) 
           
@@ -693,7 +693,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.setFont(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.fontInfo = function(...args) 
           
@@ -703,7 +703,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.fontInfo(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.setCursor = function(...args) 
           
@@ -713,7 +713,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.setCursor(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.unsetCursor = function(...args) 
           
@@ -723,7 +723,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.unsetCursor(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.setMouseTracking = function(...args) 
           
@@ -733,7 +733,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.setMouseTracking(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.hasMouseTracking = function(...args) 
           
@@ -743,7 +743,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.hasMouseTracking(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.underMouse = function(...args) 
           
@@ -753,7 +753,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.underMouse(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.setTabletTracking = function(...args) 
           
@@ -763,7 +763,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.setTabletTracking(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.hasTabletTracking = function(...args) 
           
@@ -773,7 +773,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.hasTabletTracking(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.setMask = function(...args) 
           
@@ -783,7 +783,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.setMask(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.mask = function(...args) 
           
@@ -793,7 +793,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.mask(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.clearMask = function(...args) 
           
@@ -803,7 +803,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.clearMask(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.grab = function(...args) 
           
@@ -813,7 +813,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.grab(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.grabGesture = function(...args) 
           
@@ -823,7 +823,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.grabGesture(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.ungrabGesture = function(...args) 
           
@@ -833,7 +833,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.ungrabGesture(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.setWindowTitle = function(...args) 
           
@@ -843,7 +843,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.setWindowTitle(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.setStyleSheet = function(...args) 
           
@@ -853,7 +853,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.setStyleSheet(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.setWindowIcon = function(...args) 
           
@@ -863,7 +863,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.setWindowIcon(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.setWindowIconText = function(...args) 
           
@@ -873,7 +873,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.setWindowIconText(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.setWindowRole = function(...args) 
           
@@ -883,7 +883,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.setWindowRole(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.windowRole = function(...args) 
           
@@ -893,7 +893,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.windowRole(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.setWindowFilePath = function(...args) 
           
@@ -903,7 +903,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.setWindowFilePath(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.setWindowOpacity = function(...args) 
           
@@ -913,7 +913,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.setWindowOpacity(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.isWindowModified = function(...args) 
           
@@ -923,7 +923,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.isWindowModified(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.setToolTip = function(...args) 
           
@@ -933,7 +933,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.setToolTip(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.setToolTipDuration = function(...args) 
           
@@ -943,7 +943,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.setToolTipDuration(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.setStatusTip = function(...args) 
           
@@ -953,7 +953,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.setStatusTip(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.setWhatsThis = function(...args) 
           
@@ -963,7 +963,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.setWhatsThis(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.setAccessibleName = function(...args) 
           
@@ -973,7 +973,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.setAccessibleName(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.setAccessibleDescription = function(...args) 
           
@@ -983,7 +983,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.setAccessibleDescription(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.setLayoutDirection = function(...args) 
           
@@ -993,7 +993,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.setLayoutDirection(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.unsetLayoutDirection = function(...args) 
           
@@ -1003,7 +1003,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.unsetLayoutDirection(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.setLocale = function(...args) 
           
@@ -1013,7 +1013,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.setLocale(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.unsetLocale = function(...args) 
           
@@ -1023,7 +1023,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.unsetLocale(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.isRightToLeft = function(...args) 
           
@@ -1033,7 +1033,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.isRightToLeft(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.isLeftToRight = function(...args) 
           
@@ -1043,7 +1043,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.isLeftToRight(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.activateWindow = function(...args) 
           
@@ -1053,7 +1053,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.activateWindow(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.clearFocus = function(...args) 
           
@@ -1063,7 +1063,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.clearFocus(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.setFocus = function(...args) 
           
@@ -1073,7 +1073,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.setFocus(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.setFocusPolicy = function(...args) 
           
@@ -1083,7 +1083,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.setFocusPolicy(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.hasFocus = function(...args) 
           
@@ -1093,7 +1093,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.hasFocus(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.setFocusProxy = function(...args) 
           
@@ -1103,7 +1103,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.setFocusProxy(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.focusProxy = function(...args) 
           
@@ -1113,7 +1113,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.focusProxy(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.setContextMenuPolicy = function(...args) 
           
@@ -1123,7 +1123,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.setContextMenuPolicy(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.grabMouse = function(...args) 
           
@@ -1133,7 +1133,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.grabMouse(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.releaseMouse = function(...args) 
           
@@ -1143,7 +1143,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.releaseMouse(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.grabKeyboard = function(...args) 
           
@@ -1153,7 +1153,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.grabKeyboard(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.releaseKeyboard = function(...args) 
           
@@ -1163,7 +1163,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.releaseKeyboard(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.grabShortcut = function(...args) 
           
@@ -1173,7 +1173,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.grabShortcut(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.releaseShortcut = function(...args) 
           
@@ -1183,7 +1183,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.releaseShortcut(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.setShortcutEnabled = function(...args) 
           
@@ -1193,7 +1193,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.setShortcutEnabled(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.setShortcutAutoRepeat = function(...args) 
           
@@ -1203,7 +1203,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.setShortcutAutoRepeat(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.setUpdatesEnabled = function(...args) 
           
@@ -1213,7 +1213,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.setUpdatesEnabled(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.update = function(...args) 
           
@@ -1223,7 +1223,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.update(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.repaint = function(...args) 
           
@@ -1233,7 +1233,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.repaint(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.setVisible = function(...args) 
           
@@ -1243,7 +1243,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.setVisible(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.setHidden = function(...args) 
           
@@ -1253,7 +1253,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.setHidden(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.show = function(...args) 
           
@@ -1263,7 +1263,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.show(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.hide = function(...args) 
           
@@ -1273,7 +1273,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.hide(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.showMinimized = function(...args) 
           
@@ -1283,7 +1283,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.showMinimized(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.showMaximized = function(...args) 
           
@@ -1293,7 +1293,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.showMaximized(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.showFullScreen = function(...args) 
           
@@ -1303,7 +1303,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.showFullScreen(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.showNormal = function(...args) 
           
@@ -1313,7 +1313,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.showNormal(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.close = function(...args) 
           
@@ -1323,7 +1323,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.close(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.raise = function(...args) 
           
@@ -1333,7 +1333,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.raise(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.lower = function(...args) 
           
@@ -1343,7 +1343,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.lower(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.stackUnder = function(...args) 
           
@@ -1353,7 +1353,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.stackUnder(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.move = function(...args) 
           
@@ -1363,7 +1363,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.move(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.resize = function(...args) 
           
@@ -1373,7 +1373,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.resize(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.setGeometry = function(...args) 
           
@@ -1383,7 +1383,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.setGeometry(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.saveGeometry = function(...args) 
           
@@ -1393,7 +1393,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.saveGeometry(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.restoreGeometry = function(...args) 
           
@@ -1403,7 +1403,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.restoreGeometry(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.adjustSize = function(...args) 
           
@@ -1413,7 +1413,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.adjustSize(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.isVisible = function(...args) 
           
@@ -1423,7 +1423,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.isVisible(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.isVisibleTo = function(...args) 
           
@@ -1433,7 +1433,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.isVisibleTo(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.isHidden = function(...args) 
           
@@ -1443,7 +1443,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.isHidden(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.isMinimized = function(...args) 
           
@@ -1453,7 +1453,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.isMinimized(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.isMaximized = function(...args) 
           
@@ -1463,7 +1463,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.isMaximized(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.isFullScreen = function(...args) 
           
@@ -1473,7 +1473,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.isFullScreen(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.windowState = function(...args) 
           
@@ -1483,7 +1483,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.windowState(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.setWindowState = function(...args) 
           
@@ -1493,7 +1493,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.setWindowState(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.overrideWindowState = function(...args) 
           
@@ -1503,7 +1503,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.overrideWindowState(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.setSizePolicy = function(...args) 
           
@@ -1513,7 +1513,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.setSizePolicy(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.heightForWidth = function(...args) 
           
@@ -1523,7 +1523,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.heightForWidth(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.hasHeightForWidth = function(...args) 
           
@@ -1533,7 +1533,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.hasHeightForWidth(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.visibleRegion = function(...args) 
           
@@ -1543,7 +1543,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.visibleRegion(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.setContentsMargins = function(...args) 
           
@@ -1553,7 +1553,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.setContentsMargins(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.contentsMargins = function(...args) 
           
@@ -1563,7 +1563,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.contentsMargins(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.contentsRect = function(...args) 
           
@@ -1573,7 +1573,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.contentsRect(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.layout = function(...args) 
           
@@ -1583,7 +1583,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.layout(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.setLayout = function(...args) 
           
@@ -1593,7 +1593,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.setLayout(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.updateGeometry = function(...args) 
           
@@ -1603,7 +1603,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.updateGeometry(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.setParent = function(...args) 
           
@@ -1613,7 +1613,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.setParent(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.scroll = function(...args) 
           
@@ -1623,7 +1623,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.scroll(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.focusWidget = function(...args) 
           
@@ -1633,7 +1633,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.focusWidget(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.nextInFocusChain = function(...args) 
           
@@ -1643,7 +1643,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.nextInFocusChain(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.previousInFocusChain = function(...args) 
           
@@ -1653,7 +1653,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.previousInFocusChain(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.setAcceptDrops = function(...args) 
           
@@ -1663,7 +1663,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.setAcceptDrops(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.addAction = function(...args) 
           
@@ -1673,7 +1673,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.addAction(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.addActions = function(...args) 
           
@@ -1683,7 +1683,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.addActions(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.insertActions = function(...args) 
           
@@ -1693,7 +1693,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.insertActions(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.insertAction = function(...args) 
           
@@ -1703,7 +1703,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.insertAction(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.removeAction = function(...args) 
           
@@ -1713,7 +1713,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.removeAction(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.actions = function(...args) 
           
@@ -1723,7 +1723,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.actions(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.parentWidget = function(...args) 
           
@@ -1733,7 +1733,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.parentWidget(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.setWindowFlags = function(...args) 
           
@@ -1743,7 +1743,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.setWindowFlags(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.windowFlags = function(...args) 
           
@@ -1753,7 +1753,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.windowFlags(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.setWindowFlag = function(...args) 
           
@@ -1763,7 +1763,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.setWindowFlag(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.overrideWindowFlags = function(...args) 
           
@@ -1773,7 +1773,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.overrideWindowFlags(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.windowType = function(...args) 
           
@@ -1783,7 +1783,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.windowType(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.childAt = function(...args) 
           
@@ -1793,7 +1793,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.childAt(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.setAttribute = function(...args) 
           
@@ -1803,7 +1803,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.setAttribute(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.testAttribute = function(...args) 
           
@@ -1813,7 +1813,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.testAttribute(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.ensurePolished = function(...args) 
           
@@ -1823,7 +1823,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.ensurePolished(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.isAncestorOf = function(...args) 
           
@@ -1833,7 +1833,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.isAncestorOf(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.setAutoFillBackground = function(...args) 
           
@@ -1843,7 +1843,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.setAutoFillBackground(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.mouseDoubleClickEvent = function(...args) 
           
@@ -1853,7 +1853,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.mouseDoubleClickEvent(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.wheelEvent = function(...args) 
           
@@ -1863,7 +1863,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.wheelEvent(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.keyPressEvent = function(...args) 
           
@@ -1873,7 +1873,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.keyPressEvent(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.keyReleaseEvent = function(...args) 
           
@@ -1883,7 +1883,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.keyReleaseEvent(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.focusInEvent = function(...args) 
           
@@ -1893,7 +1893,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.focusInEvent(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.focusOutEvent = function(...args) 
           
@@ -1903,7 +1903,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.focusOutEvent(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.enterEvent = function(...args) 
           
@@ -1913,7 +1913,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.enterEvent(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.leaveEvent = function(...args) 
           
@@ -1923,7 +1923,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.leaveEvent(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.moveEvent = function(...args) 
           
@@ -1933,7 +1933,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.moveEvent(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.tabletEvent = function(...args) 
           
@@ -1943,7 +1943,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.tabletEvent(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.dragEnterEvent = function(...args) 
           
@@ -1953,7 +1953,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.dragEnterEvent(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.dragMoveEvent = function(...args) 
           
@@ -1963,7 +1963,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.dragMoveEvent(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.dragLeaveEvent = function(...args) 
           
@@ -1973,7 +1973,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.dragLeaveEvent(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.dropEvent = function(...args) 
           
@@ -1983,7 +1983,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.dropEvent(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.nativeEvent = function(...args) 
           
@@ -1993,7 +1993,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.nativeEvent(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.changeEvent = function(...args) 
           
@@ -2003,7 +2003,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.changeEvent(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.metric = function(...args) 
           
@@ -2013,7 +2013,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.metric(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.initPainter = function(...args) 
           
@@ -2023,7 +2023,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.initPainter(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.redirected = function(...args) 
           
@@ -2033,7 +2033,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.redirected(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.sharedPainter = function(...args) 
           
@@ -2043,7 +2043,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.sharedPainter(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.inputMethodEvent = function(...args) 
           
@@ -2053,7 +2053,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.inputMethodEvent(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.inputMethodQuery = function(...args) 
           
@@ -2063,7 +2063,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.inputMethodQuery(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.setInputMethodHints = function(...args) 
           
@@ -2073,7 +2073,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.setInputMethodHints(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.updateMicroFocus = function(...args) 
           
@@ -2083,7 +2083,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.updateMicroFocus(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.create = function(...args) 
           
@@ -2093,7 +2093,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.create(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.destroy = function(...args) 
           
@@ -2103,7 +2103,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.destroy(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.focusNextPrevChild = function(...args) 
           
@@ -2113,7 +2113,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.focusNextPrevChild(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.focusNextChild = function(...args) 
           
@@ -2123,7 +2123,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.focusNextChild(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.focusPreviousChild = function(...args) 
           
@@ -2133,7 +2133,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.focusPreviousChild(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.setBackingStore = function(...args) 
           
@@ -2143,7 +2143,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.setBackingStore(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.testAttribute_helper = function(...args) 
           
@@ -2153,7 +2153,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.testAttribute_helper(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.takeLayout = function(...args) 
           
@@ -2163,7 +2163,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.takeLayout(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.qt_mac_is_metal = function(...args) 
           
@@ -2173,7 +2173,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.qt_mac_is_metal(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.qt_qwidget_data = function(...args) 
           
@@ -2183,7 +2183,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.qt_qwidget_data(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.qt_widget_private = function(...args) 
           
@@ -2193,7 +2193,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.qt_widget_private(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.widget = function(...args) 
           
@@ -2203,7 +2203,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.widget(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.setWidget = function(...args) 
           
@@ -2213,7 +2213,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.setWidget(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.setFeatures = function(...args) 
           
@@ -2223,7 +2223,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.setFeatures(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.setFloating = function(...args) 
           
@@ -2233,7 +2233,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.setFloating(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.isFloating = function(...args) 
           
@@ -2243,7 +2243,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.isFloating(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.setAllowedAreas = function(...args) 
           
@@ -2253,7 +2253,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.setAllowedAreas(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.setTitleBarWidget = function(...args) 
           
@@ -2263,7 +2263,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.setTitleBarWidget(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.titleBarWidget = function(...args) 
           
@@ -2273,7 +2273,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.titleBarWidget(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.isAreaAllowed = function(...args) 
           
@@ -2283,7 +2283,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.isAreaAllowed(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.toggleViewAction = function(...args) 
           
@@ -2293,7 +2293,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.toggleViewAction(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.showEvent = function(...args) 
           
@@ -2303,7 +2303,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.showEvent(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.hideEvent = function(...args) 
           
@@ -2313,7 +2313,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.hideEvent(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.closeEvent = function(...args) 
           
@@ -2323,7 +2323,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.closeEvent(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.actionEvent = function(...args) 
           
@@ -2333,7 +2333,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.actionEvent(...args);
             
         };
-    
+        
         // function 
         RDockWidget.prototype.event = function(...args) 
           
@@ -2343,7 +2343,7 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
               return this.__PROXY__.event(...args);
             
         };
-    
+        
 
       // static functions:
       

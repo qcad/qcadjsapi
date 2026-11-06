@@ -207,7 +207,7 @@
               return this.__PROXY__.getLastSnap(...args);
             
         };
-    
+        
         // function 
         RRestrictHorizontal.prototype.reset = function(...args) 
           
@@ -217,7 +217,7 @@
               return this.__PROXY__.reset(...args);
             
         };
-    
+        
         // function 
         RRestrictHorizontal.prototype.restrictSnap = function(...args) 
           
@@ -227,7 +227,7 @@
               return this.__PROXY__.restrictSnap(...args);
             
         };
-    
+        
 
       // static functions:
       RRestrictHorizontal.prototype.isNullWrapper = function() {

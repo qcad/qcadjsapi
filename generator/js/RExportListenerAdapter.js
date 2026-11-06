@@ -142,7 +142,7 @@
               return this.__PROXY__.setObjectName(...args);
             
         };
-    
+        
         // function 
         RExportListenerAdapter.prototype.isWidgetType = function(...args) 
           
@@ -152,7 +152,7 @@
               return this.__PROXY__.isWidgetType(...args);
             
         };
-    
+        
         // function 
         RExportListenerAdapter.prototype.isWindowType = function(...args) 
           
@@ -162,7 +162,7 @@
               return this.__PROXY__.isWindowType(...args);
             
         };
-    
+        
         // function 
         RExportListenerAdapter.prototype.signalsBlocked = function(...args) 
           
@@ -172,7 +172,7 @@
               return this.__PROXY__.signalsBlocked(...args);
             
         };
-    
+        
         // function 
         RExportListenerAdapter.prototype.blockSignals = function(...args) 
           
@@ -182,7 +182,7 @@
               return this.__PROXY__.blockSignals(...args);
             
         };
-    
+        
         // function 
         RExportListenerAdapter.prototype.findChild = function(...args) 
           
@@ -192,7 +192,7 @@
               return this.__PROXY__.findChild(...args);
             
         };
-    
+        
         // function 
         RExportListenerAdapter.prototype.children = function(...args) 
           
@@ -202,7 +202,7 @@
               return this.__PROXY__.children(...args);
             
         };
-    
+        
         // function 
         RExportListenerAdapter.prototype.setParent = function(...args) 
           
@@ -212,7 +212,7 @@
               return this.__PROXY__.setParent(...args);
             
         };
-    
+        
         // function 
         RExportListenerAdapter.prototype.installEventFilter = function(...args) 
           
@@ -222,7 +222,7 @@
               return this.__PROXY__.installEventFilter(...args);
             
         };
-    
+        
         // function 
         RExportListenerAdapter.prototype.removeEventFilter = function(...args) 
           
@@ -232,7 +232,7 @@
               return this.__PROXY__.removeEventFilter(...args);
             
         };
-    
+        
         // function 
         RExportListenerAdapter.prototype.dumpObjectTree = function(...args) 
           
@@ -242,7 +242,7 @@
               return this.__PROXY__.dumpObjectTree(...args);
             
         };
-    
+        
         // function 
         RExportListenerAdapter.prototype.dumpObjectInfo = function(...args) 
           
@@ -252,7 +252,7 @@
               return this.__PROXY__.dumpObjectInfo(...args);
             
         };
-    
+        
         // function 
         RExportListenerAdapter.prototype.setProperty = function(...args) 
           
@@ -262,7 +262,7 @@
               return this.__PROXY__.setProperty(...args);
             
         };
-    
+        
         // function 
         RExportListenerAdapter.prototype.property = function(...args) 
           
@@ -272,7 +272,7 @@
               return this.__PROXY__.property(...args);
             
         };
-    
+        
         // function 
         RExportListenerAdapter.prototype.dynamicPropertyNames = function(...args) 
           
@@ -282,7 +282,7 @@
               return this.__PROXY__.dynamicPropertyNames(...args);
             
         };
-    
+        
         // function 
         RExportListenerAdapter.prototype.parent = function(...args) 
           
@@ -292,7 +292,7 @@
               return this.__PROXY__.parent(...args);
             
         };
-    
+        
         // function 
         RExportListenerAdapter.prototype.deleteLater = function(...args) 
           
@@ -302,7 +302,7 @@
               return this.__PROXY__.deleteLater(...args);
             
         };
-    
+        
         // function 
         RExportListenerAdapter.prototype.preExportEvent = function(...args) 
           
@@ -312,7 +312,7 @@
               return this.__PROXY__.preExportEvent(...args);
             
         };
-    
+        
         // function 
         RExportListenerAdapter.prototype.postExportEvent = function(...args) 
           
@@ -322,7 +322,7 @@
               return this.__PROXY__.postExportEvent(...args);
             
         };
-    
+        
         // function 
         RExportListenerAdapter.prototype.endOfExportEvent = function(...args) 
           
@@ -332,7 +332,7 @@
               return this.__PROXY__.endOfExportEvent(...args);
             
         };
-    
+        
 
       // static functions:
       

@@ -146,7 +146,7 @@ RMixedOperation.EndCycle = RMixedOperation_Wrapper.EndCycle;
               return this.__PROXY__.getEntityTypeFilter(...args);
             
         };
-    
+        
         // function 
         RMixedOperation.prototype.setRecordAffectedObjects = function(...args) 
           
@@ -156,7 +156,7 @@ RMixedOperation.EndCycle = RMixedOperation_Wrapper.EndCycle;
               return this.__PROXY__.setRecordAffectedObjects(...args);
             
         };
-    
+        
         // function 
         RMixedOperation.prototype.setSpatialIndexDisabled = function(...args) 
           
@@ -166,7 +166,7 @@ RMixedOperation.EndCycle = RMixedOperation_Wrapper.EndCycle;
               return this.__PROXY__.setSpatialIndexDisabled(...args);
             
         };
-    
+        
         // function 
         RMixedOperation.prototype.setAllowInvisible = function(...args) 
           
@@ -176,7 +176,7 @@ RMixedOperation.EndCycle = RMixedOperation_Wrapper.EndCycle;
               return this.__PROXY__.setAllowInvisible(...args);
             
         };
-    
+        
         // function 
         RMixedOperation.prototype.setAllowAll = function(...args) 
           
@@ -186,7 +186,7 @@ RMixedOperation.EndCycle = RMixedOperation_Wrapper.EndCycle;
               return this.__PROXY__.setAllowAll(...args);
             
         };
-    
+        
         // function 
         RMixedOperation.prototype.setKeepChildren = function(...args) 
           
@@ -196,7 +196,7 @@ RMixedOperation.EndCycle = RMixedOperation_Wrapper.EndCycle;
               return this.__PROXY__.setKeepChildren(...args);
             
         };
-    
+        
         // function 
         RMixedOperation.prototype.setTransactionGroup = function(...args) 
           
@@ -206,7 +206,7 @@ RMixedOperation.EndCycle = RMixedOperation_Wrapper.EndCycle;
               return this.__PROXY__.setTransactionGroup(...args);
             
         };
-    
+        
         // function 
         RMixedOperation.prototype.getTransactionGroup = function(...args) 
           
@@ -216,7 +216,7 @@ RMixedOperation.EndCycle = RMixedOperation_Wrapper.EndCycle;
               return this.__PROXY__.getTransactionGroup(...args);
             
         };
-    
+        
         // function 
         RMixedOperation.prototype.setText = function(...args) 
           
@@ -226,7 +226,7 @@ RMixedOperation.EndCycle = RMixedOperation_Wrapper.EndCycle;
               return this.__PROXY__.setText(...args);
             
         };
-    
+        
         // function 
         RMixedOperation.prototype.getText = function(...args) 
           
@@ -236,7 +236,7 @@ RMixedOperation.EndCycle = RMixedOperation_Wrapper.EndCycle;
               return this.__PROXY__.getText(...args);
             
         };
-    
+        
         // function 
         RMixedOperation.prototype.getTransactionTypes = function(...args) 
           
@@ -246,7 +246,7 @@ RMixedOperation.EndCycle = RMixedOperation_Wrapper.EndCycle;
               return this.__PROXY__.getTransactionTypes(...args);
             
         };
-    
+        
         // function 
         RMixedOperation.prototype.setTransactionType = function(...args) 
           
@@ -256,7 +256,7 @@ RMixedOperation.EndCycle = RMixedOperation_Wrapper.EndCycle;
               return this.__PROXY__.setTransactionType(...args);
             
         };
-    
+        
         // function 
         RMixedOperation.prototype.getTransactionType = function(...args) 
           
@@ -266,7 +266,7 @@ RMixedOperation.EndCycle = RMixedOperation_Wrapper.EndCycle;
               return this.__PROXY__.getTransactionType(...args);
             
         };
-    
+        
         // function 
         RMixedOperation.prototype.addObject = function(...args) 
           
@@ -276,7 +276,7 @@ RMixedOperation.EndCycle = RMixedOperation_Wrapper.EndCycle;
               return this.__PROXY__.addObject(...args);
             
         };
-    
+        
         // function 
         RMixedOperation.prototype.deleteObject = function(...args) 
           
@@ -286,7 +286,7 @@ RMixedOperation.EndCycle = RMixedOperation_Wrapper.EndCycle;
               return this.__PROXY__.deleteObject(...args);
             
         };
-    
+        
         // function 
         RMixedOperation.prototype.endCycle = function(...args) 
           
@@ -296,7 +296,7 @@ RMixedOperation.EndCycle = RMixedOperation_Wrapper.EndCycle;
               return this.__PROXY__.endCycle(...args);
             
         };
-    
+        
         // function 
         RMixedOperation.prototype.apply = function(...args) 
           
@@ -306,7 +306,7 @@ RMixedOperation.EndCycle = RMixedOperation_Wrapper.EndCycle;
               return this.__PROXY__.apply(...args);
             
         };
-    
+        
         // function 
         RMixedOperation.prototype.setMode = function(...args) 
           
@@ -316,7 +316,7 @@ RMixedOperation.EndCycle = RMixedOperation_Wrapper.EndCycle;
               return this.__PROXY__.setMode(...args);
             
         };
-    
+        
         // function 
         RMixedOperation.prototype.getMode = function(...args) 
           
@@ -326,7 +326,7 @@ RMixedOperation.EndCycle = RMixedOperation_Wrapper.EndCycle;
               return this.__PROXY__.getMode(...args);
             
         };
-    
+        
 
       // static functions:
       RMixedOperation.prototype.isNullWrapper = function() {

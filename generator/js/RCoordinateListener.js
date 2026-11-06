@@ -105,7 +105,7 @@
               return this.__PROXY__.updateCoordinate(...args);
             
         };
-    
+        
 
       // static functions:
       RCoordinateListener.prototype.isNullWrapper = function() {

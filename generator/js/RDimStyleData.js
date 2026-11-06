@@ -135,7 +135,7 @@
               return this.__PROXY__.init(...args);
             
         };
-    
+        
         // function 
         RDimStyleData.prototype.initDefaults = function(...args) 
           
@@ -145,7 +145,7 @@
               return this.__PROXY__.initDefaults(...args);
             
         };
-    
+        
         // function 
         RDimStyleData.prototype.getVariantDefault = function(...args) 
           
@@ -155,7 +155,7 @@
               return this.__PROXY__.getVariantDefault(...args);
             
         };
-    
+        
         // function 
         RDimStyleData.prototype.getDoubleDefault = function(...args) 
           
@@ -165,7 +165,7 @@
               return this.__PROXY__.getDoubleDefault(...args);
             
         };
-    
+        
         // function 
         RDimStyleData.prototype.getIntDefault = function(...args) 
           
@@ -175,7 +175,7 @@
               return this.__PROXY__.getIntDefault(...args);
             
         };
-    
+        
         // function 
         RDimStyleData.prototype.getBoolDefault = function(...args) 
           
@@ -185,7 +185,7 @@
               return this.__PROXY__.getBoolDefault(...args);
             
         };
-    
+        
         // function 
         RDimStyleData.prototype.getColorDefault = function(...args) 
           
@@ -195,7 +195,7 @@
               return this.__PROXY__.getColorDefault(...args);
             
         };
-    
+        
         // function 
         RDimStyleData.prototype.initFromSettings = function(...args) 
           
@@ -205,7 +205,7 @@
               return this.__PROXY__.initFromSettings(...args);
             
         };
-    
+        
         // function 
         RDimStyleData.prototype.hasOverride = function(...args) 
           
@@ -215,7 +215,7 @@
               return this.__PROXY__.hasOverride(...args);
             
         };
-    
+        
         // function 
         RDimStyleData.prototype.isValid = function(...args) 
           
@@ -225,7 +225,7 @@
               return this.__PROXY__.isValid(...args);
             
         };
-    
+        
         // function 
         RDimStyleData.prototype.clear = function(...args) 
           
@@ -235,7 +235,7 @@
               return this.__PROXY__.clear(...args);
             
         };
-    
+        
         // function 
         RDimStyleData.prototype.getVariableType = function(...args) 
           
@@ -245,7 +245,7 @@
               return this.__PROXY__.getVariableType(...args);
             
         };
-    
+        
         // function 
         RDimStyleData.prototype.getVariant = function(...args) 
           
@@ -255,7 +255,7 @@
               return this.__PROXY__.getVariant(...args);
             
         };
-    
+        
         // function 
         RDimStyleData.prototype.setVariant = function(...args) 
           
@@ -265,7 +265,7 @@
               return this.__PROXY__.setVariant(...args);
             
         };
-    
+        
         // function 
         RDimStyleData.prototype.getDouble = function(...args) 
           
@@ -275,7 +275,7 @@
               return this.__PROXY__.getDouble(...args);
             
         };
-    
+        
         // function 
         RDimStyleData.prototype.setDouble = function(...args) 
           
@@ -285,7 +285,7 @@
               return this.__PROXY__.setDouble(...args);
             
         };
-    
+        
         // function 
         RDimStyleData.prototype.removeDouble = function(...args) 
           
@@ -295,7 +295,7 @@
               return this.__PROXY__.removeDouble(...args);
             
         };
-    
+        
         // function 
         RDimStyleData.prototype.getInt = function(...args) 
           
@@ -305,7 +305,7 @@
               return this.__PROXY__.getInt(...args);
             
         };
-    
+        
         // function 
         RDimStyleData.prototype.setInt = function(...args) 
           
@@ -315,7 +315,7 @@
               return this.__PROXY__.setInt(...args);
             
         };
-    
+        
         // function 
         RDimStyleData.prototype.removeInt = function(...args) 
           
@@ -325,7 +325,7 @@
               return this.__PROXY__.removeInt(...args);
             
         };
-    
+        
         // function 
         RDimStyleData.prototype.getBool = function(...args) 
           
@@ -335,7 +335,7 @@
               return this.__PROXY__.getBool(...args);
             
         };
-    
+        
         // function 
         RDimStyleData.prototype.setBool = function(...args) 
           
@@ -345,7 +345,7 @@
               return this.__PROXY__.setBool(...args);
             
         };
-    
+        
         // function 
         RDimStyleData.prototype.removeBool = function(...args) 
           
@@ -355,7 +355,7 @@
               return this.__PROXY__.removeBool(...args);
             
         };
-    
+        
         // function 
         RDimStyleData.prototype.getColor = function(...args) 
           
@@ -365,7 +365,7 @@
               return this.__PROXY__.getColor(...args);
             
         };
-    
+        
         // function 
         RDimStyleData.prototype.setColor = function(...args) 
           
@@ -375,7 +375,7 @@
               return this.__PROXY__.setColor(...args);
             
         };
-    
+        
         // function 
         RDimStyleData.prototype.removeColor = function(...args) 
           
@@ -385,7 +385,7 @@
               return this.__PROXY__.removeColor(...args);
             
         };
-    
+        
 
       // static functions:
       

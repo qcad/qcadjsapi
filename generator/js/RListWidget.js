@@ -245,7 +245,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.setObjectName(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.isWidgetType = function(...args) 
           
@@ -255,7 +255,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.isWidgetType(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.isWindowType = function(...args) 
           
@@ -265,7 +265,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.isWindowType(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.signalsBlocked = function(...args) 
           
@@ -275,7 +275,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.signalsBlocked(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.blockSignals = function(...args) 
           
@@ -285,7 +285,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.blockSignals(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.findChild = function(...args) 
           
@@ -295,7 +295,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.findChild(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.children = function(...args) 
           
@@ -305,7 +305,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.children(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.installEventFilter = function(...args) 
           
@@ -315,7 +315,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.installEventFilter(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.removeEventFilter = function(...args) 
           
@@ -325,7 +325,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.removeEventFilter(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.dumpObjectTree = function(...args) 
           
@@ -335,7 +335,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.dumpObjectTree(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.dumpObjectInfo = function(...args) 
           
@@ -345,7 +345,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.dumpObjectInfo(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.setProperty = function(...args) 
           
@@ -355,7 +355,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.setProperty(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.property = function(...args) 
           
@@ -365,7 +365,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.property(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.dynamicPropertyNames = function(...args) 
           
@@ -375,7 +375,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.dynamicPropertyNames(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.parent = function(...args) 
           
@@ -385,7 +385,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.parent(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.deleteLater = function(...args) 
           
@@ -395,7 +395,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.deleteLater(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.devType = function(...args) 
           
@@ -405,7 +405,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.devType(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.createWinId = function(...args) 
           
@@ -415,7 +415,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.createWinId(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.isWindow = function(...args) 
           
@@ -425,7 +425,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.isWindow(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.isModal = function(...args) 
           
@@ -435,7 +435,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.isModal(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.setWindowModality = function(...args) 
           
@@ -445,7 +445,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.setWindowModality(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.isEnabled = function(...args) 
           
@@ -455,7 +455,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.isEnabled(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.isEnabledTo = function(...args) 
           
@@ -465,7 +465,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.isEnabledTo(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.setEnabled = function(...args) 
           
@@ -475,7 +475,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.setEnabled(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.setDisabled = function(...args) 
           
@@ -485,7 +485,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.setDisabled(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.setWindowModified = function(...args) 
           
@@ -495,7 +495,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.setWindowModified(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.setMinimumSize = function(...args) 
           
@@ -505,7 +505,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.setMinimumSize(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.setMaximumSize = function(...args) 
           
@@ -515,7 +515,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.setMaximumSize(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.setMinimumWidth = function(...args) 
           
@@ -525,7 +525,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.setMinimumWidth(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.setMinimumHeight = function(...args) 
           
@@ -535,7 +535,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.setMinimumHeight(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.setMaximumWidth = function(...args) 
           
@@ -545,7 +545,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.setMaximumWidth(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.setMaximumHeight = function(...args) 
           
@@ -555,7 +555,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.setMaximumHeight(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.setSizeIncrement = function(...args) 
           
@@ -565,7 +565,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.setSizeIncrement(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.setBaseSize = function(...args) 
           
@@ -575,7 +575,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.setBaseSize(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.setFixedSize = function(...args) 
           
@@ -585,7 +585,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.setFixedSize(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.setFixedWidth = function(...args) 
           
@@ -595,7 +595,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.setFixedWidth(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.setFixedHeight = function(...args) 
           
@@ -605,7 +605,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.setFixedHeight(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.mapToGlobal = function(...args) 
           
@@ -615,7 +615,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.mapToGlobal(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.mapFromGlobal = function(...args) 
           
@@ -625,7 +625,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.mapFromGlobal(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.mapToParent = function(...args) 
           
@@ -635,7 +635,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.mapToParent(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.mapFromParent = function(...args) 
           
@@ -645,7 +645,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.mapFromParent(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.mapTo = function(...args) 
           
@@ -655,7 +655,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.mapTo(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.mapFrom = function(...args) 
           
@@ -665,7 +665,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.mapFrom(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.window = function(...args) 
           
@@ -675,7 +675,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.window(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.nativeParentWidget = function(...args) 
           
@@ -685,7 +685,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.nativeParentWidget(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.topLevelWidget = function(...args) 
           
@@ -695,7 +695,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.topLevelWidget(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.setPalette = function(...args) 
           
@@ -705,7 +705,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.setPalette(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.setBackgroundRole = function(...args) 
           
@@ -715,7 +715,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.setBackgroundRole(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.backgroundRole = function(...args) 
           
@@ -725,7 +725,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.backgroundRole(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.setForegroundRole = function(...args) 
           
@@ -735,7 +735,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.setForegroundRole(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.foregroundRole = function(...args) 
           
@@ -745,7 +745,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.foregroundRole(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.setFont = function(...args) 
           
@@ -755,7 +755,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.setFont(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.fontInfo = function(...args) 
           
@@ -765,7 +765,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.fontInfo(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.setCursor = function(...args) 
           
@@ -775,7 +775,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.setCursor(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.unsetCursor = function(...args) 
           
@@ -785,7 +785,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.unsetCursor(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.setMouseTracking = function(...args) 
           
@@ -795,7 +795,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.setMouseTracking(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.hasMouseTracking = function(...args) 
           
@@ -805,7 +805,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.hasMouseTracking(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.underMouse = function(...args) 
           
@@ -815,7 +815,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.underMouse(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.setTabletTracking = function(...args) 
           
@@ -825,7 +825,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.setTabletTracking(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.hasTabletTracking = function(...args) 
           
@@ -835,7 +835,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.hasTabletTracking(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.setMask = function(...args) 
           
@@ -845,7 +845,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.setMask(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.mask = function(...args) 
           
@@ -855,7 +855,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.mask(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.clearMask = function(...args) 
           
@@ -865,7 +865,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.clearMask(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.grab = function(...args) 
           
@@ -875,7 +875,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.grab(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.grabGesture = function(...args) 
           
@@ -885,7 +885,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.grabGesture(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.ungrabGesture = function(...args) 
           
@@ -895,7 +895,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.ungrabGesture(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.setWindowTitle = function(...args) 
           
@@ -905,7 +905,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.setWindowTitle(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.setStyleSheet = function(...args) 
           
@@ -915,7 +915,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.setStyleSheet(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.setWindowIcon = function(...args) 
           
@@ -925,7 +925,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.setWindowIcon(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.setWindowIconText = function(...args) 
           
@@ -935,7 +935,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.setWindowIconText(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.setWindowRole = function(...args) 
           
@@ -945,7 +945,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.setWindowRole(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.windowRole = function(...args) 
           
@@ -955,7 +955,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.windowRole(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.setWindowFilePath = function(...args) 
           
@@ -965,7 +965,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.setWindowFilePath(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.setWindowOpacity = function(...args) 
           
@@ -975,7 +975,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.setWindowOpacity(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.isWindowModified = function(...args) 
           
@@ -985,7 +985,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.isWindowModified(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.setToolTip = function(...args) 
           
@@ -995,7 +995,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.setToolTip(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.setToolTipDuration = function(...args) 
           
@@ -1005,7 +1005,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.setToolTipDuration(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.setStatusTip = function(...args) 
           
@@ -1015,7 +1015,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.setStatusTip(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.setWhatsThis = function(...args) 
           
@@ -1025,7 +1025,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.setWhatsThis(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.setAccessibleName = function(...args) 
           
@@ -1035,7 +1035,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.setAccessibleName(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.setAccessibleDescription = function(...args) 
           
@@ -1045,7 +1045,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.setAccessibleDescription(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.setLayoutDirection = function(...args) 
           
@@ -1055,7 +1055,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.setLayoutDirection(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.unsetLayoutDirection = function(...args) 
           
@@ -1065,7 +1065,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.unsetLayoutDirection(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.setLocale = function(...args) 
           
@@ -1075,7 +1075,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.setLocale(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.unsetLocale = function(...args) 
           
@@ -1085,7 +1085,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.unsetLocale(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.isRightToLeft = function(...args) 
           
@@ -1095,7 +1095,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.isRightToLeft(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.isLeftToRight = function(...args) 
           
@@ -1105,7 +1105,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.isLeftToRight(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.activateWindow = function(...args) 
           
@@ -1115,7 +1115,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.activateWindow(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.clearFocus = function(...args) 
           
@@ -1125,7 +1125,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.clearFocus(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.setFocus = function(...args) 
           
@@ -1135,7 +1135,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.setFocus(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.setFocusPolicy = function(...args) 
           
@@ -1145,7 +1145,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.setFocusPolicy(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.hasFocus = function(...args) 
           
@@ -1155,7 +1155,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.hasFocus(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.setFocusProxy = function(...args) 
           
@@ -1165,7 +1165,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.setFocusProxy(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.focusProxy = function(...args) 
           
@@ -1175,7 +1175,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.focusProxy(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.setContextMenuPolicy = function(...args) 
           
@@ -1185,7 +1185,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.setContextMenuPolicy(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.grabMouse = function(...args) 
           
@@ -1195,7 +1195,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.grabMouse(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.releaseMouse = function(...args) 
           
@@ -1205,7 +1205,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.releaseMouse(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.grabKeyboard = function(...args) 
           
@@ -1215,7 +1215,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.grabKeyboard(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.releaseKeyboard = function(...args) 
           
@@ -1225,7 +1225,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.releaseKeyboard(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.grabShortcut = function(...args) 
           
@@ -1235,7 +1235,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.grabShortcut(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.releaseShortcut = function(...args) 
           
@@ -1245,7 +1245,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.releaseShortcut(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.setShortcutEnabled = function(...args) 
           
@@ -1255,7 +1255,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.setShortcutEnabled(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.setShortcutAutoRepeat = function(...args) 
           
@@ -1265,7 +1265,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.setShortcutAutoRepeat(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.setUpdatesEnabled = function(...args) 
           
@@ -1275,7 +1275,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.setUpdatesEnabled(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.repaint = function(...args) 
           
@@ -1285,7 +1285,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.repaint(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.setVisible = function(...args) 
           
@@ -1295,7 +1295,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.setVisible(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.setHidden = function(...args) 
           
@@ -1305,7 +1305,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.setHidden(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.show = function(...args) 
           
@@ -1315,7 +1315,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.show(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.hide = function(...args) 
           
@@ -1325,7 +1325,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.hide(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.showMinimized = function(...args) 
           
@@ -1335,7 +1335,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.showMinimized(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.showMaximized = function(...args) 
           
@@ -1345,7 +1345,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.showMaximized(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.showFullScreen = function(...args) 
           
@@ -1355,7 +1355,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.showFullScreen(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.showNormal = function(...args) 
           
@@ -1365,7 +1365,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.showNormal(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.close = function(...args) 
           
@@ -1375,7 +1375,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.close(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.raise = function(...args) 
           
@@ -1385,7 +1385,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.raise(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.lower = function(...args) 
           
@@ -1395,7 +1395,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.lower(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.stackUnder = function(...args) 
           
@@ -1405,7 +1405,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.stackUnder(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.move = function(...args) 
           
@@ -1415,7 +1415,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.move(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.resize = function(...args) 
           
@@ -1425,7 +1425,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.resize(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.setGeometry = function(...args) 
           
@@ -1435,7 +1435,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.setGeometry(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.saveGeometry = function(...args) 
           
@@ -1445,7 +1445,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.saveGeometry(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.restoreGeometry = function(...args) 
           
@@ -1455,7 +1455,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.restoreGeometry(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.adjustSize = function(...args) 
           
@@ -1465,7 +1465,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.adjustSize(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.isVisible = function(...args) 
           
@@ -1475,7 +1475,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.isVisible(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.isVisibleTo = function(...args) 
           
@@ -1485,7 +1485,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.isVisibleTo(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.isHidden = function(...args) 
           
@@ -1495,7 +1495,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.isHidden(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.isMinimized = function(...args) 
           
@@ -1505,7 +1505,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.isMinimized(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.isMaximized = function(...args) 
           
@@ -1515,7 +1515,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.isMaximized(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.isFullScreen = function(...args) 
           
@@ -1525,7 +1525,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.isFullScreen(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.windowState = function(...args) 
           
@@ -1535,7 +1535,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.windowState(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.setWindowState = function(...args) 
           
@@ -1545,7 +1545,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.setWindowState(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.overrideWindowState = function(...args) 
           
@@ -1555,7 +1555,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.overrideWindowState(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.setSizePolicy = function(...args) 
           
@@ -1565,7 +1565,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.setSizePolicy(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.heightForWidth = function(...args) 
           
@@ -1575,7 +1575,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.heightForWidth(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.hasHeightForWidth = function(...args) 
           
@@ -1585,7 +1585,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.hasHeightForWidth(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.visibleRegion = function(...args) 
           
@@ -1595,7 +1595,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.visibleRegion(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.setContentsMargins = function(...args) 
           
@@ -1605,7 +1605,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.setContentsMargins(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.contentsMargins = function(...args) 
           
@@ -1615,7 +1615,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.contentsMargins(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.contentsRect = function(...args) 
           
@@ -1625,7 +1625,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.contentsRect(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.layout = function(...args) 
           
@@ -1635,7 +1635,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.layout(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.setLayout = function(...args) 
           
@@ -1645,7 +1645,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.setLayout(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.updateGeometry = function(...args) 
           
@@ -1655,7 +1655,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.updateGeometry(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.setParent = function(...args) 
           
@@ -1665,7 +1665,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.setParent(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.scroll = function(...args) 
           
@@ -1675,7 +1675,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.scroll(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.focusWidget = function(...args) 
           
@@ -1685,7 +1685,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.focusWidget(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.nextInFocusChain = function(...args) 
           
@@ -1695,7 +1695,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.nextInFocusChain(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.previousInFocusChain = function(...args) 
           
@@ -1705,7 +1705,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.previousInFocusChain(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.setAcceptDrops = function(...args) 
           
@@ -1715,7 +1715,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.setAcceptDrops(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.addAction = function(...args) 
           
@@ -1725,7 +1725,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.addAction(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.addActions = function(...args) 
           
@@ -1735,7 +1735,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.addActions(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.insertActions = function(...args) 
           
@@ -1745,7 +1745,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.insertActions(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.insertAction = function(...args) 
           
@@ -1755,7 +1755,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.insertAction(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.removeAction = function(...args) 
           
@@ -1765,7 +1765,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.removeAction(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.actions = function(...args) 
           
@@ -1775,7 +1775,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.actions(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.parentWidget = function(...args) 
           
@@ -1785,7 +1785,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.parentWidget(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.setWindowFlags = function(...args) 
           
@@ -1795,7 +1795,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.setWindowFlags(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.windowFlags = function(...args) 
           
@@ -1805,7 +1805,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.windowFlags(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.setWindowFlag = function(...args) 
           
@@ -1815,7 +1815,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.setWindowFlag(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.overrideWindowFlags = function(...args) 
           
@@ -1825,7 +1825,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.overrideWindowFlags(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.windowType = function(...args) 
           
@@ -1835,7 +1835,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.windowType(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.childAt = function(...args) 
           
@@ -1845,7 +1845,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.childAt(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.setAttribute = function(...args) 
           
@@ -1855,7 +1855,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.setAttribute(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.testAttribute = function(...args) 
           
@@ -1865,7 +1865,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.testAttribute(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.ensurePolished = function(...args) 
           
@@ -1875,7 +1875,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.ensurePolished(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.isAncestorOf = function(...args) 
           
@@ -1885,7 +1885,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.isAncestorOf(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.setAutoFillBackground = function(...args) 
           
@@ -1895,7 +1895,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.setAutoFillBackground(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.keyReleaseEvent = function(...args) 
           
@@ -1905,7 +1905,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.keyReleaseEvent(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.focusInEvent = function(...args) 
           
@@ -1915,7 +1915,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.focusInEvent(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.focusOutEvent = function(...args) 
           
@@ -1925,7 +1925,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.focusOutEvent(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.enterEvent = function(...args) 
           
@@ -1935,7 +1935,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.enterEvent(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.leaveEvent = function(...args) 
           
@@ -1945,7 +1945,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.leaveEvent(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.moveEvent = function(...args) 
           
@@ -1955,7 +1955,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.moveEvent(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.closeEvent = function(...args) 
           
@@ -1965,7 +1965,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.closeEvent(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.tabletEvent = function(...args) 
           
@@ -1975,7 +1975,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.tabletEvent(...args);
             
         };
-    
+        
       // function 
       RListWidget.prototype.actionEvent = function() 
         
@@ -2017,7 +2017,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.dragMoveEvent(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.dragLeaveEvent = function(...args) 
           
@@ -2027,7 +2027,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.dragLeaveEvent(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.showEvent = function(...args) 
           
@@ -2037,7 +2037,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.showEvent(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.hideEvent = function(...args) 
           
@@ -2047,7 +2047,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.hideEvent(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.nativeEvent = function(...args) 
           
@@ -2057,7 +2057,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.nativeEvent(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.changeEvent = function(...args) 
           
@@ -2067,7 +2067,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.changeEvent(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.metric = function(...args) 
           
@@ -2077,7 +2077,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.metric(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.initPainter = function(...args) 
           
@@ -2087,7 +2087,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.initPainter(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.redirected = function(...args) 
           
@@ -2097,7 +2097,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.redirected(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.sharedPainter = function(...args) 
           
@@ -2107,7 +2107,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.sharedPainter(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.inputMethodEvent = function(...args) 
           
@@ -2117,7 +2117,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.inputMethodEvent(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.setInputMethodHints = function(...args) 
           
@@ -2127,7 +2127,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.setInputMethodHints(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.updateMicroFocus = function(...args) 
           
@@ -2137,7 +2137,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.updateMicroFocus(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.create = function(...args) 
           
@@ -2147,7 +2147,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.create(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.destroy = function(...args) 
           
@@ -2157,7 +2157,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.destroy(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.focusNextPrevChild = function(...args) 
           
@@ -2167,7 +2167,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.focusNextPrevChild(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.focusNextChild = function(...args) 
           
@@ -2177,7 +2177,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.focusNextChild(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.focusPreviousChild = function(...args) 
           
@@ -2187,7 +2187,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.focusPreviousChild(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.setBackingStore = function(...args) 
           
@@ -2197,7 +2197,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.setBackingStore(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.testAttribute_helper = function(...args) 
           
@@ -2207,7 +2207,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.testAttribute_helper(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.takeLayout = function(...args) 
           
@@ -2217,7 +2217,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.takeLayout(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.qt_mac_is_metal = function(...args) 
           
@@ -2227,7 +2227,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.qt_mac_is_metal(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.qt_qwidget_data = function(...args) 
           
@@ -2237,7 +2237,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.qt_qwidget_data(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.qt_widget_private = function(...args) 
           
@@ -2247,7 +2247,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.qt_widget_private(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.frameStyle = function(...args) 
           
@@ -2257,7 +2257,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.frameStyle(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.setFrameStyle = function(...args) 
           
@@ -2267,7 +2267,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.setFrameStyle(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.setFrameShape = function(...args) 
           
@@ -2277,7 +2277,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.setFrameShape(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.setFrameShadow = function(...args) 
           
@@ -2287,7 +2287,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.setFrameShadow(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.setLineWidth = function(...args) 
           
@@ -2297,7 +2297,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.setLineWidth(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.setMidLineWidth = function(...args) 
           
@@ -2307,7 +2307,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.setMidLineWidth(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.setFrameRect = function(...args) 
           
@@ -2317,7 +2317,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.setFrameRect(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.drawFrame = function(...args) 
           
@@ -2327,7 +2327,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.drawFrame(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.initStyleOption = function(...args) 
           
@@ -2337,7 +2337,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.initStyleOption(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.verticalScrollBarPolicy = function(...args) 
           
@@ -2347,7 +2347,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.verticalScrollBarPolicy(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.setVerticalScrollBarPolicy = function(...args) 
           
@@ -2357,7 +2357,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.setVerticalScrollBarPolicy(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.verticalScrollBar = function(...args) 
           
@@ -2367,7 +2367,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.verticalScrollBar(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.setVerticalScrollBar = function(...args) 
           
@@ -2377,7 +2377,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.setVerticalScrollBar(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.horizontalScrollBarPolicy = function(...args) 
           
@@ -2387,7 +2387,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.horizontalScrollBarPolicy(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.setHorizontalScrollBarPolicy = function(...args) 
           
@@ -2397,7 +2397,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.setHorizontalScrollBarPolicy(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.horizontalScrollBar = function(...args) 
           
@@ -2407,7 +2407,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.horizontalScrollBar(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.setHorizontalScrollBar = function(...args) 
           
@@ -2417,7 +2417,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.setHorizontalScrollBar(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.cornerWidget = function(...args) 
           
@@ -2427,7 +2427,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.cornerWidget(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.setCornerWidget = function(...args) 
           
@@ -2437,7 +2437,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.setCornerWidget(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.addScrollBarWidget = function(...args) 
           
@@ -2447,7 +2447,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.addScrollBarWidget(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.viewport = function(...args) 
           
@@ -2457,7 +2457,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.viewport(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.setViewport = function(...args) 
           
@@ -2467,7 +2467,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.setViewport(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.maximumViewportSize = function(...args) 
           
@@ -2477,7 +2477,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.maximumViewportSize(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.setupViewport = function(...args) 
           
@@ -2487,7 +2487,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.setupViewport(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.sizeAdjustPolicy = function(...args) 
           
@@ -2497,7 +2497,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.sizeAdjustPolicy(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.setSizeAdjustPolicy = function(...args) 
           
@@ -2507,7 +2507,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.setSizeAdjustPolicy(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.setViewportMargins = function(...args) 
           
@@ -2517,7 +2517,8 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.setViewportMarginsSuper(...args);
             
         };
-    
+        RListWidget.prototype.setViewportMargins.__SUPER__ = true;
+        
         // function 
         RListWidget.prototype.viewportMargins = function(...args) 
           
@@ -2527,7 +2528,8 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.viewportMarginsSuper(...args);
             
         };
-    
+        RListWidget.prototype.viewportMargins.__SUPER__ = true;
+        
         // function 
         RListWidget.prototype.viewportEvent = function(...args) 
           
@@ -2537,7 +2539,8 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.viewportEventSuper(...args);
             
         };
-    
+        RListWidget.prototype.viewportEvent.__SUPER__ = true;
+        
         // function 
         RListWidget.prototype.mouseDoubleClickEvent = function(...args) 
           
@@ -2547,7 +2550,8 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.mouseDoubleClickEventSuper(...args);
             
         };
-    
+        RListWidget.prototype.mouseDoubleClickEvent.__SUPER__ = true;
+        
         // function 
         RListWidget.prototype.dragEnterEvent = function(...args) 
           
@@ -2557,7 +2561,8 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.dragEnterEventSuper(...args);
             
         };
-    
+        RListWidget.prototype.dragEnterEvent.__SUPER__ = true;
+        
         // function 
         RListWidget.prototype.keyPressEvent = function(...args) 
           
@@ -2567,7 +2572,8 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.keyPressEventSuper(...args);
             
         };
-    
+        RListWidget.prototype.keyPressEvent.__SUPER__ = true;
+        
         // function 
         RListWidget.prototype.model = function(...args) 
           
@@ -2577,7 +2583,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.model(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.setSelectionModel = function(...args) 
           
@@ -2587,7 +2593,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.setSelectionModel(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.selectionModel = function(...args) 
           
@@ -2597,7 +2603,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.selectionModel(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.setItemDelegate = function(...args) 
           
@@ -2607,7 +2613,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.setItemDelegate(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.setSelectionMode = function(...args) 
           
@@ -2617,7 +2623,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.setSelectionMode(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.setSelectionBehavior = function(...args) 
           
@@ -2627,7 +2633,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.setSelectionBehavior(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.currentIndex = function(...args) 
           
@@ -2637,7 +2643,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.currentIndex(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.rootIndex = function(...args) 
           
@@ -2647,7 +2653,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.rootIndex(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.setEditTriggers = function(...args) 
           
@@ -2657,7 +2663,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.setEditTriggers(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.setVerticalScrollMode = function(...args) 
           
@@ -2667,7 +2673,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.setVerticalScrollMode(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.resetVerticalScrollMode = function(...args) 
           
@@ -2677,7 +2683,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.resetVerticalScrollMode(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.setHorizontalScrollMode = function(...args) 
           
@@ -2687,7 +2693,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.setHorizontalScrollMode(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.resetHorizontalScrollMode = function(...args) 
           
@@ -2697,7 +2703,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.resetHorizontalScrollMode(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.setAutoScroll = function(...args) 
           
@@ -2707,7 +2713,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.setAutoScroll(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.hasAutoScroll = function(...args) 
           
@@ -2717,7 +2723,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.hasAutoScroll(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.setAutoScrollMargin = function(...args) 
           
@@ -2727,7 +2733,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.setAutoScrollMargin(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.setTabKeyNavigation = function(...args) 
           
@@ -2737,7 +2743,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.setTabKeyNavigation(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.setDropIndicatorShown = function(...args) 
           
@@ -2747,7 +2753,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.setDropIndicatorShown(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.setDragEnabled = function(...args) 
           
@@ -2757,7 +2763,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.setDragEnabled(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.setDragDropOverwriteMode = function(...args) 
           
@@ -2767,7 +2773,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.setDragDropOverwriteMode(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.setDragDropMode = function(...args) 
           
@@ -2777,7 +2783,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.setDragDropMode(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.setDefaultDropAction = function(...args) 
           
@@ -2787,7 +2793,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.setDefaultDropAction(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.setAlternatingRowColors = function(...args) 
           
@@ -2797,7 +2803,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.setAlternatingRowColors(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.setIconSize = function(...args) 
           
@@ -2807,7 +2813,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.setIconSize(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.setTextElideMode = function(...args) 
           
@@ -2817,7 +2823,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.setTextElideMode(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.keyboardSearch = function(...args) 
           
@@ -2827,7 +2833,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.keyboardSearch(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.setIndexWidget = function(...args) 
           
@@ -2837,7 +2843,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.setIndexWidget(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.indexWidget = function(...args) 
           
@@ -2847,7 +2853,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.indexWidget(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.inputMethodQuery = function(...args) 
           
@@ -2857,7 +2863,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.inputMethodQuery(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.selectAll = function(...args) 
           
@@ -2867,7 +2873,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.selectAll(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.edit = function(...args) 
           
@@ -2877,7 +2883,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.edit(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.clearSelection = function(...args) 
           
@@ -2887,7 +2893,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.clearSelection(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.setCurrentIndex = function(...args) 
           
@@ -2897,7 +2903,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.setCurrentIndex(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.scrollToTop = function(...args) 
           
@@ -2907,7 +2913,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.scrollToTop(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.scrollToBottom = function(...args) 
           
@@ -2917,7 +2923,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.scrollToBottom(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.update = function(...args) 
           
@@ -2927,7 +2933,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.update(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.eventFilter = function(...args) 
           
@@ -2937,7 +2943,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.eventFilter(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.setMovement = function(...args) 
           
@@ -2947,7 +2953,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.setMovement(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.setFlow = function(...args) 
           
@@ -2957,7 +2963,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.setFlow(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.setWrapping = function(...args) 
           
@@ -2967,7 +2973,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.setWrapping(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.setResizeMode = function(...args) 
           
@@ -2977,7 +2983,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.setResizeMode(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.setLayoutMode = function(...args) 
           
@@ -2987,7 +2993,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.setLayoutMode(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.setSpacing = function(...args) 
           
@@ -2997,7 +3003,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.setSpacing(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.setBatchSize = function(...args) 
           
@@ -3007,7 +3013,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.setBatchSize(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.setGridSize = function(...args) 
           
@@ -3017,7 +3023,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.setGridSize(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.setViewMode = function(...args) 
           
@@ -3027,7 +3033,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.setViewMode(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.clearPropertyFlags = function(...args) 
           
@@ -3037,7 +3043,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.clearPropertyFlags(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.isRowHidden = function(...args) 
           
@@ -3047,7 +3053,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.isRowHidden(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.setRowHidden = function(...args) 
           
@@ -3057,7 +3063,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.setRowHidden(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.setModelColumn = function(...args) 
           
@@ -3067,7 +3073,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.setModelColumn(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.setUniformItemSizes = function(...args) 
           
@@ -3077,7 +3083,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.setUniformItemSizes(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.setWordWrap = function(...args) 
           
@@ -3087,7 +3093,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.setWordWrap(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.setSelectionRectVisible = function(...args) 
           
@@ -3097,7 +3103,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.setSelectionRectVisible(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.isSelectionRectVisible = function(...args) 
           
@@ -3107,7 +3113,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.isSelectionRectVisible(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.setItemAlignment = function(...args) 
           
@@ -3117,7 +3123,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.setItemAlignment(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.visualRect = function(...args) 
           
@@ -3127,7 +3133,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.visualRect(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.scrollTo = function(...args) 
           
@@ -3137,7 +3143,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.scrollTo(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.indexAt = function(...args) 
           
@@ -3147,7 +3153,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.indexAt(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.doItemsLayout = function(...args) 
           
@@ -3157,7 +3163,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.doItemsLayout(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.reset = function(...args) 
           
@@ -3167,7 +3173,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.reset(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.setRootIndex = function(...args) 
           
@@ -3177,7 +3183,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.setRootIndex(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.scrollContentsBy = function(...args) 
           
@@ -3187,7 +3193,8 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.scrollContentsBySuper(...args);
             
         };
-    
+        RListWidget.prototype.scrollContentsBy.__SUPER__ = true;
+        
         // function 
         RListWidget.prototype.resizeContents = function(...args) 
           
@@ -3197,7 +3204,8 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.resizeContentsSuper(...args);
             
         };
-    
+        RListWidget.prototype.resizeContents.__SUPER__ = true;
+        
         // function 
         RListWidget.prototype.contentsSize = function(...args) 
           
@@ -3207,7 +3215,8 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.contentsSizeSuper(...args);
             
         };
-    
+        RListWidget.prototype.contentsSize.__SUPER__ = true;
+        
         // function 
         RListWidget.prototype.dataChanged = function(...args) 
           
@@ -3217,7 +3226,8 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.dataChangedSuper(...args);
             
         };
-    
+        RListWidget.prototype.dataChanged.__SUPER__ = true;
+        
         // function 
         RListWidget.prototype.rowsInserted = function(...args) 
           
@@ -3227,7 +3237,8 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.rowsInsertedSuper(...args);
             
         };
-    
+        RListWidget.prototype.rowsInserted.__SUPER__ = true;
+        
         // function 
         RListWidget.prototype.rowsAboutToBeRemoved = function(...args) 
           
@@ -3237,7 +3248,8 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.rowsAboutToBeRemovedSuper(...args);
             
         };
-    
+        RListWidget.prototype.rowsAboutToBeRemoved.__SUPER__ = true;
+        
         // function 
         RListWidget.prototype.wheelEvent = function(...args) 
           
@@ -3247,7 +3259,8 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.wheelEventSuper(...args);
             
         };
-    
+        RListWidget.prototype.wheelEvent.__SUPER__ = true;
+        
         // function 
         RListWidget.prototype.resizeEvent = function(...args) 
           
@@ -3257,7 +3270,8 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.resizeEventSuper(...args);
             
         };
-    
+        RListWidget.prototype.resizeEvent.__SUPER__ = true;
+        
         // function 
         RListWidget.prototype.startDrag = function(...args) 
           
@@ -3267,7 +3281,8 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.startDragSuper(...args);
             
         };
-    
+        RListWidget.prototype.startDrag.__SUPER__ = true;
+        
         // function 
         RListWidget.prototype.paintEvent = function(...args) 
           
@@ -3277,7 +3292,8 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.paintEventSuper(...args);
             
         };
-    
+        RListWidget.prototype.paintEvent.__SUPER__ = true;
+        
         // function 
         RListWidget.prototype.horizontalOffset = function(...args) 
           
@@ -3287,7 +3303,8 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.horizontalOffsetSuper(...args);
             
         };
-    
+        RListWidget.prototype.horizontalOffset.__SUPER__ = true;
+        
         // function 
         RListWidget.prototype.verticalOffset = function(...args) 
           
@@ -3297,7 +3314,8 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.verticalOffsetSuper(...args);
             
         };
-    
+        RListWidget.prototype.verticalOffset.__SUPER__ = true;
+        
         // function 
         RListWidget.prototype.rectForIndex = function(...args) 
           
@@ -3307,7 +3325,8 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.rectForIndexSuper(...args);
             
         };
-    
+        RListWidget.prototype.rectForIndex.__SUPER__ = true;
+        
         // function 
         RListWidget.prototype.setPositionForIndex = function(...args) 
           
@@ -3317,7 +3336,8 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.setPositionForIndexSuper(...args);
             
         };
-    
+        RListWidget.prototype.setPositionForIndex.__SUPER__ = true;
+        
         // function 
         RListWidget.prototype.updateGeometries = function(...args) 
           
@@ -3327,7 +3347,8 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.updateGeometriesSuper(...args);
             
         };
-    
+        RListWidget.prototype.updateGeometries.__SUPER__ = true;
+        
         // function 
         RListWidget.prototype.isIndexHidden = function(...args) 
           
@@ -3337,7 +3358,8 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.isIndexHiddenSuper(...args);
             
         };
-    
+        RListWidget.prototype.isIndexHidden.__SUPER__ = true;
+        
         // function 
         RListWidget.prototype.currentChanged = function(...args) 
           
@@ -3347,7 +3369,8 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.currentChangedSuper(...args);
             
         };
-    
+        RListWidget.prototype.currentChanged.__SUPER__ = true;
+        
         // function 
         RListWidget.prototype.viewportSizeHint = function(...args) 
           
@@ -3357,7 +3380,8 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.viewportSizeHintSuper(...args);
             
         };
-    
+        RListWidget.prototype.viewportSizeHint.__SUPER__ = true;
+        
         // function 
         RListWidget.prototype.visualIndex = function(...args) 
           
@@ -3367,7 +3391,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.visualIndex(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.item = function(...args) 
           
@@ -3377,7 +3401,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.item(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.row = function(...args) 
           
@@ -3387,7 +3411,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.row(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.insertItem = function(...args) 
           
@@ -3397,7 +3421,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.insertItem(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.insertItems = function(...args) 
           
@@ -3407,7 +3431,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.insertItems(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.addItem = function(...args) 
           
@@ -3417,7 +3441,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.addItem(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.addItems = function(...args) 
           
@@ -3427,7 +3451,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.addItems(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.takeItem = function(...args) 
           
@@ -3437,7 +3461,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.takeItem(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.currentItem = function(...args) 
           
@@ -3447,7 +3471,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.currentItem(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.setCurrentItem = function(...args) 
           
@@ -3457,7 +3481,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.setCurrentItem(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.setCurrentRow = function(...args) 
           
@@ -3467,7 +3491,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.setCurrentRow(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.itemAt = function(...args) 
           
@@ -3477,7 +3501,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.itemAt(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.visualItemRect = function(...args) 
           
@@ -3487,7 +3511,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.visualItemRect(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.sortItems = function(...args) 
           
@@ -3497,7 +3521,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.sortItems(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.setSortingEnabled = function(...args) 
           
@@ -3507,7 +3531,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.setSortingEnabled(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.isSortingEnabled = function(...args) 
           
@@ -3517,7 +3541,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.isSortingEnabled(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.editItem = function(...args) 
           
@@ -3527,7 +3551,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.editItem(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.openPersistentEditor = function(...args) 
           
@@ -3537,7 +3561,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.openPersistentEditor(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.closePersistentEditor = function(...args) 
           
@@ -3547,7 +3571,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.closePersistentEditor(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.isPersistentEditorOpen = function(...args) 
           
@@ -3557,7 +3581,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.isPersistentEditorOpen(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.itemWidget = function(...args) 
           
@@ -3567,7 +3591,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.itemWidget(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.setItemWidget = function(...args) 
           
@@ -3577,7 +3601,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.setItemWidget(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.removeItemWidget = function(...args) 
           
@@ -3587,7 +3611,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.removeItemWidget(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.selectedItems = function(...args) 
           
@@ -3597,7 +3621,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.selectedItems(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.findItems = function(...args) 
           
@@ -3607,7 +3631,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.findItems(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.items = function(...args) 
           
@@ -3617,7 +3641,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.items(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.indexFromItem = function(...args) 
           
@@ -3627,7 +3651,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.indexFromItem(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.itemFromIndex = function(...args) 
           
@@ -3637,7 +3661,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.itemFromIndex(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.dropEvent = function(...args) 
           
@@ -3647,7 +3671,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.dropEvent(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.scrollToItem = function(...args) 
           
@@ -3657,7 +3681,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.scrollToItem(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.clear = function(...args) 
           
@@ -3667,7 +3691,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.clear(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.event = function(...args) 
           
@@ -3677,7 +3701,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.event(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.mimeTypes = function(...args) 
           
@@ -3687,7 +3711,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.mimeTypes(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.mimeData = function(...args) 
           
@@ -3697,7 +3721,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.mimeData(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.dropMimeData = function(...args) 
           
@@ -3707,7 +3731,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.dropMimeData(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.supportedDropActions = function(...args) 
           
@@ -3717,7 +3741,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.supportedDropActions(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.setModel = function(...args) 
           
@@ -3727,7 +3751,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.setModel(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.sortOrder = function(...args) 
           
@@ -3737,7 +3761,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.sortOrder(...args);
             
         };
-    
+        
         // function 
         RListWidget.prototype.setIconOffset = function(...args) 
           
@@ -3747,7 +3771,7 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.setIconOffset(...args);
             
         };
-    
+        
       // function 
       RListWidget.prototype.contextMenuEvent = function() 
         
@@ -3789,7 +3813,8 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.mousePressEventSuper(...args);
             
         };
-    
+        RListWidget.prototype.mousePressEvent.__SUPER__ = true;
+        
         // function 
         RListWidget.prototype.mouseReleaseEvent = function(...args) 
           
@@ -3799,7 +3824,8 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.mouseReleaseEventSuper(...args);
             
         };
-    
+        RListWidget.prototype.mouseReleaseEvent.__SUPER__ = true;
+        
         // function 
         RListWidget.prototype.mouseMoveEvent = function(...args) 
           
@@ -3809,7 +3835,8 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
               return this.__PROXY__.mouseMoveEventSuper(...args);
             
         };
-    
+        RListWidget.prototype.mouseMoveEvent.__SUPER__ = true;
+        
 
       // static functions:
       

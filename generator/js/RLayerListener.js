@@ -105,7 +105,7 @@
               return this.__PROXY__.updateLayers(...args);
             
         };
-    
+        
         // function 
         RLayerListener.prototype.setCurrentLayer = function(...args) 
           
@@ -115,7 +115,7 @@
               return this.__PROXY__.setCurrentLayer(...args);
             
         };
-    
+        
         // function 
         RLayerListener.prototype.clearLayers = function(...args) 
           
@@ -125,7 +125,7 @@
               return this.__PROXY__.clearLayers(...args);
             
         };
-    
+        
 
       // static functions:
       RLayerListener.prototype.isNullWrapper = function() {

@@ -142,7 +142,7 @@
               return this.__PROXY__.getEntityTypeFilter(...args);
             
         };
-    
+        
         // function 
         RPasteOperation.prototype.setRecordAffectedObjects = function(...args) 
           
@@ -152,7 +152,7 @@
               return this.__PROXY__.setRecordAffectedObjects(...args);
             
         };
-    
+        
         // function 
         RPasteOperation.prototype.setSpatialIndexDisabled = function(...args) 
           
@@ -162,7 +162,7 @@
               return this.__PROXY__.setSpatialIndexDisabled(...args);
             
         };
-    
+        
         // function 
         RPasteOperation.prototype.setAllowInvisible = function(...args) 
           
@@ -172,7 +172,7 @@
               return this.__PROXY__.setAllowInvisible(...args);
             
         };
-    
+        
         // function 
         RPasteOperation.prototype.setAllowAll = function(...args) 
           
@@ -182,7 +182,7 @@
               return this.__PROXY__.setAllowAll(...args);
             
         };
-    
+        
         // function 
         RPasteOperation.prototype.setKeepChildren = function(...args) 
           
@@ -192,7 +192,7 @@
               return this.__PROXY__.setKeepChildren(...args);
             
         };
-    
+        
         // function 
         RPasteOperation.prototype.setTransactionGroup = function(...args) 
           
@@ -202,7 +202,7 @@
               return this.__PROXY__.setTransactionGroup(...args);
             
         };
-    
+        
         // function 
         RPasteOperation.prototype.getTransactionGroup = function(...args) 
           
@@ -212,7 +212,7 @@
               return this.__PROXY__.getTransactionGroup(...args);
             
         };
-    
+        
         // function 
         RPasteOperation.prototype.setText = function(...args) 
           
@@ -222,7 +222,7 @@
               return this.__PROXY__.setText(...args);
             
         };
-    
+        
         // function 
         RPasteOperation.prototype.getText = function(...args) 
           
@@ -232,7 +232,7 @@
               return this.__PROXY__.getText(...args);
             
         };
-    
+        
         // function 
         RPasteOperation.prototype.getTransactionTypes = function(...args) 
           
@@ -242,7 +242,7 @@
               return this.__PROXY__.getTransactionTypes(...args);
             
         };
-    
+        
         // function 
         RPasteOperation.prototype.setTransactionType = function(...args) 
           
@@ -252,7 +252,7 @@
               return this.__PROXY__.setTransactionType(...args);
             
         };
-    
+        
         // function 
         RPasteOperation.prototype.getTransactionType = function(...args) 
           
@@ -262,7 +262,7 @@
               return this.__PROXY__.getTransactionType(...args);
             
         };
-    
+        
         // function 
         RPasteOperation.prototype.copy = function(...args) 
           
@@ -272,7 +272,7 @@
               return this.__PROXY__.copy(...args);
             
         };
-    
+        
         // function 
         RPasteOperation.prototype.copyEntity = function(...args) 
           
@@ -282,7 +282,7 @@
               return this.__PROXY__.copyEntity(...args);
             
         };
-    
+        
         // function 
         RPasteOperation.prototype.copyEntityBlock = function(...args) 
           
@@ -292,7 +292,7 @@
               return this.__PROXY__.copyEntityBlock(...args);
             
         };
-    
+        
         // function 
         RPasteOperation.prototype.copyBlock = function(...args) 
           
@@ -302,7 +302,7 @@
               return this.__PROXY__.copyBlock(...args);
             
         };
-    
+        
         // function 
         RPasteOperation.prototype.copyEntityLayer = function(...args) 
           
@@ -312,7 +312,7 @@
               return this.__PROXY__.copyEntityLayer(...args);
             
         };
-    
+        
         // function 
         RPasteOperation.prototype.copyLayer = function(...args) 
           
@@ -322,7 +322,7 @@
               return this.__PROXY__.copyLayer(...args);
             
         };
-    
+        
         // function 
         RPasteOperation.prototype.copyEntityLinetype = function(...args) 
           
@@ -332,7 +332,7 @@
               return this.__PROXY__.copyEntityLinetype(...args);
             
         };
-    
+        
         // function 
         RPasteOperation.prototype.copyLinetype = function(...args) 
           
@@ -342,7 +342,7 @@
               return this.__PROXY__.copyLinetype(...args);
             
         };
-    
+        
         // function 
         RPasteOperation.prototype.setCopyEmptyBlocks = function(...args) 
           
@@ -352,7 +352,7 @@
               return this.__PROXY__.setCopyEmptyBlocks(...args);
             
         };
-    
+        
         // function 
         RPasteOperation.prototype.setCopyAllLayers = function(...args) 
           
@@ -362,7 +362,7 @@
               return this.__PROXY__.setCopyAllLayers(...args);
             
         };
-    
+        
         // function 
         RPasteOperation.prototype.setKeepSelection = function(...args) 
           
@@ -372,7 +372,7 @@
               return this.__PROXY__.setKeepSelection(...args);
             
         };
-    
+        
         // function 
         RPasteOperation.prototype.setBlockOwnership = function(...args) 
           
@@ -382,7 +382,7 @@
               return this.__PROXY__.setBlockOwnership(...args);
             
         };
-    
+        
         // function 
         RPasteOperation.prototype.setCustomEntityType = function(...args) 
           
@@ -392,7 +392,7 @@
               return this.__PROXY__.setCustomEntityType(...args);
             
         };
-    
+        
         // function 
         RPasteOperation.prototype.setOffsets = function(...args) 
           
@@ -402,7 +402,7 @@
               return this.__PROXY__.setOffsets(...args);
             
         };
-    
+        
         // function 
         RPasteOperation.prototype.setRotations = function(...args) 
           
@@ -412,7 +412,7 @@
               return this.__PROXY__.setRotations(...args);
             
         };
-    
+        
         // function 
         RPasteOperation.prototype.setCenters = function(...args) 
           
@@ -422,7 +422,7 @@
               return this.__PROXY__.setCenters(...args);
             
         };
-    
+        
         // function 
         RPasteOperation.prototype.setOffset = function(...args) 
           
@@ -432,7 +432,7 @@
               return this.__PROXY__.setOffset(...args);
             
         };
-    
+        
         // function 
         RPasteOperation.prototype.getOffset = function(...args) 
           
@@ -442,7 +442,7 @@
               return this.__PROXY__.getOffset(...args);
             
         };
-    
+        
         // function 
         RPasteOperation.prototype.setScale = function(...args) 
           
@@ -452,7 +452,7 @@
               return this.__PROXY__.setScale(...args);
             
         };
-    
+        
         // function 
         RPasteOperation.prototype.getScale = function(...args) 
           
@@ -462,7 +462,7 @@
               return this.__PROXY__.getScale(...args);
             
         };
-    
+        
         // function 
         RPasteOperation.prototype.setRotation = function(...args) 
           
@@ -472,7 +472,7 @@
               return this.__PROXY__.setRotation(...args);
             
         };
-    
+        
         // function 
         RPasteOperation.prototype.getRotation = function(...args) 
           
@@ -482,7 +482,7 @@
               return this.__PROXY__.getRotation(...args);
             
         };
-    
+        
         // function 
         RPasteOperation.prototype.setCenter = function(...args) 
           
@@ -492,7 +492,7 @@
               return this.__PROXY__.setCenter(...args);
             
         };
-    
+        
         // function 
         RPasteOperation.prototype.getCenter = function(...args) 
           
@@ -502,7 +502,7 @@
               return this.__PROXY__.getCenter(...args);
             
         };
-    
+        
         // function 
         RPasteOperation.prototype.setFlipHorizontal = function(...args) 
           
@@ -512,7 +512,7 @@
               return this.__PROXY__.setFlipHorizontal(...args);
             
         };
-    
+        
         // function 
         RPasteOperation.prototype.getFlipHorizontal = function(...args) 
           
@@ -522,7 +522,7 @@
               return this.__PROXY__.getFlipHorizontal(...args);
             
         };
-    
+        
         // function 
         RPasteOperation.prototype.setFlipVertical = function(...args) 
           
@@ -532,7 +532,7 @@
               return this.__PROXY__.setFlipVertical(...args);
             
         };
-    
+        
         // function 
         RPasteOperation.prototype.getFlipVertical = function(...args) 
           
@@ -542,7 +542,7 @@
               return this.__PROXY__.getFlipVertical(...args);
             
         };
-    
+        
         // function 
         RPasteOperation.prototype.setToCurrentLayer = function(...args) 
           
@@ -552,7 +552,7 @@
               return this.__PROXY__.setToCurrentLayer(...args);
             
         };
-    
+        
         // function 
         RPasteOperation.prototype.getToCurrentLayer = function(...args) 
           
@@ -562,7 +562,7 @@
               return this.__PROXY__.getToCurrentLayer(...args);
             
         };
-    
+        
         // function 
         RPasteOperation.prototype.setOverwriteLayers = function(...args) 
           
@@ -572,7 +572,7 @@
               return this.__PROXY__.setOverwriteLayers(...args);
             
         };
-    
+        
         // function 
         RPasteOperation.prototype.getOverwriteLayers = function(...args) 
           
@@ -582,7 +582,7 @@
               return this.__PROXY__.getOverwriteLayers(...args);
             
         };
-    
+        
         // function 
         RPasteOperation.prototype.setOverwriteBlocks = function(...args) 
           
@@ -592,7 +592,7 @@
               return this.__PROXY__.setOverwriteBlocks(...args);
             
         };
-    
+        
         // function 
         RPasteOperation.prototype.getOverwriteBlocks = function(...args) 
           
@@ -602,7 +602,7 @@
               return this.__PROXY__.getOverwriteBlocks(...args);
             
         };
-    
+        
         // function 
         RPasteOperation.prototype.setBlockName = function(...args) 
           
@@ -612,7 +612,7 @@
               return this.__PROXY__.setBlockName(...args);
             
         };
-    
+        
         // function 
         RPasteOperation.prototype.getBlockName = function(...args) 
           
@@ -622,7 +622,7 @@
               return this.__PROXY__.getBlockName(...args);
             
         };
-    
+        
         // function 
         RPasteOperation.prototype.setLayerName = function(...args) 
           
@@ -632,7 +632,7 @@
               return this.__PROXY__.setLayerName(...args);
             
         };
-    
+        
         // function 
         RPasteOperation.prototype.getLayerName = function(...args) 
           
@@ -642,7 +642,7 @@
               return this.__PROXY__.getLayerName(...args);
             
         };
-    
+        
         // function 
         RPasteOperation.prototype.setAttribute = function(...args) 
           
@@ -652,7 +652,7 @@
               return this.__PROXY__.setAttribute(...args);
             
         };
-    
+        
         // function 
         RPasteOperation.prototype.setProperty = function(...args) 
           
@@ -662,7 +662,7 @@
               return this.__PROXY__.setProperty(...args);
             
         };
-    
+        
         // function 
         RPasteOperation.prototype.setBlockProperty = function(...args) 
           
@@ -672,7 +672,7 @@
               return this.__PROXY__.setBlockProperty(...args);
             
         };
-    
+        
         // function 
         RPasteOperation.prototype.apply = function(...args) 
           
@@ -682,7 +682,7 @@
               return this.__PROXY__.apply(...args);
             
         };
-    
+        
         // function 
         RPasteOperation.prototype.getBoundary = function(...args) 
           
@@ -692,7 +692,7 @@
               return this.__PROXY__.getBoundary(...args);
             
         };
-    
+        
 
       // static functions:
       RPasteOperation.prototype.isNullWrapper = function() {

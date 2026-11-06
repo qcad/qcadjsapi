@@ -181,7 +181,7 @@ RTriangle.Ray = RTriangle_Wrapper.Ray;
               return this.__PROXY__.isValid(...args);
             
         };
-    
+        
         // function 
         RTriangle.prototype.isInterpolated = function(...args) 
           
@@ -191,7 +191,7 @@ RTriangle.Ray = RTriangle_Wrapper.Ray;
               return this.__PROXY__.isInterpolated(...args);
             
         };
-    
+        
         // function 
         RTriangle.prototype.getClosestPointOnShape = function(...args) 
           
@@ -201,7 +201,7 @@ RTriangle.Ray = RTriangle_Wrapper.Ray;
               return this.__PROXY__.getClosestPointOnShape(...args);
             
         };
-    
+        
         // function 
         RTriangle.prototype.to2D = function(...args) 
           
@@ -211,7 +211,7 @@ RTriangle.Ray = RTriangle_Wrapper.Ray;
               return this.__PROXY__.to2D(...args);
             
         };
-    
+        
         // function 
         RTriangle.prototype.equals = function(...args) 
           
@@ -221,7 +221,7 @@ RTriangle.Ray = RTriangle_Wrapper.Ray;
               return this.__PROXY__.equals(...args);
             
         };
-    
+        
         // function 
         RTriangle.prototype.getIntProperties = function(...args) 
           
@@ -231,7 +231,7 @@ RTriangle.Ray = RTriangle_Wrapper.Ray;
               return this.__PROXY__.getIntProperties(...args);
             
         };
-    
+        
         // function 
         RTriangle.prototype.getDoubleProperties = function(...args) 
           
@@ -241,7 +241,7 @@ RTriangle.Ray = RTriangle_Wrapper.Ray;
               return this.__PROXY__.getDoubleProperties(...args);
             
         };
-    
+        
         // function 
         RTriangle.prototype.getBoolProperties = function(...args) 
           
@@ -251,7 +251,7 @@ RTriangle.Ray = RTriangle_Wrapper.Ray;
               return this.__PROXY__.getBoolProperties(...args);
             
         };
-    
+        
         // function 
         RTriangle.prototype.getMaxDistanceTo = function(...args) 
           
@@ -261,7 +261,7 @@ RTriangle.Ray = RTriangle_Wrapper.Ray;
               return this.__PROXY__.getMaxDistanceTo(...args);
             
         };
-    
+        
         // function 
         RTriangle.prototype.isOnShape = function(...args) 
           
@@ -271,7 +271,7 @@ RTriangle.Ray = RTriangle_Wrapper.Ray;
               return this.__PROXY__.isOnShape(...args);
             
         };
-    
+        
         // function 
         RTriangle.prototype.filterOnShape = function(...args) 
           
@@ -281,7 +281,7 @@ RTriangle.Ray = RTriangle_Wrapper.Ray;
               return this.__PROXY__.filterOnShape(...args);
             
         };
-    
+        
         // function 
         RTriangle.prototype.getVectorFromEndpointTo = function(...args) 
           
@@ -291,7 +291,7 @@ RTriangle.Ray = RTriangle_Wrapper.Ray;
               return this.__PROXY__.getVectorFromEndpointTo(...args);
             
         };
-    
+        
         // function 
         RTriangle.prototype.getArcReferencePoints = function(...args) 
           
@@ -301,7 +301,7 @@ RTriangle.Ray = RTriangle_Wrapper.Ray;
               return this.__PROXY__.getArcReferencePoints(...args);
             
         };
-    
+        
         // function 
         RTriangle.prototype.getPointOnShape = function(...args) 
           
@@ -311,7 +311,7 @@ RTriangle.Ray = RTriangle_Wrapper.Ray;
               return this.__PROXY__.getPointOnShape(...args);
             
         };
-    
+        
         // function 
         RTriangle.prototype.getPointWithDistanceToStart = function(...args) 
           
@@ -321,7 +321,7 @@ RTriangle.Ray = RTriangle_Wrapper.Ray;
               return this.__PROXY__.getPointWithDistanceToStart(...args);
             
         };
-    
+        
         // function 
         RTriangle.prototype.getPointWithDistanceToEnd = function(...args) 
           
@@ -331,7 +331,7 @@ RTriangle.Ray = RTriangle_Wrapper.Ray;
               return this.__PROXY__.getPointWithDistanceToEnd(...args);
             
         };
-    
+        
         // function 
         RTriangle.prototype.getAngleAt = function(...args) 
           
@@ -341,7 +341,7 @@ RTriangle.Ray = RTriangle_Wrapper.Ray;
               return this.__PROXY__.getAngleAt(...args);
             
         };
-    
+        
         // function 
         RTriangle.prototype.getAngleAtPoint = function(...args) 
           
@@ -351,7 +351,7 @@ RTriangle.Ray = RTriangle_Wrapper.Ray;
               return this.__PROXY__.getAngleAtPoint(...args);
             
         };
-    
+        
         // function 
         RTriangle.prototype.getPointAtPercent = function(...args) 
           
@@ -361,7 +361,7 @@ RTriangle.Ray = RTriangle_Wrapper.Ray;
               return this.__PROXY__.getPointAtPercent(...args);
             
         };
-    
+        
         // function 
         RTriangle.prototype.getAngleAtPercent = function(...args) 
           
@@ -371,7 +371,7 @@ RTriangle.Ray = RTriangle_Wrapper.Ray;
               return this.__PROXY__.getAngleAtPercent(...args);
             
         };
-    
+        
         // function 
         RTriangle.prototype.intersectsWith = function(...args) 
           
@@ -381,7 +381,7 @@ RTriangle.Ray = RTriangle_Wrapper.Ray;
               return this.__PROXY__.intersectsWith(...args);
             
         };
-    
+        
         // function 
         RTriangle.prototype.getIntersectionPoints = function(...args) 
           
@@ -391,7 +391,7 @@ RTriangle.Ray = RTriangle_Wrapper.Ray;
               return this.__PROXY__.getIntersectionPoints(...args);
             
         };
-    
+        
         // function 
         RTriangle.prototype.getSelfIntersectionPoints = function(...args) 
           
@@ -401,7 +401,7 @@ RTriangle.Ray = RTriangle_Wrapper.Ray;
               return this.__PROXY__.getSelfIntersectionPoints(...args);
             
         };
-    
+        
         // function 
         RTriangle.prototype.isDirected = function(...args) 
           
@@ -411,7 +411,7 @@ RTriangle.Ray = RTriangle_Wrapper.Ray;
               return this.__PROXY__.isDirected(...args);
             
         };
-    
+        
         // function 
         RTriangle.prototype.getDirection1 = function(...args) 
           
@@ -421,7 +421,7 @@ RTriangle.Ray = RTriangle_Wrapper.Ray;
               return this.__PROXY__.getDirection1(...args);
             
         };
-    
+        
         // function 
         RTriangle.prototype.getDirection2 = function(...args) 
           
@@ -431,7 +431,7 @@ RTriangle.Ray = RTriangle_Wrapper.Ray;
               return this.__PROXY__.getDirection2(...args);
             
         };
-    
+        
         // function 
         RTriangle.prototype.getSideOfPoint = function(...args) 
           
@@ -441,7 +441,7 @@ RTriangle.Ray = RTriangle_Wrapper.Ray;
               return this.__PROXY__.getSideOfPoint(...args);
             
         };
-    
+        
         // function 
         RTriangle.prototype.getStartPoint = function(...args) 
           
@@ -451,7 +451,7 @@ RTriangle.Ray = RTriangle_Wrapper.Ray;
               return this.__PROXY__.getStartPoint(...args);
             
         };
-    
+        
         // function 
         RTriangle.prototype.getEndPoint = function(...args) 
           
@@ -461,7 +461,7 @@ RTriangle.Ray = RTriangle_Wrapper.Ray;
               return this.__PROXY__.getEndPoint(...args);
             
         };
-    
+        
         // function 
         RTriangle.prototype.getMiddlePoint = function(...args) 
           
@@ -471,7 +471,7 @@ RTriangle.Ray = RTriangle_Wrapper.Ray;
               return this.__PROXY__.getMiddlePoint(...args);
             
         };
-    
+        
         // function 
         RTriangle.prototype.trimStartPoint = function(...args) 
           
@@ -481,7 +481,7 @@ RTriangle.Ray = RTriangle_Wrapper.Ray;
               return this.__PROXY__.trimStartPoint(...args);
             
         };
-    
+        
         // function 
         RTriangle.prototype.trimEndPoint = function(...args) 
           
@@ -491,7 +491,7 @@ RTriangle.Ray = RTriangle_Wrapper.Ray;
               return this.__PROXY__.trimEndPoint(...args);
             
         };
-    
+        
         // function 
         RTriangle.prototype.getTrimEnd = function(...args) 
           
@@ -501,7 +501,7 @@ RTriangle.Ray = RTriangle_Wrapper.Ray;
               return this.__PROXY__.getTrimEnd(...args);
             
         };
-    
+        
         // function 
         RTriangle.prototype.getDistanceFromStart = function(...args) 
           
@@ -511,7 +511,7 @@ RTriangle.Ray = RTriangle_Wrapper.Ray;
               return this.__PROXY__.getDistanceFromStart(...args);
             
         };
-    
+        
         // function 
         RTriangle.prototype.getDistancesFromStart = function(...args) 
           
@@ -521,7 +521,7 @@ RTriangle.Ray = RTriangle_Wrapper.Ray;
               return this.__PROXY__.getDistancesFromStart(...args);
             
         };
-    
+        
         // function 
         RTriangle.prototype.stretch = function(...args) 
           
@@ -531,7 +531,7 @@ RTriangle.Ray = RTriangle_Wrapper.Ray;
               return this.__PROXY__.stretch(...args);
             
         };
-    
+        
         // function 
         RTriangle.prototype.getOffsetShapes = function(...args) 
           
@@ -541,7 +541,7 @@ RTriangle.Ray = RTriangle_Wrapper.Ray;
               return this.__PROXY__.getOffsetShapes(...args);
             
         };
-    
+        
         // function 
         RTriangle.prototype.splitAt = function(...args) 
           
@@ -551,7 +551,7 @@ RTriangle.Ray = RTriangle_Wrapper.Ray;
               return this.__PROXY__.splitAt(...args);
             
         };
-    
+        
         // function 
         RTriangle.prototype.dump = function(...args) 
           
@@ -561,7 +561,7 @@ RTriangle.Ray = RTriangle_Wrapper.Ray;
               return this.__PROXY__.dump(...args);
             
         };
-    
+        
         // function 
         RTriangle.prototype.getShapeType = function(...args) 
           
@@ -571,7 +571,7 @@ RTriangle.Ray = RTriangle_Wrapper.Ray;
               return this.__PROXY__.getShapeType(...args);
             
         };
-    
+        
         // function 
         RTriangle.prototype.clone = function(...args) 
           
@@ -581,7 +581,7 @@ RTriangle.Ray = RTriangle_Wrapper.Ray;
               return this.__PROXY__.clone(...args);
             
         };
-    
+        
         // function 
         RTriangle.prototype.setZ = function(...args) 
           
@@ -591,7 +591,7 @@ RTriangle.Ray = RTriangle_Wrapper.Ray;
               return this.__PROXY__.setZ(...args);
             
         };
-    
+        
         // function 
         RTriangle.prototype.getVectorProperties = function(...args) 
           
@@ -601,7 +601,7 @@ RTriangle.Ray = RTriangle_Wrapper.Ray;
               return this.__PROXY__.getVectorProperties(...args);
             
         };
-    
+        
         // function 
         RTriangle.prototype.getPolyline = function(...args) 
           
@@ -611,7 +611,7 @@ RTriangle.Ray = RTriangle_Wrapper.Ray;
               return this.__PROXY__.getPolyline(...args);
             
         };
-    
+        
         // function 
         RTriangle.prototype.getOrientation = function(...args) 
           
@@ -621,7 +621,7 @@ RTriangle.Ray = RTriangle_Wrapper.Ray;
               return this.__PROXY__.getOrientation(...args);
             
         };
-    
+        
         // function 
         RTriangle.prototype.reverse = function(...args) 
           
@@ -631,7 +631,7 @@ RTriangle.Ray = RTriangle_Wrapper.Ray;
               return this.__PROXY__.reverse(...args);
             
         };
-    
+        
         // function 
         RTriangle.prototype.createArrow = function(...args) 
           
@@ -641,7 +641,7 @@ RTriangle.Ray = RTriangle_Wrapper.Ray;
               return this.__PROXY__.createArrow(...args);
             
         };
-    
+        
         // function 
         RTriangle.prototype.getBoundingBox = function(...args) 
           
@@ -651,7 +651,7 @@ RTriangle.Ray = RTriangle_Wrapper.Ray;
               return this.__PROXY__.getBoundingBox(...args);
             
         };
-    
+        
         // function 
         RTriangle.prototype.getLength = function(...args) 
           
@@ -661,7 +661,7 @@ RTriangle.Ray = RTriangle_Wrapper.Ray;
               return this.__PROXY__.getLength(...args);
             
         };
-    
+        
         // function 
         RTriangle.prototype.getArea = function(...args) 
           
@@ -671,7 +671,7 @@ RTriangle.Ray = RTriangle_Wrapper.Ray;
               return this.__PROXY__.getArea(...args);
             
         };
-    
+        
         // function 
         RTriangle.prototype.getCorner = function(...args) 
           
@@ -681,7 +681,7 @@ RTriangle.Ray = RTriangle_Wrapper.Ray;
               return this.__PROXY__.getCorner(...args);
             
         };
-    
+        
         // function 
         RTriangle.prototype.setCorner = function(...args) 
           
@@ -691,7 +691,7 @@ RTriangle.Ray = RTriangle_Wrapper.Ray;
               return this.__PROXY__.setCorner(...args);
             
         };
-    
+        
         // function 
         RTriangle.prototype.setCorners = function(...args) 
           
@@ -701,7 +701,7 @@ RTriangle.Ray = RTriangle_Wrapper.Ray;
               return this.__PROXY__.setCorners(...args);
             
         };
-    
+        
         // function 
         RTriangle.prototype.getEndPoints = function(...args) 
           
@@ -711,7 +711,7 @@ RTriangle.Ray = RTriangle_Wrapper.Ray;
               return this.__PROXY__.getEndPoints(...args);
             
         };
-    
+        
         // function 
         RTriangle.prototype.getMiddlePoints = function(...args) 
           
@@ -721,7 +721,7 @@ RTriangle.Ray = RTriangle_Wrapper.Ray;
               return this.__PROXY__.getMiddlePoints(...args);
             
         };
-    
+        
         // function 
         RTriangle.prototype.getCenterPoints = function(...args) 
           
@@ -731,7 +731,7 @@ RTriangle.Ray = RTriangle_Wrapper.Ray;
               return this.__PROXY__.getCenterPoints(...args);
             
         };
-    
+        
         // function 
         RTriangle.prototype.getPointsWithDistanceToEnd = function(...args) 
           
@@ -741,7 +741,7 @@ RTriangle.Ray = RTriangle_Wrapper.Ray;
               return this.__PROXY__.getPointsWithDistanceToEnd(...args);
             
         };
-    
+        
         // function 
         RTriangle.prototype.getPointCloud = function(...args) 
           
@@ -751,7 +751,7 @@ RTriangle.Ray = RTriangle_Wrapper.Ray;
               return this.__PROXY__.getPointCloud(...args);
             
         };
-    
+        
         // function 
         RTriangle.prototype.getDistanceTo = function(...args) 
           
@@ -761,7 +761,7 @@ RTriangle.Ray = RTriangle_Wrapper.Ray;
               return this.__PROXY__.getDistanceTo(...args);
             
         };
-    
+        
         // function 
         RTriangle.prototype.getVectorTo = function(...args) 
           
@@ -771,7 +771,7 @@ RTriangle.Ray = RTriangle_Wrapper.Ray;
               return this.__PROXY__.getVectorTo(...args);
             
         };
-    
+        
         // function 
         RTriangle.prototype.getNormal = function(...args) 
           
@@ -781,7 +781,7 @@ RTriangle.Ray = RTriangle_Wrapper.Ray;
               return this.__PROXY__.getNormal(...args);
             
         };
-    
+        
         // function 
         RTriangle.prototype.isPointInTriangle = function(...args) 
           
@@ -791,7 +791,7 @@ RTriangle.Ray = RTriangle_Wrapper.Ray;
               return this.__PROXY__.isPointInTriangle(...args);
             
         };
-    
+        
         // function 
         RTriangle.prototype.isPointInQuadrant = function(...args) 
           
@@ -801,7 +801,7 @@ RTriangle.Ray = RTriangle_Wrapper.Ray;
               return this.__PROXY__.isPointInQuadrant(...args);
             
         };
-    
+        
         // function 
         RTriangle.prototype.getD = function(...args) 
           
@@ -811,7 +811,7 @@ RTriangle.Ray = RTriangle_Wrapper.Ray;
               return this.__PROXY__.getD(...args);
             
         };
-    
+        
         // function 
         RTriangle.prototype.getExploded = function(...args) 
           
@@ -821,7 +821,7 @@ RTriangle.Ray = RTriangle_Wrapper.Ray;
               return this.__PROXY__.getExploded(...args);
             
         };
-    
+        
         // function 
         RTriangle.prototype.move = function(...args) 
           
@@ -831,7 +831,7 @@ RTriangle.Ray = RTriangle_Wrapper.Ray;
               return this.__PROXY__.move(...args);
             
         };
-    
+        
         // function 
         RTriangle.prototype.rotate = function(...args) 
           
@@ -841,7 +841,7 @@ RTriangle.Ray = RTriangle_Wrapper.Ray;
               return this.__PROXY__.rotate(...args);
             
         };
-    
+        
         // function 
         RTriangle.prototype.scale = function(...args) 
           
@@ -851,7 +851,7 @@ RTriangle.Ray = RTriangle_Wrapper.Ray;
               return this.__PROXY__.scale(...args);
             
         };
-    
+        
         // function 
         RTriangle.prototype.mirror = function(...args) 
           
@@ -861,7 +861,7 @@ RTriangle.Ray = RTriangle_Wrapper.Ray;
               return this.__PROXY__.mirror(...args);
             
         };
-    
+        
         // function 
         RTriangle.prototype.flipHorizontal = function(...args) 
           
@@ -871,7 +871,7 @@ RTriangle.Ray = RTriangle_Wrapper.Ray;
               return this.__PROXY__.flipHorizontal(...args);
             
         };
-    
+        
         // function 
         RTriangle.prototype.flipVertical = function(...args) 
           
@@ -881,7 +881,7 @@ RTriangle.Ray = RTriangle_Wrapper.Ray;
               return this.__PROXY__.flipVertical(...args);
             
         };
-    
+        
         // function 
         RTriangle.prototype.getTransformed = function(...args) 
           
@@ -891,7 +891,7 @@ RTriangle.Ray = RTriangle_Wrapper.Ray;
               return this.__PROXY__.getTransformed(...args);
             
         };
-    
+        
         // function 
         RTriangle.prototype.print = function(...args) 
           
@@ -901,7 +901,7 @@ RTriangle.Ray = RTriangle_Wrapper.Ray;
               return this.__PROXY__.print(...args);
             
         };
-    
+        
         // function 
         RTriangle.prototype.copy = function(...args) 
           
@@ -911,7 +911,7 @@ RTriangle.Ray = RTriangle_Wrapper.Ray;
               return this.__PROXY__.copy(...args);
             
         };
-    
+        
 
       // static functions:
       

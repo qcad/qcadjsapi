@@ -248,7 +248,7 @@ RSnap.CoordinatePolar = RSnap_Wrapper.CoordinatePolar;
               return this.__PROXY__.suspendEvent(...args);
             
         };
-    
+        
         // function 
         RSnap.prototype.finishEvent = function(...args) 
           
@@ -258,7 +258,7 @@ RSnap.CoordinatePolar = RSnap_Wrapper.CoordinatePolar;
               return this.__PROXY__.finishEvent(...args);
             
         };
-    
+        
         // function 
         RSnap.prototype.getEntityIds = function(...args) 
           
@@ -268,7 +268,7 @@ RSnap.CoordinatePolar = RSnap_Wrapper.CoordinatePolar;
               return this.__PROXY__.getEntityIds(...args);
             
         };
-    
+        
         // function 
         RSnap.prototype.getStatus = function(...args) 
           
@@ -278,7 +278,7 @@ RSnap.CoordinatePolar = RSnap_Wrapper.CoordinatePolar;
               return this.__PROXY__.getStatus(...args);
             
         };
-    
+        
         // function 
         RSnap.prototype.setStatus = function(...args) 
           
@@ -288,7 +288,7 @@ RSnap.CoordinatePolar = RSnap_Wrapper.CoordinatePolar;
               return this.__PROXY__.setStatus(...args);
             
         };
-    
+        
         // function 
         RSnap.prototype.getLastSnap = function(...args) 
           
@@ -298,7 +298,7 @@ RSnap.CoordinatePolar = RSnap_Wrapper.CoordinatePolar;
               return this.__PROXY__.getLastSnap(...args);
             
         };
-    
+        
         // function 
         RSnap.prototype.setLastSnap = function(...args) 
           
@@ -308,7 +308,7 @@ RSnap.CoordinatePolar = RSnap_Wrapper.CoordinatePolar;
               return this.__PROXY__.setLastSnap(...args);
             
         };
-    
+        
         // function 
         RSnap.prototype.reset = function(...args) 
           
@@ -318,7 +318,7 @@ RSnap.CoordinatePolar = RSnap_Wrapper.CoordinatePolar;
               return this.__PROXY__.reset(...args);
             
         };
-    
+        
 
       // static functions:
       RSnap.prototype.isNullWrapper = function() {

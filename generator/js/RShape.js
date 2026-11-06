@@ -118,7 +118,7 @@ RShape.Ray = RShape_Wrapper.Ray;
               return this.__PROXY__.isValid(...args);
             
         };
-    
+        
         // function 
         RShape.prototype.getShapeType = function(...args) 
           
@@ -128,7 +128,7 @@ RShape.Ray = RShape_Wrapper.Ray;
               return this.__PROXY__.getShapeType(...args);
             
         };
-    
+        
         // function 
         RShape.prototype.isPointShape = function(...args) 
           
@@ -138,7 +138,7 @@ RShape.Ray = RShape_Wrapper.Ray;
               return this.__PROXY__.isPointShape(...args);
             
         };
-    
+        
         // function 
         RShape.prototype.isLineShape = function(...args) 
           
@@ -148,7 +148,7 @@ RShape.Ray = RShape_Wrapper.Ray;
               return this.__PROXY__.isLineShape(...args);
             
         };
-    
+        
         // function 
         RShape.prototype.isArcShape = function(...args) 
           
@@ -158,7 +158,7 @@ RShape.Ray = RShape_Wrapper.Ray;
               return this.__PROXY__.isArcShape(...args);
             
         };
-    
+        
         // function 
         RShape.prototype.isCircleShape = function(...args) 
           
@@ -168,7 +168,7 @@ RShape.Ray = RShape_Wrapper.Ray;
               return this.__PROXY__.isCircleShape(...args);
             
         };
-    
+        
         // function 
         RShape.prototype.isEllipseShape = function(...args) 
           
@@ -178,7 +178,7 @@ RShape.Ray = RShape_Wrapper.Ray;
               return this.__PROXY__.isEllipseShape(...args);
             
         };
-    
+        
         // function 
         RShape.prototype.isFullEllipseShape = function(...args) 
           
@@ -188,7 +188,7 @@ RShape.Ray = RShape_Wrapper.Ray;
               return this.__PROXY__.isFullEllipseShape(...args);
             
         };
-    
+        
         // function 
         RShape.prototype.isPolylineShape = function(...args) 
           
@@ -198,7 +198,7 @@ RShape.Ray = RShape_Wrapper.Ray;
               return this.__PROXY__.isPolylineShape(...args);
             
         };
-    
+        
         // function 
         RShape.prototype.isSplineShape = function(...args) 
           
@@ -208,7 +208,7 @@ RShape.Ray = RShape_Wrapper.Ray;
               return this.__PROXY__.isSplineShape(...args);
             
         };
-    
+        
         // function 
         RShape.prototype.isTriangleShape = function(...args) 
           
@@ -218,7 +218,7 @@ RShape.Ray = RShape_Wrapper.Ray;
               return this.__PROXY__.isTriangleShape(...args);
             
         };
-    
+        
         // function 
         RShape.prototype.isXLineShape = function(...args) 
           
@@ -228,7 +228,7 @@ RShape.Ray = RShape_Wrapper.Ray;
               return this.__PROXY__.isXLineShape(...args);
             
         };
-    
+        
         // function 
         RShape.prototype.isRayShape = function(...args) 
           
@@ -238,7 +238,7 @@ RShape.Ray = RShape_Wrapper.Ray;
               return this.__PROXY__.isRayShape(...args);
             
         };
-    
+        
         // function 
         RShape.prototype.clone = function(...args) 
           
@@ -248,7 +248,7 @@ RShape.Ray = RShape_Wrapper.Ray;
               return this.__PROXY__.clone(...args);
             
         };
-    
+        
         // function 
         RShape.prototype.isInterpolated = function(...args) 
           
@@ -258,7 +258,7 @@ RShape.Ray = RShape_Wrapper.Ray;
               return this.__PROXY__.isInterpolated(...args);
             
         };
-    
+        
         // function 
         RShape.prototype.getClosestPointOnShape = function(...args) 
           
@@ -268,7 +268,7 @@ RShape.Ray = RShape_Wrapper.Ray;
               return this.__PROXY__.getClosestPointOnShape(...args);
             
         };
-    
+        
         // function 
         RShape.prototype.getBoundingBox = function(...args) 
           
@@ -278,7 +278,7 @@ RShape.Ray = RShape_Wrapper.Ray;
               return this.__PROXY__.getBoundingBox(...args);
             
         };
-    
+        
         // function 
         RShape.prototype.to2D = function(...args) 
           
@@ -288,7 +288,7 @@ RShape.Ray = RShape_Wrapper.Ray;
               return this.__PROXY__.to2D(...args);
             
         };
-    
+        
         // function 
         RShape.prototype.setZ = function(...args) 
           
@@ -298,7 +298,7 @@ RShape.Ray = RShape_Wrapper.Ray;
               return this.__PROXY__.setZ(...args);
             
         };
-    
+        
         // function 
         RShape.prototype.getLength = function(...args) 
           
@@ -308,7 +308,7 @@ RShape.Ray = RShape_Wrapper.Ray;
               return this.__PROXY__.getLength(...args);
             
         };
-    
+        
         // function 
         RShape.prototype.equals = function(...args) 
           
@@ -318,7 +318,7 @@ RShape.Ray = RShape_Wrapper.Ray;
               return this.__PROXY__.equals(...args);
             
         };
-    
+        
         // function 
         RShape.prototype.getVectorProperties = function(...args) 
           
@@ -328,7 +328,7 @@ RShape.Ray = RShape_Wrapper.Ray;
               return this.__PROXY__.getVectorProperties(...args);
             
         };
-    
+        
         // function 
         RShape.prototype.getIntProperties = function(...args) 
           
@@ -338,7 +338,7 @@ RShape.Ray = RShape_Wrapper.Ray;
               return this.__PROXY__.getIntProperties(...args);
             
         };
-    
+        
         // function 
         RShape.prototype.getDoubleProperties = function(...args) 
           
@@ -348,7 +348,7 @@ RShape.Ray = RShape_Wrapper.Ray;
               return this.__PROXY__.getDoubleProperties(...args);
             
         };
-    
+        
         // function 
         RShape.prototype.getBoolProperties = function(...args) 
           
@@ -358,7 +358,7 @@ RShape.Ray = RShape_Wrapper.Ray;
               return this.__PROXY__.getBoolProperties(...args);
             
         };
-    
+        
         // function 
         RShape.prototype.getVectorTo = function(...args) 
           
@@ -368,7 +368,7 @@ RShape.Ray = RShape_Wrapper.Ray;
               return this.__PROXY__.getVectorTo(...args);
             
         };
-    
+        
         // function 
         RShape.prototype.getDistanceTo = function(...args) 
           
@@ -378,7 +378,7 @@ RShape.Ray = RShape_Wrapper.Ray;
               return this.__PROXY__.getDistanceTo(...args);
             
         };
-    
+        
         // function 
         RShape.prototype.getMaxDistanceTo = function(...args) 
           
@@ -388,7 +388,7 @@ RShape.Ray = RShape_Wrapper.Ray;
               return this.__PROXY__.getMaxDistanceTo(...args);
             
         };
-    
+        
         // function 
         RShape.prototype.isOnShape = function(...args) 
           
@@ -398,7 +398,7 @@ RShape.Ray = RShape_Wrapper.Ray;
               return this.__PROXY__.isOnShape(...args);
             
         };
-    
+        
         // function 
         RShape.prototype.filterOnShape = function(...args) 
           
@@ -408,7 +408,7 @@ RShape.Ray = RShape_Wrapper.Ray;
               return this.__PROXY__.filterOnShape(...args);
             
         };
-    
+        
         // function 
         RShape.prototype.getVectorFromEndpointTo = function(...args) 
           
@@ -418,7 +418,7 @@ RShape.Ray = RShape_Wrapper.Ray;
               return this.__PROXY__.getVectorFromEndpointTo(...args);
             
         };
-    
+        
         // function 
         RShape.prototype.getEndPoints = function(...args) 
           
@@ -428,7 +428,7 @@ RShape.Ray = RShape_Wrapper.Ray;
               return this.__PROXY__.getEndPoints(...args);
             
         };
-    
+        
         // function 
         RShape.prototype.getMiddlePoints = function(...args) 
           
@@ -438,7 +438,7 @@ RShape.Ray = RShape_Wrapper.Ray;
               return this.__PROXY__.getMiddlePoints(...args);
             
         };
-    
+        
         // function 
         RShape.prototype.getCenterPoints = function(...args) 
           
@@ -448,7 +448,7 @@ RShape.Ray = RShape_Wrapper.Ray;
               return this.__PROXY__.getCenterPoints(...args);
             
         };
-    
+        
         // function 
         RShape.prototype.getArcReferencePoints = function(...args) 
           
@@ -458,7 +458,7 @@ RShape.Ray = RShape_Wrapper.Ray;
               return this.__PROXY__.getArcReferencePoints(...args);
             
         };
-    
+        
         // function 
         RShape.prototype.getPointOnShape = function(...args) 
           
@@ -468,7 +468,7 @@ RShape.Ray = RShape_Wrapper.Ray;
               return this.__PROXY__.getPointOnShape(...args);
             
         };
-    
+        
         // function 
         RShape.prototype.getPointCloud = function(...args) 
           
@@ -478,7 +478,7 @@ RShape.Ray = RShape_Wrapper.Ray;
               return this.__PROXY__.getPointCloud(...args);
             
         };
-    
+        
         // function 
         RShape.prototype.getPointsWithDistanceToEnd = function(...args) 
           
@@ -488,7 +488,7 @@ RShape.Ray = RShape_Wrapper.Ray;
               return this.__PROXY__.getPointsWithDistanceToEnd(...args);
             
         };
-    
+        
         // function 
         RShape.prototype.getPointWithDistanceToStart = function(...args) 
           
@@ -498,7 +498,7 @@ RShape.Ray = RShape_Wrapper.Ray;
               return this.__PROXY__.getPointWithDistanceToStart(...args);
             
         };
-    
+        
         // function 
         RShape.prototype.getPointWithDistanceToEnd = function(...args) 
           
@@ -508,7 +508,7 @@ RShape.Ray = RShape_Wrapper.Ray;
               return this.__PROXY__.getPointWithDistanceToEnd(...args);
             
         };
-    
+        
         // function 
         RShape.prototype.getAngleAt = function(...args) 
           
@@ -518,7 +518,7 @@ RShape.Ray = RShape_Wrapper.Ray;
               return this.__PROXY__.getAngleAt(...args);
             
         };
-    
+        
         // function 
         RShape.prototype.getAngleAtPoint = function(...args) 
           
@@ -528,7 +528,7 @@ RShape.Ray = RShape_Wrapper.Ray;
               return this.__PROXY__.getAngleAtPoint(...args);
             
         };
-    
+        
         // function 
         RShape.prototype.getPointAtPercent = function(...args) 
           
@@ -538,7 +538,7 @@ RShape.Ray = RShape_Wrapper.Ray;
               return this.__PROXY__.getPointAtPercent(...args);
             
         };
-    
+        
         // function 
         RShape.prototype.getAngleAtPercent = function(...args) 
           
@@ -548,7 +548,7 @@ RShape.Ray = RShape_Wrapper.Ray;
               return this.__PROXY__.getAngleAtPercent(...args);
             
         };
-    
+        
         // function 
         RShape.prototype.intersectsWith = function(...args) 
           
@@ -558,7 +558,7 @@ RShape.Ray = RShape_Wrapper.Ray;
               return this.__PROXY__.intersectsWith(...args);
             
         };
-    
+        
         // function 
         RShape.prototype.getIntersectionPoints = function(...args) 
           
@@ -568,7 +568,7 @@ RShape.Ray = RShape_Wrapper.Ray;
               return this.__PROXY__.getIntersectionPoints(...args);
             
         };
-    
+        
         // function 
         RShape.prototype.getSelfIntersectionPoints = function(...args) 
           
@@ -578,7 +578,7 @@ RShape.Ray = RShape_Wrapper.Ray;
               return this.__PROXY__.getSelfIntersectionPoints(...args);
             
         };
-    
+        
         // function 
         RShape.prototype.isDirected = function(...args) 
           
@@ -588,7 +588,7 @@ RShape.Ray = RShape_Wrapper.Ray;
               return this.__PROXY__.isDirected(...args);
             
         };
-    
+        
         // function 
         RShape.prototype.getDirection1 = function(...args) 
           
@@ -598,7 +598,7 @@ RShape.Ray = RShape_Wrapper.Ray;
               return this.__PROXY__.getDirection1(...args);
             
         };
-    
+        
         // function 
         RShape.prototype.getDirection2 = function(...args) 
           
@@ -608,7 +608,7 @@ RShape.Ray = RShape_Wrapper.Ray;
               return this.__PROXY__.getDirection2(...args);
             
         };
-    
+        
         // function 
         RShape.prototype.getSideOfPoint = function(...args) 
           
@@ -618,7 +618,7 @@ RShape.Ray = RShape_Wrapper.Ray;
               return this.__PROXY__.getSideOfPoint(...args);
             
         };
-    
+        
         // function 
         RShape.prototype.getStartPoint = function(...args) 
           
@@ -628,7 +628,7 @@ RShape.Ray = RShape_Wrapper.Ray;
               return this.__PROXY__.getStartPoint(...args);
             
         };
-    
+        
         // function 
         RShape.prototype.getEndPoint = function(...args) 
           
@@ -638,7 +638,7 @@ RShape.Ray = RShape_Wrapper.Ray;
               return this.__PROXY__.getEndPoint(...args);
             
         };
-    
+        
         // function 
         RShape.prototype.getMiddlePoint = function(...args) 
           
@@ -648,7 +648,7 @@ RShape.Ray = RShape_Wrapper.Ray;
               return this.__PROXY__.getMiddlePoint(...args);
             
         };
-    
+        
         // function 
         RShape.prototype.reverse = function(...args) 
           
@@ -658,7 +658,7 @@ RShape.Ray = RShape_Wrapper.Ray;
               return this.__PROXY__.reverse(...args);
             
         };
-    
+        
         // function 
         RShape.prototype.trimStartPoint = function(...args) 
           
@@ -668,7 +668,7 @@ RShape.Ray = RShape_Wrapper.Ray;
               return this.__PROXY__.trimStartPoint(...args);
             
         };
-    
+        
         // function 
         RShape.prototype.trimEndPoint = function(...args) 
           
@@ -678,7 +678,7 @@ RShape.Ray = RShape_Wrapper.Ray;
               return this.__PROXY__.trimEndPoint(...args);
             
         };
-    
+        
         // function 
         RShape.prototype.getTrimEnd = function(...args) 
           
@@ -688,7 +688,7 @@ RShape.Ray = RShape_Wrapper.Ray;
               return this.__PROXY__.getTrimEnd(...args);
             
         };
-    
+        
         // function 
         RShape.prototype.getDistanceFromStart = function(...args) 
           
@@ -698,7 +698,7 @@ RShape.Ray = RShape_Wrapper.Ray;
               return this.__PROXY__.getDistanceFromStart(...args);
             
         };
-    
+        
         // function 
         RShape.prototype.getDistancesFromStart = function(...args) 
           
@@ -708,7 +708,7 @@ RShape.Ray = RShape_Wrapper.Ray;
               return this.__PROXY__.getDistancesFromStart(...args);
             
         };
-    
+        
         // function 
         RShape.prototype.move = function(...args) 
           
@@ -718,7 +718,7 @@ RShape.Ray = RShape_Wrapper.Ray;
               return this.__PROXY__.move(...args);
             
         };
-    
+        
         // function 
         RShape.prototype.rotate = function(...args) 
           
@@ -728,7 +728,7 @@ RShape.Ray = RShape_Wrapper.Ray;
               return this.__PROXY__.rotate(...args);
             
         };
-    
+        
         // function 
         RShape.prototype.scale = function(...args) 
           
@@ -738,7 +738,7 @@ RShape.Ray = RShape_Wrapper.Ray;
               return this.__PROXY__.scale(...args);
             
         };
-    
+        
         // function 
         RShape.prototype.mirror = function(...args) 
           
@@ -748,7 +748,7 @@ RShape.Ray = RShape_Wrapper.Ray;
               return this.__PROXY__.mirror(...args);
             
         };
-    
+        
         // function 
         RShape.prototype.flipHorizontal = function(...args) 
           
@@ -758,7 +758,7 @@ RShape.Ray = RShape_Wrapper.Ray;
               return this.__PROXY__.flipHorizontal(...args);
             
         };
-    
+        
         // function 
         RShape.prototype.flipVertical = function(...args) 
           
@@ -768,7 +768,7 @@ RShape.Ray = RShape_Wrapper.Ray;
               return this.__PROXY__.flipVertical(...args);
             
         };
-    
+        
         // function 
         RShape.prototype.stretch = function(...args) 
           
@@ -778,7 +778,7 @@ RShape.Ray = RShape_Wrapper.Ray;
               return this.__PROXY__.stretch(...args);
             
         };
-    
+        
         // function 
         RShape.prototype.getTransformed = function(...args) 
           
@@ -788,7 +788,7 @@ RShape.Ray = RShape_Wrapper.Ray;
               return this.__PROXY__.getTransformed(...args);
             
         };
-    
+        
         // function 
         RShape.prototype.getPolylines = function(...args) 
           
@@ -798,7 +798,7 @@ RShape.Ray = RShape_Wrapper.Ray;
               return this.__PROXY__.getPolylines(...args);
             
         };
-    
+        
         // function 
         RShape.prototype.getOrderedShapes = function(...args) 
           
@@ -808,7 +808,7 @@ RShape.Ray = RShape_Wrapper.Ray;
               return this.__PROXY__.getOrderedShapes(...args);
             
         };
-    
+        
         // function 
         RShape.prototype.getIntersectionPointsLL = function(...args) 
           
@@ -818,7 +818,7 @@ RShape.Ray = RShape_Wrapper.Ray;
               return this.__PROXY__.getIntersectionPointsLL(...args);
             
         };
-    
+        
         // function 
         RShape.prototype.getIntersectionPointsLA = function(...args) 
           
@@ -828,7 +828,7 @@ RShape.Ray = RShape_Wrapper.Ray;
               return this.__PROXY__.getIntersectionPointsLA(...args);
             
         };
-    
+        
         // function 
         RShape.prototype.getIntersectionPointsLC = function(...args) 
           
@@ -838,7 +838,7 @@ RShape.Ray = RShape_Wrapper.Ray;
               return this.__PROXY__.getIntersectionPointsLC(...args);
             
         };
-    
+        
         // function 
         RShape.prototype.getIntersectionPointsLE = function(...args) 
           
@@ -848,7 +848,7 @@ RShape.Ray = RShape_Wrapper.Ray;
               return this.__PROXY__.getIntersectionPointsLE(...args);
             
         };
-    
+        
         // function 
         RShape.prototype.getIntersectionPointsLT = function(...args) 
           
@@ -858,7 +858,7 @@ RShape.Ray = RShape_Wrapper.Ray;
               return this.__PROXY__.getIntersectionPointsLT(...args);
             
         };
-    
+        
         // function 
         RShape.prototype.getIntersectionPointsLS = function(...args) 
           
@@ -868,7 +868,7 @@ RShape.Ray = RShape_Wrapper.Ray;
               return this.__PROXY__.getIntersectionPointsLS(...args);
             
         };
-    
+        
         // function 
         RShape.prototype.getIntersectionPointsLX = function(...args) 
           
@@ -878,7 +878,7 @@ RShape.Ray = RShape_Wrapper.Ray;
               return this.__PROXY__.getIntersectionPointsLX(...args);
             
         };
-    
+        
         // function 
         RShape.prototype.getIntersectionPointsAA = function(...args) 
           
@@ -888,7 +888,7 @@ RShape.Ray = RShape_Wrapper.Ray;
               return this.__PROXY__.getIntersectionPointsAA(...args);
             
         };
-    
+        
         // function 
         RShape.prototype.getIntersectionPointsAC = function(...args) 
           
@@ -898,7 +898,7 @@ RShape.Ray = RShape_Wrapper.Ray;
               return this.__PROXY__.getIntersectionPointsAC(...args);
             
         };
-    
+        
         // function 
         RShape.prototype.getIntersectionPointsAE = function(...args) 
           
@@ -908,7 +908,7 @@ RShape.Ray = RShape_Wrapper.Ray;
               return this.__PROXY__.getIntersectionPointsAE(...args);
             
         };
-    
+        
         // function 
         RShape.prototype.getIntersectionPointsAT = function(...args) 
           
@@ -918,7 +918,7 @@ RShape.Ray = RShape_Wrapper.Ray;
               return this.__PROXY__.getIntersectionPointsAT(...args);
             
         };
-    
+        
         // function 
         RShape.prototype.getIntersectionPointsAS = function(...args) 
           
@@ -928,7 +928,7 @@ RShape.Ray = RShape_Wrapper.Ray;
               return this.__PROXY__.getIntersectionPointsAS(...args);
             
         };
-    
+        
         // function 
         RShape.prototype.getIntersectionPointsAX = function(...args) 
           
@@ -938,7 +938,7 @@ RShape.Ray = RShape_Wrapper.Ray;
               return this.__PROXY__.getIntersectionPointsAX(...args);
             
         };
-    
+        
         // function 
         RShape.prototype.getIntersectionPointsCC = function(...args) 
           
@@ -948,7 +948,7 @@ RShape.Ray = RShape_Wrapper.Ray;
               return this.__PROXY__.getIntersectionPointsCC(...args);
             
         };
-    
+        
         // function 
         RShape.prototype.getIntersectionPointsCE = function(...args) 
           
@@ -958,7 +958,7 @@ RShape.Ray = RShape_Wrapper.Ray;
               return this.__PROXY__.getIntersectionPointsCE(...args);
             
         };
-    
+        
         // function 
         RShape.prototype.getIntersectionPointsCS = function(...args) 
           
@@ -968,7 +968,7 @@ RShape.Ray = RShape_Wrapper.Ray;
               return this.__PROXY__.getIntersectionPointsCS(...args);
             
         };
-    
+        
         // function 
         RShape.prototype.getIntersectionPointsCX = function(...args) 
           
@@ -978,7 +978,7 @@ RShape.Ray = RShape_Wrapper.Ray;
               return this.__PROXY__.getIntersectionPointsCX(...args);
             
         };
-    
+        
         // function 
         RShape.prototype.getIntersectionPointsEE = function(...args) 
           
@@ -988,7 +988,7 @@ RShape.Ray = RShape_Wrapper.Ray;
               return this.__PROXY__.getIntersectionPointsEE(...args);
             
         };
-    
+        
         // function 
         RShape.prototype.getIntersectionPointsES = function(...args) 
           
@@ -998,7 +998,7 @@ RShape.Ray = RShape_Wrapper.Ray;
               return this.__PROXY__.getIntersectionPointsES(...args);
             
         };
-    
+        
         // function 
         RShape.prototype.getIntersectionPointsEX = function(...args) 
           
@@ -1008,7 +1008,7 @@ RShape.Ray = RShape_Wrapper.Ray;
               return this.__PROXY__.getIntersectionPointsEX(...args);
             
         };
-    
+        
         // function 
         RShape.prototype.getIntersectionPointsSX = function(...args) 
           
@@ -1018,7 +1018,7 @@ RShape.Ray = RShape_Wrapper.Ray;
               return this.__PROXY__.getIntersectionPointsSX(...args);
             
         };
-    
+        
         // function 
         RShape.prototype.getIntersectionPointsSS = function(...args) 
           
@@ -1028,7 +1028,7 @@ RShape.Ray = RShape_Wrapper.Ray;
               return this.__PROXY__.getIntersectionPointsSS(...args);
             
         };
-    
+        
         // function 
         RShape.prototype.getIntersectionPointsXX = function(...args) 
           
@@ -1038,7 +1038,7 @@ RShape.Ray = RShape_Wrapper.Ray;
               return this.__PROXY__.getIntersectionPointsXX(...args);
             
         };
-    
+        
         // function 
         RShape.prototype.getOffsetShapes = function(...args) 
           
@@ -1048,7 +1048,7 @@ RShape.Ray = RShape_Wrapper.Ray;
               return this.__PROXY__.getOffsetShapes(...args);
             
         };
-    
+        
         // function 
         RShape.prototype.getOffsetLines = function(...args) 
           
@@ -1058,7 +1058,7 @@ RShape.Ray = RShape_Wrapper.Ray;
               return this.__PROXY__.getOffsetLines(...args);
             
         };
-    
+        
         // function 
         RShape.prototype.getOffsetArcs = function(...args) 
           
@@ -1068,7 +1068,7 @@ RShape.Ray = RShape_Wrapper.Ray;
               return this.__PROXY__.getOffsetArcs(...args);
             
         };
-    
+        
         // function 
         RShape.prototype.getReversedShapeList = function(...args) 
           
@@ -1078,7 +1078,7 @@ RShape.Ray = RShape_Wrapper.Ray;
               return this.__PROXY__.getReversedShapeList(...args);
             
         };
-    
+        
         // function 
         RShape.prototype.splitAt = function(...args) 
           
@@ -1088,7 +1088,7 @@ RShape.Ray = RShape_Wrapper.Ray;
               return this.__PROXY__.splitAt(...args);
             
         };
-    
+        
         // function 
         RShape.prototype.trim = function(...args) 
           
@@ -1098,7 +1098,7 @@ RShape.Ray = RShape_Wrapper.Ray;
               return this.__PROXY__.trim(...args);
             
         };
-    
+        
         // function 
         RShape.prototype.roundCorners = function(...args) 
           
@@ -1108,7 +1108,7 @@ RShape.Ray = RShape_Wrapper.Ray;
               return this.__PROXY__.roundCorners(...args);
             
         };
-    
+        
         // function 
         RShape.prototype.roundShapes = function(...args) 
           
@@ -1118,7 +1118,7 @@ RShape.Ray = RShape_Wrapper.Ray;
               return this.__PROXY__.roundShapes(...args);
             
         };
-    
+        
         // function 
         RShape.prototype.getInnerMostContour = function(...args) 
           
@@ -1128,7 +1128,7 @@ RShape.Ray = RShape_Wrapper.Ray;
               return this.__PROXY__.getInnerMostContour(...args);
             
         };
-    
+        
         // function 
         RShape.prototype.xLineToRay = function(...args) 
           
@@ -1138,7 +1138,7 @@ RShape.Ray = RShape_Wrapper.Ray;
               return this.__PROXY__.xLineToRay(...args);
             
         };
-    
+        
         // function 
         RShape.prototype.rayToLine = function(...args) 
           
@@ -1148,7 +1148,7 @@ RShape.Ray = RShape_Wrapper.Ray;
               return this.__PROXY__.rayToLine(...args);
             
         };
-    
+        
         // function 
         RShape.prototype.scaleArc = function(...args) 
           
@@ -1158,7 +1158,7 @@ RShape.Ray = RShape_Wrapper.Ray;
               return this.__PROXY__.scaleArc(...args);
             
         };
-    
+        
         // function 
         RShape.prototype.ellipseToArcCircleEllipse = function(...args) 
           
@@ -1168,7 +1168,7 @@ RShape.Ray = RShape_Wrapper.Ray;
               return this.__PROXY__.ellipseToArcCircleEllipse(...args);
             
         };
-    
+        
         // function 
         RShape.prototype.getErrorCode = function(...args) 
           
@@ -1178,7 +1178,7 @@ RShape.Ray = RShape_Wrapper.Ray;
               return this.__PROXY__.getErrorCode(...args);
             
         };
-    
+        
         // function 
         RShape.prototype.dump = function(...args) 
           
@@ -1188,7 +1188,7 @@ RShape.Ray = RShape_Wrapper.Ray;
               return this.__PROXY__.dump(...args);
             
         };
-    
+        
         // function 
         RShape.prototype.print = function(...args) 
           
@@ -1198,7 +1198,7 @@ RShape.Ray = RShape_Wrapper.Ray;
               return this.__PROXY__.print(...args);
             
         };
-    
+        
 
       // static functions:
       

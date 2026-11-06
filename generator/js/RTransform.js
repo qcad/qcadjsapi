@@ -138,7 +138,7 @@
               return this.__PROXY__.isAffine(...args);
             
         };
-    
+        
         // function 
         RTransform.prototype.isIdentity = function(...args) 
           
@@ -148,7 +148,7 @@
               return this.__PROXY__.isIdentity(...args);
             
         };
-    
+        
         // function 
         RTransform.prototype.isInvertible = function(...args) 
           
@@ -158,7 +158,7 @@
               return this.__PROXY__.isInvertible(...args);
             
         };
-    
+        
         // function 
         RTransform.prototype.isScaling = function(...args) 
           
@@ -168,7 +168,7 @@
               return this.__PROXY__.isScaling(...args);
             
         };
-    
+        
         // function 
         RTransform.prototype.isRotating = function(...args) 
           
@@ -178,7 +178,7 @@
               return this.__PROXY__.isRotating(...args);
             
         };
-    
+        
         // function 
         RTransform.prototype.isTranslating = function(...args) 
           
@@ -188,7 +188,7 @@
               return this.__PROXY__.isTranslating(...args);
             
         };
-    
+        
         // function 
         RTransform.prototype.type = function(...args) 
           
@@ -198,7 +198,7 @@
               return this.__PROXY__.type(...args);
             
         };
-    
+        
         // function 
         RTransform.prototype.determinant = function(...args) 
           
@@ -208,7 +208,7 @@
               return this.__PROXY__.determinant(...args);
             
         };
-    
+        
         // function 
         RTransform.prototype.m11 = function(...args) 
           
@@ -218,7 +218,7 @@
               return this.__PROXY__.m11(...args);
             
         };
-    
+        
         // function 
         RTransform.prototype.m12 = function(...args) 
           
@@ -228,7 +228,7 @@
               return this.__PROXY__.m12(...args);
             
         };
-    
+        
         // function 
         RTransform.prototype.m13 = function(...args) 
           
@@ -238,7 +238,7 @@
               return this.__PROXY__.m13(...args);
             
         };
-    
+        
         // function 
         RTransform.prototype.m21 = function(...args) 
           
@@ -248,7 +248,7 @@
               return this.__PROXY__.m21(...args);
             
         };
-    
+        
         // function 
         RTransform.prototype.m22 = function(...args) 
           
@@ -258,7 +258,7 @@
               return this.__PROXY__.m22(...args);
             
         };
-    
+        
         // function 
         RTransform.prototype.m23 = function(...args) 
           
@@ -268,7 +268,7 @@
               return this.__PROXY__.m23(...args);
             
         };
-    
+        
         // function 
         RTransform.prototype.m31 = function(...args) 
           
@@ -278,7 +278,7 @@
               return this.__PROXY__.m31(...args);
             
         };
-    
+        
         // function 
         RTransform.prototype.m32 = function(...args) 
           
@@ -288,7 +288,7 @@
               return this.__PROXY__.m32(...args);
             
         };
-    
+        
         // function 
         RTransform.prototype.m33 = function(...args) 
           
@@ -298,7 +298,7 @@
               return this.__PROXY__.m33(...args);
             
         };
-    
+        
         // function 
         RTransform.prototype.dx = function(...args) 
           
@@ -308,7 +308,7 @@
               return this.__PROXY__.dx(...args);
             
         };
-    
+        
         // function 
         RTransform.prototype.dy = function(...args) 
           
@@ -318,7 +318,7 @@
               return this.__PROXY__.dy(...args);
             
         };
-    
+        
         // function 
         RTransform.prototype.setMatrix = function(...args) 
           
@@ -328,7 +328,7 @@
               return this.__PROXY__.setMatrix(...args);
             
         };
-    
+        
         // function 
         RTransform.prototype.inverted = function(...args) 
           
@@ -338,7 +338,7 @@
               return this.__PROXY__.inverted(...args);
             
         };
-    
+        
         // function 
         RTransform.prototype.adjoint = function(...args) 
           
@@ -348,7 +348,7 @@
               return this.__PROXY__.adjoint(...args);
             
         };
-    
+        
         // function 
         RTransform.prototype.transposed = function(...args) 
           
@@ -358,7 +358,7 @@
               return this.__PROXY__.transposed(...args);
             
         };
-    
+        
         // function 
         RTransform.prototype.shear = function(...args) 
           
@@ -368,7 +368,7 @@
               return this.__PROXY__.shear(...args);
             
         };
-    
+        
         // function 
         RTransform.prototype.reset = function(...args) 
           
@@ -378,7 +378,7 @@
               return this.__PROXY__.reset(...args);
             
         };
-    
+        
         // function 
         RTransform.prototype.map = function(...args) 
           
@@ -388,7 +388,7 @@
               return this.__PROXY__.map(...args);
             
         };
-    
+        
         // function 
         RTransform.prototype.mapToPolygon = function(...args) 
           
@@ -398,7 +398,7 @@
               return this.__PROXY__.mapToPolygon(...args);
             
         };
-    
+        
         // function 
         RTransform.prototype.mapRect = function(...args) 
           
@@ -408,7 +408,7 @@
               return this.__PROXY__.mapRect(...args);
             
         };
-    
+        
         // function 
         RTransform.prototype.operator_multiply_assign = function(...args) 
           
@@ -418,7 +418,7 @@
               return this.__PROXY__.operator_multiply_assign(...args);
             
         };
-    
+        
         // function 
         RTransform.prototype.translate = function(...args) 
           
@@ -428,7 +428,7 @@
               return this.__PROXY__.translate(...args);
             
         };
-    
+        
         // function 
         RTransform.prototype.scale = function(...args) 
           
@@ -438,7 +438,7 @@
               return this.__PROXY__.scale(...args);
             
         };
-    
+        
         // function 
         RTransform.prototype.rotateRadians = function(...args) 
           
@@ -448,7 +448,7 @@
               return this.__PROXY__.rotateRadians(...args);
             
         };
-    
+        
         // function 
         RTransform.prototype.rotate = function(...args) 
           
@@ -458,7 +458,7 @@
               return this.__PROXY__.rotate(...args);
             
         };
-    
+        
         // function 
         RTransform.prototype.getOps = function(...args) 
           
@@ -468,7 +468,7 @@
               return this.__PROXY__.getOps(...args);
             
         };
-    
+        
 
       // static functions:
       RTransform.prototype.isNullWrapper = function() {

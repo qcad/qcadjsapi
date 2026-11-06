@@ -134,7 +134,7 @@
               return this.__PROXY__.reset(...args);
             
         };
-    
+        
         // function 
         RTransactionStack.prototype.undo = function(...args) 
           
@@ -144,7 +144,7 @@
               return this.__PROXY__.undo(...args);
             
         };
-    
+        
         // function 
         RTransactionStack.prototype.redo = function(...args) 
           
@@ -154,7 +154,7 @@
               return this.__PROXY__.redo(...args);
             
         };
-    
+        
         // function 
         RTransactionStack.prototype.isUndoAvailable = function(...args) 
           
@@ -164,7 +164,7 @@
               return this.__PROXY__.isUndoAvailable(...args);
             
         };
-    
+        
         // function 
         RTransactionStack.prototype.isRedoAvailable = function(...args) 
           
@@ -174,7 +174,7 @@
               return this.__PROXY__.isRedoAvailable(...args);
             
         };
-    
+        
         // function 
         RTransactionStack.prototype.getUndoableTransactionText = function(...args) 
           
@@ -184,7 +184,7 @@
               return this.__PROXY__.getUndoableTransactionText(...args);
             
         };
-    
+        
         // function 
         RTransactionStack.prototype.getRedoableTransactionText = function(...args) 
           
@@ -194,7 +194,7 @@
               return this.__PROXY__.getRedoableTransactionText(...args);
             
         };
-    
+        
 
       // static functions:
       RTransactionStack.prototype.isNullWrapper = function() {

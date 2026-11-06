@@ -142,7 +142,7 @@
               return this.__PROXY__.mustAlwaysClone(...args);
             
         };
-    
+        
         // function 
         RPolyMeshEntity.prototype.getDocument = function(...args) 
           
@@ -152,7 +152,7 @@
               return this.__PROXY__.getDocument(...args);
             
         };
-    
+        
         // function 
         RPolyMeshEntity.prototype.setFlag = function(...args) 
           
@@ -162,7 +162,7 @@
               return this.__PROXY__.setFlag(...args);
             
         };
-    
+        
         // function 
         RPolyMeshEntity.prototype.getFlag = function(...args) 
           
@@ -172,7 +172,7 @@
               return this.__PROXY__.getFlag(...args);
             
         };
-    
+        
         // function 
         RPolyMeshEntity.prototype.getId = function(...args) 
           
@@ -182,7 +182,7 @@
               return this.__PROXY__.getId(...args);
             
         };
-    
+        
         // function 
         RPolyMeshEntity.prototype.getHandle = function(...args) 
           
@@ -192,7 +192,7 @@
               return this.__PROXY__.getHandle(...args);
             
         };
-    
+        
         // function 
         RPolyMeshEntity.prototype.isProtected = function(...args) 
           
@@ -202,7 +202,7 @@
               return this.__PROXY__.isProtected(...args);
             
         };
-    
+        
         // function 
         RPolyMeshEntity.prototype.setProtected = function(...args) 
           
@@ -212,7 +212,7 @@
               return this.__PROXY__.setProtected(...args);
             
         };
-    
+        
         // function 
         RPolyMeshEntity.prototype.isInvisible = function(...args) 
           
@@ -222,7 +222,7 @@
               return this.__PROXY__.isInvisible(...args);
             
         };
-    
+        
         // function 
         RPolyMeshEntity.prototype.setInvisible = function(...args) 
           
@@ -232,7 +232,7 @@
               return this.__PROXY__.setInvisible(...args);
             
         };
-    
+        
         // function 
         RPolyMeshEntity.prototype.isUndone = function(...args) 
           
@@ -242,7 +242,7 @@
               return this.__PROXY__.isUndone(...args);
             
         };
-    
+        
         // function 
         RPolyMeshEntity.prototype.isWorkingSet = function(...args) 
           
@@ -252,7 +252,7 @@
               return this.__PROXY__.isWorkingSet(...args);
             
         };
-    
+        
         // function 
         RPolyMeshEntity.prototype.setWorkingSet = function(...args) 
           
@@ -262,7 +262,7 @@
               return this.__PROXY__.setWorkingSet(...args);
             
         };
-    
+        
         // function 
         RPolyMeshEntity.prototype.getPropertyTypeIds = function(...args) 
           
@@ -272,7 +272,7 @@
               return this.__PROXY__.getPropertyTypeIds(...args);
             
         };
-    
+        
         // function 
         RPolyMeshEntity.prototype.getCustomPropertyTypeIds = function(...args) 
           
@@ -282,7 +282,7 @@
               return this.__PROXY__.getCustomPropertyTypeIds(...args);
             
         };
-    
+        
         // function 
         RPolyMeshEntity.prototype.hasPropertyType = function(...args) 
           
@@ -292,7 +292,7 @@
               return this.__PROXY__.hasPropertyType(...args);
             
         };
-    
+        
         // function 
         RPolyMeshEntity.prototype.hasCustomProperties = function(...args) 
           
@@ -302,7 +302,7 @@
               return this.__PROXY__.hasCustomProperties(...args);
             
         };
-    
+        
         // function 
         RPolyMeshEntity.prototype.hasCustomProperty = function(...args) 
           
@@ -312,7 +312,7 @@
               return this.__PROXY__.hasCustomProperty(...args);
             
         };
-    
+        
         // function 
         RPolyMeshEntity.prototype.getCustomProperty = function(...args) 
           
@@ -322,7 +322,7 @@
               return this.__PROXY__.getCustomProperty(...args);
             
         };
-    
+        
         // function 
         RPolyMeshEntity.prototype.getCustomDoubleProperty = function(...args) 
           
@@ -332,7 +332,7 @@
               return this.__PROXY__.getCustomDoubleProperty(...args);
             
         };
-    
+        
         // function 
         RPolyMeshEntity.prototype.getCustomIntProperty = function(...args) 
           
@@ -342,7 +342,7 @@
               return this.__PROXY__.getCustomIntProperty(...args);
             
         };
-    
+        
         // function 
         RPolyMeshEntity.prototype.getCustomBoolProperty = function(...args) 
           
@@ -352,7 +352,7 @@
               return this.__PROXY__.getCustomBoolProperty(...args);
             
         };
-    
+        
         // function 
         RPolyMeshEntity.prototype.setCustomProperty = function(...args) 
           
@@ -362,7 +362,7 @@
               return this.__PROXY__.setCustomProperty(...args);
             
         };
-    
+        
         // function 
         RPolyMeshEntity.prototype.removeCustomProperty = function(...args) 
           
@@ -372,7 +372,7 @@
               return this.__PROXY__.removeCustomProperty(...args);
             
         };
-    
+        
         // function 
         RPolyMeshEntity.prototype.getCustomPropertyTitles = function(...args) 
           
@@ -382,7 +382,7 @@
               return this.__PROXY__.getCustomPropertyTitles(...args);
             
         };
-    
+        
         // function 
         RPolyMeshEntity.prototype.getCustomPropertyKeys = function(...args) 
           
@@ -392,7 +392,7 @@
               return this.__PROXY__.getCustomPropertyKeys(...args);
             
         };
-    
+        
         // function 
         RPolyMeshEntity.prototype.copyCustomPropertiesFrom = function(...args) 
           
@@ -402,7 +402,7 @@
               return this.__PROXY__.copyCustomPropertiesFrom(...args);
             
         };
-    
+        
         // function 
         RPolyMeshEntity.prototype.dump = function(...args) 
           
@@ -412,7 +412,7 @@
               return this.__PROXY__.dump(...args);
             
         };
-    
+        
         // function 
         RPolyMeshEntity.prototype.validate = function(...args) 
           
@@ -422,7 +422,7 @@
               return this.__PROXY__.validate(...args);
             
         };
-    
+        
         // function 
         RPolyMeshEntity.prototype.setUndone = function(...args) 
           
@@ -432,7 +432,7 @@
               return this.__PROXY__.setUndone(...args);
             
         };
-    
+        
         // function 
         RPolyMeshEntity.prototype.setId = function(...args) 
           
@@ -442,7 +442,7 @@
               return this.__PROXY__.setId(...args);
             
         };
-    
+        
         // function 
         RPolyMeshEntity.prototype.setHandle = function(...args) 
           
@@ -452,7 +452,7 @@
               return this.__PROXY__.setHandle(...args);
             
         };
-    
+        
         // function 
         RPolyMeshEntity.prototype.setMemberFlag = function(...args) 
           
@@ -462,7 +462,7 @@
               return this.__PROXY__.setMemberFlag(...args);
             
         };
-    
+        
         // function 
         RPolyMeshEntity.prototype.setDocument = function(...args) 
           
@@ -472,7 +472,7 @@
               return this.__PROXY__.setDocument(...args);
             
         };
-    
+        
         // function 
         RPolyMeshEntity.prototype.getType = function(...args) 
           
@@ -482,7 +482,7 @@
               return this.__PROXY__.getType(...args);
             
         };
-    
+        
         // function 
         RPolyMeshEntity.prototype.isPointType = function(...args) 
           
@@ -492,7 +492,7 @@
               return this.__PROXY__.isPointType(...args);
             
         };
-    
+        
         // function 
         RPolyMeshEntity.prototype.isValid = function(...args) 
           
@@ -502,7 +502,7 @@
               return this.__PROXY__.isValid(...args);
             
         };
-    
+        
         // function 
         RPolyMeshEntity.prototype.isSane = function(...args) 
           
@@ -512,7 +512,7 @@
               return this.__PROXY__.isSane(...args);
             
         };
-    
+        
         // function 
         RPolyMeshEntity.prototype.isSelected = function(...args) 
           
@@ -522,7 +522,7 @@
               return this.__PROXY__.isSelected(...args);
             
         };
-    
+        
         // function 
         RPolyMeshEntity.prototype.setSelected = function(...args) 
           
@@ -532,7 +532,7 @@
               return this.__PROXY__.setSelected(...args);
             
         };
-    
+        
         // function 
         RPolyMeshEntity.prototype.isSelectedWorkingSet = function(...args) 
           
@@ -542,7 +542,7 @@
               return this.__PROXY__.isSelectedWorkingSet(...args);
             
         };
-    
+        
         // function 
         RPolyMeshEntity.prototype.setSelectedWorkingSet = function(...args) 
           
@@ -552,7 +552,7 @@
               return this.__PROXY__.setSelectedWorkingSet(...args);
             
         };
-    
+        
         // function 
         RPolyMeshEntity.prototype.isSelectable = function(...args) 
           
@@ -562,7 +562,7 @@
               return this.__PROXY__.isSelectable(...args);
             
         };
-    
+        
         // function 
         RPolyMeshEntity.prototype.isUpdatesEnabled = function(...args) 
           
@@ -572,7 +572,7 @@
               return this.__PROXY__.isUpdatesEnabled(...args);
             
         };
-    
+        
         // function 
         RPolyMeshEntity.prototype.setUpdatesEnabled = function(...args) 
           
@@ -582,7 +582,7 @@
               return this.__PROXY__.setUpdatesEnabled(...args);
             
         };
-    
+        
         // function 
         RPolyMeshEntity.prototype.cloneOnChange = function(...args) 
           
@@ -592,7 +592,7 @@
               return this.__PROXY__.cloneOnChange(...args);
             
         };
-    
+        
         // function 
         RPolyMeshEntity.prototype.setDrawOrder = function(...args) 
           
@@ -602,7 +602,7 @@
               return this.__PROXY__.setDrawOrder(...args);
             
         };
-    
+        
         // function 
         RPolyMeshEntity.prototype.getDrawOrder = function(...args) 
           
@@ -612,7 +612,7 @@
               return this.__PROXY__.getDrawOrder(...args);
             
         };
-    
+        
         // function 
         RPolyMeshEntity.prototype.setLayerId = function(...args) 
           
@@ -622,7 +622,7 @@
               return this.__PROXY__.setLayerId(...args);
             
         };
-    
+        
         // function 
         RPolyMeshEntity.prototype.setLayerName = function(...args) 
           
@@ -632,7 +632,7 @@
               return this.__PROXY__.setLayerName(...args);
             
         };
-    
+        
         // function 
         RPolyMeshEntity.prototype.getLayerId = function(...args) 
           
@@ -642,7 +642,7 @@
               return this.__PROXY__.getLayerId(...args);
             
         };
-    
+        
         // function 
         RPolyMeshEntity.prototype.getLayerName = function(...args) 
           
@@ -652,7 +652,7 @@
               return this.__PROXY__.getLayerName(...args);
             
         };
-    
+        
         // function 
         RPolyMeshEntity.prototype.setBlockId = function(...args) 
           
@@ -662,7 +662,7 @@
               return this.__PROXY__.setBlockId(...args);
             
         };
-    
+        
         // function 
         RPolyMeshEntity.prototype.getBlockId = function(...args) 
           
@@ -672,7 +672,7 @@
               return this.__PROXY__.getBlockId(...args);
             
         };
-    
+        
         // function 
         RPolyMeshEntity.prototype.getBlockName = function(...args) 
           
@@ -682,7 +682,7 @@
               return this.__PROXY__.getBlockName(...args);
             
         };
-    
+        
         // function 
         RPolyMeshEntity.prototype.getParentId = function(...args) 
           
@@ -692,7 +692,7 @@
               return this.__PROXY__.getParentId(...args);
             
         };
-    
+        
         // function 
         RPolyMeshEntity.prototype.setLinetypeId = function(...args) 
           
@@ -702,7 +702,7 @@
               return this.__PROXY__.setLinetypeId(...args);
             
         };
-    
+        
         // function 
         RPolyMeshEntity.prototype.setLinetypePattern = function(...args) 
           
@@ -712,7 +712,7 @@
               return this.__PROXY__.setLinetypePattern(...args);
             
         };
-    
+        
         // function 
         RPolyMeshEntity.prototype.getLinetypeId = function(...args) 
           
@@ -722,7 +722,7 @@
               return this.__PROXY__.getLinetypeId(...args);
             
         };
-    
+        
         // function 
         RPolyMeshEntity.prototype.getLinetypePattern = function(...args) 
           
@@ -732,7 +732,7 @@
               return this.__PROXY__.getLinetypePattern(...args);
             
         };
-    
+        
         // function 
         RPolyMeshEntity.prototype.setLinetypeScale = function(...args) 
           
@@ -742,7 +742,7 @@
               return this.__PROXY__.setLinetypeScale(...args);
             
         };
-    
+        
         // function 
         RPolyMeshEntity.prototype.getLinetypeScale = function(...args) 
           
@@ -752,7 +752,7 @@
               return this.__PROXY__.getLinetypeScale(...args);
             
         };
-    
+        
         // function 
         RPolyMeshEntity.prototype.setLineweight = function(...args) 
           
@@ -762,7 +762,7 @@
               return this.__PROXY__.setLineweight(...args);
             
         };
-    
+        
         // function 
         RPolyMeshEntity.prototype.getLineweight = function(...args) 
           
@@ -772,7 +772,7 @@
               return this.__PROXY__.getLineweight(...args);
             
         };
-    
+        
         // function 
         RPolyMeshEntity.prototype.setColor = function(...args) 
           
@@ -782,7 +782,7 @@
               return this.__PROXY__.setColor(...args);
             
         };
-    
+        
         // function 
         RPolyMeshEntity.prototype.getColor = function(...args) 
           
@@ -792,7 +792,7 @@
               return this.__PROXY__.getColor(...args);
             
         };
-    
+        
         // function 
         RPolyMeshEntity.prototype.getDisplayColor = function(...args) 
           
@@ -802,7 +802,7 @@
               return this.__PROXY__.getDisplayColor(...args);
             
         };
-    
+        
         // function 
         RPolyMeshEntity.prototype.copyAttributesFrom = function(...args) 
           
@@ -812,7 +812,7 @@
               return this.__PROXY__.copyAttributesFrom(...args);
             
         };
-    
+        
         // function 
         RPolyMeshEntity.prototype.getBoundingBox = function(...args) 
           
@@ -822,7 +822,7 @@
               return this.__PROXY__.getBoundingBox(...args);
             
         };
-    
+        
         // function 
         RPolyMeshEntity.prototype.to2D = function(...args) 
           
@@ -832,7 +832,7 @@
               return this.__PROXY__.to2D(...args);
             
         };
-    
+        
         // function 
         RPolyMeshEntity.prototype.setZ = function(...args) 
           
@@ -842,7 +842,7 @@
               return this.__PROXY__.setZ(...args);
             
         };
-    
+        
         // function 
         RPolyMeshEntity.prototype.getBoundingBoxes = function(...args) 
           
@@ -852,7 +852,7 @@
               return this.__PROXY__.getBoundingBoxes(...args);
             
         };
-    
+        
         // function 
         RPolyMeshEntity.prototype.getHull = function(...args) 
           
@@ -862,7 +862,7 @@
               return this.__PROXY__.getHull(...args);
             
         };
-    
+        
         // function 
         RPolyMeshEntity.prototype.getShapes = function(...args) 
           
@@ -872,7 +872,7 @@
               return this.__PROXY__.getShapes(...args);
             
         };
-    
+        
         // function 
         RPolyMeshEntity.prototype.getClosestSubEntityId = function(...args) 
           
@@ -882,7 +882,7 @@
               return this.__PROXY__.getClosestSubEntityId(...args);
             
         };
-    
+        
         // function 
         RPolyMeshEntity.prototype.getClosestShape = function(...args) 
           
@@ -892,7 +892,7 @@
               return this.__PROXY__.getClosestShape(...args);
             
         };
-    
+        
         // function 
         RPolyMeshEntity.prototype.getClosestSimpleShape = function(...args) 
           
@@ -902,7 +902,7 @@
               return this.__PROXY__.getClosestSimpleShape(...args);
             
         };
-    
+        
         // function 
         RPolyMeshEntity.prototype.isInside = function(...args) 
           
@@ -912,7 +912,7 @@
               return this.__PROXY__.isInside(...args);
             
         };
-    
+        
         // function 
         RPolyMeshEntity.prototype.isOnEntity = function(...args) 
           
@@ -922,7 +922,7 @@
               return this.__PROXY__.isOnEntity(...args);
             
         };
-    
+        
         // function 
         RPolyMeshEntity.prototype.intersectsWith = function(...args) 
           
@@ -932,7 +932,7 @@
               return this.__PROXY__.intersectsWith(...args);
             
         };
-    
+        
         // function 
         RPolyMeshEntity.prototype.getDistanceTo = function(...args) 
           
@@ -942,7 +942,7 @@
               return this.__PROXY__.getDistanceTo(...args);
             
         };
-    
+        
         // function 
         RPolyMeshEntity.prototype.getVectorTo = function(...args) 
           
@@ -952,7 +952,7 @@
               return this.__PROXY__.getVectorTo(...args);
             
         };
-    
+        
         // function 
         RPolyMeshEntity.prototype.getInternalReferencePoints = function(...args) 
           
@@ -962,7 +962,7 @@
               return this.__PROXY__.getInternalReferencePoints(...args);
             
         };
-    
+        
         // function 
         RPolyMeshEntity.prototype.getReferencePoints = function(...args) 
           
@@ -972,7 +972,7 @@
               return this.__PROXY__.getReferencePoints(...args);
             
         };
-    
+        
         // function 
         RPolyMeshEntity.prototype.getPointOnEntity = function(...args) 
           
@@ -982,7 +982,7 @@
               return this.__PROXY__.getPointOnEntity(...args);
             
         };
-    
+        
         // function 
         RPolyMeshEntity.prototype.getEndPoints = function(...args) 
           
@@ -992,7 +992,7 @@
               return this.__PROXY__.getEndPoints(...args);
             
         };
-    
+        
         // function 
         RPolyMeshEntity.prototype.getMiddlePoints = function(...args) 
           
@@ -1002,7 +1002,7 @@
               return this.__PROXY__.getMiddlePoints(...args);
             
         };
-    
+        
         // function 
         RPolyMeshEntity.prototype.getCenterPoints = function(...args) 
           
@@ -1012,7 +1012,7 @@
               return this.__PROXY__.getCenterPoints(...args);
             
         };
-    
+        
         // function 
         RPolyMeshEntity.prototype.getClosestPointOnEntity = function(...args) 
           
@@ -1022,7 +1022,7 @@
               return this.__PROXY__.getClosestPointOnEntity(...args);
             
         };
-    
+        
         // function 
         RPolyMeshEntity.prototype.getPointsWithDistanceToEnd = function(...args) 
           
@@ -1032,7 +1032,7 @@
               return this.__PROXY__.getPointsWithDistanceToEnd(...args);
             
         };
-    
+        
         // function 
         RPolyMeshEntity.prototype.getIntersectionPoints = function(...args) 
           
@@ -1042,7 +1042,7 @@
               return this.__PROXY__.getIntersectionPoints(...args);
             
         };
-    
+        
         // function 
         RPolyMeshEntity.prototype.getIntersectionPointsWithShape = function(...args) 
           
@@ -1052,7 +1052,7 @@
               return this.__PROXY__.getIntersectionPointsWithShape(...args);
             
         };
-    
+        
         // function 
         RPolyMeshEntity.prototype.clickReferencePoint = function(...args) 
           
@@ -1062,7 +1062,7 @@
               return this.__PROXY__.clickReferencePoint(...args);
             
         };
-    
+        
         // function 
         RPolyMeshEntity.prototype.moveReferencePoint = function(...args) 
           
@@ -1072,7 +1072,7 @@
               return this.__PROXY__.moveReferencePoint(...args);
             
         };
-    
+        
         // function 
         RPolyMeshEntity.prototype.move = function(...args) 
           
@@ -1082,7 +1082,7 @@
               return this.__PROXY__.move(...args);
             
         };
-    
+        
         // function 
         RPolyMeshEntity.prototype.rotate = function(...args) 
           
@@ -1092,7 +1092,7 @@
               return this.__PROXY__.rotate(...args);
             
         };
-    
+        
         // function 
         RPolyMeshEntity.prototype.scale = function(...args) 
           
@@ -1102,7 +1102,7 @@
               return this.__PROXY__.scale(...args);
             
         };
-    
+        
         // function 
         RPolyMeshEntity.prototype.scaleNonUniform = function(...args) 
           
@@ -1112,7 +1112,7 @@
               return this.__PROXY__.scaleNonUniform(...args);
             
         };
-    
+        
         // function 
         RPolyMeshEntity.prototype.scaleVisualProperties = function(...args) 
           
@@ -1122,7 +1122,7 @@
               return this.__PROXY__.scaleVisualProperties(...args);
             
         };
-    
+        
         // function 
         RPolyMeshEntity.prototype.setViewportContext = function(...args) 
           
@@ -1132,7 +1132,7 @@
               return this.__PROXY__.setViewportContext(...args);
             
         };
-    
+        
         // function 
         RPolyMeshEntity.prototype.mirror = function(...args) 
           
@@ -1142,7 +1142,7 @@
               return this.__PROXY__.mirror(...args);
             
         };
-    
+        
         // function 
         RPolyMeshEntity.prototype.flipHorizontal = function(...args) 
           
@@ -1152,7 +1152,7 @@
               return this.__PROXY__.flipHorizontal(...args);
             
         };
-    
+        
         // function 
         RPolyMeshEntity.prototype.flipVertical = function(...args) 
           
@@ -1162,7 +1162,7 @@
               return this.__PROXY__.flipVertical(...args);
             
         };
-    
+        
         // function 
         RPolyMeshEntity.prototype.stretch = function(...args) 
           
@@ -1172,7 +1172,7 @@
               return this.__PROXY__.stretch(...args);
             
         };
-    
+        
         // function 
         RPolyMeshEntity.prototype.update = function(...args) 
           
@@ -1182,7 +1182,7 @@
               return this.__PROXY__.update(...args);
             
         };
-    
+        
         // function 
         RPolyMeshEntity.prototype.castToShape = function(...args) 
           
@@ -1192,7 +1192,7 @@
               return this.__PROXY__.castToShape(...args);
             
         };
-    
+        
         // function 
         RPolyMeshEntity.prototype.setAutoUpdatesBlocked = function(...args) 
           
@@ -1202,7 +1202,7 @@
               return this.__PROXY__.setAutoUpdatesBlocked(...args);
             
         };
-    
+        
         // function 
         RPolyMeshEntity.prototype.isVisible = function(...args) 
           
@@ -1212,7 +1212,7 @@
               return this.__PROXY__.isVisible(...args);
             
         };
-    
+        
         // function 
         RPolyMeshEntity.prototype.isEditable = function(...args) 
           
@@ -1222,7 +1222,7 @@
               return this.__PROXY__.isEditable(...args);
             
         };
-    
+        
         // function 
         RPolyMeshEntity.prototype.isInWorkingSet = function(...args) 
           
@@ -1232,7 +1232,7 @@
               return this.__PROXY__.isInWorkingSet(...args);
             
         };
-    
+        
         // function 
         RPolyMeshEntity.prototype.getComplexity = function(...args) 
           
@@ -1242,7 +1242,7 @@
               return this.__PROXY__.getComplexity(...args);
             
         };
-    
+        
         // function 
         RPolyMeshEntity.prototype.setParentId = function(...args) 
           
@@ -1252,7 +1252,7 @@
               return this.__PROXY__.setParentId(...args);
             
         };
-    
+        
         // function 
         RPolyMeshEntity.prototype.init = function(...args) 
           
@@ -1262,7 +1262,7 @@
               return this.__PROXY__.init(...args);
             
         };
-    
+        
         // function 
         RPolyMeshEntity.prototype.getRtti = function(...args) 
           
@@ -1272,7 +1272,7 @@
               return this.__PROXY__.getRtti(...args);
             
         };
-    
+        
         // function 
         RPolyMeshEntity.prototype.getStaticPropertyTypeIds = function(...args) 
           
@@ -1282,7 +1282,7 @@
               return this.__PROXY__.getStaticPropertyTypeIds(...args);
             
         };
-    
+        
         // function 
         RPolyMeshEntity.prototype.clone = function(...args) 
           
@@ -1292,7 +1292,7 @@
               return this.__PROXY__.clone(...args);
             
         };
-    
+        
         // function 
         RPolyMeshEntity.prototype.cloneToPolyMeshEntity = function(...args) 
           
@@ -1302,7 +1302,7 @@
               return this.__PROXY__.cloneToPolyMeshEntity(...args);
             
         };
-    
+        
         // function 
         RPolyMeshEntity.prototype.setProperty = function(...args) 
           
@@ -1312,7 +1312,7 @@
               return this.__PROXY__.setProperty(...args);
             
         };
-    
+        
         // function 
         RPolyMeshEntity.prototype.getProperty = function(...args) 
           
@@ -1322,7 +1322,7 @@
               return this.__PROXY__.getProperty(...args);
             
         };
-    
+        
         // function 
         RPolyMeshEntity.prototype.exportEntity = function(...args) 
           
@@ -1332,7 +1332,7 @@
               return this.__PROXY__.exportEntity(...args);
             
         };
-    
+        
         // function 
         RPolyMeshEntity.prototype.getData = function(...args) 
           
@@ -1342,7 +1342,7 @@
               return this.__PROXY__.getData(...args);
             
         };
-    
+        
         // function 
         RPolyMeshEntity.prototype.getVertices = function(...args) 
           
@@ -1352,7 +1352,7 @@
               return this.__PROXY__.getVertices(...args);
             
         };
-    
+        
         // function 
         RPolyMeshEntity.prototype.countVertices = function(...args) 
           
@@ -1362,7 +1362,7 @@
               return this.__PROXY__.countVertices(...args);
             
         };
-    
+        
         // function 
         RPolyMeshEntity.prototype.getVertexAt = function(...args) 
           
@@ -1372,7 +1372,7 @@
               return this.__PROXY__.getVertexAt(...args);
             
         };
-    
+        
         // function 
         RPolyMeshEntity.prototype.getFaces = function(...args) 
           
@@ -1382,7 +1382,7 @@
               return this.__PROXY__.getFaces(...args);
             
         };
-    
+        
         // function 
         RPolyMeshEntity.prototype.countFaces = function(...args) 
           
@@ -1392,7 +1392,7 @@
               return this.__PROXY__.countFaces(...args);
             
         };
-    
+        
         // function 
         RPolyMeshEntity.prototype.getFace = function(...args) 
           
@@ -1402,7 +1402,7 @@
               return this.__PROXY__.getFace(...args);
             
         };
-    
+        
         // function 
         RPolyMeshEntity.prototype.isTriangleMesh = function(...args) 
           
@@ -1412,7 +1412,7 @@
               return this.__PROXY__.isTriangleMesh(...args);
             
         };
-    
+        
         // function 
         RPolyMeshEntity.prototype.getTriangles = function(...args) 
           
@@ -1422,7 +1422,7 @@
               return this.__PROXY__.getTriangles(...args);
             
         };
-    
+        
         // function 
         RPolyMeshEntity.prototype.hasProxy = function(...args) 
           
@@ -1432,7 +1432,7 @@
               return this.__PROXY__.hasProxy(...args);
             
         };
-    
+        
         // function 
         RPolyMeshEntity.prototype.print = function(...args) 
           
@@ -1442,7 +1442,7 @@
               return this.__PROXY__.print(...args);
             
         };
-    
+        
 
       // static functions:
       

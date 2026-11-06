@@ -105,7 +105,7 @@
               return this.__PROXY__.setCoordinate(...args);
             
         };
-    
+        
 
       // static functions:
       RMouseCoordinateListener.prototype.isNullWrapper = function() {

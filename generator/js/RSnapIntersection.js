@@ -219,7 +219,7 @@ RSnapIntersection.CoordinatePolar = RSnapIntersection_Wrapper.CoordinatePolar;
               return this.__PROXY__.suspendEvent(...args);
             
         };
-    
+        
         // function 
         RSnapIntersection.prototype.finishEvent = function(...args) 
           
@@ -229,7 +229,7 @@ RSnapIntersection.CoordinatePolar = RSnapIntersection_Wrapper.CoordinatePolar;
               return this.__PROXY__.finishEvent(...args);
             
         };
-    
+        
         // function 
         RSnapIntersection.prototype.getEntityIds = function(...args) 
           
@@ -239,7 +239,7 @@ RSnapIntersection.CoordinatePolar = RSnapIntersection_Wrapper.CoordinatePolar;
               return this.__PROXY__.getEntityIds(...args);
             
         };
-    
+        
         // function 
         RSnapIntersection.prototype.getStatus = function(...args) 
           
@@ -249,7 +249,7 @@ RSnapIntersection.CoordinatePolar = RSnapIntersection_Wrapper.CoordinatePolar;
               return this.__PROXY__.getStatus(...args);
             
         };
-    
+        
         // function 
         RSnapIntersection.prototype.setStatus = function(...args) 
           
@@ -259,7 +259,7 @@ RSnapIntersection.CoordinatePolar = RSnapIntersection_Wrapper.CoordinatePolar;
               return this.__PROXY__.setStatus(...args);
             
         };
-    
+        
         // function 
         RSnapIntersection.prototype.getLastSnap = function(...args) 
           
@@ -269,7 +269,7 @@ RSnapIntersection.CoordinatePolar = RSnapIntersection_Wrapper.CoordinatePolar;
               return this.__PROXY__.getLastSnap(...args);
             
         };
-    
+        
         // function 
         RSnapIntersection.prototype.setLastSnap = function(...args) 
           
@@ -279,7 +279,7 @@ RSnapIntersection.CoordinatePolar = RSnapIntersection_Wrapper.CoordinatePolar;
               return this.__PROXY__.setLastSnap(...args);
             
         };
-    
+        
         // function 
         RSnapIntersection.prototype.reset = function(...args) 
           
@@ -289,7 +289,7 @@ RSnapIntersection.CoordinatePolar = RSnapIntersection_Wrapper.CoordinatePolar;
               return this.__PROXY__.reset(...args);
             
         };
-    
+        
         // function 
         RSnapIntersection.prototype.snap = function(...args) 
           
@@ -299,7 +299,7 @@ RSnapIntersection.CoordinatePolar = RSnapIntersection_Wrapper.CoordinatePolar;
               return this.__PROXY__.snap(...args);
             
         };
-    
+        
 
       // static functions:
       RSnapIntersection.prototype.isNullWrapper = function() {

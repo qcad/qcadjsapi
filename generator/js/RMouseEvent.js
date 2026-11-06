@@ -359,7 +359,7 @@ RMouseEvent.MaxUser = RMouseEvent_Wrapper.MaxUser;
               return this.__PROXY__.type(...args);
             
         };
-    
+        
         // function 
         RMouseEvent.prototype.spontaneous = function(...args) 
           
@@ -369,7 +369,7 @@ RMouseEvent.MaxUser = RMouseEvent_Wrapper.MaxUser;
               return this.__PROXY__.spontaneous(...args);
             
         };
-    
+        
         // function 
         RMouseEvent.prototype.isAccepted = function(...args) 
           
@@ -379,7 +379,7 @@ RMouseEvent.MaxUser = RMouseEvent_Wrapper.MaxUser;
               return this.__PROXY__.isAccepted(...args);
             
         };
-    
+        
         // function 
         RMouseEvent.prototype.accept = function(...args) 
           
@@ -389,7 +389,7 @@ RMouseEvent.MaxUser = RMouseEvent_Wrapper.MaxUser;
               return this.__PROXY__.accept(...args);
             
         };
-    
+        
         // function 
         RMouseEvent.prototype.ignore = function(...args) 
           
@@ -399,7 +399,7 @@ RMouseEvent.MaxUser = RMouseEvent_Wrapper.MaxUser;
               return this.__PROXY__.ignore(...args);
             
         };
-    
+        
         // function 
         RMouseEvent.prototype.isInputEvent = function(...args) 
           
@@ -409,7 +409,7 @@ RMouseEvent.MaxUser = RMouseEvent_Wrapper.MaxUser;
               return this.__PROXY__.isInputEvent(...args);
             
         };
-    
+        
         // function 
         RMouseEvent.prototype.isPointerEvent = function(...args) 
           
@@ -419,7 +419,7 @@ RMouseEvent.MaxUser = RMouseEvent_Wrapper.MaxUser;
               return this.__PROXY__.isPointerEvent(...args);
             
         };
-    
+        
         // function 
         RMouseEvent.prototype.isSinglePointEvent = function(...args) 
           
@@ -429,7 +429,7 @@ RMouseEvent.MaxUser = RMouseEvent_Wrapper.MaxUser;
               return this.__PROXY__.isSinglePointEvent(...args);
             
         };
-    
+        
         // function 
         RMouseEvent.prototype.setSpontaneous = function(...args) 
           
@@ -439,7 +439,7 @@ RMouseEvent.MaxUser = RMouseEvent_Wrapper.MaxUser;
               return this.__PROXY__.setSpontaneous(...args);
             
         };
-    
+        
         // function 
         RMouseEvent.prototype.modifiers = function(...args) 
           
@@ -449,7 +449,7 @@ RMouseEvent.MaxUser = RMouseEvent_Wrapper.MaxUser;
               return this.__PROXY__.modifiers(...args);
             
         };
-    
+        
         // function 
         RMouseEvent.prototype.setModifiers = function(...args) 
           
@@ -459,7 +459,7 @@ RMouseEvent.MaxUser = RMouseEvent_Wrapper.MaxUser;
               return this.__PROXY__.setModifiers(...args);
             
         };
-    
+        
         // function 
         RMouseEvent.prototype.timestamp = function(...args) 
           
@@ -469,7 +469,7 @@ RMouseEvent.MaxUser = RMouseEvent_Wrapper.MaxUser;
               return this.__PROXY__.timestamp(...args);
             
         };
-    
+        
         // function 
         RMouseEvent.prototype.setTimestamp = function(...args) 
           
@@ -479,7 +479,7 @@ RMouseEvent.MaxUser = RMouseEvent_Wrapper.MaxUser;
               return this.__PROXY__.setTimestamp(...args);
             
         };
-    
+        
         // function 
         RMouseEvent.prototype.pointCount = function(...args) 
           
@@ -489,7 +489,7 @@ RMouseEvent.MaxUser = RMouseEvent_Wrapper.MaxUser;
               return this.__PROXY__.pointCount(...args);
             
         };
-    
+        
         // function 
         RMouseEvent.prototype.point = function(...args) 
           
@@ -499,7 +499,7 @@ RMouseEvent.MaxUser = RMouseEvent_Wrapper.MaxUser;
               return this.__PROXY__.point(...args);
             
         };
-    
+        
         // function 
         RMouseEvent.prototype.pointById = function(...args) 
           
@@ -509,7 +509,7 @@ RMouseEvent.MaxUser = RMouseEvent_Wrapper.MaxUser;
               return this.__PROXY__.pointById(...args);
             
         };
-    
+        
         // function 
         RMouseEvent.prototype.allPointsGrabbed = function(...args) 
           
@@ -519,7 +519,7 @@ RMouseEvent.MaxUser = RMouseEvent_Wrapper.MaxUser;
               return this.__PROXY__.allPointsGrabbed(...args);
             
         };
-    
+        
         // function 
         RMouseEvent.prototype.allPointsAccepted = function(...args) 
           
@@ -529,7 +529,7 @@ RMouseEvent.MaxUser = RMouseEvent_Wrapper.MaxUser;
               return this.__PROXY__.allPointsAccepted(...args);
             
         };
-    
+        
         // function 
         RMouseEvent.prototype.setAccepted = function(...args) 
           
@@ -539,7 +539,7 @@ RMouseEvent.MaxUser = RMouseEvent_Wrapper.MaxUser;
               return this.__PROXY__.setAccepted(...args);
             
         };
-    
+        
         // function 
         RMouseEvent.prototype.exclusiveGrabber = function(...args) 
           
@@ -549,7 +549,7 @@ RMouseEvent.MaxUser = RMouseEvent_Wrapper.MaxUser;
               return this.__PROXY__.exclusiveGrabber(...args);
             
         };
-    
+        
         // function 
         RMouseEvent.prototype.setExclusiveGrabber = function(...args) 
           
@@ -559,7 +559,7 @@ RMouseEvent.MaxUser = RMouseEvent_Wrapper.MaxUser;
               return this.__PROXY__.setExclusiveGrabber(...args);
             
         };
-    
+        
         // function 
         RMouseEvent.prototype.clearPassiveGrabbers = function(...args) 
           
@@ -569,7 +569,7 @@ RMouseEvent.MaxUser = RMouseEvent_Wrapper.MaxUser;
               return this.__PROXY__.clearPassiveGrabbers(...args);
             
         };
-    
+        
         // function 
         RMouseEvent.prototype.addPassiveGrabber = function(...args) 
           
@@ -579,7 +579,7 @@ RMouseEvent.MaxUser = RMouseEvent_Wrapper.MaxUser;
               return this.__PROXY__.addPassiveGrabber(...args);
             
         };
-    
+        
         // function 
         RMouseEvent.prototype.removePassiveGrabber = function(...args) 
           
@@ -589,7 +589,7 @@ RMouseEvent.MaxUser = RMouseEvent_Wrapper.MaxUser;
               return this.__PROXY__.removePassiveGrabber(...args);
             
         };
-    
+        
         // function 
         RMouseEvent.prototype.position = function(...args) 
           
@@ -599,7 +599,7 @@ RMouseEvent.MaxUser = RMouseEvent_Wrapper.MaxUser;
               return this.__PROXY__.position(...args);
             
         };
-    
+        
         // function 
         RMouseEvent.prototype.scenePosition = function(...args) 
           
@@ -609,7 +609,7 @@ RMouseEvent.MaxUser = RMouseEvent_Wrapper.MaxUser;
               return this.__PROXY__.scenePosition(...args);
             
         };
-    
+        
         // function 
         RMouseEvent.prototype.globalPosition = function(...args) 
           
@@ -619,7 +619,7 @@ RMouseEvent.MaxUser = RMouseEvent_Wrapper.MaxUser;
               return this.__PROXY__.globalPosition(...args);
             
         };
-    
+        
         // function 
         RMouseEvent.prototype.isBeginEvent = function(...args) 
           
@@ -629,7 +629,7 @@ RMouseEvent.MaxUser = RMouseEvent_Wrapper.MaxUser;
               return this.__PROXY__.isBeginEvent(...args);
             
         };
-    
+        
         // function 
         RMouseEvent.prototype.isUpdateEvent = function(...args) 
           
@@ -639,7 +639,7 @@ RMouseEvent.MaxUser = RMouseEvent_Wrapper.MaxUser;
               return this.__PROXY__.isUpdateEvent(...args);
             
         };
-    
+        
         // function 
         RMouseEvent.prototype.isEndEvent = function(...args) 
           
@@ -649,7 +649,7 @@ RMouseEvent.MaxUser = RMouseEvent_Wrapper.MaxUser;
               return this.__PROXY__.isEndEvent(...args);
             
         };
-    
+        
         // function 
         RMouseEvent.prototype.exclusivePointGrabber = function(...args) 
           
@@ -659,7 +659,7 @@ RMouseEvent.MaxUser = RMouseEvent_Wrapper.MaxUser;
               return this.__PROXY__.exclusivePointGrabber(...args);
             
         };
-    
+        
         // function 
         RMouseEvent.prototype.setExclusivePointGrabber = function(...args) 
           
@@ -669,7 +669,7 @@ RMouseEvent.MaxUser = RMouseEvent_Wrapper.MaxUser;
               return this.__PROXY__.setExclusivePointGrabber(...args);
             
         };
-    
+        
         // function 
         RMouseEvent.prototype.clone = function(...args) 
           
@@ -679,7 +679,7 @@ RMouseEvent.MaxUser = RMouseEvent_Wrapper.MaxUser;
               return this.__PROXY__.clone(...args);
             
         };
-    
+        
         // function 
         RMouseEvent.prototype.pos = function(...args) 
           
@@ -689,7 +689,7 @@ RMouseEvent.MaxUser = RMouseEvent_Wrapper.MaxUser;
               return this.__PROXY__.pos(...args);
             
         };
-    
+        
         // function 
         RMouseEvent.prototype.button = function(...args) 
           
@@ -699,7 +699,7 @@ RMouseEvent.MaxUser = RMouseEvent_Wrapper.MaxUser;
               return this.__PROXY__.button(...args);
             
         };
-    
+        
         // function 
         RMouseEvent.prototype.buttons = function(...args) 
           
@@ -709,7 +709,7 @@ RMouseEvent.MaxUser = RMouseEvent_Wrapper.MaxUser;
               return this.__PROXY__.buttons(...args);
             
         };
-    
+        
         // function 
         RMouseEvent.prototype.source = function(...args) 
           
@@ -719,7 +719,7 @@ RMouseEvent.MaxUser = RMouseEvent_Wrapper.MaxUser;
               return this.__PROXY__.source(...args);
             
         };
-    
+        
         // function 
         RMouseEvent.prototype.flags = function(...args) 
           
@@ -729,7 +729,7 @@ RMouseEvent.MaxUser = RMouseEvent_Wrapper.MaxUser;
               return this.__PROXY__.flags(...args);
             
         };
-    
+        
         // function 
         RMouseEvent.prototype.getModelPosition = function(...args) 
           
@@ -739,7 +739,7 @@ RMouseEvent.MaxUser = RMouseEvent_Wrapper.MaxUser;
               return this.__PROXY__.getModelPosition(...args);
             
         };
-    
+        
         // function 
         RMouseEvent.prototype.setModelPosition = function(...args) 
           
@@ -749,7 +749,7 @@ RMouseEvent.MaxUser = RMouseEvent_Wrapper.MaxUser;
               return this.__PROXY__.setModelPosition(...args);
             
         };
-    
+        
         // function 
         RMouseEvent.prototype.getCursorPosition = function(...args) 
           
@@ -759,7 +759,7 @@ RMouseEvent.MaxUser = RMouseEvent_Wrapper.MaxUser;
               return this.__PROXY__.getCursorPosition(...args);
             
         };
-    
+        
         // function 
         RMouseEvent.prototype.setCursorPosition = function(...args) 
           
@@ -769,7 +769,7 @@ RMouseEvent.MaxUser = RMouseEvent_Wrapper.MaxUser;
               return this.__PROXY__.setCursorPosition(...args);
             
         };
-    
+        
         // function 
         RMouseEvent.prototype.getScreenPosition = function(...args) 
           
@@ -779,7 +779,7 @@ RMouseEvent.MaxUser = RMouseEvent_Wrapper.MaxUser;
               return this.__PROXY__.getScreenPosition(...args);
             
         };
-    
+        
         // function 
         RMouseEvent.prototype.setScreenPosition = function(...args) 
           
@@ -789,7 +789,7 @@ RMouseEvent.MaxUser = RMouseEvent_Wrapper.MaxUser;
               return this.__PROXY__.setScreenPosition(...args);
             
         };
-    
+        
         // function 
         RMouseEvent.prototype.getGraphicsView = function(...args) 
           
@@ -799,7 +799,7 @@ RMouseEvent.MaxUser = RMouseEvent_Wrapper.MaxUser;
               return this.__PROXY__.getGraphicsView(...args);
             
         };
-    
+        
         // function 
         RMouseEvent.prototype.getGraphicsScene = function(...args) 
           
@@ -809,7 +809,7 @@ RMouseEvent.MaxUser = RMouseEvent_Wrapper.MaxUser;
               return this.__PROXY__.getGraphicsScene(...args);
             
         };
-    
+        
         // function 
         RMouseEvent.prototype.isValid = function(...args) 
           
@@ -819,7 +819,7 @@ RMouseEvent.MaxUser = RMouseEvent_Wrapper.MaxUser;
               return this.__PROXY__.isValid(...args);
             
         };
-    
+        
         // function 
         RMouseEvent.prototype.hasMouseMoved = function(...args) 
           
@@ -829,7 +829,7 @@ RMouseEvent.MaxUser = RMouseEvent_Wrapper.MaxUser;
               return this.__PROXY__.hasMouseMoved(...args);
             
         };
-    
+        
         // function 
         RMouseEvent.prototype.resetOriginalMousePos = function(...args) 
           
@@ -839,7 +839,7 @@ RMouseEvent.MaxUser = RMouseEvent_Wrapper.MaxUser;
               return this.__PROXY__.resetOriginalMousePos(...args);
             
         };
-    
+        
         // function 
         RMouseEvent.prototype.setOriginalMousePos = function(...args) 
           
@@ -849,7 +849,7 @@ RMouseEvent.MaxUser = RMouseEvent_Wrapper.MaxUser;
               return this.__PROXY__.setOriginalMousePos(...args);
             
         };
-    
+        
 
       // static functions:
       

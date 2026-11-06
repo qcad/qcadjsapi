@@ -160,7 +160,7 @@
               return this.__PROXY__.isValid(...args);
             
         };
-    
+        
         // function 
         RPattern.prototype.hasDots = function(...args) 
           
@@ -170,7 +170,7 @@
               return this.__PROXY__.hasDots(...args);
             
         };
-    
+        
         // function 
         RPattern.prototype.clear = function(...args) 
           
@@ -180,7 +180,7 @@
               return this.__PROXY__.clear(...args);
             
         };
-    
+        
         // function 
         RPattern.prototype.getFileName = function(...args) 
           
@@ -190,7 +190,7 @@
               return this.__PROXY__.getFileName(...args);
             
         };
-    
+        
         // function 
         RPattern.prototype.getName = function(...args) 
           
@@ -200,7 +200,7 @@
               return this.__PROXY__.getName(...args);
             
         };
-    
+        
         // function 
         RPattern.prototype.getDescription = function(...args) 
           
@@ -210,7 +210,7 @@
               return this.__PROXY__.getDescription(...args);
             
         };
-    
+        
         // function 
         RPattern.prototype.isLoaded = function(...args) 
           
@@ -220,7 +220,7 @@
               return this.__PROXY__.isLoaded(...args);
             
         };
-    
+        
         // function 
         RPattern.prototype.load = function(...args) 
           
@@ -230,7 +230,7 @@
               return this.__PROXY__.load(...args);
             
         };
-    
+        
         // function 
         RPattern.prototype.getPatternLines = function(...args) 
           
@@ -240,7 +240,7 @@
               return this.__PROXY__.getPatternLines(...args);
             
         };
-    
+        
         // function 
         RPattern.prototype.addPatternLine = function(...args) 
           
@@ -250,7 +250,7 @@
               return this.__PROXY__.addPatternLine(...args);
             
         };
-    
+        
         // function 
         RPattern.prototype.scale = function(...args) 
           
@@ -260,7 +260,7 @@
               return this.__PROXY__.scale(...args);
             
         };
-    
+        
         // function 
         RPattern.prototype.rotate = function(...args) 
           
@@ -270,7 +270,7 @@
               return this.__PROXY__.rotate(...args);
             
         };
-    
+        
 
       // static functions:
       RPattern.prototype.isNullWrapper = function() {

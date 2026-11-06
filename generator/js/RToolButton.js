@@ -146,7 +146,7 @@
               return this.__PROXY__.setObjectName(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.isWidgetType = function(...args) 
           
@@ -156,7 +156,7 @@
               return this.__PROXY__.isWidgetType(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.isWindowType = function(...args) 
           
@@ -166,7 +166,7 @@
               return this.__PROXY__.isWindowType(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.signalsBlocked = function(...args) 
           
@@ -176,7 +176,7 @@
               return this.__PROXY__.signalsBlocked(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.blockSignals = function(...args) 
           
@@ -186,7 +186,7 @@
               return this.__PROXY__.blockSignals(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.findChild = function(...args) 
           
@@ -196,7 +196,7 @@
               return this.__PROXY__.findChild(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.children = function(...args) 
           
@@ -206,7 +206,7 @@
               return this.__PROXY__.children(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.installEventFilter = function(...args) 
           
@@ -216,7 +216,7 @@
               return this.__PROXY__.installEventFilter(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.removeEventFilter = function(...args) 
           
@@ -226,7 +226,7 @@
               return this.__PROXY__.removeEventFilter(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.dumpObjectTree = function(...args) 
           
@@ -236,7 +236,7 @@
               return this.__PROXY__.dumpObjectTree(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.dumpObjectInfo = function(...args) 
           
@@ -246,7 +246,7 @@
               return this.__PROXY__.dumpObjectInfo(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.setProperty = function(...args) 
           
@@ -256,7 +256,7 @@
               return this.__PROXY__.setProperty(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.property = function(...args) 
           
@@ -266,7 +266,7 @@
               return this.__PROXY__.property(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.dynamicPropertyNames = function(...args) 
           
@@ -276,7 +276,7 @@
               return this.__PROXY__.dynamicPropertyNames(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.parent = function(...args) 
           
@@ -286,7 +286,7 @@
               return this.__PROXY__.parent(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.deleteLater = function(...args) 
           
@@ -296,7 +296,7 @@
               return this.__PROXY__.deleteLater(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.devType = function(...args) 
           
@@ -306,7 +306,7 @@
               return this.__PROXY__.devType(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.createWinId = function(...args) 
           
@@ -316,7 +316,7 @@
               return this.__PROXY__.createWinId(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.isWindow = function(...args) 
           
@@ -326,7 +326,7 @@
               return this.__PROXY__.isWindow(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.isModal = function(...args) 
           
@@ -336,7 +336,7 @@
               return this.__PROXY__.isModal(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.setWindowModality = function(...args) 
           
@@ -346,7 +346,7 @@
               return this.__PROXY__.setWindowModality(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.isEnabled = function(...args) 
           
@@ -356,7 +356,7 @@
               return this.__PROXY__.isEnabled(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.isEnabledTo = function(...args) 
           
@@ -366,7 +366,7 @@
               return this.__PROXY__.isEnabledTo(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.setEnabled = function(...args) 
           
@@ -376,7 +376,7 @@
               return this.__PROXY__.setEnabled(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.setDisabled = function(...args) 
           
@@ -386,7 +386,7 @@
               return this.__PROXY__.setDisabled(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.setWindowModified = function(...args) 
           
@@ -396,7 +396,7 @@
               return this.__PROXY__.setWindowModified(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.setMinimumSize = function(...args) 
           
@@ -406,7 +406,7 @@
               return this.__PROXY__.setMinimumSize(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.setMaximumSize = function(...args) 
           
@@ -416,7 +416,7 @@
               return this.__PROXY__.setMaximumSize(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.setMinimumWidth = function(...args) 
           
@@ -426,7 +426,7 @@
               return this.__PROXY__.setMinimumWidth(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.setMinimumHeight = function(...args) 
           
@@ -436,7 +436,7 @@
               return this.__PROXY__.setMinimumHeight(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.setMaximumWidth = function(...args) 
           
@@ -446,7 +446,7 @@
               return this.__PROXY__.setMaximumWidth(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.setMaximumHeight = function(...args) 
           
@@ -456,7 +456,7 @@
               return this.__PROXY__.setMaximumHeight(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.setSizeIncrement = function(...args) 
           
@@ -466,7 +466,7 @@
               return this.__PROXY__.setSizeIncrement(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.setBaseSize = function(...args) 
           
@@ -476,7 +476,7 @@
               return this.__PROXY__.setBaseSize(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.setFixedSize = function(...args) 
           
@@ -486,7 +486,7 @@
               return this.__PROXY__.setFixedSize(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.setFixedWidth = function(...args) 
           
@@ -496,7 +496,7 @@
               return this.__PROXY__.setFixedWidth(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.setFixedHeight = function(...args) 
           
@@ -506,7 +506,7 @@
               return this.__PROXY__.setFixedHeight(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.mapToGlobal = function(...args) 
           
@@ -516,7 +516,7 @@
               return this.__PROXY__.mapToGlobal(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.mapFromGlobal = function(...args) 
           
@@ -526,7 +526,7 @@
               return this.__PROXY__.mapFromGlobal(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.mapToParent = function(...args) 
           
@@ -536,7 +536,7 @@
               return this.__PROXY__.mapToParent(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.mapFromParent = function(...args) 
           
@@ -546,7 +546,7 @@
               return this.__PROXY__.mapFromParent(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.mapTo = function(...args) 
           
@@ -556,7 +556,7 @@
               return this.__PROXY__.mapTo(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.mapFrom = function(...args) 
           
@@ -566,7 +566,7 @@
               return this.__PROXY__.mapFrom(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.window = function(...args) 
           
@@ -576,7 +576,7 @@
               return this.__PROXY__.window(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.nativeParentWidget = function(...args) 
           
@@ -586,7 +586,7 @@
               return this.__PROXY__.nativeParentWidget(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.topLevelWidget = function(...args) 
           
@@ -596,7 +596,7 @@
               return this.__PROXY__.topLevelWidget(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.setPalette = function(...args) 
           
@@ -606,7 +606,7 @@
               return this.__PROXY__.setPalette(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.setBackgroundRole = function(...args) 
           
@@ -616,7 +616,7 @@
               return this.__PROXY__.setBackgroundRole(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.backgroundRole = function(...args) 
           
@@ -626,7 +626,7 @@
               return this.__PROXY__.backgroundRole(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.setForegroundRole = function(...args) 
           
@@ -636,7 +636,7 @@
               return this.__PROXY__.setForegroundRole(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.foregroundRole = function(...args) 
           
@@ -646,7 +646,7 @@
               return this.__PROXY__.foregroundRole(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.setFont = function(...args) 
           
@@ -656,7 +656,7 @@
               return this.__PROXY__.setFont(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.fontInfo = function(...args) 
           
@@ -666,7 +666,7 @@
               return this.__PROXY__.fontInfo(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.setCursor = function(...args) 
           
@@ -676,7 +676,7 @@
               return this.__PROXY__.setCursor(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.unsetCursor = function(...args) 
           
@@ -686,7 +686,7 @@
               return this.__PROXY__.unsetCursor(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.setMouseTracking = function(...args) 
           
@@ -696,7 +696,7 @@
               return this.__PROXY__.setMouseTracking(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.hasMouseTracking = function(...args) 
           
@@ -706,7 +706,7 @@
               return this.__PROXY__.hasMouseTracking(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.underMouse = function(...args) 
           
@@ -716,7 +716,7 @@
               return this.__PROXY__.underMouse(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.setTabletTracking = function(...args) 
           
@@ -726,7 +726,7 @@
               return this.__PROXY__.setTabletTracking(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.hasTabletTracking = function(...args) 
           
@@ -736,7 +736,7 @@
               return this.__PROXY__.hasTabletTracking(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.setMask = function(...args) 
           
@@ -746,7 +746,7 @@
               return this.__PROXY__.setMask(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.mask = function(...args) 
           
@@ -756,7 +756,7 @@
               return this.__PROXY__.mask(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.clearMask = function(...args) 
           
@@ -766,7 +766,7 @@
               return this.__PROXY__.clearMask(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.grab = function(...args) 
           
@@ -776,7 +776,7 @@
               return this.__PROXY__.grab(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.grabGesture = function(...args) 
           
@@ -786,7 +786,7 @@
               return this.__PROXY__.grabGesture(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.ungrabGesture = function(...args) 
           
@@ -796,7 +796,7 @@
               return this.__PROXY__.ungrabGesture(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.setWindowTitle = function(...args) 
           
@@ -806,7 +806,7 @@
               return this.__PROXY__.setWindowTitle(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.setStyleSheet = function(...args) 
           
@@ -816,7 +816,7 @@
               return this.__PROXY__.setStyleSheet(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.setWindowIcon = function(...args) 
           
@@ -826,7 +826,7 @@
               return this.__PROXY__.setWindowIcon(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.setWindowIconText = function(...args) 
           
@@ -836,7 +836,7 @@
               return this.__PROXY__.setWindowIconText(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.setWindowRole = function(...args) 
           
@@ -846,7 +846,7 @@
               return this.__PROXY__.setWindowRole(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.windowRole = function(...args) 
           
@@ -856,7 +856,7 @@
               return this.__PROXY__.windowRole(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.setWindowFilePath = function(...args) 
           
@@ -866,7 +866,7 @@
               return this.__PROXY__.setWindowFilePath(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.setWindowOpacity = function(...args) 
           
@@ -876,7 +876,7 @@
               return this.__PROXY__.setWindowOpacity(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.isWindowModified = function(...args) 
           
@@ -886,7 +886,7 @@
               return this.__PROXY__.isWindowModified(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.setToolTip = function(...args) 
           
@@ -896,7 +896,7 @@
               return this.__PROXY__.setToolTip(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.setToolTipDuration = function(...args) 
           
@@ -906,7 +906,7 @@
               return this.__PROXY__.setToolTipDuration(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.setStatusTip = function(...args) 
           
@@ -916,7 +916,7 @@
               return this.__PROXY__.setStatusTip(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.setWhatsThis = function(...args) 
           
@@ -926,7 +926,7 @@
               return this.__PROXY__.setWhatsThis(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.setAccessibleName = function(...args) 
           
@@ -936,7 +936,7 @@
               return this.__PROXY__.setAccessibleName(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.setAccessibleDescription = function(...args) 
           
@@ -946,7 +946,7 @@
               return this.__PROXY__.setAccessibleDescription(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.setLayoutDirection = function(...args) 
           
@@ -956,7 +956,7 @@
               return this.__PROXY__.setLayoutDirection(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.unsetLayoutDirection = function(...args) 
           
@@ -966,7 +966,7 @@
               return this.__PROXY__.unsetLayoutDirection(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.setLocale = function(...args) 
           
@@ -976,7 +976,7 @@
               return this.__PROXY__.setLocale(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.unsetLocale = function(...args) 
           
@@ -986,7 +986,7 @@
               return this.__PROXY__.unsetLocale(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.isRightToLeft = function(...args) 
           
@@ -996,7 +996,7 @@
               return this.__PROXY__.isRightToLeft(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.isLeftToRight = function(...args) 
           
@@ -1006,7 +1006,7 @@
               return this.__PROXY__.isLeftToRight(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.activateWindow = function(...args) 
           
@@ -1016,7 +1016,7 @@
               return this.__PROXY__.activateWindow(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.clearFocus = function(...args) 
           
@@ -1026,7 +1026,7 @@
               return this.__PROXY__.clearFocus(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.setFocus = function(...args) 
           
@@ -1036,7 +1036,7 @@
               return this.__PROXY__.setFocus(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.setFocusPolicy = function(...args) 
           
@@ -1046,7 +1046,7 @@
               return this.__PROXY__.setFocusPolicy(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.hasFocus = function(...args) 
           
@@ -1056,7 +1056,7 @@
               return this.__PROXY__.hasFocus(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.setFocusProxy = function(...args) 
           
@@ -1066,7 +1066,7 @@
               return this.__PROXY__.setFocusProxy(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.focusProxy = function(...args) 
           
@@ -1076,7 +1076,7 @@
               return this.__PROXY__.focusProxy(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.setContextMenuPolicy = function(...args) 
           
@@ -1086,7 +1086,7 @@
               return this.__PROXY__.setContextMenuPolicy(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.grabMouse = function(...args) 
           
@@ -1096,7 +1096,7 @@
               return this.__PROXY__.grabMouse(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.releaseMouse = function(...args) 
           
@@ -1106,7 +1106,7 @@
               return this.__PROXY__.releaseMouse(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.grabKeyboard = function(...args) 
           
@@ -1116,7 +1116,7 @@
               return this.__PROXY__.grabKeyboard(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.releaseKeyboard = function(...args) 
           
@@ -1126,7 +1126,7 @@
               return this.__PROXY__.releaseKeyboard(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.grabShortcut = function(...args) 
           
@@ -1136,7 +1136,7 @@
               return this.__PROXY__.grabShortcut(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.releaseShortcut = function(...args) 
           
@@ -1146,7 +1146,7 @@
               return this.__PROXY__.releaseShortcut(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.setShortcutEnabled = function(...args) 
           
@@ -1156,7 +1156,7 @@
               return this.__PROXY__.setShortcutEnabled(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.setShortcutAutoRepeat = function(...args) 
           
@@ -1166,7 +1166,7 @@
               return this.__PROXY__.setShortcutAutoRepeat(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.setUpdatesEnabled = function(...args) 
           
@@ -1176,7 +1176,7 @@
               return this.__PROXY__.setUpdatesEnabled(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.update = function(...args) 
           
@@ -1186,7 +1186,7 @@
               return this.__PROXY__.update(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.repaint = function(...args) 
           
@@ -1196,7 +1196,7 @@
               return this.__PROXY__.repaint(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.setVisible = function(...args) 
           
@@ -1206,7 +1206,7 @@
               return this.__PROXY__.setVisible(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.setHidden = function(...args) 
           
@@ -1216,7 +1216,7 @@
               return this.__PROXY__.setHidden(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.show = function(...args) 
           
@@ -1226,7 +1226,7 @@
               return this.__PROXY__.show(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.hide = function(...args) 
           
@@ -1236,7 +1236,7 @@
               return this.__PROXY__.hide(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.showMinimized = function(...args) 
           
@@ -1246,7 +1246,7 @@
               return this.__PROXY__.showMinimized(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.showMaximized = function(...args) 
           
@@ -1256,7 +1256,7 @@
               return this.__PROXY__.showMaximized(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.showFullScreen = function(...args) 
           
@@ -1266,7 +1266,7 @@
               return this.__PROXY__.showFullScreen(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.showNormal = function(...args) 
           
@@ -1276,7 +1276,7 @@
               return this.__PROXY__.showNormal(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.close = function(...args) 
           
@@ -1286,7 +1286,7 @@
               return this.__PROXY__.close(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.raise = function(...args) 
           
@@ -1296,7 +1296,7 @@
               return this.__PROXY__.raise(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.lower = function(...args) 
           
@@ -1306,7 +1306,7 @@
               return this.__PROXY__.lower(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.stackUnder = function(...args) 
           
@@ -1316,7 +1316,7 @@
               return this.__PROXY__.stackUnder(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.move = function(...args) 
           
@@ -1326,7 +1326,7 @@
               return this.__PROXY__.move(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.resize = function(...args) 
           
@@ -1336,7 +1336,7 @@
               return this.__PROXY__.resize(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.setGeometry = function(...args) 
           
@@ -1346,7 +1346,7 @@
               return this.__PROXY__.setGeometry(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.saveGeometry = function(...args) 
           
@@ -1356,7 +1356,7 @@
               return this.__PROXY__.saveGeometry(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.restoreGeometry = function(...args) 
           
@@ -1366,7 +1366,7 @@
               return this.__PROXY__.restoreGeometry(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.adjustSize = function(...args) 
           
@@ -1376,7 +1376,7 @@
               return this.__PROXY__.adjustSize(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.isVisible = function(...args) 
           
@@ -1386,7 +1386,7 @@
               return this.__PROXY__.isVisible(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.isVisibleTo = function(...args) 
           
@@ -1396,7 +1396,7 @@
               return this.__PROXY__.isVisibleTo(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.isHidden = function(...args) 
           
@@ -1406,7 +1406,7 @@
               return this.__PROXY__.isHidden(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.isMinimized = function(...args) 
           
@@ -1416,7 +1416,7 @@
               return this.__PROXY__.isMinimized(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.isMaximized = function(...args) 
           
@@ -1426,7 +1426,7 @@
               return this.__PROXY__.isMaximized(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.isFullScreen = function(...args) 
           
@@ -1436,7 +1436,7 @@
               return this.__PROXY__.isFullScreen(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.windowState = function(...args) 
           
@@ -1446,7 +1446,7 @@
               return this.__PROXY__.windowState(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.setWindowState = function(...args) 
           
@@ -1456,7 +1456,7 @@
               return this.__PROXY__.setWindowState(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.overrideWindowState = function(...args) 
           
@@ -1466,7 +1466,7 @@
               return this.__PROXY__.overrideWindowState(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.setSizePolicy = function(...args) 
           
@@ -1476,7 +1476,7 @@
               return this.__PROXY__.setSizePolicy(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.heightForWidth = function(...args) 
           
@@ -1486,7 +1486,7 @@
               return this.__PROXY__.heightForWidth(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.hasHeightForWidth = function(...args) 
           
@@ -1496,7 +1496,7 @@
               return this.__PROXY__.hasHeightForWidth(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.visibleRegion = function(...args) 
           
@@ -1506,7 +1506,7 @@
               return this.__PROXY__.visibleRegion(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.setContentsMargins = function(...args) 
           
@@ -1516,7 +1516,7 @@
               return this.__PROXY__.setContentsMargins(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.contentsMargins = function(...args) 
           
@@ -1526,7 +1526,7 @@
               return this.__PROXY__.contentsMargins(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.contentsRect = function(...args) 
           
@@ -1536,7 +1536,7 @@
               return this.__PROXY__.contentsRect(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.layout = function(...args) 
           
@@ -1546,7 +1546,7 @@
               return this.__PROXY__.layout(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.setLayout = function(...args) 
           
@@ -1556,7 +1556,7 @@
               return this.__PROXY__.setLayout(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.updateGeometry = function(...args) 
           
@@ -1566,7 +1566,7 @@
               return this.__PROXY__.updateGeometry(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.setParent = function(...args) 
           
@@ -1576,7 +1576,7 @@
               return this.__PROXY__.setParent(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.scroll = function(...args) 
           
@@ -1586,7 +1586,7 @@
               return this.__PROXY__.scroll(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.focusWidget = function(...args) 
           
@@ -1596,7 +1596,7 @@
               return this.__PROXY__.focusWidget(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.nextInFocusChain = function(...args) 
           
@@ -1606,7 +1606,7 @@
               return this.__PROXY__.nextInFocusChain(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.previousInFocusChain = function(...args) 
           
@@ -1616,7 +1616,7 @@
               return this.__PROXY__.previousInFocusChain(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.setAcceptDrops = function(...args) 
           
@@ -1626,7 +1626,7 @@
               return this.__PROXY__.setAcceptDrops(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.addAction = function(...args) 
           
@@ -1636,7 +1636,7 @@
               return this.__PROXY__.addAction(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.addActions = function(...args) 
           
@@ -1646,7 +1646,7 @@
               return this.__PROXY__.addActions(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.insertActions = function(...args) 
           
@@ -1656,7 +1656,7 @@
               return this.__PROXY__.insertActions(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.insertAction = function(...args) 
           
@@ -1666,7 +1666,7 @@
               return this.__PROXY__.insertAction(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.removeAction = function(...args) 
           
@@ -1676,7 +1676,7 @@
               return this.__PROXY__.removeAction(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.actions = function(...args) 
           
@@ -1686,7 +1686,7 @@
               return this.__PROXY__.actions(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.parentWidget = function(...args) 
           
@@ -1696,7 +1696,7 @@
               return this.__PROXY__.parentWidget(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.setWindowFlags = function(...args) 
           
@@ -1706,7 +1706,7 @@
               return this.__PROXY__.setWindowFlags(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.windowFlags = function(...args) 
           
@@ -1716,7 +1716,7 @@
               return this.__PROXY__.windowFlags(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.setWindowFlag = function(...args) 
           
@@ -1726,7 +1726,7 @@
               return this.__PROXY__.setWindowFlag(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.overrideWindowFlags = function(...args) 
           
@@ -1736,7 +1736,7 @@
               return this.__PROXY__.overrideWindowFlags(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.windowType = function(...args) 
           
@@ -1746,7 +1746,7 @@
               return this.__PROXY__.windowType(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.childAt = function(...args) 
           
@@ -1756,7 +1756,7 @@
               return this.__PROXY__.childAt(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.setAttribute = function(...args) 
           
@@ -1766,7 +1766,7 @@
               return this.__PROXY__.setAttribute(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.testAttribute = function(...args) 
           
@@ -1776,7 +1776,7 @@
               return this.__PROXY__.testAttribute(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.ensurePolished = function(...args) 
           
@@ -1786,7 +1786,7 @@
               return this.__PROXY__.ensurePolished(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.isAncestorOf = function(...args) 
           
@@ -1796,7 +1796,7 @@
               return this.__PROXY__.isAncestorOf(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.setAutoFillBackground = function(...args) 
           
@@ -1806,7 +1806,7 @@
               return this.__PROXY__.setAutoFillBackground(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.event = function(...args) 
           
@@ -1816,7 +1816,7 @@
               return this.__PROXY__.event(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.mouseDoubleClickEvent = function(...args) 
           
@@ -1826,7 +1826,7 @@
               return this.__PROXY__.mouseDoubleClickEvent(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.wheelEvent = function(...args) 
           
@@ -1836,7 +1836,7 @@
               return this.__PROXY__.wheelEvent(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.keyPressEvent = function(...args) 
           
@@ -1846,7 +1846,7 @@
               return this.__PROXY__.keyPressEvent(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.keyReleaseEvent = function(...args) 
           
@@ -1856,7 +1856,7 @@
               return this.__PROXY__.keyReleaseEvent(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.focusInEvent = function(...args) 
           
@@ -1866,7 +1866,7 @@
               return this.__PROXY__.focusInEvent(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.focusOutEvent = function(...args) 
           
@@ -1876,7 +1876,7 @@
               return this.__PROXY__.focusOutEvent(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.enterEvent = function(...args) 
           
@@ -1886,7 +1886,7 @@
               return this.__PROXY__.enterEvent(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.leaveEvent = function(...args) 
           
@@ -1896,7 +1896,7 @@
               return this.__PROXY__.leaveEvent(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.moveEvent = function(...args) 
           
@@ -1906,7 +1906,7 @@
               return this.__PROXY__.moveEvent(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.closeEvent = function(...args) 
           
@@ -1916,7 +1916,7 @@
               return this.__PROXY__.closeEvent(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.tabletEvent = function(...args) 
           
@@ -1926,7 +1926,7 @@
               return this.__PROXY__.tabletEvent(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.dragEnterEvent = function(...args) 
           
@@ -1936,7 +1936,7 @@
               return this.__PROXY__.dragEnterEvent(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.dragMoveEvent = function(...args) 
           
@@ -1946,7 +1946,7 @@
               return this.__PROXY__.dragMoveEvent(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.dragLeaveEvent = function(...args) 
           
@@ -1956,7 +1956,7 @@
               return this.__PROXY__.dragLeaveEvent(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.dropEvent = function(...args) 
           
@@ -1966,7 +1966,7 @@
               return this.__PROXY__.dropEvent(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.showEvent = function(...args) 
           
@@ -1976,7 +1976,7 @@
               return this.__PROXY__.showEvent(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.hideEvent = function(...args) 
           
@@ -1986,7 +1986,7 @@
               return this.__PROXY__.hideEvent(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.nativeEvent = function(...args) 
           
@@ -1996,7 +1996,7 @@
               return this.__PROXY__.nativeEvent(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.changeEvent = function(...args) 
           
@@ -2006,7 +2006,7 @@
               return this.__PROXY__.changeEvent(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.metric = function(...args) 
           
@@ -2016,7 +2016,7 @@
               return this.__PROXY__.metric(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.initPainter = function(...args) 
           
@@ -2026,7 +2026,7 @@
               return this.__PROXY__.initPainter(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.redirected = function(...args) 
           
@@ -2036,7 +2036,7 @@
               return this.__PROXY__.redirected(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.sharedPainter = function(...args) 
           
@@ -2046,7 +2046,7 @@
               return this.__PROXY__.sharedPainter(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.inputMethodEvent = function(...args) 
           
@@ -2056,7 +2056,7 @@
               return this.__PROXY__.inputMethodEvent(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.inputMethodQuery = function(...args) 
           
@@ -2066,7 +2066,7 @@
               return this.__PROXY__.inputMethodQuery(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.setInputMethodHints = function(...args) 
           
@@ -2076,7 +2076,7 @@
               return this.__PROXY__.setInputMethodHints(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.updateMicroFocus = function(...args) 
           
@@ -2086,7 +2086,7 @@
               return this.__PROXY__.updateMicroFocus(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.create = function(...args) 
           
@@ -2096,7 +2096,7 @@
               return this.__PROXY__.create(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.destroy = function(...args) 
           
@@ -2106,7 +2106,7 @@
               return this.__PROXY__.destroy(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.focusNextPrevChild = function(...args) 
           
@@ -2116,7 +2116,7 @@
               return this.__PROXY__.focusNextPrevChild(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.focusNextChild = function(...args) 
           
@@ -2126,7 +2126,7 @@
               return this.__PROXY__.focusNextChild(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.focusPreviousChild = function(...args) 
           
@@ -2136,7 +2136,7 @@
               return this.__PROXY__.focusPreviousChild(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.setBackingStore = function(...args) 
           
@@ -2146,7 +2146,7 @@
               return this.__PROXY__.setBackingStore(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.testAttribute_helper = function(...args) 
           
@@ -2156,7 +2156,7 @@
               return this.__PROXY__.testAttribute_helper(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.takeLayout = function(...args) 
           
@@ -2166,7 +2166,7 @@
               return this.__PROXY__.takeLayout(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.qt_mac_is_metal = function(...args) 
           
@@ -2176,7 +2176,7 @@
               return this.__PROXY__.qt_mac_is_metal(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.qt_qwidget_data = function(...args) 
           
@@ -2186,7 +2186,7 @@
               return this.__PROXY__.qt_qwidget_data(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.qt_widget_private = function(...args) 
           
@@ -2196,7 +2196,7 @@
               return this.__PROXY__.qt_widget_private(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.setArrowType = function(...args) 
           
@@ -2206,7 +2206,7 @@
               return this.__PROXY__.setArrowType(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.setMenu = function(...args) 
           
@@ -2216,7 +2216,7 @@
               return this.__PROXY__.setMenu(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.menu = function(...args) 
           
@@ -2226,7 +2226,7 @@
               return this.__PROXY__.menu(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.setPopupMode = function(...args) 
           
@@ -2236,7 +2236,7 @@
               return this.__PROXY__.setPopupMode(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.defaultAction = function(...args) 
           
@@ -2246,7 +2246,7 @@
               return this.__PROXY__.defaultAction(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.setAutoRaise = function(...args) 
           
@@ -2256,7 +2256,7 @@
               return this.__PROXY__.setAutoRaise(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.showMenu = function(...args) 
           
@@ -2266,7 +2266,7 @@
               return this.__PROXY__.showMenu(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.setToolButtonStyle = function(...args) 
           
@@ -2276,7 +2276,7 @@
               return this.__PROXY__.setToolButtonStyle(...args);
             
         };
-    
+        
         // function 
         RToolButton.prototype.setDefaultAction = function(...args) 
           
@@ -2286,7 +2286,7 @@
               return this.__PROXY__.setDefaultAction(...args);
             
         };
-    
+        
 
       // static functions:
       

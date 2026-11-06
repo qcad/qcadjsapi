@@ -138,7 +138,7 @@
               return this.__PROXY__.getEntityTypeFilter(...args);
             
         };
-    
+        
         // function 
         RMoveSelectionOperation.prototype.setRecordAffectedObjects = function(...args) 
           
@@ -148,7 +148,7 @@
               return this.__PROXY__.setRecordAffectedObjects(...args);
             
         };
-    
+        
         // function 
         RMoveSelectionOperation.prototype.setSpatialIndexDisabled = function(...args) 
           
@@ -158,7 +158,7 @@
               return this.__PROXY__.setSpatialIndexDisabled(...args);
             
         };
-    
+        
         // function 
         RMoveSelectionOperation.prototype.setAllowInvisible = function(...args) 
           
@@ -168,7 +168,7 @@
               return this.__PROXY__.setAllowInvisible(...args);
             
         };
-    
+        
         // function 
         RMoveSelectionOperation.prototype.setAllowAll = function(...args) 
           
@@ -178,7 +178,7 @@
               return this.__PROXY__.setAllowAll(...args);
             
         };
-    
+        
         // function 
         RMoveSelectionOperation.prototype.setKeepChildren = function(...args) 
           
@@ -188,7 +188,7 @@
               return this.__PROXY__.setKeepChildren(...args);
             
         };
-    
+        
         // function 
         RMoveSelectionOperation.prototype.setTransactionGroup = function(...args) 
           
@@ -198,7 +198,7 @@
               return this.__PROXY__.setTransactionGroup(...args);
             
         };
-    
+        
         // function 
         RMoveSelectionOperation.prototype.getTransactionGroup = function(...args) 
           
@@ -208,7 +208,7 @@
               return this.__PROXY__.getTransactionGroup(...args);
             
         };
-    
+        
         // function 
         RMoveSelectionOperation.prototype.setText = function(...args) 
           
@@ -218,7 +218,7 @@
               return this.__PROXY__.setText(...args);
             
         };
-    
+        
         // function 
         RMoveSelectionOperation.prototype.getText = function(...args) 
           
@@ -228,7 +228,7 @@
               return this.__PROXY__.getText(...args);
             
         };
-    
+        
         // function 
         RMoveSelectionOperation.prototype.getTransactionTypes = function(...args) 
           
@@ -238,7 +238,7 @@
               return this.__PROXY__.getTransactionTypes(...args);
             
         };
-    
+        
         // function 
         RMoveSelectionOperation.prototype.setTransactionType = function(...args) 
           
@@ -248,7 +248,7 @@
               return this.__PROXY__.setTransactionType(...args);
             
         };
-    
+        
         // function 
         RMoveSelectionOperation.prototype.getTransactionType = function(...args) 
           
@@ -258,7 +258,7 @@
               return this.__PROXY__.getTransactionType(...args);
             
         };
-    
+        
         // function 
         RMoveSelectionOperation.prototype.apply = function(...args) 
           
@@ -268,7 +268,7 @@
               return this.__PROXY__.apply(...args);
             
         };
-    
+        
 
       // static functions:
       RMoveSelectionOperation.prototype.isNullWrapper = function() {

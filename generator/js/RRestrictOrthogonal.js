@@ -202,7 +202,7 @@
               return this.__PROXY__.getLastSnap(...args);
             
         };
-    
+        
         // function 
         RRestrictOrthogonal.prototype.reset = function(...args) 
           
@@ -212,7 +212,7 @@
               return this.__PROXY__.reset(...args);
             
         };
-    
+        
         // function 
         RRestrictOrthogonal.prototype.restrictSnap = function(...args) 
           
@@ -222,7 +222,7 @@
               return this.__PROXY__.restrictSnap(...args);
             
         };
-    
+        
 
       // static functions:
       RRestrictOrthogonal.prototype.isNullWrapper = function() {

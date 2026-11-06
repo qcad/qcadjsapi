@@ -105,7 +105,7 @@
               return this.__PROXY__.getDocument(...args);
             
         };
-    
+        
         // function 
         REntityData.prototype.setDocument = function(...args) 
           
@@ -115,7 +115,7 @@
               return this.__PROXY__.setDocument(...args);
             
         };
-    
+        
         // function 
         REntityData.prototype.getType = function(...args) 
           
@@ -125,7 +125,7 @@
               return this.__PROXY__.getType(...args);
             
         };
-    
+        
         // function 
         REntityData.prototype.isPointType = function(...args) 
           
@@ -135,7 +135,7 @@
               return this.__PROXY__.isPointType(...args);
             
         };
-    
+        
         // function 
         REntityData.prototype.isValid = function(...args) 
           
@@ -145,7 +145,7 @@
               return this.__PROXY__.isValid(...args);
             
         };
-    
+        
         // function 
         REntityData.prototype.isSane = function(...args) 
           
@@ -155,7 +155,7 @@
               return this.__PROXY__.isSane(...args);
             
         };
-    
+        
         // function 
         REntityData.prototype.getShapes = function(...args) 
           
@@ -165,7 +165,7 @@
               return this.__PROXY__.getShapes(...args);
             
         };
-    
+        
         // function 
         REntityData.prototype.getClosestSubEntityId = function(...args) 
           
@@ -175,7 +175,7 @@
               return this.__PROXY__.getClosestSubEntityId(...args);
             
         };
-    
+        
         // function 
         REntityData.prototype.getClosestShape = function(...args) 
           
@@ -185,7 +185,7 @@
               return this.__PROXY__.getClosestShape(...args);
             
         };
-    
+        
         // function 
         REntityData.prototype.getBoundingBox = function(...args) 
           
@@ -195,7 +195,7 @@
               return this.__PROXY__.getBoundingBox(...args);
             
         };
-    
+        
         // function 
         REntityData.prototype.copyAttributesFrom = function(...args) 
           
@@ -205,7 +205,7 @@
               return this.__PROXY__.copyAttributesFrom(...args);
             
         };
-    
+        
         // function 
         REntityData.prototype.to2D = function(...args) 
           
@@ -215,7 +215,7 @@
               return this.__PROXY__.to2D(...args);
             
         };
-    
+        
         // function 
         REntityData.prototype.setZ = function(...args) 
           
@@ -225,7 +225,7 @@
               return this.__PROXY__.setZ(...args);
             
         };
-    
+        
         // function 
         REntityData.prototype.getBoundingBoxes = function(...args) 
           
@@ -235,7 +235,7 @@
               return this.__PROXY__.getBoundingBoxes(...args);
             
         };
-    
+        
         // function 
         REntityData.prototype.getHull = function(...args) 
           
@@ -245,7 +245,7 @@
               return this.__PROXY__.getHull(...args);
             
         };
-    
+        
         // function 
         REntityData.prototype.isUpdatesEnabled = function(...args) 
           
@@ -255,7 +255,7 @@
               return this.__PROXY__.isUpdatesEnabled(...args);
             
         };
-    
+        
         // function 
         REntityData.prototype.setUpdatesEnabled = function(...args) 
           
@@ -265,7 +265,7 @@
               return this.__PROXY__.setUpdatesEnabled(...args);
             
         };
-    
+        
         // function 
         REntityData.prototype.cloneOnChange = function(...args) 
           
@@ -275,7 +275,7 @@
               return this.__PROXY__.cloneOnChange(...args);
             
         };
-    
+        
         // function 
         REntityData.prototype.isSelected = function(...args) 
           
@@ -285,7 +285,7 @@
               return this.__PROXY__.isSelected(...args);
             
         };
-    
+        
         // function 
         REntityData.prototype.setSelected = function(...args) 
           
@@ -295,7 +295,7 @@
               return this.__PROXY__.setSelected(...args);
             
         };
-    
+        
         // function 
         REntityData.prototype.isSelectedWorkingSet = function(...args) 
           
@@ -305,7 +305,7 @@
               return this.__PROXY__.isSelectedWorkingSet(...args);
             
         };
-    
+        
         // function 
         REntityData.prototype.setSelectedWorkingSet = function(...args) 
           
@@ -315,7 +315,7 @@
               return this.__PROXY__.setSelectedWorkingSet(...args);
             
         };
-    
+        
         // function 
         REntityData.prototype.getDrawOrder = function(...args) 
           
@@ -325,7 +325,7 @@
               return this.__PROXY__.getDrawOrder(...args);
             
         };
-    
+        
         // function 
         REntityData.prototype.setDrawOrder = function(...args) 
           
@@ -335,7 +335,7 @@
               return this.__PROXY__.setDrawOrder(...args);
             
         };
-    
+        
         // function 
         REntityData.prototype.setLayerId = function(...args) 
           
@@ -345,7 +345,7 @@
               return this.__PROXY__.setLayerId(...args);
             
         };
-    
+        
         // function 
         REntityData.prototype.getLayerId = function(...args) 
           
@@ -355,7 +355,7 @@
               return this.__PROXY__.getLayerId(...args);
             
         };
-    
+        
         // function 
         REntityData.prototype.setLayerName = function(...args) 
           
@@ -365,7 +365,7 @@
               return this.__PROXY__.setLayerName(...args);
             
         };
-    
+        
         // function 
         REntityData.prototype.getLayerName = function(...args) 
           
@@ -375,7 +375,7 @@
               return this.__PROXY__.getLayerName(...args);
             
         };
-    
+        
         // function 
         REntityData.prototype.setBlockId = function(...args) 
           
@@ -385,7 +385,7 @@
               return this.__PROXY__.setBlockId(...args);
             
         };
-    
+        
         // function 
         REntityData.prototype.getBlockId = function(...args) 
           
@@ -395,7 +395,7 @@
               return this.__PROXY__.getBlockId(...args);
             
         };
-    
+        
         // function 
         REntityData.prototype.setParentId = function(...args) 
           
@@ -405,7 +405,7 @@
               return this.__PROXY__.setParentId(...args);
             
         };
-    
+        
         // function 
         REntityData.prototype.getParentId = function(...args) 
           
@@ -415,7 +415,7 @@
               return this.__PROXY__.getParentId(...args);
             
         };
-    
+        
         // function 
         REntityData.prototype.getBlockName = function(...args) 
           
@@ -425,7 +425,7 @@
               return this.__PROXY__.getBlockName(...args);
             
         };
-    
+        
         // function 
         REntityData.prototype.setLinetypeId = function(...args) 
           
@@ -435,7 +435,7 @@
               return this.__PROXY__.setLinetypeId(...args);
             
         };
-    
+        
         // function 
         REntityData.prototype.getLinetypeId = function(...args) 
           
@@ -445,7 +445,7 @@
               return this.__PROXY__.getLinetypeId(...args);
             
         };
-    
+        
         // function 
         REntityData.prototype.setLinetypePattern = function(...args) 
           
@@ -455,7 +455,7 @@
               return this.__PROXY__.setLinetypePattern(...args);
             
         };
-    
+        
         // function 
         REntityData.prototype.getLinetypePattern = function(...args) 
           
@@ -465,7 +465,7 @@
               return this.__PROXY__.getLinetypePattern(...args);
             
         };
-    
+        
         // function 
         REntityData.prototype.setLinetypeScale = function(...args) 
           
@@ -475,7 +475,7 @@
               return this.__PROXY__.setLinetypeScale(...args);
             
         };
-    
+        
         // function 
         REntityData.prototype.getLinetypeScale = function(...args) 
           
@@ -485,7 +485,7 @@
               return this.__PROXY__.getLinetypeScale(...args);
             
         };
-    
+        
         // function 
         REntityData.prototype.getLineweight = function(...args) 
           
@@ -495,7 +495,7 @@
               return this.__PROXY__.getLineweight(...args);
             
         };
-    
+        
         // function 
         REntityData.prototype.setLineweight = function(...args) 
           
@@ -505,7 +505,7 @@
               return this.__PROXY__.setLineweight(...args);
             
         };
-    
+        
         // function 
         REntityData.prototype.setColor = function(...args) 
           
@@ -515,7 +515,7 @@
               return this.__PROXY__.setColor(...args);
             
         };
-    
+        
         // function 
         REntityData.prototype.getColor = function(...args) 
           
@@ -525,7 +525,7 @@
               return this.__PROXY__.getColor(...args);
             
         };
-    
+        
         // function 
         REntityData.prototype.getDisplayColor = function(...args) 
           
@@ -535,7 +535,7 @@
               return this.__PROXY__.getDisplayColor(...args);
             
         };
-    
+        
         // function 
         REntityData.prototype.getInternalReferencePoints = function(...args) 
           
@@ -545,7 +545,7 @@
               return this.__PROXY__.getInternalReferencePoints(...args);
             
         };
-    
+        
         // function 
         REntityData.prototype.getReferencePoints = function(...args) 
           
@@ -555,7 +555,7 @@
               return this.__PROXY__.getReferencePoints(...args);
             
         };
-    
+        
         // function 
         REntityData.prototype.getPointOnEntity = function(...args) 
           
@@ -565,7 +565,7 @@
               return this.__PROXY__.getPointOnEntity(...args);
             
         };
-    
+        
         // function 
         REntityData.prototype.getEndPoints = function(...args) 
           
@@ -575,7 +575,7 @@
               return this.__PROXY__.getEndPoints(...args);
             
         };
-    
+        
         // function 
         REntityData.prototype.getMiddlePoints = function(...args) 
           
@@ -585,7 +585,7 @@
               return this.__PROXY__.getMiddlePoints(...args);
             
         };
-    
+        
         // function 
         REntityData.prototype.getCenterPoints = function(...args) 
           
@@ -595,7 +595,7 @@
               return this.__PROXY__.getCenterPoints(...args);
             
         };
-    
+        
         // function 
         REntityData.prototype.getArcReferencePoints = function(...args) 
           
@@ -605,7 +605,7 @@
               return this.__PROXY__.getArcReferencePoints(...args);
             
         };
-    
+        
         // function 
         REntityData.prototype.getPointsWithDistanceToEnd = function(...args) 
           
@@ -615,7 +615,7 @@
               return this.__PROXY__.getPointsWithDistanceToEnd(...args);
             
         };
-    
+        
         // function 
         REntityData.prototype.getClosestPointOnEntity = function(...args) 
           
@@ -625,7 +625,7 @@
               return this.__PROXY__.getClosestPointOnEntity(...args);
             
         };
-    
+        
         // function 
         REntityData.prototype.getIntersectionPoints = function(...args) 
           
@@ -635,7 +635,7 @@
               return this.__PROXY__.getIntersectionPoints(...args);
             
         };
-    
+        
         // function 
         REntityData.prototype.getVectorTo = function(...args) 
           
@@ -645,7 +645,7 @@
               return this.__PROXY__.getVectorTo(...args);
             
         };
-    
+        
         // function 
         REntityData.prototype.getDistanceTo = function(...args) 
           
@@ -655,7 +655,7 @@
               return this.__PROXY__.getDistanceTo(...args);
             
         };
-    
+        
         // function 
         REntityData.prototype.isInside = function(...args) 
           
@@ -665,7 +665,7 @@
               return this.__PROXY__.isInside(...args);
             
         };
-    
+        
         // function 
         REntityData.prototype.isOnEntity = function(...args) 
           
@@ -675,7 +675,7 @@
               return this.__PROXY__.isOnEntity(...args);
             
         };
-    
+        
         // function 
         REntityData.prototype.intersectsWith = function(...args) 
           
@@ -685,7 +685,7 @@
               return this.__PROXY__.intersectsWith(...args);
             
         };
-    
+        
         // function 
         REntityData.prototype.clickReferencePoint = function(...args) 
           
@@ -695,7 +695,7 @@
               return this.__PROXY__.clickReferencePoint(...args);
             
         };
-    
+        
         // function 
         REntityData.prototype.moveReferencePoint = function(...args) 
           
@@ -705,7 +705,7 @@
               return this.__PROXY__.moveReferencePoint(...args);
             
         };
-    
+        
         // function 
         REntityData.prototype.move = function(...args) 
           
@@ -715,7 +715,7 @@
               return this.__PROXY__.move(...args);
             
         };
-    
+        
         // function 
         REntityData.prototype.rotate = function(...args) 
           
@@ -725,7 +725,7 @@
               return this.__PROXY__.rotate(...args);
             
         };
-    
+        
         // function 
         REntityData.prototype.scale = function(...args) 
           
@@ -735,7 +735,7 @@
               return this.__PROXY__.scale(...args);
             
         };
-    
+        
         // function 
         REntityData.prototype.scaleVisualProperties = function(...args) 
           
@@ -745,7 +745,7 @@
               return this.__PROXY__.scaleVisualProperties(...args);
             
         };
-    
+        
         // function 
         REntityData.prototype.mirror = function(...args) 
           
@@ -755,7 +755,7 @@
               return this.__PROXY__.mirror(...args);
             
         };
-    
+        
         // function 
         REntityData.prototype.flipHorizontal = function(...args) 
           
@@ -765,7 +765,7 @@
               return this.__PROXY__.flipHorizontal(...args);
             
         };
-    
+        
         // function 
         REntityData.prototype.flipVertical = function(...args) 
           
@@ -775,7 +775,7 @@
               return this.__PROXY__.flipVertical(...args);
             
         };
-    
+        
         // function 
         REntityData.prototype.stretch = function(...args) 
           
@@ -785,7 +785,7 @@
               return this.__PROXY__.stretch(...args);
             
         };
-    
+        
         // function 
         REntityData.prototype.update = function(...args) 
           
@@ -795,7 +795,7 @@
               return this.__PROXY__.update(...args);
             
         };
-    
+        
         // function 
         REntityData.prototype.setAutoUpdatesBlocked = function(...args) 
           
@@ -805,7 +805,7 @@
               return this.__PROXY__.setAutoUpdatesBlocked(...args);
             
         };
-    
+        
         // function 
         REntityData.prototype.getDefaultDrawOrder = function(...args) 
           
@@ -815,7 +815,7 @@
               return this.__PROXY__.getDefaultDrawOrder(...args);
             
         };
-    
+        
 
       // static functions:
       

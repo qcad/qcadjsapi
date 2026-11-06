@@ -142,7 +142,7 @@
               return this.__PROXY__.getEntityTypeFilter(...args);
             
         };
-    
+        
         // function 
         RCopyOperation.prototype.setRecordAffectedObjects = function(...args) 
           
@@ -152,7 +152,7 @@
               return this.__PROXY__.setRecordAffectedObjects(...args);
             
         };
-    
+        
         // function 
         RCopyOperation.prototype.setSpatialIndexDisabled = function(...args) 
           
@@ -162,7 +162,7 @@
               return this.__PROXY__.setSpatialIndexDisabled(...args);
             
         };
-    
+        
         // function 
         RCopyOperation.prototype.setAllowInvisible = function(...args) 
           
@@ -172,7 +172,7 @@
               return this.__PROXY__.setAllowInvisible(...args);
             
         };
-    
+        
         // function 
         RCopyOperation.prototype.setAllowAll = function(...args) 
           
@@ -182,7 +182,7 @@
               return this.__PROXY__.setAllowAll(...args);
             
         };
-    
+        
         // function 
         RCopyOperation.prototype.setKeepChildren = function(...args) 
           
@@ -192,7 +192,7 @@
               return this.__PROXY__.setKeepChildren(...args);
             
         };
-    
+        
         // function 
         RCopyOperation.prototype.setTransactionGroup = function(...args) 
           
@@ -202,7 +202,7 @@
               return this.__PROXY__.setTransactionGroup(...args);
             
         };
-    
+        
         // function 
         RCopyOperation.prototype.getTransactionGroup = function(...args) 
           
@@ -212,7 +212,7 @@
               return this.__PROXY__.getTransactionGroup(...args);
             
         };
-    
+        
         // function 
         RCopyOperation.prototype.setText = function(...args) 
           
@@ -222,7 +222,7 @@
               return this.__PROXY__.setText(...args);
             
         };
-    
+        
         // function 
         RCopyOperation.prototype.getText = function(...args) 
           
@@ -232,7 +232,7 @@
               return this.__PROXY__.getText(...args);
             
         };
-    
+        
         // function 
         RCopyOperation.prototype.getTransactionTypes = function(...args) 
           
@@ -242,7 +242,7 @@
               return this.__PROXY__.getTransactionTypes(...args);
             
         };
-    
+        
         // function 
         RCopyOperation.prototype.setTransactionType = function(...args) 
           
@@ -252,7 +252,7 @@
               return this.__PROXY__.setTransactionType(...args);
             
         };
-    
+        
         // function 
         RCopyOperation.prototype.getTransactionType = function(...args) 
           
@@ -262,7 +262,7 @@
               return this.__PROXY__.getTransactionType(...args);
             
         };
-    
+        
         // function 
         RCopyOperation.prototype.copy = function(...args) 
           
@@ -272,7 +272,7 @@
               return this.__PROXY__.copy(...args);
             
         };
-    
+        
         // function 
         RCopyOperation.prototype.copyEntity = function(...args) 
           
@@ -282,7 +282,7 @@
               return this.__PROXY__.copyEntity(...args);
             
         };
-    
+        
         // function 
         RCopyOperation.prototype.copyEntityBlock = function(...args) 
           
@@ -292,7 +292,7 @@
               return this.__PROXY__.copyEntityBlock(...args);
             
         };
-    
+        
         // function 
         RCopyOperation.prototype.copyBlock = function(...args) 
           
@@ -302,7 +302,7 @@
               return this.__PROXY__.copyBlock(...args);
             
         };
-    
+        
         // function 
         RCopyOperation.prototype.copyEntityLayer = function(...args) 
           
@@ -312,7 +312,7 @@
               return this.__PROXY__.copyEntityLayer(...args);
             
         };
-    
+        
         // function 
         RCopyOperation.prototype.copyLayer = function(...args) 
           
@@ -322,7 +322,7 @@
               return this.__PROXY__.copyLayer(...args);
             
         };
-    
+        
         // function 
         RCopyOperation.prototype.copyEntityLinetype = function(...args) 
           
@@ -332,7 +332,7 @@
               return this.__PROXY__.copyEntityLinetype(...args);
             
         };
-    
+        
         // function 
         RCopyOperation.prototype.copyLinetype = function(...args) 
           
@@ -342,7 +342,7 @@
               return this.__PROXY__.copyLinetype(...args);
             
         };
-    
+        
         // function 
         RCopyOperation.prototype.setCopyEmptyBlocks = function(...args) 
           
@@ -352,7 +352,7 @@
               return this.__PROXY__.setCopyEmptyBlocks(...args);
             
         };
-    
+        
         // function 
         RCopyOperation.prototype.setCopyAllLayers = function(...args) 
           
@@ -362,7 +362,7 @@
               return this.__PROXY__.setCopyAllLayers(...args);
             
         };
-    
+        
         // function 
         RCopyOperation.prototype.setKeepSelection = function(...args) 
           
@@ -372,7 +372,7 @@
               return this.__PROXY__.setKeepSelection(...args);
             
         };
-    
+        
         // function 
         RCopyOperation.prototype.setBlockOwnership = function(...args) 
           
@@ -382,7 +382,7 @@
               return this.__PROXY__.setBlockOwnership(...args);
             
         };
-    
+        
         // function 
         RCopyOperation.prototype.setCustomEntityType = function(...args) 
           
@@ -392,7 +392,7 @@
               return this.__PROXY__.setCustomEntityType(...args);
             
         };
-    
+        
         // function 
         RCopyOperation.prototype.apply = function(...args) 
           
@@ -402,7 +402,7 @@
               return this.__PROXY__.apply(...args);
             
         };
-    
+        
         // function 
         RCopyOperation.prototype.setClear = function(...args) 
           
@@ -412,7 +412,7 @@
               return this.__PROXY__.setClear(...args);
             
         };
-    
+        
 
       // static functions:
       RCopyOperation.prototype.isNullWrapper = function() {

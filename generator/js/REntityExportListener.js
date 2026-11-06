@@ -105,7 +105,7 @@
               return this.__PROXY__.registerCustomProperty(...args);
             
         };
-    
+        
         // function 
         REntityExportListener.prototype.checkCustomProperty = function(...args) 
           
@@ -115,7 +115,7 @@
               return this.__PROXY__.checkCustomProperty(...args);
             
         };
-    
+        
         // function 
         REntityExportListener.prototype.exportEntity = function(...args) 
           
@@ -125,7 +125,7 @@
               return this.__PROXY__.exportEntity(...args);
             
         };
-    
+        
 
       // static functions:
       REntityExportListener.prototype.isNullWrapper = function() {

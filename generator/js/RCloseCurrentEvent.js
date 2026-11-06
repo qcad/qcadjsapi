@@ -312,7 +312,7 @@ RCloseCurrentEvent.MaxUser = RCloseCurrentEvent_Wrapper.MaxUser;
               return this.__PROXY__.type(...args);
             
         };
-    
+        
         // function 
         RCloseCurrentEvent.prototype.spontaneous = function(...args) 
           
@@ -322,7 +322,7 @@ RCloseCurrentEvent.MaxUser = RCloseCurrentEvent_Wrapper.MaxUser;
               return this.__PROXY__.spontaneous(...args);
             
         };
-    
+        
         // function 
         RCloseCurrentEvent.prototype.setAccepted = function(...args) 
           
@@ -332,7 +332,7 @@ RCloseCurrentEvent.MaxUser = RCloseCurrentEvent_Wrapper.MaxUser;
               return this.__PROXY__.setAccepted(...args);
             
         };
-    
+        
         // function 
         RCloseCurrentEvent.prototype.isAccepted = function(...args) 
           
@@ -342,7 +342,7 @@ RCloseCurrentEvent.MaxUser = RCloseCurrentEvent_Wrapper.MaxUser;
               return this.__PROXY__.isAccepted(...args);
             
         };
-    
+        
         // function 
         RCloseCurrentEvent.prototype.accept = function(...args) 
           
@@ -352,7 +352,7 @@ RCloseCurrentEvent.MaxUser = RCloseCurrentEvent_Wrapper.MaxUser;
               return this.__PROXY__.accept(...args);
             
         };
-    
+        
         // function 
         RCloseCurrentEvent.prototype.ignore = function(...args) 
           
@@ -362,7 +362,7 @@ RCloseCurrentEvent.MaxUser = RCloseCurrentEvent_Wrapper.MaxUser;
               return this.__PROXY__.ignore(...args);
             
         };
-    
+        
         // function 
         RCloseCurrentEvent.prototype.isInputEvent = function(...args) 
           
@@ -372,7 +372,7 @@ RCloseCurrentEvent.MaxUser = RCloseCurrentEvent_Wrapper.MaxUser;
               return this.__PROXY__.isInputEvent(...args);
             
         };
-    
+        
         // function 
         RCloseCurrentEvent.prototype.isPointerEvent = function(...args) 
           
@@ -382,7 +382,7 @@ RCloseCurrentEvent.MaxUser = RCloseCurrentEvent_Wrapper.MaxUser;
               return this.__PROXY__.isPointerEvent(...args);
             
         };
-    
+        
         // function 
         RCloseCurrentEvent.prototype.isSinglePointEvent = function(...args) 
           
@@ -392,7 +392,7 @@ RCloseCurrentEvent.MaxUser = RCloseCurrentEvent_Wrapper.MaxUser;
               return this.__PROXY__.isSinglePointEvent(...args);
             
         };
-    
+        
         // function 
         RCloseCurrentEvent.prototype.clone = function(...args) 
           
@@ -402,7 +402,7 @@ RCloseCurrentEvent.MaxUser = RCloseCurrentEvent_Wrapper.MaxUser;
               return this.__PROXY__.clone(...args);
             
         };
-    
+        
         // function 
         RCloseCurrentEvent.prototype.setSpontaneous = function(...args) 
           
@@ -412,7 +412,7 @@ RCloseCurrentEvent.MaxUser = RCloseCurrentEvent_Wrapper.MaxUser;
               return this.__PROXY__.setSpontaneous(...args);
             
         };
-    
+        
 
       // static functions:
       RCloseCurrentEvent.prototype.isNullWrapper = function() {

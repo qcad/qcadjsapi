@@ -142,7 +142,7 @@
               return this.__PROXY__.mustAlwaysClone(...args);
             
         };
-    
+        
         // function 
         RFaceEntity.prototype.getDocument = function(...args) 
           
@@ -152,7 +152,7 @@
               return this.__PROXY__.getDocument(...args);
             
         };
-    
+        
         // function 
         RFaceEntity.prototype.setFlag = function(...args) 
           
@@ -162,7 +162,7 @@
               return this.__PROXY__.setFlag(...args);
             
         };
-    
+        
         // function 
         RFaceEntity.prototype.getFlag = function(...args) 
           
@@ -172,7 +172,7 @@
               return this.__PROXY__.getFlag(...args);
             
         };
-    
+        
         // function 
         RFaceEntity.prototype.getId = function(...args) 
           
@@ -182,7 +182,7 @@
               return this.__PROXY__.getId(...args);
             
         };
-    
+        
         // function 
         RFaceEntity.prototype.getHandle = function(...args) 
           
@@ -192,7 +192,7 @@
               return this.__PROXY__.getHandle(...args);
             
         };
-    
+        
         // function 
         RFaceEntity.prototype.isProtected = function(...args) 
           
@@ -202,7 +202,7 @@
               return this.__PROXY__.isProtected(...args);
             
         };
-    
+        
         // function 
         RFaceEntity.prototype.setProtected = function(...args) 
           
@@ -212,7 +212,7 @@
               return this.__PROXY__.setProtected(...args);
             
         };
-    
+        
         // function 
         RFaceEntity.prototype.isInvisible = function(...args) 
           
@@ -222,7 +222,7 @@
               return this.__PROXY__.isInvisible(...args);
             
         };
-    
+        
         // function 
         RFaceEntity.prototype.setInvisible = function(...args) 
           
@@ -232,7 +232,7 @@
               return this.__PROXY__.setInvisible(...args);
             
         };
-    
+        
         // function 
         RFaceEntity.prototype.isUndone = function(...args) 
           
@@ -242,7 +242,7 @@
               return this.__PROXY__.isUndone(...args);
             
         };
-    
+        
         // function 
         RFaceEntity.prototype.isWorkingSet = function(...args) 
           
@@ -252,7 +252,7 @@
               return this.__PROXY__.isWorkingSet(...args);
             
         };
-    
+        
         // function 
         RFaceEntity.prototype.setWorkingSet = function(...args) 
           
@@ -262,7 +262,7 @@
               return this.__PROXY__.setWorkingSet(...args);
             
         };
-    
+        
         // function 
         RFaceEntity.prototype.getPropertyTypeIds = function(...args) 
           
@@ -272,7 +272,7 @@
               return this.__PROXY__.getPropertyTypeIds(...args);
             
         };
-    
+        
         // function 
         RFaceEntity.prototype.getCustomPropertyTypeIds = function(...args) 
           
@@ -282,7 +282,7 @@
               return this.__PROXY__.getCustomPropertyTypeIds(...args);
             
         };
-    
+        
         // function 
         RFaceEntity.prototype.hasPropertyType = function(...args) 
           
@@ -292,7 +292,7 @@
               return this.__PROXY__.hasPropertyType(...args);
             
         };
-    
+        
         // function 
         RFaceEntity.prototype.hasCustomProperties = function(...args) 
           
@@ -302,7 +302,7 @@
               return this.__PROXY__.hasCustomProperties(...args);
             
         };
-    
+        
         // function 
         RFaceEntity.prototype.hasCustomProperty = function(...args) 
           
@@ -312,7 +312,7 @@
               return this.__PROXY__.hasCustomProperty(...args);
             
         };
-    
+        
         // function 
         RFaceEntity.prototype.getCustomProperty = function(...args) 
           
@@ -322,7 +322,7 @@
               return this.__PROXY__.getCustomProperty(...args);
             
         };
-    
+        
         // function 
         RFaceEntity.prototype.getCustomDoubleProperty = function(...args) 
           
@@ -332,7 +332,7 @@
               return this.__PROXY__.getCustomDoubleProperty(...args);
             
         };
-    
+        
         // function 
         RFaceEntity.prototype.getCustomIntProperty = function(...args) 
           
@@ -342,7 +342,7 @@
               return this.__PROXY__.getCustomIntProperty(...args);
             
         };
-    
+        
         // function 
         RFaceEntity.prototype.getCustomBoolProperty = function(...args) 
           
@@ -352,7 +352,7 @@
               return this.__PROXY__.getCustomBoolProperty(...args);
             
         };
-    
+        
         // function 
         RFaceEntity.prototype.setCustomProperty = function(...args) 
           
@@ -362,7 +362,7 @@
               return this.__PROXY__.setCustomProperty(...args);
             
         };
-    
+        
         // function 
         RFaceEntity.prototype.removeCustomProperty = function(...args) 
           
@@ -372,7 +372,7 @@
               return this.__PROXY__.removeCustomProperty(...args);
             
         };
-    
+        
         // function 
         RFaceEntity.prototype.getCustomPropertyTitles = function(...args) 
           
@@ -382,7 +382,7 @@
               return this.__PROXY__.getCustomPropertyTitles(...args);
             
         };
-    
+        
         // function 
         RFaceEntity.prototype.getCustomPropertyKeys = function(...args) 
           
@@ -392,7 +392,7 @@
               return this.__PROXY__.getCustomPropertyKeys(...args);
             
         };
-    
+        
         // function 
         RFaceEntity.prototype.copyCustomPropertiesFrom = function(...args) 
           
@@ -402,7 +402,7 @@
               return this.__PROXY__.copyCustomPropertiesFrom(...args);
             
         };
-    
+        
         // function 
         RFaceEntity.prototype.dump = function(...args) 
           
@@ -412,7 +412,7 @@
               return this.__PROXY__.dump(...args);
             
         };
-    
+        
         // function 
         RFaceEntity.prototype.validate = function(...args) 
           
@@ -422,7 +422,7 @@
               return this.__PROXY__.validate(...args);
             
         };
-    
+        
         // function 
         RFaceEntity.prototype.setUndone = function(...args) 
           
@@ -432,7 +432,7 @@
               return this.__PROXY__.setUndone(...args);
             
         };
-    
+        
         // function 
         RFaceEntity.prototype.setId = function(...args) 
           
@@ -442,7 +442,7 @@
               return this.__PROXY__.setId(...args);
             
         };
-    
+        
         // function 
         RFaceEntity.prototype.setHandle = function(...args) 
           
@@ -452,7 +452,7 @@
               return this.__PROXY__.setHandle(...args);
             
         };
-    
+        
         // function 
         RFaceEntity.prototype.setMemberFlag = function(...args) 
           
@@ -462,7 +462,7 @@
               return this.__PROXY__.setMemberFlag(...args);
             
         };
-    
+        
         // function 
         RFaceEntity.prototype.setDocument = function(...args) 
           
@@ -472,7 +472,7 @@
               return this.__PROXY__.setDocument(...args);
             
         };
-    
+        
         // function 
         RFaceEntity.prototype.getType = function(...args) 
           
@@ -482,7 +482,7 @@
               return this.__PROXY__.getType(...args);
             
         };
-    
+        
         // function 
         RFaceEntity.prototype.isPointType = function(...args) 
           
@@ -492,7 +492,7 @@
               return this.__PROXY__.isPointType(...args);
             
         };
-    
+        
         // function 
         RFaceEntity.prototype.isValid = function(...args) 
           
@@ -502,7 +502,7 @@
               return this.__PROXY__.isValid(...args);
             
         };
-    
+        
         // function 
         RFaceEntity.prototype.isSane = function(...args) 
           
@@ -512,7 +512,7 @@
               return this.__PROXY__.isSane(...args);
             
         };
-    
+        
         // function 
         RFaceEntity.prototype.isSelected = function(...args) 
           
@@ -522,7 +522,7 @@
               return this.__PROXY__.isSelected(...args);
             
         };
-    
+        
         // function 
         RFaceEntity.prototype.setSelected = function(...args) 
           
@@ -532,7 +532,7 @@
               return this.__PROXY__.setSelected(...args);
             
         };
-    
+        
         // function 
         RFaceEntity.prototype.isSelectedWorkingSet = function(...args) 
           
@@ -542,7 +542,7 @@
               return this.__PROXY__.isSelectedWorkingSet(...args);
             
         };
-    
+        
         // function 
         RFaceEntity.prototype.setSelectedWorkingSet = function(...args) 
           
@@ -552,7 +552,7 @@
               return this.__PROXY__.setSelectedWorkingSet(...args);
             
         };
-    
+        
         // function 
         RFaceEntity.prototype.isSelectable = function(...args) 
           
@@ -562,7 +562,7 @@
               return this.__PROXY__.isSelectable(...args);
             
         };
-    
+        
         // function 
         RFaceEntity.prototype.isUpdatesEnabled = function(...args) 
           
@@ -572,7 +572,7 @@
               return this.__PROXY__.isUpdatesEnabled(...args);
             
         };
-    
+        
         // function 
         RFaceEntity.prototype.setUpdatesEnabled = function(...args) 
           
@@ -582,7 +582,7 @@
               return this.__PROXY__.setUpdatesEnabled(...args);
             
         };
-    
+        
         // function 
         RFaceEntity.prototype.cloneOnChange = function(...args) 
           
@@ -592,7 +592,7 @@
               return this.__PROXY__.cloneOnChange(...args);
             
         };
-    
+        
         // function 
         RFaceEntity.prototype.setDrawOrder = function(...args) 
           
@@ -602,7 +602,7 @@
               return this.__PROXY__.setDrawOrder(...args);
             
         };
-    
+        
         // function 
         RFaceEntity.prototype.getDrawOrder = function(...args) 
           
@@ -612,7 +612,7 @@
               return this.__PROXY__.getDrawOrder(...args);
             
         };
-    
+        
         // function 
         RFaceEntity.prototype.setLayerId = function(...args) 
           
@@ -622,7 +622,7 @@
               return this.__PROXY__.setLayerId(...args);
             
         };
-    
+        
         // function 
         RFaceEntity.prototype.setLayerName = function(...args) 
           
@@ -632,7 +632,7 @@
               return this.__PROXY__.setLayerName(...args);
             
         };
-    
+        
         // function 
         RFaceEntity.prototype.getLayerId = function(...args) 
           
@@ -642,7 +642,7 @@
               return this.__PROXY__.getLayerId(...args);
             
         };
-    
+        
         // function 
         RFaceEntity.prototype.getLayerName = function(...args) 
           
@@ -652,7 +652,7 @@
               return this.__PROXY__.getLayerName(...args);
             
         };
-    
+        
         // function 
         RFaceEntity.prototype.setBlockId = function(...args) 
           
@@ -662,7 +662,7 @@
               return this.__PROXY__.setBlockId(...args);
             
         };
-    
+        
         // function 
         RFaceEntity.prototype.getBlockId = function(...args) 
           
@@ -672,7 +672,7 @@
               return this.__PROXY__.getBlockId(...args);
             
         };
-    
+        
         // function 
         RFaceEntity.prototype.getBlockName = function(...args) 
           
@@ -682,7 +682,7 @@
               return this.__PROXY__.getBlockName(...args);
             
         };
-    
+        
         // function 
         RFaceEntity.prototype.getParentId = function(...args) 
           
@@ -692,7 +692,7 @@
               return this.__PROXY__.getParentId(...args);
             
         };
-    
+        
         // function 
         RFaceEntity.prototype.setLinetypeId = function(...args) 
           
@@ -702,7 +702,7 @@
               return this.__PROXY__.setLinetypeId(...args);
             
         };
-    
+        
         // function 
         RFaceEntity.prototype.setLinetypePattern = function(...args) 
           
@@ -712,7 +712,7 @@
               return this.__PROXY__.setLinetypePattern(...args);
             
         };
-    
+        
         // function 
         RFaceEntity.prototype.getLinetypeId = function(...args) 
           
@@ -722,7 +722,7 @@
               return this.__PROXY__.getLinetypeId(...args);
             
         };
-    
+        
         // function 
         RFaceEntity.prototype.getLinetypePattern = function(...args) 
           
@@ -732,7 +732,7 @@
               return this.__PROXY__.getLinetypePattern(...args);
             
         };
-    
+        
         // function 
         RFaceEntity.prototype.setLinetypeScale = function(...args) 
           
@@ -742,7 +742,7 @@
               return this.__PROXY__.setLinetypeScale(...args);
             
         };
-    
+        
         // function 
         RFaceEntity.prototype.getLinetypeScale = function(...args) 
           
@@ -752,7 +752,7 @@
               return this.__PROXY__.getLinetypeScale(...args);
             
         };
-    
+        
         // function 
         RFaceEntity.prototype.setLineweight = function(...args) 
           
@@ -762,7 +762,7 @@
               return this.__PROXY__.setLineweight(...args);
             
         };
-    
+        
         // function 
         RFaceEntity.prototype.getLineweight = function(...args) 
           
@@ -772,7 +772,7 @@
               return this.__PROXY__.getLineweight(...args);
             
         };
-    
+        
         // function 
         RFaceEntity.prototype.setColor = function(...args) 
           
@@ -782,7 +782,7 @@
               return this.__PROXY__.setColor(...args);
             
         };
-    
+        
         // function 
         RFaceEntity.prototype.getColor = function(...args) 
           
@@ -792,7 +792,7 @@
               return this.__PROXY__.getColor(...args);
             
         };
-    
+        
         // function 
         RFaceEntity.prototype.getDisplayColor = function(...args) 
           
@@ -802,7 +802,7 @@
               return this.__PROXY__.getDisplayColor(...args);
             
         };
-    
+        
         // function 
         RFaceEntity.prototype.copyAttributesFrom = function(...args) 
           
@@ -812,7 +812,7 @@
               return this.__PROXY__.copyAttributesFrom(...args);
             
         };
-    
+        
         // function 
         RFaceEntity.prototype.getBoundingBox = function(...args) 
           
@@ -822,7 +822,7 @@
               return this.__PROXY__.getBoundingBox(...args);
             
         };
-    
+        
         // function 
         RFaceEntity.prototype.to2D = function(...args) 
           
@@ -832,7 +832,7 @@
               return this.__PROXY__.to2D(...args);
             
         };
-    
+        
         // function 
         RFaceEntity.prototype.setZ = function(...args) 
           
@@ -842,7 +842,7 @@
               return this.__PROXY__.setZ(...args);
             
         };
-    
+        
         // function 
         RFaceEntity.prototype.getBoundingBoxes = function(...args) 
           
@@ -852,7 +852,7 @@
               return this.__PROXY__.getBoundingBoxes(...args);
             
         };
-    
+        
         // function 
         RFaceEntity.prototype.getHull = function(...args) 
           
@@ -862,7 +862,7 @@
               return this.__PROXY__.getHull(...args);
             
         };
-    
+        
         // function 
         RFaceEntity.prototype.getShapes = function(...args) 
           
@@ -872,7 +872,7 @@
               return this.__PROXY__.getShapes(...args);
             
         };
-    
+        
         // function 
         RFaceEntity.prototype.getClosestSubEntityId = function(...args) 
           
@@ -882,7 +882,7 @@
               return this.__PROXY__.getClosestSubEntityId(...args);
             
         };
-    
+        
         // function 
         RFaceEntity.prototype.getClosestShape = function(...args) 
           
@@ -892,7 +892,7 @@
               return this.__PROXY__.getClosestShape(...args);
             
         };
-    
+        
         // function 
         RFaceEntity.prototype.getClosestSimpleShape = function(...args) 
           
@@ -902,7 +902,7 @@
               return this.__PROXY__.getClosestSimpleShape(...args);
             
         };
-    
+        
         // function 
         RFaceEntity.prototype.isInside = function(...args) 
           
@@ -912,7 +912,7 @@
               return this.__PROXY__.isInside(...args);
             
         };
-    
+        
         // function 
         RFaceEntity.prototype.isOnEntity = function(...args) 
           
@@ -922,7 +922,7 @@
               return this.__PROXY__.isOnEntity(...args);
             
         };
-    
+        
         // function 
         RFaceEntity.prototype.intersectsWith = function(...args) 
           
@@ -932,7 +932,7 @@
               return this.__PROXY__.intersectsWith(...args);
             
         };
-    
+        
         // function 
         RFaceEntity.prototype.getDistanceTo = function(...args) 
           
@@ -942,7 +942,7 @@
               return this.__PROXY__.getDistanceTo(...args);
             
         };
-    
+        
         // function 
         RFaceEntity.prototype.getVectorTo = function(...args) 
           
@@ -952,7 +952,7 @@
               return this.__PROXY__.getVectorTo(...args);
             
         };
-    
+        
         // function 
         RFaceEntity.prototype.getInternalReferencePoints = function(...args) 
           
@@ -962,7 +962,7 @@
               return this.__PROXY__.getInternalReferencePoints(...args);
             
         };
-    
+        
         // function 
         RFaceEntity.prototype.getReferencePoints = function(...args) 
           
@@ -972,7 +972,7 @@
               return this.__PROXY__.getReferencePoints(...args);
             
         };
-    
+        
         // function 
         RFaceEntity.prototype.getPointOnEntity = function(...args) 
           
@@ -982,7 +982,7 @@
               return this.__PROXY__.getPointOnEntity(...args);
             
         };
-    
+        
         // function 
         RFaceEntity.prototype.getEndPoints = function(...args) 
           
@@ -992,7 +992,7 @@
               return this.__PROXY__.getEndPoints(...args);
             
         };
-    
+        
         // function 
         RFaceEntity.prototype.getMiddlePoints = function(...args) 
           
@@ -1002,7 +1002,7 @@
               return this.__PROXY__.getMiddlePoints(...args);
             
         };
-    
+        
         // function 
         RFaceEntity.prototype.getCenterPoints = function(...args) 
           
@@ -1012,7 +1012,7 @@
               return this.__PROXY__.getCenterPoints(...args);
             
         };
-    
+        
         // function 
         RFaceEntity.prototype.getClosestPointOnEntity = function(...args) 
           
@@ -1022,7 +1022,7 @@
               return this.__PROXY__.getClosestPointOnEntity(...args);
             
         };
-    
+        
         // function 
         RFaceEntity.prototype.getPointsWithDistanceToEnd = function(...args) 
           
@@ -1032,7 +1032,7 @@
               return this.__PROXY__.getPointsWithDistanceToEnd(...args);
             
         };
-    
+        
         // function 
         RFaceEntity.prototype.getIntersectionPoints = function(...args) 
           
@@ -1042,7 +1042,7 @@
               return this.__PROXY__.getIntersectionPoints(...args);
             
         };
-    
+        
         // function 
         RFaceEntity.prototype.getIntersectionPointsWithShape = function(...args) 
           
@@ -1052,7 +1052,7 @@
               return this.__PROXY__.getIntersectionPointsWithShape(...args);
             
         };
-    
+        
         // function 
         RFaceEntity.prototype.clickReferencePoint = function(...args) 
           
@@ -1062,7 +1062,7 @@
               return this.__PROXY__.clickReferencePoint(...args);
             
         };
-    
+        
         // function 
         RFaceEntity.prototype.moveReferencePoint = function(...args) 
           
@@ -1072,7 +1072,7 @@
               return this.__PROXY__.moveReferencePoint(...args);
             
         };
-    
+        
         // function 
         RFaceEntity.prototype.move = function(...args) 
           
@@ -1082,7 +1082,7 @@
               return this.__PROXY__.move(...args);
             
         };
-    
+        
         // function 
         RFaceEntity.prototype.rotate = function(...args) 
           
@@ -1092,7 +1092,7 @@
               return this.__PROXY__.rotate(...args);
             
         };
-    
+        
         // function 
         RFaceEntity.prototype.scale = function(...args) 
           
@@ -1102,7 +1102,7 @@
               return this.__PROXY__.scale(...args);
             
         };
-    
+        
         // function 
         RFaceEntity.prototype.scaleNonUniform = function(...args) 
           
@@ -1112,7 +1112,7 @@
               return this.__PROXY__.scaleNonUniform(...args);
             
         };
-    
+        
         // function 
         RFaceEntity.prototype.scaleVisualProperties = function(...args) 
           
@@ -1122,7 +1122,7 @@
               return this.__PROXY__.scaleVisualProperties(...args);
             
         };
-    
+        
         // function 
         RFaceEntity.prototype.setViewportContext = function(...args) 
           
@@ -1132,7 +1132,7 @@
               return this.__PROXY__.setViewportContext(...args);
             
         };
-    
+        
         // function 
         RFaceEntity.prototype.mirror = function(...args) 
           
@@ -1142,7 +1142,7 @@
               return this.__PROXY__.mirror(...args);
             
         };
-    
+        
         // function 
         RFaceEntity.prototype.flipHorizontal = function(...args) 
           
@@ -1152,7 +1152,7 @@
               return this.__PROXY__.flipHorizontal(...args);
             
         };
-    
+        
         // function 
         RFaceEntity.prototype.flipVertical = function(...args) 
           
@@ -1162,7 +1162,7 @@
               return this.__PROXY__.flipVertical(...args);
             
         };
-    
+        
         // function 
         RFaceEntity.prototype.stretch = function(...args) 
           
@@ -1172,7 +1172,7 @@
               return this.__PROXY__.stretch(...args);
             
         };
-    
+        
         // function 
         RFaceEntity.prototype.update = function(...args) 
           
@@ -1182,7 +1182,7 @@
               return this.__PROXY__.update(...args);
             
         };
-    
+        
         // function 
         RFaceEntity.prototype.castToShape = function(...args) 
           
@@ -1192,7 +1192,7 @@
               return this.__PROXY__.castToShape(...args);
             
         };
-    
+        
         // function 
         RFaceEntity.prototype.setAutoUpdatesBlocked = function(...args) 
           
@@ -1202,7 +1202,7 @@
               return this.__PROXY__.setAutoUpdatesBlocked(...args);
             
         };
-    
+        
         // function 
         RFaceEntity.prototype.isVisible = function(...args) 
           
@@ -1212,7 +1212,7 @@
               return this.__PROXY__.isVisible(...args);
             
         };
-    
+        
         // function 
         RFaceEntity.prototype.isEditable = function(...args) 
           
@@ -1222,7 +1222,7 @@
               return this.__PROXY__.isEditable(...args);
             
         };
-    
+        
         // function 
         RFaceEntity.prototype.isInWorkingSet = function(...args) 
           
@@ -1232,7 +1232,7 @@
               return this.__PROXY__.isInWorkingSet(...args);
             
         };
-    
+        
         // function 
         RFaceEntity.prototype.getComplexity = function(...args) 
           
@@ -1242,7 +1242,7 @@
               return this.__PROXY__.getComplexity(...args);
             
         };
-    
+        
         // function 
         RFaceEntity.prototype.setParentId = function(...args) 
           
@@ -1252,7 +1252,7 @@
               return this.__PROXY__.setParentId(...args);
             
         };
-    
+        
         // function 
         RFaceEntity.prototype.init = function(...args) 
           
@@ -1262,7 +1262,7 @@
               return this.__PROXY__.init(...args);
             
         };
-    
+        
         // function 
         RFaceEntity.prototype.getRtti = function(...args) 
           
@@ -1272,7 +1272,7 @@
               return this.__PROXY__.getRtti(...args);
             
         };
-    
+        
         // function 
         RFaceEntity.prototype.getStaticPropertyTypeIds = function(...args) 
           
@@ -1282,7 +1282,7 @@
               return this.__PROXY__.getStaticPropertyTypeIds(...args);
             
         };
-    
+        
         // function 
         RFaceEntity.prototype.clone = function(...args) 
           
@@ -1292,7 +1292,7 @@
               return this.__PROXY__.clone(...args);
             
         };
-    
+        
         // function 
         RFaceEntity.prototype.setProperty = function(...args) 
           
@@ -1302,7 +1302,7 @@
               return this.__PROXY__.setProperty(...args);
             
         };
-    
+        
         // function 
         RFaceEntity.prototype.getProperty = function(...args) 
           
@@ -1312,7 +1312,7 @@
               return this.__PROXY__.getProperty(...args);
             
         };
-    
+        
         // function 
         RFaceEntity.prototype.exportEntity = function(...args) 
           
@@ -1322,7 +1322,7 @@
               return this.__PROXY__.exportEntity(...args);
             
         };
-    
+        
         // function 
         RFaceEntity.prototype.getData = function(...args) 
           
@@ -1332,7 +1332,7 @@
               return this.__PROXY__.getData(...args);
             
         };
-    
+        
         // function 
         RFaceEntity.prototype.getVertexAt = function(...args) 
           
@@ -1342,7 +1342,7 @@
               return this.__PROXY__.getVertexAt(...args);
             
         };
-    
+        
         // function 
         RFaceEntity.prototype.countVertices = function(...args) 
           
@@ -1352,7 +1352,7 @@
               return this.__PROXY__.countVertices(...args);
             
         };
-    
+        
         // function 
         RFaceEntity.prototype.getStartPoint = function(...args) 
           
@@ -1362,7 +1362,7 @@
               return this.__PROXY__.getStartPoint(...args);
             
         };
-    
+        
         // function 
         RFaceEntity.prototype.getEndPoint = function(...args) 
           
@@ -1372,7 +1372,7 @@
               return this.__PROXY__.getEndPoint(...args);
             
         };
-    
+        
         // function 
         RFaceEntity.prototype.getDirection1 = function(...args) 
           
@@ -1382,7 +1382,7 @@
               return this.__PROXY__.getDirection1(...args);
             
         };
-    
+        
         // function 
         RFaceEntity.prototype.getDirection2 = function(...args) 
           
@@ -1392,7 +1392,7 @@
               return this.__PROXY__.getDirection2(...args);
             
         };
-    
+        
         // function 
         RFaceEntity.prototype.reverse = function(...args) 
           
@@ -1402,7 +1402,7 @@
               return this.__PROXY__.reverse(...args);
             
         };
-    
+        
         // function 
         RFaceEntity.prototype.getTrimEnd = function(...args) 
           
@@ -1412,7 +1412,7 @@
               return this.__PROXY__.getTrimEnd(...args);
             
         };
-    
+        
         // function 
         RFaceEntity.prototype.trimStartPoint = function(...args) 
           
@@ -1422,7 +1422,7 @@
               return this.__PROXY__.trimStartPoint(...args);
             
         };
-    
+        
         // function 
         RFaceEntity.prototype.trimEndPoint = function(...args) 
           
@@ -1432,7 +1432,7 @@
               return this.__PROXY__.trimEndPoint(...args);
             
         };
-    
+        
         // function 
         RFaceEntity.prototype.getLength = function(...args) 
           
@@ -1442,7 +1442,7 @@
               return this.__PROXY__.getLength(...args);
             
         };
-    
+        
         // function 
         RFaceEntity.prototype.getExploded = function(...args) 
           
@@ -1452,7 +1452,7 @@
               return this.__PROXY__.getExploded(...args);
             
         };
-    
+        
         // function 
         RFaceEntity.prototype.print = function(...args) 
           
@@ -1462,7 +1462,7 @@
               return this.__PROXY__.print(...args);
             
         };
-    
+        
 
       // static functions:
       

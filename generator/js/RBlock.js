@@ -164,7 +164,7 @@
               return this.__PROXY__.mustAlwaysClone(...args);
             
         };
-    
+        
         // function 
         RBlock.prototype.getDocument = function(...args) 
           
@@ -174,7 +174,7 @@
               return this.__PROXY__.getDocument(...args);
             
         };
-    
+        
         // function 
         RBlock.prototype.setDocument = function(...args) 
           
@@ -184,7 +184,7 @@
               return this.__PROXY__.setDocument(...args);
             
         };
-    
+        
         // function 
         RBlock.prototype.setFlag = function(...args) 
           
@@ -194,7 +194,7 @@
               return this.__PROXY__.setFlag(...args);
             
         };
-    
+        
         // function 
         RBlock.prototype.getFlag = function(...args) 
           
@@ -204,7 +204,7 @@
               return this.__PROXY__.getFlag(...args);
             
         };
-    
+        
         // function 
         RBlock.prototype.getId = function(...args) 
           
@@ -214,7 +214,7 @@
               return this.__PROXY__.getId(...args);
             
         };
-    
+        
         // function 
         RBlock.prototype.getHandle = function(...args) 
           
@@ -224,7 +224,7 @@
               return this.__PROXY__.getHandle(...args);
             
         };
-    
+        
         // function 
         RBlock.prototype.isProtected = function(...args) 
           
@@ -234,7 +234,7 @@
               return this.__PROXY__.isProtected(...args);
             
         };
-    
+        
         // function 
         RBlock.prototype.setProtected = function(...args) 
           
@@ -244,7 +244,7 @@
               return this.__PROXY__.setProtected(...args);
             
         };
-    
+        
         // function 
         RBlock.prototype.isInvisible = function(...args) 
           
@@ -254,7 +254,7 @@
               return this.__PROXY__.isInvisible(...args);
             
         };
-    
+        
         // function 
         RBlock.prototype.setInvisible = function(...args) 
           
@@ -264,7 +264,7 @@
               return this.__PROXY__.setInvisible(...args);
             
         };
-    
+        
         // function 
         RBlock.prototype.isSelected = function(...args) 
           
@@ -274,7 +274,7 @@
               return this.__PROXY__.isSelected(...args);
             
         };
-    
+        
         // function 
         RBlock.prototype.setSelected = function(...args) 
           
@@ -284,7 +284,7 @@
               return this.__PROXY__.setSelected(...args);
             
         };
-    
+        
         // function 
         RBlock.prototype.isUndone = function(...args) 
           
@@ -294,7 +294,7 @@
               return this.__PROXY__.isUndone(...args);
             
         };
-    
+        
         // function 
         RBlock.prototype.isWorkingSet = function(...args) 
           
@@ -304,7 +304,7 @@
               return this.__PROXY__.isWorkingSet(...args);
             
         };
-    
+        
         // function 
         RBlock.prototype.setWorkingSet = function(...args) 
           
@@ -314,7 +314,7 @@
               return this.__PROXY__.setWorkingSet(...args);
             
         };
-    
+        
         // function 
         RBlock.prototype.getPropertyTypeIds = function(...args) 
           
@@ -324,7 +324,7 @@
               return this.__PROXY__.getPropertyTypeIds(...args);
             
         };
-    
+        
         // function 
         RBlock.prototype.getCustomPropertyTypeIds = function(...args) 
           
@@ -334,7 +334,7 @@
               return this.__PROXY__.getCustomPropertyTypeIds(...args);
             
         };
-    
+        
         // function 
         RBlock.prototype.hasPropertyType = function(...args) 
           
@@ -344,7 +344,7 @@
               return this.__PROXY__.hasPropertyType(...args);
             
         };
-    
+        
         // function 
         RBlock.prototype.hasCustomProperties = function(...args) 
           
@@ -354,7 +354,7 @@
               return this.__PROXY__.hasCustomProperties(...args);
             
         };
-    
+        
         // function 
         RBlock.prototype.hasCustomProperty = function(...args) 
           
@@ -364,7 +364,7 @@
               return this.__PROXY__.hasCustomProperty(...args);
             
         };
-    
+        
         // function 
         RBlock.prototype.getCustomProperty = function(...args) 
           
@@ -374,7 +374,7 @@
               return this.__PROXY__.getCustomProperty(...args);
             
         };
-    
+        
         // function 
         RBlock.prototype.getCustomDoubleProperty = function(...args) 
           
@@ -384,7 +384,7 @@
               return this.__PROXY__.getCustomDoubleProperty(...args);
             
         };
-    
+        
         // function 
         RBlock.prototype.getCustomIntProperty = function(...args) 
           
@@ -394,7 +394,7 @@
               return this.__PROXY__.getCustomIntProperty(...args);
             
         };
-    
+        
         // function 
         RBlock.prototype.getCustomBoolProperty = function(...args) 
           
@@ -404,7 +404,7 @@
               return this.__PROXY__.getCustomBoolProperty(...args);
             
         };
-    
+        
         // function 
         RBlock.prototype.removeCustomProperty = function(...args) 
           
@@ -414,7 +414,7 @@
               return this.__PROXY__.removeCustomProperty(...args);
             
         };
-    
+        
         // function 
         RBlock.prototype.getCustomPropertyTitles = function(...args) 
           
@@ -424,7 +424,7 @@
               return this.__PROXY__.getCustomPropertyTitles(...args);
             
         };
-    
+        
         // function 
         RBlock.prototype.getCustomPropertyKeys = function(...args) 
           
@@ -434,7 +434,7 @@
               return this.__PROXY__.getCustomPropertyKeys(...args);
             
         };
-    
+        
         // function 
         RBlock.prototype.copyCustomPropertiesFrom = function(...args) 
           
@@ -444,7 +444,7 @@
               return this.__PROXY__.copyCustomPropertiesFrom(...args);
             
         };
-    
+        
         // function 
         RBlock.prototype.getComplexity = function(...args) 
           
@@ -454,7 +454,7 @@
               return this.__PROXY__.getComplexity(...args);
             
         };
-    
+        
         // function 
         RBlock.prototype.setAutoUpdatesBlocked = function(...args) 
           
@@ -464,7 +464,7 @@
               return this.__PROXY__.setAutoUpdatesBlocked(...args);
             
         };
-    
+        
         // function 
         RBlock.prototype.dump = function(...args) 
           
@@ -474,7 +474,7 @@
               return this.__PROXY__.dump(...args);
             
         };
-    
+        
         // function 
         RBlock.prototype.validate = function(...args) 
           
@@ -484,7 +484,7 @@
               return this.__PROXY__.validate(...args);
             
         };
-    
+        
         // function 
         RBlock.prototype.setUndone = function(...args) 
           
@@ -494,7 +494,7 @@
               return this.__PROXY__.setUndone(...args);
             
         };
-    
+        
         // function 
         RBlock.prototype.setId = function(...args) 
           
@@ -504,7 +504,7 @@
               return this.__PROXY__.setId(...args);
             
         };
-    
+        
         // function 
         RBlock.prototype.setHandle = function(...args) 
           
@@ -514,7 +514,7 @@
               return this.__PROXY__.setHandle(...args);
             
         };
-    
+        
         // function 
         RBlock.prototype.setMemberFlag = function(...args) 
           
@@ -524,7 +524,7 @@
               return this.__PROXY__.setMemberFlag(...args);
             
         };
-    
+        
         // function 
         RBlock.prototype.init = function(...args) 
           
@@ -534,7 +534,7 @@
               return this.__PROXY__.init(...args);
             
         };
-    
+        
         // function 
         RBlock.prototype.getRtti = function(...args) 
           
@@ -544,7 +544,7 @@
               return this.__PROXY__.getRtti(...args);
             
         };
-    
+        
         // function 
         RBlock.prototype.getType = function(...args) 
           
@@ -554,7 +554,7 @@
               return this.__PROXY__.getType(...args);
             
         };
-    
+        
         // function 
         RBlock.prototype.clone = function(...args) 
           
@@ -564,7 +564,7 @@
               return this.__PROXY__.clone(...args);
             
         };
-    
+        
         // function 
         RBlock.prototype.getName = function(...args) 
           
@@ -574,7 +574,7 @@
               return this.__PROXY__.getName(...args);
             
         };
-    
+        
         // function 
         RBlock.prototype.setName = function(...args) 
           
@@ -584,7 +584,7 @@
               return this.__PROXY__.setName(...args);
             
         };
-    
+        
         // function 
         RBlock.prototype.isFrozen = function(...args) 
           
@@ -594,7 +594,7 @@
               return this.__PROXY__.isFrozen(...args);
             
         };
-    
+        
         // function 
         RBlock.prototype.setFrozen = function(...args) 
           
@@ -604,7 +604,7 @@
               return this.__PROXY__.setFrozen(...args);
             
         };
-    
+        
         // function 
         RBlock.prototype.isOwnedByReference = function(...args) 
           
@@ -614,7 +614,7 @@
               return this.__PROXY__.isOwnedByReference(...args);
             
         };
-    
+        
         // function 
         RBlock.prototype.setOwnedByReference = function(...args) 
           
@@ -624,7 +624,7 @@
               return this.__PROXY__.setOwnedByReference(...args);
             
         };
-    
+        
         // function 
         RBlock.prototype.isAnonymous = function(...args) 
           
@@ -634,7 +634,7 @@
               return this.__PROXY__.isAnonymous(...args);
             
         };
-    
+        
         // function 
         RBlock.prototype.setAnonymous = function(...args) 
           
@@ -644,7 +644,7 @@
               return this.__PROXY__.setAnonymous(...args);
             
         };
-    
+        
         // function 
         RBlock.prototype.isPixelUnit = function(...args) 
           
@@ -654,7 +654,7 @@
               return this.__PROXY__.isPixelUnit(...args);
             
         };
-    
+        
         // function 
         RBlock.prototype.setPixelUnit = function(...args) 
           
@@ -664,7 +664,7 @@
               return this.__PROXY__.setPixelUnit(...args);
             
         };
-    
+        
         // function 
         RBlock.prototype.setOrigin = function(...args) 
           
@@ -674,7 +674,7 @@
               return this.__PROXY__.setOrigin(...args);
             
         };
-    
+        
         // function 
         RBlock.prototype.getOrigin = function(...args) 
           
@@ -684,7 +684,7 @@
               return this.__PROXY__.getOrigin(...args);
             
         };
-    
+        
         // function 
         RBlock.prototype.isModelSpace = function(...args) 
           
@@ -694,7 +694,7 @@
               return this.__PROXY__.isModelSpace(...args);
             
         };
-    
+        
         // function 
         RBlock.prototype.hasLayout = function(...args) 
           
@@ -704,7 +704,7 @@
               return this.__PROXY__.hasLayout(...args);
             
         };
-    
+        
         // function 
         RBlock.prototype.setLayoutId = function(...args) 
           
@@ -714,7 +714,7 @@
               return this.__PROXY__.setLayoutId(...args);
             
         };
-    
+        
         // function 
         RBlock.prototype.getLayoutId = function(...args) 
           
@@ -724,7 +724,7 @@
               return this.__PROXY__.getLayoutId(...args);
             
         };
-    
+        
         // function 
         RBlock.prototype.getLayoutName = function(...args) 
           
@@ -734,7 +734,7 @@
               return this.__PROXY__.getLayoutName(...args);
             
         };
-    
+        
         // function 
         RBlock.prototype.isXRef = function(...args) 
           
@@ -744,7 +744,7 @@
               return this.__PROXY__.isXRef(...args);
             
         };
-    
+        
         // function 
         RBlock.prototype.isFromXRef = function(...args) 
           
@@ -754,7 +754,7 @@
               return this.__PROXY__.isFromXRef(...args);
             
         };
-    
+        
         // function 
         RBlock.prototype.setXRefFileName = function(...args) 
           
@@ -764,7 +764,7 @@
               return this.__PROXY__.setXRefFileName(...args);
             
         };
-    
+        
         // function 
         RBlock.prototype.getXRefFileName = function(...args) 
           
@@ -774,7 +774,7 @@
               return this.__PROXY__.getXRefFileName(...args);
             
         };
-    
+        
         // function 
         RBlock.prototype.getFullXRefFilePath = function(...args) 
           
@@ -784,7 +784,7 @@
               return this.__PROXY__.getFullXRefFilePath(...args);
             
         };
-    
+        
         // function 
         RBlock.prototype.isXRefLoaded = function(...args) 
           
@@ -794,7 +794,7 @@
               return this.__PROXY__.isXRefLoaded(...args);
             
         };
-    
+        
         // function 
         RBlock.prototype.loadXRef = function(...args) 
           
@@ -804,7 +804,7 @@
               return this.__PROXY__.loadXRef(...args);
             
         };
-    
+        
         // function 
         RBlock.prototype.unloadXRef = function(...args) 
           
@@ -814,7 +814,7 @@
               return this.__PROXY__.unloadXRef(...args);
             
         };
-    
+        
         // function 
         RBlock.prototype.getXRefLayerNames = function(...args) 
           
@@ -824,7 +824,7 @@
               return this.__PROXY__.getXRefLayerNames(...args);
             
         };
-    
+        
         // function 
         RBlock.prototype.getXRefBlockNames = function(...args) 
           
@@ -834,7 +834,7 @@
               return this.__PROXY__.getXRefBlockNames(...args);
             
         };
-    
+        
         // function 
         RBlock.prototype.getProperty = function(...args) 
           
@@ -844,7 +844,7 @@
               return this.__PROXY__.getProperty(...args);
             
         };
-    
+        
         // function 
         RBlock.prototype.setProperty = function(...args) 
           
@@ -854,7 +854,7 @@
               return this.__PROXY__.setProperty(...args);
             
         };
-    
+        
         // function 
         RBlock.prototype.setCustomProperty = function(...args) 
           
@@ -864,7 +864,7 @@
               return this.__PROXY__.setCustomProperty(...args);
             
         };
-    
+        
         // function 
         RBlock.prototype.print = function(...args) 
           
@@ -874,7 +874,7 @@
               return this.__PROXY__.print(...args);
             
         };
-    
+        
 
       // static functions:
       

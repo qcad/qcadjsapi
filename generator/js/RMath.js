@@ -134,7 +134,7 @@
               return this.__PROXY__.init(...args);
             
         };
-    
+        
         // function 
         RMath.prototype.uninit = function(...args) 
           
@@ -144,7 +144,7 @@
               return this.__PROXY__.uninit(...args);
             
         };
-    
+        
         // function 
         RMath.prototype.mround = function(...args) 
           
@@ -154,7 +154,7 @@
               return this.__PROXY__.mround(...args);
             
         };
-    
+        
         // function 
         RMath.prototype.trunc = function(...args) 
           
@@ -164,7 +164,7 @@
               return this.__PROXY__.trunc(...args);
             
         };
-    
+        
         // function 
         RMath.prototype.pow = function(...args) 
           
@@ -174,7 +174,7 @@
               return this.__PROXY__.pow(...args);
             
         };
-    
+        
         // function 
         RMath.prototype.isNormal = function(...args) 
           
@@ -184,7 +184,7 @@
               return this.__PROXY__.isNormal(...args);
             
         };
-    
+        
         // function 
         RMath.prototype.isNaN = function(...args) 
           
@@ -194,7 +194,7 @@
               return this.__PROXY__.isNaN(...args);
             
         };
-    
+        
         // function 
         RMath.prototype.isInf = function(...args) 
           
@@ -204,7 +204,7 @@
               return this.__PROXY__.isInf(...args);
             
         };
-    
+        
         // function 
         RMath.prototype.isSane = function(...args) 
           
@@ -214,7 +214,7 @@
               return this.__PROXY__.isSane(...args);
             
         };
-    
+        
         // function 
         RMath.prototype.eval = function(...args) 
           
@@ -224,7 +224,7 @@
               return this.__PROXY__.eval(...args);
             
         };
-    
+        
         // function 
         RMath.prototype.getError = function(...args) 
           
@@ -234,7 +234,7 @@
               return this.__PROXY__.getError(...args);
             
         };
-    
+        
         // function 
         RMath.prototype.hasError = function(...args) 
           
@@ -244,7 +244,7 @@
               return this.__PROXY__.hasError(...args);
             
         };
-    
+        
         // function 
         RMath.prototype.angleToString = function(...args) 
           
@@ -254,7 +254,7 @@
               return this.__PROXY__.angleToString(...args);
             
         };
-    
+        
         // function 
         RMath.prototype.trimTrailingZeroes = function(...args) 
           
@@ -264,7 +264,7 @@
               return this.__PROXY__.trimTrailingZeroes(...args);
             
         };
-    
+        
         // function 
         RMath.prototype.rad2deg = function(...args) 
           
@@ -274,7 +274,7 @@
               return this.__PROXY__.rad2deg(...args);
             
         };
-    
+        
         // function 
         RMath.prototype.deg2rad = function(...args) 
           
@@ -284,7 +284,7 @@
               return this.__PROXY__.deg2rad(...args);
             
         };
-    
+        
         // function 
         RMath.prototype.rad2gra = function(...args) 
           
@@ -294,7 +294,7 @@
               return this.__PROXY__.rad2gra(...args);
             
         };
-    
+        
         // function 
         RMath.prototype.gra2deg = function(...args) 
           
@@ -304,7 +304,7 @@
               return this.__PROXY__.gra2deg(...args);
             
         };
-    
+        
         // function 
         RMath.prototype.isBetween = function(...args) 
           
@@ -314,7 +314,7 @@
               return this.__PROXY__.isBetween(...args);
             
         };
-    
+        
         // function 
         RMath.prototype.getGcd = function(...args) 
           
@@ -324,7 +324,7 @@
               return this.__PROXY__.getGcd(...args);
             
         };
-    
+        
         // function 
         RMath.prototype.isAngleBetween = function(...args) 
           
@@ -334,7 +334,7 @@
               return this.__PROXY__.isAngleBetween(...args);
             
         };
-    
+        
         // function 
         RMath.prototype.getNormalizedAngle = function(...args) 
           
@@ -344,7 +344,7 @@
               return this.__PROXY__.getNormalizedAngle(...args);
             
         };
-    
+        
         // function 
         RMath.prototype.getRelativeAngle = function(...args) 
           
@@ -354,7 +354,7 @@
               return this.__PROXY__.getRelativeAngle(...args);
             
         };
-    
+        
         // function 
         RMath.prototype.getAngleDifference = function(...args) 
           
@@ -364,7 +364,7 @@
               return this.__PROXY__.getAngleDifference(...args);
             
         };
-    
+        
         // function 
         RMath.prototype.getAngleDifference180 = function(...args) 
           
@@ -374,7 +374,7 @@
               return this.__PROXY__.getAngleDifference180(...args);
             
         };
-    
+        
         // function 
         RMath.prototype.makeAngleReadable = function(...args) 
           
@@ -384,7 +384,7 @@
               return this.__PROXY__.makeAngleReadable(...args);
             
         };
-    
+        
         // function 
         RMath.prototype.isAngleReadable = function(...args) 
           
@@ -394,7 +394,7 @@
               return this.__PROXY__.isAngleReadable(...args);
             
         };
-    
+        
         // function 
         RMath.prototype.isSameDirection = function(...args) 
           
@@ -404,7 +404,7 @@
               return this.__PROXY__.isSameDirection(...args);
             
         };
-    
+        
         // function 
         RMath.prototype.absmod = function(...args) 
           
@@ -414,7 +414,7 @@
               return this.__PROXY__.absmod(...args);
             
         };
-    
+        
         // function 
         RMath.prototype.toFractionString = function(...args) 
           
@@ -424,7 +424,7 @@
               return this.__PROXY__.toFractionString(...args);
             
         };
-    
+        
         // function 
         RMath.prototype.toFraction = function(...args) 
           
@@ -434,7 +434,7 @@
               return this.__PROXY__.toFraction(...args);
             
         };
-    
+        
         // function 
         RMath.prototype.simplify = function(...args) 
           
@@ -444,7 +444,7 @@
               return this.__PROXY__.simplify(...args);
             
         };
-    
+        
         // function 
         RMath.prototype.fuzzyCompare = function(...args) 
           
@@ -454,7 +454,7 @@
               return this.__PROXY__.fuzzyCompare(...args);
             
         };
-    
+        
         // function 
         RMath.prototype.fuzzyAngleCompare = function(...args) 
           
@@ -464,7 +464,7 @@
               return this.__PROXY__.fuzzyAngleCompare(...args);
             
         };
-    
+        
         // function 
         RMath.prototype.containsFuzzy = function(...args) 
           
@@ -474,7 +474,7 @@
               return this.__PROXY__.containsFuzzy(...args);
             
         };
-    
+        
         // function 
         RMath.prototype.parseScale = function(...args) 
           
@@ -484,7 +484,7 @@
               return this.__PROXY__.parseScale(...args);
             
         };
-    
+        
         // function 
         RMath.prototype.parseCoordinate = function(...args) 
           
@@ -494,7 +494,7 @@
               return this.__PROXY__.parseCoordinate(...args);
             
         };
-    
+        
         // function 
         RMath.prototype.getMd5Hash = function(...args) 
           
@@ -504,7 +504,7 @@
               return this.__PROXY__.getMd5Hash(...args);
             
         };
-    
+        
 
       // static functions:
       

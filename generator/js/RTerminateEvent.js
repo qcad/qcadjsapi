@@ -312,7 +312,7 @@ RTerminateEvent.MaxUser = RTerminateEvent_Wrapper.MaxUser;
               return this.__PROXY__.type(...args);
             
         };
-    
+        
         // function 
         RTerminateEvent.prototype.spontaneous = function(...args) 
           
@@ -322,7 +322,7 @@ RTerminateEvent.MaxUser = RTerminateEvent_Wrapper.MaxUser;
               return this.__PROXY__.spontaneous(...args);
             
         };
-    
+        
         // function 
         RTerminateEvent.prototype.setAccepted = function(...args) 
           
@@ -332,7 +332,7 @@ RTerminateEvent.MaxUser = RTerminateEvent_Wrapper.MaxUser;
               return this.__PROXY__.setAccepted(...args);
             
         };
-    
+        
         // function 
         RTerminateEvent.prototype.isAccepted = function(...args) 
           
@@ -342,7 +342,7 @@ RTerminateEvent.MaxUser = RTerminateEvent_Wrapper.MaxUser;
               return this.__PROXY__.isAccepted(...args);
             
         };
-    
+        
         // function 
         RTerminateEvent.prototype.accept = function(...args) 
           
@@ -352,7 +352,7 @@ RTerminateEvent.MaxUser = RTerminateEvent_Wrapper.MaxUser;
               return this.__PROXY__.accept(...args);
             
         };
-    
+        
         // function 
         RTerminateEvent.prototype.ignore = function(...args) 
           
@@ -362,7 +362,7 @@ RTerminateEvent.MaxUser = RTerminateEvent_Wrapper.MaxUser;
               return this.__PROXY__.ignore(...args);
             
         };
-    
+        
         // function 
         RTerminateEvent.prototype.isInputEvent = function(...args) 
           
@@ -372,7 +372,7 @@ RTerminateEvent.MaxUser = RTerminateEvent_Wrapper.MaxUser;
               return this.__PROXY__.isInputEvent(...args);
             
         };
-    
+        
         // function 
         RTerminateEvent.prototype.isPointerEvent = function(...args) 
           
@@ -382,7 +382,7 @@ RTerminateEvent.MaxUser = RTerminateEvent_Wrapper.MaxUser;
               return this.__PROXY__.isPointerEvent(...args);
             
         };
-    
+        
         // function 
         RTerminateEvent.prototype.isSinglePointEvent = function(...args) 
           
@@ -392,7 +392,7 @@ RTerminateEvent.MaxUser = RTerminateEvent_Wrapper.MaxUser;
               return this.__PROXY__.isSinglePointEvent(...args);
             
         };
-    
+        
         // function 
         RTerminateEvent.prototype.clone = function(...args) 
           
@@ -402,7 +402,7 @@ RTerminateEvent.MaxUser = RTerminateEvent_Wrapper.MaxUser;
               return this.__PROXY__.clone(...args);
             
         };
-    
+        
         // function 
         RTerminateEvent.prototype.setSpontaneous = function(...args) 
           
@@ -412,7 +412,7 @@ RTerminateEvent.MaxUser = RTerminateEvent_Wrapper.MaxUser;
               return this.__PROXY__.setSpontaneous(...args);
             
         };
-    
+        
 
       // static functions:
       RTerminateEvent.prototype.isNullWrapper = function() {

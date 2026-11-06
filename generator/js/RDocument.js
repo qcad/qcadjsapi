@@ -135,7 +135,7 @@
               return this.__PROXY__.init(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.initLinetypes = function(...args) 
           
@@ -145,7 +145,7 @@
               return this.__PROXY__.initLinetypes(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.getDefaultLinetypes = function(...args) 
           
@@ -155,7 +155,7 @@
               return this.__PROXY__.getDefaultLinetypes(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.getStorage = function(...args) 
           
@@ -165,7 +165,7 @@
               return this.__PROXY__.getStorage(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.getSpatialIndex = function(...args) 
           
@@ -175,7 +175,7 @@
               return this.__PROXY__.getSpatialIndex(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.getSpatialIndexForBlock = function(...args) 
           
@@ -185,7 +185,7 @@
               return this.__PROXY__.getSpatialIndexForBlock(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.getSpatialIndexForCurrentBlock = function(...args) 
           
@@ -195,7 +195,7 @@
               return this.__PROXY__.getSpatialIndexForCurrentBlock(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.getTransactionStack = function(...args) 
           
@@ -205,7 +205,7 @@
               return this.__PROXY__.getTransactionStack(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.clear = function(...args) 
           
@@ -215,7 +215,7 @@
               return this.__PROXY__.clear(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.queryClosestXY = function(...args) 
           
@@ -225,7 +225,7 @@
               return this.__PROXY__.queryClosestXY(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.queryAllObjects = function(...args) 
           
@@ -235,7 +235,7 @@
               return this.__PROXY__.queryAllObjects(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.querySelectedLayers = function(...args) 
           
@@ -245,7 +245,7 @@
               return this.__PROXY__.querySelectedLayers(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.queryAllVisibleEntities = function(...args) 
           
@@ -255,7 +255,7 @@
               return this.__PROXY__.queryAllVisibleEntities(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.queryAllEntities = function(...args) 
           
@@ -265,7 +265,7 @@
               return this.__PROXY__.queryAllEntities(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.queryWorkingSetEntities = function(...args) 
           
@@ -275,7 +275,7 @@
               return this.__PROXY__.queryWorkingSetEntities(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.queryAllUcs = function(...args) 
           
@@ -285,7 +285,7 @@
               return this.__PROXY__.queryAllUcs(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.queryAllLayers = function(...args) 
           
@@ -295,7 +295,7 @@
               return this.__PROXY__.queryAllLayers(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.queryAllLayerStates = function(...args) 
           
@@ -305,7 +305,7 @@
               return this.__PROXY__.queryAllLayerStates(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.queryAllBlocks = function(...args) 
           
@@ -315,7 +315,7 @@
               return this.__PROXY__.queryAllBlocks(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.queryAllLayoutBlocks = function(...args) 
           
@@ -325,7 +325,7 @@
               return this.__PROXY__.queryAllLayoutBlocks(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.queryAllLayouts = function(...args) 
           
@@ -335,7 +335,7 @@
               return this.__PROXY__.queryAllLayouts(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.queryAllViews = function(...args) 
           
@@ -345,7 +345,7 @@
               return this.__PROXY__.queryAllViews(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.queryAllLinetypes = function(...args) 
           
@@ -355,7 +355,7 @@
               return this.__PROXY__.queryAllLinetypes(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.queryLayerEntities = function(...args) 
           
@@ -365,7 +365,7 @@
               return this.__PROXY__.queryLayerEntities(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.querySelectedLayerEntities = function(...args) 
           
@@ -375,7 +375,7 @@
               return this.__PROXY__.querySelectedLayerEntities(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.hasBlockEntities = function(...args) 
           
@@ -385,7 +385,7 @@
               return this.__PROXY__.hasBlockEntities(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.queryBlockEntities = function(...args) 
           
@@ -395,7 +395,7 @@
               return this.__PROXY__.queryBlockEntities(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.queryLayerBlockEntities = function(...args) 
           
@@ -405,7 +405,7 @@
               return this.__PROXY__.queryLayerBlockEntities(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.queryChildEntities = function(...args) 
           
@@ -415,7 +415,7 @@
               return this.__PROXY__.queryChildEntities(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.hasChildEntities = function(...args) 
           
@@ -425,7 +425,7 @@
               return this.__PROXY__.hasChildEntities(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.queryBlockReferences = function(...args) 
           
@@ -435,7 +435,7 @@
               return this.__PROXY__.queryBlockReferences(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.queryAllBlockReferences = function(...args) 
           
@@ -445,7 +445,7 @@
               return this.__PROXY__.queryAllBlockReferences(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.queryAllViewports = function(...args) 
           
@@ -455,7 +455,7 @@
               return this.__PROXY__.queryAllViewports(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.queryContainedEntities = function(...args) 
           
@@ -465,7 +465,7 @@
               return this.__PROXY__.queryContainedEntities(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.queryInfiniteEntities = function(...args) 
           
@@ -475,7 +475,7 @@
               return this.__PROXY__.queryInfiniteEntities(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.queryIntersectedEntitiesXYFast = function(...args) 
           
@@ -485,7 +485,7 @@
               return this.__PROXY__.queryIntersectedEntitiesXYFast(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.queryIntersectedShapesXYFast = function(...args) 
           
@@ -495,7 +495,7 @@
               return this.__PROXY__.queryIntersectedShapesXYFast(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.queryIntersectedEntitiesXY = function(...args) 
           
@@ -505,7 +505,7 @@
               return this.__PROXY__.queryIntersectedEntitiesXY(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.queryContainedEntitiesXY = function(...args) 
           
@@ -515,7 +515,7 @@
               return this.__PROXY__.queryContainedEntitiesXY(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.querySelectedEntities = function(...args) 
           
@@ -525,7 +525,7 @@
               return this.__PROXY__.querySelectedEntities(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.queryConnectedEntities = function(...args) 
           
@@ -535,7 +535,7 @@
               return this.__PROXY__.queryConnectedEntities(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.queryPropertyEditorObjects = function(...args) 
           
@@ -545,7 +545,7 @@
               return this.__PROXY__.queryPropertyEditorObjects(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.queryDocumentVariables = function(...args) 
           
@@ -555,7 +555,7 @@
               return this.__PROXY__.queryDocumentVariables(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.queryDocumentVariablesDirect = function(...args) 
           
@@ -565,7 +565,7 @@
               return this.__PROXY__.queryDocumentVariablesDirect(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.queryDimStyle = function(...args) 
           
@@ -575,7 +575,7 @@
               return this.__PROXY__.queryDimStyle(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.queryDimStyleDirect = function(...args) 
           
@@ -585,7 +585,7 @@
               return this.__PROXY__.queryDimStyleDirect(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.queryObject = function(...args) 
           
@@ -595,7 +595,7 @@
               return this.__PROXY__.queryObject(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.queryObjectDirect = function(...args) 
           
@@ -605,7 +605,7 @@
               return this.__PROXY__.queryObjectDirect(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.queryObjectCC = function(...args) 
           
@@ -615,7 +615,7 @@
               return this.__PROXY__.queryObjectCC(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.queryObjectByHandle = function(...args) 
           
@@ -625,7 +625,7 @@
               return this.__PROXY__.queryObjectByHandle(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.queryEntity = function(...args) 
           
@@ -635,7 +635,7 @@
               return this.__PROXY__.queryEntity(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.queryEntityDirect = function(...args) 
           
@@ -645,7 +645,7 @@
               return this.__PROXY__.queryEntityDirect(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.queryVisibleEntityDirect = function(...args) 
           
@@ -655,7 +655,7 @@
               return this.__PROXY__.queryVisibleEntityDirect(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.queryUcs = function(...args) 
           
@@ -665,7 +665,7 @@
               return this.__PROXY__.queryUcs(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.queryLayer = function(...args) 
           
@@ -675,7 +675,7 @@
               return this.__PROXY__.queryLayer(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.queryLayerDirect = function(...args) 
           
@@ -685,7 +685,7 @@
               return this.__PROXY__.queryLayerDirect(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.queryLayerState = function(...args) 
           
@@ -695,7 +695,7 @@
               return this.__PROXY__.queryLayerState(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.queryLayerStateDirect = function(...args) 
           
@@ -705,7 +705,7 @@
               return this.__PROXY__.queryLayerStateDirect(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.queryLayout = function(...args) 
           
@@ -715,7 +715,7 @@
               return this.__PROXY__.queryLayout(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.queryLayoutDirect = function(...args) 
           
@@ -725,7 +725,7 @@
               return this.__PROXY__.queryLayoutDirect(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.queryBlock = function(...args) 
           
@@ -735,7 +735,7 @@
               return this.__PROXY__.queryBlock(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.queryBlockDirect = function(...args) 
           
@@ -745,7 +745,7 @@
               return this.__PROXY__.queryBlockDirect(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.queryView = function(...args) 
           
@@ -755,7 +755,7 @@
               return this.__PROXY__.queryView(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.queryLinetype = function(...args) 
           
@@ -765,7 +765,7 @@
               return this.__PROXY__.queryLinetype(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.countSelectedEntities = function(...args) 
           
@@ -775,7 +775,7 @@
               return this.__PROXY__.countSelectedEntities(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.clearSelection = function(...args) 
           
@@ -785,7 +785,7 @@
               return this.__PROXY__.clearSelection(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.selectAllEntities = function(...args) 
           
@@ -795,7 +795,7 @@
               return this.__PROXY__.selectAllEntities(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.selectEntity = function(...args) 
           
@@ -805,7 +805,7 @@
               return this.__PROXY__.selectEntity(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.deselectEntity = function(...args) 
           
@@ -815,7 +815,7 @@
               return this.__PROXY__.deselectEntity(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.selectEntities = function(...args) 
           
@@ -825,7 +825,7 @@
               return this.__PROXY__.selectEntities(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.deselectEntities = function(...args) 
           
@@ -835,7 +835,7 @@
               return this.__PROXY__.deselectEntities(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.isSelected = function(...args) 
           
@@ -845,7 +845,7 @@
               return this.__PROXY__.isSelected(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.isSelectedWorkingSet = function(...args) 
           
@@ -855,7 +855,7 @@
               return this.__PROXY__.isSelectedWorkingSet(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.isLayerLocked = function(...args) 
           
@@ -865,7 +865,7 @@
               return this.__PROXY__.isLayerLocked(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.isParentLayerLocked = function(...args) 
           
@@ -875,7 +875,7 @@
               return this.__PROXY__.isParentLayerLocked(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.isEntity = function(...args) 
           
@@ -885,7 +885,7 @@
               return this.__PROXY__.isEntity(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.isEntityEditable = function(...args) 
           
@@ -895,7 +895,7 @@
               return this.__PROXY__.isEntityEditable(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.isLayerOff = function(...args) 
           
@@ -905,7 +905,7 @@
               return this.__PROXY__.isLayerOff(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.isLayerOffOrFrozen = function(...args) 
           
@@ -915,7 +915,7 @@
               return this.__PROXY__.isLayerOffOrFrozen(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.isLayerFrozen = function(...args) 
           
@@ -925,7 +925,7 @@
               return this.__PROXY__.isLayerFrozen(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.isLayerPlottable = function(...args) 
           
@@ -935,7 +935,7 @@
               return this.__PROXY__.isLayerPlottable(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.isLayerSnappable = function(...args) 
           
@@ -945,7 +945,7 @@
               return this.__PROXY__.isLayerSnappable(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.isParentLayerFrozen = function(...args) 
           
@@ -955,7 +955,7 @@
               return this.__PROXY__.isParentLayerFrozen(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.isBlockFrozen = function(...args) 
           
@@ -965,7 +965,7 @@
               return this.__PROXY__.isBlockFrozen(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.isLayoutBlock = function(...args) 
           
@@ -975,7 +975,7 @@
               return this.__PROXY__.isLayoutBlock(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.isEntityLayerFrozen = function(...args) 
           
@@ -985,7 +985,7 @@
               return this.__PROXY__.isEntityLayerFrozen(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.isEntityVisible = function(...args) 
           
@@ -995,7 +995,7 @@
               return this.__PROXY__.isEntityVisible(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.isParentLayerSnappable = function(...args) 
           
@@ -1005,7 +1005,7 @@
               return this.__PROXY__.isParentLayerSnappable(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.isParentLayerPlottable = function(...args) 
           
@@ -1015,7 +1015,7 @@
               return this.__PROXY__.isParentLayerPlottable(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.hasSelection = function(...args) 
           
@@ -1025,7 +1025,7 @@
               return this.__PROXY__.hasSelection(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.getBoundingBox = function(...args) 
           
@@ -1035,7 +1035,7 @@
               return this.__PROXY__.getBoundingBox(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.getSelectionBox = function(...args) 
           
@@ -1045,7 +1045,7 @@
               return this.__PROXY__.getSelectionBox(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.getEntitiesBox = function(...args) 
           
@@ -1055,7 +1055,7 @@
               return this.__PROXY__.getEntitiesBox(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.clearSpatialIndices = function(...args) 
           
@@ -1065,7 +1065,7 @@
               return this.__PROXY__.clearSpatialIndices(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.rebuildSpatialIndex = function(...args) 
           
@@ -1075,7 +1075,7 @@
               return this.__PROXY__.rebuildSpatialIndex(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.addToSpatialIndex = function(...args) 
           
@@ -1085,7 +1085,7 @@
               return this.__PROXY__.addToSpatialIndex(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.blockContainsReferences = function(...args) 
           
@@ -1095,7 +1095,7 @@
               return this.__PROXY__.blockContainsReferences(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.removeBlockFromSpatialIndex = function(...args) 
           
@@ -1105,7 +1105,7 @@
               return this.__PROXY__.removeBlockFromSpatialIndex(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.addBlockToSpatialIndex = function(...args) 
           
@@ -1115,7 +1115,7 @@
               return this.__PROXY__.addBlockToSpatialIndex(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.removeFromSpatialIndex = function(...args) 
           
@@ -1125,7 +1125,7 @@
               return this.__PROXY__.removeFromSpatialIndex(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.updateAllEntities = function(...args) 
           
@@ -1135,7 +1135,7 @@
               return this.__PROXY__.updateAllEntities(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.undo = function(...args) 
           
@@ -1145,7 +1145,7 @@
               return this.__PROXY__.undo(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.redo = function(...args) 
           
@@ -1155,7 +1155,7 @@
               return this.__PROXY__.redo(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.isUndoAvailable = function(...args) 
           
@@ -1165,7 +1165,7 @@
               return this.__PROXY__.isUndoAvailable(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.isRedoAvailable = function(...args) 
           
@@ -1175,7 +1175,7 @@
               return this.__PROXY__.isRedoAvailable(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.startTransactionGroup = function(...args) 
           
@@ -1185,7 +1185,7 @@
               return this.__PROXY__.startTransactionGroup(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.getTransactionGroup = function(...args) 
           
@@ -1195,7 +1195,7 @@
               return this.__PROXY__.getTransactionGroup(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.setAutoTransactionGroup = function(...args) 
           
@@ -1205,7 +1205,7 @@
               return this.__PROXY__.setAutoTransactionGroup(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.getAutoTransactionGroup = function(...args) 
           
@@ -1215,7 +1215,7 @@
               return this.__PROXY__.getAutoTransactionGroup(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.resetTransactionStack = function(...args) 
           
@@ -1225,7 +1225,7 @@
               return this.__PROXY__.resetTransactionStack(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.setFileName = function(...args) 
           
@@ -1235,7 +1235,7 @@
               return this.__PROXY__.setFileName(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.getFileName = function(...args) 
           
@@ -1245,7 +1245,7 @@
               return this.__PROXY__.getFileName(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.setFileVersion = function(...args) 
           
@@ -1255,7 +1255,7 @@
               return this.__PROXY__.setFileVersion(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.getFileVersion = function(...args) 
           
@@ -1265,7 +1265,7 @@
               return this.__PROXY__.getFileVersion(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.queryCurrentLayer = function(...args) 
           
@@ -1275,7 +1275,7 @@
               return this.__PROXY__.queryCurrentLayer(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.setCurrentLayer = function(...args) 
           
@@ -1285,7 +1285,7 @@
               return this.__PROXY__.setCurrentLayer(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.getCurrentLayerId = function(...args) 
           
@@ -1295,7 +1295,7 @@
               return this.__PROXY__.getCurrentLayerId(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.getCurrentLayerName = function(...args) 
           
@@ -1305,7 +1305,7 @@
               return this.__PROXY__.getCurrentLayerName(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.setCurrentColor = function(...args) 
           
@@ -1315,7 +1315,7 @@
               return this.__PROXY__.setCurrentColor(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.getCurrentColor = function(...args) 
           
@@ -1325,7 +1325,7 @@
               return this.__PROXY__.getCurrentColor(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.setCurrentLineweight = function(...args) 
           
@@ -1335,7 +1335,7 @@
               return this.__PROXY__.setCurrentLineweight(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.getCurrentLineweight = function(...args) 
           
@@ -1345,7 +1345,7 @@
               return this.__PROXY__.getCurrentLineweight(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.setCurrentLinetype = function(...args) 
           
@@ -1355,7 +1355,7 @@
               return this.__PROXY__.setCurrentLinetype(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.setCurrentLinetypePattern = function(...args) 
           
@@ -1365,7 +1365,7 @@
               return this.__PROXY__.setCurrentLinetypePattern(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.getCurrentLinetypeId = function(...args) 
           
@@ -1375,7 +1375,7 @@
               return this.__PROXY__.getCurrentLinetypeId(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.getCurrentLinetypePattern = function(...args) 
           
@@ -1385,7 +1385,7 @@
               return this.__PROXY__.getCurrentLinetypePattern(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.queryCurrentBlock = function(...args) 
           
@@ -1395,7 +1395,7 @@
               return this.__PROXY__.queryCurrentBlock(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.setCurrentBlock = function(...args) 
           
@@ -1405,7 +1405,7 @@
               return this.__PROXY__.setCurrentBlock(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.getCurrentBlockId = function(...args) 
           
@@ -1415,7 +1415,7 @@
               return this.__PROXY__.getCurrentBlockId(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.getCurrentBlockName = function(...args) 
           
@@ -1425,7 +1425,7 @@
               return this.__PROXY__.getCurrentBlockName(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.setCurrentViewport = function(...args) 
           
@@ -1435,7 +1435,7 @@
               return this.__PROXY__.setCurrentViewport(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.getCurrentViewportId = function(...args) 
           
@@ -1445,7 +1445,7 @@
               return this.__PROXY__.getCurrentViewportId(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.hasCurrentViewport = function(...args) 
           
@@ -1455,7 +1455,7 @@
               return this.__PROXY__.hasCurrentViewport(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.unsetCurrentViewport = function(...args) 
           
@@ -1465,7 +1465,7 @@
               return this.__PROXY__.unsetCurrentViewport(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.queryCurrentView = function(...args) 
           
@@ -1475,7 +1475,7 @@
               return this.__PROXY__.queryCurrentView(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.setCurrentView = function(...args) 
           
@@ -1485,7 +1485,7 @@
               return this.__PROXY__.setCurrentView(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.getCurrentViewId = function(...args) 
           
@@ -1495,7 +1495,7 @@
               return this.__PROXY__.getCurrentViewId(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.getTempBlockName = function(...args) 
           
@@ -1505,7 +1505,7 @@
               return this.__PROXY__.getTempBlockName(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.getBlockName = function(...args) 
           
@@ -1515,7 +1515,7 @@
               return this.__PROXY__.getBlockName(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.getBlockNameFromHandle = function(...args) 
           
@@ -1525,7 +1525,7 @@
               return this.__PROXY__.getBlockNameFromHandle(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.getBlockNameFromLayout = function(...args) 
           
@@ -1535,7 +1535,7 @@
               return this.__PROXY__.getBlockNameFromLayout(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.getBlockNames = function(...args) 
           
@@ -1545,7 +1545,7 @@
               return this.__PROXY__.getBlockNames(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.sortBlocks = function(...args) 
           
@@ -1555,7 +1555,7 @@
               return this.__PROXY__.sortBlocks(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.sortLayers = function(...args) 
           
@@ -1565,7 +1565,7 @@
               return this.__PROXY__.sortLayers(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.getLayerName = function(...args) 
           
@@ -1575,7 +1575,7 @@
               return this.__PROXY__.getLayerName(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.getLayerNames = function(...args) 
           
@@ -1585,7 +1585,7 @@
               return this.__PROXY__.getLayerNames(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.getLayerStateName = function(...args) 
           
@@ -1595,7 +1595,7 @@
               return this.__PROXY__.getLayerStateName(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.getLayerStateNames = function(...args) 
           
@@ -1605,7 +1605,7 @@
               return this.__PROXY__.getLayerStateNames(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.getLayoutName = function(...args) 
           
@@ -1615,7 +1615,7 @@
               return this.__PROXY__.getLayoutName(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.getViewNames = function(...args) 
           
@@ -1625,7 +1625,7 @@
               return this.__PROXY__.getViewNames(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.hasLayer = function(...args) 
           
@@ -1635,7 +1635,7 @@
               return this.__PROXY__.hasLayer(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.hasLayerStates = function(...args) 
           
@@ -1645,7 +1645,7 @@
               return this.__PROXY__.hasLayerStates(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.hasLayerState = function(...args) 
           
@@ -1655,7 +1655,7 @@
               return this.__PROXY__.hasLayerState(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.hasBlock = function(...args) 
           
@@ -1665,7 +1665,7 @@
               return this.__PROXY__.hasBlock(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.hasLayout = function(...args) 
           
@@ -1675,7 +1675,7 @@
               return this.__PROXY__.hasLayout(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.hasView = function(...args) 
           
@@ -1685,7 +1685,7 @@
               return this.__PROXY__.hasView(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.hasLinetype = function(...args) 
           
@@ -1695,7 +1695,7 @@
               return this.__PROXY__.hasLinetype(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.getLayerId = function(...args) 
           
@@ -1705,7 +1705,7 @@
               return this.__PROXY__.getLayerId(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.getLayer0Id = function(...args) 
           
@@ -1715,7 +1715,7 @@
               return this.__PROXY__.getLayer0Id(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.getLayerStateId = function(...args) 
           
@@ -1725,7 +1725,7 @@
               return this.__PROXY__.getLayerStateId(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.getBlockId = function(...args) 
           
@@ -1735,7 +1735,7 @@
               return this.__PROXY__.getBlockId(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.getBlockIdAuto = function(...args) 
           
@@ -1745,7 +1745,7 @@
               return this.__PROXY__.getBlockIdAuto(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.getModelSpaceBlockId = function(...args) 
           
@@ -1755,7 +1755,7 @@
               return this.__PROXY__.getModelSpaceBlockId(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.getLinetypeId = function(...args) 
           
@@ -1765,7 +1765,7 @@
               return this.__PROXY__.getLinetypeId(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.getLinetypeByLayerId = function(...args) 
           
@@ -1775,7 +1775,7 @@
               return this.__PROXY__.getLinetypeByLayerId(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.getLinetypeByBlockId = function(...args) 
           
@@ -1785,7 +1785,7 @@
               return this.__PROXY__.getLinetypeByBlockId(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.getLinetypeName = function(...args) 
           
@@ -1795,7 +1795,7 @@
               return this.__PROXY__.getLinetypeName(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.getLinetypeDescription = function(...args) 
           
@@ -1805,7 +1805,7 @@
               return this.__PROXY__.getLinetypeDescription(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.getLinetypeLabel = function(...args) 
           
@@ -1815,7 +1815,7 @@
               return this.__PROXY__.getLinetypeLabel(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.getLinetypeNames = function(...args) 
           
@@ -1825,7 +1825,7 @@
               return this.__PROXY__.getLinetypeNames(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.getLinetypePatterns = function(...args) 
           
@@ -1835,7 +1835,7 @@
               return this.__PROXY__.getLinetypePatterns(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.isByLayer = function(...args) 
           
@@ -1845,7 +1845,7 @@
               return this.__PROXY__.isByLayer(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.isByBlock = function(...args) 
           
@@ -1855,7 +1855,7 @@
               return this.__PROXY__.isByBlock(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.getMaxLineweight = function(...args) 
           
@@ -1865,7 +1865,7 @@
               return this.__PROXY__.getMaxLineweight(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.getVariables = function(...args) 
           
@@ -1875,7 +1875,7 @@
               return this.__PROXY__.getVariables(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.setVariable = function(...args) 
           
@@ -1885,7 +1885,7 @@
               return this.__PROXY__.setVariable(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.getVariable = function(...args) 
           
@@ -1895,7 +1895,7 @@
               return this.__PROXY__.getVariable(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.hasVariable = function(...args) 
           
@@ -1905,7 +1905,7 @@
               return this.__PROXY__.hasVariable(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.removeVariable = function(...args) 
           
@@ -1915,7 +1915,7 @@
               return this.__PROXY__.removeVariable(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.setKnownVariable = function(...args) 
           
@@ -1925,7 +1925,7 @@
               return this.__PROXY__.setKnownVariable(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.getKnownVariable = function(...args) 
           
@@ -1935,7 +1935,7 @@
               return this.__PROXY__.getKnownVariable(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.setUnit = function(...args) 
           
@@ -1945,7 +1945,7 @@
               return this.__PROXY__.setUnit(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.getUnit = function(...args) 
           
@@ -1955,7 +1955,7 @@
               return this.__PROXY__.getUnit(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.setMeasurement = function(...args) 
           
@@ -1965,7 +1965,7 @@
               return this.__PROXY__.setMeasurement(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.getMeasurement = function(...args) 
           
@@ -1975,7 +1975,7 @@
               return this.__PROXY__.getMeasurement(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.isMetric = function(...args) 
           
@@ -1985,7 +1985,7 @@
               return this.__PROXY__.isMetric(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.setDimensionFont = function(...args) 
           
@@ -1995,7 +1995,7 @@
               return this.__PROXY__.setDimensionFont(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.getDimensionFont = function(...args) 
           
@@ -2005,7 +2005,7 @@
               return this.__PROXY__.getDimensionFont(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.setLinetypeScale = function(...args) 
           
@@ -2015,7 +2015,7 @@
               return this.__PROXY__.setLinetypeScale(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.getLinetypeScale = function(...args) 
           
@@ -2025,7 +2025,7 @@
               return this.__PROXY__.getLinetypeScale(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.formatLinear = function(...args) 
           
@@ -2035,7 +2035,7 @@
               return this.__PROXY__.formatLinear(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.formatAngle = function(...args) 
           
@@ -2045,7 +2045,7 @@
               return this.__PROXY__.formatAngle(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.setLinearFormat = function(...args) 
           
@@ -2055,7 +2055,7 @@
               return this.__PROXY__.setLinearFormat(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.getLinearFormat = function(...args) 
           
@@ -2065,7 +2065,7 @@
               return this.__PROXY__.getLinearFormat(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.getLinearPrecision = function(...args) 
           
@@ -2075,7 +2075,7 @@
               return this.__PROXY__.getLinearPrecision(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.showLeadingZeroes = function(...args) 
           
@@ -2085,7 +2085,7 @@
               return this.__PROXY__.showLeadingZeroes(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.showTrailingZeroes = function(...args) 
           
@@ -2095,7 +2095,7 @@
               return this.__PROXY__.showTrailingZeroes(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.showLeadingZeroesAngle = function(...args) 
           
@@ -2105,7 +2105,7 @@
               return this.__PROXY__.showLeadingZeroesAngle(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.showTrailingZeroesAngle = function(...args) 
           
@@ -2115,7 +2115,7 @@
               return this.__PROXY__.showTrailingZeroesAngle(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.getAngleFormat = function(...args) 
           
@@ -2125,7 +2125,7 @@
               return this.__PROXY__.getAngleFormat(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.getAnglePrecision = function(...args) 
           
@@ -2135,7 +2135,7 @@
               return this.__PROXY__.getAnglePrecision(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.getDecimalSeparator = function(...args) 
           
@@ -2145,7 +2145,7 @@
               return this.__PROXY__.getDecimalSeparator(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.isModified = function(...args) 
           
@@ -2155,7 +2155,7 @@
               return this.__PROXY__.isModified(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.getLastModifiedDateTime = function(...args) 
           
@@ -2165,7 +2165,7 @@
               return this.__PROXY__.getLastModifiedDateTime(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.getLastModified = function(...args) 
           
@@ -2175,7 +2175,7 @@
               return this.__PROXY__.getLastModified(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.setModified = function(...args) 
           
@@ -2185,7 +2185,7 @@
               return this.__PROXY__.setModified(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.copyVariablesFrom = function(...args) 
           
@@ -2195,7 +2195,7 @@
               return this.__PROXY__.copyVariablesFrom(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.addAutoVariable = function(...args) 
           
@@ -2205,7 +2205,7 @@
               return this.__PROXY__.addAutoVariable(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.getAutoVariables = function(...args) 
           
@@ -2215,7 +2215,7 @@
               return this.__PROXY__.getAutoVariables(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.substituteAutoVariables = function(...args) 
           
@@ -2225,7 +2225,7 @@
               return this.__PROXY__.substituteAutoVariables(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.eval = function(...args) 
           
@@ -2235,7 +2235,7 @@
               return this.__PROXY__.eval(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.isEditingWorkingSet = function(...args) 
           
@@ -2245,7 +2245,7 @@
               return this.__PROXY__.isEditingWorkingSet(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.setIgnoreWorkingSet = function(...args) 
           
@@ -2255,7 +2255,7 @@
               return this.__PROXY__.setIgnoreWorkingSet(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.setNotifyListeners = function(...args) 
           
@@ -2265,7 +2265,7 @@
               return this.__PROXY__.setNotifyListeners(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.getNotifyListeners = function(...args) 
           
@@ -2275,7 +2275,7 @@
               return this.__PROXY__.getNotifyListeners(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.getClipboard = function(...args) 
           
@@ -2285,7 +2285,7 @@
               return this.__PROXY__.getClipboard(...args);
             
         };
-    
+        
         // function 
         RDocument.prototype.dump = function(...args) 
           
@@ -2295,7 +2295,7 @@
               return this.__PROXY__.dump(...args);
             
         };
-    
+        
 
       // static functions:
       

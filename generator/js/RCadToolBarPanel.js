@@ -147,7 +147,8 @@
               return this.__PROXY__.eventFilterSuper(...args);
             
         };
-    
+        RCadToolBarPanel.prototype.eventFilter.__SUPER__ = true;
+        
         // function 
         RCadToolBarPanel.prototype.setObjectName = function(...args) 
           
@@ -157,7 +158,7 @@
               return this.__PROXY__.setObjectName(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.isWidgetType = function(...args) 
           
@@ -167,7 +168,7 @@
               return this.__PROXY__.isWidgetType(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.isWindowType = function(...args) 
           
@@ -177,7 +178,7 @@
               return this.__PROXY__.isWindowType(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.signalsBlocked = function(...args) 
           
@@ -187,7 +188,7 @@
               return this.__PROXY__.signalsBlocked(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.blockSignals = function(...args) 
           
@@ -197,7 +198,7 @@
               return this.__PROXY__.blockSignals(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.findChild = function(...args) 
           
@@ -207,7 +208,7 @@
               return this.__PROXY__.findChild(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.children = function(...args) 
           
@@ -217,7 +218,7 @@
               return this.__PROXY__.children(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.installEventFilter = function(...args) 
           
@@ -227,7 +228,7 @@
               return this.__PROXY__.installEventFilter(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.removeEventFilter = function(...args) 
           
@@ -237,7 +238,7 @@
               return this.__PROXY__.removeEventFilter(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.dumpObjectTree = function(...args) 
           
@@ -247,7 +248,7 @@
               return this.__PROXY__.dumpObjectTree(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.dumpObjectInfo = function(...args) 
           
@@ -257,7 +258,7 @@
               return this.__PROXY__.dumpObjectInfo(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.setProperty = function(...args) 
           
@@ -267,7 +268,7 @@
               return this.__PROXY__.setProperty(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.property = function(...args) 
           
@@ -277,7 +278,7 @@
               return this.__PROXY__.property(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.dynamicPropertyNames = function(...args) 
           
@@ -287,7 +288,7 @@
               return this.__PROXY__.dynamicPropertyNames(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.parent = function(...args) 
           
@@ -297,7 +298,7 @@
               return this.__PROXY__.parent(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.deleteLater = function(...args) 
           
@@ -307,7 +308,7 @@
               return this.__PROXY__.deleteLater(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.devType = function(...args) 
           
@@ -317,7 +318,7 @@
               return this.__PROXY__.devType(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.createWinId = function(...args) 
           
@@ -327,7 +328,7 @@
               return this.__PROXY__.createWinId(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.isWindow = function(...args) 
           
@@ -337,7 +338,7 @@
               return this.__PROXY__.isWindow(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.isModal = function(...args) 
           
@@ -347,7 +348,7 @@
               return this.__PROXY__.isModal(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.setWindowModality = function(...args) 
           
@@ -357,7 +358,7 @@
               return this.__PROXY__.setWindowModality(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.isEnabled = function(...args) 
           
@@ -367,7 +368,7 @@
               return this.__PROXY__.isEnabled(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.isEnabledTo = function(...args) 
           
@@ -377,7 +378,7 @@
               return this.__PROXY__.isEnabledTo(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.setEnabled = function(...args) 
           
@@ -387,7 +388,7 @@
               return this.__PROXY__.setEnabled(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.setDisabled = function(...args) 
           
@@ -397,7 +398,7 @@
               return this.__PROXY__.setDisabled(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.setWindowModified = function(...args) 
           
@@ -407,7 +408,7 @@
               return this.__PROXY__.setWindowModified(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.setMinimumSize = function(...args) 
           
@@ -417,7 +418,7 @@
               return this.__PROXY__.setMinimumSize(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.setMaximumSize = function(...args) 
           
@@ -427,7 +428,7 @@
               return this.__PROXY__.setMaximumSize(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.setMinimumWidth = function(...args) 
           
@@ -437,7 +438,7 @@
               return this.__PROXY__.setMinimumWidth(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.setMinimumHeight = function(...args) 
           
@@ -447,7 +448,7 @@
               return this.__PROXY__.setMinimumHeight(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.setMaximumWidth = function(...args) 
           
@@ -457,7 +458,7 @@
               return this.__PROXY__.setMaximumWidth(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.setMaximumHeight = function(...args) 
           
@@ -467,7 +468,7 @@
               return this.__PROXY__.setMaximumHeight(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.setSizeIncrement = function(...args) 
           
@@ -477,7 +478,7 @@
               return this.__PROXY__.setSizeIncrement(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.setBaseSize = function(...args) 
           
@@ -487,7 +488,7 @@
               return this.__PROXY__.setBaseSize(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.setFixedSize = function(...args) 
           
@@ -497,7 +498,7 @@
               return this.__PROXY__.setFixedSize(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.setFixedWidth = function(...args) 
           
@@ -507,7 +508,7 @@
               return this.__PROXY__.setFixedWidth(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.setFixedHeight = function(...args) 
           
@@ -517,7 +518,7 @@
               return this.__PROXY__.setFixedHeight(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.mapToGlobal = function(...args) 
           
@@ -527,7 +528,7 @@
               return this.__PROXY__.mapToGlobal(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.mapFromGlobal = function(...args) 
           
@@ -537,7 +538,7 @@
               return this.__PROXY__.mapFromGlobal(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.mapToParent = function(...args) 
           
@@ -547,7 +548,7 @@
               return this.__PROXY__.mapToParent(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.mapFromParent = function(...args) 
           
@@ -557,7 +558,7 @@
               return this.__PROXY__.mapFromParent(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.mapTo = function(...args) 
           
@@ -567,7 +568,7 @@
               return this.__PROXY__.mapTo(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.mapFrom = function(...args) 
           
@@ -577,7 +578,7 @@
               return this.__PROXY__.mapFrom(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.window = function(...args) 
           
@@ -587,7 +588,7 @@
               return this.__PROXY__.window(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.nativeParentWidget = function(...args) 
           
@@ -597,7 +598,7 @@
               return this.__PROXY__.nativeParentWidget(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.topLevelWidget = function(...args) 
           
@@ -607,7 +608,7 @@
               return this.__PROXY__.topLevelWidget(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.setPalette = function(...args) 
           
@@ -617,7 +618,7 @@
               return this.__PROXY__.setPalette(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.setBackgroundRole = function(...args) 
           
@@ -627,7 +628,7 @@
               return this.__PROXY__.setBackgroundRole(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.backgroundRole = function(...args) 
           
@@ -637,7 +638,7 @@
               return this.__PROXY__.backgroundRole(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.setForegroundRole = function(...args) 
           
@@ -647,7 +648,7 @@
               return this.__PROXY__.setForegroundRole(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.foregroundRole = function(...args) 
           
@@ -657,7 +658,7 @@
               return this.__PROXY__.foregroundRole(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.setFont = function(...args) 
           
@@ -667,7 +668,7 @@
               return this.__PROXY__.setFont(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.fontInfo = function(...args) 
           
@@ -677,7 +678,7 @@
               return this.__PROXY__.fontInfo(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.setCursor = function(...args) 
           
@@ -687,7 +688,7 @@
               return this.__PROXY__.setCursor(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.unsetCursor = function(...args) 
           
@@ -697,7 +698,7 @@
               return this.__PROXY__.unsetCursor(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.setMouseTracking = function(...args) 
           
@@ -707,7 +708,7 @@
               return this.__PROXY__.setMouseTracking(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.hasMouseTracking = function(...args) 
           
@@ -717,7 +718,7 @@
               return this.__PROXY__.hasMouseTracking(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.underMouse = function(...args) 
           
@@ -727,7 +728,7 @@
               return this.__PROXY__.underMouse(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.setTabletTracking = function(...args) 
           
@@ -737,7 +738,7 @@
               return this.__PROXY__.setTabletTracking(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.hasTabletTracking = function(...args) 
           
@@ -747,7 +748,7 @@
               return this.__PROXY__.hasTabletTracking(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.setMask = function(...args) 
           
@@ -757,7 +758,7 @@
               return this.__PROXY__.setMask(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.mask = function(...args) 
           
@@ -767,7 +768,7 @@
               return this.__PROXY__.mask(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.clearMask = function(...args) 
           
@@ -777,7 +778,7 @@
               return this.__PROXY__.clearMask(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.grab = function(...args) 
           
@@ -787,7 +788,7 @@
               return this.__PROXY__.grab(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.grabGesture = function(...args) 
           
@@ -797,7 +798,7 @@
               return this.__PROXY__.grabGesture(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.ungrabGesture = function(...args) 
           
@@ -807,7 +808,7 @@
               return this.__PROXY__.ungrabGesture(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.setWindowTitle = function(...args) 
           
@@ -817,7 +818,7 @@
               return this.__PROXY__.setWindowTitle(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.setStyleSheet = function(...args) 
           
@@ -827,7 +828,7 @@
               return this.__PROXY__.setStyleSheet(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.setWindowIcon = function(...args) 
           
@@ -837,7 +838,7 @@
               return this.__PROXY__.setWindowIcon(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.setWindowIconText = function(...args) 
           
@@ -847,7 +848,7 @@
               return this.__PROXY__.setWindowIconText(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.setWindowRole = function(...args) 
           
@@ -857,7 +858,7 @@
               return this.__PROXY__.setWindowRole(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.windowRole = function(...args) 
           
@@ -867,7 +868,7 @@
               return this.__PROXY__.windowRole(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.setWindowFilePath = function(...args) 
           
@@ -877,7 +878,7 @@
               return this.__PROXY__.setWindowFilePath(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.setWindowOpacity = function(...args) 
           
@@ -887,7 +888,7 @@
               return this.__PROXY__.setWindowOpacity(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.isWindowModified = function(...args) 
           
@@ -897,7 +898,7 @@
               return this.__PROXY__.isWindowModified(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.setToolTip = function(...args) 
           
@@ -907,7 +908,7 @@
               return this.__PROXY__.setToolTip(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.setToolTipDuration = function(...args) 
           
@@ -917,7 +918,7 @@
               return this.__PROXY__.setToolTipDuration(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.setStatusTip = function(...args) 
           
@@ -927,7 +928,7 @@
               return this.__PROXY__.setStatusTip(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.setWhatsThis = function(...args) 
           
@@ -937,7 +938,7 @@
               return this.__PROXY__.setWhatsThis(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.setAccessibleName = function(...args) 
           
@@ -947,7 +948,7 @@
               return this.__PROXY__.setAccessibleName(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.setAccessibleDescription = function(...args) 
           
@@ -957,7 +958,7 @@
               return this.__PROXY__.setAccessibleDescription(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.setLayoutDirection = function(...args) 
           
@@ -967,7 +968,7 @@
               return this.__PROXY__.setLayoutDirection(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.unsetLayoutDirection = function(...args) 
           
@@ -977,7 +978,7 @@
               return this.__PROXY__.unsetLayoutDirection(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.setLocale = function(...args) 
           
@@ -987,7 +988,7 @@
               return this.__PROXY__.setLocale(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.unsetLocale = function(...args) 
           
@@ -997,7 +998,7 @@
               return this.__PROXY__.unsetLocale(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.isRightToLeft = function(...args) 
           
@@ -1007,7 +1008,7 @@
               return this.__PROXY__.isRightToLeft(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.isLeftToRight = function(...args) 
           
@@ -1017,7 +1018,7 @@
               return this.__PROXY__.isLeftToRight(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.activateWindow = function(...args) 
           
@@ -1027,7 +1028,7 @@
               return this.__PROXY__.activateWindow(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.clearFocus = function(...args) 
           
@@ -1037,7 +1038,7 @@
               return this.__PROXY__.clearFocus(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.setFocus = function(...args) 
           
@@ -1047,7 +1048,7 @@
               return this.__PROXY__.setFocus(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.setFocusPolicy = function(...args) 
           
@@ -1057,7 +1058,7 @@
               return this.__PROXY__.setFocusPolicy(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.hasFocus = function(...args) 
           
@@ -1067,7 +1068,7 @@
               return this.__PROXY__.hasFocus(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.setFocusProxy = function(...args) 
           
@@ -1077,7 +1078,7 @@
               return this.__PROXY__.setFocusProxy(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.focusProxy = function(...args) 
           
@@ -1087,7 +1088,7 @@
               return this.__PROXY__.focusProxy(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.setContextMenuPolicy = function(...args) 
           
@@ -1097,7 +1098,7 @@
               return this.__PROXY__.setContextMenuPolicy(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.grabMouse = function(...args) 
           
@@ -1107,7 +1108,7 @@
               return this.__PROXY__.grabMouse(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.releaseMouse = function(...args) 
           
@@ -1117,7 +1118,7 @@
               return this.__PROXY__.releaseMouse(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.grabKeyboard = function(...args) 
           
@@ -1127,7 +1128,7 @@
               return this.__PROXY__.grabKeyboard(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.releaseKeyboard = function(...args) 
           
@@ -1137,7 +1138,7 @@
               return this.__PROXY__.releaseKeyboard(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.grabShortcut = function(...args) 
           
@@ -1147,7 +1148,7 @@
               return this.__PROXY__.grabShortcut(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.releaseShortcut = function(...args) 
           
@@ -1157,7 +1158,7 @@
               return this.__PROXY__.releaseShortcut(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.setShortcutEnabled = function(...args) 
           
@@ -1167,7 +1168,7 @@
               return this.__PROXY__.setShortcutEnabled(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.setShortcutAutoRepeat = function(...args) 
           
@@ -1177,7 +1178,7 @@
               return this.__PROXY__.setShortcutAutoRepeat(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.setUpdatesEnabled = function(...args) 
           
@@ -1187,7 +1188,7 @@
               return this.__PROXY__.setUpdatesEnabled(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.update = function(...args) 
           
@@ -1197,7 +1198,7 @@
               return this.__PROXY__.update(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.repaint = function(...args) 
           
@@ -1207,7 +1208,7 @@
               return this.__PROXY__.repaint(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.setVisible = function(...args) 
           
@@ -1217,7 +1218,7 @@
               return this.__PROXY__.setVisible(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.setHidden = function(...args) 
           
@@ -1227,7 +1228,7 @@
               return this.__PROXY__.setHidden(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.show = function(...args) 
           
@@ -1237,7 +1238,7 @@
               return this.__PROXY__.show(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.hide = function(...args) 
           
@@ -1247,7 +1248,7 @@
               return this.__PROXY__.hide(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.showMinimized = function(...args) 
           
@@ -1257,7 +1258,7 @@
               return this.__PROXY__.showMinimized(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.showMaximized = function(...args) 
           
@@ -1267,7 +1268,7 @@
               return this.__PROXY__.showMaximized(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.showFullScreen = function(...args) 
           
@@ -1277,7 +1278,7 @@
               return this.__PROXY__.showFullScreen(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.showNormal = function(...args) 
           
@@ -1287,7 +1288,7 @@
               return this.__PROXY__.showNormal(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.close = function(...args) 
           
@@ -1297,7 +1298,7 @@
               return this.__PROXY__.close(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.raise = function(...args) 
           
@@ -1307,7 +1308,7 @@
               return this.__PROXY__.raise(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.lower = function(...args) 
           
@@ -1317,7 +1318,7 @@
               return this.__PROXY__.lower(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.stackUnder = function(...args) 
           
@@ -1327,7 +1328,7 @@
               return this.__PROXY__.stackUnder(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.move = function(...args) 
           
@@ -1337,7 +1338,7 @@
               return this.__PROXY__.move(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.resize = function(...args) 
           
@@ -1347,7 +1348,7 @@
               return this.__PROXY__.resize(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.setGeometry = function(...args) 
           
@@ -1357,7 +1358,7 @@
               return this.__PROXY__.setGeometry(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.saveGeometry = function(...args) 
           
@@ -1367,7 +1368,7 @@
               return this.__PROXY__.saveGeometry(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.restoreGeometry = function(...args) 
           
@@ -1377,7 +1378,7 @@
               return this.__PROXY__.restoreGeometry(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.adjustSize = function(...args) 
           
@@ -1387,7 +1388,7 @@
               return this.__PROXY__.adjustSize(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.isVisible = function(...args) 
           
@@ -1397,7 +1398,7 @@
               return this.__PROXY__.isVisible(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.isVisibleTo = function(...args) 
           
@@ -1407,7 +1408,7 @@
               return this.__PROXY__.isVisibleTo(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.isHidden = function(...args) 
           
@@ -1417,7 +1418,7 @@
               return this.__PROXY__.isHidden(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.isMinimized = function(...args) 
           
@@ -1427,7 +1428,7 @@
               return this.__PROXY__.isMinimized(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.isMaximized = function(...args) 
           
@@ -1437,7 +1438,7 @@
               return this.__PROXY__.isMaximized(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.isFullScreen = function(...args) 
           
@@ -1447,7 +1448,7 @@
               return this.__PROXY__.isFullScreen(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.windowState = function(...args) 
           
@@ -1457,7 +1458,7 @@
               return this.__PROXY__.windowState(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.setWindowState = function(...args) 
           
@@ -1467,7 +1468,7 @@
               return this.__PROXY__.setWindowState(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.overrideWindowState = function(...args) 
           
@@ -1477,7 +1478,7 @@
               return this.__PROXY__.overrideWindowState(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.setSizePolicy = function(...args) 
           
@@ -1487,7 +1488,7 @@
               return this.__PROXY__.setSizePolicy(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.heightForWidth = function(...args) 
           
@@ -1497,7 +1498,7 @@
               return this.__PROXY__.heightForWidth(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.hasHeightForWidth = function(...args) 
           
@@ -1507,7 +1508,7 @@
               return this.__PROXY__.hasHeightForWidth(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.visibleRegion = function(...args) 
           
@@ -1517,7 +1518,7 @@
               return this.__PROXY__.visibleRegion(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.setContentsMargins = function(...args) 
           
@@ -1527,7 +1528,7 @@
               return this.__PROXY__.setContentsMargins(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.contentsMargins = function(...args) 
           
@@ -1537,7 +1538,7 @@
               return this.__PROXY__.contentsMargins(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.contentsRect = function(...args) 
           
@@ -1547,7 +1548,7 @@
               return this.__PROXY__.contentsRect(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.layout = function(...args) 
           
@@ -1557,7 +1558,7 @@
               return this.__PROXY__.layout(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.setLayout = function(...args) 
           
@@ -1567,7 +1568,7 @@
               return this.__PROXY__.setLayout(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.updateGeometry = function(...args) 
           
@@ -1577,7 +1578,7 @@
               return this.__PROXY__.updateGeometry(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.setParent = function(...args) 
           
@@ -1587,7 +1588,7 @@
               return this.__PROXY__.setParent(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.scroll = function(...args) 
           
@@ -1597,7 +1598,7 @@
               return this.__PROXY__.scroll(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.focusWidget = function(...args) 
           
@@ -1607,7 +1608,7 @@
               return this.__PROXY__.focusWidget(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.nextInFocusChain = function(...args) 
           
@@ -1617,7 +1618,7 @@
               return this.__PROXY__.nextInFocusChain(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.previousInFocusChain = function(...args) 
           
@@ -1627,7 +1628,7 @@
               return this.__PROXY__.previousInFocusChain(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.setAcceptDrops = function(...args) 
           
@@ -1637,7 +1638,7 @@
               return this.__PROXY__.setAcceptDrops(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.addActions = function(...args) 
           
@@ -1647,7 +1648,7 @@
               return this.__PROXY__.addActions(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.insertActions = function(...args) 
           
@@ -1657,7 +1658,7 @@
               return this.__PROXY__.insertActions(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.actions = function(...args) 
           
@@ -1667,7 +1668,7 @@
               return this.__PROXY__.actions(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.parentWidget = function(...args) 
           
@@ -1677,7 +1678,7 @@
               return this.__PROXY__.parentWidget(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.setWindowFlags = function(...args) 
           
@@ -1687,7 +1688,7 @@
               return this.__PROXY__.setWindowFlags(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.windowFlags = function(...args) 
           
@@ -1697,7 +1698,7 @@
               return this.__PROXY__.windowFlags(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.setWindowFlag = function(...args) 
           
@@ -1707,7 +1708,7 @@
               return this.__PROXY__.setWindowFlag(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.overrideWindowFlags = function(...args) 
           
@@ -1717,7 +1718,7 @@
               return this.__PROXY__.overrideWindowFlags(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.windowType = function(...args) 
           
@@ -1727,7 +1728,7 @@
               return this.__PROXY__.windowType(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.childAt = function(...args) 
           
@@ -1737,7 +1738,7 @@
               return this.__PROXY__.childAt(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.setAttribute = function(...args) 
           
@@ -1747,7 +1748,7 @@
               return this.__PROXY__.setAttribute(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.testAttribute = function(...args) 
           
@@ -1757,7 +1758,7 @@
               return this.__PROXY__.testAttribute(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.ensurePolished = function(...args) 
           
@@ -1767,7 +1768,7 @@
               return this.__PROXY__.ensurePolished(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.isAncestorOf = function(...args) 
           
@@ -1777,7 +1778,7 @@
               return this.__PROXY__.isAncestorOf(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.setAutoFillBackground = function(...args) 
           
@@ -1787,7 +1788,7 @@
               return this.__PROXY__.setAutoFillBackground(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.event = function(...args) 
           
@@ -1797,7 +1798,7 @@
               return this.__PROXY__.event(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.mousePressEvent = function(...args) 
           
@@ -1807,7 +1808,8 @@
               return this.__PROXY__.mousePressEventSuper(...args);
             
         };
-    
+        RCadToolBarPanel.prototype.mousePressEvent.__SUPER__ = true;
+        
         // function 
         RCadToolBarPanel.prototype.mouseReleaseEvent = function(...args) 
           
@@ -1817,7 +1819,8 @@
               return this.__PROXY__.mouseReleaseEventSuper(...args);
             
         };
-    
+        RCadToolBarPanel.prototype.mouseReleaseEvent.__SUPER__ = true;
+        
         // function 
         RCadToolBarPanel.prototype.mouseDoubleClickEvent = function(...args) 
           
@@ -1827,7 +1830,7 @@
               return this.__PROXY__.mouseDoubleClickEvent(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.mouseMoveEvent = function(...args) 
           
@@ -1837,7 +1840,8 @@
               return this.__PROXY__.mouseMoveEventSuper(...args);
             
         };
-    
+        RCadToolBarPanel.prototype.mouseMoveEvent.__SUPER__ = true;
+        
         // function 
         RCadToolBarPanel.prototype.wheelEvent = function(...args) 
           
@@ -1847,7 +1851,7 @@
               return this.__PROXY__.wheelEvent(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.keyPressEvent = function(...args) 
           
@@ -1857,7 +1861,7 @@
               return this.__PROXY__.keyPressEvent(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.keyReleaseEvent = function(...args) 
           
@@ -1867,7 +1871,7 @@
               return this.__PROXY__.keyReleaseEvent(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.focusInEvent = function(...args) 
           
@@ -1877,7 +1881,7 @@
               return this.__PROXY__.focusInEvent(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.focusOutEvent = function(...args) 
           
@@ -1887,7 +1891,7 @@
               return this.__PROXY__.focusOutEvent(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.enterEvent = function(...args) 
           
@@ -1897,7 +1901,7 @@
               return this.__PROXY__.enterEvent(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.leaveEvent = function(...args) 
           
@@ -1907,7 +1911,7 @@
               return this.__PROXY__.leaveEvent(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.paintEvent = function(...args) 
           
@@ -1917,7 +1921,8 @@
               return this.__PROXY__.paintEventSuper(...args);
             
         };
-    
+        RCadToolBarPanel.prototype.paintEvent.__SUPER__ = true;
+        
         // function 
         RCadToolBarPanel.prototype.moveEvent = function(...args) 
           
@@ -1927,7 +1932,7 @@
               return this.__PROXY__.moveEvent(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.resizeEvent = function(...args) 
           
@@ -1937,7 +1942,8 @@
               return this.__PROXY__.resizeEventSuper(...args);
             
         };
-    
+        RCadToolBarPanel.prototype.resizeEvent.__SUPER__ = true;
+        
         // function 
         RCadToolBarPanel.prototype.closeEvent = function(...args) 
           
@@ -1947,7 +1953,7 @@
               return this.__PROXY__.closeEvent(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.tabletEvent = function(...args) 
           
@@ -1957,7 +1963,7 @@
               return this.__PROXY__.tabletEvent(...args);
             
         };
-    
+        
       // function 
       RCadToolBarPanel.prototype.actionEvent = function() 
         
@@ -1999,7 +2005,7 @@
               return this.__PROXY__.dragEnterEvent(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.dragMoveEvent = function(...args) 
           
@@ -2009,7 +2015,7 @@
               return this.__PROXY__.dragMoveEvent(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.dragLeaveEvent = function(...args) 
           
@@ -2019,7 +2025,7 @@
               return this.__PROXY__.dragLeaveEvent(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.dropEvent = function(...args) 
           
@@ -2029,7 +2035,7 @@
               return this.__PROXY__.dropEvent(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.showEvent = function(...args) 
           
@@ -2039,7 +2045,7 @@
               return this.__PROXY__.showEvent(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.hideEvent = function(...args) 
           
@@ -2049,7 +2055,7 @@
               return this.__PROXY__.hideEvent(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.nativeEvent = function(...args) 
           
@@ -2059,7 +2065,7 @@
               return this.__PROXY__.nativeEvent(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.changeEvent = function(...args) 
           
@@ -2069,7 +2075,7 @@
               return this.__PROXY__.changeEvent(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.metric = function(...args) 
           
@@ -2079,7 +2085,7 @@
               return this.__PROXY__.metric(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.initPainter = function(...args) 
           
@@ -2089,7 +2095,7 @@
               return this.__PROXY__.initPainter(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.redirected = function(...args) 
           
@@ -2099,7 +2105,7 @@
               return this.__PROXY__.redirected(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.sharedPainter = function(...args) 
           
@@ -2109,7 +2115,7 @@
               return this.__PROXY__.sharedPainter(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.inputMethodEvent = function(...args) 
           
@@ -2119,7 +2125,7 @@
               return this.__PROXY__.inputMethodEvent(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.inputMethodQuery = function(...args) 
           
@@ -2129,7 +2135,7 @@
               return this.__PROXY__.inputMethodQuery(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.setInputMethodHints = function(...args) 
           
@@ -2139,7 +2145,7 @@
               return this.__PROXY__.setInputMethodHints(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.updateMicroFocus = function(...args) 
           
@@ -2149,7 +2155,7 @@
               return this.__PROXY__.updateMicroFocus(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.create = function(...args) 
           
@@ -2159,7 +2165,7 @@
               return this.__PROXY__.create(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.destroy = function(...args) 
           
@@ -2169,7 +2175,7 @@
               return this.__PROXY__.destroy(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.focusNextPrevChild = function(...args) 
           
@@ -2179,7 +2185,7 @@
               return this.__PROXY__.focusNextPrevChild(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.focusNextChild = function(...args) 
           
@@ -2189,7 +2195,7 @@
               return this.__PROXY__.focusNextChild(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.focusPreviousChild = function(...args) 
           
@@ -2199,7 +2205,7 @@
               return this.__PROXY__.focusPreviousChild(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.setBackingStore = function(...args) 
           
@@ -2209,7 +2215,7 @@
               return this.__PROXY__.setBackingStore(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.testAttribute_helper = function(...args) 
           
@@ -2219,7 +2225,7 @@
               return this.__PROXY__.testAttribute_helper(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.takeLayout = function(...args) 
           
@@ -2229,7 +2235,7 @@
               return this.__PROXY__.takeLayout(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.qt_mac_is_metal = function(...args) 
           
@@ -2239,7 +2245,7 @@
               return this.__PROXY__.qt_mac_is_metal(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.qt_qwidget_data = function(...args) 
           
@@ -2249,7 +2255,7 @@
               return this.__PROXY__.qt_qwidget_data(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.qt_widget_private = function(...args) 
           
@@ -2259,7 +2265,7 @@
               return this.__PROXY__.qt_widget_private(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.addAction = function(...args) 
           
@@ -2269,7 +2275,7 @@
               return this.__PROXY__.addAction(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.insertAction = function(...args) 
           
@@ -2279,7 +2285,7 @@
               return this.__PROXY__.insertAction(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.actionAdded = function(...args) 
           
@@ -2289,7 +2295,7 @@
               return this.__PROXY__.actionAdded(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.setBackMenuName = function(...args) 
           
@@ -2299,7 +2305,7 @@
               return this.__PROXY__.setBackMenuName(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.getButtonName = function(...args) 
           
@@ -2309,7 +2315,7 @@
               return this.__PROXY__.getButtonName(...args);
             
         };
-    
+        
         // function 
         RCadToolBarPanel.prototype.removeAction = function(...args) 
           
@@ -2319,7 +2325,7 @@
               return this.__PROXY__.removeAction(...args);
             
         };
-    
+        
 
       // static functions:
       

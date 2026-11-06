@@ -105,7 +105,7 @@
               return this.__PROXY__.updateModifiedListener(...args);
             
         };
-    
+        
 
       // static functions:
       RModifiedListener.prototype.isNullWrapper = function() {

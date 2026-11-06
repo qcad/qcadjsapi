@@ -105,7 +105,7 @@
               return this.__PROXY__.preExportEvent(...args);
             
         };
-    
+        
         // function 
         RExportListener.prototype.postExportEvent = function(...args) 
           
@@ -115,7 +115,7 @@
               return this.__PROXY__.postExportEvent(...args);
             
         };
-    
+        
         // function 
         RExportListener.prototype.endOfExportEvent = function(...args) 
           
@@ -125,7 +125,7 @@
               return this.__PROXY__.endOfExportEvent(...args);
             
         };
-    
+        
 
       // static functions:
       RExportListener.prototype.isNullWrapper = function() {

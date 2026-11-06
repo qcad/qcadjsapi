@@ -180,6 +180,8 @@ RClipboardOperation_Wrapper::RClipboardOperation_Wrapper
         // TODO
         //connect(wrapped, SIGNAL(triggered(bool)), this, SLOT(triggeredEmitter(bool)));
         initConnections();
+
+        
         return;
 
       

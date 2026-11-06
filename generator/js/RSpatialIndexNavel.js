@@ -138,7 +138,7 @@
               return this.__PROXY__.bulkLoadSimple(...args);
             
         };
-    
+        
         // function 
         RSpatialIndexNavel.prototype.queryContainedIds = function(...args) 
           
@@ -148,7 +148,7 @@
               return this.__PROXY__.queryContainedIds(...args);
             
         };
-    
+        
         // function 
         RSpatialIndexNavel.prototype.create = function(...args) 
           
@@ -158,7 +158,7 @@
               return this.__PROXY__.create(...args);
             
         };
-    
+        
         // function 
         RSpatialIndexNavel.prototype.clear = function(...args) 
           
@@ -168,7 +168,7 @@
               return this.__PROXY__.clear(...args);
             
         };
-    
+        
         // function 
         RSpatialIndexNavel.prototype.addToIndex = function(...args) 
           
@@ -178,7 +178,7 @@
               return this.__PROXY__.addToIndex(...args);
             
         };
-    
+        
         // function 
         RSpatialIndexNavel.prototype.removeFromIndex = function(...args) 
           
@@ -188,7 +188,7 @@
               return this.__PROXY__.removeFromIndex(...args);
             
         };
-    
+        
         // function 
         RSpatialIndexNavel.prototype.queryIntersectedSimple = function(...args) 
           
@@ -198,7 +198,7 @@
               return this.__PROXY__.queryIntersectedSimple(...args);
             
         };
-    
+        
         // function 
         RSpatialIndexNavel.prototype.queryContained = function(...args) 
           
@@ -208,7 +208,7 @@
               return this.__PROXY__.queryContained(...args);
             
         };
-    
+        
         // function 
         RSpatialIndexNavel.prototype.queryNearestNeighbor = function(...args) 
           
@@ -218,7 +218,7 @@
               return this.__PROXY__.queryNearestNeighbor(...args);
             
         };
-    
+        
 
       // static functions:
       RSpatialIndexNavel.prototype.isNullWrapper = function() {

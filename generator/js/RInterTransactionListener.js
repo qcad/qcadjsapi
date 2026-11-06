@@ -105,7 +105,7 @@
               return this.__PROXY__.updateInterTransactionListener(...args);
             
         };
-    
+        
 
       // static functions:
       RInterTransactionListener.prototype.isNullWrapper = function() {

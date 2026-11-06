@@ -168,7 +168,7 @@
               return this.__PROXY__.getDocument(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.setDocument = function(...args) 
           
@@ -178,7 +178,7 @@
               return this.__PROXY__.setDocument(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.isPointType = function(...args) 
           
@@ -188,7 +188,7 @@
               return this.__PROXY__.isPointType(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.getClosestSubEntityId = function(...args) 
           
@@ -198,7 +198,7 @@
               return this.__PROXY__.getClosestSubEntityId(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.getClosestShape = function(...args) 
           
@@ -208,7 +208,7 @@
               return this.__PROXY__.getClosestShape(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.copyAttributesFrom = function(...args) 
           
@@ -218,7 +218,7 @@
               return this.__PROXY__.copyAttributesFrom(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.setZ = function(...args) 
           
@@ -228,7 +228,7 @@
               return this.__PROXY__.setZ(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.getBoundingBoxes = function(...args) 
           
@@ -238,7 +238,7 @@
               return this.__PROXY__.getBoundingBoxes(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.getHull = function(...args) 
           
@@ -248,7 +248,7 @@
               return this.__PROXY__.getHull(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.isUpdatesEnabled = function(...args) 
           
@@ -258,7 +258,7 @@
               return this.__PROXY__.isUpdatesEnabled(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.setUpdatesEnabled = function(...args) 
           
@@ -268,7 +268,7 @@
               return this.__PROXY__.setUpdatesEnabled(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.cloneOnChange = function(...args) 
           
@@ -278,7 +278,7 @@
               return this.__PROXY__.cloneOnChange(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.isSelected = function(...args) 
           
@@ -288,7 +288,7 @@
               return this.__PROXY__.isSelected(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.setSelected = function(...args) 
           
@@ -298,7 +298,7 @@
               return this.__PROXY__.setSelected(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.isSelectedWorkingSet = function(...args) 
           
@@ -308,7 +308,7 @@
               return this.__PROXY__.isSelectedWorkingSet(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.setSelectedWorkingSet = function(...args) 
           
@@ -318,7 +318,7 @@
               return this.__PROXY__.setSelectedWorkingSet(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.getDrawOrder = function(...args) 
           
@@ -328,7 +328,7 @@
               return this.__PROXY__.getDrawOrder(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.setDrawOrder = function(...args) 
           
@@ -338,7 +338,7 @@
               return this.__PROXY__.setDrawOrder(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.setLayerId = function(...args) 
           
@@ -348,7 +348,7 @@
               return this.__PROXY__.setLayerId(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.getLayerId = function(...args) 
           
@@ -358,7 +358,7 @@
               return this.__PROXY__.getLayerId(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.setLayerName = function(...args) 
           
@@ -368,7 +368,7 @@
               return this.__PROXY__.setLayerName(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.getLayerName = function(...args) 
           
@@ -378,7 +378,7 @@
               return this.__PROXY__.getLayerName(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.setBlockId = function(...args) 
           
@@ -388,7 +388,7 @@
               return this.__PROXY__.setBlockId(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.getBlockId = function(...args) 
           
@@ -398,7 +398,7 @@
               return this.__PROXY__.getBlockId(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.setParentId = function(...args) 
           
@@ -408,7 +408,7 @@
               return this.__PROXY__.setParentId(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.getParentId = function(...args) 
           
@@ -418,7 +418,7 @@
               return this.__PROXY__.getParentId(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.getBlockName = function(...args) 
           
@@ -428,7 +428,7 @@
               return this.__PROXY__.getBlockName(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.setLinetypeId = function(...args) 
           
@@ -438,7 +438,7 @@
               return this.__PROXY__.setLinetypeId(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.getLinetypeId = function(...args) 
           
@@ -448,7 +448,7 @@
               return this.__PROXY__.getLinetypeId(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.setLinetypePattern = function(...args) 
           
@@ -458,7 +458,7 @@
               return this.__PROXY__.setLinetypePattern(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.getLinetypePattern = function(...args) 
           
@@ -468,7 +468,7 @@
               return this.__PROXY__.getLinetypePattern(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.setLinetypeScale = function(...args) 
           
@@ -478,7 +478,7 @@
               return this.__PROXY__.setLinetypeScale(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.getLinetypeScale = function(...args) 
           
@@ -488,7 +488,7 @@
               return this.__PROXY__.getLinetypeScale(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.getLineweight = function(...args) 
           
@@ -498,7 +498,7 @@
               return this.__PROXY__.getLineweight(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.setLineweight = function(...args) 
           
@@ -508,7 +508,7 @@
               return this.__PROXY__.setLineweight(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.setColor = function(...args) 
           
@@ -518,7 +518,7 @@
               return this.__PROXY__.setColor(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.getColor = function(...args) 
           
@@ -528,7 +528,7 @@
               return this.__PROXY__.getColor(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.getDisplayColor = function(...args) 
           
@@ -538,7 +538,7 @@
               return this.__PROXY__.getDisplayColor(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.getInternalReferencePoints = function(...args) 
           
@@ -548,7 +548,7 @@
               return this.__PROXY__.getInternalReferencePoints(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.getEndPoints = function(...args) 
           
@@ -558,7 +558,7 @@
               return this.__PROXY__.getEndPoints(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.getMiddlePoints = function(...args) 
           
@@ -568,7 +568,7 @@
               return this.__PROXY__.getMiddlePoints(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.getCenterPoints = function(...args) 
           
@@ -578,7 +578,7 @@
               return this.__PROXY__.getCenterPoints(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.getArcReferencePoints = function(...args) 
           
@@ -588,7 +588,7 @@
               return this.__PROXY__.getArcReferencePoints(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.getPointsWithDistanceToEnd = function(...args) 
           
@@ -598,7 +598,7 @@
               return this.__PROXY__.getPointsWithDistanceToEnd(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.getClosestPointOnEntity = function(...args) 
           
@@ -608,7 +608,7 @@
               return this.__PROXY__.getClosestPointOnEntity(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.getIntersectionPoints = function(...args) 
           
@@ -618,7 +618,7 @@
               return this.__PROXY__.getIntersectionPoints(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.getVectorTo = function(...args) 
           
@@ -628,7 +628,7 @@
               return this.__PROXY__.getVectorTo(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.isInside = function(...args) 
           
@@ -638,7 +638,7 @@
               return this.__PROXY__.isInside(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.isOnEntity = function(...args) 
           
@@ -648,7 +648,7 @@
               return this.__PROXY__.isOnEntity(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.flipHorizontal = function(...args) 
           
@@ -658,7 +658,7 @@
               return this.__PROXY__.flipHorizontal(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.flipVertical = function(...args) 
           
@@ -668,7 +668,7 @@
               return this.__PROXY__.flipVertical(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.stretch = function(...args) 
           
@@ -678,7 +678,7 @@
               return this.__PROXY__.stretch(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.setAutoUpdatesBlocked = function(...args) 
           
@@ -688,7 +688,7 @@
               return this.__PROXY__.setAutoUpdatesBlocked(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.getBoundingBox = function(...args) 
           
@@ -698,7 +698,7 @@
               return this.__PROXY__.getBoundingBox(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.render = function(...args) 
           
@@ -708,7 +708,7 @@
               return this.__PROXY__.render(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.updateBoundingBox = function(...args) 
           
@@ -718,7 +718,7 @@
               return this.__PROXY__.updateBoundingBox(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.updateTextPositionCenter = function(...args) 
           
@@ -728,7 +728,7 @@
               return this.__PROXY__.updateTextPositionCenter(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.updateTextPositionSide = function(...args) 
           
@@ -738,7 +738,7 @@
               return this.__PROXY__.updateTextPositionSide(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.updateTextData = function(...args) 
           
@@ -748,7 +748,7 @@
               return this.__PROXY__.updateTextData(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.updateShapes = function(...args) 
           
@@ -758,7 +758,7 @@
               return this.__PROXY__.updateShapes(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.updateArrowPos1 = function(...args) 
           
@@ -768,7 +768,7 @@
               return this.__PROXY__.updateArrowPos1(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.updateArrowPos2 = function(...args) 
           
@@ -778,7 +778,7 @@
               return this.__PROXY__.updateArrowPos2(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.clearStyleOverrides = function(...args) 
           
@@ -788,7 +788,7 @@
               return this.__PROXY__.clearStyleOverrides(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.getShapes = function(...args) 
           
@@ -798,7 +798,7 @@
               return this.__PROXY__.getShapes(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.getPointOnEntity = function(...args) 
           
@@ -808,7 +808,7 @@
               return this.__PROXY__.getPointOnEntity(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.setDefinitionPoint = function(...args) 
           
@@ -818,7 +818,7 @@
               return this.__PROXY__.setDefinitionPoint(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.getDefinitionPoint = function(...args) 
           
@@ -828,7 +828,7 @@
               return this.__PROXY__.getDefinitionPoint(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.setText = function(...args) 
           
@@ -838,7 +838,7 @@
               return this.__PROXY__.setText(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.getText = function(...args) 
           
@@ -848,7 +848,7 @@
               return this.__PROXY__.getText(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.setUpperTolerance = function(...args) 
           
@@ -858,7 +858,7 @@
               return this.__PROXY__.setUpperTolerance(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.setLowerTolerance = function(...args) 
           
@@ -868,7 +868,7 @@
               return this.__PROXY__.setLowerTolerance(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.setTextPosition = function(...args) 
           
@@ -878,7 +878,7 @@
               return this.__PROXY__.setTextPosition(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.getTextPosition = function(...args) 
           
@@ -888,7 +888,7 @@
               return this.__PROXY__.getTextPosition(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.setFontName = function(...args) 
           
@@ -898,7 +898,7 @@
               return this.__PROXY__.setFontName(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.getFontName = function(...args) 
           
@@ -908,7 +908,7 @@
               return this.__PROXY__.getFontName(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.setDimBlockName = function(...args) 
           
@@ -918,7 +918,7 @@
               return this.__PROXY__.setDimBlockName(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.getDimBlockName = function(...args) 
           
@@ -928,7 +928,7 @@
               return this.__PROXY__.getDimBlockName(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.hasOverrides = function(...args) 
           
@@ -938,7 +938,7 @@
               return this.__PROXY__.hasOverrides(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.hasOverride = function(...args) 
           
@@ -948,7 +948,7 @@
               return this.__PROXY__.hasOverride(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.getOverrides = function(...args) 
           
@@ -958,7 +958,7 @@
               return this.__PROXY__.getOverrides(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.setDimXVariant = function(...args) 
           
@@ -968,7 +968,7 @@
               return this.__PROXY__.setDimXVariant(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.setDimXDouble = function(...args) 
           
@@ -978,7 +978,7 @@
               return this.__PROXY__.setDimXDouble(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.setDimXInt = function(...args) 
           
@@ -988,7 +988,7 @@
               return this.__PROXY__.setDimXInt(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.setDimXBool = function(...args) 
           
@@ -998,7 +998,7 @@
               return this.__PROXY__.setDimXBool(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.setDimXColor = function(...args) 
           
@@ -1008,7 +1008,7 @@
               return this.__PROXY__.setDimXColor(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.getDimXVariant = function(...args) 
           
@@ -1018,7 +1018,7 @@
               return this.__PROXY__.getDimXVariant(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.getVariantOverride = function(...args) 
           
@@ -1028,7 +1028,7 @@
               return this.__PROXY__.getVariantOverride(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.getDimXDouble = function(...args) 
           
@@ -1038,7 +1038,7 @@
               return this.__PROXY__.getDimXDouble(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.getDoubleOverride = function(...args) 
           
@@ -1048,7 +1048,7 @@
               return this.__PROXY__.getDoubleOverride(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.getDimXInt = function(...args) 
           
@@ -1058,7 +1058,7 @@
               return this.__PROXY__.getDimXInt(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.getIntOverride = function(...args) 
           
@@ -1068,7 +1068,7 @@
               return this.__PROXY__.getIntOverride(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.getDimXBool = function(...args) 
           
@@ -1078,7 +1078,7 @@
               return this.__PROXY__.getDimXBool(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.getBoolOverride = function(...args) 
           
@@ -1088,7 +1088,7 @@
               return this.__PROXY__.getBoolOverride(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.getDimXColor = function(...args) 
           
@@ -1098,7 +1098,7 @@
               return this.__PROXY__.getDimXColor(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.getColorOverride = function(...args) 
           
@@ -1108,7 +1108,7 @@
               return this.__PROXY__.getColorOverride(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.getDimlfac = function(...args) 
           
@@ -1118,7 +1118,7 @@
               return this.__PROXY__.getDimlfac(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.setDimlfac = function(...args) 
           
@@ -1128,7 +1128,7 @@
               return this.__PROXY__.setDimlfac(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.getLinearFactor = function(...args) 
           
@@ -1138,7 +1138,7 @@
               return this.__PROXY__.getLinearFactor(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.setLinearFactor = function(...args) 
           
@@ -1148,7 +1148,7 @@
               return this.__PROXY__.setLinearFactor(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.getDimscale = function(...args) 
           
@@ -1158,7 +1158,7 @@
               return this.__PROXY__.getDimscale(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.setDimscale = function(...args) 
           
@@ -1168,7 +1168,7 @@
               return this.__PROXY__.setDimscale(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.isArrow1Flipped = function(...args) 
           
@@ -1178,7 +1178,7 @@
               return this.__PROXY__.isArrow1Flipped(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.setArrow1Flipped = function(...args) 
           
@@ -1188,7 +1188,7 @@
               return this.__PROXY__.setArrow1Flipped(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.isArrow2Flipped = function(...args) 
           
@@ -1198,7 +1198,7 @@
               return this.__PROXY__.isArrow2Flipped(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.setArrow2Flipped = function(...args) 
           
@@ -1208,7 +1208,7 @@
               return this.__PROXY__.setArrow2Flipped(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.isExtLineFix = function(...args) 
           
@@ -1218,7 +1218,7 @@
               return this.__PROXY__.isExtLineFix(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.setExtLineFix = function(...args) 
           
@@ -1228,7 +1228,7 @@
               return this.__PROXY__.setExtLineFix(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.getExtLineFixLength = function(...args) 
           
@@ -1238,7 +1238,7 @@
               return this.__PROXY__.getExtLineFixLength(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.setExtLineFixLength = function(...args) 
           
@@ -1248,7 +1248,7 @@
               return this.__PROXY__.setExtLineFixLength(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.adjustExtensionLineFixLength = function(...args) 
           
@@ -1258,7 +1258,7 @@
               return this.__PROXY__.adjustExtensionLineFixLength(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.hasSpaceForArrows = function(...args) 
           
@@ -1268,7 +1268,7 @@
               return this.__PROXY__.hasSpaceForArrows(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.getDistanceTo = function(...args) 
           
@@ -1278,7 +1278,7 @@
               return this.__PROXY__.getDistanceTo(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.intersectsWith = function(...args) 
           
@@ -1288,7 +1288,7 @@
               return this.__PROXY__.intersectsWith(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.clickReferencePoint = function(...args) 
           
@@ -1298,7 +1298,7 @@
               return this.__PROXY__.clickReferencePoint(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.scaleVisualProperties = function(...args) 
           
@@ -1308,7 +1308,7 @@
               return this.__PROXY__.scaleVisualProperties(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.getDimexo = function(...args) 
           
@@ -1318,7 +1318,7 @@
               return this.__PROXY__.getDimexo(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.setDimexo = function(...args) 
           
@@ -1328,7 +1328,7 @@
               return this.__PROXY__.setDimexo(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.getDimexe = function(...args) 
           
@@ -1338,7 +1338,7 @@
               return this.__PROXY__.getDimexe(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.setDimexe = function(...args) 
           
@@ -1348,7 +1348,7 @@
               return this.__PROXY__.setDimexe(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.getDimasz = function(...args) 
           
@@ -1358,7 +1358,7 @@
               return this.__PROXY__.getDimasz(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.setDimasz = function(...args) 
           
@@ -1368,7 +1368,7 @@
               return this.__PROXY__.setDimasz(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.getDimdli = function(...args) 
           
@@ -1378,7 +1378,7 @@
               return this.__PROXY__.getDimdli(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.setDimdli = function(...args) 
           
@@ -1388,7 +1388,7 @@
               return this.__PROXY__.setDimdli(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.getDimgap = function(...args) 
           
@@ -1398,7 +1398,7 @@
               return this.__PROXY__.getDimgap(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.setDimgap = function(...args) 
           
@@ -1408,7 +1408,7 @@
               return this.__PROXY__.setDimgap(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.getDimtxt = function(...args) 
           
@@ -1418,7 +1418,7 @@
               return this.__PROXY__.getDimtxt(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.setDimtxt = function(...args) 
           
@@ -1428,7 +1428,7 @@
               return this.__PROXY__.setDimtxt(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.getDimlunit = function(...args) 
           
@@ -1438,7 +1438,7 @@
               return this.__PROXY__.getDimlunit(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.setDimlunit = function(...args) 
           
@@ -1448,7 +1448,7 @@
               return this.__PROXY__.setDimlunit(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.getDimjust = function(...args) 
           
@@ -1458,7 +1458,7 @@
               return this.__PROXY__.getDimjust(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.getDimtad = function(...args) 
           
@@ -1468,7 +1468,7 @@
               return this.__PROXY__.getDimtad(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.setDimtad = function(...args) 
           
@@ -1478,7 +1478,7 @@
               return this.__PROXY__.setDimtad(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.getDimtih = function(...args) 
           
@@ -1488,7 +1488,7 @@
               return this.__PROXY__.getDimtih(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.setDimtih = function(...args) 
           
@@ -1498,7 +1498,7 @@
               return this.__PROXY__.setDimtih(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.getDimtsz = function(...args) 
           
@@ -1508,7 +1508,7 @@
               return this.__PROXY__.getDimtsz(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.setDimtsz = function(...args) 
           
@@ -1518,7 +1518,7 @@
               return this.__PROXY__.setDimtsz(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.getDimzin = function(...args) 
           
@@ -1528,7 +1528,7 @@
               return this.__PROXY__.getDimzin(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.setDimzin = function(...args) 
           
@@ -1538,7 +1538,7 @@
               return this.__PROXY__.setDimzin(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.getDimaunit = function(...args) 
           
@@ -1548,7 +1548,7 @@
               return this.__PROXY__.getDimaunit(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.setDimaunit = function(...args) 
           
@@ -1558,7 +1558,7 @@
               return this.__PROXY__.setDimaunit(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.getDimadec = function(...args) 
           
@@ -1568,7 +1568,7 @@
               return this.__PROXY__.getDimadec(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.setDimadec = function(...args) 
           
@@ -1578,7 +1578,7 @@
               return this.__PROXY__.setDimadec(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.getDimdec = function(...args) 
           
@@ -1588,7 +1588,7 @@
               return this.__PROXY__.getDimdec(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.setDimdec = function(...args) 
           
@@ -1598,7 +1598,7 @@
               return this.__PROXY__.setDimdec(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.getDimazin = function(...args) 
           
@@ -1608,7 +1608,7 @@
               return this.__PROXY__.getDimazin(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.setDimazin = function(...args) 
           
@@ -1618,7 +1618,7 @@
               return this.__PROXY__.setDimazin(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.getDimdsep = function(...args) 
           
@@ -1628,7 +1628,7 @@
               return this.__PROXY__.getDimdsep(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.setDimdsep = function(...args) 
           
@@ -1638,7 +1638,7 @@
               return this.__PROXY__.setDimdsep(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.getDimclrt = function(...args) 
           
@@ -1648,7 +1648,7 @@
               return this.__PROXY__.getDimclrt(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.setDimclrt = function(...args) 
           
@@ -1658,7 +1658,7 @@
               return this.__PROXY__.setDimclrt(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.useArchTick = function(...args) 
           
@@ -1668,7 +1668,7 @@
               return this.__PROXY__.useArchTick(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.getDimblk = function(...args) 
           
@@ -1678,7 +1678,7 @@
               return this.__PROXY__.getDimblk(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.getDimblkName = function(...args) 
           
@@ -1688,7 +1688,7 @@
               return this.__PROXY__.getDimblkName(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.isDimXScaled = function(...args) 
           
@@ -1698,7 +1698,7 @@
               return this.__PROXY__.isDimXScaled(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.hasCustomTextPosition = function(...args) 
           
@@ -1708,7 +1708,7 @@
               return this.__PROXY__.hasCustomTextPosition(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.setCustomTextPosition = function(...args) 
           
@@ -1718,7 +1718,7 @@
               return this.__PROXY__.setCustomTextPosition(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.getLineSpacingStyle = function(...args) 
           
@@ -1728,7 +1728,7 @@
               return this.__PROXY__.getLineSpacingStyle(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.getLineSpacingFactor = function(...args) 
           
@@ -1738,7 +1738,7 @@
               return this.__PROXY__.getLineSpacingFactor(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.getTextRotation = function(...args) 
           
@@ -1748,7 +1748,7 @@
               return this.__PROXY__.getTextRotation(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.setTextRotation = function(...args) 
           
@@ -1758,7 +1758,7 @@
               return this.__PROXY__.setTextRotation(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.getTextData = function(...args) 
           
@@ -1768,7 +1768,7 @@
               return this.__PROXY__.getTextData(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.initTextData = function(...args) 
           
@@ -1778,7 +1778,7 @@
               return this.__PROXY__.initTextData(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.getMeasurement = function(...args) 
           
@@ -1788,7 +1788,7 @@
               return this.__PROXY__.getMeasurement(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.formatLabel = function(...args) 
           
@@ -1798,7 +1798,7 @@
               return this.__PROXY__.formatLabel(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.formatAngleLabel = function(...args) 
           
@@ -1808,7 +1808,7 @@
               return this.__PROXY__.formatAngleLabel(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.update = function(...args) 
           
@@ -1818,7 +1818,7 @@
               return this.__PROXY__.update(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.getDimensionBlockReference = function(...args) 
           
@@ -1828,7 +1828,7 @@
               return this.__PROXY__.getDimensionBlockReference(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.hasDimensionBlockReference = function(...args) 
           
@@ -1838,7 +1838,7 @@
               return this.__PROXY__.hasDimensionBlockReference(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.getType = function(...args) 
           
@@ -1848,7 +1848,7 @@
               return this.__PROXY__.getType(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.isValid = function(...args) 
           
@@ -1858,7 +1858,7 @@
               return this.__PROXY__.isValid(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.isSane = function(...args) 
           
@@ -1868,7 +1868,7 @@
               return this.__PROXY__.isSane(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.setChordPoint = function(...args) 
           
@@ -1878,7 +1878,7 @@
               return this.__PROXY__.setChordPoint(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.getChordPoint = function(...args) 
           
@@ -1888,7 +1888,7 @@
               return this.__PROXY__.getChordPoint(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.setFarChordPoint = function(...args) 
           
@@ -1898,7 +1898,7 @@
               return this.__PROXY__.setFarChordPoint(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.getFarChordPoint = function(...args) 
           
@@ -1908,7 +1908,7 @@
               return this.__PROXY__.getFarChordPoint(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.getReferencePoints = function(...args) 
           
@@ -1918,7 +1918,7 @@
               return this.__PROXY__.getReferencePoints(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.moveReferencePoint = function(...args) 
           
@@ -1928,7 +1928,7 @@
               return this.__PROXY__.moveReferencePoint(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.move = function(...args) 
           
@@ -1938,7 +1938,7 @@
               return this.__PROXY__.move(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.rotate = function(...args) 
           
@@ -1948,7 +1948,7 @@
               return this.__PROXY__.rotate(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.scale = function(...args) 
           
@@ -1958,7 +1958,7 @@
               return this.__PROXY__.scale(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.mirror = function(...args) 
           
@@ -1968,7 +1968,7 @@
               return this.__PROXY__.mirror(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.getMeasuredValue = function(...args) 
           
@@ -1978,7 +1978,7 @@
               return this.__PROXY__.getMeasuredValue(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.getAutoLabel = function(...args) 
           
@@ -1988,7 +1988,7 @@
               return this.__PROXY__.getAutoLabel(...args);
             
         };
-    
+        
         // function 
         RDimDiametricData.prototype.to2D = function(...args) 
           
@@ -1998,7 +1998,7 @@
               return this.__PROXY__.to2D(...args);
             
         };
-    
+        
 
       // static functions:
       RDimDiametricData.prototype.isNullWrapper = function() {

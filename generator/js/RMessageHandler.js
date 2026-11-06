@@ -105,7 +105,7 @@
               return this.__PROXY__.handleUserMessage(...args);
             
         };
-    
+        
         // function 
         RMessageHandler.prototype.handleUserInfo = function(...args) 
           
@@ -115,7 +115,7 @@
               return this.__PROXY__.handleUserInfo(...args);
             
         };
-    
+        
         // function 
         RMessageHandler.prototype.handleUserWarning = function(...args) 
           
@@ -125,7 +125,7 @@
               return this.__PROXY__.handleUserWarning(...args);
             
         };
-    
+        
         // function 
         RMessageHandler.prototype.handleUserCommand = function(...args) 
           
@@ -135,7 +135,7 @@
               return this.__PROXY__.handleUserCommand(...args);
             
         };
-    
+        
 
       // static functions:
       RMessageHandler.prototype.isNullWrapper = function() {

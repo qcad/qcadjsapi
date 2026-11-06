@@ -160,7 +160,7 @@
               return this.__PROXY__.startImport(...args);
             
         };
-    
+        
         // function 
         RImporter.prototype.endImport = function(...args) 
           
@@ -170,7 +170,7 @@
               return this.__PROXY__.endImport(...args);
             
         };
-    
+        
         // function 
         RImporter.prototype.importObjectP = function(...args) 
           
@@ -180,7 +180,7 @@
               return this.__PROXY__.importObjectP(...args);
             
         };
-    
+        
         // function 
         RImporter.prototype.importObject = function(...args) 
           
@@ -190,7 +190,7 @@
               return this.__PROXY__.importObject(...args);
             
         };
-    
+        
         // function 
         RImporter.prototype.setCurrentBlockId = function(...args) 
           
@@ -200,7 +200,7 @@
               return this.__PROXY__.setCurrentBlockId(...args);
             
         };
-    
+        
         // function 
         RImporter.prototype.getCurrentBlockId = function(...args) 
           
@@ -210,7 +210,7 @@
               return this.__PROXY__.getCurrentBlockId(...args);
             
         };
-    
+        
         // function 
         RImporter.prototype.getDocument = function(...args) 
           
@@ -220,7 +220,7 @@
               return this.__PROXY__.getDocument(...args);
             
         };
-    
+        
         // function 
         RImporter.prototype.setDocument = function(...args) 
           
@@ -230,7 +230,7 @@
               return this.__PROXY__.setDocument(...args);
             
         };
-    
+        
         // function 
         RImporter.prototype.setKnownVariable = function(...args) 
           
@@ -240,7 +240,7 @@
               return this.__PROXY__.setKnownVariable(...args);
             
         };
-    
+        
 
       // static functions:
       RImporter.prototype.isNullWrapper = function() {

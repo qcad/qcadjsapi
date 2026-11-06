@@ -233,7 +233,7 @@ RRay.Ray = RRay_Wrapper.Ray;
               return this.__PROXY__.isValid(...args);
             
         };
-    
+        
         // function 
         RRay.prototype.isInterpolated = function(...args) 
           
@@ -243,7 +243,7 @@ RRay.Ray = RRay_Wrapper.Ray;
               return this.__PROXY__.isInterpolated(...args);
             
         };
-    
+        
         // function 
         RRay.prototype.getClosestPointOnShape = function(...args) 
           
@@ -253,7 +253,7 @@ RRay.Ray = RRay_Wrapper.Ray;
               return this.__PROXY__.getClosestPointOnShape(...args);
             
         };
-    
+        
         // function 
         RRay.prototype.to2D = function(...args) 
           
@@ -263,7 +263,7 @@ RRay.Ray = RRay_Wrapper.Ray;
               return this.__PROXY__.to2D(...args);
             
         };
-    
+        
         // function 
         RRay.prototype.equals = function(...args) 
           
@@ -273,7 +273,7 @@ RRay.Ray = RRay_Wrapper.Ray;
               return this.__PROXY__.equals(...args);
             
         };
-    
+        
         // function 
         RRay.prototype.getIntProperties = function(...args) 
           
@@ -283,7 +283,7 @@ RRay.Ray = RRay_Wrapper.Ray;
               return this.__PROXY__.getIntProperties(...args);
             
         };
-    
+        
         // function 
         RRay.prototype.getDoubleProperties = function(...args) 
           
@@ -293,7 +293,7 @@ RRay.Ray = RRay_Wrapper.Ray;
               return this.__PROXY__.getDoubleProperties(...args);
             
         };
-    
+        
         // function 
         RRay.prototype.getBoolProperties = function(...args) 
           
@@ -303,7 +303,7 @@ RRay.Ray = RRay_Wrapper.Ray;
               return this.__PROXY__.getBoolProperties(...args);
             
         };
-    
+        
         // function 
         RRay.prototype.getDistanceTo = function(...args) 
           
@@ -313,7 +313,7 @@ RRay.Ray = RRay_Wrapper.Ray;
               return this.__PROXY__.getDistanceTo(...args);
             
         };
-    
+        
         // function 
         RRay.prototype.getMaxDistanceTo = function(...args) 
           
@@ -323,7 +323,7 @@ RRay.Ray = RRay_Wrapper.Ray;
               return this.__PROXY__.getMaxDistanceTo(...args);
             
         };
-    
+        
         // function 
         RRay.prototype.isOnShape = function(...args) 
           
@@ -333,7 +333,7 @@ RRay.Ray = RRay_Wrapper.Ray;
               return this.__PROXY__.isOnShape(...args);
             
         };
-    
+        
         // function 
         RRay.prototype.filterOnShape = function(...args) 
           
@@ -343,7 +343,7 @@ RRay.Ray = RRay_Wrapper.Ray;
               return this.__PROXY__.filterOnShape(...args);
             
         };
-    
+        
         // function 
         RRay.prototype.getVectorFromEndpointTo = function(...args) 
           
@@ -353,7 +353,7 @@ RRay.Ray = RRay_Wrapper.Ray;
               return this.__PROXY__.getVectorFromEndpointTo(...args);
             
         };
-    
+        
         // function 
         RRay.prototype.getArcReferencePoints = function(...args) 
           
@@ -363,7 +363,7 @@ RRay.Ray = RRay_Wrapper.Ray;
               return this.__PROXY__.getArcReferencePoints(...args);
             
         };
-    
+        
         // function 
         RRay.prototype.getPointOnShape = function(...args) 
           
@@ -373,7 +373,7 @@ RRay.Ray = RRay_Wrapper.Ray;
               return this.__PROXY__.getPointOnShape(...args);
             
         };
-    
+        
         // function 
         RRay.prototype.getPointWithDistanceToStart = function(...args) 
           
@@ -383,7 +383,7 @@ RRay.Ray = RRay_Wrapper.Ray;
               return this.__PROXY__.getPointWithDistanceToStart(...args);
             
         };
-    
+        
         // function 
         RRay.prototype.getPointWithDistanceToEnd = function(...args) 
           
@@ -393,7 +393,7 @@ RRay.Ray = RRay_Wrapper.Ray;
               return this.__PROXY__.getPointWithDistanceToEnd(...args);
             
         };
-    
+        
         // function 
         RRay.prototype.getAngleAtPoint = function(...args) 
           
@@ -403,7 +403,7 @@ RRay.Ray = RRay_Wrapper.Ray;
               return this.__PROXY__.getAngleAtPoint(...args);
             
         };
-    
+        
         // function 
         RRay.prototype.getPointAtPercent = function(...args) 
           
@@ -413,7 +413,7 @@ RRay.Ray = RRay_Wrapper.Ray;
               return this.__PROXY__.getPointAtPercent(...args);
             
         };
-    
+        
         // function 
         RRay.prototype.getAngleAtPercent = function(...args) 
           
@@ -423,7 +423,7 @@ RRay.Ray = RRay_Wrapper.Ray;
               return this.__PROXY__.getAngleAtPercent(...args);
             
         };
-    
+        
         // function 
         RRay.prototype.intersectsWith = function(...args) 
           
@@ -433,7 +433,7 @@ RRay.Ray = RRay_Wrapper.Ray;
               return this.__PROXY__.intersectsWith(...args);
             
         };
-    
+        
         // function 
         RRay.prototype.getIntersectionPoints = function(...args) 
           
@@ -443,7 +443,7 @@ RRay.Ray = RRay_Wrapper.Ray;
               return this.__PROXY__.getIntersectionPoints(...args);
             
         };
-    
+        
         // function 
         RRay.prototype.getSelfIntersectionPoints = function(...args) 
           
@@ -453,7 +453,7 @@ RRay.Ray = RRay_Wrapper.Ray;
               return this.__PROXY__.getSelfIntersectionPoints(...args);
             
         };
-    
+        
         // function 
         RRay.prototype.getDistancesFromStart = function(...args) 
           
@@ -463,7 +463,7 @@ RRay.Ray = RRay_Wrapper.Ray;
               return this.__PROXY__.getDistancesFromStart(...args);
             
         };
-    
+        
         // function 
         RRay.prototype.flipHorizontal = function(...args) 
           
@@ -473,7 +473,7 @@ RRay.Ray = RRay_Wrapper.Ray;
               return this.__PROXY__.flipHorizontal(...args);
             
         };
-    
+        
         // function 
         RRay.prototype.flipVertical = function(...args) 
           
@@ -483,7 +483,7 @@ RRay.Ray = RRay_Wrapper.Ray;
               return this.__PROXY__.flipVertical(...args);
             
         };
-    
+        
         // function 
         RRay.prototype.dump = function(...args) 
           
@@ -493,7 +493,7 @@ RRay.Ray = RRay_Wrapper.Ray;
               return this.__PROXY__.dump(...args);
             
         };
-    
+        
         // function 
         RRay.prototype.getLineShape = function(...args) 
           
@@ -503,7 +503,7 @@ RRay.Ray = RRay_Wrapper.Ray;
               return this.__PROXY__.getLineShape(...args);
             
         };
-    
+        
         // function 
         RRay.prototype.isDirected = function(...args) 
           
@@ -513,7 +513,7 @@ RRay.Ray = RRay_Wrapper.Ray;
               return this.__PROXY__.isDirected(...args);
             
         };
-    
+        
         // function 
         RRay.prototype.getBoundingBox = function(...args) 
           
@@ -523,7 +523,7 @@ RRay.Ray = RRay_Wrapper.Ray;
               return this.__PROXY__.getBoundingBox(...args);
             
         };
-    
+        
         // function 
         RRay.prototype.setZ = function(...args) 
           
@@ -533,7 +533,7 @@ RRay.Ray = RRay_Wrapper.Ray;
               return this.__PROXY__.setZ(...args);
             
         };
-    
+        
         // function 
         RRay.prototype.getEndPoints = function(...args) 
           
@@ -543,7 +543,7 @@ RRay.Ray = RRay_Wrapper.Ray;
               return this.__PROXY__.getEndPoints(...args);
             
         };
-    
+        
         // function 
         RRay.prototype.getMiddlePoints = function(...args) 
           
@@ -553,7 +553,7 @@ RRay.Ray = RRay_Wrapper.Ray;
               return this.__PROXY__.getMiddlePoints(...args);
             
         };
-    
+        
         // function 
         RRay.prototype.getCenterPoints = function(...args) 
           
@@ -563,7 +563,7 @@ RRay.Ray = RRay_Wrapper.Ray;
               return this.__PROXY__.getCenterPoints(...args);
             
         };
-    
+        
         // function 
         RRay.prototype.getPointCloud = function(...args) 
           
@@ -573,7 +573,7 @@ RRay.Ray = RRay_Wrapper.Ray;
               return this.__PROXY__.getPointCloud(...args);
             
         };
-    
+        
         // function 
         RRay.prototype.getAngleAt = function(...args) 
           
@@ -583,7 +583,7 @@ RRay.Ray = RRay_Wrapper.Ray;
               return this.__PROXY__.getAngleAt(...args);
             
         };
-    
+        
         // function 
         RRay.prototype.getBasePoint = function(...args) 
           
@@ -593,7 +593,7 @@ RRay.Ray = RRay_Wrapper.Ray;
               return this.__PROXY__.getBasePoint(...args);
             
         };
-    
+        
         // function 
         RRay.prototype.setBasePoint = function(...args) 
           
@@ -603,7 +603,7 @@ RRay.Ray = RRay_Wrapper.Ray;
               return this.__PROXY__.setBasePoint(...args);
             
         };
-    
+        
         // function 
         RRay.prototype.getSecondPoint = function(...args) 
           
@@ -613,7 +613,7 @@ RRay.Ray = RRay_Wrapper.Ray;
               return this.__PROXY__.getSecondPoint(...args);
             
         };
-    
+        
         // function 
         RRay.prototype.setSecondPoint = function(...args) 
           
@@ -623,7 +623,7 @@ RRay.Ray = RRay_Wrapper.Ray;
               return this.__PROXY__.setSecondPoint(...args);
             
         };
-    
+        
         // function 
         RRay.prototype.getDirectionVector = function(...args) 
           
@@ -633,7 +633,7 @@ RRay.Ray = RRay_Wrapper.Ray;
               return this.__PROXY__.getDirectionVector(...args);
             
         };
-    
+        
         // function 
         RRay.prototype.setDirectionVector = function(...args) 
           
@@ -643,7 +643,7 @@ RRay.Ray = RRay_Wrapper.Ray;
               return this.__PROXY__.setDirectionVector(...args);
             
         };
-    
+        
         // function 
         RRay.prototype.getMiddlePoint = function(...args) 
           
@@ -653,7 +653,7 @@ RRay.Ray = RRay_Wrapper.Ray;
               return this.__PROXY__.getMiddlePoint(...args);
             
         };
-    
+        
         // function 
         RRay.prototype.getLength = function(...args) 
           
@@ -663,7 +663,7 @@ RRay.Ray = RRay_Wrapper.Ray;
               return this.__PROXY__.getLength(...args);
             
         };
-    
+        
         // function 
         RRay.prototype.setLength = function(...args) 
           
@@ -673,7 +673,7 @@ RRay.Ray = RRay_Wrapper.Ray;
               return this.__PROXY__.setLength(...args);
             
         };
-    
+        
         // function 
         RRay.prototype.getAngle = function(...args) 
           
@@ -683,7 +683,7 @@ RRay.Ray = RRay_Wrapper.Ray;
               return this.__PROXY__.getAngle(...args);
             
         };
-    
+        
         // function 
         RRay.prototype.setAngle = function(...args) 
           
@@ -693,7 +693,7 @@ RRay.Ray = RRay_Wrapper.Ray;
               return this.__PROXY__.setAngle(...args);
             
         };
-    
+        
         // function 
         RRay.prototype.getDirection1 = function(...args) 
           
@@ -703,7 +703,7 @@ RRay.Ray = RRay_Wrapper.Ray;
               return this.__PROXY__.getDirection1(...args);
             
         };
-    
+        
         // function 
         RRay.prototype.getDirection2 = function(...args) 
           
@@ -713,7 +713,7 @@ RRay.Ray = RRay_Wrapper.Ray;
               return this.__PROXY__.getDirection2(...args);
             
         };
-    
+        
         // function 
         RRay.prototype.getSideOfPoint = function(...args) 
           
@@ -723,7 +723,7 @@ RRay.Ray = RRay_Wrapper.Ray;
               return this.__PROXY__.getSideOfPoint(...args);
             
         };
-    
+        
         // function 
         RRay.prototype.getStartPoint = function(...args) 
           
@@ -733,7 +733,7 @@ RRay.Ray = RRay_Wrapper.Ray;
               return this.__PROXY__.getStartPoint(...args);
             
         };
-    
+        
         // function 
         RRay.prototype.getEndPoint = function(...args) 
           
@@ -743,7 +743,7 @@ RRay.Ray = RRay_Wrapper.Ray;
               return this.__PROXY__.getEndPoint(...args);
             
         };
-    
+        
         // function 
         RRay.prototype.trimStartPoint = function(...args) 
           
@@ -753,7 +753,7 @@ RRay.Ray = RRay_Wrapper.Ray;
               return this.__PROXY__.trimStartPoint(...args);
             
         };
-    
+        
         // function 
         RRay.prototype.getTrimEnd = function(...args) 
           
@@ -763,7 +763,7 @@ RRay.Ray = RRay_Wrapper.Ray;
               return this.__PROXY__.getTrimEnd(...args);
             
         };
-    
+        
         // function 
         RRay.prototype.getDistanceFromStart = function(...args) 
           
@@ -773,7 +773,7 @@ RRay.Ray = RRay_Wrapper.Ray;
               return this.__PROXY__.getDistanceFromStart(...args);
             
         };
-    
+        
         // function 
         RRay.prototype.move = function(...args) 
           
@@ -783,7 +783,7 @@ RRay.Ray = RRay_Wrapper.Ray;
               return this.__PROXY__.move(...args);
             
         };
-    
+        
         // function 
         RRay.prototype.rotate = function(...args) 
           
@@ -793,7 +793,7 @@ RRay.Ray = RRay_Wrapper.Ray;
               return this.__PROXY__.rotate(...args);
             
         };
-    
+        
         // function 
         RRay.prototype.scale = function(...args) 
           
@@ -803,7 +803,7 @@ RRay.Ray = RRay_Wrapper.Ray;
               return this.__PROXY__.scale(...args);
             
         };
-    
+        
         // function 
         RRay.prototype.mirror = function(...args) 
           
@@ -813,7 +813,7 @@ RRay.Ray = RRay_Wrapper.Ray;
               return this.__PROXY__.mirror(...args);
             
         };
-    
+        
         // function 
         RRay.prototype.getTransformed = function(...args) 
           
@@ -823,7 +823,7 @@ RRay.Ray = RRay_Wrapper.Ray;
               return this.__PROXY__.getTransformed(...args);
             
         };
-    
+        
         // function 
         RRay.prototype.getOffsetShapes = function(...args) 
           
@@ -833,7 +833,7 @@ RRay.Ray = RRay_Wrapper.Ray;
               return this.__PROXY__.getOffsetShapes(...args);
             
         };
-    
+        
         // function 
         RRay.prototype.copy = function(...args) 
           
@@ -843,7 +843,7 @@ RRay.Ray = RRay_Wrapper.Ray;
               return this.__PROXY__.copy(...args);
             
         };
-    
+        
         // function 
         RRay.prototype.getShapeType = function(...args) 
           
@@ -853,7 +853,7 @@ RRay.Ray = RRay_Wrapper.Ray;
               return this.__PROXY__.getShapeType(...args);
             
         };
-    
+        
         // function 
         RRay.prototype.clone = function(...args) 
           
@@ -863,7 +863,7 @@ RRay.Ray = RRay_Wrapper.Ray;
               return this.__PROXY__.clone(...args);
             
         };
-    
+        
         // function 
         RRay.prototype.getVectorProperties = function(...args) 
           
@@ -873,7 +873,7 @@ RRay.Ray = RRay_Wrapper.Ray;
               return this.__PROXY__.getVectorProperties(...args);
             
         };
-    
+        
         // function 
         RRay.prototype.trimEndPoint = function(...args) 
           
@@ -883,7 +883,7 @@ RRay.Ray = RRay_Wrapper.Ray;
               return this.__PROXY__.trimEndPoint(...args);
             
         };
-    
+        
         // function 
         RRay.prototype.getPointsWithDistanceToEnd = function(...args) 
           
@@ -893,7 +893,7 @@ RRay.Ray = RRay_Wrapper.Ray;
               return this.__PROXY__.getPointsWithDistanceToEnd(...args);
             
         };
-    
+        
         // function 
         RRay.prototype.reverse = function(...args) 
           
@@ -903,7 +903,7 @@ RRay.Ray = RRay_Wrapper.Ray;
               return this.__PROXY__.reverse(...args);
             
         };
-    
+        
         // function 
         RRay.prototype.getClippedLine = function(...args) 
           
@@ -913,7 +913,7 @@ RRay.Ray = RRay_Wrapper.Ray;
               return this.__PROXY__.getClippedLine(...args);
             
         };
-    
+        
         // function 
         RRay.prototype.getVectorTo = function(...args) 
           
@@ -923,7 +923,7 @@ RRay.Ray = RRay_Wrapper.Ray;
               return this.__PROXY__.getVectorTo(...args);
             
         };
-    
+        
         // function 
         RRay.prototype.stretch = function(...args) 
           
@@ -933,7 +933,7 @@ RRay.Ray = RRay_Wrapper.Ray;
               return this.__PROXY__.stretch(...args);
             
         };
-    
+        
         // function 
         RRay.prototype.splitAt = function(...args) 
           
@@ -943,7 +943,7 @@ RRay.Ray = RRay_Wrapper.Ray;
               return this.__PROXY__.splitAt(...args);
             
         };
-    
+        
         // function 
         RRay.prototype.print = function(...args) 
           
@@ -953,7 +953,7 @@ RRay.Ray = RRay_Wrapper.Ray;
               return this.__PROXY__.print(...args);
             
         };
-    
+        
 
       // static functions:
       RRay.prototype.isNullWrapper = function() {

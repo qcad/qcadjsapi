@@ -161,7 +161,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.setObjectName(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.isWidgetType = function(...args) 
           
@@ -171,7 +171,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.isWidgetType(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.isWindowType = function(...args) 
           
@@ -181,7 +181,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.isWindowType(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.signalsBlocked = function(...args) 
           
@@ -191,7 +191,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.signalsBlocked(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.blockSignals = function(...args) 
           
@@ -201,7 +201,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.blockSignals(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.findChild = function(...args) 
           
@@ -211,7 +211,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.findChild(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.children = function(...args) 
           
@@ -221,7 +221,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.children(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.installEventFilter = function(...args) 
           
@@ -231,7 +231,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.installEventFilter(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.removeEventFilter = function(...args) 
           
@@ -241,7 +241,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.removeEventFilter(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.dumpObjectTree = function(...args) 
           
@@ -251,7 +251,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.dumpObjectTree(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.dumpObjectInfo = function(...args) 
           
@@ -261,7 +261,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.dumpObjectInfo(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.setProperty = function(...args) 
           
@@ -271,7 +271,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.setProperty(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.property = function(...args) 
           
@@ -281,7 +281,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.property(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.dynamicPropertyNames = function(...args) 
           
@@ -291,7 +291,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.dynamicPropertyNames(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.parent = function(...args) 
           
@@ -301,7 +301,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.parent(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.deleteLater = function(...args) 
           
@@ -311,7 +311,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.deleteLater(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.devType = function(...args) 
           
@@ -321,7 +321,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.devType(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.createWinId = function(...args) 
           
@@ -331,7 +331,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.createWinId(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.isWindow = function(...args) 
           
@@ -341,7 +341,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.isWindow(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.isModal = function(...args) 
           
@@ -351,7 +351,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.isModal(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.setWindowModality = function(...args) 
           
@@ -361,7 +361,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.setWindowModality(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.isEnabled = function(...args) 
           
@@ -371,7 +371,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.isEnabled(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.isEnabledTo = function(...args) 
           
@@ -381,7 +381,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.isEnabledTo(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.setEnabled = function(...args) 
           
@@ -391,7 +391,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.setEnabled(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.setDisabled = function(...args) 
           
@@ -401,7 +401,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.setDisabled(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.setWindowModified = function(...args) 
           
@@ -411,7 +411,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.setWindowModified(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.setMinimumSize = function(...args) 
           
@@ -421,7 +421,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.setMinimumSize(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.setMaximumSize = function(...args) 
           
@@ -431,7 +431,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.setMaximumSize(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.setMinimumWidth = function(...args) 
           
@@ -441,7 +441,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.setMinimumWidth(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.setMinimumHeight = function(...args) 
           
@@ -451,7 +451,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.setMinimumHeight(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.setMaximumWidth = function(...args) 
           
@@ -461,7 +461,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.setMaximumWidth(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.setMaximumHeight = function(...args) 
           
@@ -471,7 +471,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.setMaximumHeight(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.setSizeIncrement = function(...args) 
           
@@ -481,7 +481,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.setSizeIncrement(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.setBaseSize = function(...args) 
           
@@ -491,7 +491,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.setBaseSize(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.setFixedSize = function(...args) 
           
@@ -501,7 +501,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.setFixedSize(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.setFixedWidth = function(...args) 
           
@@ -511,7 +511,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.setFixedWidth(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.setFixedHeight = function(...args) 
           
@@ -521,7 +521,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.setFixedHeight(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.mapToGlobal = function(...args) 
           
@@ -531,7 +531,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.mapToGlobal(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.mapFromGlobal = function(...args) 
           
@@ -541,7 +541,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.mapFromGlobal(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.mapToParent = function(...args) 
           
@@ -551,7 +551,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.mapToParent(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.mapFromParent = function(...args) 
           
@@ -561,7 +561,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.mapFromParent(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.mapTo = function(...args) 
           
@@ -571,7 +571,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.mapTo(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.mapFrom = function(...args) 
           
@@ -581,7 +581,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.mapFrom(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.window = function(...args) 
           
@@ -591,7 +591,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.window(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.nativeParentWidget = function(...args) 
           
@@ -601,7 +601,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.nativeParentWidget(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.topLevelWidget = function(...args) 
           
@@ -611,7 +611,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.topLevelWidget(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.setPalette = function(...args) 
           
@@ -621,7 +621,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.setPalette(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.setBackgroundRole = function(...args) 
           
@@ -631,7 +631,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.setBackgroundRole(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.backgroundRole = function(...args) 
           
@@ -641,7 +641,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.backgroundRole(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.setForegroundRole = function(...args) 
           
@@ -651,7 +651,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.setForegroundRole(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.foregroundRole = function(...args) 
           
@@ -661,7 +661,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.foregroundRole(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.setFont = function(...args) 
           
@@ -671,7 +671,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.setFont(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.fontInfo = function(...args) 
           
@@ -681,7 +681,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.fontInfo(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.setCursor = function(...args) 
           
@@ -691,7 +691,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.setCursor(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.unsetCursor = function(...args) 
           
@@ -701,7 +701,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.unsetCursor(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.setMouseTracking = function(...args) 
           
@@ -711,7 +711,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.setMouseTracking(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.hasMouseTracking = function(...args) 
           
@@ -721,7 +721,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.hasMouseTracking(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.underMouse = function(...args) 
           
@@ -731,7 +731,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.underMouse(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.setTabletTracking = function(...args) 
           
@@ -741,7 +741,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.setTabletTracking(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.hasTabletTracking = function(...args) 
           
@@ -751,7 +751,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.hasTabletTracking(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.setMask = function(...args) 
           
@@ -761,7 +761,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.setMask(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.mask = function(...args) 
           
@@ -771,7 +771,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.mask(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.clearMask = function(...args) 
           
@@ -781,7 +781,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.clearMask(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.grab = function(...args) 
           
@@ -791,7 +791,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.grab(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.grabGesture = function(...args) 
           
@@ -801,7 +801,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.grabGesture(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.ungrabGesture = function(...args) 
           
@@ -811,7 +811,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.ungrabGesture(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.setWindowTitle = function(...args) 
           
@@ -821,7 +821,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.setWindowTitle(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.setStyleSheet = function(...args) 
           
@@ -831,7 +831,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.setStyleSheet(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.setWindowIcon = function(...args) 
           
@@ -841,7 +841,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.setWindowIcon(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.setWindowIconText = function(...args) 
           
@@ -851,7 +851,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.setWindowIconText(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.setWindowRole = function(...args) 
           
@@ -861,7 +861,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.setWindowRole(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.windowRole = function(...args) 
           
@@ -871,7 +871,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.windowRole(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.setWindowFilePath = function(...args) 
           
@@ -881,7 +881,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.setWindowFilePath(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.setWindowOpacity = function(...args) 
           
@@ -891,7 +891,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.setWindowOpacity(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.isWindowModified = function(...args) 
           
@@ -901,7 +901,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.isWindowModified(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.setToolTip = function(...args) 
           
@@ -911,7 +911,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.setToolTip(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.setToolTipDuration = function(...args) 
           
@@ -921,7 +921,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.setToolTipDuration(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.setStatusTip = function(...args) 
           
@@ -931,7 +931,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.setStatusTip(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.setWhatsThis = function(...args) 
           
@@ -941,7 +941,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.setWhatsThis(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.setAccessibleName = function(...args) 
           
@@ -951,7 +951,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.setAccessibleName(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.setAccessibleDescription = function(...args) 
           
@@ -961,7 +961,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.setAccessibleDescription(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.setLayoutDirection = function(...args) 
           
@@ -971,7 +971,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.setLayoutDirection(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.unsetLayoutDirection = function(...args) 
           
@@ -981,7 +981,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.unsetLayoutDirection(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.setLocale = function(...args) 
           
@@ -991,7 +991,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.setLocale(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.unsetLocale = function(...args) 
           
@@ -1001,7 +1001,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.unsetLocale(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.isRightToLeft = function(...args) 
           
@@ -1011,7 +1011,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.isRightToLeft(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.isLeftToRight = function(...args) 
           
@@ -1021,7 +1021,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.isLeftToRight(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.activateWindow = function(...args) 
           
@@ -1031,7 +1031,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.activateWindow(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.clearFocus = function(...args) 
           
@@ -1041,7 +1041,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.clearFocus(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.setFocus = function(...args) 
           
@@ -1051,7 +1051,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.setFocus(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.setFocusPolicy = function(...args) 
           
@@ -1061,7 +1061,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.setFocusPolicy(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.hasFocus = function(...args) 
           
@@ -1071,7 +1071,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.hasFocus(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.setFocusProxy = function(...args) 
           
@@ -1081,7 +1081,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.setFocusProxy(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.focusProxy = function(...args) 
           
@@ -1091,7 +1091,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.focusProxy(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.setContextMenuPolicy = function(...args) 
           
@@ -1101,7 +1101,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.setContextMenuPolicy(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.grabMouse = function(...args) 
           
@@ -1111,7 +1111,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.grabMouse(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.releaseMouse = function(...args) 
           
@@ -1121,7 +1121,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.releaseMouse(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.grabKeyboard = function(...args) 
           
@@ -1131,7 +1131,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.grabKeyboard(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.releaseKeyboard = function(...args) 
           
@@ -1141,7 +1141,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.releaseKeyboard(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.grabShortcut = function(...args) 
           
@@ -1151,7 +1151,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.grabShortcut(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.releaseShortcut = function(...args) 
           
@@ -1161,7 +1161,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.releaseShortcut(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.setShortcutEnabled = function(...args) 
           
@@ -1171,7 +1171,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.setShortcutEnabled(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.setShortcutAutoRepeat = function(...args) 
           
@@ -1181,7 +1181,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.setShortcutAutoRepeat(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.setUpdatesEnabled = function(...args) 
           
@@ -1191,7 +1191,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.setUpdatesEnabled(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.update = function(...args) 
           
@@ -1201,7 +1201,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.update(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.repaint = function(...args) 
           
@@ -1211,7 +1211,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.repaint(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.setVisible = function(...args) 
           
@@ -1221,7 +1221,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.setVisible(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.setHidden = function(...args) 
           
@@ -1231,7 +1231,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.setHidden(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.show = function(...args) 
           
@@ -1241,7 +1241,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.show(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.hide = function(...args) 
           
@@ -1251,7 +1251,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.hide(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.showMinimized = function(...args) 
           
@@ -1261,7 +1261,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.showMinimized(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.showMaximized = function(...args) 
           
@@ -1271,7 +1271,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.showMaximized(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.showFullScreen = function(...args) 
           
@@ -1281,7 +1281,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.showFullScreen(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.showNormal = function(...args) 
           
@@ -1291,7 +1291,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.showNormal(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.close = function(...args) 
           
@@ -1301,7 +1301,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.close(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.raise = function(...args) 
           
@@ -1311,7 +1311,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.raise(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.lower = function(...args) 
           
@@ -1321,7 +1321,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.lower(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.stackUnder = function(...args) 
           
@@ -1331,7 +1331,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.stackUnder(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.move = function(...args) 
           
@@ -1341,7 +1341,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.move(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.resize = function(...args) 
           
@@ -1351,7 +1351,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.resize(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.setGeometry = function(...args) 
           
@@ -1361,7 +1361,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.setGeometry(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.saveGeometry = function(...args) 
           
@@ -1371,7 +1371,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.saveGeometry(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.restoreGeometry = function(...args) 
           
@@ -1381,7 +1381,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.restoreGeometry(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.adjustSize = function(...args) 
           
@@ -1391,7 +1391,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.adjustSize(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.isVisible = function(...args) 
           
@@ -1401,7 +1401,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.isVisible(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.isVisibleTo = function(...args) 
           
@@ -1411,7 +1411,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.isVisibleTo(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.isHidden = function(...args) 
           
@@ -1421,7 +1421,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.isHidden(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.isMinimized = function(...args) 
           
@@ -1431,7 +1431,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.isMinimized(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.isMaximized = function(...args) 
           
@@ -1441,7 +1441,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.isMaximized(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.isFullScreen = function(...args) 
           
@@ -1451,7 +1451,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.isFullScreen(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.windowState = function(...args) 
           
@@ -1461,7 +1461,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.windowState(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.setWindowState = function(...args) 
           
@@ -1471,7 +1471,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.setWindowState(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.overrideWindowState = function(...args) 
           
@@ -1481,7 +1481,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.overrideWindowState(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.setSizePolicy = function(...args) 
           
@@ -1491,7 +1491,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.setSizePolicy(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.heightForWidth = function(...args) 
           
@@ -1501,7 +1501,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.heightForWidth(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.hasHeightForWidth = function(...args) 
           
@@ -1511,7 +1511,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.hasHeightForWidth(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.visibleRegion = function(...args) 
           
@@ -1521,7 +1521,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.visibleRegion(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.setContentsMargins = function(...args) 
           
@@ -1531,7 +1531,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.setContentsMargins(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.contentsMargins = function(...args) 
           
@@ -1541,7 +1541,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.contentsMargins(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.contentsRect = function(...args) 
           
@@ -1551,7 +1551,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.contentsRect(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.layout = function(...args) 
           
@@ -1561,7 +1561,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.layout(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.setLayout = function(...args) 
           
@@ -1571,7 +1571,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.setLayout(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.updateGeometry = function(...args) 
           
@@ -1581,7 +1581,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.updateGeometry(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.setParent = function(...args) 
           
@@ -1591,7 +1591,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.setParent(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.scroll = function(...args) 
           
@@ -1601,7 +1601,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.scroll(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.focusWidget = function(...args) 
           
@@ -1611,7 +1611,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.focusWidget(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.nextInFocusChain = function(...args) 
           
@@ -1621,7 +1621,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.nextInFocusChain(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.previousInFocusChain = function(...args) 
           
@@ -1631,7 +1631,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.previousInFocusChain(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.setAcceptDrops = function(...args) 
           
@@ -1641,7 +1641,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.setAcceptDrops(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.addAction = function(...args) 
           
@@ -1651,7 +1651,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.addAction(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.addActions = function(...args) 
           
@@ -1661,7 +1661,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.addActions(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.insertActions = function(...args) 
           
@@ -1671,7 +1671,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.insertActions(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.insertAction = function(...args) 
           
@@ -1681,7 +1681,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.insertAction(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.removeAction = function(...args) 
           
@@ -1691,7 +1691,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.removeAction(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.actions = function(...args) 
           
@@ -1701,7 +1701,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.actions(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.parentWidget = function(...args) 
           
@@ -1711,7 +1711,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.parentWidget(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.setWindowFlags = function(...args) 
           
@@ -1721,7 +1721,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.setWindowFlags(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.windowFlags = function(...args) 
           
@@ -1731,7 +1731,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.windowFlags(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.setWindowFlag = function(...args) 
           
@@ -1741,7 +1741,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.setWindowFlag(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.overrideWindowFlags = function(...args) 
           
@@ -1751,7 +1751,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.overrideWindowFlags(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.windowType = function(...args) 
           
@@ -1761,7 +1761,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.windowType(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.childAt = function(...args) 
           
@@ -1771,7 +1771,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.childAt(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.setAttribute = function(...args) 
           
@@ -1781,7 +1781,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.setAttribute(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.testAttribute = function(...args) 
           
@@ -1791,7 +1791,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.testAttribute(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.ensurePolished = function(...args) 
           
@@ -1801,7 +1801,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.ensurePolished(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.isAncestorOf = function(...args) 
           
@@ -1811,7 +1811,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.isAncestorOf(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.setAutoFillBackground = function(...args) 
           
@@ -1821,7 +1821,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.setAutoFillBackground(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.event = function(...args) 
           
@@ -1831,7 +1831,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.event(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.mouseDoubleClickEvent = function(...args) 
           
@@ -1841,7 +1841,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.mouseDoubleClickEvent(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.enterEvent = function(...args) 
           
@@ -1851,7 +1851,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.enterEvent(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.leaveEvent = function(...args) 
           
@@ -1861,7 +1861,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.leaveEvent(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.moveEvent = function(...args) 
           
@@ -1871,7 +1871,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.moveEvent(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.closeEvent = function(...args) 
           
@@ -1881,7 +1881,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.closeEvent(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.tabletEvent = function(...args) 
           
@@ -1891,7 +1891,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.tabletEvent(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.dragEnterEvent = function(...args) 
           
@@ -1901,7 +1901,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.dragEnterEvent(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.dragMoveEvent = function(...args) 
           
@@ -1911,7 +1911,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.dragMoveEvent(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.dragLeaveEvent = function(...args) 
           
@@ -1921,7 +1921,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.dragLeaveEvent(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.dropEvent = function(...args) 
           
@@ -1931,7 +1931,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.dropEvent(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.nativeEvent = function(...args) 
           
@@ -1941,7 +1941,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.nativeEvent(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.metric = function(...args) 
           
@@ -1951,7 +1951,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.metric(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.initPainter = function(...args) 
           
@@ -1961,7 +1961,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.initPainter(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.redirected = function(...args) 
           
@@ -1971,7 +1971,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.redirected(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.sharedPainter = function(...args) 
           
@@ -1981,7 +1981,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.sharedPainter(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.setInputMethodHints = function(...args) 
           
@@ -1991,7 +1991,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.setInputMethodHints(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.updateMicroFocus = function(...args) 
           
@@ -2001,7 +2001,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.updateMicroFocus(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.create = function(...args) 
           
@@ -2011,7 +2011,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.create(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.destroy = function(...args) 
           
@@ -2021,7 +2021,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.destroy(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.focusNextPrevChild = function(...args) 
           
@@ -2031,7 +2031,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.focusNextPrevChild(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.focusNextChild = function(...args) 
           
@@ -2041,7 +2041,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.focusNextChild(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.focusPreviousChild = function(...args) 
           
@@ -2051,7 +2051,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.focusPreviousChild(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.setBackingStore = function(...args) 
           
@@ -2061,7 +2061,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.setBackingStore(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.testAttribute_helper = function(...args) 
           
@@ -2071,7 +2071,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.testAttribute_helper(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.takeLayout = function(...args) 
           
@@ -2081,7 +2081,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.takeLayout(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.qt_mac_is_metal = function(...args) 
           
@@ -2091,7 +2091,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.qt_mac_is_metal(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.qt_qwidget_data = function(...args) 
           
@@ -2101,7 +2101,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.qt_qwidget_data(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.qt_widget_private = function(...args) 
           
@@ -2111,7 +2111,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.qt_widget_private(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.setMaxVisibleItems = function(...args) 
           
@@ -2121,7 +2121,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.setMaxVisibleItems(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.setMaxCount = function(...args) 
           
@@ -2131,7 +2131,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.setMaxCount(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.setDuplicatesEnabled = function(...args) 
           
@@ -2141,7 +2141,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.setDuplicatesEnabled(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.setFrame = function(...args) 
           
@@ -2151,7 +2151,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.setFrame(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.hasFrame = function(...args) 
           
@@ -2161,7 +2161,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.hasFrame(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.findText = function(...args) 
           
@@ -2171,7 +2171,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.findText(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.findData = function(...args) 
           
@@ -2181,7 +2181,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.findData(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.setInsertPolicy = function(...args) 
           
@@ -2191,7 +2191,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.setInsertPolicy(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.setSizeAdjustPolicy = function(...args) 
           
@@ -2201,7 +2201,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.setSizeAdjustPolicy(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.setMinimumContentsLength = function(...args) 
           
@@ -2211,7 +2211,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.setMinimumContentsLength(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.setIconSize = function(...args) 
           
@@ -2221,7 +2221,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.setIconSize(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.setPlaceholderText = function(...args) 
           
@@ -2231,7 +2231,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.setPlaceholderText(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.isEditable = function(...args) 
           
@@ -2241,7 +2241,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.isEditable(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.setEditable = function(...args) 
           
@@ -2251,7 +2251,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.setEditable(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.setLineEdit = function(...args) 
           
@@ -2261,7 +2261,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.setLineEdit(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.lineEdit = function(...args) 
           
@@ -2271,7 +2271,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.lineEdit(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.setValidator = function(...args) 
           
@@ -2281,7 +2281,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.setValidator(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.setCompleter = function(...args) 
           
@@ -2291,7 +2291,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.setCompleter(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.completer = function(...args) 
           
@@ -2301,7 +2301,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.completer(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.model = function(...args) 
           
@@ -2311,7 +2311,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.model(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.setModelColumn = function(...args) 
           
@@ -2321,7 +2321,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.setModelColumn(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.itemText = function(...args) 
           
@@ -2331,7 +2331,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.itemText(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.itemIcon = function(...args) 
           
@@ -2341,7 +2341,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.itemIcon(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.itemData = function(...args) 
           
@@ -2351,7 +2351,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.itemData(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.addItem = function(...args) 
           
@@ -2361,7 +2361,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.addItem(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.addItems = function(...args) 
           
@@ -2371,7 +2371,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.addItems(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.insertItem = function(...args) 
           
@@ -2381,7 +2381,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.insertItem(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.insertItems = function(...args) 
           
@@ -2391,7 +2391,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.insertItems(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.insertSeparator = function(...args) 
           
@@ -2401,7 +2401,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.insertSeparator(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.removeItem = function(...args) 
           
@@ -2411,7 +2411,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.removeItem(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.setItemText = function(...args) 
           
@@ -2421,7 +2421,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.setItemText(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.setItemIcon = function(...args) 
           
@@ -2431,7 +2431,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.setItemIcon(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.setItemData = function(...args) 
           
@@ -2441,7 +2441,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.setItemData(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.view = function(...args) 
           
@@ -2451,7 +2451,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.view(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.showPopup = function(...args) 
           
@@ -2461,7 +2461,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.showPopup(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.hidePopup = function(...args) 
           
@@ -2471,7 +2471,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.hidePopup(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.inputMethodQuery = function(...args) 
           
@@ -2481,7 +2481,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.inputMethodQuery(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.clear = function(...args) 
           
@@ -2491,7 +2491,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.clear(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.clearEditText = function(...args) 
           
@@ -2501,7 +2501,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.clearEditText(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.setEditText = function(...args) 
           
@@ -2511,7 +2511,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.setEditText(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.setCurrentIndex = function(...args) 
           
@@ -2521,7 +2521,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.setCurrentIndex(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.setCurrentText = function(...args) 
           
@@ -2531,7 +2531,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.setCurrentText(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.focusInEvent = function(...args) 
           
@@ -2541,7 +2541,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.focusInEvent(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.focusOutEvent = function(...args) 
           
@@ -2551,7 +2551,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.focusOutEvent(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.changeEvent = function(...args) 
           
@@ -2561,7 +2561,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.changeEvent(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.showEvent = function(...args) 
           
@@ -2571,7 +2571,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.showEvent(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.hideEvent = function(...args) 
           
@@ -2581,7 +2581,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.hideEvent(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.mousePressEvent = function(...args) 
           
@@ -2591,7 +2591,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.mousePressEvent(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.mouseReleaseEvent = function(...args) 
           
@@ -2601,7 +2601,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.mouseReleaseEvent(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.keyPressEvent = function(...args) 
           
@@ -2611,7 +2611,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.keyPressEvent(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.keyReleaseEvent = function(...args) 
           
@@ -2621,7 +2621,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.keyReleaseEvent(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.wheelEvent = function(...args) 
           
@@ -2631,7 +2631,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.wheelEvent(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.contextMenuEvent = function(...args) 
           
@@ -2641,7 +2641,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.contextMenuEvent(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.inputMethodEvent = function(...args) 
           
@@ -2651,7 +2651,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.inputMethodEvent(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.initStyleOption = function(...args) 
           
@@ -2661,7 +2661,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.initStyleOption(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.getMathLineEdit = function(...args) 
           
@@ -2671,7 +2671,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.getMathLineEdit(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.isAngle = function(...args) 
           
@@ -2681,7 +2681,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.isAngle(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.setAngle = function(...args) 
           
@@ -2691,7 +2691,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.setAngle(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.isScale = function(...args) 
           
@@ -2701,7 +2701,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.isScale(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.setScale = function(...args) 
           
@@ -2711,7 +2711,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.setScale(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.isInteger = function(...args) 
           
@@ -2721,7 +2721,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.isInteger(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.setInteger = function(...args) 
           
@@ -2731,7 +2731,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.setInteger(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.setValue = function(...args) 
           
@@ -2741,7 +2741,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.setValue(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.getValue = function(...args) 
           
@@ -2751,7 +2751,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.getValue(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.getError = function(...args) 
           
@@ -2761,7 +2761,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.getError(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.clearError = function(...args) 
           
@@ -2771,7 +2771,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.clearError(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.isValid = function(...args) 
           
@@ -2781,7 +2781,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.isValid(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.isSane = function(...args) 
           
@@ -2791,7 +2791,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.isSane(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.slotTextChanged = function(...args) 
           
@@ -2801,7 +2801,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.slotTextChanged(...args);
             
         };
-    
+        
         // function 
         RMathComboBox.prototype.slotValueChanged = function(...args) 
           
@@ -2811,7 +2811,7 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
               return this.__PROXY__.slotValueChanged(...args);
             
         };
-    
+        
 
       // static functions:
       

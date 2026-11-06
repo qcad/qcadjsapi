@@ -192,7 +192,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setObjectName(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.isWidgetType = function(...args) 
           
@@ -202,7 +202,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.isWidgetType(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.isWindowType = function(...args) 
           
@@ -212,7 +212,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.isWindowType(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.signalsBlocked = function(...args) 
           
@@ -222,7 +222,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.signalsBlocked(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.blockSignals = function(...args) 
           
@@ -232,7 +232,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.blockSignals(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.findChild = function(...args) 
           
@@ -242,7 +242,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.findChild(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.children = function(...args) 
           
@@ -252,7 +252,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.children(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.installEventFilter = function(...args) 
           
@@ -262,7 +262,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.installEventFilter(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.removeEventFilter = function(...args) 
           
@@ -272,7 +272,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.removeEventFilter(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.dumpObjectTree = function(...args) 
           
@@ -282,7 +282,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.dumpObjectTree(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.dumpObjectInfo = function(...args) 
           
@@ -292,7 +292,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.dumpObjectInfo(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.setProperty = function(...args) 
           
@@ -302,7 +302,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setProperty(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.property = function(...args) 
           
@@ -312,7 +312,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.property(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.dynamicPropertyNames = function(...args) 
           
@@ -322,7 +322,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.dynamicPropertyNames(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.parent = function(...args) 
           
@@ -332,7 +332,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.parent(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.deleteLater = function(...args) 
           
@@ -342,7 +342,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.deleteLater(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.devType = function(...args) 
           
@@ -352,7 +352,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.devType(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.createWinId = function(...args) 
           
@@ -362,7 +362,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.createWinId(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.isWindow = function(...args) 
           
@@ -372,7 +372,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.isWindow(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.isModal = function(...args) 
           
@@ -382,7 +382,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.isModal(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.setWindowModality = function(...args) 
           
@@ -392,7 +392,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setWindowModality(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.isEnabled = function(...args) 
           
@@ -402,7 +402,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.isEnabled(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.isEnabledTo = function(...args) 
           
@@ -412,7 +412,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.isEnabledTo(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.setEnabled = function(...args) 
           
@@ -422,7 +422,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setEnabled(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.setDisabled = function(...args) 
           
@@ -432,7 +432,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setDisabled(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.setWindowModified = function(...args) 
           
@@ -442,7 +442,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setWindowModified(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.setMinimumSize = function(...args) 
           
@@ -452,7 +452,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setMinimumSize(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.setMaximumSize = function(...args) 
           
@@ -462,7 +462,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setMaximumSize(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.setMinimumWidth = function(...args) 
           
@@ -472,7 +472,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setMinimumWidth(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.setMinimumHeight = function(...args) 
           
@@ -482,7 +482,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setMinimumHeight(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.setMaximumWidth = function(...args) 
           
@@ -492,7 +492,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setMaximumWidth(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.setMaximumHeight = function(...args) 
           
@@ -502,7 +502,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setMaximumHeight(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.setSizeIncrement = function(...args) 
           
@@ -512,7 +512,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setSizeIncrement(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.setBaseSize = function(...args) 
           
@@ -522,7 +522,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setBaseSize(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.setFixedSize = function(...args) 
           
@@ -532,7 +532,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setFixedSize(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.setFixedWidth = function(...args) 
           
@@ -542,7 +542,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setFixedWidth(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.setFixedHeight = function(...args) 
           
@@ -552,7 +552,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setFixedHeight(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.mapToGlobal = function(...args) 
           
@@ -562,7 +562,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.mapToGlobal(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.mapFromGlobal = function(...args) 
           
@@ -572,7 +572,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.mapFromGlobal(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.mapToParent = function(...args) 
           
@@ -582,7 +582,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.mapToParent(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.mapFromParent = function(...args) 
           
@@ -592,7 +592,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.mapFromParent(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.mapTo = function(...args) 
           
@@ -602,7 +602,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.mapTo(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.mapFrom = function(...args) 
           
@@ -612,7 +612,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.mapFrom(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.window = function(...args) 
           
@@ -622,7 +622,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.window(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.nativeParentWidget = function(...args) 
           
@@ -632,7 +632,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.nativeParentWidget(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.topLevelWidget = function(...args) 
           
@@ -642,7 +642,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.topLevelWidget(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.setPalette = function(...args) 
           
@@ -652,7 +652,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setPalette(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.setBackgroundRole = function(...args) 
           
@@ -662,7 +662,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setBackgroundRole(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.backgroundRole = function(...args) 
           
@@ -672,7 +672,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.backgroundRole(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.setForegroundRole = function(...args) 
           
@@ -682,7 +682,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setForegroundRole(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.foregroundRole = function(...args) 
           
@@ -692,7 +692,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.foregroundRole(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.setFont = function(...args) 
           
@@ -702,7 +702,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setFont(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.fontInfo = function(...args) 
           
@@ -712,7 +712,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.fontInfo(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.setCursor = function(...args) 
           
@@ -722,7 +722,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setCursor(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.unsetCursor = function(...args) 
           
@@ -732,7 +732,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.unsetCursor(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.setMouseTracking = function(...args) 
           
@@ -742,7 +742,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setMouseTracking(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.hasMouseTracking = function(...args) 
           
@@ -752,7 +752,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.hasMouseTracking(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.underMouse = function(...args) 
           
@@ -762,7 +762,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.underMouse(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.setTabletTracking = function(...args) 
           
@@ -772,7 +772,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setTabletTracking(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.hasTabletTracking = function(...args) 
           
@@ -782,7 +782,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.hasTabletTracking(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.setMask = function(...args) 
           
@@ -792,7 +792,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setMask(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.mask = function(...args) 
           
@@ -802,7 +802,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.mask(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.clearMask = function(...args) 
           
@@ -812,7 +812,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.clearMask(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.grab = function(...args) 
           
@@ -822,7 +822,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.grab(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.grabGesture = function(...args) 
           
@@ -832,7 +832,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.grabGesture(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.ungrabGesture = function(...args) 
           
@@ -842,7 +842,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.ungrabGesture(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.setWindowTitle = function(...args) 
           
@@ -852,7 +852,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setWindowTitle(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.setStyleSheet = function(...args) 
           
@@ -862,7 +862,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setStyleSheet(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.setWindowIcon = function(...args) 
           
@@ -872,7 +872,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setWindowIcon(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.setWindowIconText = function(...args) 
           
@@ -882,7 +882,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setWindowIconText(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.setWindowRole = function(...args) 
           
@@ -892,7 +892,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setWindowRole(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.windowRole = function(...args) 
           
@@ -902,7 +902,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.windowRole(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.setWindowFilePath = function(...args) 
           
@@ -912,7 +912,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setWindowFilePath(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.setWindowOpacity = function(...args) 
           
@@ -922,7 +922,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setWindowOpacity(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.isWindowModified = function(...args) 
           
@@ -932,7 +932,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.isWindowModified(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.setToolTip = function(...args) 
           
@@ -942,7 +942,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setToolTip(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.setToolTipDuration = function(...args) 
           
@@ -952,7 +952,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setToolTipDuration(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.setStatusTip = function(...args) 
           
@@ -962,7 +962,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setStatusTip(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.setWhatsThis = function(...args) 
           
@@ -972,7 +972,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setWhatsThis(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.setAccessibleName = function(...args) 
           
@@ -982,7 +982,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setAccessibleName(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.setAccessibleDescription = function(...args) 
           
@@ -992,7 +992,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setAccessibleDescription(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.setLayoutDirection = function(...args) 
           
@@ -1002,7 +1002,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setLayoutDirection(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.unsetLayoutDirection = function(...args) 
           
@@ -1012,7 +1012,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.unsetLayoutDirection(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.setLocale = function(...args) 
           
@@ -1022,7 +1022,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setLocale(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.unsetLocale = function(...args) 
           
@@ -1032,7 +1032,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.unsetLocale(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.isRightToLeft = function(...args) 
           
@@ -1042,7 +1042,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.isRightToLeft(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.isLeftToRight = function(...args) 
           
@@ -1052,7 +1052,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.isLeftToRight(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.activateWindow = function(...args) 
           
@@ -1062,7 +1062,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.activateWindow(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.clearFocus = function(...args) 
           
@@ -1072,7 +1072,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.clearFocus(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.setFocus = function(...args) 
           
@@ -1082,7 +1082,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setFocus(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.setFocusPolicy = function(...args) 
           
@@ -1092,7 +1092,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setFocusPolicy(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.hasFocus = function(...args) 
           
@@ -1102,7 +1102,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.hasFocus(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.setFocusProxy = function(...args) 
           
@@ -1112,7 +1112,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setFocusProxy(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.focusProxy = function(...args) 
           
@@ -1122,7 +1122,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.focusProxy(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.setContextMenuPolicy = function(...args) 
           
@@ -1132,7 +1132,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setContextMenuPolicy(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.grabMouse = function(...args) 
           
@@ -1142,7 +1142,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.grabMouse(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.releaseMouse = function(...args) 
           
@@ -1152,7 +1152,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.releaseMouse(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.grabKeyboard = function(...args) 
           
@@ -1162,7 +1162,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.grabKeyboard(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.releaseKeyboard = function(...args) 
           
@@ -1172,7 +1172,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.releaseKeyboard(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.grabShortcut = function(...args) 
           
@@ -1182,7 +1182,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.grabShortcut(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.releaseShortcut = function(...args) 
           
@@ -1192,7 +1192,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.releaseShortcut(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.setShortcutEnabled = function(...args) 
           
@@ -1202,7 +1202,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setShortcutEnabled(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.setShortcutAutoRepeat = function(...args) 
           
@@ -1212,7 +1212,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setShortcutAutoRepeat(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.setUpdatesEnabled = function(...args) 
           
@@ -1222,7 +1222,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setUpdatesEnabled(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.update = function(...args) 
           
@@ -1232,7 +1232,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.update(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.repaint = function(...args) 
           
@@ -1242,7 +1242,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.repaint(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.setVisible = function(...args) 
           
@@ -1252,7 +1252,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setVisible(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.setHidden = function(...args) 
           
@@ -1262,7 +1262,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setHidden(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.show = function(...args) 
           
@@ -1272,7 +1272,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.show(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.hide = function(...args) 
           
@@ -1282,7 +1282,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.hide(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.showMinimized = function(...args) 
           
@@ -1292,7 +1292,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.showMinimized(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.showMaximized = function(...args) 
           
@@ -1302,7 +1302,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.showMaximized(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.showFullScreen = function(...args) 
           
@@ -1312,7 +1312,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.showFullScreen(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.showNormal = function(...args) 
           
@@ -1322,7 +1322,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.showNormal(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.close = function(...args) 
           
@@ -1332,7 +1332,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.close(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.raise = function(...args) 
           
@@ -1342,7 +1342,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.raise(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.lower = function(...args) 
           
@@ -1352,7 +1352,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.lower(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.stackUnder = function(...args) 
           
@@ -1362,7 +1362,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.stackUnder(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.move = function(...args) 
           
@@ -1372,7 +1372,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.move(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.resize = function(...args) 
           
@@ -1382,7 +1382,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.resize(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.setGeometry = function(...args) 
           
@@ -1392,7 +1392,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setGeometry(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.saveGeometry = function(...args) 
           
@@ -1402,7 +1402,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.saveGeometry(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.restoreGeometry = function(...args) 
           
@@ -1412,7 +1412,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.restoreGeometry(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.adjustSize = function(...args) 
           
@@ -1422,7 +1422,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.adjustSize(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.isVisible = function(...args) 
           
@@ -1432,7 +1432,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.isVisible(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.isVisibleTo = function(...args) 
           
@@ -1442,7 +1442,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.isVisibleTo(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.isHidden = function(...args) 
           
@@ -1452,7 +1452,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.isHidden(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.isMinimized = function(...args) 
           
@@ -1462,7 +1462,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.isMinimized(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.isMaximized = function(...args) 
           
@@ -1472,7 +1472,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.isMaximized(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.isFullScreen = function(...args) 
           
@@ -1482,7 +1482,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.isFullScreen(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.windowState = function(...args) 
           
@@ -1492,7 +1492,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.windowState(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.setWindowState = function(...args) 
           
@@ -1502,7 +1502,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setWindowState(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.overrideWindowState = function(...args) 
           
@@ -1512,7 +1512,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.overrideWindowState(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.setSizePolicy = function(...args) 
           
@@ -1522,7 +1522,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setSizePolicy(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.heightForWidth = function(...args) 
           
@@ -1532,7 +1532,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.heightForWidth(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.hasHeightForWidth = function(...args) 
           
@@ -1542,7 +1542,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.hasHeightForWidth(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.visibleRegion = function(...args) 
           
@@ -1552,7 +1552,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.visibleRegion(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.setContentsMargins = function(...args) 
           
@@ -1562,7 +1562,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setContentsMargins(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.contentsMargins = function(...args) 
           
@@ -1572,7 +1572,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.contentsMargins(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.contentsRect = function(...args) 
           
@@ -1582,7 +1582,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.contentsRect(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.layout = function(...args) 
           
@@ -1592,7 +1592,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.layout(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.setLayout = function(...args) 
           
@@ -1602,7 +1602,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setLayout(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.updateGeometry = function(...args) 
           
@@ -1612,7 +1612,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.updateGeometry(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.setParent = function(...args) 
           
@@ -1622,7 +1622,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setParent(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.scroll = function(...args) 
           
@@ -1632,7 +1632,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.scroll(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.focusWidget = function(...args) 
           
@@ -1642,7 +1642,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.focusWidget(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.nextInFocusChain = function(...args) 
           
@@ -1652,7 +1652,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.nextInFocusChain(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.previousInFocusChain = function(...args) 
           
@@ -1662,7 +1662,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.previousInFocusChain(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.setAcceptDrops = function(...args) 
           
@@ -1672,7 +1672,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setAcceptDrops(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.addAction = function(...args) 
           
@@ -1682,7 +1682,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.addAction(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.addActions = function(...args) 
           
@@ -1692,7 +1692,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.addActions(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.insertActions = function(...args) 
           
@@ -1702,7 +1702,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.insertActions(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.insertAction = function(...args) 
           
@@ -1712,7 +1712,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.insertAction(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.removeAction = function(...args) 
           
@@ -1722,7 +1722,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.removeAction(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.actions = function(...args) 
           
@@ -1732,7 +1732,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.actions(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.parentWidget = function(...args) 
           
@@ -1742,7 +1742,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.parentWidget(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.setWindowFlags = function(...args) 
           
@@ -1752,7 +1752,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setWindowFlags(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.windowFlags = function(...args) 
           
@@ -1762,7 +1762,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.windowFlags(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.setWindowFlag = function(...args) 
           
@@ -1772,7 +1772,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setWindowFlag(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.overrideWindowFlags = function(...args) 
           
@@ -1782,7 +1782,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.overrideWindowFlags(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.windowType = function(...args) 
           
@@ -1792,7 +1792,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.windowType(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.childAt = function(...args) 
           
@@ -1802,7 +1802,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.childAt(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.setAttribute = function(...args) 
           
@@ -1812,7 +1812,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setAttribute(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.testAttribute = function(...args) 
           
@@ -1822,7 +1822,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.testAttribute(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.ensurePolished = function(...args) 
           
@@ -1832,7 +1832,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.ensurePolished(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.isAncestorOf = function(...args) 
           
@@ -1842,7 +1842,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.isAncestorOf(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.setAutoFillBackground = function(...args) 
           
@@ -1852,7 +1852,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setAutoFillBackground(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.enterEvent = function(...args) 
           
@@ -1862,7 +1862,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.enterEvent(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.leaveEvent = function(...args) 
           
@@ -1872,7 +1872,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.leaveEvent(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.moveEvent = function(...args) 
           
@@ -1882,7 +1882,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.moveEvent(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.closeEvent = function(...args) 
           
@@ -1892,7 +1892,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.closeEvent(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.tabletEvent = function(...args) 
           
@@ -1902,7 +1902,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.tabletEvent(...args);
             
         };
-    
+        
       // function 
       RTextEdit.prototype.actionEvent = function() 
         
@@ -1944,7 +1944,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.hideEvent(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.nativeEvent = function(...args) 
           
@@ -1954,7 +1954,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.nativeEvent(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.metric = function(...args) 
           
@@ -1964,7 +1964,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.metric(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.initPainter = function(...args) 
           
@@ -1974,7 +1974,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.initPainter(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.redirected = function(...args) 
           
@@ -1984,7 +1984,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.redirected(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.sharedPainter = function(...args) 
           
@@ -1994,7 +1994,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.sharedPainter(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.setInputMethodHints = function(...args) 
           
@@ -2004,7 +2004,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setInputMethodHints(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.updateMicroFocus = function(...args) 
           
@@ -2014,7 +2014,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.updateMicroFocus(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.create = function(...args) 
           
@@ -2024,7 +2024,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.create(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.destroy = function(...args) 
           
@@ -2034,7 +2034,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.destroy(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.focusNextChild = function(...args) 
           
@@ -2044,7 +2044,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.focusNextChild(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.focusPreviousChild = function(...args) 
           
@@ -2054,7 +2054,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.focusPreviousChild(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.setBackingStore = function(...args) 
           
@@ -2064,7 +2064,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setBackingStore(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.testAttribute_helper = function(...args) 
           
@@ -2074,7 +2074,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.testAttribute_helper(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.takeLayout = function(...args) 
           
@@ -2084,7 +2084,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.takeLayout(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.qt_mac_is_metal = function(...args) 
           
@@ -2094,7 +2094,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.qt_mac_is_metal(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.qt_qwidget_data = function(...args) 
           
@@ -2104,7 +2104,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.qt_qwidget_data(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.qt_widget_private = function(...args) 
           
@@ -2114,7 +2114,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.qt_widget_private(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.frameStyle = function(...args) 
           
@@ -2124,7 +2124,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.frameStyle(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.setFrameStyle = function(...args) 
           
@@ -2134,7 +2134,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setFrameStyle(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.setFrameShape = function(...args) 
           
@@ -2144,7 +2144,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setFrameShape(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.setFrameShadow = function(...args) 
           
@@ -2154,7 +2154,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setFrameShadow(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.setLineWidth = function(...args) 
           
@@ -2164,7 +2164,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setLineWidth(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.setMidLineWidth = function(...args) 
           
@@ -2174,7 +2174,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setMidLineWidth(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.setFrameRect = function(...args) 
           
@@ -2184,7 +2184,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setFrameRect(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.drawFrame = function(...args) 
           
@@ -2194,7 +2194,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.drawFrame(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.initStyleOption = function(...args) 
           
@@ -2204,7 +2204,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.initStyleOption(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.verticalScrollBarPolicy = function(...args) 
           
@@ -2214,7 +2214,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.verticalScrollBarPolicy(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.setVerticalScrollBarPolicy = function(...args) 
           
@@ -2224,7 +2224,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setVerticalScrollBarPolicy(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.verticalScrollBar = function(...args) 
           
@@ -2234,7 +2234,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.verticalScrollBar(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.setVerticalScrollBar = function(...args) 
           
@@ -2244,7 +2244,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setVerticalScrollBar(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.horizontalScrollBarPolicy = function(...args) 
           
@@ -2254,7 +2254,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.horizontalScrollBarPolicy(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.setHorizontalScrollBarPolicy = function(...args) 
           
@@ -2264,7 +2264,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setHorizontalScrollBarPolicy(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.horizontalScrollBar = function(...args) 
           
@@ -2274,7 +2274,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.horizontalScrollBar(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.setHorizontalScrollBar = function(...args) 
           
@@ -2284,7 +2284,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setHorizontalScrollBar(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.cornerWidget = function(...args) 
           
@@ -2294,7 +2294,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.cornerWidget(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.setCornerWidget = function(...args) 
           
@@ -2304,7 +2304,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setCornerWidget(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.addScrollBarWidget = function(...args) 
           
@@ -2314,7 +2314,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.addScrollBarWidget(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.viewport = function(...args) 
           
@@ -2324,7 +2324,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.viewport(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.setViewport = function(...args) 
           
@@ -2334,7 +2334,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setViewport(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.maximumViewportSize = function(...args) 
           
@@ -2344,7 +2344,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.maximumViewportSize(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.setupViewport = function(...args) 
           
@@ -2354,7 +2354,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setupViewport(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.sizeAdjustPolicy = function(...args) 
           
@@ -2364,7 +2364,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.sizeAdjustPolicy(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.setSizeAdjustPolicy = function(...args) 
           
@@ -2374,7 +2374,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setSizeAdjustPolicy(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.setViewportMargins = function(...args) 
           
@@ -2384,7 +2384,8 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setViewportMarginsSuper(...args);
             
         };
-    
+        RTextEdit.prototype.setViewportMargins.__SUPER__ = true;
+        
         // function 
         RTextEdit.prototype.viewportMargins = function(...args) 
           
@@ -2394,7 +2395,8 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.viewportMarginsSuper(...args);
             
         };
-    
+        RTextEdit.prototype.viewportMargins.__SUPER__ = true;
+        
         // function 
         RTextEdit.prototype.viewportEvent = function(...args) 
           
@@ -2404,7 +2406,8 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.viewportEventSuper(...args);
             
         };
-    
+        RTextEdit.prototype.viewportEvent.__SUPER__ = true;
+        
         // function 
         RTextEdit.prototype.viewportSizeHint = function(...args) 
           
@@ -2414,7 +2417,8 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.viewportSizeHintSuper(...args);
             
         };
-    
+        RTextEdit.prototype.viewportSizeHint.__SUPER__ = true;
+        
         // function 
         RTextEdit.prototype.Q_DECLARE_PRIVATE = function(...args) 
           
@@ -2424,7 +2428,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.Q_DECLARE_PRIVATE(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.setDocument = function(...args) 
           
@@ -2434,7 +2438,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setDocument(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.setPlaceholderText = function(...args) 
           
@@ -2444,7 +2448,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setPlaceholderText(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.setTextCursor = function(...args) 
           
@@ -2454,7 +2458,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setTextCursor(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.textCursor = function(...args) 
           
@@ -2464,7 +2468,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.textCursor(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.isReadOnly = function(...args) 
           
@@ -2474,7 +2478,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.isReadOnly(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.setReadOnly = function(...args) 
           
@@ -2484,7 +2488,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setReadOnly(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.setTextInteractionFlags = function(...args) 
           
@@ -2494,7 +2498,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setTextInteractionFlags(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.fontPointSize = function(...args) 
           
@@ -2504,7 +2508,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.fontPointSize(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.fontFamily = function(...args) 
           
@@ -2514,7 +2518,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.fontFamily(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.fontWeight = function(...args) 
           
@@ -2524,7 +2528,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.fontWeight(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.fontUnderline = function(...args) 
           
@@ -2534,7 +2538,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.fontUnderline(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.fontItalic = function(...args) 
           
@@ -2544,7 +2548,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.fontItalic(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.textColor = function(...args) 
           
@@ -2554,7 +2558,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.textColor(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.textBackgroundColor = function(...args) 
           
@@ -2564,7 +2568,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.textBackgroundColor(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.currentFont = function(...args) 
           
@@ -2574,7 +2578,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.currentFont(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.alignment = function(...args) 
           
@@ -2584,7 +2588,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.alignment(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.mergeCurrentCharFormat = function(...args) 
           
@@ -2594,7 +2598,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.mergeCurrentCharFormat(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.setCurrentCharFormat = function(...args) 
           
@@ -2604,7 +2608,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setCurrentCharFormat(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.currentCharFormat = function(...args) 
           
@@ -2614,7 +2618,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.currentCharFormat(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.setAutoFormatting = function(...args) 
           
@@ -2624,7 +2628,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setAutoFormatting(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.setTabChangesFocus = function(...args) 
           
@@ -2634,7 +2638,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setTabChangesFocus(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.setDocumentTitle = function(...args) 
           
@@ -2644,7 +2648,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setDocumentTitle(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.isUndoRedoEnabled = function(...args) 
           
@@ -2654,7 +2658,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.isUndoRedoEnabled(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.setUndoRedoEnabled = function(...args) 
           
@@ -2664,7 +2668,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setUndoRedoEnabled(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.setLineWrapMode = function(...args) 
           
@@ -2674,7 +2678,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setLineWrapMode(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.setLineWrapColumnOrWidth = function(...args) 
           
@@ -2684,7 +2688,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setLineWrapColumnOrWidth(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.wordWrapMode = function(...args) 
           
@@ -2694,7 +2698,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.wordWrapMode(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.setWordWrapMode = function(...args) 
           
@@ -2704,7 +2708,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setWordWrapMode(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.toPlainText = function(...args) 
           
@@ -2714,7 +2718,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.toPlainText(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.toHtml = function(...args) 
           
@@ -2724,7 +2728,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.toHtml(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.ensureCursorVisible = function(...args) 
           
@@ -2734,7 +2738,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.ensureCursorVisible(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.createStandardContextMenu = function(...args) 
           
@@ -2744,7 +2748,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.createStandardContextMenu(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.cursorRect = function(...args) 
           
@@ -2754,7 +2758,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.cursorRect(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.anchorAt = function(...args) 
           
@@ -2764,7 +2768,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.anchorAt(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.setOverwriteMode = function(...args) 
           
@@ -2774,7 +2778,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setOverwriteMode(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.setTabStopDistance = function(...args) 
           
@@ -2784,7 +2788,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setTabStopDistance(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.setCursorWidth = function(...args) 
           
@@ -2794,7 +2798,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setCursorWidth(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.setAcceptRichText = function(...args) 
           
@@ -2804,7 +2808,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setAcceptRichText(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.moveCursor = function(...args) 
           
@@ -2814,7 +2818,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.moveCursor(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.canPaste = function(...args) 
           
@@ -2824,7 +2828,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.canPaste(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.inputMethodQuery = function(...args) 
           
@@ -2834,7 +2838,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.inputMethodQuery(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.setFontPointSize = function(...args) 
           
@@ -2844,7 +2848,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setFontPointSize(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.setFontFamily = function(...args) 
           
@@ -2854,7 +2858,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setFontFamily(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.setFontWeight = function(...args) 
           
@@ -2864,7 +2868,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setFontWeight(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.setFontUnderline = function(...args) 
           
@@ -2874,7 +2878,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setFontUnderline(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.setFontItalic = function(...args) 
           
@@ -2884,7 +2888,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setFontItalic(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.setTextColor = function(...args) 
           
@@ -2894,7 +2898,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setTextColor(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.setTextBackgroundColor = function(...args) 
           
@@ -2904,7 +2908,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setTextBackgroundColor(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.setCurrentFont = function(...args) 
           
@@ -2914,7 +2918,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setCurrentFont(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.setAlignment = function(...args) 
           
@@ -2924,7 +2928,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setAlignment(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.setPlainText = function(...args) 
           
@@ -2934,7 +2938,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setPlainText(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.setHtml = function(...args) 
           
@@ -2944,7 +2948,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setHtml(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.setMarkdown = function(...args) 
           
@@ -2954,7 +2958,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setMarkdown(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.setText = function(...args) 
           
@@ -2964,7 +2968,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setText(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.cut = function(...args) 
           
@@ -2974,7 +2978,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.cut(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.copy = function(...args) 
           
@@ -2984,7 +2988,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.copy(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.paste = function(...args) 
           
@@ -2994,7 +2998,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.paste(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.undo = function(...args) 
           
@@ -3004,7 +3008,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.undo(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.redo = function(...args) 
           
@@ -3014,7 +3018,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.redo(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.clear = function(...args) 
           
@@ -3024,7 +3028,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.clear(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.selectAll = function(...args) 
           
@@ -3034,7 +3038,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.selectAll(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.insertPlainText = function(...args) 
           
@@ -3044,7 +3048,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.insertPlainText(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.insertHtml = function(...args) 
           
@@ -3054,7 +3058,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.insertHtml(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.append = function(...args) 
           
@@ -3064,7 +3068,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.append(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.scrollToAnchor = function(...args) 
           
@@ -3074,7 +3078,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.scrollToAnchor(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.zoomIn = function(...args) 
           
@@ -3084,7 +3088,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.zoomIn(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.zoomOut = function(...args) 
           
@@ -3094,7 +3098,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.zoomOut(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.timerEvent = function(...args) 
           
@@ -3104,7 +3108,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.timerEvent(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.keyReleaseEvent = function(...args) 
           
@@ -3114,7 +3118,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.keyReleaseEvent(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.resizeEvent = function(...args) 
           
@@ -3124,7 +3128,8 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.resizeEventSuper(...args);
             
         };
-    
+        RTextEdit.prototype.resizeEvent.__SUPER__ = true;
+        
         // function 
         RTextEdit.prototype.mouseDoubleClickEvent = function(...args) 
           
@@ -3134,7 +3139,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.mouseDoubleClickEvent(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.contextMenuEvent = function(...args) 
           
@@ -3144,7 +3149,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.contextMenuEvent(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.dragEnterEvent = function(...args) 
           
@@ -3154,7 +3159,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.dragEnterEvent(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.dragLeaveEvent = function(...args) 
           
@@ -3164,7 +3169,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.dragLeaveEvent(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.dragMoveEvent = function(...args) 
           
@@ -3174,7 +3179,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.dragMoveEvent(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.dropEvent = function(...args) 
           
@@ -3184,7 +3189,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.dropEvent(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.focusInEvent = function(...args) 
           
@@ -3194,7 +3199,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.focusInEvent(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.showEvent = function(...args) 
           
@@ -3204,7 +3209,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.showEvent(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.changeEvent = function(...args) 
           
@@ -3214,7 +3219,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.changeEvent(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.wheelEvent = function(...args) 
           
@@ -3224,7 +3229,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.wheelEvent(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.createMimeDataFromSelection = function(...args) 
           
@@ -3234,7 +3239,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.createMimeDataFromSelection(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.canInsertFromMimeData = function(...args) 
           
@@ -3244,7 +3249,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.canInsertFromMimeData(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.insertFromMimeData = function(...args) 
           
@@ -3254,7 +3259,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.insertFromMimeData(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.inputMethodEvent = function(...args) 
           
@@ -3264,7 +3269,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.inputMethodEvent(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.scrollContentsBy = function(...args) 
           
@@ -3274,7 +3279,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.scrollContentsBy(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.doSetTextCursor = function(...args) 
           
@@ -3284,7 +3289,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.doSetTextCursor(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.zoomInF = function(...args) 
           
@@ -3294,7 +3299,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.zoomInF(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.source = function(...args) 
           
@@ -3304,7 +3309,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.source(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.setSearchPaths = function(...args) 
           
@@ -3314,7 +3319,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setSearchPaths(...args);
             
         };
-    
+        
       // function 
       RTextEdit.prototype.loadResource = function() 
         
@@ -3356,7 +3361,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.isBackwardAvailable(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.isForwardAvailable = function(...args) 
           
@@ -3366,7 +3371,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.isForwardAvailable(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.clearHistory = function(...args) 
           
@@ -3376,7 +3381,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.clearHistory(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.historyTitle = function(...args) 
           
@@ -3386,7 +3391,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.historyTitle(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.historyUrl = function(...args) 
           
@@ -3396,7 +3401,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.historyUrl(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.backwardHistoryCount = function(...args) 
           
@@ -3406,7 +3411,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.backwardHistoryCount(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.forwardHistoryCount = function(...args) 
           
@@ -3416,7 +3421,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.forwardHistoryCount(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.setOpenExternalLinks = function(...args) 
           
@@ -3426,7 +3431,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setOpenExternalLinks(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.setOpenLinks = function(...args) 
           
@@ -3436,7 +3441,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setOpenLinks(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.setSource = function(...args) 
           
@@ -3446,7 +3451,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setSource(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.backward = function(...args) 
           
@@ -3456,7 +3461,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.backward(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.forward = function(...args) 
           
@@ -3466,7 +3471,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.forward(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.home = function(...args) 
           
@@ -3476,7 +3481,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.home(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.reload = function(...args) 
           
@@ -3486,7 +3491,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.reload(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.event = function(...args) 
           
@@ -3496,7 +3501,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.event(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.eventFilter = function(...args) 
           
@@ -3506,7 +3511,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.eventFilter(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.keyPressEvent = function(...args) 
           
@@ -3516,7 +3521,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.keyPressEvent(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.mouseMoveEvent = function(...args) 
           
@@ -3526,7 +3531,8 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.mouseMoveEventSuper(...args);
             
         };
-    
+        RTextEdit.prototype.mouseMoveEvent.__SUPER__ = true;
+        
         // function 
         RTextEdit.prototype.mousePressEvent = function(...args) 
           
@@ -3536,7 +3542,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.mousePressEvent(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.mouseReleaseEvent = function(...args) 
           
@@ -3546,7 +3552,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.mouseReleaseEvent(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.focusOutEvent = function(...args) 
           
@@ -3556,7 +3562,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.focusOutEvent(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.focusNextPrevChild = function(...args) 
           
@@ -3566,7 +3572,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.focusNextPrevChild(...args);
             
         };
-    
+        
         // function 
         RTextEdit.prototype.paintEvent = function(...args) 
           
@@ -3576,7 +3582,8 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.paintEventSuper(...args);
             
         };
-    
+        RTextEdit.prototype.paintEvent.__SUPER__ = true;
+        
         // function 
         RTextEdit.prototype.doSetSource = function(...args) 
           
@@ -3586,7 +3593,7 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.doSetSource(...args);
             
         };
-    
+        
 
       // static functions:
       

@@ -162,6 +162,18 @@ filename="RPropertyAttributes.h">
         </parameters>
       </variant>
     </function>
+    <function name="isCustomApp001">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setCustomApp001">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter name="v" type="bool" />
+        </parameters>
+      </variant>
+    </function>
     <function name="mixWith">
       <variant return-type="void" access="public">
         <parameters>

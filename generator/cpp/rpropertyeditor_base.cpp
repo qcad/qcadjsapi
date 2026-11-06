@@ -27,7 +27,9 @@
 
       //QJSValue f = self.prototype().property("eventFilter");
       QJSValue f = self.property("eventFilter");
-      if (f.isCallable() /*&& !recFlag*/) {
+      // only call into JS if the function is overridden in JS
+      // (not the auto generated forwarder to the ...Super function, see xml2js.xsl):
+      if (f.isCallable() && !f.property("__SUPER__").toBool() /*&& !recFlag*/) {
         
 
 
@@ -90,7 +92,9 @@ event
 
       //QJSValue f = self.prototype().property("updateEditor");
       QJSValue f = self.property("updateEditor");
-      if (f.isCallable() /*&& !recFlag*/) {
+      // only call into JS if the function is overridden in JS
+      // (not the auto generated forwarder to the ...Super function, see xml2js.xsl):
+      if (f.isCallable() && !f.property("__SUPER__").toBool() /*&& !recFlag*/) {
         
 
 
@@ -172,7 +176,9 @@ showOnRequest
 
       //QJSValue f = self.prototype().property("updateGui");
       QJSValue f = self.property("updateGui");
-      if (f.isCallable() /*&& !recFlag*/) {
+      // only call into JS if the function is overridden in JS
+      // (not the auto generated forwarder to the ...Super function, see xml2js.xsl):
+      if (f.isCallable() && !f.property("__SUPER__").toBool() /*&& !recFlag*/) {
         
 
 
@@ -225,7 +231,9 @@ onlyChanges
 
       //QJSValue f = self.prototype().property("updateProperty");
       QJSValue f = self.property("updateProperty");
-      if (f.isCallable() /*&& !recFlag*/) {
+      // only call into JS if the function is overridden in JS
+      // (not the auto generated forwarder to the ...Super function, see xml2js.xsl):
+      if (f.isCallable() && !f.property("__SUPER__").toBool() /*&& !recFlag*/) {
         
 
 
@@ -300,7 +308,9 @@ showOnRequest
 
       //QJSValue f = self.prototype().property("showCustomAppProperties");
       QJSValue f = self.property("showCustomAppProperties");
-      if (f.isCallable() /*&& !recFlag*/) {
+      // only call into JS if the function is overridden in JS
+      // (not the auto generated forwarder to the ...Super function, see xml2js.xsl):
+      if (f.isCallable() && !f.property("__SUPER__").toBool() /*&& !recFlag*/) {
         
 
 
@@ -366,7 +376,9 @@ opt
 
       //QJSValue f = self.prototype().property("updateFromDocument");
       QJSValue f = self.property("updateFromDocument");
-      if (f.isCallable() /*&& !recFlag*/) {
+      // only call into JS if the function is overridden in JS
+      // (not the auto generated forwarder to the ...Super function, see xml2js.xsl):
+      if (f.isCallable() && !f.property("__SUPER__").toBool() /*&& !recFlag*/) {
         QJSValueList args;
         
 
@@ -464,7 +476,9 @@ showOnRequest
 
       //QJSValue f = self.prototype().property("updateFromDocumentNow");
       QJSValue f = self.property("updateFromDocumentNow");
-      if (f.isCallable() /*&& !recFlag*/) {
+      // only call into JS if the function is overridden in JS
+      // (not the auto generated forwarder to the ...Super function, see xml2js.xsl):
+      if (f.isCallable() && !f.property("__SUPER__").toBool() /*&& !recFlag*/) {
         QJSValueList args;
         
 
@@ -562,7 +576,9 @@ showOnRequest
 
       //QJSValue f = self.prototype().property("updateFromObject");
       QJSValue f = self.property("updateFromObject");
-      if (f.isCallable() /*&& !recFlag*/) {
+      // only call into JS if the function is overridden in JS
+      // (not the auto generated forwarder to the ...Super function, see xml2js.xsl):
+      if (f.isCallable() && !f.property("__SUPER__").toBool() /*&& !recFlag*/) {
         QJSValueList args;
         
 
@@ -639,7 +655,9 @@ document
 
       //QJSValue f = self.prototype().property("clearEditor");
       QJSValue f = self.property("clearEditor");
-      if (f.isCallable() /*&& !recFlag*/) {
+      // only call into JS if the function is overridden in JS
+      // (not the auto generated forwarder to the ...Super function, see xml2js.xsl):
+      if (f.isCallable() && !f.property("__SUPER__").toBool() /*&& !recFlag*/) {
         QJSValueList args;
         
 
@@ -702,7 +720,9 @@ document
 
       //QJSValue f = self.prototype().property("getFixedCustomPropertyNames");
       QJSValue f = self.property("getFixedCustomPropertyNames");
-      if (f.isCallable() /*&& !recFlag*/) {
+      // only call into JS if the function is overridden in JS
+      // (not the auto generated forwarder to the ...Super function, see xml2js.xsl):
+      if (f.isCallable() && !f.property("__SUPER__").toBool() /*&& !recFlag*/) {
         QJSValueList args;
         
 

@@ -105,7 +105,7 @@
               return this.__PROXY__.updateBlocks(...args);
             
         };
-    
+        
         // function 
         RBlockListener.prototype.setCurrentBlock = function(...args) 
           
@@ -115,7 +115,7 @@
               return this.__PROXY__.setCurrentBlock(...args);
             
         };
-    
+        
         // function 
         RBlockListener.prototype.clearBlocks = function(...args) 
           
@@ -125,7 +125,7 @@
               return this.__PROXY__.clearBlocks(...args);
             
         };
-    
+        
 
       // static functions:
       RBlockListener.prototype.isNullWrapper = function() {

@@ -168,7 +168,7 @@
               return this.__PROXY__.mustAlwaysClone(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.getDocument = function(...args) 
           
@@ -178,7 +178,7 @@
               return this.__PROXY__.getDocument(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.setFlag = function(...args) 
           
@@ -188,7 +188,7 @@
               return this.__PROXY__.setFlag(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.getFlag = function(...args) 
           
@@ -198,7 +198,7 @@
               return this.__PROXY__.getFlag(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.getId = function(...args) 
           
@@ -208,7 +208,7 @@
               return this.__PROXY__.getId(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.getHandle = function(...args) 
           
@@ -218,7 +218,7 @@
               return this.__PROXY__.getHandle(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.isProtected = function(...args) 
           
@@ -228,7 +228,7 @@
               return this.__PROXY__.isProtected(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.setProtected = function(...args) 
           
@@ -238,7 +238,7 @@
               return this.__PROXY__.setProtected(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.isInvisible = function(...args) 
           
@@ -248,7 +248,7 @@
               return this.__PROXY__.isInvisible(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.setInvisible = function(...args) 
           
@@ -258,7 +258,7 @@
               return this.__PROXY__.setInvisible(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.isUndone = function(...args) 
           
@@ -268,7 +268,7 @@
               return this.__PROXY__.isUndone(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.isWorkingSet = function(...args) 
           
@@ -278,7 +278,7 @@
               return this.__PROXY__.isWorkingSet(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.setWorkingSet = function(...args) 
           
@@ -288,7 +288,7 @@
               return this.__PROXY__.setWorkingSet(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.getPropertyTypeIds = function(...args) 
           
@@ -298,7 +298,7 @@
               return this.__PROXY__.getPropertyTypeIds(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.getCustomPropertyTypeIds = function(...args) 
           
@@ -308,7 +308,7 @@
               return this.__PROXY__.getCustomPropertyTypeIds(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.hasPropertyType = function(...args) 
           
@@ -318,7 +318,7 @@
               return this.__PROXY__.hasPropertyType(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.hasCustomProperties = function(...args) 
           
@@ -328,7 +328,7 @@
               return this.__PROXY__.hasCustomProperties(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.hasCustomProperty = function(...args) 
           
@@ -338,7 +338,7 @@
               return this.__PROXY__.hasCustomProperty(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.getCustomProperty = function(...args) 
           
@@ -348,7 +348,7 @@
               return this.__PROXY__.getCustomProperty(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.getCustomDoubleProperty = function(...args) 
           
@@ -358,7 +358,7 @@
               return this.__PROXY__.getCustomDoubleProperty(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.getCustomIntProperty = function(...args) 
           
@@ -368,7 +368,7 @@
               return this.__PROXY__.getCustomIntProperty(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.getCustomBoolProperty = function(...args) 
           
@@ -378,7 +378,7 @@
               return this.__PROXY__.getCustomBoolProperty(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.setCustomProperty = function(...args) 
           
@@ -388,7 +388,7 @@
               return this.__PROXY__.setCustomProperty(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.removeCustomProperty = function(...args) 
           
@@ -398,7 +398,7 @@
               return this.__PROXY__.removeCustomProperty(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.getCustomPropertyTitles = function(...args) 
           
@@ -408,7 +408,7 @@
               return this.__PROXY__.getCustomPropertyTitles(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.getCustomPropertyKeys = function(...args) 
           
@@ -418,7 +418,7 @@
               return this.__PROXY__.getCustomPropertyKeys(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.copyCustomPropertiesFrom = function(...args) 
           
@@ -428,7 +428,7 @@
               return this.__PROXY__.copyCustomPropertiesFrom(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.dump = function(...args) 
           
@@ -438,7 +438,7 @@
               return this.__PROXY__.dump(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.setUndone = function(...args) 
           
@@ -448,7 +448,7 @@
               return this.__PROXY__.setUndone(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.setId = function(...args) 
           
@@ -458,7 +458,7 @@
               return this.__PROXY__.setId(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.setHandle = function(...args) 
           
@@ -468,7 +468,7 @@
               return this.__PROXY__.setHandle(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.setMemberFlag = function(...args) 
           
@@ -478,7 +478,7 @@
               return this.__PROXY__.setMemberFlag(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.setDocument = function(...args) 
           
@@ -488,7 +488,7 @@
               return this.__PROXY__.setDocument(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.getType = function(...args) 
           
@@ -498,7 +498,7 @@
               return this.__PROXY__.getType(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.isPointType = function(...args) 
           
@@ -508,7 +508,7 @@
               return this.__PROXY__.isPointType(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.isValid = function(...args) 
           
@@ -518,7 +518,7 @@
               return this.__PROXY__.isValid(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.isSane = function(...args) 
           
@@ -528,7 +528,7 @@
               return this.__PROXY__.isSane(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.isSelected = function(...args) 
           
@@ -538,7 +538,7 @@
               return this.__PROXY__.isSelected(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.setSelected = function(...args) 
           
@@ -548,7 +548,7 @@
               return this.__PROXY__.setSelected(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.isSelectedWorkingSet = function(...args) 
           
@@ -558,7 +558,7 @@
               return this.__PROXY__.isSelectedWorkingSet(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.setSelectedWorkingSet = function(...args) 
           
@@ -568,7 +568,7 @@
               return this.__PROXY__.setSelectedWorkingSet(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.isSelectable = function(...args) 
           
@@ -578,7 +578,7 @@
               return this.__PROXY__.isSelectable(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.isUpdatesEnabled = function(...args) 
           
@@ -588,7 +588,7 @@
               return this.__PROXY__.isUpdatesEnabled(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.setUpdatesEnabled = function(...args) 
           
@@ -598,7 +598,7 @@
               return this.__PROXY__.setUpdatesEnabled(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.cloneOnChange = function(...args) 
           
@@ -608,7 +608,7 @@
               return this.__PROXY__.cloneOnChange(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.setDrawOrder = function(...args) 
           
@@ -618,7 +618,7 @@
               return this.__PROXY__.setDrawOrder(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.getDrawOrder = function(...args) 
           
@@ -628,7 +628,7 @@
               return this.__PROXY__.getDrawOrder(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.setLayerId = function(...args) 
           
@@ -638,7 +638,7 @@
               return this.__PROXY__.setLayerId(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.setLayerName = function(...args) 
           
@@ -648,7 +648,7 @@
               return this.__PROXY__.setLayerName(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.getLayerId = function(...args) 
           
@@ -658,7 +658,7 @@
               return this.__PROXY__.getLayerId(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.getLayerName = function(...args) 
           
@@ -668,7 +668,7 @@
               return this.__PROXY__.getLayerName(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.setBlockId = function(...args) 
           
@@ -678,7 +678,7 @@
               return this.__PROXY__.setBlockId(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.getBlockId = function(...args) 
           
@@ -688,7 +688,7 @@
               return this.__PROXY__.getBlockId(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.getBlockName = function(...args) 
           
@@ -698,7 +698,7 @@
               return this.__PROXY__.getBlockName(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.getParentId = function(...args) 
           
@@ -708,7 +708,7 @@
               return this.__PROXY__.getParentId(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.setLinetypeId = function(...args) 
           
@@ -718,7 +718,7 @@
               return this.__PROXY__.setLinetypeId(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.setLinetypePattern = function(...args) 
           
@@ -728,7 +728,7 @@
               return this.__PROXY__.setLinetypePattern(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.getLinetypeId = function(...args) 
           
@@ -738,7 +738,7 @@
               return this.__PROXY__.getLinetypeId(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.getLinetypePattern = function(...args) 
           
@@ -748,7 +748,7 @@
               return this.__PROXY__.getLinetypePattern(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.setLinetypeScale = function(...args) 
           
@@ -758,7 +758,7 @@
               return this.__PROXY__.setLinetypeScale(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.getLinetypeScale = function(...args) 
           
@@ -768,7 +768,7 @@
               return this.__PROXY__.getLinetypeScale(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.setLineweight = function(...args) 
           
@@ -778,7 +778,7 @@
               return this.__PROXY__.setLineweight(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.getLineweight = function(...args) 
           
@@ -788,7 +788,7 @@
               return this.__PROXY__.getLineweight(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.setColor = function(...args) 
           
@@ -798,7 +798,7 @@
               return this.__PROXY__.setColor(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.getColor = function(...args) 
           
@@ -808,7 +808,7 @@
               return this.__PROXY__.getColor(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.getDisplayColor = function(...args) 
           
@@ -818,7 +818,7 @@
               return this.__PROXY__.getDisplayColor(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.copyAttributesFrom = function(...args) 
           
@@ -828,7 +828,7 @@
               return this.__PROXY__.copyAttributesFrom(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.getBoundingBox = function(...args) 
           
@@ -838,7 +838,7 @@
               return this.__PROXY__.getBoundingBox(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.to2D = function(...args) 
           
@@ -848,7 +848,7 @@
               return this.__PROXY__.to2D(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.setZ = function(...args) 
           
@@ -858,7 +858,7 @@
               return this.__PROXY__.setZ(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.getBoundingBoxes = function(...args) 
           
@@ -868,7 +868,7 @@
               return this.__PROXY__.getBoundingBoxes(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.getHull = function(...args) 
           
@@ -878,7 +878,7 @@
               return this.__PROXY__.getHull(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.getShapes = function(...args) 
           
@@ -888,7 +888,7 @@
               return this.__PROXY__.getShapes(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.getClosestSubEntityId = function(...args) 
           
@@ -898,7 +898,7 @@
               return this.__PROXY__.getClosestSubEntityId(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.getClosestShape = function(...args) 
           
@@ -908,7 +908,7 @@
               return this.__PROXY__.getClosestShape(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.getClosestSimpleShape = function(...args) 
           
@@ -918,7 +918,7 @@
               return this.__PROXY__.getClosestSimpleShape(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.isInside = function(...args) 
           
@@ -928,7 +928,7 @@
               return this.__PROXY__.isInside(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.isOnEntity = function(...args) 
           
@@ -938,7 +938,7 @@
               return this.__PROXY__.isOnEntity(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.intersectsWith = function(...args) 
           
@@ -948,7 +948,7 @@
               return this.__PROXY__.intersectsWith(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.getDistanceTo = function(...args) 
           
@@ -958,7 +958,7 @@
               return this.__PROXY__.getDistanceTo(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.getVectorTo = function(...args) 
           
@@ -968,7 +968,7 @@
               return this.__PROXY__.getVectorTo(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.getInternalReferencePoints = function(...args) 
           
@@ -978,7 +978,7 @@
               return this.__PROXY__.getInternalReferencePoints(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.getReferencePoints = function(...args) 
           
@@ -988,7 +988,7 @@
               return this.__PROXY__.getReferencePoints(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.getPointOnEntity = function(...args) 
           
@@ -998,7 +998,7 @@
               return this.__PROXY__.getPointOnEntity(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.getEndPoints = function(...args) 
           
@@ -1008,7 +1008,7 @@
               return this.__PROXY__.getEndPoints(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.getMiddlePoints = function(...args) 
           
@@ -1018,7 +1018,7 @@
               return this.__PROXY__.getMiddlePoints(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.getCenterPoints = function(...args) 
           
@@ -1028,7 +1028,7 @@
               return this.__PROXY__.getCenterPoints(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.getClosestPointOnEntity = function(...args) 
           
@@ -1038,7 +1038,7 @@
               return this.__PROXY__.getClosestPointOnEntity(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.getPointsWithDistanceToEnd = function(...args) 
           
@@ -1048,7 +1048,7 @@
               return this.__PROXY__.getPointsWithDistanceToEnd(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.getIntersectionPoints = function(...args) 
           
@@ -1058,7 +1058,7 @@
               return this.__PROXY__.getIntersectionPoints(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.getIntersectionPointsWithShape = function(...args) 
           
@@ -1068,7 +1068,7 @@
               return this.__PROXY__.getIntersectionPointsWithShape(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.clickReferencePoint = function(...args) 
           
@@ -1078,7 +1078,7 @@
               return this.__PROXY__.clickReferencePoint(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.moveReferencePoint = function(...args) 
           
@@ -1088,7 +1088,7 @@
               return this.__PROXY__.moveReferencePoint(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.move = function(...args) 
           
@@ -1098,7 +1098,7 @@
               return this.__PROXY__.move(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.rotate = function(...args) 
           
@@ -1108,7 +1108,7 @@
               return this.__PROXY__.rotate(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.scale = function(...args) 
           
@@ -1118,7 +1118,7 @@
               return this.__PROXY__.scale(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.scaleNonUniform = function(...args) 
           
@@ -1128,7 +1128,7 @@
               return this.__PROXY__.scaleNonUniform(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.scaleVisualProperties = function(...args) 
           
@@ -1138,7 +1138,7 @@
               return this.__PROXY__.scaleVisualProperties(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.setViewportContext = function(...args) 
           
@@ -1148,7 +1148,7 @@
               return this.__PROXY__.setViewportContext(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.mirror = function(...args) 
           
@@ -1158,7 +1158,7 @@
               return this.__PROXY__.mirror(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.flipHorizontal = function(...args) 
           
@@ -1168,7 +1168,7 @@
               return this.__PROXY__.flipHorizontal(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.flipVertical = function(...args) 
           
@@ -1178,7 +1178,7 @@
               return this.__PROXY__.flipVertical(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.stretch = function(...args) 
           
@@ -1188,7 +1188,7 @@
               return this.__PROXY__.stretch(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.update = function(...args) 
           
@@ -1198,7 +1198,7 @@
               return this.__PROXY__.update(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.castToShape = function(...args) 
           
@@ -1208,7 +1208,7 @@
               return this.__PROXY__.castToShape(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.setAutoUpdatesBlocked = function(...args) 
           
@@ -1218,7 +1218,7 @@
               return this.__PROXY__.setAutoUpdatesBlocked(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.isVisible = function(...args) 
           
@@ -1228,7 +1228,7 @@
               return this.__PROXY__.isVisible(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.isEditable = function(...args) 
           
@@ -1238,7 +1238,7 @@
               return this.__PROXY__.isEditable(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.isInWorkingSet = function(...args) 
           
@@ -1248,7 +1248,7 @@
               return this.__PROXY__.isInWorkingSet(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.setParentId = function(...args) 
           
@@ -1258,7 +1258,7 @@
               return this.__PROXY__.setParentId(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.print = function(...args) 
           
@@ -1268,7 +1268,7 @@
               return this.__PROXY__.print(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.init = function(...args) 
           
@@ -1278,7 +1278,7 @@
               return this.__PROXY__.init(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.getRtti = function(...args) 
           
@@ -1288,7 +1288,7 @@
               return this.__PROXY__.getRtti(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.getStaticPropertyTypeIds = function(...args) 
           
@@ -1298,7 +1298,7 @@
               return this.__PROXY__.getStaticPropertyTypeIds(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.clone = function(...args) 
           
@@ -1308,7 +1308,7 @@
               return this.__PROXY__.clone(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.setShape = function(...args) 
           
@@ -1318,7 +1318,7 @@
               return this.__PROXY__.setShape(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.setProperty = function(...args) 
           
@@ -1328,7 +1328,7 @@
               return this.__PROXY__.setProperty(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.getProperty = function(...args) 
           
@@ -1338,7 +1338,7 @@
               return this.__PROXY__.getProperty(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.exportEntity = function(...args) 
           
@@ -1348,7 +1348,7 @@
               return this.__PROXY__.exportEntity(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.getData = function(...args) 
           
@@ -1358,7 +1358,7 @@
               return this.__PROXY__.getData(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.getPolylineShape = function(...args) 
           
@@ -1368,7 +1368,7 @@
               return this.__PROXY__.getPolylineShape(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.clear = function(...args) 
           
@@ -1378,7 +1378,7 @@
               return this.__PROXY__.clear(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.normalize = function(...args) 
           
@@ -1388,7 +1388,7 @@
               return this.__PROXY__.normalize(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.countVertices = function(...args) 
           
@@ -1398,7 +1398,7 @@
               return this.__PROXY__.countVertices(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.appendVertex = function(...args) 
           
@@ -1408,7 +1408,7 @@
               return this.__PROXY__.appendVertex(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.prependVertex = function(...args) 
           
@@ -1418,7 +1418,7 @@
               return this.__PROXY__.prependVertex(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.insertVertex = function(...args) 
           
@@ -1428,7 +1428,7 @@
               return this.__PROXY__.insertVertex(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.insertVertexAt = function(...args) 
           
@@ -1438,7 +1438,7 @@
               return this.__PROXY__.insertVertexAt(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.insertVerticesAtSelfIntersections = function(...args) 
           
@@ -1448,7 +1448,7 @@
               return this.__PROXY__.insertVerticesAtSelfIntersections(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.getVertexAt = function(...args) 
           
@@ -1458,7 +1458,7 @@
               return this.__PROXY__.getVertexAt(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.removeLastVertex = function(...args) 
           
@@ -1468,7 +1468,7 @@
               return this.__PROXY__.removeLastVertex(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.removeVertex = function(...args) 
           
@@ -1478,7 +1478,7 @@
               return this.__PROXY__.removeVertex(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.countSegments = function(...args) 
           
@@ -1488,7 +1488,7 @@
               return this.__PROXY__.countSegments(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.getSegmentAt = function(...args) 
           
@@ -1498,7 +1498,7 @@
               return this.__PROXY__.getSegmentAt(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.isArcSegmentAt = function(...args) 
           
@@ -1508,7 +1508,7 @@
               return this.__PROXY__.isArcSegmentAt(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.hasArcSegments = function(...args) 
           
@@ -1518,7 +1518,7 @@
               return this.__PROXY__.hasArcSegments(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.getClosestSegment = function(...args) 
           
@@ -1528,7 +1528,7 @@
               return this.__PROXY__.getClosestSegment(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.getClosestVertex = function(...args) 
           
@@ -1538,7 +1538,7 @@
               return this.__PROXY__.getClosestVertex(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.getBulgeAt = function(...args) 
           
@@ -1548,7 +1548,7 @@
               return this.__PROXY__.getBulgeAt(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.setBulgeAt = function(...args) 
           
@@ -1558,7 +1558,7 @@
               return this.__PROXY__.setBulgeAt(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.getVertexAngle = function(...args) 
           
@@ -1568,7 +1568,7 @@
               return this.__PROXY__.getVertexAngle(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.stripWidths = function(...args) 
           
@@ -1578,7 +1578,7 @@
               return this.__PROXY__.stripWidths(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.setMinimumWidth = function(...args) 
           
@@ -1588,7 +1588,7 @@
               return this.__PROXY__.setMinimumWidth(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.setGlobalWidth = function(...args) 
           
@@ -1598,7 +1598,7 @@
               return this.__PROXY__.setGlobalWidth(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.setStartWidthAt = function(...args) 
           
@@ -1608,7 +1608,7 @@
               return this.__PROXY__.setStartWidthAt(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.getStartWidthAt = function(...args) 
           
@@ -1618,7 +1618,7 @@
               return this.__PROXY__.getStartWidthAt(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.setEndWidthAt = function(...args) 
           
@@ -1628,7 +1628,7 @@
               return this.__PROXY__.setEndWidthAt(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.getEndWidthAt = function(...args) 
           
@@ -1638,7 +1638,7 @@
               return this.__PROXY__.getEndWidthAt(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.hasWidths = function(...args) 
           
@@ -1648,7 +1648,7 @@
               return this.__PROXY__.hasWidths(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.setStartWidths = function(...args) 
           
@@ -1658,7 +1658,7 @@
               return this.__PROXY__.setStartWidths(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.getStartWidths = function(...args) 
           
@@ -1668,7 +1668,7 @@
               return this.__PROXY__.getStartWidths(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.setEndWidths = function(...args) 
           
@@ -1678,7 +1678,7 @@
               return this.__PROXY__.setEndWidths(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.getEndWidths = function(...args) 
           
@@ -1688,7 +1688,7 @@
               return this.__PROXY__.getEndWidths(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.getDirection1 = function(...args) 
           
@@ -1698,7 +1698,7 @@
               return this.__PROXY__.getDirection1(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.getDirection2 = function(...args) 
           
@@ -1708,7 +1708,7 @@
               return this.__PROXY__.getDirection2(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.reverse = function(...args) 
           
@@ -1718,7 +1718,7 @@
               return this.__PROXY__.reverse(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.getSideOfPoint = function(...args) 
           
@@ -1728,7 +1728,7 @@
               return this.__PROXY__.getSideOfPoint(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.getEndPoint = function(...args) 
           
@@ -1738,7 +1738,7 @@
               return this.__PROXY__.getEndPoint(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.getStartPoint = function(...args) 
           
@@ -1748,7 +1748,7 @@
               return this.__PROXY__.getStartPoint(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.relocateStartPoint = function(...args) 
           
@@ -1758,7 +1758,7 @@
               return this.__PROXY__.relocateStartPoint(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.setClosed = function(...args) 
           
@@ -1768,7 +1768,7 @@
               return this.__PROXY__.setClosed(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.isClosed = function(...args) 
           
@@ -1778,7 +1778,7 @@
               return this.__PROXY__.isClosed(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.isGeometricallyClosed = function(...args) 
           
@@ -1788,7 +1788,7 @@
               return this.__PROXY__.isGeometricallyClosed(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.autoClose = function(...args) 
           
@@ -1798,7 +1798,7 @@
               return this.__PROXY__.autoClose(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.toLogicallyClosed = function(...args) 
           
@@ -1808,7 +1808,7 @@
               return this.__PROXY__.toLogicallyClosed(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.toLogicallyOpen = function(...args) 
           
@@ -1818,7 +1818,7 @@
               return this.__PROXY__.toLogicallyOpen(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.getSelfIntersectionPoints = function(...args) 
           
@@ -1828,7 +1828,7 @@
               return this.__PROXY__.getSelfIntersectionPoints(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.getOrientation = function(...args) 
           
@@ -1838,7 +1838,7 @@
               return this.__PROXY__.getOrientation(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.getArea = function(...args) 
           
@@ -1848,7 +1848,7 @@
               return this.__PROXY__.getArea(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.getLength = function(...args) 
           
@@ -1858,7 +1858,7 @@
               return this.__PROXY__.getLength(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.getLengthTo = function(...args) 
           
@@ -1868,7 +1868,7 @@
               return this.__PROXY__.getLengthTo(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.getExploded = function(...args) 
           
@@ -1878,7 +1878,7 @@
               return this.__PROXY__.getExploded(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.getComplexity = function(...args) 
           
@@ -1888,7 +1888,7 @@
               return this.__PROXY__.getComplexity(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.toPainterPath = function(...args) 
           
@@ -1898,7 +1898,7 @@
               return this.__PROXY__.toPainterPath(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.simplify = function(...args) 
           
@@ -1908,7 +1908,7 @@
               return this.__PROXY__.simplify(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.verifyTangency = function(...args) 
           
@@ -1918,7 +1918,7 @@
               return this.__PROXY__.verifyTangency(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.setPolylineGen = function(...args) 
           
@@ -1928,7 +1928,7 @@
               return this.__PROXY__.setPolylineGen(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.getPolylineGen = function(...args) 
           
@@ -1938,7 +1938,7 @@
               return this.__PROXY__.getPolylineGen(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.setElevation = function(...args) 
           
@@ -1948,7 +1948,7 @@
               return this.__PROXY__.setElevation(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.getElevation = function(...args) 
           
@@ -1958,7 +1958,7 @@
               return this.__PROXY__.getElevation(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.isFlat = function(...args) 
           
@@ -1968,7 +1968,7 @@
               return this.__PROXY__.isFlat(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.getTrimEnd = function(...args) 
           
@@ -1978,7 +1978,7 @@
               return this.__PROXY__.getTrimEnd(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.trimStartPoint = function(...args) 
           
@@ -1988,7 +1988,7 @@
               return this.__PROXY__.trimStartPoint(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.trimEndPoint = function(...args) 
           
@@ -1998,7 +1998,7 @@
               return this.__PROXY__.trimEndPoint(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.morph = function(...args) 
           
@@ -2008,7 +2008,7 @@
               return this.__PROXY__.morph(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.contains = function(...args) 
           
@@ -2018,7 +2018,7 @@
               return this.__PROXY__.contains(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.containsShape = function(...args) 
           
@@ -2028,7 +2028,7 @@
               return this.__PROXY__.containsShape(...args);
             
         };
-    
+        
         // function 
         RPolylineEntity.prototype.validate = function(...args) 
           
@@ -2038,7 +2038,7 @@
               return this.__PROXY__.validate(...args);
             
         };
-    
+        
 
       // static functions:
       

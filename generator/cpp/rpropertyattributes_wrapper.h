@@ -680,6 +680,50 @@
               ;
             
     // Class: RPropertyAttributes
+    // Function: isCustomApp001
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  isCustomApp001
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RPropertyAttributes
+    // Function: setCustomApp001
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setCustomApp001
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RPropertyAttributes
     // Function: mixWith
     // Source: 
     // Static: false

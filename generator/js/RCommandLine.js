@@ -157,7 +157,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setObjectName(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.isWidgetType = function(...args) 
           
@@ -167,7 +167,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.isWidgetType(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.isWindowType = function(...args) 
           
@@ -177,7 +177,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.isWindowType(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.signalsBlocked = function(...args) 
           
@@ -187,7 +187,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.signalsBlocked(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.blockSignals = function(...args) 
           
@@ -197,7 +197,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.blockSignals(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.findChild = function(...args) 
           
@@ -207,7 +207,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.findChild(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.children = function(...args) 
           
@@ -217,7 +217,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.children(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.installEventFilter = function(...args) 
           
@@ -227,7 +227,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.installEventFilter(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.removeEventFilter = function(...args) 
           
@@ -237,7 +237,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.removeEventFilter(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.dumpObjectTree = function(...args) 
           
@@ -247,7 +247,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.dumpObjectTree(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.dumpObjectInfo = function(...args) 
           
@@ -257,7 +257,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.dumpObjectInfo(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.setProperty = function(...args) 
           
@@ -267,7 +267,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setProperty(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.property = function(...args) 
           
@@ -277,7 +277,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.property(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.dynamicPropertyNames = function(...args) 
           
@@ -287,7 +287,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.dynamicPropertyNames(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.parent = function(...args) 
           
@@ -297,7 +297,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.parent(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.deleteLater = function(...args) 
           
@@ -307,7 +307,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.deleteLater(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.devType = function(...args) 
           
@@ -317,7 +317,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.devType(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.createWinId = function(...args) 
           
@@ -327,7 +327,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.createWinId(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.isWindow = function(...args) 
           
@@ -337,7 +337,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.isWindow(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.isModal = function(...args) 
           
@@ -347,7 +347,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.isModal(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.setWindowModality = function(...args) 
           
@@ -357,7 +357,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setWindowModality(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.isEnabled = function(...args) 
           
@@ -367,7 +367,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.isEnabled(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.isEnabledTo = function(...args) 
           
@@ -377,7 +377,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.isEnabledTo(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.setEnabled = function(...args) 
           
@@ -387,7 +387,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setEnabled(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.setDisabled = function(...args) 
           
@@ -397,7 +397,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setDisabled(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.setWindowModified = function(...args) 
           
@@ -407,7 +407,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setWindowModified(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.setMinimumSize = function(...args) 
           
@@ -417,7 +417,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setMinimumSize(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.setMaximumSize = function(...args) 
           
@@ -427,7 +427,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setMaximumSize(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.setMinimumWidth = function(...args) 
           
@@ -437,7 +437,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setMinimumWidth(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.setMinimumHeight = function(...args) 
           
@@ -447,7 +447,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setMinimumHeight(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.setMaximumWidth = function(...args) 
           
@@ -457,7 +457,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setMaximumWidth(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.setMaximumHeight = function(...args) 
           
@@ -467,7 +467,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setMaximumHeight(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.setSizeIncrement = function(...args) 
           
@@ -477,7 +477,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setSizeIncrement(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.setBaseSize = function(...args) 
           
@@ -487,7 +487,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setBaseSize(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.setFixedSize = function(...args) 
           
@@ -497,7 +497,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setFixedSize(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.setFixedWidth = function(...args) 
           
@@ -507,7 +507,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setFixedWidth(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.setFixedHeight = function(...args) 
           
@@ -517,7 +517,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setFixedHeight(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.mapToGlobal = function(...args) 
           
@@ -527,7 +527,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.mapToGlobal(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.mapFromGlobal = function(...args) 
           
@@ -537,7 +537,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.mapFromGlobal(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.mapToParent = function(...args) 
           
@@ -547,7 +547,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.mapToParent(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.mapFromParent = function(...args) 
           
@@ -557,7 +557,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.mapFromParent(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.mapTo = function(...args) 
           
@@ -567,7 +567,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.mapTo(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.mapFrom = function(...args) 
           
@@ -577,7 +577,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.mapFrom(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.window = function(...args) 
           
@@ -587,7 +587,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.window(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.nativeParentWidget = function(...args) 
           
@@ -597,7 +597,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.nativeParentWidget(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.topLevelWidget = function(...args) 
           
@@ -607,7 +607,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.topLevelWidget(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.setPalette = function(...args) 
           
@@ -617,7 +617,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setPalette(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.setBackgroundRole = function(...args) 
           
@@ -627,7 +627,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setBackgroundRole(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.backgroundRole = function(...args) 
           
@@ -637,7 +637,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.backgroundRole(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.setForegroundRole = function(...args) 
           
@@ -647,7 +647,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setForegroundRole(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.foregroundRole = function(...args) 
           
@@ -657,7 +657,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.foregroundRole(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.setFont = function(...args) 
           
@@ -667,7 +667,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setFont(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.fontInfo = function(...args) 
           
@@ -677,7 +677,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.fontInfo(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.setCursor = function(...args) 
           
@@ -687,7 +687,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setCursor(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.unsetCursor = function(...args) 
           
@@ -697,7 +697,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.unsetCursor(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.setMouseTracking = function(...args) 
           
@@ -707,7 +707,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setMouseTracking(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.hasMouseTracking = function(...args) 
           
@@ -717,7 +717,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.hasMouseTracking(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.underMouse = function(...args) 
           
@@ -727,7 +727,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.underMouse(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.setTabletTracking = function(...args) 
           
@@ -737,7 +737,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setTabletTracking(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.hasTabletTracking = function(...args) 
           
@@ -747,7 +747,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.hasTabletTracking(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.setMask = function(...args) 
           
@@ -757,7 +757,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setMask(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.mask = function(...args) 
           
@@ -767,7 +767,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.mask(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.clearMask = function(...args) 
           
@@ -777,7 +777,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.clearMask(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.grab = function(...args) 
           
@@ -787,7 +787,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.grab(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.grabGesture = function(...args) 
           
@@ -797,7 +797,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.grabGesture(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.ungrabGesture = function(...args) 
           
@@ -807,7 +807,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.ungrabGesture(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.setWindowTitle = function(...args) 
           
@@ -817,7 +817,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setWindowTitle(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.setStyleSheet = function(...args) 
           
@@ -827,7 +827,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setStyleSheet(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.setWindowIcon = function(...args) 
           
@@ -837,7 +837,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setWindowIcon(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.setWindowIconText = function(...args) 
           
@@ -847,7 +847,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setWindowIconText(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.setWindowRole = function(...args) 
           
@@ -857,7 +857,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setWindowRole(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.windowRole = function(...args) 
           
@@ -867,7 +867,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.windowRole(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.setWindowFilePath = function(...args) 
           
@@ -877,7 +877,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setWindowFilePath(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.setWindowOpacity = function(...args) 
           
@@ -887,7 +887,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setWindowOpacity(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.isWindowModified = function(...args) 
           
@@ -897,7 +897,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.isWindowModified(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.setToolTip = function(...args) 
           
@@ -907,7 +907,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setToolTip(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.setToolTipDuration = function(...args) 
           
@@ -917,7 +917,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setToolTipDuration(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.setStatusTip = function(...args) 
           
@@ -927,7 +927,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setStatusTip(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.setWhatsThis = function(...args) 
           
@@ -937,7 +937,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setWhatsThis(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.setAccessibleName = function(...args) 
           
@@ -947,7 +947,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setAccessibleName(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.setAccessibleDescription = function(...args) 
           
@@ -957,7 +957,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setAccessibleDescription(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.setLayoutDirection = function(...args) 
           
@@ -967,7 +967,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setLayoutDirection(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.unsetLayoutDirection = function(...args) 
           
@@ -977,7 +977,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.unsetLayoutDirection(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.setLocale = function(...args) 
           
@@ -987,7 +987,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setLocale(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.unsetLocale = function(...args) 
           
@@ -997,7 +997,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.unsetLocale(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.isRightToLeft = function(...args) 
           
@@ -1007,7 +1007,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.isRightToLeft(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.isLeftToRight = function(...args) 
           
@@ -1017,7 +1017,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.isLeftToRight(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.activateWindow = function(...args) 
           
@@ -1027,7 +1027,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.activateWindow(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.clearFocus = function(...args) 
           
@@ -1037,7 +1037,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.clearFocus(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.setFocus = function(...args) 
           
@@ -1047,7 +1047,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setFocus(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.setFocusPolicy = function(...args) 
           
@@ -1057,7 +1057,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setFocusPolicy(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.hasFocus = function(...args) 
           
@@ -1067,7 +1067,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.hasFocus(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.setFocusProxy = function(...args) 
           
@@ -1077,7 +1077,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setFocusProxy(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.focusProxy = function(...args) 
           
@@ -1087,7 +1087,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.focusProxy(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.setContextMenuPolicy = function(...args) 
           
@@ -1097,7 +1097,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setContextMenuPolicy(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.grabMouse = function(...args) 
           
@@ -1107,7 +1107,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.grabMouse(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.releaseMouse = function(...args) 
           
@@ -1117,7 +1117,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.releaseMouse(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.grabKeyboard = function(...args) 
           
@@ -1127,7 +1127,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.grabKeyboard(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.releaseKeyboard = function(...args) 
           
@@ -1137,7 +1137,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.releaseKeyboard(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.grabShortcut = function(...args) 
           
@@ -1147,7 +1147,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.grabShortcut(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.releaseShortcut = function(...args) 
           
@@ -1157,7 +1157,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.releaseShortcut(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.setShortcutEnabled = function(...args) 
           
@@ -1167,7 +1167,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setShortcutEnabled(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.setShortcutAutoRepeat = function(...args) 
           
@@ -1177,7 +1177,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setShortcutAutoRepeat(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.setUpdatesEnabled = function(...args) 
           
@@ -1187,7 +1187,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setUpdatesEnabled(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.update = function(...args) 
           
@@ -1197,7 +1197,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.update(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.repaint = function(...args) 
           
@@ -1207,7 +1207,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.repaint(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.setVisible = function(...args) 
           
@@ -1217,7 +1217,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setVisible(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.setHidden = function(...args) 
           
@@ -1227,7 +1227,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setHidden(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.show = function(...args) 
           
@@ -1237,7 +1237,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.show(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.hide = function(...args) 
           
@@ -1247,7 +1247,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.hide(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.showMinimized = function(...args) 
           
@@ -1257,7 +1257,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.showMinimized(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.showMaximized = function(...args) 
           
@@ -1267,7 +1267,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.showMaximized(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.showFullScreen = function(...args) 
           
@@ -1277,7 +1277,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.showFullScreen(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.showNormal = function(...args) 
           
@@ -1287,7 +1287,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.showNormal(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.close = function(...args) 
           
@@ -1297,7 +1297,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.close(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.raise = function(...args) 
           
@@ -1307,7 +1307,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.raise(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.lower = function(...args) 
           
@@ -1317,7 +1317,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.lower(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.stackUnder = function(...args) 
           
@@ -1327,7 +1327,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.stackUnder(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.move = function(...args) 
           
@@ -1337,7 +1337,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.move(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.resize = function(...args) 
           
@@ -1347,7 +1347,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.resize(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.setGeometry = function(...args) 
           
@@ -1357,7 +1357,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setGeometry(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.saveGeometry = function(...args) 
           
@@ -1367,7 +1367,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.saveGeometry(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.restoreGeometry = function(...args) 
           
@@ -1377,7 +1377,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.restoreGeometry(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.adjustSize = function(...args) 
           
@@ -1387,7 +1387,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.adjustSize(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.isVisible = function(...args) 
           
@@ -1397,7 +1397,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.isVisible(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.isVisibleTo = function(...args) 
           
@@ -1407,7 +1407,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.isVisibleTo(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.isHidden = function(...args) 
           
@@ -1417,7 +1417,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.isHidden(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.isMinimized = function(...args) 
           
@@ -1427,7 +1427,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.isMinimized(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.isMaximized = function(...args) 
           
@@ -1437,7 +1437,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.isMaximized(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.isFullScreen = function(...args) 
           
@@ -1447,7 +1447,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.isFullScreen(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.windowState = function(...args) 
           
@@ -1457,7 +1457,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.windowState(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.setWindowState = function(...args) 
           
@@ -1467,7 +1467,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setWindowState(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.overrideWindowState = function(...args) 
           
@@ -1477,7 +1477,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.overrideWindowState(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.setSizePolicy = function(...args) 
           
@@ -1487,7 +1487,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setSizePolicy(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.heightForWidth = function(...args) 
           
@@ -1497,7 +1497,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.heightForWidth(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.hasHeightForWidth = function(...args) 
           
@@ -1507,7 +1507,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.hasHeightForWidth(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.visibleRegion = function(...args) 
           
@@ -1517,7 +1517,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.visibleRegion(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.setContentsMargins = function(...args) 
           
@@ -1527,7 +1527,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setContentsMargins(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.contentsMargins = function(...args) 
           
@@ -1537,7 +1537,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.contentsMargins(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.contentsRect = function(...args) 
           
@@ -1547,7 +1547,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.contentsRect(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.layout = function(...args) 
           
@@ -1557,7 +1557,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.layout(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.setLayout = function(...args) 
           
@@ -1567,7 +1567,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setLayout(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.updateGeometry = function(...args) 
           
@@ -1577,7 +1577,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.updateGeometry(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.setParent = function(...args) 
           
@@ -1587,7 +1587,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setParent(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.scroll = function(...args) 
           
@@ -1597,7 +1597,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.scroll(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.focusWidget = function(...args) 
           
@@ -1607,7 +1607,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.focusWidget(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.nextInFocusChain = function(...args) 
           
@@ -1617,7 +1617,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.nextInFocusChain(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.previousInFocusChain = function(...args) 
           
@@ -1627,7 +1627,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.previousInFocusChain(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.setAcceptDrops = function(...args) 
           
@@ -1637,7 +1637,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setAcceptDrops(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.addActions = function(...args) 
           
@@ -1647,7 +1647,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.addActions(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.insertActions = function(...args) 
           
@@ -1657,7 +1657,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.insertActions(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.insertAction = function(...args) 
           
@@ -1667,7 +1667,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.insertAction(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.removeAction = function(...args) 
           
@@ -1677,7 +1677,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.removeAction(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.actions = function(...args) 
           
@@ -1687,7 +1687,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.actions(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.parentWidget = function(...args) 
           
@@ -1697,7 +1697,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.parentWidget(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.setWindowFlags = function(...args) 
           
@@ -1707,7 +1707,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setWindowFlags(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.windowFlags = function(...args) 
           
@@ -1717,7 +1717,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.windowFlags(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.setWindowFlag = function(...args) 
           
@@ -1727,7 +1727,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setWindowFlag(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.overrideWindowFlags = function(...args) 
           
@@ -1737,7 +1737,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.overrideWindowFlags(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.windowType = function(...args) 
           
@@ -1747,7 +1747,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.windowType(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.childAt = function(...args) 
           
@@ -1757,7 +1757,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.childAt(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.setAttribute = function(...args) 
           
@@ -1767,7 +1767,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setAttribute(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.testAttribute = function(...args) 
           
@@ -1777,7 +1777,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.testAttribute(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.ensurePolished = function(...args) 
           
@@ -1787,7 +1787,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.ensurePolished(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.isAncestorOf = function(...args) 
           
@@ -1797,7 +1797,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.isAncestorOf(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.setAutoFillBackground = function(...args) 
           
@@ -1807,7 +1807,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setAutoFillBackground(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.event = function(...args) 
           
@@ -1817,7 +1817,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.event(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.wheelEvent = function(...args) 
           
@@ -1827,7 +1827,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.wheelEvent(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.keyPressEvent = function(...args) 
           
@@ -1837,7 +1837,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.keyPressEvent(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.enterEvent = function(...args) 
           
@@ -1847,7 +1847,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.enterEvent(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.leaveEvent = function(...args) 
           
@@ -1857,7 +1857,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.leaveEvent(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.moveEvent = function(...args) 
           
@@ -1867,7 +1867,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.moveEvent(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.closeEvent = function(...args) 
           
@@ -1877,7 +1877,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.closeEvent(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.tabletEvent = function(...args) 
           
@@ -1887,7 +1887,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.tabletEvent(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.showEvent = function(...args) 
           
@@ -1897,7 +1897,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.showEvent(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.hideEvent = function(...args) 
           
@@ -1907,7 +1907,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.hideEvent(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.nativeEvent = function(...args) 
           
@@ -1917,7 +1917,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.nativeEvent(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.metric = function(...args) 
           
@@ -1927,7 +1927,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.metric(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.initPainter = function(...args) 
           
@@ -1937,7 +1937,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.initPainter(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.redirected = function(...args) 
           
@@ -1947,7 +1947,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.redirected(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.sharedPainter = function(...args) 
           
@@ -1957,7 +1957,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.sharedPainter(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.setInputMethodHints = function(...args) 
           
@@ -1967,7 +1967,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setInputMethodHints(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.updateMicroFocus = function(...args) 
           
@@ -1977,7 +1977,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.updateMicroFocus(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.create = function(...args) 
           
@@ -1987,7 +1987,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.create(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.destroy = function(...args) 
           
@@ -1997,7 +1997,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.destroy(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.focusNextPrevChild = function(...args) 
           
@@ -2007,7 +2007,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.focusNextPrevChild(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.focusNextChild = function(...args) 
           
@@ -2017,7 +2017,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.focusNextChild(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.focusPreviousChild = function(...args) 
           
@@ -2027,7 +2027,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.focusPreviousChild(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.setBackingStore = function(...args) 
           
@@ -2037,7 +2037,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setBackingStore(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.testAttribute_helper = function(...args) 
           
@@ -2047,7 +2047,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.testAttribute_helper(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.takeLayout = function(...args) 
           
@@ -2057,7 +2057,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.takeLayout(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.qt_mac_is_metal = function(...args) 
           
@@ -2067,7 +2067,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.qt_mac_is_metal(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.qt_qwidget_data = function(...args) 
           
@@ -2077,7 +2077,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.qt_qwidget_data(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.qt_widget_private = function(...args) 
           
@@ -2087,7 +2087,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.qt_widget_private(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.setPlaceholderText = function(...args) 
           
@@ -2097,7 +2097,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setPlaceholderText(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.setMaxLength = function(...args) 
           
@@ -2107,7 +2107,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setMaxLength(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.setFrame = function(...args) 
           
@@ -2117,7 +2117,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setFrame(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.hasFrame = function(...args) 
           
@@ -2127,7 +2127,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.hasFrame(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.setClearButtonEnabled = function(...args) 
           
@@ -2137,7 +2137,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setClearButtonEnabled(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.isClearButtonEnabled = function(...args) 
           
@@ -2147,7 +2147,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.isClearButtonEnabled(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.setEchoMode = function(...args) 
           
@@ -2157,7 +2157,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setEchoMode(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.isReadOnly = function(...args) 
           
@@ -2167,7 +2167,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.isReadOnly(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.setReadOnly = function(...args) 
           
@@ -2177,7 +2177,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setReadOnly(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.setValidator = function(...args) 
           
@@ -2187,7 +2187,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setValidator(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.setCompleter = function(...args) 
           
@@ -2197,7 +2197,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setCompleter(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.completer = function(...args) 
           
@@ -2207,7 +2207,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.completer(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.setCursorPosition = function(...args) 
           
@@ -2217,7 +2217,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setCursorPosition(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.cursorPositionAt = function(...args) 
           
@@ -2227,7 +2227,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.cursorPositionAt(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.setAlignment = function(...args) 
           
@@ -2237,7 +2237,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setAlignment(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.cursorForward = function(...args) 
           
@@ -2247,7 +2247,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.cursorForward(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.cursorBackward = function(...args) 
           
@@ -2257,7 +2257,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.cursorBackward(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.cursorWordForward = function(...args) 
           
@@ -2267,7 +2267,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.cursorWordForward(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.cursorWordBackward = function(...args) 
           
@@ -2277,7 +2277,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.cursorWordBackward(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.backspace = function(...args) 
           
@@ -2287,7 +2287,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.backspace(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.del = function(...args) 
           
@@ -2297,7 +2297,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.del(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.home = function(...args) 
           
@@ -2307,7 +2307,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.home(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.end = function(...args) 
           
@@ -2317,7 +2317,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.end(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.isModified = function(...args) 
           
@@ -2327,7 +2327,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.isModified(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.setModified = function(...args) 
           
@@ -2337,7 +2337,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setModified(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.setSelection = function(...args) 
           
@@ -2347,7 +2347,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setSelection(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.selectionStart = function(...args) 
           
@@ -2357,7 +2357,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.selectionStart(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.selectionEnd = function(...args) 
           
@@ -2367,7 +2367,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.selectionEnd(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.selectionLength = function(...args) 
           
@@ -2377,7 +2377,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.selectionLength(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.isUndoAvailable = function(...args) 
           
@@ -2387,7 +2387,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.isUndoAvailable(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.isRedoAvailable = function(...args) 
           
@@ -2397,7 +2397,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.isRedoAvailable(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.setDragEnabled = function(...args) 
           
@@ -2407,7 +2407,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setDragEnabled(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.setCursorMoveStyle = function(...args) 
           
@@ -2417,7 +2417,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setCursorMoveStyle(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.inputMask = function(...args) 
           
@@ -2427,7 +2427,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.inputMask(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.setInputMask = function(...args) 
           
@@ -2437,7 +2437,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setInputMask(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.hasAcceptableInput = function(...args) 
           
@@ -2447,7 +2447,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.hasAcceptableInput(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.setTextMargins = function(...args) 
           
@@ -2457,7 +2457,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setTextMargins(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.textMargins = function(...args) 
           
@@ -2467,7 +2467,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.textMargins(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.addAction = function(...args) 
           
@@ -2477,7 +2477,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.addAction(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.setText = function(...args) 
           
@@ -2487,7 +2487,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setText(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.clear = function(...args) 
           
@@ -2497,7 +2497,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.clear(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.selectAll = function(...args) 
           
@@ -2507,7 +2507,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.selectAll(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.undo = function(...args) 
           
@@ -2517,7 +2517,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.undo(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.redo = function(...args) 
           
@@ -2527,7 +2527,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.redo(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.cut = function(...args) 
           
@@ -2537,7 +2537,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.cut(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.copy = function(...args) 
           
@@ -2547,7 +2547,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.copy(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.deselect = function(...args) 
           
@@ -2557,7 +2557,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.deselect(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.insert = function(...args) 
           
@@ -2567,7 +2567,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.insert(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.createStandardContextMenu = function(...args) 
           
@@ -2577,7 +2577,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.createStandardContextMenu(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.mousePressEvent = function(...args) 
           
@@ -2587,7 +2587,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.mousePressEvent(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.mouseReleaseEvent = function(...args) 
           
@@ -2597,7 +2597,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.mouseReleaseEvent(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.mouseDoubleClickEvent = function(...args) 
           
@@ -2607,7 +2607,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.mouseDoubleClickEvent(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.keyReleaseEvent = function(...args) 
           
@@ -2617,7 +2617,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.keyReleaseEvent(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.focusInEvent = function(...args) 
           
@@ -2627,7 +2627,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.focusInEvent(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.focusOutEvent = function(...args) 
           
@@ -2637,7 +2637,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.focusOutEvent(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.dragEnterEvent = function(...args) 
           
@@ -2647,7 +2647,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.dragEnterEvent(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.dragMoveEvent = function(...args) 
           
@@ -2657,7 +2657,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.dragMoveEvent(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.dragLeaveEvent = function(...args) 
           
@@ -2667,7 +2667,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.dragLeaveEvent(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.dropEvent = function(...args) 
           
@@ -2677,7 +2677,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.dropEvent(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.changeEvent = function(...args) 
           
@@ -2687,7 +2687,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.changeEvent(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.contextMenuEvent = function(...args) 
           
@@ -2697,7 +2697,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.contextMenuEvent(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.inputMethodEvent = function(...args) 
           
@@ -2707,7 +2707,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.inputMethodEvent(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.initStyleOption = function(...args) 
           
@@ -2717,7 +2717,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.initStyleOption(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.inputMethodQuery = function(...args) 
           
@@ -2727,7 +2727,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.inputMethodQuery(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.cursorRect = function(...args) 
           
@@ -2737,7 +2737,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.cursorRect(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.getLastCommand = function(...args) 
           
@@ -2747,7 +2747,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.getLastCommand(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.appendCommand = function(...args) 
           
@@ -2757,7 +2757,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.appendCommand(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.getHistory = function(...args) 
           
@@ -2767,7 +2767,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.getHistory(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.setHistory = function(...args) 
           
@@ -2777,7 +2777,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setHistory(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.triggerCommand = function(...args) 
           
@@ -2787,7 +2787,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.triggerCommand(...args);
             
         };
-    
+        
         // function 
         RCommandLine.prototype.paste = function(...args) 
           
@@ -2797,7 +2797,7 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.paste(...args);
             
         };
-    
+        
 
       // static functions:
       

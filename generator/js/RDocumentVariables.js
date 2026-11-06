@@ -138,7 +138,7 @@
               return this.__PROXY__.mustAlwaysClone(...args);
             
         };
-    
+        
         // function 
         RDocumentVariables.prototype.getDocument = function(...args) 
           
@@ -148,7 +148,7 @@
               return this.__PROXY__.getDocument(...args);
             
         };
-    
+        
         // function 
         RDocumentVariables.prototype.setDocument = function(...args) 
           
@@ -158,7 +158,7 @@
               return this.__PROXY__.setDocument(...args);
             
         };
-    
+        
         // function 
         RDocumentVariables.prototype.setFlag = function(...args) 
           
@@ -168,7 +168,7 @@
               return this.__PROXY__.setFlag(...args);
             
         };
-    
+        
         // function 
         RDocumentVariables.prototype.getFlag = function(...args) 
           
@@ -178,7 +178,7 @@
               return this.__PROXY__.getFlag(...args);
             
         };
-    
+        
         // function 
         RDocumentVariables.prototype.getId = function(...args) 
           
@@ -188,7 +188,7 @@
               return this.__PROXY__.getId(...args);
             
         };
-    
+        
         // function 
         RDocumentVariables.prototype.getHandle = function(...args) 
           
@@ -198,7 +198,7 @@
               return this.__PROXY__.getHandle(...args);
             
         };
-    
+        
         // function 
         RDocumentVariables.prototype.isProtected = function(...args) 
           
@@ -208,7 +208,7 @@
               return this.__PROXY__.isProtected(...args);
             
         };
-    
+        
         // function 
         RDocumentVariables.prototype.setProtected = function(...args) 
           
@@ -218,7 +218,7 @@
               return this.__PROXY__.setProtected(...args);
             
         };
-    
+        
         // function 
         RDocumentVariables.prototype.isInvisible = function(...args) 
           
@@ -228,7 +228,7 @@
               return this.__PROXY__.isInvisible(...args);
             
         };
-    
+        
         // function 
         RDocumentVariables.prototype.setInvisible = function(...args) 
           
@@ -238,7 +238,7 @@
               return this.__PROXY__.setInvisible(...args);
             
         };
-    
+        
         // function 
         RDocumentVariables.prototype.isSelected = function(...args) 
           
@@ -248,7 +248,7 @@
               return this.__PROXY__.isSelected(...args);
             
         };
-    
+        
         // function 
         RDocumentVariables.prototype.setSelected = function(...args) 
           
@@ -258,7 +258,7 @@
               return this.__PROXY__.setSelected(...args);
             
         };
-    
+        
         // function 
         RDocumentVariables.prototype.isUndone = function(...args) 
           
@@ -268,7 +268,7 @@
               return this.__PROXY__.isUndone(...args);
             
         };
-    
+        
         // function 
         RDocumentVariables.prototype.isWorkingSet = function(...args) 
           
@@ -278,7 +278,7 @@
               return this.__PROXY__.isWorkingSet(...args);
             
         };
-    
+        
         // function 
         RDocumentVariables.prototype.setWorkingSet = function(...args) 
           
@@ -288,7 +288,7 @@
               return this.__PROXY__.setWorkingSet(...args);
             
         };
-    
+        
         // function 
         RDocumentVariables.prototype.getPropertyTypeIds = function(...args) 
           
@@ -298,7 +298,7 @@
               return this.__PROXY__.getPropertyTypeIds(...args);
             
         };
-    
+        
         // function 
         RDocumentVariables.prototype.hasPropertyType = function(...args) 
           
@@ -308,7 +308,7 @@
               return this.__PROXY__.hasPropertyType(...args);
             
         };
-    
+        
         // function 
         RDocumentVariables.prototype.hasCustomProperties = function(...args) 
           
@@ -318,7 +318,7 @@
               return this.__PROXY__.hasCustomProperties(...args);
             
         };
-    
+        
         // function 
         RDocumentVariables.prototype.hasCustomProperty = function(...args) 
           
@@ -328,7 +328,7 @@
               return this.__PROXY__.hasCustomProperty(...args);
             
         };
-    
+        
         // function 
         RDocumentVariables.prototype.getCustomProperty = function(...args) 
           
@@ -338,7 +338,7 @@
               return this.__PROXY__.getCustomProperty(...args);
             
         };
-    
+        
         // function 
         RDocumentVariables.prototype.getCustomDoubleProperty = function(...args) 
           
@@ -348,7 +348,7 @@
               return this.__PROXY__.getCustomDoubleProperty(...args);
             
         };
-    
+        
         // function 
         RDocumentVariables.prototype.getCustomIntProperty = function(...args) 
           
@@ -358,7 +358,7 @@
               return this.__PROXY__.getCustomIntProperty(...args);
             
         };
-    
+        
         // function 
         RDocumentVariables.prototype.getCustomBoolProperty = function(...args) 
           
@@ -368,7 +368,7 @@
               return this.__PROXY__.getCustomBoolProperty(...args);
             
         };
-    
+        
         // function 
         RDocumentVariables.prototype.setCustomProperty = function(...args) 
           
@@ -378,7 +378,7 @@
               return this.__PROXY__.setCustomProperty(...args);
             
         };
-    
+        
         // function 
         RDocumentVariables.prototype.removeCustomProperty = function(...args) 
           
@@ -388,7 +388,7 @@
               return this.__PROXY__.removeCustomProperty(...args);
             
         };
-    
+        
         // function 
         RDocumentVariables.prototype.getCustomPropertyTitles = function(...args) 
           
@@ -398,7 +398,7 @@
               return this.__PROXY__.getCustomPropertyTitles(...args);
             
         };
-    
+        
         // function 
         RDocumentVariables.prototype.getCustomPropertyKeys = function(...args) 
           
@@ -408,7 +408,7 @@
               return this.__PROXY__.getCustomPropertyKeys(...args);
             
         };
-    
+        
         // function 
         RDocumentVariables.prototype.copyCustomPropertiesFrom = function(...args) 
           
@@ -418,7 +418,7 @@
               return this.__PROXY__.copyCustomPropertiesFrom(...args);
             
         };
-    
+        
         // function 
         RDocumentVariables.prototype.getComplexity = function(...args) 
           
@@ -428,7 +428,7 @@
               return this.__PROXY__.getComplexity(...args);
             
         };
-    
+        
         // function 
         RDocumentVariables.prototype.setAutoUpdatesBlocked = function(...args) 
           
@@ -438,7 +438,7 @@
               return this.__PROXY__.setAutoUpdatesBlocked(...args);
             
         };
-    
+        
         // function 
         RDocumentVariables.prototype.dump = function(...args) 
           
@@ -448,7 +448,7 @@
               return this.__PROXY__.dump(...args);
             
         };
-    
+        
         // function 
         RDocumentVariables.prototype.validate = function(...args) 
           
@@ -458,7 +458,7 @@
               return this.__PROXY__.validate(...args);
             
         };
-    
+        
         // function 
         RDocumentVariables.prototype.print = function(...args) 
           
@@ -468,7 +468,7 @@
               return this.__PROXY__.print(...args);
             
         };
-    
+        
         // function 
         RDocumentVariables.prototype.setUndone = function(...args) 
           
@@ -478,7 +478,7 @@
               return this.__PROXY__.setUndone(...args);
             
         };
-    
+        
         // function 
         RDocumentVariables.prototype.setId = function(...args) 
           
@@ -488,7 +488,7 @@
               return this.__PROXY__.setId(...args);
             
         };
-    
+        
         // function 
         RDocumentVariables.prototype.setHandle = function(...args) 
           
@@ -498,7 +498,7 @@
               return this.__PROXY__.setHandle(...args);
             
         };
-    
+        
         // function 
         RDocumentVariables.prototype.setMemberFlag = function(...args) 
           
@@ -508,7 +508,7 @@
               return this.__PROXY__.setMemberFlag(...args);
             
         };
-    
+        
         // function 
         RDocumentVariables.prototype.init = function(...args) 
           
@@ -518,7 +518,7 @@
               return this.__PROXY__.init(...args);
             
         };
-    
+        
         // function 
         RDocumentVariables.prototype.getRtti = function(...args) 
           
@@ -528,7 +528,7 @@
               return this.__PROXY__.getRtti(...args);
             
         };
-    
+        
         // function 
         RDocumentVariables.prototype.getType = function(...args) 
           
@@ -538,7 +538,7 @@
               return this.__PROXY__.getType(...args);
             
         };
-    
+        
         // function 
         RDocumentVariables.prototype.clone = function(...args) 
           
@@ -548,7 +548,7 @@
               return this.__PROXY__.clone(...args);
             
         };
-    
+        
         // function 
         RDocumentVariables.prototype.getProperty = function(...args) 
           
@@ -558,7 +558,7 @@
               return this.__PROXY__.getProperty(...args);
             
         };
-    
+        
         // function 
         RDocumentVariables.prototype.setProperty = function(...args) 
           
@@ -568,7 +568,7 @@
               return this.__PROXY__.setProperty(...args);
             
         };
-    
+        
         // function 
         RDocumentVariables.prototype.clear = function(...args) 
           
@@ -578,7 +578,7 @@
               return this.__PROXY__.clear(...args);
             
         };
-    
+        
         // function 
         RDocumentVariables.prototype.getCustomPropertyTypeIds = function(...args) 
           
@@ -588,7 +588,7 @@
               return this.__PROXY__.getCustomPropertyTypeIds(...args);
             
         };
-    
+        
         // function 
         RDocumentVariables.prototype.setKnownVariable = function(...args) 
           
@@ -598,7 +598,7 @@
               return this.__PROXY__.setKnownVariable(...args);
             
         };
-    
+        
         // function 
         RDocumentVariables.prototype.getKnownVariable = function(...args) 
           
@@ -608,7 +608,7 @@
               return this.__PROXY__.getKnownVariable(...args);
             
         };
-    
+        
         // function 
         RDocumentVariables.prototype.hasKnownVariable = function(...args) 
           
@@ -618,7 +618,7 @@
               return this.__PROXY__.hasKnownVariable(...args);
             
         };
-    
+        
         // function 
         RDocumentVariables.prototype.getCurrentLayerId = function(...args) 
           
@@ -628,7 +628,7 @@
               return this.__PROXY__.getCurrentLayerId(...args);
             
         };
-    
+        
         // function 
         RDocumentVariables.prototype.setCurrentLayerId = function(...args) 
           
@@ -638,7 +638,7 @@
               return this.__PROXY__.setCurrentLayerId(...args);
             
         };
-    
+        
         // function 
         RDocumentVariables.prototype.getUnit = function(...args) 
           
@@ -648,7 +648,7 @@
               return this.__PROXY__.getUnit(...args);
             
         };
-    
+        
         // function 
         RDocumentVariables.prototype.setUnit = function(...args) 
           
@@ -658,7 +658,7 @@
               return this.__PROXY__.setUnit(...args);
             
         };
-    
+        
         // function 
         RDocumentVariables.prototype.getMeasurement = function(...args) 
           
@@ -668,7 +668,7 @@
               return this.__PROXY__.getMeasurement(...args);
             
         };
-    
+        
         // function 
         RDocumentVariables.prototype.setMeasurement = function(...args) 
           
@@ -678,7 +678,7 @@
               return this.__PROXY__.setMeasurement(...args);
             
         };
-    
+        
         // function 
         RDocumentVariables.prototype.getLinetypeScale = function(...args) 
           
@@ -688,7 +688,7 @@
               return this.__PROXY__.getLinetypeScale(...args);
             
         };
-    
+        
         // function 
         RDocumentVariables.prototype.setLinetypeScale = function(...args) 
           
@@ -698,7 +698,7 @@
               return this.__PROXY__.setLinetypeScale(...args);
             
         };
-    
+        
         // function 
         RDocumentVariables.prototype.getDimensionFont = function(...args) 
           
@@ -708,7 +708,7 @@
               return this.__PROXY__.getDimensionFont(...args);
             
         };
-    
+        
         // function 
         RDocumentVariables.prototype.setDimensionFont = function(...args) 
           
@@ -718,7 +718,7 @@
               return this.__PROXY__.setDimensionFont(...args);
             
         };
-    
+        
         // function 
         RDocumentVariables.prototype.addAutoVariable = function(...args) 
           
@@ -728,7 +728,7 @@
               return this.__PROXY__.addAutoVariable(...args);
             
         };
-    
+        
         // function 
         RDocumentVariables.prototype.getAutoVariables = function(...args) 
           
@@ -738,7 +738,7 @@
               return this.__PROXY__.getAutoVariables(...args);
             
         };
-    
+        
 
       // static functions:
       

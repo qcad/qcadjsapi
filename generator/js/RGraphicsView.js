@@ -110,7 +110,7 @@ RGraphicsView.BlackWhite = RGraphicsView_Wrapper.BlackWhite;
               return this.__PROXY__.setViewportNumber(...args);
             
         };
-    
+        
         // function 
         RGraphicsView.prototype.getViewportNumber = function(...args) 
           
@@ -120,7 +120,7 @@ RGraphicsView.BlackWhite = RGraphicsView_Wrapper.BlackWhite;
               return this.__PROXY__.getViewportNumber(...args);
             
         };
-    
+        
         // function 
         RGraphicsView.prototype.clear = function(...args) 
           
@@ -130,7 +130,7 @@ RGraphicsView.BlackWhite = RGraphicsView_Wrapper.BlackWhite;
               return this.__PROXY__.clear(...args);
             
         };
-    
+        
         // function 
         RGraphicsView.prototype.clearCaches = function(...args) 
           
@@ -140,7 +140,7 @@ RGraphicsView.BlackWhite = RGraphicsView_Wrapper.BlackWhite;
               return this.__PROXY__.clearCaches(...args);
             
         };
-    
+        
         // function 
         RGraphicsView.prototype.setDisplayOnlyCurrentUcs = function(...args) 
           
@@ -150,7 +150,7 @@ RGraphicsView.BlackWhite = RGraphicsView_Wrapper.BlackWhite;
               return this.__PROXY__.setDisplayOnlyCurrentUcs(...args);
             
         };
-    
+        
         // function 
         RGraphicsView.prototype.setScene = function(...args) 
           
@@ -160,7 +160,7 @@ RGraphicsView.BlackWhite = RGraphicsView_Wrapper.BlackWhite;
               return this.__PROXY__.setScene(...args);
             
         };
-    
+        
         // function 
         RGraphicsView.prototype.getScene = function(...args) 
           
@@ -170,7 +170,7 @@ RGraphicsView.BlackWhite = RGraphicsView_Wrapper.BlackWhite;
               return this.__PROXY__.getScene(...args);
             
         };
-    
+        
         // function 
         RGraphicsView.prototype.getDocument = function(...args) 
           
@@ -180,7 +180,7 @@ RGraphicsView.BlackWhite = RGraphicsView_Wrapper.BlackWhite;
               return this.__PROXY__.getDocument(...args);
             
         };
-    
+        
         // function 
         RGraphicsView.prototype.getDocumentInterface = function(...args) 
           
@@ -190,7 +190,7 @@ RGraphicsView.BlackWhite = RGraphicsView_Wrapper.BlackWhite;
               return this.__PROXY__.getDocumentInterface(...args);
             
         };
-    
+        
         // function 
         RGraphicsView.prototype.mapFromView = function(...args) 
           
@@ -200,7 +200,7 @@ RGraphicsView.BlackWhite = RGraphicsView_Wrapper.BlackWhite;
               return this.__PROXY__.mapFromView(...args);
             
         };
-    
+        
         // function 
         RGraphicsView.prototype.mapToView = function(...args) 
           
@@ -210,7 +210,7 @@ RGraphicsView.BlackWhite = RGraphicsView_Wrapper.BlackWhite;
               return this.__PROXY__.mapToView(...args);
             
         };
-    
+        
         // function 
         RGraphicsView.prototype.mapDistanceFromView = function(...args) 
           
@@ -220,7 +220,7 @@ RGraphicsView.BlackWhite = RGraphicsView_Wrapper.BlackWhite;
               return this.__PROXY__.mapDistanceFromView(...args);
             
         };
-    
+        
         // function 
         RGraphicsView.prototype.mapDistanceToView = function(...args) 
           
@@ -230,7 +230,7 @@ RGraphicsView.BlackWhite = RGraphicsView_Wrapper.BlackWhite;
               return this.__PROXY__.mapDistanceToView(...args);
             
         };
-    
+        
         // function 
         RGraphicsView.prototype.mapCornersFromView = function(...args) 
           
@@ -240,7 +240,7 @@ RGraphicsView.BlackWhite = RGraphicsView_Wrapper.BlackWhite;
               return this.__PROXY__.mapCornersFromView(...args);
             
         };
-    
+        
         // function 
         RGraphicsView.prototype.getBox = function(...args) 
           
@@ -250,7 +250,7 @@ RGraphicsView.BlackWhite = RGraphicsView_Wrapper.BlackWhite;
               return this.__PROXY__.getBox(...args);
             
         };
-    
+        
         // function 
         RGraphicsView.prototype.getMinimum = function(...args) 
           
@@ -260,7 +260,7 @@ RGraphicsView.BlackWhite = RGraphicsView_Wrapper.BlackWhite;
               return this.__PROXY__.getMinimum(...args);
             
         };
-    
+        
         // function 
         RGraphicsView.prototype.getMaximum = function(...args) 
           
@@ -270,7 +270,7 @@ RGraphicsView.BlackWhite = RGraphicsView_Wrapper.BlackWhite;
               return this.__PROXY__.getMaximum(...args);
             
         };
-    
+        
         // function 
         RGraphicsView.prototype.handleTerminateEvent = function(...args) 
           
@@ -280,7 +280,7 @@ RGraphicsView.BlackWhite = RGraphicsView_Wrapper.BlackWhite;
               return this.__PROXY__.handleTerminateEvent(...args);
             
         };
-    
+        
         // function 
         RGraphicsView.prototype.handleKeyPressEvent = function(...args) 
           
@@ -290,7 +290,7 @@ RGraphicsView.BlackWhite = RGraphicsView_Wrapper.BlackWhite;
               return this.__PROXY__.handleKeyPressEvent(...args);
             
         };
-    
+        
         // function 
         RGraphicsView.prototype.handleKeyReleaseEvent = function(...args) 
           
@@ -300,7 +300,7 @@ RGraphicsView.BlackWhite = RGraphicsView_Wrapper.BlackWhite;
               return this.__PROXY__.handleKeyReleaseEvent(...args);
             
         };
-    
+        
         // function 
         RGraphicsView.prototype.simulateMouseMoveEvent = function(...args) 
           
@@ -310,7 +310,7 @@ RGraphicsView.BlackWhite = RGraphicsView_Wrapper.BlackWhite;
               return this.__PROXY__.simulateMouseMoveEvent(...args);
             
         };
-    
+        
         // function 
         RGraphicsView.prototype.handleMouseMoveEvent = function(...args) 
           
@@ -320,7 +320,7 @@ RGraphicsView.BlackWhite = RGraphicsView_Wrapper.BlackWhite;
               return this.__PROXY__.handleMouseMoveEvent(...args);
             
         };
-    
+        
         // function 
         RGraphicsView.prototype.handleMousePressEvent = function(...args) 
           
@@ -330,7 +330,7 @@ RGraphicsView.BlackWhite = RGraphicsView_Wrapper.BlackWhite;
               return this.__PROXY__.handleMousePressEvent(...args);
             
         };
-    
+        
         // function 
         RGraphicsView.prototype.handleMouseReleaseEvent = function(...args) 
           
@@ -340,7 +340,7 @@ RGraphicsView.BlackWhite = RGraphicsView_Wrapper.BlackWhite;
               return this.__PROXY__.handleMouseReleaseEvent(...args);
             
         };
-    
+        
         // function 
         RGraphicsView.prototype.handleMouseDoubleClickEvent = function(...args) 
           
@@ -350,7 +350,7 @@ RGraphicsView.BlackWhite = RGraphicsView_Wrapper.BlackWhite;
               return this.__PROXY__.handleMouseDoubleClickEvent(...args);
             
         };
-    
+        
         // function 
         RGraphicsView.prototype.handleWheelEvent = function(...args) 
           
@@ -360,7 +360,7 @@ RGraphicsView.BlackWhite = RGraphicsView_Wrapper.BlackWhite;
               return this.__PROXY__.handleWheelEvent(...args);
             
         };
-    
+        
         // function 
         RGraphicsView.prototype.handleTabletEvent = function(...args) 
           
@@ -370,7 +370,7 @@ RGraphicsView.BlackWhite = RGraphicsView_Wrapper.BlackWhite;
               return this.__PROXY__.handleTabletEvent(...args);
             
         };
-    
+        
         // function 
         RGraphicsView.prototype.handleSwipeGestureEvent = function(...args) 
           
@@ -380,7 +380,7 @@ RGraphicsView.BlackWhite = RGraphicsView_Wrapper.BlackWhite;
               return this.__PROXY__.handleSwipeGestureEvent(...args);
             
         };
-    
+        
         // function 
         RGraphicsView.prototype.handlePanGestureEvent = function(...args) 
           
@@ -390,7 +390,7 @@ RGraphicsView.BlackWhite = RGraphicsView_Wrapper.BlackWhite;
               return this.__PROXY__.handlePanGestureEvent(...args);
             
         };
-    
+        
         // function 
         RGraphicsView.prototype.handlePinchGestureEvent = function(...args) 
           
@@ -400,7 +400,7 @@ RGraphicsView.BlackWhite = RGraphicsView_Wrapper.BlackWhite;
               return this.__PROXY__.handlePinchGestureEvent(...args);
             
         };
-    
+        
         // function 
         RGraphicsView.prototype.giveFocus = function(...args) 
           
@@ -410,7 +410,7 @@ RGraphicsView.BlackWhite = RGraphicsView_Wrapper.BlackWhite;
               return this.__PROXY__.giveFocus(...args);
             
         };
-    
+        
         // function 
         RGraphicsView.prototype.hasFocus = function(...args) 
           
@@ -420,7 +420,7 @@ RGraphicsView.BlackWhite = RGraphicsView_Wrapper.BlackWhite;
               return this.__PROXY__.hasFocus(...args);
             
         };
-    
+        
         // function 
         RGraphicsView.prototype.removeFocus = function(...args) 
           
@@ -430,7 +430,7 @@ RGraphicsView.BlackWhite = RGraphicsView_Wrapper.BlackWhite;
               return this.__PROXY__.removeFocus(...args);
             
         };
-    
+        
         // function 
         RGraphicsView.prototype.viewportChangeEvent = function(...args) 
           
@@ -440,7 +440,7 @@ RGraphicsView.BlackWhite = RGraphicsView_Wrapper.BlackWhite;
               return this.__PROXY__.viewportChangeEvent(...args);
             
         };
-    
+        
         // function 
         RGraphicsView.prototype.saveViewport = function(...args) 
           
@@ -450,7 +450,7 @@ RGraphicsView.BlackWhite = RGraphicsView_Wrapper.BlackWhite;
               return this.__PROXY__.saveViewport(...args);
             
         };
-    
+        
         // function 
         RGraphicsView.prototype.restoreViewport = function(...args) 
           
@@ -460,7 +460,7 @@ RGraphicsView.BlackWhite = RGraphicsView_Wrapper.BlackWhite;
               return this.__PROXY__.restoreViewport(...args);
             
         };
-    
+        
         // function 
         RGraphicsView.prototype.zoomIn = function(...args) 
           
@@ -470,7 +470,7 @@ RGraphicsView.BlackWhite = RGraphicsView_Wrapper.BlackWhite;
               return this.__PROXY__.zoomIn(...args);
             
         };
-    
+        
         // function 
         RGraphicsView.prototype.zoomOut = function(...args) 
           
@@ -480,7 +480,7 @@ RGraphicsView.BlackWhite = RGraphicsView_Wrapper.BlackWhite;
               return this.__PROXY__.zoomOut(...args);
             
         };
-    
+        
         // function 
         RGraphicsView.prototype.zoom = function(...args) 
           
@@ -490,7 +490,7 @@ RGraphicsView.BlackWhite = RGraphicsView_Wrapper.BlackWhite;
               return this.__PROXY__.zoom(...args);
             
         };
-    
+        
         // function 
         RGraphicsView.prototype.zoomTo = function(...args) 
           
@@ -500,7 +500,7 @@ RGraphicsView.BlackWhite = RGraphicsView_Wrapper.BlackWhite;
               return this.__PROXY__.zoomTo(...args);
             
         };
-    
+        
         // function 
         RGraphicsView.prototype.zoomPrevious = function(...args) 
           
@@ -510,7 +510,7 @@ RGraphicsView.BlackWhite = RGraphicsView_Wrapper.BlackWhite;
               return this.__PROXY__.zoomPrevious(...args);
             
         };
-    
+        
         // function 
         RGraphicsView.prototype.autoZoom = function(...args) 
           
@@ -520,7 +520,7 @@ RGraphicsView.BlackWhite = RGraphicsView_Wrapper.BlackWhite;
               return this.__PROXY__.autoZoom(...args);
             
         };
-    
+        
         // function 
         RGraphicsView.prototype.zoomToSelection = function(...args) 
           
@@ -530,7 +530,7 @@ RGraphicsView.BlackWhite = RGraphicsView_Wrapper.BlackWhite;
               return this.__PROXY__.zoomToSelection(...args);
             
         };
-    
+        
         // function 
         RGraphicsView.prototype.zoomToEntities = function(...args) 
           
@@ -540,7 +540,7 @@ RGraphicsView.BlackWhite = RGraphicsView_Wrapper.BlackWhite;
               return this.__PROXY__.zoomToEntities(...args);
             
         };
-    
+        
         // function 
         RGraphicsView.prototype.centerToPoint = function(...args) 
           
@@ -550,7 +550,7 @@ RGraphicsView.BlackWhite = RGraphicsView_Wrapper.BlackWhite;
               return this.__PROXY__.centerToPoint(...args);
             
         };
-    
+        
         // function 
         RGraphicsView.prototype.centerToBox = function(...args) 
           
@@ -560,7 +560,7 @@ RGraphicsView.BlackWhite = RGraphicsView_Wrapper.BlackWhite;
               return this.__PROXY__.centerToBox(...args);
             
         };
-    
+        
         // function 
         RGraphicsView.prototype.pan = function(...args) 
           
@@ -570,7 +570,7 @@ RGraphicsView.BlackWhite = RGraphicsView_Wrapper.BlackWhite;
               return this.__PROXY__.pan(...args);
             
         };
-    
+        
         // function 
         RGraphicsView.prototype.startPan = function(...args) 
           
@@ -580,7 +580,7 @@ RGraphicsView.BlackWhite = RGraphicsView_Wrapper.BlackWhite;
               return this.__PROXY__.startPan(...args);
             
         };
-    
+        
         // function 
         RGraphicsView.prototype.getFactor = function(...args) 
           
@@ -590,7 +590,7 @@ RGraphicsView.BlackWhite = RGraphicsView_Wrapper.BlackWhite;
               return this.__PROXY__.getFactor(...args);
             
         };
-    
+        
         // function 
         RGraphicsView.prototype.setFactor = function(...args) 
           
@@ -600,7 +600,7 @@ RGraphicsView.BlackWhite = RGraphicsView_Wrapper.BlackWhite;
               return this.__PROXY__.setFactor(...args);
             
         };
-    
+        
         // function 
         RGraphicsView.prototype.getOffset = function(...args) 
           
@@ -610,7 +610,7 @@ RGraphicsView.BlackWhite = RGraphicsView_Wrapper.BlackWhite;
               return this.__PROXY__.getOffset(...args);
             
         };
-    
+        
         // function 
         RGraphicsView.prototype.setOffset = function(...args) 
           
@@ -620,7 +620,7 @@ RGraphicsView.BlackWhite = RGraphicsView_Wrapper.BlackWhite;
               return this.__PROXY__.setOffset(...args);
             
         };
-    
+        
         // function 
         RGraphicsView.prototype.regenerate = function(...args) 
           
@@ -630,7 +630,7 @@ RGraphicsView.BlackWhite = RGraphicsView_Wrapper.BlackWhite;
               return this.__PROXY__.regenerate(...args);
             
         };
-    
+        
         // function 
         RGraphicsView.prototype.repaintView = function(...args) 
           
@@ -640,7 +640,7 @@ RGraphicsView.BlackWhite = RGraphicsView_Wrapper.BlackWhite;
               return this.__PROXY__.repaintView(...args);
             
         };
-    
+        
         // function 
         RGraphicsView.prototype.getWidth = function(...args) 
           
@@ -650,7 +650,7 @@ RGraphicsView.BlackWhite = RGraphicsView_Wrapper.BlackWhite;
               return this.__PROXY__.getWidth(...args);
             
         };
-    
+        
         // function 
         RGraphicsView.prototype.getHeight = function(...args) 
           
@@ -660,7 +660,7 @@ RGraphicsView.BlackWhite = RGraphicsView_Wrapper.BlackWhite;
               return this.__PROXY__.getHeight(...args);
             
         };
-    
+        
         // function 
         RGraphicsView.prototype.isActive = function(...args) 
           
@@ -670,7 +670,7 @@ RGraphicsView.BlackWhite = RGraphicsView_Wrapper.BlackWhite;
               return this.__PROXY__.isActive(...args);
             
         };
-    
+        
         // function 
         RGraphicsView.prototype.getSignalsBlocked = function(...args) 
           
@@ -680,7 +680,7 @@ RGraphicsView.BlackWhite = RGraphicsView_Wrapper.BlackWhite;
               return this.__PROXY__.getSignalsBlocked(...args);
             
         };
-    
+        
         // function 
         RGraphicsView.prototype.setSignalsBlocked = function(...args) 
           
@@ -690,7 +690,7 @@ RGraphicsView.BlackWhite = RGraphicsView_Wrapper.BlackWhite;
               return this.__PROXY__.setSignalsBlocked(...args);
             
         };
-    
+        
         // function 
         RGraphicsView.prototype.setNavigationAction = function(...args) 
           
@@ -700,7 +700,7 @@ RGraphicsView.BlackWhite = RGraphicsView_Wrapper.BlackWhite;
               return this.__PROXY__.setNavigationAction(...args);
             
         };
-    
+        
         // function 
         RGraphicsView.prototype.getGrid = function(...args) 
           
@@ -710,7 +710,7 @@ RGraphicsView.BlackWhite = RGraphicsView_Wrapper.BlackWhite;
               return this.__PROXY__.getGrid(...args);
             
         };
-    
+        
         // function 
         RGraphicsView.prototype.setGrid = function(...args) 
           
@@ -720,7 +720,7 @@ RGraphicsView.BlackWhite = RGraphicsView_Wrapper.BlackWhite;
               return this.__PROXY__.setGrid(...args);
             
         };
-    
+        
         // function 
         RGraphicsView.prototype.setGridVisible = function(...args) 
           
@@ -730,7 +730,7 @@ RGraphicsView.BlackWhite = RGraphicsView_Wrapper.BlackWhite;
               return this.__PROXY__.setGridVisible(...args);
             
         };
-    
+        
         // function 
         RGraphicsView.prototype.isGridVisible = function(...args) 
           
@@ -740,7 +740,7 @@ RGraphicsView.BlackWhite = RGraphicsView_Wrapper.BlackWhite;
               return this.__PROXY__.isGridVisible(...args);
             
         };
-    
+        
         // function 
         RGraphicsView.prototype.paintGridPoint = function(...args) 
           
@@ -750,7 +750,7 @@ RGraphicsView.BlackWhite = RGraphicsView_Wrapper.BlackWhite;
               return this.__PROXY__.paintGridPoint(...args);
             
         };
-    
+        
         // function 
         RGraphicsView.prototype.paintGridLine = function(...args) 
           
@@ -760,7 +760,7 @@ RGraphicsView.BlackWhite = RGraphicsView_Wrapper.BlackWhite;
               return this.__PROXY__.paintGridLine(...args);
             
         };
-    
+        
         // function 
         RGraphicsView.prototype.getCursor = function(...args) 
           
@@ -770,7 +770,7 @@ RGraphicsView.BlackWhite = RGraphicsView_Wrapper.BlackWhite;
               return this.__PROXY__.getCursor(...args);
             
         };
-    
+        
         // function 
         RGraphicsView.prototype.setCursor = function(...args) 
           
@@ -780,7 +780,7 @@ RGraphicsView.BlackWhite = RGraphicsView_Wrapper.BlackWhite;
               return this.__PROXY__.setCursor(...args);
             
         };
-    
+        
         // function 
         RGraphicsView.prototype.getClosestReferencePoint = function(...args) 
           
@@ -790,7 +790,7 @@ RGraphicsView.BlackWhite = RGraphicsView_Wrapper.BlackWhite;
               return this.__PROXY__.getClosestReferencePoint(...args);
             
         };
-    
+        
         // function 
         RGraphicsView.prototype.getClosestEntity = function(...args) 
           
@@ -800,7 +800,7 @@ RGraphicsView.BlackWhite = RGraphicsView_Wrapper.BlackWhite;
               return this.__PROXY__.getClosestEntity(...args);
             
         };
-    
+        
         // function 
         RGraphicsView.prototype.setBackgroundColor = function(...args) 
           
@@ -810,7 +810,7 @@ RGraphicsView.BlackWhite = RGraphicsView_Wrapper.BlackWhite;
               return this.__PROXY__.setBackgroundColor(...args);
             
         };
-    
+        
         // function 
         RGraphicsView.prototype.getBackgroundColor = function(...args) 
           
@@ -820,7 +820,7 @@ RGraphicsView.BlackWhite = RGraphicsView_Wrapper.BlackWhite;
               return this.__PROXY__.getBackgroundColor(...args);
             
         };
-    
+        
         // function 
         RGraphicsView.prototype.getMargin = function(...args) 
           
@@ -830,7 +830,7 @@ RGraphicsView.BlackWhite = RGraphicsView_Wrapper.BlackWhite;
               return this.__PROXY__.getMargin(...args);
             
         };
-    
+        
         // function 
         RGraphicsView.prototype.setMargin = function(...args) 
           
@@ -840,7 +840,7 @@ RGraphicsView.BlackWhite = RGraphicsView_Wrapper.BlackWhite;
               return this.__PROXY__.setMargin(...args);
             
         };
-    
+        
         // function 
         RGraphicsView.prototype.setExporting = function(...args) 
           
@@ -850,7 +850,7 @@ RGraphicsView.BlackWhite = RGraphicsView_Wrapper.BlackWhite;
               return this.__PROXY__.setExporting(...args);
             
         };
-    
+        
         // function 
         RGraphicsView.prototype.isExporting = function(...args) 
           
@@ -860,7 +860,7 @@ RGraphicsView.BlackWhite = RGraphicsView_Wrapper.BlackWhite;
               return this.__PROXY__.isExporting(...args);
             
         };
-    
+        
         // function 
         RGraphicsView.prototype.isPrintingOrExporting = function(...args) 
           
@@ -870,7 +870,7 @@ RGraphicsView.BlackWhite = RGraphicsView_Wrapper.BlackWhite;
               return this.__PROXY__.isPrintingOrExporting(...args);
             
         };
-    
+        
         // function 
         RGraphicsView.prototype.setPrinting = function(...args) 
           
@@ -880,7 +880,7 @@ RGraphicsView.BlackWhite = RGraphicsView_Wrapper.BlackWhite;
               return this.__PROXY__.setPrinting(...args);
             
         };
-    
+        
         // function 
         RGraphicsView.prototype.isPrinting = function(...args) 
           
@@ -890,7 +890,7 @@ RGraphicsView.BlackWhite = RGraphicsView_Wrapper.BlackWhite;
               return this.__PROXY__.isPrinting(...args);
             
         };
-    
+        
         // function 
         RGraphicsView.prototype.setPrintPreview = function(...args) 
           
@@ -900,7 +900,7 @@ RGraphicsView.BlackWhite = RGraphicsView_Wrapper.BlackWhite;
               return this.__PROXY__.setPrintPreview(...args);
             
         };
-    
+        
         // function 
         RGraphicsView.prototype.isPrintPreview = function(...args) 
           
@@ -910,7 +910,7 @@ RGraphicsView.BlackWhite = RGraphicsView_Wrapper.BlackWhite;
               return this.__PROXY__.isPrintPreview(...args);
             
         };
-    
+        
         // function 
         RGraphicsView.prototype.setPrintPointSize = function(...args) 
           
@@ -920,7 +920,7 @@ RGraphicsView.BlackWhite = RGraphicsView_Wrapper.BlackWhite;
               return this.__PROXY__.setPrintPointSize(...args);
             
         };
-    
+        
         // function 
         RGraphicsView.prototype.setColorMode = function(...args) 
           
@@ -930,7 +930,7 @@ RGraphicsView.BlackWhite = RGraphicsView_Wrapper.BlackWhite;
               return this.__PROXY__.setColorMode(...args);
             
         };
-    
+        
         // function 
         RGraphicsView.prototype.getColorMode = function(...args) 
           
@@ -940,7 +940,7 @@ RGraphicsView.BlackWhite = RGraphicsView_Wrapper.BlackWhite;
               return this.__PROXY__.getColorMode(...args);
             
         };
-    
+        
         // function 
         RGraphicsView.prototype.setHairlineMode = function(...args) 
           
@@ -950,7 +950,7 @@ RGraphicsView.BlackWhite = RGraphicsView_Wrapper.BlackWhite;
               return this.__PROXY__.setHairlineMode(...args);
             
         };
-    
+        
         // function 
         RGraphicsView.prototype.getHairlineMode = function(...args) 
           
@@ -960,7 +960,7 @@ RGraphicsView.BlackWhite = RGraphicsView_Wrapper.BlackWhite;
               return this.__PROXY__.getHairlineMode(...args);
             
         };
-    
+        
         // function 
         RGraphicsView.prototype.setHairlineMinimumMode = function(...args) 
           
@@ -970,7 +970,7 @@ RGraphicsView.BlackWhite = RGraphicsView_Wrapper.BlackWhite;
               return this.__PROXY__.setHairlineMinimumMode(...args);
             
         };
-    
+        
         // function 
         RGraphicsView.prototype.getHairlineMinimumMode = function(...args) 
           
@@ -980,7 +980,7 @@ RGraphicsView.BlackWhite = RGraphicsView_Wrapper.BlackWhite;
               return this.__PROXY__.getHairlineMinimumMode(...args);
             
         };
-    
+        
         // function 
         RGraphicsView.prototype.getTextLabels = function(...args) 
           
@@ -990,7 +990,7 @@ RGraphicsView.BlackWhite = RGraphicsView_Wrapper.BlackWhite;
               return this.__PROXY__.getTextLabels(...args);
             
         };
-    
+        
         // function 
         RGraphicsView.prototype.clearTextLabels = function(...args) 
           
@@ -1000,7 +1000,7 @@ RGraphicsView.BlackWhite = RGraphicsView_Wrapper.BlackWhite;
               return this.__PROXY__.clearTextLabels(...args);
             
         };
-    
+        
         // function 
         RGraphicsView.prototype.addTextLabel = function(...args) 
           
@@ -1010,7 +1010,7 @@ RGraphicsView.BlackWhite = RGraphicsView_Wrapper.BlackWhite;
               return this.__PROXY__.addTextLabel(...args);
             
         };
-    
+        
         // function 
         RGraphicsView.prototype.getLastKnownMousePosition = function(...args) 
           
@@ -1020,7 +1020,7 @@ RGraphicsView.BlackWhite = RGraphicsView_Wrapper.BlackWhite;
               return this.__PROXY__.getLastKnownMousePosition(...args);
             
         };
-    
+        
         // function 
         RGraphicsView.prototype.getCurrentStepScaleFactor = function(...args) 
           
@@ -1030,7 +1030,7 @@ RGraphicsView.BlackWhite = RGraphicsView_Wrapper.BlackWhite;
               return this.__PROXY__.getCurrentStepScaleFactor(...args);
             
         };
-    
+        
         // function 
         RGraphicsView.prototype.setCurrentStepScaleFactor = function(...args) 
           
@@ -1040,7 +1040,7 @@ RGraphicsView.BlackWhite = RGraphicsView_Wrapper.BlackWhite;
               return this.__PROXY__.setCurrentStepScaleFactor(...args);
             
         };
-    
+        
         // function 
         RGraphicsView.prototype.getCurrentStepOffset = function(...args) 
           
@@ -1050,7 +1050,7 @@ RGraphicsView.BlackWhite = RGraphicsView_Wrapper.BlackWhite;
               return this.__PROXY__.getCurrentStepOffset(...args);
             
         };
-    
+        
         // function 
         RGraphicsView.prototype.setCurrentStepOffset = function(...args) 
           
@@ -1060,7 +1060,7 @@ RGraphicsView.BlackWhite = RGraphicsView_Wrapper.BlackWhite;
               return this.__PROXY__.setCurrentStepOffset(...args);
             
         };
-    
+        
         // function 
         RGraphicsView.prototype.setTextHeightThresholdOverride = function(...args) 
           
@@ -1070,7 +1070,7 @@ RGraphicsView.BlackWhite = RGraphicsView_Wrapper.BlackWhite;
               return this.__PROXY__.setTextHeightThresholdOverride(...args);
             
         };
-    
+        
         // function 
         RGraphicsView.prototype.getTextHeightThresholdOverride = function(...args) 
           
@@ -1080,7 +1080,7 @@ RGraphicsView.BlackWhite = RGraphicsView_Wrapper.BlackWhite;
               return this.__PROXY__.getTextHeightThresholdOverride(...args);
             
         };
-    
+        
         // function 
         RGraphicsView.prototype.updateTextHeightThreshold = function(...args) 
           
@@ -1090,7 +1090,7 @@ RGraphicsView.BlackWhite = RGraphicsView_Wrapper.BlackWhite;
               return this.__PROXY__.updateTextHeightThreshold(...args);
             
         };
-    
+        
         // function 
         RGraphicsView.prototype.setForceTextHeightThreshold = function(...args) 
           
@@ -1100,7 +1100,7 @@ RGraphicsView.BlackWhite = RGraphicsView_Wrapper.BlackWhite;
               return this.__PROXY__.setForceTextHeightThreshold(...args);
             
         };
-    
+        
         // function 
         RGraphicsView.prototype.getForceTextHeightThreshold = function(...args) 
           
@@ -1110,7 +1110,7 @@ RGraphicsView.BlackWhite = RGraphicsView_Wrapper.BlackWhite;
               return this.__PROXY__.getForceTextHeightThreshold(...args);
             
         };
-    
+        
         // function 
         RGraphicsView.prototype.isPathVisible = function(...args) 
           
@@ -1120,7 +1120,7 @@ RGraphicsView.BlackWhite = RGraphicsView_Wrapper.BlackWhite;
               return this.__PROXY__.isPathVisible(...args);
             
         };
-    
+        
         // function 
         RGraphicsView.prototype.setAntialiasing = function(...args) 
           
@@ -1130,7 +1130,7 @@ RGraphicsView.BlackWhite = RGraphicsView_Wrapper.BlackWhite;
               return this.__PROXY__.setAntialiasing(...args);
             
         };
-    
+        
         // function 
         RGraphicsView.prototype.getAntialiasing = function(...args) 
           
@@ -1140,7 +1140,7 @@ RGraphicsView.BlackWhite = RGraphicsView_Wrapper.BlackWhite;
               return this.__PROXY__.getAntialiasing(...args);
             
         };
-    
+        
         // function 
         RGraphicsView.prototype.getDevicePixelRatio = function(...args) 
           
@@ -1150,7 +1150,7 @@ RGraphicsView.BlackWhite = RGraphicsView_Wrapper.BlackWhite;
               return this.__PROXY__.getDevicePixelRatio(...args);
             
         };
-    
+        
         // function 
         RGraphicsView.prototype.isShared = function(...args) 
           
@@ -1160,7 +1160,7 @@ RGraphicsView.BlackWhite = RGraphicsView_Wrapper.BlackWhite;
               return this.__PROXY__.isShared(...args);
             
         };
-    
+        
         // function 
         RGraphicsView.prototype.registerForFocus = function(...args) 
           
@@ -1170,7 +1170,7 @@ RGraphicsView.BlackWhite = RGraphicsView_Wrapper.BlackWhite;
               return this.__PROXY__.registerForFocus(...args);
             
         };
-    
+        
         // function 
         RGraphicsView.prototype.setWidget = function(...args) 
           
@@ -1180,7 +1180,7 @@ RGraphicsView.BlackWhite = RGraphicsView_Wrapper.BlackWhite;
               return this.__PROXY__.setWidget(...args);
             
         };
-    
+        
         // function 
         RGraphicsView.prototype.getWidget = function(...args) 
           
@@ -1190,7 +1190,7 @@ RGraphicsView.BlackWhite = RGraphicsView_Wrapper.BlackWhite;
               return this.__PROXY__.getWidget(...args);
             
         };
-    
+        
 
       // static functions:
       RGraphicsView.prototype.isNullWrapper = function() {

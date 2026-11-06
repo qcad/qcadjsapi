@@ -109,7 +109,7 @@
               return this.__PROXY__.mustAlwaysClone(...args);
             
         };
-    
+        
         // function 
         REntity.prototype.getDocument = function(...args) 
           
@@ -119,7 +119,7 @@
               return this.__PROXY__.getDocument(...args);
             
         };
-    
+        
         // function 
         REntity.prototype.setFlag = function(...args) 
           
@@ -129,7 +129,7 @@
               return this.__PROXY__.setFlag(...args);
             
         };
-    
+        
         // function 
         REntity.prototype.getFlag = function(...args) 
           
@@ -139,7 +139,7 @@
               return this.__PROXY__.getFlag(...args);
             
         };
-    
+        
         // function 
         REntity.prototype.getId = function(...args) 
           
@@ -149,7 +149,7 @@
               return this.__PROXY__.getId(...args);
             
         };
-    
+        
         // function 
         REntity.prototype.getHandle = function(...args) 
           
@@ -159,7 +159,7 @@
               return this.__PROXY__.getHandle(...args);
             
         };
-    
+        
         // function 
         REntity.prototype.isProtected = function(...args) 
           
@@ -169,7 +169,7 @@
               return this.__PROXY__.isProtected(...args);
             
         };
-    
+        
         // function 
         REntity.prototype.setProtected = function(...args) 
           
@@ -179,7 +179,7 @@
               return this.__PROXY__.setProtected(...args);
             
         };
-    
+        
         // function 
         REntity.prototype.isInvisible = function(...args) 
           
@@ -189,7 +189,7 @@
               return this.__PROXY__.isInvisible(...args);
             
         };
-    
+        
         // function 
         REntity.prototype.setInvisible = function(...args) 
           
@@ -199,7 +199,7 @@
               return this.__PROXY__.setInvisible(...args);
             
         };
-    
+        
         // function 
         REntity.prototype.isUndone = function(...args) 
           
@@ -209,7 +209,7 @@
               return this.__PROXY__.isUndone(...args);
             
         };
-    
+        
         // function 
         REntity.prototype.isWorkingSet = function(...args) 
           
@@ -219,7 +219,7 @@
               return this.__PROXY__.isWorkingSet(...args);
             
         };
-    
+        
         // function 
         REntity.prototype.setWorkingSet = function(...args) 
           
@@ -229,7 +229,7 @@
               return this.__PROXY__.setWorkingSet(...args);
             
         };
-    
+        
         // function 
         REntity.prototype.getPropertyTypeIds = function(...args) 
           
@@ -239,7 +239,7 @@
               return this.__PROXY__.getPropertyTypeIds(...args);
             
         };
-    
+        
         // function 
         REntity.prototype.getCustomPropertyTypeIds = function(...args) 
           
@@ -249,7 +249,7 @@
               return this.__PROXY__.getCustomPropertyTypeIds(...args);
             
         };
-    
+        
         // function 
         REntity.prototype.hasPropertyType = function(...args) 
           
@@ -259,7 +259,7 @@
               return this.__PROXY__.hasPropertyType(...args);
             
         };
-    
+        
         // function 
         REntity.prototype.hasCustomProperties = function(...args) 
           
@@ -269,7 +269,7 @@
               return this.__PROXY__.hasCustomProperties(...args);
             
         };
-    
+        
         // function 
         REntity.prototype.hasCustomProperty = function(...args) 
           
@@ -279,7 +279,7 @@
               return this.__PROXY__.hasCustomProperty(...args);
             
         };
-    
+        
         // function 
         REntity.prototype.getCustomProperty = function(...args) 
           
@@ -289,7 +289,7 @@
               return this.__PROXY__.getCustomProperty(...args);
             
         };
-    
+        
         // function 
         REntity.prototype.getCustomDoubleProperty = function(...args) 
           
@@ -299,7 +299,7 @@
               return this.__PROXY__.getCustomDoubleProperty(...args);
             
         };
-    
+        
         // function 
         REntity.prototype.getCustomIntProperty = function(...args) 
           
@@ -309,7 +309,7 @@
               return this.__PROXY__.getCustomIntProperty(...args);
             
         };
-    
+        
         // function 
         REntity.prototype.getCustomBoolProperty = function(...args) 
           
@@ -319,7 +319,7 @@
               return this.__PROXY__.getCustomBoolProperty(...args);
             
         };
-    
+        
         // function 
         REntity.prototype.setCustomProperty = function(...args) 
           
@@ -329,7 +329,7 @@
               return this.__PROXY__.setCustomProperty(...args);
             
         };
-    
+        
         // function 
         REntity.prototype.removeCustomProperty = function(...args) 
           
@@ -339,7 +339,7 @@
               return this.__PROXY__.removeCustomProperty(...args);
             
         };
-    
+        
         // function 
         REntity.prototype.getCustomPropertyTitles = function(...args) 
           
@@ -349,7 +349,7 @@
               return this.__PROXY__.getCustomPropertyTitles(...args);
             
         };
-    
+        
         // function 
         REntity.prototype.getCustomPropertyKeys = function(...args) 
           
@@ -359,7 +359,7 @@
               return this.__PROXY__.getCustomPropertyKeys(...args);
             
         };
-    
+        
         // function 
         REntity.prototype.copyCustomPropertiesFrom = function(...args) 
           
@@ -369,7 +369,7 @@
               return this.__PROXY__.copyCustomPropertiesFrom(...args);
             
         };
-    
+        
         // function 
         REntity.prototype.dump = function(...args) 
           
@@ -379,7 +379,7 @@
               return this.__PROXY__.dump(...args);
             
         };
-    
+        
         // function 
         REntity.prototype.validate = function(...args) 
           
@@ -389,7 +389,7 @@
               return this.__PROXY__.validate(...args);
             
         };
-    
+        
         // function 
         REntity.prototype.setUndone = function(...args) 
           
@@ -399,7 +399,7 @@
               return this.__PROXY__.setUndone(...args);
             
         };
-    
+        
         // function 
         REntity.prototype.setId = function(...args) 
           
@@ -409,7 +409,7 @@
               return this.__PROXY__.setId(...args);
             
         };
-    
+        
         // function 
         REntity.prototype.setHandle = function(...args) 
           
@@ -419,7 +419,7 @@
               return this.__PROXY__.setHandle(...args);
             
         };
-    
+        
         // function 
         REntity.prototype.setMemberFlag = function(...args) 
           
@@ -429,7 +429,7 @@
               return this.__PROXY__.setMemberFlag(...args);
             
         };
-    
+        
         // function 
         REntity.prototype.getRtti = function(...args) 
           
@@ -439,7 +439,7 @@
               return this.__PROXY__.getRtti(...args);
             
         };
-    
+        
         // function 
         REntity.prototype.init = function(...args) 
           
@@ -449,7 +449,7 @@
               return this.__PROXY__.init(...args);
             
         };
-    
+        
         // function 
         REntity.prototype.getStaticPropertyTypeIds = function(...args) 
           
@@ -459,7 +459,7 @@
               return this.__PROXY__.getStaticPropertyTypeIds(...args);
             
         };
-    
+        
         // function 
         REntity.prototype.setDocument = function(...args) 
           
@@ -469,7 +469,7 @@
               return this.__PROXY__.setDocument(...args);
             
         };
-    
+        
         // function 
         REntity.prototype.clone = function(...args) 
           
@@ -479,7 +479,7 @@
               return this.__PROXY__.clone(...args);
             
         };
-    
+        
         // function 
         REntity.prototype.getType = function(...args) 
           
@@ -489,7 +489,7 @@
               return this.__PROXY__.getType(...args);
             
         };
-    
+        
         // function 
         REntity.prototype.isPointType = function(...args) 
           
@@ -499,7 +499,7 @@
               return this.__PROXY__.isPointType(...args);
             
         };
-    
+        
         // function 
         REntity.prototype.isComplex = function(...args) 
           
@@ -509,7 +509,7 @@
               return this.__PROXY__.isComplex(...args);
             
         };
-    
+        
         // function 
         REntity.prototype.isDimension = function(...args) 
           
@@ -519,7 +519,7 @@
               return this.__PROXY__.isDimension(...args);
             
         };
-    
+        
         // function 
         REntity.prototype.isTextBased = function(...args) 
           
@@ -529,7 +529,7 @@
               return this.__PROXY__.isTextBased(...args);
             
         };
-    
+        
         // function 
         REntity.prototype.getData = function(...args) 
           
@@ -539,7 +539,7 @@
               return this.__PROXY__.getData(...args);
             
         };
-    
+        
         // function 
         REntity.prototype.isValid = function(...args) 
           
@@ -549,7 +549,7 @@
               return this.__PROXY__.isValid(...args);
             
         };
-    
+        
         // function 
         REntity.prototype.isSane = function(...args) 
           
@@ -559,7 +559,7 @@
               return this.__PROXY__.isSane(...args);
             
         };
-    
+        
         // function 
         REntity.prototype.isSelected = function(...args) 
           
@@ -569,7 +569,7 @@
               return this.__PROXY__.isSelected(...args);
             
         };
-    
+        
         // function 
         REntity.prototype.setSelected = function(...args) 
           
@@ -579,7 +579,7 @@
               return this.__PROXY__.setSelected(...args);
             
         };
-    
+        
         // function 
         REntity.prototype.isSelectedWorkingSet = function(...args) 
           
@@ -589,7 +589,7 @@
               return this.__PROXY__.isSelectedWorkingSet(...args);
             
         };
-    
+        
         // function 
         REntity.prototype.setSelectedWorkingSet = function(...args) 
           
@@ -599,7 +599,7 @@
               return this.__PROXY__.setSelectedWorkingSet(...args);
             
         };
-    
+        
         // function 
         REntity.prototype.isSelectable = function(...args) 
           
@@ -609,7 +609,7 @@
               return this.__PROXY__.isSelectable(...args);
             
         };
-    
+        
         // function 
         REntity.prototype.isUpdatesEnabled = function(...args) 
           
@@ -619,7 +619,7 @@
               return this.__PROXY__.isUpdatesEnabled(...args);
             
         };
-    
+        
         // function 
         REntity.prototype.setUpdatesEnabled = function(...args) 
           
@@ -629,7 +629,7 @@
               return this.__PROXY__.setUpdatesEnabled(...args);
             
         };
-    
+        
         // function 
         REntity.prototype.cloneOnChange = function(...args) 
           
@@ -639,7 +639,7 @@
               return this.__PROXY__.cloneOnChange(...args);
             
         };
-    
+        
         // function 
         REntity.prototype.setDrawOrder = function(...args) 
           
@@ -649,7 +649,7 @@
               return this.__PROXY__.setDrawOrder(...args);
             
         };
-    
+        
         // function 
         REntity.prototype.getDrawOrder = function(...args) 
           
@@ -659,7 +659,7 @@
               return this.__PROXY__.getDrawOrder(...args);
             
         };
-    
+        
         // function 
         REntity.prototype.setLayerId = function(...args) 
           
@@ -669,7 +669,7 @@
               return this.__PROXY__.setLayerId(...args);
             
         };
-    
+        
         // function 
         REntity.prototype.setLayerName = function(...args) 
           
@@ -679,7 +679,7 @@
               return this.__PROXY__.setLayerName(...args);
             
         };
-    
+        
         // function 
         REntity.prototype.getLayerId = function(...args) 
           
@@ -689,7 +689,7 @@
               return this.__PROXY__.getLayerId(...args);
             
         };
-    
+        
         // function 
         REntity.prototype.getLayerName = function(...args) 
           
@@ -699,7 +699,7 @@
               return this.__PROXY__.getLayerName(...args);
             
         };
-    
+        
         // function 
         REntity.prototype.setBlockId = function(...args) 
           
@@ -709,7 +709,7 @@
               return this.__PROXY__.setBlockId(...args);
             
         };
-    
+        
         // function 
         REntity.prototype.getBlockId = function(...args) 
           
@@ -719,7 +719,7 @@
               return this.__PROXY__.getBlockId(...args);
             
         };
-    
+        
         // function 
         REntity.prototype.getBlockName = function(...args) 
           
@@ -729,7 +729,7 @@
               return this.__PROXY__.getBlockName(...args);
             
         };
-    
+        
         // function 
         REntity.prototype.getParentId = function(...args) 
           
@@ -739,7 +739,7 @@
               return this.__PROXY__.getParentId(...args);
             
         };
-    
+        
         // function 
         REntity.prototype.setLinetypeId = function(...args) 
           
@@ -749,7 +749,7 @@
               return this.__PROXY__.setLinetypeId(...args);
             
         };
-    
+        
         // function 
         REntity.prototype.setLinetypePattern = function(...args) 
           
@@ -759,7 +759,7 @@
               return this.__PROXY__.setLinetypePattern(...args);
             
         };
-    
+        
         // function 
         REntity.prototype.getLinetypeId = function(...args) 
           
@@ -769,7 +769,7 @@
               return this.__PROXY__.getLinetypeId(...args);
             
         };
-    
+        
         // function 
         REntity.prototype.getLinetypePattern = function(...args) 
           
@@ -779,7 +779,7 @@
               return this.__PROXY__.getLinetypePattern(...args);
             
         };
-    
+        
         // function 
         REntity.prototype.setLinetypeScale = function(...args) 
           
@@ -789,7 +789,7 @@
               return this.__PROXY__.setLinetypeScale(...args);
             
         };
-    
+        
         // function 
         REntity.prototype.getLinetypeScale = function(...args) 
           
@@ -799,7 +799,7 @@
               return this.__PROXY__.getLinetypeScale(...args);
             
         };
-    
+        
         // function 
         REntity.prototype.setLineweight = function(...args) 
           
@@ -809,7 +809,7 @@
               return this.__PROXY__.setLineweight(...args);
             
         };
-    
+        
         // function 
         REntity.prototype.getLineweight = function(...args) 
           
@@ -819,7 +819,7 @@
               return this.__PROXY__.getLineweight(...args);
             
         };
-    
+        
         // function 
         REntity.prototype.setColor = function(...args) 
           
@@ -829,7 +829,7 @@
               return this.__PROXY__.setColor(...args);
             
         };
-    
+        
         // function 
         REntity.prototype.getColor = function(...args) 
           
@@ -839,7 +839,7 @@
               return this.__PROXY__.getColor(...args);
             
         };
-    
+        
         // function 
         REntity.prototype.getDisplayColor = function(...args) 
           
@@ -849,7 +849,7 @@
               return this.__PROXY__.getDisplayColor(...args);
             
         };
-    
+        
         // function 
         REntity.prototype.copyAttributesFrom = function(...args) 
           
@@ -859,7 +859,7 @@
               return this.__PROXY__.copyAttributesFrom(...args);
             
         };
-    
+        
         // function 
         REntity.prototype.getBoundingBox = function(...args) 
           
@@ -869,7 +869,7 @@
               return this.__PROXY__.getBoundingBox(...args);
             
         };
-    
+        
         // function 
         REntity.prototype.to2D = function(...args) 
           
@@ -879,7 +879,7 @@
               return this.__PROXY__.to2D(...args);
             
         };
-    
+        
         // function 
         REntity.prototype.setZ = function(...args) 
           
@@ -889,7 +889,7 @@
               return this.__PROXY__.setZ(...args);
             
         };
-    
+        
         // function 
         REntity.prototype.getBoundingBoxes = function(...args) 
           
@@ -899,7 +899,7 @@
               return this.__PROXY__.getBoundingBoxes(...args);
             
         };
-    
+        
         // function 
         REntity.prototype.getHull = function(...args) 
           
@@ -909,7 +909,7 @@
               return this.__PROXY__.getHull(...args);
             
         };
-    
+        
         // function 
         REntity.prototype.getShapes = function(...args) 
           
@@ -919,7 +919,7 @@
               return this.__PROXY__.getShapes(...args);
             
         };
-    
+        
         // function 
         REntity.prototype.getClosestSubEntityId = function(...args) 
           
@@ -929,7 +929,7 @@
               return this.__PROXY__.getClosestSubEntityId(...args);
             
         };
-    
+        
         // function 
         REntity.prototype.getClosestShape = function(...args) 
           
@@ -939,7 +939,7 @@
               return this.__PROXY__.getClosestShape(...args);
             
         };
-    
+        
         // function 
         REntity.prototype.getClosestSimpleShape = function(...args) 
           
@@ -949,7 +949,7 @@
               return this.__PROXY__.getClosestSimpleShape(...args);
             
         };
-    
+        
         // function 
         REntity.prototype.isInside = function(...args) 
           
@@ -959,7 +959,7 @@
               return this.__PROXY__.isInside(...args);
             
         };
-    
+        
         // function 
         REntity.prototype.isOnEntity = function(...args) 
           
@@ -969,7 +969,7 @@
               return this.__PROXY__.isOnEntity(...args);
             
         };
-    
+        
         // function 
         REntity.prototype.intersectsWith = function(...args) 
           
@@ -979,7 +979,7 @@
               return this.__PROXY__.intersectsWith(...args);
             
         };
-    
+        
         // function 
         REntity.prototype.getDistanceTo = function(...args) 
           
@@ -989,7 +989,7 @@
               return this.__PROXY__.getDistanceTo(...args);
             
         };
-    
+        
         // function 
         REntity.prototype.getVectorTo = function(...args) 
           
@@ -999,7 +999,7 @@
               return this.__PROXY__.getVectorTo(...args);
             
         };
-    
+        
         // function 
         REntity.prototype.getInternalReferencePoints = function(...args) 
           
@@ -1009,7 +1009,7 @@
               return this.__PROXY__.getInternalReferencePoints(...args);
             
         };
-    
+        
         // function 
         REntity.prototype.getReferencePoints = function(...args) 
           
@@ -1019,7 +1019,7 @@
               return this.__PROXY__.getReferencePoints(...args);
             
         };
-    
+        
         // function 
         REntity.prototype.getPointOnEntity = function(...args) 
           
@@ -1029,7 +1029,7 @@
               return this.__PROXY__.getPointOnEntity(...args);
             
         };
-    
+        
         // function 
         REntity.prototype.getEndPoints = function(...args) 
           
@@ -1039,7 +1039,7 @@
               return this.__PROXY__.getEndPoints(...args);
             
         };
-    
+        
         // function 
         REntity.prototype.getMiddlePoints = function(...args) 
           
@@ -1049,7 +1049,7 @@
               return this.__PROXY__.getMiddlePoints(...args);
             
         };
-    
+        
         // function 
         REntity.prototype.getCenterPoints = function(...args) 
           
@@ -1059,7 +1059,7 @@
               return this.__PROXY__.getCenterPoints(...args);
             
         };
-    
+        
         // function 
         REntity.prototype.getClosestPointOnEntity = function(...args) 
           
@@ -1069,7 +1069,7 @@
               return this.__PROXY__.getClosestPointOnEntity(...args);
             
         };
-    
+        
         // function 
         REntity.prototype.getPointsWithDistanceToEnd = function(...args) 
           
@@ -1079,7 +1079,7 @@
               return this.__PROXY__.getPointsWithDistanceToEnd(...args);
             
         };
-    
+        
         // function 
         REntity.prototype.getIntersectionPoints = function(...args) 
           
@@ -1089,7 +1089,7 @@
               return this.__PROXY__.getIntersectionPoints(...args);
             
         };
-    
+        
         // function 
         REntity.prototype.getIntersectionPointsWithShape = function(...args) 
           
@@ -1099,7 +1099,7 @@
               return this.__PROXY__.getIntersectionPointsWithShape(...args);
             
         };
-    
+        
         // function 
         REntity.prototype.clickReferencePoint = function(...args) 
           
@@ -1109,7 +1109,7 @@
               return this.__PROXY__.clickReferencePoint(...args);
             
         };
-    
+        
         // function 
         REntity.prototype.moveReferencePoint = function(...args) 
           
@@ -1119,7 +1119,7 @@
               return this.__PROXY__.moveReferencePoint(...args);
             
         };
-    
+        
         // function 
         REntity.prototype.move = function(...args) 
           
@@ -1129,7 +1129,7 @@
               return this.__PROXY__.move(...args);
             
         };
-    
+        
         // function 
         REntity.prototype.rotate = function(...args) 
           
@@ -1139,7 +1139,7 @@
               return this.__PROXY__.rotate(...args);
             
         };
-    
+        
         // function 
         REntity.prototype.scale = function(...args) 
           
@@ -1149,7 +1149,7 @@
               return this.__PROXY__.scale(...args);
             
         };
-    
+        
         // function 
         REntity.prototype.scaleNonUniform = function(...args) 
           
@@ -1159,7 +1159,7 @@
               return this.__PROXY__.scaleNonUniform(...args);
             
         };
-    
+        
         // function 
         REntity.prototype.scaleVisualProperties = function(...args) 
           
@@ -1169,7 +1169,7 @@
               return this.__PROXY__.scaleVisualProperties(...args);
             
         };
-    
+        
         // function 
         REntity.prototype.setViewportContext = function(...args) 
           
@@ -1179,7 +1179,7 @@
               return this.__PROXY__.setViewportContext(...args);
             
         };
-    
+        
         // function 
         REntity.prototype.mirror = function(...args) 
           
@@ -1189,7 +1189,7 @@
               return this.__PROXY__.mirror(...args);
             
         };
-    
+        
         // function 
         REntity.prototype.flipHorizontal = function(...args) 
           
@@ -1199,7 +1199,7 @@
               return this.__PROXY__.flipHorizontal(...args);
             
         };
-    
+        
         // function 
         REntity.prototype.flipVertical = function(...args) 
           
@@ -1209,7 +1209,7 @@
               return this.__PROXY__.flipVertical(...args);
             
         };
-    
+        
         // function 
         REntity.prototype.stretch = function(...args) 
           
@@ -1219,7 +1219,7 @@
               return this.__PROXY__.stretch(...args);
             
         };
-    
+        
         // function 
         REntity.prototype.update = function(...args) 
           
@@ -1229,7 +1229,7 @@
               return this.__PROXY__.update(...args);
             
         };
-    
+        
         // function 
         REntity.prototype.castToShape = function(...args) 
           
@@ -1239,7 +1239,7 @@
               return this.__PROXY__.castToShape(...args);
             
         };
-    
+        
         // function 
         REntity.prototype.exportEntity = function(...args) 
           
@@ -1249,7 +1249,7 @@
               return this.__PROXY__.exportEntity(...args);
             
         };
-    
+        
         // function 
         REntity.prototype.setAutoUpdatesBlocked = function(...args) 
           
@@ -1259,7 +1259,7 @@
               return this.__PROXY__.setAutoUpdatesBlocked(...args);
             
         };
-    
+        
         // function 
         REntity.prototype.getProperty = function(...args) 
           
@@ -1269,7 +1269,7 @@
               return this.__PROXY__.getProperty(...args);
             
         };
-    
+        
         // function 
         REntity.prototype.setProperty = function(...args) 
           
@@ -1279,7 +1279,7 @@
               return this.__PROXY__.setProperty(...args);
             
         };
-    
+        
         // function 
         REntity.prototype.isVisible = function(...args) 
           
@@ -1289,7 +1289,7 @@
               return this.__PROXY__.isVisible(...args);
             
         };
-    
+        
         // function 
         REntity.prototype.isEditable = function(...args) 
           
@@ -1299,7 +1299,7 @@
               return this.__PROXY__.isEditable(...args);
             
         };
-    
+        
         // function 
         REntity.prototype.isInWorkingSet = function(...args) 
           
@@ -1309,7 +1309,7 @@
               return this.__PROXY__.isInWorkingSet(...args);
             
         };
-    
+        
         // function 
         REntity.prototype.getComplexity = function(...args) 
           
@@ -1319,7 +1319,7 @@
               return this.__PROXY__.getComplexity(...args);
             
         };
-    
+        
         // function 
         REntity.prototype.setParentId = function(...args) 
           
@@ -1329,7 +1329,7 @@
               return this.__PROXY__.setParentId(...args);
             
         };
-    
+        
         // function 
         REntity.prototype.print = function(...args) 
           
@@ -1339,7 +1339,7 @@
               return this.__PROXY__.print(...args);
             
         };
-    
+        
 
       // static functions:
       

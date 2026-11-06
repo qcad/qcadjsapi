@@ -194,7 +194,7 @@
               return this.__PROXY__.getDocument(...args);
             
         };
-    
+        
         // function 
         RRayData.prototype.setDocument = function(...args) 
           
@@ -204,7 +204,7 @@
               return this.__PROXY__.setDocument(...args);
             
         };
-    
+        
         // function 
         RRayData.prototype.isPointType = function(...args) 
           
@@ -214,7 +214,7 @@
               return this.__PROXY__.isPointType(...args);
             
         };
-    
+        
         // function 
         RRayData.prototype.isSane = function(...args) 
           
@@ -224,7 +224,7 @@
               return this.__PROXY__.isSane(...args);
             
         };
-    
+        
         // function 
         RRayData.prototype.getClosestSubEntityId = function(...args) 
           
@@ -234,7 +234,7 @@
               return this.__PROXY__.getClosestSubEntityId(...args);
             
         };
-    
+        
         // function 
         RRayData.prototype.getClosestShape = function(...args) 
           
@@ -244,7 +244,7 @@
               return this.__PROXY__.getClosestShape(...args);
             
         };
-    
+        
         // function 
         RRayData.prototype.copyAttributesFrom = function(...args) 
           
@@ -254,7 +254,7 @@
               return this.__PROXY__.copyAttributesFrom(...args);
             
         };
-    
+        
         // function 
         RRayData.prototype.getBoundingBoxes = function(...args) 
           
@@ -264,7 +264,7 @@
               return this.__PROXY__.getBoundingBoxes(...args);
             
         };
-    
+        
         // function 
         RRayData.prototype.getHull = function(...args) 
           
@@ -274,7 +274,7 @@
               return this.__PROXY__.getHull(...args);
             
         };
-    
+        
         // function 
         RRayData.prototype.isUpdatesEnabled = function(...args) 
           
@@ -284,7 +284,7 @@
               return this.__PROXY__.isUpdatesEnabled(...args);
             
         };
-    
+        
         // function 
         RRayData.prototype.setUpdatesEnabled = function(...args) 
           
@@ -294,7 +294,7 @@
               return this.__PROXY__.setUpdatesEnabled(...args);
             
         };
-    
+        
         // function 
         RRayData.prototype.cloneOnChange = function(...args) 
           
@@ -304,7 +304,7 @@
               return this.__PROXY__.cloneOnChange(...args);
             
         };
-    
+        
         // function 
         RRayData.prototype.isSelected = function(...args) 
           
@@ -314,7 +314,7 @@
               return this.__PROXY__.isSelected(...args);
             
         };
-    
+        
         // function 
         RRayData.prototype.setSelected = function(...args) 
           
@@ -324,7 +324,7 @@
               return this.__PROXY__.setSelected(...args);
             
         };
-    
+        
         // function 
         RRayData.prototype.isSelectedWorkingSet = function(...args) 
           
@@ -334,7 +334,7 @@
               return this.__PROXY__.isSelectedWorkingSet(...args);
             
         };
-    
+        
         // function 
         RRayData.prototype.setSelectedWorkingSet = function(...args) 
           
@@ -344,7 +344,7 @@
               return this.__PROXY__.setSelectedWorkingSet(...args);
             
         };
-    
+        
         // function 
         RRayData.prototype.getDrawOrder = function(...args) 
           
@@ -354,7 +354,7 @@
               return this.__PROXY__.getDrawOrder(...args);
             
         };
-    
+        
         // function 
         RRayData.prototype.setDrawOrder = function(...args) 
           
@@ -364,7 +364,7 @@
               return this.__PROXY__.setDrawOrder(...args);
             
         };
-    
+        
         // function 
         RRayData.prototype.setLayerId = function(...args) 
           
@@ -374,7 +374,7 @@
               return this.__PROXY__.setLayerId(...args);
             
         };
-    
+        
         // function 
         RRayData.prototype.getLayerId = function(...args) 
           
@@ -384,7 +384,7 @@
               return this.__PROXY__.getLayerId(...args);
             
         };
-    
+        
         // function 
         RRayData.prototype.setLayerName = function(...args) 
           
@@ -394,7 +394,7 @@
               return this.__PROXY__.setLayerName(...args);
             
         };
-    
+        
         // function 
         RRayData.prototype.getLayerName = function(...args) 
           
@@ -404,7 +404,7 @@
               return this.__PROXY__.getLayerName(...args);
             
         };
-    
+        
         // function 
         RRayData.prototype.setBlockId = function(...args) 
           
@@ -414,7 +414,7 @@
               return this.__PROXY__.setBlockId(...args);
             
         };
-    
+        
         // function 
         RRayData.prototype.getBlockId = function(...args) 
           
@@ -424,7 +424,7 @@
               return this.__PROXY__.getBlockId(...args);
             
         };
-    
+        
         // function 
         RRayData.prototype.setParentId = function(...args) 
           
@@ -434,7 +434,7 @@
               return this.__PROXY__.setParentId(...args);
             
         };
-    
+        
         // function 
         RRayData.prototype.getParentId = function(...args) 
           
@@ -444,7 +444,7 @@
               return this.__PROXY__.getParentId(...args);
             
         };
-    
+        
         // function 
         RRayData.prototype.getBlockName = function(...args) 
           
@@ -454,7 +454,7 @@
               return this.__PROXY__.getBlockName(...args);
             
         };
-    
+        
         // function 
         RRayData.prototype.setLinetypeId = function(...args) 
           
@@ -464,7 +464,7 @@
               return this.__PROXY__.setLinetypeId(...args);
             
         };
-    
+        
         // function 
         RRayData.prototype.getLinetypeId = function(...args) 
           
@@ -474,7 +474,7 @@
               return this.__PROXY__.getLinetypeId(...args);
             
         };
-    
+        
         // function 
         RRayData.prototype.setLinetypePattern = function(...args) 
           
@@ -484,7 +484,7 @@
               return this.__PROXY__.setLinetypePattern(...args);
             
         };
-    
+        
         // function 
         RRayData.prototype.getLinetypePattern = function(...args) 
           
@@ -494,7 +494,7 @@
               return this.__PROXY__.getLinetypePattern(...args);
             
         };
-    
+        
         // function 
         RRayData.prototype.setLinetypeScale = function(...args) 
           
@@ -504,7 +504,7 @@
               return this.__PROXY__.setLinetypeScale(...args);
             
         };
-    
+        
         // function 
         RRayData.prototype.getLinetypeScale = function(...args) 
           
@@ -514,7 +514,7 @@
               return this.__PROXY__.getLinetypeScale(...args);
             
         };
-    
+        
         // function 
         RRayData.prototype.getLineweight = function(...args) 
           
@@ -524,7 +524,7 @@
               return this.__PROXY__.getLineweight(...args);
             
         };
-    
+        
         // function 
         RRayData.prototype.setLineweight = function(...args) 
           
@@ -534,7 +534,7 @@
               return this.__PROXY__.setLineweight(...args);
             
         };
-    
+        
         // function 
         RRayData.prototype.setColor = function(...args) 
           
@@ -544,7 +544,7 @@
               return this.__PROXY__.setColor(...args);
             
         };
-    
+        
         // function 
         RRayData.prototype.getColor = function(...args) 
           
@@ -554,7 +554,7 @@
               return this.__PROXY__.getColor(...args);
             
         };
-    
+        
         // function 
         RRayData.prototype.getDisplayColor = function(...args) 
           
@@ -564,7 +564,7 @@
               return this.__PROXY__.getDisplayColor(...args);
             
         };
-    
+        
         // function 
         RRayData.prototype.getInternalReferencePoints = function(...args) 
           
@@ -574,7 +574,7 @@
               return this.__PROXY__.getInternalReferencePoints(...args);
             
         };
-    
+        
         // function 
         RRayData.prototype.getPointOnEntity = function(...args) 
           
@@ -584,7 +584,7 @@
               return this.__PROXY__.getPointOnEntity(...args);
             
         };
-    
+        
         // function 
         RRayData.prototype.getClosestPointOnEntity = function(...args) 
           
@@ -594,7 +594,7 @@
               return this.__PROXY__.getClosestPointOnEntity(...args);
             
         };
-    
+        
         // function 
         RRayData.prototype.isInside = function(...args) 
           
@@ -604,7 +604,7 @@
               return this.__PROXY__.isInside(...args);
             
         };
-    
+        
         // function 
         RRayData.prototype.isOnEntity = function(...args) 
           
@@ -614,7 +614,7 @@
               return this.__PROXY__.isOnEntity(...args);
             
         };
-    
+        
         // function 
         RRayData.prototype.clickReferencePoint = function(...args) 
           
@@ -624,7 +624,7 @@
               return this.__PROXY__.clickReferencePoint(...args);
             
         };
-    
+        
         // function 
         RRayData.prototype.scaleVisualProperties = function(...args) 
           
@@ -634,7 +634,7 @@
               return this.__PROXY__.scaleVisualProperties(...args);
             
         };
-    
+        
         // function 
         RRayData.prototype.flipVertical = function(...args) 
           
@@ -644,7 +644,7 @@
               return this.__PROXY__.flipVertical(...args);
             
         };
-    
+        
         // function 
         RRayData.prototype.update = function(...args) 
           
@@ -654,7 +654,7 @@
               return this.__PROXY__.update(...args);
             
         };
-    
+        
         // function 
         RRayData.prototype.setAutoUpdatesBlocked = function(...args) 
           
@@ -664,7 +664,7 @@
               return this.__PROXY__.setAutoUpdatesBlocked(...args);
             
         };
-    
+        
         // function 
         RRayData.prototype.getShapeType = function(...args) 
           
@@ -674,7 +674,7 @@
               return this.__PROXY__.getShapeType(...args);
             
         };
-    
+        
         // function 
         RRayData.prototype.clone = function(...args) 
           
@@ -684,7 +684,7 @@
               return this.__PROXY__.clone(...args);
             
         };
-    
+        
         // function 
         RRayData.prototype.getVectorProperties = function(...args) 
           
@@ -694,7 +694,7 @@
               return this.__PROXY__.getVectorProperties(...args);
             
         };
-    
+        
         // function 
         RRayData.prototype.getClippedLine = function(...args) 
           
@@ -704,7 +704,7 @@
               return this.__PROXY__.getClippedLine(...args);
             
         };
-    
+        
         // function 
         RRayData.prototype.stretch = function(...args) 
           
@@ -714,7 +714,7 @@
               return this.__PROXY__.stretch(...args);
             
         };
-    
+        
         // function 
         RRayData.prototype.splitAt = function(...args) 
           
@@ -724,7 +724,7 @@
               return this.__PROXY__.splitAt(...args);
             
         };
-    
+        
         // function 
         RRayData.prototype.print = function(...args) 
           
@@ -734,7 +734,7 @@
               return this.__PROXY__.print(...args);
             
         };
-    
+        
         // function 
         RRayData.prototype.getType = function(...args) 
           
@@ -744,7 +744,7 @@
               return this.__PROXY__.getType(...args);
             
         };
-    
+        
         // function 
         RRayData.prototype.getRay = function(...args) 
           
@@ -754,7 +754,7 @@
               return this.__PROXY__.getRay(...args);
             
         };
-    
+        
         // function 
         RRayData.prototype.isValid = function(...args) 
           
@@ -764,7 +764,7 @@
               return this.__PROXY__.isValid(...args);
             
         };
-    
+        
         // function 
         RRayData.prototype.getEndPoints = function(...args) 
           
@@ -774,7 +774,7 @@
               return this.__PROXY__.getEndPoints(...args);
             
         };
-    
+        
         // function 
         RRayData.prototype.setZ = function(...args) 
           
@@ -784,7 +784,7 @@
               return this.__PROXY__.setZ(...args);
             
         };
-    
+        
         // function 
         RRayData.prototype.to2D = function(...args) 
           
@@ -794,7 +794,7 @@
               return this.__PROXY__.to2D(...args);
             
         };
-    
+        
         // function 
         RRayData.prototype.getBoundingBox = function(...args) 
           
@@ -804,7 +804,7 @@
               return this.__PROXY__.getBoundingBox(...args);
             
         };
-    
+        
         // function 
         RRayData.prototype.getMiddlePoints = function(...args) 
           
@@ -814,7 +814,7 @@
               return this.__PROXY__.getMiddlePoints(...args);
             
         };
-    
+        
         // function 
         RRayData.prototype.getCenterPoints = function(...args) 
           
@@ -824,7 +824,7 @@
               return this.__PROXY__.getCenterPoints(...args);
             
         };
-    
+        
         // function 
         RRayData.prototype.getArcReferencePoints = function(...args) 
           
@@ -834,7 +834,7 @@
               return this.__PROXY__.getArcReferencePoints(...args);
             
         };
-    
+        
         // function 
         RRayData.prototype.getPointsWithDistanceToEnd = function(...args) 
           
@@ -844,7 +844,7 @@
               return this.__PROXY__.getPointsWithDistanceToEnd(...args);
             
         };
-    
+        
         // function 
         RRayData.prototype.getIntersectionPoints = function(...args) 
           
@@ -854,7 +854,7 @@
               return this.__PROXY__.getIntersectionPoints(...args);
             
         };
-    
+        
         // function 
         RRayData.prototype.getVectorTo = function(...args) 
           
@@ -864,7 +864,7 @@
               return this.__PROXY__.getVectorTo(...args);
             
         };
-    
+        
         // function 
         RRayData.prototype.getDistanceTo = function(...args) 
           
@@ -874,7 +874,7 @@
               return this.__PROXY__.getDistanceTo(...args);
             
         };
-    
+        
         // function 
         RRayData.prototype.intersectsWith = function(...args) 
           
@@ -884,7 +884,7 @@
               return this.__PROXY__.intersectsWith(...args);
             
         };
-    
+        
         // function 
         RRayData.prototype.move = function(...args) 
           
@@ -894,7 +894,7 @@
               return this.__PROXY__.move(...args);
             
         };
-    
+        
         // function 
         RRayData.prototype.rotate = function(...args) 
           
@@ -904,7 +904,7 @@
               return this.__PROXY__.rotate(...args);
             
         };
-    
+        
         // function 
         RRayData.prototype.scale = function(...args) 
           
@@ -914,7 +914,7 @@
               return this.__PROXY__.scale(...args);
             
         };
-    
+        
         // function 
         RRayData.prototype.mirror = function(...args) 
           
@@ -924,7 +924,7 @@
               return this.__PROXY__.mirror(...args);
             
         };
-    
+        
         // function 
         RRayData.prototype.flipHorizontal = function(...args) 
           
@@ -934,7 +934,7 @@
               return this.__PROXY__.flipHorizontal(...args);
             
         };
-    
+        
         // function 
         RRayData.prototype.getBasePoint = function(...args) 
           
@@ -944,7 +944,7 @@
               return this.__PROXY__.getBasePoint(...args);
             
         };
-    
+        
         // function 
         RRayData.prototype.getDirectionVector = function(...args) 
           
@@ -954,7 +954,7 @@
               return this.__PROXY__.getDirectionVector(...args);
             
         };
-    
+        
         // function 
         RRayData.prototype.getAngle = function(...args) 
           
@@ -964,7 +964,7 @@
               return this.__PROXY__.getAngle(...args);
             
         };
-    
+        
         // function 
         RRayData.prototype.hasFixedAngle = function(...args) 
           
@@ -974,7 +974,7 @@
               return this.__PROXY__.hasFixedAngle(...args);
             
         };
-    
+        
         // function 
         RRayData.prototype.setFixedAngle = function(...args) 
           
@@ -984,7 +984,7 @@
               return this.__PROXY__.setFixedAngle(...args);
             
         };
-    
+        
         // function 
         RRayData.prototype.reverse = function(...args) 
           
@@ -994,7 +994,7 @@
               return this.__PROXY__.reverse(...args);
             
         };
-    
+        
         // function 
         RRayData.prototype.getTrimEnd = function(...args) 
           
@@ -1004,7 +1004,7 @@
               return this.__PROXY__.getTrimEnd(...args);
             
         };
-    
+        
         // function 
         RRayData.prototype.trimStartPoint = function(...args) 
           
@@ -1014,7 +1014,7 @@
               return this.__PROXY__.trimStartPoint(...args);
             
         };
-    
+        
         // function 
         RRayData.prototype.trimEndPoint = function(...args) 
           
@@ -1024,7 +1024,7 @@
               return this.__PROXY__.trimEndPoint(...args);
             
         };
-    
+        
         // function 
         RRayData.prototype.getSideOfPoint = function(...args) 
           
@@ -1034,7 +1034,7 @@
               return this.__PROXY__.getSideOfPoint(...args);
             
         };
-    
+        
         // function 
         RRayData.prototype.getReferencePoints = function(...args) 
           
@@ -1044,7 +1044,7 @@
               return this.__PROXY__.getReferencePoints(...args);
             
         };
-    
+        
         // function 
         RRayData.prototype.moveReferencePoint = function(...args) 
           
@@ -1054,7 +1054,7 @@
               return this.__PROXY__.moveReferencePoint(...args);
             
         };
-    
+        
         // function 
         RRayData.prototype.castToShape = function(...args) 
           
@@ -1064,7 +1064,7 @@
               return this.__PROXY__.castToShape(...args);
             
         };
-    
+        
         // function 
         RRayData.prototype.getShapes = function(...args) 
           
@@ -1074,7 +1074,7 @@
               return this.__PROXY__.getShapes(...args);
             
         };
-    
+        
 
       // static functions:
       RRayData.prototype.isNullWrapper = function() {
